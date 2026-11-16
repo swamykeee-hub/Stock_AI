@@ -1,0 +1,23 @@
+{
+  "score": 7.7,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        31951\n        \n          Cr.",
+    "current_price": "\u20b9\n        349",
+    "stock_pe": "24.8",
+    "book_value": "\u20b9\n        74.6",
+    "dividend_yield_pct": "1.14\n        \n          %",
+    "roce_pct": "15.6\n        \n          %",
+    "roe_pct": "17.3\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        1.00"
+  },
+  "strengths": [
+    "Company has a good return on equity (ROE) track record: 3 Years ROE 26.4%",
+    "Company has been maintaining a healthy dividend payout of 93.9%",
+    "Company's median sales growth is 26.6% of last 10 years",
+    "Healthy Capital Return (ROCE: 15.6%)"
+  ],
+  "red_flags": [
+    "Promoter holding has decreased over last 3 years: -9.71%"
+  ]
+}

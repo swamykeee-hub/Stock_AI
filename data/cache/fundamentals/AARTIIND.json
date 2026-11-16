@@ -1,0 +1,22 @@
+{
+  "score": 3.2,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        17482\n        \n          Cr.",
+    "current_price": "\u20b9\n        482",
+    "stock_pe": "27.9",
+    "book_value": "\u20b9\n        173",
+    "dividend_yield_pct": "0.21\n        \n          %",
+    "roce_pct": "6.84\n        \n          %",
+    "roe_pct": "7.20\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        5.00"
+  },
+  "strengths": [
+    "Company is expected to give good quarter"
+  ],
+  "red_flags": [
+    "Stock is trading at 2.78 times its book value",
+    "Tax rate seems low",
+    "Company has a low return on equity of 7.20% over last 3 years."
+  ]
+}

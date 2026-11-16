@@ -1,0 +1,24 @@
+{
+  "score": 8.5,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        56185\n        \n          Cr.",
+    "current_price": "\u20b9\n        26440",
+    "stock_pe": "34.0",
+    "book_value": "\u20b9\n        2010",
+    "dividend_yield_pct": "1.99\n        \n          %",
+    "roce_pct": "44.8\n        \n          %",
+    "roe_pct": "34.4\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        10.0"
+  },
+  "strengths": [
+    "Exceptional ROCE: 44.8% (>20%)",
+    "Company has reduced debt.",
+    "Company is almost debt free.",
+    "Company has a good return on equity (ROE) track record: 3 Years ROE 34.9%"
+  ],
+  "red_flags": [
+    "Stock is trading at 13.2 times its book value",
+    "The company has delivered a poor sales growth of 9.96% over past five years."
+  ]
+}

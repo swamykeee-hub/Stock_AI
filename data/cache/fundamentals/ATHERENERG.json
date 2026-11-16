@@ -1,0 +1,23 @@
+{
+  "score": 3.2,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        76928\n        \n          Cr.",
+    "current_price": "\u20b9\n        1938",
+    "stock_pe": "",
+    "book_value": "\u20b9\n        108",
+    "dividend_yield_pct": "0.00\n        \n          %",
+    "roce_pct": "-19.8\n        \n          %",
+    "roe_pct": "-33.4\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        1.00"
+  },
+  "strengths": [
+    "Company is expected to give good quarter",
+    "Promoter holding has increased by 1.61% over last quarter."
+  ],
+  "red_flags": [
+    "Stock is trading at 18.3 times its book value",
+    "Company has low interest coverage ratio.",
+    "Company has a low return on equity of -84.0% over last 3 years."
+  ]
+}

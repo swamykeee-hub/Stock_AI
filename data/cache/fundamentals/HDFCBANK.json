@@ -1,0 +1,24 @@
+{
+  "score": 5.5,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        1240766\n        \n          Cr.",
+    "current_price": "\u20b9\n        804",
+    "stock_pe": "16.2",
+    "book_value": "\u20b9\n        376",
+    "dividend_yield_pct": "1.62\n        \n          %",
+    "roce_pct": "6.92\n        \n          %",
+    "roe_pct": "14.0\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        1.00"
+  },
+  "strengths": [
+    "Company has delivered good profit growth of 19.1% CAGR over last 5 years",
+    "Company has been maintaining a healthy dividend payout of 27.1%",
+    "Attractive Valuation Multiple (P/E: 16.2x)"
+  ],
+  "red_flags": [
+    "Company has low interest coverage ratio.",
+    "Contingent liabilities of Rs.35,00,416 Cr.",
+    "Company might be capitalizing the interest cost"
+  ]
+}
