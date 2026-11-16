@@ -138,9 +138,10 @@ def refresh_all_live_data(mode: str = "quick") -> dict:
     except Exception:
         ipo_data = []
 
-    # Regenerate dashboard.html and Desktop report
+    # Regenerate dashboard.html, index.html, and Desktop report
     html_destinations = [
         config.BASE_DIR / "dashboard.html",
+        config.BASE_DIR / "index.html",
         config.DESKTOP_REPORT_PATH
     ]
     HTMLReportGenerator.generate(scan_payload, ipo_data, html_destinations)

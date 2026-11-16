@@ -113,10 +113,22 @@ class DailyAutomator:
         # 10. Generate Standalone Interactive HTML Dashboards
         html_destinations = [
             config.BASE_DIR / "dashboard.html",
+            config.BASE_DIR / "index.html",
             config.DESKTOP_REPORT_PATH
         ]
         HTMLReportGenerator.generate(scan_payload, ipo_data, html_destinations)
         print(f"  -> Generated standalone HTML report at {html_destinations[0]} and Desktop.")
+
+        # 11. Auto-push updated web application to GitHub Pages
+        try:
+            import subprocess
+            subprocess.run(["git", "add", "index.html", "dashboard.html", "data/"], cwd=str(config.BASE_DIR), capture_output=True, timeout=15)
+            subprocess.run(["git", "commit", "-m", f"chore(auto-update): market scan {now_str}"], cwd=str(config.BASE_DIR), capture_output=True, timeout=15)
+            res = subprocess.run(["git", "push", "origin", "main"], cwd=str(config.BASE_DIR), capture_output=True, text=True, timeout=30)
+            if res.returncode == 0:
+                print("  -> Automatically published updated website to GitHub Pages!")
+        except Exception as e:
+            print(f"  -> GitHub Pages auto-publish notice: {e}")
 
         print(f"[{datetime.now().strftime('%H:%M:%S')}] Daily AI Cycle Completed Successfully!")
         print(f"Report saved to: {report_file}\n")
