@@ -1,9 +1,9 @@
 {
   "score": 8.5,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        14052\n        \n          Cr.",
-    "current_price": "\u20b9\n        1180",
-    "stock_pe": "",
+    "market_cap_cr": "\u20b9\n        14002\n        \n          Cr.",
+    "current_price": "\u20b9\n        1176",
+    "stock_pe": "29.9",
     "book_value": "\u20b9\n        190",
     "dividend_yield_pct": "0.17\n        \n          %",
     "roce_pct": "32.4\n        \n          %",
@@ -14,10 +14,10 @@
   "strengths": [
     "Exceptional ROCE: 32.4% (>20%)",
     "Company is almost debt free.",
-    "Company has a good return on equity (ROE) track record: 3 Years ROE 27.0%",
-    "Strong Return on Equity: 23.6%"
+    "Company has delivered good profit growth of 41.0% CAGR over last 5 years",
+    "Company has a good return on equity (ROE) track record: 3 Years ROE 27.0%"
   ],
   "red_flags": [
-    "Standard market cyclical risks apply"
+    "Earnings include an other income of Rs.180 Cr."
   ]
 }

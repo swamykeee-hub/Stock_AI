@@ -1,11 +1,11 @@
 {
   "score": 2.2,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        175638\n        \n          Cr.",
-    "current_price": "\u20b9\n        165",
-    "stock_pe": "116",
+    "market_cap_cr": "\u20b9\n        173698\n        \n          Cr.",
+    "current_price": "\u20b9\n        163",
+    "stock_pe": "115",
     "book_value": "\u20b9\n        36.7",
-    "dividend_yield_pct": "0.36\n        \n          %",
+    "dividend_yield_pct": "0.37\n        \n          %",
     "roce_pct": "5.25\n        \n          %",
     "roe_pct": "4.77\n        \n          %",
     "debt_to_equity": "N/A",
@@ -17,7 +17,7 @@
     "Company has been maintaining a healthy dividend payout of 43.5%"
   ],
   "red_flags": [
-    "Stock is trading at 4.49 times its book value",
+    "Stock is trading at 4.44 times its book value",
     "Company has a low return on equity of 4.08% over last 3 years.",
     "Earnings include an other income of Rs.821 Cr."
   ]
