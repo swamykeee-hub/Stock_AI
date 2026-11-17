@@ -1,72 +1,72 @@
 # Daily Indian Market AI Intelligence Briefing
-**Generated:** 2026-11-17 08:45:02 | **Powered by Stock AI Agent (CIO Intelligence)**
+**Generated:** 2026-11-17 09:15:02 | **Powered by Stock AI Agent (CIO Intelligence)**
 
 ---
 ## 1. Domestic & Global Market Overview
 ### Domestic Indices
 | Index | Value | Change (%) |
 | :--- | :--- | :--- |
-| **NIFTY 50** | 25291.1 | +0.58% |
+| **NIFTY 50** | 25286.55 | -0.02% |
 | **SENSEX** | 82104.79 | +0.63% |
-| **BANK NIFTY** | 61575.9 | +0.89% |
-| **INDIA VIX** | 15.68 | +1.18% |
-| **NIFTY 100** | 26183.3 | +0.38% |
-| **NIFTY 200** | 14355.0 | +0.21% |
-| **NIFTY IT** | 31941.05 | +0.03% |
-| **NIFTY PHARMA** | 28098.4 | -1.53% |
-| **NIFTY FMCG** | 47708.1 | +1.87% |
-| **NIFTY AUTO** | 27570.25 | -1.29% |
-| **NIFTY METAL** | 12458.35 | -1.50% |
-| **NIFTY PRIVATE BANK** | 30242.85 | +0.88% |
-| **NIFTY FIN-SERVICES** | 30017.15 | +0.51% |
-| **NIFTY AI CATALYSTS** | 1008.43 | +0.23% |
+| **BANK NIFTY** | 61559.95 | +0.86% |
+| **INDIA VIX** | 14.04 | -10.48% |
+| **NIFTY 100** | 26163.6 | -0.07% |
+| **NIFTY 200** | 14342.55 | -0.09% |
+| **NIFTY IT** | 31858.15 | -0.26% |
+| **NIFTY PHARMA** | 28058.75 | -0.14% |
+| **NIFTY FMCG** | 47772.6 | +0.14% |
+| **NIFTY AUTO** | 27747.8 | +0.64% |
+| **NIFTY METAL** | 12345.35 | -0.91% |
+| **NIFTY PRIVATE BANK** | 30204.35 | -0.13% |
+| **NIFTY FIN-SERVICES** | 29999.45 | -0.06% |
+| **NIFTY AI CATALYSTS** | 1003.39 | -0.27% |
 
 ### Global Macro & Commodities
 | Commodity / Index | Price | Change (%) |
 | :--- | :--- | :--- |
-| **Brent Crude ($/bbl)** | 91.77 | -0.72% |
+| **Brent Crude ($/bbl)** | 91.72 | -0.78% |
 | **US 10-Yr Yield (%)** | 5.12 | -0.64% |
-| **US Dollar Index (DXY)** | 103.54 | -0.01% |
-| **Gold ($/oz)** | 3873.8 | +0.54% |
-| **USD / INR** | 93.91 | -0.00% |
+| **US Dollar Index (DXY)** | 103.51 | -0.04% |
+| **Gold ($/oz)** | 3877.7 | +0.64% |
+| **USD / INR** | 93.66 | -0.27% |
 
 ## 2. Multi-Timeframe Super-Trend & Momentum Leaders (3M / 1Y / 3Y)
 | Symbol | CMP (₹) | 3M Return | 6M Return | 1Y Return | 3Y Return | Trend Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **LAURUSLABS** | ₹2220.0 | +20.7% | +53.4% | +116.4% | +478.7% | 🚀 Multibagger Compounder (+100%+) |
+| **LAURUSLABS** | ₹2234.7 | +21.5% | +54.5% | +117.8% | +482.5% | 🚀 Multibagger Compounder (+100%+) |
 | **DIVISLAB** | ₹11080.0 | +21.8% | +67.3% | +71.2% | +200.9% | 🏛️ Multi-Year Structural Bull |
-| **APARINDS** | ₹14831.0 | +-14.9% | +6.9% | +66.7% | +180.0% | 📈 Positive Trend |
-| **BHEL** | ₹430.1 | +-0.2% | +11.2% | +54.9% | +143.4% | 📈 Positive Trend |
-| **SOLARINDS** | ₹18820.0 | +-12.2% | +2.1% | +46.8% | +198.8% | 📈 Positive Trend |
-| **MOTHERSON** | ₹162.98 | +1.4% | +13.5% | +39.2% | +157.3% | 🎯 Near Breakout Zone |
-| **BSE** | ₹3887.4 | +14.0% | +0.2% | +38.1% | +382.4% | 🏛️ Multi-Year Structural Bull |
-| **POLYCAB** | ₹7955.5 | +-4.2% | +-18.0% | +9.6% | +46.1% | 📈 Positive Trend |
-| **HAL** | ₹4789.0 | +-1.4% | +13.6% | +7.8% | +75.2% | 🎯 Near Breakout Zone |
-| **BHARTIARTL** | ₹2153.5 | +17.0% | +19.8% | +2.1% | +115.3% | 🎯 Near Breakout Zone |
+| **APARINDS** | ₹14650.0 | +-15.9% | +5.6% | +64.6% | +176.5% | 📈 Positive Trend |
+| **BHEL** | ₹427.7 | +-0.8% | +10.5% | +54.0% | +142.0% | 📈 Positive Trend |
+| **SOLARINDS** | ₹18839.0 | +-12.2% | +2.2% | +47.0% | +199.1% | 📈 Positive Trend |
+| **BSE** | ₹3956.5 | +16.0% | +2.0% | +40.5% | +391.0% | 🏛️ Multi-Year Structural Bull |
+| **MOTHERSON** | ₹162.51 | +1.1% | +13.2% | +38.8% | +156.6% | 🎯 Near Breakout Zone |
+| **POLYCAB** | ₹7845.5 | +-5.5% | +-19.1% | +8.1% | +44.0% | 📈 Positive Trend |
+| **HAL** | ₹4766.1 | +-1.9% | +13.0% | +7.3% | +74.3% | 📈 Positive Trend |
+| **BHARTIARTL** | ₹2150.3 | +16.9% | +19.6% | +2.0% | +115.0% | 🎯 Near Breakout Zone |
 
 ## 3. Agentic AI Monitored Radar (Future Setups)
 | Symbol | Setup Type | Status | CMP (₹) | Target (3M) | Target (1Y) | Stop Loss |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **LAURUSLABS** | Turnaround Growth & 52W Breakout | Active Breakout / Buy on Dip (₹2,280 - ₹2,320) | ₹2220.0 | ₹2650.0 | ₹3200.0 | ₹2180.0 |
-| **DIXON** | PLI-Led High Growth Momentum | Approaching New 52W High Breakout | ₹12890.0 | ₹16000.0 | ₹18500.0 | ₹13300.0 |
-| **TRENT** | Structural Trend Compounder | Accumulate on 20/50 EMA Pullbacks | ₹3203.7 | ₹8200.0 | ₹9500.0 | ₹6650.0 |
-| **SUZLON** | Debt-Free Turnaround & Capacity Expansion | Stage-2 Consolidation Breakout Watch | ₹37.43 | ₹84.0 | ₹105.0 | ₹61.5 |
-| **KAYNES** | High-Alpha High-Tech Breakout | Active Buy Zone (₹5,600 - ₹5,850) | ₹2980.0 | ₹6600.0 | ₹7800.0 | ₹5250.0 |
-| **BSE** | Market Share Re-Rating & Derivative Boom | Pullback Buy Zone near 20-EMA | ₹3887.4 | ₹4400.0 | ₹5200.0 | ₹3520.0 |
-| **HAL** | Multi-Year Indigenization Super-Cycle | Consolidation Accumulation (₹4,850 - ₹5,000) | ₹4789.0 | ₹5700.0 | ₹6800.0 | ₹4620.0 |
+| **LAURUSLABS** | Turnaround Growth & 52W Breakout | Active Breakout / Buy on Dip (₹2,280 - ₹2,320) | ₹2234.0 | ₹2650.0 | ₹3200.0 | ₹2180.0 |
+| **DIXON** | PLI-Led High Growth Momentum | Approaching New 52W High Breakout | ₹12893.0 | ₹16000.0 | ₹18500.0 | ₹13300.0 |
+| **TRENT** | Structural Trend Compounder | Accumulate on 20/50 EMA Pullbacks | ₹3205.5 | ₹8200.0 | ₹9500.0 | ₹6650.0 |
+| **SUZLON** | Debt-Free Turnaround & Capacity Expansion | Stage-2 Consolidation Breakout Watch | ₹37.07 | ₹84.0 | ₹105.0 | ₹61.5 |
+| **KAYNES** | High-Alpha High-Tech Breakout | Active Buy Zone (₹5,600 - ₹5,850) | ₹2909.2 | ₹6600.0 | ₹7800.0 | ₹5250.0 |
+| **BSE** | Market Share Re-Rating & Derivative Boom | Pullback Buy Zone near 20-EMA | ₹3956.5 | ₹4400.0 | ₹5200.0 | ₹3520.0 |
+| **HAL** | Multi-Year Indigenization Super-Cycle | Consolidation Accumulation (₹4,850 - ₹5,000) | ₹4781.5 | ₹5700.0 | ₹6800.0 | ₹4620.0 |
 | **DIVISLAB** | Big Pharma Outsourcing Breakout | Momentum Breakout above ₹10,200 | ₹11080.0 | ₹11800.0 | ₹13500.0 | ₹9700.0 |
 
 ## 4. Top Bullish Stock Picks (360° Verified)
 | Symbol | CMP (₹) | Conviction | RSI | Target 1 (₹) | Stop Loss (₹) | R:R |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **ACUTAAS** | ₹3947.3 | 7.3/10 | 70.82 | ₹4375.81 | ₹3625.91 | 1:1.33 |
-| **BSE** | ₹3887.4 | 7.1/10 | 83.1 | ₹4097.84 | ₹3729.57 | 1:1.33 |
-| **DIVISLAB** | ₹11080.0 | 7.0/10 | 80.85 | ₹11862.21 | ₹10493.34 | 1:1.33 |
-| **ABB** | ₹6895.0 | 6.5/10 | 67.51 | ₹7335.21 | ₹6564.84 | 1:1.33 |
-| **ABDL** | ₹784.25 | 6.4/10 | 84.28 | ₹843.59 | ₹739.74 | 1:1.33 |
-| **TRENT** | ₹3203.7 | 6.3/10 | 82.17 | ₹3374.31 | ₹3075.74 | 1:1.33 |
-| **BHEL** | ₹430.1 | 6.3/10 | 68.43 | ₹457.59 | ₹409.49 | 1:1.33 |
-| **PERSISTENT** | ₹5978.5 | 6.2/10 | 69.66 | ₹6317.64 | ₹5767.02 | 1:1.33 |
+| **ACUTAAS** | ₹3939.2 | 8.0/10 | 57.29 | ₹4296.43 | ₹3671.28 | 1:1.33 |
+| **BSE** | ₹3952.5 | 7.1/10 | 82.68 | ₹4154.89 | ₹3796.34 | 1:1.33 |
+| **DIVISLAB** | ₹11082.5 | 6.8/10 | 77.79 | ₹11811.07 | ₹10536.07 | 1:1.33 |
+| **PERSISTENT** | ₹5926.0 | 6.6/10 | 55.8 | ₹6212.57 | ₹5711.07 | 1:1.33 |
+| **ACE** | ₹1170.0 | 6.6/10 | 78.83 | ₹1262.91 | ₹1100.31 | 1:1.33 |
+| **TRENT** | ₹3205.5 | 6.3/10 | 80.35 | ₹3365.51 | ₹3085.49 | 1:1.33 |
+| **BHEL** | ₹427.5 | 6.3/10 | 64.73 | ₹454.32 | ₹407.38 | 1:1.33 |
+| **ABB** | ₹6873.5 | 6.3/10 | 62.32 | ₹7317.57 | ₹6557.95 | 1:1.33 |
 
 ## 5. Curated Mutual Fund Recommendations & Rationale
 | Fund Name | Category | 1Y Return | 3Y CAGR | 5Y CAGR | Sharpe | Key Rationale |

@@ -1,11 +1,11 @@
 {
   "score": 8.5,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        20592\n        \n          Cr.",
-    "current_price": "\u20b9\n        291",
-    "stock_pe": "29.8",
+    "market_cap_cr": "\u20b9\n        20316\n        \n          Cr.",
+    "current_price": "\u20b9\n        287",
+    "stock_pe": "29.4",
     "book_value": "\u20b9\n        39.0",
-    "dividend_yield_pct": "1.89\n        \n          %",
+    "dividend_yield_pct": "1.91\n        \n          %",
     "roce_pct": "21.1\n        \n          %",
     "roe_pct": "20.8\n        \n          %",
     "debt_to_equity": "N/A",
@@ -18,7 +18,7 @@
     "Company's working capital requirements have reduced from 62.6 days to 19.1 days"
   ],
   "red_flags": [
-    "Stock is trading at 7.48 times its book value",
+    "Stock is trading at 7.38 times its book value",
     "Contingent liabilities of Rs.6,405 Cr.",
     "Company has high debtors of 152 days."
   ]

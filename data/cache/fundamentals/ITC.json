@@ -1,11 +1,11 @@
 {
   "score": 10.0,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        357160\n        \n          Cr.",
-    "current_price": "\u20b9\n        285",
-    "stock_pe": "19.7",
+    "market_cap_cr": "\u20b9\n        369817\n        \n          Cr.",
+    "current_price": "\u20b9\n        295",
+    "stock_pe": "20.4",
     "book_value": "\u20b9\n        54.3",
-    "dividend_yield_pct": "5.09\n        \n          %",
+    "dividend_yield_pct": "4.91\n        \n          %",
     "roce_pct": "38.6\n        \n          %",
     "roe_pct": "29.6\n        \n          %",
     "debt_to_equity": "N/A",
@@ -14,7 +14,7 @@
   "strengths": [
     "Exceptional ROCE: 38.6% (>20%)",
     "Company is almost debt free.",
-    "Stock is providing a good dividend yield of 5.09%.",
+    "Stock is providing a good dividend yield of 4.91%.",
     "Company has a good return on equity (ROE) track record: 3 Years ROE 35.9%"
   ],
   "red_flags": [
