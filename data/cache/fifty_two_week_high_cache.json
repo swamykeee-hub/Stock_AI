@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-16 18:00:41",
+  "timestamp": "2026-11-17 08:45:38",
   "total_found": 9,
   "stocks": [
     {
@@ -78,14 +78,14 @@
       "dist_52w": 0.94,
       "day_change": 6.1,
       "day_change_pct": 0.26,
-      "rsi": 87.83,
-      "ema20": 2301.09,
-      "ema50": 2224.93,
-      "ema200": 1973.0,
-      "vol_surge": 0.38,
-      "ret_1m": 10.5,
-      "ret_3m": 9.0,
-      "ret_6m": 32.0,
+      "rsi": 85.35,
+      "ema20": 2292.01,
+      "ema50": 2218.31,
+      "ema200": 1968.84,
+      "vol_surge": 0.6,
+      "ret_1m": 11.4,
+      "ret_3m": 8.8,
+      "ret_6m": 33.5,
       "ret_1y": 57.3,
       "pe": 28.5,
       "roce": 24.2,
@@ -99,7 +99,7 @@
       "target_2": 2916.1,
       "stop_loss": 2176.74,
       "risk_reward": "1 : 1.1",
-      "buy_strategy": "<b>ANANDRATHI</b> is exhibiting stellar institutional sponsorship, currently trading within <b>0.94% of its 52-week peak (\u20b92,410.00)</b> with a 1-year return of <b>+57.3%</b>. Price action is trending decisively above the 20-Day EMA (\u20b92,301.09) and 50-Day EMA (\u20b92,224.93) supported by an RSI of <b>87.83</b> and volume surge factor of <b>0.38x</b>. <b>Fund Manager Action:</b> Accumulate within the <b>\u20b92,315.68 \u2014 \u20b92,399.24</b> pocket. Ride the Stage-2 markup targeting <b>\u20b92,626.90</b> (Target 1) and <b>\u20b92,916.10</b> (Target 2), maintaining a protective stop loss at <b>\u20b92,176.74</b>."
+      "buy_strategy": "<b>ANANDRATHI</b> is exhibiting stellar institutional sponsorship, currently trading within <b>0.94% of its 52-week peak (\u20b92,410.00)</b> with a 1-year return of <b>+57.3%</b>. Price action is trending decisively above the 20-Day EMA (\u20b92,292.01) and 50-Day EMA (\u20b92,218.31) supported by an RSI of <b>85.35</b> and volume surge factor of <b>0.6x</b>. <b>Fund Manager Action:</b> Accumulate within the <b>\u20b92,315.68 \u2014 \u20b92,399.24</b> pocket. Ride the Stage-2 markup targeting <b>\u20b92,626.90</b> (Target 1) and <b>\u20b92,916.10</b> (Target 2), maintaining a protective stop loss at <b>\u20b92,176.74</b>."
     },
     {
       "symbol": "BHARTIARTL",
