@@ -3655,20 +3655,43 @@ class HTMLReportGenerator:
             reader.onload = function(e) {{
                 try {{
                     const text = e.target.result || '';
-                    const lines = text.split(/\r?\n/).filter(l => l.trim().length > 0);
+                    const rawLines = text.split(String.fromCharCode(10));
+                    const lines = [];
+                    for (let i = 0; i < rawLines.length; i++) {{
+                        const cleanLine = rawLines[i].split(String.fromCharCode(13)).join('').trim();
+                        if (cleanLine.length > 0) {{
+                            lines.push(cleanLine);
+                        }}
+                    }}
+
                     if (lines.length < 2) {{
                         alert('Uploaded CSV file appears empty or invalid.');
                         return;
                     }}
 
-                    // Detect delimiter (comma or semicolon)
-                    const delim = lines[0].includes(';') ? ';' : ',';
-                    const header = lines[0].split(delim).map(h => h.trim().toLowerCase().replace(/["']/g, ''));
+                    const delim = lines[0].indexOf(';') !== -1 ? ';' : ',';
+                    const rawHeaders = lines[0].split(delim);
+                    const header = [];
+                    for (let i = 0; i < rawHeaders.length; i++) {{
+                        header.push(rawHeaders[i].trim().toLowerCase().replace(/['"]/g, ''));
+                    }}
 
-                    // Find key columns
-                    const symIdx = header.findIndex(h => /symbol|instrument|ticker|stock\\s*name|scrip/i.test(h));
-                    const qtyIdx = header.findIndex(h => /^qty|quantity|shares|cur\\.\\s*qty|net\\s*qty/i.test(h));
-                    const priceIdx = header.findIndex(h => /avg|cost|buy|price/i.test(h));
+                    let symIdx = -1;
+                    let qtyIdx = -1;
+                    let priceIdx = -1;
+
+                    for (let i = 0; i < header.length; i++) {{
+                        const h = header[i];
+                        if (symIdx === -1 && (h.indexOf('symbol') !== -1 || h.indexOf('instrument') !== -1 || h.indexOf('ticker') !== -1 || h.indexOf('stock') !== -1 || h.indexOf('scrip') !== -1)) {{
+                            symIdx = i;
+                        }}
+                        if (qtyIdx === -1 && (h.indexOf('qty') !== -1 || h.indexOf('quantity') !== -1 || h.indexOf('shares') !== -1)) {{
+                            qtyIdx = i;
+                        }}
+                        if (priceIdx === -1 && (h.indexOf('avg') !== -1 || h.indexOf('cost') !== -1 || h.indexOf('buy') !== -1 || h.indexOf('price') !== -1)) {{
+                            priceIdx = i;
+                        }}
+                    }}
 
                     if (symIdx === -1 || qtyIdx === -1) {{
                         alert('Could not automatically identify Symbol and Quantity columns in your CSV. Please check the header row.');
@@ -3679,31 +3702,34 @@ class HTMLReportGenerator:
                     let importedCount = 0;
 
                     for (let i = 1; i < lines.length; i++) {{
-                        const row = lines[i].split(new RegExp(delim + '(?=(?:(?:[^"]*"){2})*[^"]*$)')).map(c => c.trim().replace(/^["']|["']$/g, ''));
-                        if (row.length <= Math.max(symIdx, qtyIdx)) continue;
+                        const rawRow = lines[i].split(delim);
+                        if (rawRow.length <= Math.max(symIdx, qtyIdx)) continue;
 
-                        let rawSym = row[symIdx].toUpperCase().replace(/-EQ|\\.NS|NSE:|\\s+/g, '').trim();
-                        let qty = parseFloat((row[qtyIdx] || '0').replace(/,/g, ''));
-                        let price = priceIdx !== -1 && row[priceIdx] ? parseFloat(row[priceIdx].replace(/[₹,]/g, '')) : 0.0;
+                        let rawSym = rawRow[symIdx].toUpperCase().replace('-EQ', '').replace('.NS', '').replace('NSE:', '').trim();
+                        rawSym = rawSym.replace(/['"\s]/g, '');
+
+                        const qtyStr = (rawRow[qtyIdx] || '0').replace(/,/g, '').trim();
+                        const qty = parseFloat(qtyStr);
+
+                        let price = 0.0;
+                        if (priceIdx !== -1 && rawRow[priceIdx]) {{
+                            const priceStr = rawRow[priceIdx].replace(/,/g, '').replace('₹', '').replace('Rs', '').trim();
+                            price = parseFloat(priceStr);
+                        }}
 
                         if (rawSym && !isNaN(qty) && qty > 0) {{
                             let cmp = price;
                             if (window.PORTFOLIO_CMP_CACHE && window.PORTFOLIO_CMP_CACHE[rawSym]) {{
                                 cmp = window.PORTFOLIO_CMP_CACHE[rawSym];
                             }}
-                            newHoldings.push({{
-                                symbol: rawSym,
-                                qty: qty,
-                                buyPrice: isNaN(price) || price <= 0 ? cmp : price,
-                                cmp: cmp > 0 ? cmp : price
-                            }});
+                            newHoldings.push({{'symbol': rawSym, 'qty': qty, 'buyPrice': (isNaN(price) || price <= 0) ? cmp : price, 'cmp': cmp > 0 ? cmp : price}});
                             importedCount++;
                         }}
                     }}
 
                     if (importedCount > 0) {{
                         savePortfolio(newHoldings);
-                        showSyncToast(`✅ Successfully imported ${{importedCount}} holdings from broker CSV! Running AI Health Audit...`);
+                        showSyncToast('✅ Successfully imported ' + importedCount + ' holdings from broker CSV! Running AI Health Audit...');
                         syncAllPortfolioQuotes();
                     }} else {{
                         alert('No valid holdings could be parsed from the CSV file.');
