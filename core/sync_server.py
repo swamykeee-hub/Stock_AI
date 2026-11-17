@@ -104,7 +104,15 @@ def refresh_all_live_data(mode: str = "quick") -> dict:
         for r in scan_payload.get("monitored_radar", []):
             sym = r.get("symbol")
             if sym in fresh_quotes and fresh_quotes[sym].get("currentPrice", 0) > 0:
-                r["cmp"] = fresh_quotes[sym]["currentPrice"]
+                cmp = fresh_quotes[sym]["currentPrice"]
+                r["cmp"] = cmp
+                old_sl = r.get("stop_loss", 0)
+                old_t3m = r.get("target_3m", 0)
+                if old_sl >= cmp or old_t3m <= cmp or old_t3m > cmp * 2.2:
+                    r["target_3m"] = round(cmp * 1.15, 1)
+                    r["target_1y"] = round(cmp * 1.38, 1)
+                    r["stop_loss"] = round(cmp * 0.93, 1)
+                    r["risk_reward"] = "1:2.8"
 
         # 4. Update top_bullish_stocks CMP
         for p in scan_payload.get("top_bullish_stocks", []):

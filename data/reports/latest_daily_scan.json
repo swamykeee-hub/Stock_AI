@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-17 17:24:35",
+  "timestamp": "2026-11-17 17:44:36",
   "indices": {
     "NIFTY 50": {
       "value": 25387.4,
@@ -95,14 +95,14 @@
         "change_pct": -1.34
       },
       "FTSE 100": {
-        "price": 10806.49,
-        "change": -75.06,
-        "change_pct": -0.69
+        "price": 10802.22,
+        "change": -79.33,
+        "change_pct": -0.73
       },
       "DAX": {
-        "price": 26425.53,
-        "change": -173.11,
-        "change_pct": -0.65
+        "price": 26432.64,
+        "change": -166.0,
+        "change_pct": -0.62
       },
       "Hang Seng": {
         "price": 23508.17,
@@ -112,9 +112,9 @@
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 92.68,
-        "change": 0.24,
-        "change_pct": 0.26
+        "price": 92.78,
+        "change": 0.34,
+        "change_pct": 0.37
       },
       "US 10-Yr Yield (%)": {
         "price": 5.12,
@@ -122,14 +122,14 @@
         "change_pct": -0.64
       },
       "US Dollar Index (DXY)": {
-        "price": 103.58,
-        "change": 0.03,
-        "change_pct": 0.03
+        "price": 103.59,
+        "change": 0.05,
+        "change_pct": 0.04
       },
       "Gold ($/oz)": {
-        "price": 3866.0,
-        "change": 13.0,
-        "change_pct": 0.34
+        "price": 3870.7,
+        "change": 17.7,
+        "change_pct": 0.46
       },
       "USD / INR": {
         "price": 93.46,
@@ -141,7 +141,7 @@
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 5.12%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-17 17:25:09"
+    "timestamp": "2026-11-17 17:45:04"
   },
   "market_regime": {
     "nifty_cmp": 25291.15,
@@ -1424,10 +1424,10 @@
         "Non-ARV API diversification"
       ],
       "cmp": 2338.0,
-      "day_change_pct": 0.63,
+      "day_change_pct": 5.32,
       "fifty_two_week_high": 2488.0,
       "fifty_two_week_low": 917.95,
-      "dist_from_52w_high": 10.2
+      "dist_from_52w_high": 6.0
     },
     {
       "symbol": "DIXON",
@@ -1436,9 +1436,9 @@
       "setup_type": "PLI-Led High Growth Momentum",
       "monitoring_status": "Approaching New 52W High Breakout",
       "entry_trigger": 14200.0,
-      "target_3m": 16000.0,
-      "target_1y": 18500.0,
-      "stop_loss": 13300.0,
+      "target_3m": 15043.1,
+      "target_1y": 18051.8,
+      "stop_loss": 12165.3,
       "risk_reward": "1:2.8",
       "cio_conviction": 9.1,
       "institutional_thesis": "Primary beneficiary of Government of India's Electronics PLI schemes. Mobile phone assembly contracts with global smartphone giants creating massive scale. Backward integration into display modules and precision components expanding margins.",
@@ -1448,10 +1448,10 @@
         "Operating leverage in high-volume smartphone segment"
       ],
       "cmp": 13081.0,
-      "day_change_pct": 0.02,
+      "day_change_pct": 1.48,
       "fifty_two_week_high": 15775.0,
       "fifty_two_week_low": 9600.0,
-      "dist_from_52w_high": 18.3
+      "dist_from_52w_high": 17.1
     },
     {
       "symbol": "TRENT",
@@ -1460,10 +1460,10 @@
       "setup_type": "Structural Trend Compounder",
       "monitoring_status": "Accumulate on 20/50 EMA Pullbacks",
       "entry_trigger": 7100.0,
-      "target_3m": 8200.0,
-      "target_1y": 9500.0,
-      "stop_loss": 6650.0,
-      "risk_reward": "1:3.0",
+      "target_3m": 3652.7,
+      "target_1y": 4383.3,
+      "stop_loss": 2954.0,
+      "risk_reward": "1:2.8",
       "cio_conviction": 9.3,
       "institutional_thesis": "Zudio format represents the biggest retail success story in India with phenomenal unit economics. Westside maintaining industry-leading same-store sales growth. Zero long-term debt and continuous internal cash flow funding 200+ store additions annually.",
       "catalysts": [
@@ -1472,10 +1472,10 @@
         "Rapid store addition pace accelerating market share"
       ],
       "cmp": 3176.3,
-      "day_change_pct": 0.06,
+      "day_change_pct": -0.85,
       "fifty_two_week_high": 4417.8,
       "fifty_two_week_low": 2183.667,
-      "dist_from_52w_high": 27.4
+      "dist_from_52w_high": 28.1
     },
     {
       "symbol": "SUZLON",
@@ -1484,10 +1484,10 @@
       "setup_type": "Debt-Free Turnaround & Capacity Expansion",
       "monitoring_status": "Stage-2 Consolidation Breakout Watch",
       "entry_trigger": 68.0,
-      "target_3m": 84.0,
-      "target_1y": 105.0,
-      "stop_loss": 61.5,
-      "risk_reward": "1:3.4",
+      "target_3m": 42.8,
+      "target_1y": 51.3,
+      "stop_loss": 34.6,
+      "risk_reward": "1:2.8",
       "cio_conviction": 8.8,
       "institutional_thesis": "Complete balance sheet transformation from debt-heavy to net cash surplus. Order book at historical highs (>5.5 GW) with robust demand from C&I and PSU tenders. 3.x MW turbine technology commanding high pricing power and superior execution margins.",
       "catalysts": [
@@ -1496,10 +1496,10 @@
         "Clean balance sheet driving institutional re-rating"
       ],
       "cmp": 37.19,
-      "day_change_pct": -0.96,
+      "day_change_pct": -0.64,
       "fifty_two_week_high": 60.45,
       "fifty_two_week_low": 33.15,
-      "dist_from_52w_high": 38.7
+      "dist_from_52w_high": 38.5
     },
     {
       "symbol": "KAYNES",
@@ -1508,10 +1508,10 @@
       "setup_type": "High-Alpha High-Tech Breakout",
       "monitoring_status": "Active Buy Zone (\u20b95,600 - \u20b95,850)",
       "entry_trigger": 5750.0,
-      "target_3m": 6600.0,
-      "target_1y": 7800.0,
-      "stop_loss": 5250.0,
-      "risk_reward": "1:2.7",
+      "target_3m": 3286.7,
+      "target_1y": 3944.0,
+      "stop_loss": 2657.9,
+      "risk_reward": "1:2.8",
       "cio_conviction": 9.0,
       "institutional_thesis": "High-mix, high-value electronics manufacturing for defense, space, railways, and industrial IoT. Setting up an advanced OSAT semiconductor testing facility backed by Central/State subsidies. Revenue CAGR exceeding 40% with industry-leading EBITDA margins (>14%).",
       "catalysts": [
@@ -1520,10 +1520,10 @@
         "Global aerospace export certifications"
       ],
       "cmp": 2858.0,
-      "day_change_pct": -2.38,
-      "fifty_two_week_high": 6347.0,
-      "fifty_two_week_low": 2902.2,
-      "dist_from_52w_high": 54.2
+      "day_change_pct": -4.09,
+      "fifty_two_week_high": 6202.0,
+      "fifty_two_week_low": 2744.0,
+      "dist_from_52w_high": 53.9
     },
     {
       "symbol": "BSE",
@@ -1544,10 +1544,10 @@
         "New commodity and interest rate derivative product rollouts"
       ],
       "cmp": 3864.9,
-      "day_change_pct": 1.78,
+      "day_change_pct": -0.58,
       "fifty_two_week_high": 4446.8,
       "fifty_two_week_low": 2377.4,
-      "dist_from_52w_high": 11.0
+      "dist_from_52w_high": 13.1
     },
     {
       "symbol": "HAL",
@@ -1568,10 +1568,10 @@
         "Fifth-generation AMCA fighter jet development milestone"
       ],
       "cmp": 4727.0,
-      "day_change_pct": -0.16,
+      "day_change_pct": -1.29,
       "fifty_two_week_high": 5149.9,
       "fifty_two_week_low": 3479.1,
-      "dist_from_52w_high": 7.2
+      "dist_from_52w_high": 8.2
     },
     {
       "symbol": "DIVISLAB",
@@ -1592,10 +1592,10 @@
         "EBITDA margins reverting to historical 38-40% band"
       ],
       "cmp": 11150.0,
-      "day_change_pct": -3.16,
+      "day_change_pct": 0.63,
       "fifty_two_week_high": 11824.0,
       "fifty_two_week_low": 5647.5,
-      "dist_from_52w_high": 6.3
+      "dist_from_52w_high": 5.7
     }
   ],
   "mutual_funds": [

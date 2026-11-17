@@ -1621,6 +1621,9 @@ class HTMLReportGenerator:
         .sip-slider {{ width: 100%; height: 6px; border-radius: 3px; background: var(--border); outline: none; -webkit-appearance: none; accent-color: var(--primary); }}
         .sip-preset-btn {{ background: var(--bg); border: 1px solid var(--border); color: var(--text-muted); padding: 4px 10px; border-radius: 4px; font-size: 11px; cursor: pointer; margin-right: 6px; }}
         .sip-preset-btn:hover {{ border-color: var(--primary); color: var(--primary); }}
+        .sip-inc-btn {{ background: var(--bg); border: 1px solid var(--border); color: var(--text-heading); padding: 2px 9px; height: 28px; min-width: 28px; border-radius: 6px; font-size: 14px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.15s ease; user-select: none; }}
+        .sip-inc-btn:hover {{ background: var(--primary); color: #ffffff; border-color: var(--primary); transform: scale(1.05); }}
+        .sip-inc-btn:active {{ transform: scale(0.95); }}
         .sip-compounding-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 20px; }}
         .sip-tier-card {{ background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 18px; text-align: center; }}
         .sip-tier-title {{ font-size: 12px; font-weight: 700; color: var(--text-muted); margin-bottom: 6px; }}
@@ -1840,11 +1843,18 @@ class HTMLReportGenerator:
 
             <div class="sip-control-row">
                 <div class="sip-control-group">
-                    <label>
-                        Monthly SIP Amount: <span id="sipAmountVal" class="sip-slider-val">₹15,000</span>
-                    </label>
-                    <input type="range" id="sipAmountSlider" class="sip-slider" min="2000" max="150000" step="1000" value="15000" oninput="onSipSliderChange()">
-                    <div style="margin-top: 8px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <span style="font-size: 13px; font-weight: 700; color: var(--text-heading);">Monthly SIP Amount:</span>
+                        <div style="display: flex; align-items: center; gap: 4px;">
+                            <button class="sip-inc-btn" onclick="adjustSipAmount(-1000)" title="Decrease by ₹1,000">−1k</button>
+                            <span id="sipAmountVal" class="sip-slider-val" style="min-width: 80px; text-align: center; margin: 0 2px;">₹15,000</span>
+                            <button class="sip-inc-btn" onclick="adjustSipAmount(1000)" title="Increase by ₹1,000">+1k</button>
+                        </div>
+                    </div>
+                    <input type="range" id="sipAmountSlider" class="sip-slider" min="1000" max="200000" step="1000" value="15000" oninput="onSipSliderChange()">
+                    <div style="margin-top: 8px; display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+                        <button class="sip-preset-btn" onclick="adjustSipAmount(-1000)" style="font-weight: 800; color: var(--primary);">−1k</button>
+                        <button class="sip-preset-btn" onclick="adjustSipAmount(1000)" style="font-weight: 800; color: var(--primary);">+1k</button>
                         <button class="sip-preset-btn" onclick="setSipAmount(5000)">₹5k</button>
                         <button class="sip-preset-btn" onclick="setSipAmount(15000)">₹15k</button>
                         <button class="sip-preset-btn" onclick="setSipAmount(25000)">₹25k</button>
@@ -1854,13 +1864,21 @@ class HTMLReportGenerator:
                 </div>
 
                 <div class="sip-control-group">
-                    <label>
-                        Investment Horizon: <span id="sipYearsVal" class="sip-slider-val">10 Years</span>
-                    </label>
-                    <input type="range" id="sipYearsSlider" class="sip-slider" min="1" max="25" step="1" value="10" oninput="onSipSliderChange()">
-                    <div style="margin-top: 8px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <span style="font-size: 13px; font-weight: 700; color: var(--text-heading);">Investment Horizon:</span>
+                        <div style="display: flex; align-items: center; gap: 4px;">
+                            <button class="sip-inc-btn" onclick="adjustSipYears(-1)" title="Decrease by 1 Year">−</button>
+                            <span id="sipYearsVal" class="sip-slider-val" style="min-width: 75px; text-align: center; margin: 0 2px;">10 Years</span>
+                            <button class="sip-inc-btn" onclick="adjustSipYears(1)" title="Increase by 1 Year">+</button>
+                        </div>
+                    </div>
+                    <input type="range" id="sipYearsSlider" class="sip-slider" min="1" max="30" step="1" value="10" oninput="onSipSliderChange()">
+                    <div style="margin-top: 8px; display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+                        <button class="sip-preset-btn" onclick="adjustSipYears(-1)" style="font-weight: 800; color: var(--primary);">−1Y</button>
+                        <button class="sip-preset-btn" onclick="adjustSipYears(1)" style="font-weight: 800; color: var(--primary);">+1Y</button>
                         <button class="sip-preset-btn" onclick="setSipYears(3)">3Y</button>
                         <button class="sip-preset-btn" onclick="setSipYears(5)">5Y</button>
+                        <button class="sip-preset-btn" onclick="setSipYears(8)">8Y</button>
                         <button class="sip-preset-btn" onclick="setSipYears(10)">10Y</button>
                         <button class="sip-preset-btn" onclick="setSipYears(15)">15Y</button>
                         <button class="sip-preset-btn" onclick="setSipYears(20)">20Y</button>
@@ -1868,11 +1886,18 @@ class HTMLReportGenerator:
                 </div>
 
                 <div class="sip-control-group">
-                    <label>
-                        Annual Step-Up (%): <span id="sipStepUpVal" class="sip-slider-val">10% / year</span>
-                    </label>
-                    <input type="range" id="sipStepUpSlider" class="sip-slider" min="0" max="25" step="5" value="10" oninput="onSipSliderChange()">
-                    <div style="margin-top: 8px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <span style="font-size: 13px; font-weight: 700; color: var(--text-heading);">Annual Step-Up (%):</span>
+                        <div style="display: flex; align-items: center; gap: 4px;">
+                            <button class="sip-inc-btn" onclick="adjustSipStepUp(-1)" title="Decrease by 1%">−</button>
+                            <span id="sipStepUpVal" class="sip-slider-val" style="min-width: 85px; text-align: center; margin: 0 2px;">10% / year</span>
+                            <button class="sip-inc-btn" onclick="adjustSipStepUp(1)" title="Increase by 1%">+</button>
+                        </div>
+                    </div>
+                    <input type="range" id="sipStepUpSlider" class="sip-slider" min="0" max="30" step="1" value="10" oninput="onSipSliderChange()">
+                    <div style="margin-top: 8px; display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+                        <button class="sip-preset-btn" onclick="adjustSipStepUp(-1)" style="font-weight: 800; color: var(--primary);">−1%</button>
+                        <button class="sip-preset-btn" onclick="adjustSipStepUp(1)" style="font-weight: 800; color: var(--primary);">+1%</button>
                         <button class="sip-preset-btn" onclick="setSipStepUp(0)">0% (Flat)</button>
                         <button class="sip-preset-btn" onclick="setSipStepUp(5)">+5%</button>
                         <button class="sip-preset-btn" onclick="setSipStepUp(10)">+10%</button>
@@ -4028,6 +4053,33 @@ class HTMLReportGenerator:
 
         function setSipStepUp(step) {{
             document.getElementById('sipStepUpSlider').value = step;
+            onSipSliderChange();
+        }}
+
+        function adjustSipYears(delta) {{
+            const slider = document.getElementById('sipYearsSlider');
+            if (!slider) return;
+            let val = parseInt(slider.value, 10) + delta;
+            val = Math.max(1, Math.min(30, val));
+            slider.value = val;
+            onSipSliderChange();
+        }}
+
+        function adjustSipStepUp(delta) {{
+            const slider = document.getElementById('sipStepUpSlider');
+            if (!slider) return;
+            let val = parseInt(slider.value, 10) + delta;
+            val = Math.max(0, Math.min(30, val));
+            slider.value = val;
+            onSipSliderChange();
+        }}
+
+        function adjustSipAmount(delta) {{
+            const slider = document.getElementById('sipAmountSlider');
+            if (!slider) return;
+            let val = parseInt(slider.value, 10) + delta;
+            val = Math.max(1000, Math.min(200000, val));
+            slider.value = val;
             onSipSliderChange();
         }}
 
