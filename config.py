@@ -63,8 +63,13 @@ TELEGRAM_CONFIG = {
     "CHAT_ID": os.environ.get("STOCK_AI_TELEGRAM_CHAT_ID", "")
 }
 
-# Legal Disclaimer
+# Developer Attribution & Legal Disclaimer
+DEVELOPER_NAME = "Swamy Chouhan"
+DEVELOPER_PHONE = "9000632912"
+DEVELOPER_ATTRIBUTION = "Application Designed and Developed by Swamy Chouhan - 9000632912"
+
 DISCLAIMER = (
+    "Application Designed and Developed by Swamy Chouhan - 9000632912. "
     "DISCLAIMER: This system is an AI-driven educational and research analytics tool. "
     "It does not provide SEBI-registered investment advice or guaranteed return recommendations. "
     "Stock markets involve risk. Always consult a certified financial advisor before trading."

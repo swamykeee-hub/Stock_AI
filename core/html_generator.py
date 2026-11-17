@@ -15,7 +15,10 @@ class HTMLReportGenerator:
         monitored_radar = scan_data.get("monitored_radar", [])
         mutual_funds = scan_data.get("mutual_funds", [])
         picks = scan_data.get("top_bullish_stocks", [])
-        disclaimer = scan_data.get("disclaimer", "")
+        from config import DISCLAIMER, DEVELOPER_ATTRIBUTION
+        disclaimer = scan_data.get("disclaimer") or DISCLAIMER
+        if DEVELOPER_ATTRIBUTION not in disclaimer:
+            disclaimer = f"{DEVELOPER_ATTRIBUTION}. {disclaimer}"
 
         # Dynamic 52-Week High Breakout Leaders
         fifty_two_week_stocks = scan_data.get("fifty_two_week_high_stocks", [])
@@ -531,7 +534,7 @@ class HTMLReportGenerator:
             pct = g.get("change_pct", "+0.0%")
             price = g.get("price", "")
             gainer_pills_html += f"""
-            <button class="mover-pill gainer-pill" onclick="quickSearch('{sym}')" title="Click to search {g.get('name', sym)} ({price})">
+            <button class="mover-pill gainer-pill" onclick="selectMover('{sym}')" title="Click to view {g.get('name', sym)} ({price}) in Top Movers table">
                 <span class="mover-sym">🟢 {sym}</span>
                 <span class="mover-pct">{pct}</span>
             </button>
@@ -543,42 +546,64 @@ class HTMLReportGenerator:
             pct = l.get("change_pct", "-0.0%")
             price = l.get("price", "")
             loser_pills_html += f"""
-            <button class="mover-pill loser-pill" onclick="quickSearch('{sym}')" title="Click to search {l.get('name', sym)} ({price})">
+            <button class="mover-pill loser-pill" onclick="selectMover('{sym}')" title="Click to view {l.get('name', sym)} ({price}) in Top Movers table">
                 <span class="mover-sym">🔴 {sym}</span>
                 <span class="mover-pct">{pct}</span>
             </button>
             """
 
-        # Generate Detailed Movers Table Rows
+        # Generate Detailed Movers Table Rows (Sl No, Stock Name, CMP, % of Gain / Loss)
         gainer_rows = ""
         for idx, g in enumerate(top_gainers, 1):
+            sym = g.get('symbol', '')
+            name = g.get('name', sym)
+            price = g.get('price', '-')
+            pct = g.get('change_pct', '+0.0%')
+            chg = g.get('change_val', '-')
+            high = g.get('high', '-')
+            low = g.get('low', '-')
+            vol = g.get('volume', '-')
             gainer_rows += f"""
-            <tr>
-                <td><b>#{idx}</b></td>
-                <td><b>{g.get('name', g.get('symbol'))}</b> <span class="sub-text">({g.get('symbol')})</span></td>
-                <td><b>{g.get('price')}</b></td>
-                <td style="color: #10b981; font-weight: 800; font-size: 14px;">{g.get('change_pct')}</td>
-                <td style="color: #10b981;">{g.get('change_val')}</td>
-                <td>{g.get('high')}</td>
-                <td>{g.get('low')}</td>
-                <td>{g.get('volume')}</td>
-                <td><button class="chart-btn" onclick="toggleCandleChart('{g.get('symbol')}', this)">📈 Chart</button></td>
+            <tr class="stock-row mover-row" data-symbol="{sym}" data-name="{name}" data-sector="NSE Top Gainer">
+                <td style="text-align: center; font-weight: 700;">#{idx}</td>
+                <td>
+                    <div style="font-weight: 800; font-size: 14px; color: #fff;">{name}</div>
+                    <div style="font-size: 11px; color: #94a3b8; font-family: monospace;">NSE: {sym}</div>
+                </td>
+                <td style="font-weight: 800; font-size: 14px; color: #f8fafc;">{price}</td>
+                <td style="color: #10b981; font-weight: 800; font-size: 14px;">{pct}</td>
+                <td style="color: #10b981; font-weight: 600;">{chg}</td>
+                <td>{high}</td>
+                <td>{low}</td>
+                <td>{vol}</td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('{sym}', this)">📈 Chart</button></td>
             </tr>
             """
 
         loser_rows = ""
         for idx, l in enumerate(top_losers, 1):
+            sym = l.get('symbol', '')
+            name = l.get('name', sym)
+            price = l.get('price', '-')
+            pct = l.get('change_pct', '-0.0%')
+            chg = l.get('change_val', '-')
+            high = l.get('high', '-')
+            low = l.get('low', '-')
+            vol = l.get('volume', '-')
             loser_rows += f"""
-            <tr>
-                <td><b>#{idx}</b></td>
-                <td><b>{l.get('name', l.get('symbol'))}</b> <span class="sub-text">({l.get('symbol')})</span></td>
-                <td><b>{l.get('price')}</b></td>
-                <td style="color: #ef4444; font-weight: 800; font-size: 14px;">{l.get('change_pct')}</td>
-                <td style="color: #ef4444;">{l.get('change_val')}</td>
-                <td>{l.get('high')}</td>
-                <td>{l.get('low')}</td>
-                <td>{l.get('volume')}</td>
-                <td><button class="chart-btn" onclick="toggleCandleChart('{l.get('symbol')}', this)">📈 Chart</button></td>
+            <tr class="stock-row mover-row" data-symbol="{sym}" data-name="{name}" data-sector="NSE Top Loser">
+                <td style="text-align: center; font-weight: 700;">#{idx}</td>
+                <td>
+                    <div style="font-weight: 800; font-size: 14px; color: #fff;">{name}</div>
+                    <div style="font-size: 11px; color: #94a3b8; font-family: monospace;">NSE: {sym}</div>
+                </td>
+                <td style="font-weight: 800; font-size: 14px; color: #f8fafc;">{price}</td>
+                <td style="color: #ef4444; font-weight: 800; font-size: 14px;">{pct}</td>
+                <td style="color: #ef4444; font-weight: 600;">{chg}</td>
+                <td>{high}</td>
+                <td>{low}</td>
+                <td>{vol}</td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('{sym}', this)">📈 Chart</button></td>
             </tr>
             """
 
@@ -1634,6 +1659,11 @@ class HTMLReportGenerator:
         <div class="header-title">
             <h1>🇮🇳 Indian Stock AI &bull; Senior Fund Manager &amp; Momentum Intelligence</h1>
             <p>Multi-Timeframe Trend Screener (3M/6M/1Y/3Y), Monitored Radar, 360&deg; Stock Audit &amp; Mutual Fund Advisory</p>
+            <div style="margin-top: 6px; font-size: 13px; font-weight: 700; color: #38bdf8; display: flex; align-items: center; gap: 8px;">
+                <span>👨‍💻 Application Designed and Developed by <b>Swamy Chouhan</b></span>
+                <span style="opacity: 0.5;">•</span>
+                <span>📞 <b>9000632912</b></span>
+            </div>
         </div>
         <div class="header-actions">
             <button id="refreshBtn" class="action-btn refresh-btn" onclick="triggerLiveRefresh()" title="Click to fetch latest live quotes & update all market feeds">
@@ -1669,13 +1699,13 @@ class HTMLReportGenerator:
     <!-- Pinned Market Movers: Top Gainers & Losers (Clickable Pills) -->
     <div class="market-movers-ribbon">
         <div class="movers-section">
-            <span class="movers-label gainer-label">🔥 Top Gainers (NSE):</span>
+            <span class="movers-label gainer-label" onclick="switchView('movers', document.getElementById('tabBtnMovers'))" style="cursor: pointer;" title="Click to view full Top Gainers table">🔥 Top Gainers (NSE):</span>
             <div class="movers-pills-wrap">
                 {gainer_pills_html}
             </div>
         </div>
         <div class="movers-section">
-            <span class="movers-label loser-label">🧊 Top Losers (NSE):</span>
+            <span class="movers-label loser-label" onclick="switchView('movers', document.getElementById('tabBtnMovers'))" style="cursor: pointer;" title="Click to view full Top Losers table">🧊 Top Losers (NSE):</span>
             <div class="movers-pills-wrap">
                 {loser_pills_html}
             </div>
@@ -1696,7 +1726,7 @@ class HTMLReportGenerator:
             <button class="tab-btn" onclick="switchView('institutional', this)">🏛 Smart Money &amp; FII/DII</button>
             <button class="tab-btn" onclick="switchView('corporate_actions', this)">📅 Earnings &amp; Dividends</button>
             <button class="tab-btn" onclick="switchView('scorecard', this)">🎯 AI Win-Rate Scorecard</button>
-            <button class="tab-btn" onclick="switchView('movers', this)">⚡ Top Movers (Gainers &amp; Losers)</button>
+            <button id="tabBtnMovers" class="tab-btn" onclick="switchView('movers', this)">⚡ Top Movers (Gainers &amp; Losers)</button>
         </div>
         <div class="search-actions-box">
             <select id="sectorFilter" class="filter-select" onchange="filterStocks()" title="Filter stocks by sector">
@@ -2267,11 +2297,11 @@ class HTMLReportGenerator:
                 <table>
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>Stock / Company</th>
-                            <th>LTP</th>
-                            <th>Gain %</th>
-                            <th>Change (₹)</th>
+                            <th style="width: 60px; text-align: center;">Sl No</th>
+                            <th>Stock Name</th>
+                            <th>CMP</th>
+                            <th>% of Gain</th>
+                            <th>Day Change (₹)</th>
                             <th>High</th>
                             <th>Low</th>
                             <th>Volume</th>
@@ -2295,11 +2325,11 @@ class HTMLReportGenerator:
                 <table>
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>Stock / Company</th>
-                            <th>LTP</th>
-                            <th>Loss %</th>
-                            <th>Change (₹)</th>
+                            <th style="width: 60px; text-align: center;">Sl No</th>
+                            <th>Stock Name</th>
+                            <th>CMP</th>
+                            <th>% of Loss</th>
+                            <th>Day Change (₹)</th>
                             <th>High</th>
                             <th>Low</th>
                             <th>Volume</th>
@@ -2330,6 +2360,7 @@ class HTMLReportGenerator:
 
 
     <div class="footer">
+        <p style="font-size: 14px; font-weight: 800; color: #38bdf8; margin-bottom: 8px;">🚀 Application Designed and Developed by <b>Swamy Chouhan</b> • 📞 <b>9000632912</b></p>
         <p>{disclaimer}</p>
         <p style="margin-top: 6px;">Report generated by Indian Stock AI Agent (Senior Fund Manager Intelligence) &bull; Auto-syncs daily at 08:45 AM and 06:00 PM</p>
     </div>
@@ -2349,6 +2380,30 @@ class HTMLReportGenerator:
                 renderPortfolio();
                 syncAllPortfolioQuotes();
             }}
+        }}
+
+        function selectMover(sym) {{
+            const btn = document.getElementById('tabBtnMovers');
+            switchView('movers', btn);
+            const target = document.getElementById('view-movers');
+            if (target) {{
+                target.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+            }}
+            setTimeout(function() {{
+                document.querySelectorAll('.mover-row').forEach(function(r) {{
+                    if (r.getAttribute('data-symbol') === sym) {{
+                        r.scrollIntoView({{ behavior: 'smooth', block: 'center' }});
+                        r.style.transition = 'all 0.3s ease';
+                        r.style.background = 'rgba(56, 189, 248, 0.28)';
+                        r.style.outline = '2px solid #38bdf8';
+                        setTimeout(function() {{
+                            r.style.transition = 'all 1.5s ease-out';
+                            r.style.background = '';
+                            r.style.outline = '';
+                        }}, 3500);
+                    }}
+                }});
+            }}, 120);
         }}
 
         function quickSearch(sym) {{
