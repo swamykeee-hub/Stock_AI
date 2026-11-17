@@ -23,6 +23,10 @@ from core.ipo_analyst import IPOAnalyst
 from core.stock_profile_manager import StockProfileManager
 from core.portfolio_health_auditor import PortfolioHealthAuditor
 from core.market_regime_analyst import MarketRegimeAnalyst
+from core.institutional_flow_analyst import InstitutionalFlowAnalyst
+from core.corporate_actions_calendar import CorporateActionsCalendar
+from core.ai_performance_scorecard import AIPerformanceScorecard
+from core.telegram_alert_bot import TelegramAlertBot
 
 def is_market_hours() -> bool:
     """Checks if current time is within Indian market trading hours (Mon-Fri 09:00 - 15:45 IST)."""
@@ -137,6 +141,24 @@ def refresh_all_live_data(mode: str = "quick") -> dict:
         ipo_data = IPOAnalyst().fetch_live_ipos()
     except Exception:
         ipo_data = []
+
+    # Load Institutional Flow & Derivatives
+    try:
+        scan_payload["institutional_flow"] = InstitutionalFlowAnalyst().get_institutional_flow(force_refresh=False)
+    except Exception:
+        pass
+
+    # Load Corporate Actions & Earnings Calendar
+    try:
+        scan_payload["corporate_actions"] = CorporateActionsCalendar().get_calendar_events(force_refresh=False)
+    except Exception:
+        pass
+
+    # Load AI Performance Scorecard
+    try:
+        scan_payload["performance_scorecard"] = AIPerformanceScorecard().get_performance_metrics()
+    except Exception:
+        pass
 
     # Regenerate dashboard.html, index.html, and Desktop report
     html_destinations = [
@@ -303,6 +325,53 @@ class SyncRequestHandler(BaseHTTPRequestHandler):
             except Exception as e:
                 self._set_cors_headers(500)
                 self.wfile.write(json.dumps({"status": "error", "error": str(e)}).encode("utf-8"))
+            return
+
+        if path == "/api/institutional_flow":
+            try:
+                analyst = InstitutionalFlowAnalyst()
+                data = analyst.get_institutional_flow(force_refresh=params.get("refresh", ["false"])[0] == "true")
+                self._set_cors_headers(200)
+                self.wfile.write(json.dumps(data).encode("utf-8"))
+            except Exception as e:
+                self._set_cors_headers(500)
+                self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
+            return
+
+        if path == "/api/corporate_actions":
+            try:
+                cal = CorporateActionsCalendar()
+                data = cal.get_calendar_events(force_refresh=params.get("refresh", ["false"])[0] == "true")
+                self._set_cors_headers(200)
+                self.wfile.write(json.dumps(data).encode("utf-8"))
+            except Exception as e:
+                self._set_cors_headers(500)
+                self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
+            return
+
+        if path == "/api/performance_scorecard":
+            try:
+                scorecard = AIPerformanceScorecard()
+                data = scorecard.get_performance_metrics()
+                self._set_cors_headers(200)
+                self.wfile.write(json.dumps(data).encode("utf-8"))
+            except Exception as e:
+                self._set_cors_headers(500)
+                self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
+            return
+
+        if path == "/api/telegram_status":
+            try:
+                bot = TelegramAlertBot()
+                self._set_cors_headers(200)
+                self.wfile.write(json.dumps({
+                    "enabled": bot.enabled,
+                    "configured": bot.is_configured(),
+                    "chat_id_set": bool(bot.chat_id)
+                }).encode("utf-8"))
+            except Exception as e:
+                self._set_cors_headers(500)
+                self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
             return
 
         self._set_cors_headers(404)

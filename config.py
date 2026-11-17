@@ -50,7 +50,17 @@ SCHEDULE_CONFIG = {
     "MORNING_TIME": "08:45",        # Daily morning scan before market open
     "EVENING_TIME": "18:00",        # Daily evening scan at 6:00 PM post-market
     "DAILY_SCAN_FILE": REPORTS_DIR / "latest_daily_scan.json",
-    "DAILY_IPO_FILE": REPORTS_DIR / "latest_ipos.json"
+    "DAILY_IPO_FILE": REPORTS_DIR / "latest_ipos.json",
+    "DAILY_INST_FLOW_FILE": CACHE_DIR / "institutional_flow.json",
+    "DAILY_CORP_ACTIONS_FILE": CACHE_DIR / "corporate_actions.json",
+    "PERFORMANCE_SCORECARD_FILE": CACHE_DIR / "performance_scorecard.json"
+}
+
+# Telegram Alert Configuration (Free Instant Phone Notifications)
+TELEGRAM_CONFIG = {
+    "ENABLED": os.environ.get("STOCK_AI_TELEGRAM_ENABLED", "false").lower() in ("true", "1", "yes"),
+    "BOT_TOKEN": os.environ.get("STOCK_AI_TELEGRAM_TOKEN", ""),
+    "CHAT_ID": os.environ.get("STOCK_AI_TELEGRAM_CHAT_ID", "")
 }
 
 # Legal Disclaimer

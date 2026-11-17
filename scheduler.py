@@ -14,6 +14,10 @@ from core.mutual_fund_analyst import MutualFundAnalyst
 from core.ipo_analyst import IPOAnalyst
 from core.html_generator import HTMLReportGenerator
 from core.market_regime_analyst import MarketRegimeAnalyst
+from core.institutional_flow_analyst import InstitutionalFlowAnalyst
+from core.corporate_actions_calendar import CorporateActionsCalendar
+from core.ai_performance_scorecard import AIPerformanceScorecard
+from core.telegram_alert_bot import TelegramAlertBot
 
 class DailyAutomator:
     """Manages autonomous daily scans, IPO updates, momentum rankings, and market intelligence generation."""
@@ -27,6 +31,10 @@ class DailyAutomator:
         self.mf_analyst = MutualFundAnalyst()
         self.ipo_analyst = IPOAnalyst()
         self.regime_analyst = MarketRegimeAnalyst()
+        self.inst_analyst = InstitutionalFlowAnalyst()
+        self.corp_calendar = CorporateActionsCalendar()
+        self.scorecard = AIPerformanceScorecard()
+        self.telegram_bot = TelegramAlertBot()
 
     def run_daily_sync(self):
         """Executes full daily automation pipeline."""
@@ -88,6 +96,33 @@ class DailyAutomator:
         ipo_data = self.ipo_analyst.fetch_live_ipos()
         print(f"  -> Tracked {len(ipo_data)} active/upcoming IPOs.")
 
+        # 9b. Institutional Smart Money & Nifty PCR Derivatives
+        print("  -> Syncing FII/DII Institutional Flows & Nifty PCR...")
+        try:
+            inst_flow = self.inst_analyst.get_institutional_flow(force_refresh=True)
+            print(f"  -> Smart Money: PCR {inst_flow.get('derivatives', {}).get('pcr')} | {inst_flow.get('sentiment_badge')}")
+        except Exception as e:
+            print(f"  -> Inst Flow notice: {e}")
+            inst_flow = {}
+
+        # 9c. Corporate Actions & Earnings Calendar
+        print("  -> Syncing Corporate Actions, Dividends & Earnings Calendar...")
+        try:
+            corp_actions = self.corp_calendar.get_calendar_events(force_refresh=True)
+            print(f"  -> Found {len(corp_actions.get('dividends', []))} dividends & {len(corp_actions.get('earnings', []))} earnings dates.")
+        except Exception as e:
+            print(f"  -> Corp Actions notice: {e}")
+            corp_actions = {}
+
+        # 9d. AI Recommendation Performance Scorecard
+        print("  -> Computing AI Win-Rate & Track Record Scorecard...")
+        try:
+            scorecard_data = self.scorecard.get_performance_metrics()
+            print(f"  -> AI Model Win-Rate: {scorecard_data.get('win_rate_pct')}% (Profit Factor: {scorecard_data.get('profit_factor')})")
+        except Exception as e:
+            print(f"  -> Scorecard notice: {e}")
+            scorecard_data = {}
+
         # 10. Save Structured Scan Output
         scan_payload = {
             "timestamp": now_str,
@@ -99,6 +134,9 @@ class DailyAutomator:
             "top_bullish_stocks": bullish_picks,
             "monitored_radar": monitored_radar,
             "mutual_funds": mutual_funds,
+            "institutional_flow": inst_flow,
+            "corporate_actions": corp_actions,
+            "performance_scorecard": scorecard_data,
             "total_screened": 35,
             "disclaimer": config.DISCLAIMER
         }
@@ -106,11 +144,11 @@ class DailyAutomator:
         with open(config.SCHEDULE_CONFIG["DAILY_SCAN_FILE"], "w", encoding="utf-8") as f:
             json.dump(scan_payload, f, indent=2)
 
-        # 9. Generate Markdown Daily Briefing Report
+        # 11. Generate Markdown Daily Briefing Report
         report_file = config.REPORTS_DIR / f"daily_briefing_{date_stamp}.md"
         self._generate_briefing_markdown(report_file, now_str, indices, macro_snap, momentum_stocks, bullish_picks, monitored_radar, mutual_funds, ipo_data)
 
-        # 10. Generate Standalone Interactive HTML Dashboards
+        # 12. Generate Standalone Interactive HTML Dashboards
         html_destinations = [
             config.BASE_DIR / "dashboard.html",
             config.BASE_DIR / "index.html",
@@ -119,7 +157,17 @@ class DailyAutomator:
         HTMLReportGenerator.generate(scan_payload, ipo_data, html_destinations)
         print(f"  -> Generated standalone HTML report at {html_destinations[0]} and Desktop.")
 
-        # 11. Auto-push updated web application to GitHub Pages
+        # 13. Dispatch Automated Telegram Alerts (Pre-Market / Evening Wrap)
+        try:
+            current_hour = datetime.now().hour
+            if current_hour < 12:
+                self.telegram_bot.send_pre_market_pulse(indices, macro_snap, market_regime, fifty_two_week_stocks, ipo_data, inst_flow)
+            else:
+                self.telegram_bot.send_evening_wrap(indices, momentum_stocks, bullish_picks)
+        except Exception as e:
+            print(f"  -> Telegram dispatch notice: {e}")
+
+        # 14. Auto-push updated web application to GitHub Pages
         try:
             import subprocess
             subprocess.run(["git", "add", "index.html", "dashboard.html", "data/"], cwd=str(config.BASE_DIR), capture_output=True, timeout=15)
