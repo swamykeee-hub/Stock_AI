@@ -527,31 +527,6 @@ class HTMLReportGenerator:
         top_gainers = movers_data.get("top_gainers", [])
         top_losers = movers_data.get("top_losers", [])
 
-        # Generate Clickable Pill Badges
-        gainer_pills_html = ""
-        for g in top_gainers[:10]:
-            sym = g.get("symbol", "")
-            pct = g.get("change_pct", "+0.0%")
-            price = g.get("price", "")
-            gainer_pills_html += f"""
-            <button class="mover-pill gainer-pill" onclick="selectMover('{sym}')" title="Click to view {g.get('name', sym)} ({price}) in Top Movers table">
-                <span class="mover-sym">🟢 {sym}</span>
-                <span class="mover-pct">{pct}</span>
-            </button>
-            """
-
-        loser_pills_html = ""
-        for l in top_losers[:10]:
-            sym = l.get("symbol", "")
-            pct = l.get("change_pct", "-0.0%")
-            price = l.get("price", "")
-            loser_pills_html += f"""
-            <button class="mover-pill loser-pill" onclick="selectMover('{sym}')" title="Click to view {l.get('name', sym)} ({price}) in Top Movers table">
-                <span class="mover-sym">🔴 {sym}</span>
-                <span class="mover-pct">{pct}</span>
-            </button>
-            """
-
         # Generate Detailed Movers Table Rows (Sl No, Stock Name, CMP, % of Gain / Loss)
         gainer_rows = ""
         for idx, g in enumerate(top_gainers, 1):
@@ -565,17 +540,17 @@ class HTMLReportGenerator:
             vol = g.get('volume', '-')
             gainer_rows += f"""
             <tr class="stock-row mover-row" data-symbol="{sym}" data-name="{name}" data-sector="NSE Top Gainer">
-                <td style="text-align: center; font-weight: 700;">#{idx}</td>
+                <td style="text-align: center; font-weight: 800; font-size: 14px; color: var(--text-muted);">#{idx}</td>
                 <td>
-                    <div style="font-weight: 800; font-size: 14px; color: #fff;">{name}</div>
-                    <div style="font-size: 11px; color: #94a3b8; font-family: monospace;">NSE: {sym}</div>
+                    <div style="font-weight: 800; font-size: 15px; color: var(--text-heading); letter-spacing: -0.2px;">{name}</div>
+                    <span style="display: inline-block; margin-top: 3px; font-size: 11px; font-weight: 700; color: #0284c7; background: rgba(2, 132, 199, 0.12); padding: 2px 7px; border-radius: 4px; font-family: monospace;">NSE: {sym}</span>
                 </td>
-                <td style="font-weight: 800; font-size: 14px; color: #f8fafc;">{price}</td>
+                <td style="font-weight: 800; font-size: 15px; color: var(--text-heading);">{price}</td>
                 <td style="color: #10b981; font-weight: 800; font-size: 14px;">{pct}</td>
-                <td style="color: #10b981; font-weight: 600;">{chg}</td>
-                <td>{high}</td>
-                <td>{low}</td>
-                <td>{vol}</td>
+                <td style="color: #10b981; font-weight: 700;">{chg}</td>
+                <td style="font-weight: 600; color: var(--text-main);">{high}</td>
+                <td style="font-weight: 600; color: var(--text-main);">{low}</td>
+                <td style="font-weight: 600; color: var(--text-main);">{vol}</td>
                 <td><button class="chart-btn" onclick="toggleCandleChart('{sym}', this)">📈 Chart</button></td>
             </tr>
             """
@@ -592,17 +567,17 @@ class HTMLReportGenerator:
             vol = l.get('volume', '-')
             loser_rows += f"""
             <tr class="stock-row mover-row" data-symbol="{sym}" data-name="{name}" data-sector="NSE Top Loser">
-                <td style="text-align: center; font-weight: 700;">#{idx}</td>
+                <td style="text-align: center; font-weight: 800; font-size: 14px; color: var(--text-muted);">#{idx}</td>
                 <td>
-                    <div style="font-weight: 800; font-size: 14px; color: #fff;">{name}</div>
-                    <div style="font-size: 11px; color: #94a3b8; font-family: monospace;">NSE: {sym}</div>
+                    <div style="font-weight: 800; font-size: 15px; color: var(--text-heading); letter-spacing: -0.2px;">{name}</div>
+                    <span style="display: inline-block; margin-top: 3px; font-size: 11px; font-weight: 700; color: #ef4444; background: rgba(239, 68, 68, 0.12); padding: 2px 7px; border-radius: 4px; font-family: monospace;">NSE: {sym}</span>
                 </td>
-                <td style="font-weight: 800; font-size: 14px; color: #f8fafc;">{price}</td>
+                <td style="font-weight: 800; font-size: 15px; color: var(--text-heading);">{price}</td>
                 <td style="color: #ef4444; font-weight: 800; font-size: 14px;">{pct}</td>
-                <td style="color: #ef4444; font-weight: 600;">{chg}</td>
-                <td>{high}</td>
-                <td>{low}</td>
-                <td>{vol}</td>
+                <td style="color: #ef4444; font-weight: 700;">{chg}</td>
+                <td style="font-weight: 600; color: var(--text-main);">{high}</td>
+                <td style="font-weight: 600; color: var(--text-main);">{low}</td>
+                <td style="font-weight: 600; color: var(--text-main);">{vol}</td>
                 <td><button class="chart-btn" onclick="toggleCandleChart('{sym}', this)">📈 Chart</button></td>
             </tr>
             """
@@ -1694,24 +1669,6 @@ class HTMLReportGenerator:
     <!-- Benchmark Indices & Global Commodities -->
     <div class="indices-grid">
         {indices_html}
-    </div>
-
-    <!-- Pinned Market Movers: Top Gainers & Losers (Clickable Pills) -->
-    <div class="market-movers-ribbon">
-        <div class="movers-section">
-            <span class="movers-label gainer-label" onclick="switchView('movers', document.getElementById('tabBtnMovers'))" style="cursor: pointer;" title="Click to view full Top Gainers table">🔥 Top Gainers (NSE):</span>
-            <div class="movers-pills-wrap">
-                {gainer_pills_html}
-            </div>
-            <button class="tab-btn" onclick="switchView('movers', document.getElementById('tabBtnMovers'))" style="margin-left: 6px; padding: 4px 10px; font-size: 11px; background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; color: #10b981; border-radius: 6px; cursor: pointer; white-space: nowrap; font-weight: 700;" title="View all Top Gainers in tabular format">📊 Gainers Table ↗</button>
-        </div>
-        <div class="movers-section">
-            <span class="movers-label loser-label" onclick="switchView('movers', document.getElementById('tabBtnMovers'))" style="cursor: pointer;" title="Click to view full Top Losers table">🧊 Top Losers (NSE):</span>
-            <div class="movers-pills-wrap">
-                {loser_pills_html}
-            </div>
-            <button class="tab-btn" onclick="switchView('movers', document.getElementById('tabBtnMovers'))" style="margin-left: 6px; padding: 4px 10px; font-size: 11px; background: rgba(239, 68, 68, 0.15); border: 1px solid #ef4444; color: #ef4444; border-radius: 6px; cursor: pointer; white-space: nowrap; font-weight: 700;" title="View all Top Losers in tabular format">📊 Losers Table ↗</button>
-        </div>
     </div>
 
     <!-- Navigation & Search Controls -->
