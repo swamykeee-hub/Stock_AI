@@ -1703,12 +1703,14 @@ class HTMLReportGenerator:
             <div class="movers-pills-wrap">
                 {gainer_pills_html}
             </div>
+            <button class="tab-btn" onclick="switchView('movers', document.getElementById('tabBtnMovers'))" style="margin-left: 6px; padding: 4px 10px; font-size: 11px; background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; color: #10b981; border-radius: 6px; cursor: pointer; white-space: nowrap; font-weight: 700;" title="View all Top Gainers in tabular format">📊 Gainers Table ↗</button>
         </div>
         <div class="movers-section">
             <span class="movers-label loser-label" onclick="switchView('movers', document.getElementById('tabBtnMovers'))" style="cursor: pointer;" title="Click to view full Top Losers table">🧊 Top Losers (NSE):</span>
             <div class="movers-pills-wrap">
                 {loser_pills_html}
             </div>
+            <button class="tab-btn" onclick="switchView('movers', document.getElementById('tabBtnMovers'))" style="margin-left: 6px; padding: 4px 10px; font-size: 11px; background: rgba(239, 68, 68, 0.15); border: 1px solid #ef4444; color: #ef4444; border-radius: 6px; cursor: pointer; white-space: nowrap; font-weight: 700;" title="View all Top Losers in tabular format">📊 Losers Table ↗</button>
         </div>
     </div>
 
@@ -1716,6 +1718,7 @@ class HTMLReportGenerator:
     <div class="controls-bar">
         <div class="tabs">
             <button class="tab-btn active" onclick="switchView('momentum', this)">🏆 Super-Trend Leaders (3M/1Y/3Y)</button>
+            <button id="tabBtnMovers" class="tab-btn" onclick="switchView('movers', this)" style="border-color: #f59e0b; color: #f59e0b; font-weight: 700;">⚡ Top Movers (Gainers &amp; Losers)</button>
             <button class="tab-btn" onclick="switchView('fifty_two_week', this)">🚀 52-Week High Leaders</button>
             <button class="tab-btn" onclick="switchView('radar', this)">🎯 AI Fund Manager Radar</button>
             <button class="tab-btn" onclick="switchView('mutualfunds', this)">💼 Mutual Fund Advisory</button>
@@ -1726,7 +1729,6 @@ class HTMLReportGenerator:
             <button class="tab-btn" onclick="switchView('institutional', this)">🏛 Smart Money &amp; FII/DII</button>
             <button class="tab-btn" onclick="switchView('corporate_actions', this)">📅 Earnings &amp; Dividends</button>
             <button class="tab-btn" onclick="switchView('scorecard', this)">🎯 AI Win-Rate Scorecard</button>
-            <button id="tabBtnMovers" class="tab-btn" onclick="switchView('movers', this)">⚡ Top Movers (Gainers &amp; Losers)</button>
         </div>
         <div class="search-actions-box">
             <select id="sectorFilter" class="filter-select" onchange="filterStocks()" title="Filter stocks by sector">
@@ -2383,6 +2385,13 @@ class HTMLReportGenerator:
         }}
 
         function selectMover(sym) {{
+            const input = document.getElementById('searchInput');
+            if (input) input.value = '';
+            const unlistedBox = document.getElementById('unlistedStockBox');
+            if (unlistedBox) unlistedBox.style.display = 'none';
+            document.querySelectorAll('.stock-row').forEach(function(r) {{
+                r.style.display = '';
+            }});
             const btn = document.getElementById('tabBtnMovers');
             switchView('movers', btn);
             const target = document.getElementById('view-movers');
@@ -2394,16 +2403,17 @@ class HTMLReportGenerator:
                     if (r.getAttribute('data-symbol') === sym) {{
                         r.scrollIntoView({{ behavior: 'smooth', block: 'center' }});
                         r.style.transition = 'all 0.3s ease';
-                        r.style.background = 'rgba(56, 189, 248, 0.28)';
-                        r.style.outline = '2px solid #38bdf8';
+                        r.style.background = 'rgba(56, 189, 248, 0.35)';
+                        r.style.outline = '3px solid #38bdf8';
+                        r.style.borderRadius = '4px';
                         setTimeout(function() {{
                             r.style.transition = 'all 1.5s ease-out';
                             r.style.background = '';
                             r.style.outline = '';
-                        }}, 3500);
+                        }}, 4000);
                     }}
                 }});
-            }}, 120);
+            }}, 150);
         }}
 
         function quickSearch(sym) {{
