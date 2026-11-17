@@ -342,20 +342,52 @@ class HTMLReportGenerator:
         ipo_rows = ""
         for ipo in ipo_list:
             gmp_pct = ipo.get("gmp_pct", 0)
-            gmp_color = "#10b981" if gmp_pct >= 20.0 else "#eab308"
+            gmp_inr = str(ipo.get("gmp_inr", "—"))
+            gmp_sign = "+" if gmp_pct > 0 else ("-" if gmp_pct < 0 else "")
+            gmp_color = "#10b981" if gmp_pct >= 20.0 else ("#eab308" if gmp_pct > 0 else "#ef4444")
+            gmp_text = f"{gmp_sign}{abs(gmp_pct)}% ({gmp_inr})" if gmp_pct != 0 else (f"{gmp_inr} (0.0%)" if gmp_inr != "—" else "—")
+
+            # Clean Lot Size display
+            raw_lot = str(ipo.get("lot_size", "TBA")).replace("shares", "").strip()
+            lot_str = f"{raw_lot} shares" if raw_lot.isdigit() else raw_lot
+
+            # Clean Issue Size display
+            raw_sz = str(ipo.get("issue_size_cr", "TBA")).replace("Cr", "").replace("₹", "").strip()
+            size_str = f"₹{raw_sz} Cr" if raw_sz.replace(".", "").isdigit() else raw_sz
+
+            # Status pill styling
+            st_lower = str(ipo.get("status", "")).lower()
+            if "upcoming" in st_lower or "open" in st_lower:
+                st_color = "#f59e0b"
+            elif "listed" in st_lower:
+                st_color = "#38bdf8"
+            else:
+                st_color = "#10b981"
+
+            # Verdict badge color
+            v_text = str(ipo.get("verdict", "APPLY"))
+            if any(k in v_text.upper() for k in ["STRONG APPLY", "MULTIBAGGER"]):
+                v_bg = "#16a34a"
+            elif any(k in v_text.upper() for k in ["APPLY", "POSITIVE"]):
+                v_bg = "#0284c7"
+            elif any(k in v_text.upper() for k in ["DISCOUNT", "AVOID"]):
+                v_bg = "#dc2626"
+            else:
+                v_bg = "#d97706"
+
             ipo_rows += f"""
             <tr>
                 <td>
                     <b>{ipo['name']}</b>
                     <div class="sub-text">{ipo['sector']} &bull; {ipo['category']}</div>
                 </td>
-                <td><span class="status-pill">{ipo['status']}</span></td>
-                <td>{ipo['price_band']}</td>
-                <td>{ipo['lot_size']} shares</td>
-                <td>₹{ipo['issue_size_cr']} Cr</td>
+                <td><span class="status-pill" style="border-color: {st_color}; color: {st_color};">{ipo['status']}</span></td>
+                <td><b>{ipo['price_band']}</b></td>
+                <td>{lot_str}</td>
+                <td>{size_str}</td>
                 <td><b>{ipo['subscription_total']}</b></td>
-                <td style="color: {gmp_color}; font-weight: 700;">+{gmp_pct}% ({ipo['gmp_inr']})</td>
-                <td><span class="badge" style="background: #0284c7;">{ipo['verdict']}</span></td>
+                <td style="color: {gmp_color}; font-weight: 700;">{gmp_text}</td>
+                <td><span class="badge" style="background: {v_bg};">{ipo['verdict']}</span></td>
             </tr>
             """
 

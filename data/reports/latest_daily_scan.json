@@ -1,75 +1,75 @@
 {
-  "timestamp": "2026-11-17 09:15:02",
+  "timestamp": "2026-11-17 15:26:01",
   "indices": {
     "NIFTY 50": {
-      "value": 25286.55,
-      "change": -4.55,
-      "percent": -0.02
+      "value": 25413.0,
+      "change": 121.9,
+      "percent": 0.48
     },
     "SENSEX": {
-      "value": 82104.79,
-      "change": 512.34,
-      "percent": 0.63
+      "value": 82613.91,
+      "change": 509.12,
+      "percent": 0.62
     },
     "BANK NIFTY": {
-      "value": 61559.95,
-      "change": 525.85,
-      "percent": 0.86
+      "value": 62322.85,
+      "change": 746.95,
+      "percent": 1.21
     },
     "INDIA VIX": {
-      "value": 14.04,
-      "change": -1.64,
-      "percent": -10.48
+      "value": 15.52,
+      "change": -0.16,
+      "percent": -1.04
     },
     "NIFTY 100": {
-      "value": 26163.6,
-      "change": -19.7,
-      "percent": -0.07
+      "value": 26298.45,
+      "change": 115.15,
+      "percent": 0.44
     },
     "NIFTY 200": {
-      "value": 14342.55,
-      "change": -12.45,
-      "percent": -0.09
+      "value": 14412.6,
+      "change": 57.6,
+      "percent": 0.4
     },
     "NIFTY IT": {
-      "value": 31858.15,
-      "change": -82.9,
-      "percent": -0.26
+      "value": 31666.9,
+      "change": -274.15,
+      "percent": -0.86
     },
     "NIFTY PHARMA": {
-      "value": 28058.75,
-      "change": -39.65,
-      "percent": -0.14
+      "value": 28169.8,
+      "change": 71.4,
+      "percent": 0.25
     },
     "NIFTY FMCG": {
-      "value": 47772.6,
-      "change": 64.5,
-      "percent": 0.14
+      "value": 47579.65,
+      "change": -128.45,
+      "percent": -0.27
     },
     "NIFTY AUTO": {
-      "value": 27747.8,
-      "change": 177.55,
-      "percent": 0.64
+      "value": 27768.1,
+      "change": 197.85,
+      "percent": 0.72
     },
     "NIFTY METAL": {
-      "value": 12345.35,
-      "change": -113.0,
-      "percent": -0.91
+      "value": 12542.45,
+      "change": 84.1,
+      "percent": 0.68
     },
     "NIFTY PRIVATE BANK": {
-      "value": 30204.35,
-      "change": -38.5,
-      "percent": -0.13
+      "value": 30551.6,
+      "change": 308.75,
+      "percent": 1.02
     },
     "NIFTY FIN-SERVICES": {
-      "value": 29999.45,
-      "change": -17.7,
-      "percent": -0.06
+      "value": 30186.3,
+      "change": 169.15,
+      "percent": 0.56
     },
     "NIFTY AI CATALYSTS": {
-      "value": 1003.39,
-      "change": -2.69,
-      "percent": -0.27
+      "value": 999.15,
+      "change": -6.93,
+      "percent": -0.69
     }
   },
   "macro_snapshot": {
@@ -90,31 +90,31 @@
         "change_pct": -1.41
       },
       "Nikkei 225": {
-        "price": 59146.93,
-        "change": -515.09,
-        "change_pct": -0.87
+        "price": 58860.43,
+        "change": -801.59,
+        "change_pct": -1.34
       },
       "FTSE 100": {
-        "price": 10881.55,
-        "change": -21.01,
-        "change_pct": -0.19
+        "price": 10788.14,
+        "change": -93.41,
+        "change_pct": -0.86
       },
       "DAX": {
-        "price": 26598.64,
-        "change": -151.31,
-        "change_pct": -0.57
+        "price": 26338.6,
+        "change": -260.04,
+        "change_pct": -0.98
       },
       "Hang Seng": {
-        "price": 23594.56,
-        "change": -159.28,
-        "change_pct": -0.67
+        "price": 23508.17,
+        "change": -245.67,
+        "change_pct": -1.03
       }
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 91.72,
-        "change": -0.72,
-        "change_pct": -0.78
+        "price": 92.62,
+        "change": 0.18,
+        "change_pct": 0.2
       },
       "US 10-Yr Yield (%)": {
         "price": 5.12,
@@ -122,26 +122,26 @@
         "change_pct": -0.64
       },
       "US Dollar Index (DXY)": {
-        "price": 103.51,
-        "change": -0.04,
-        "change_pct": -0.04
+        "price": 103.5,
+        "change": -0.05,
+        "change_pct": -0.05
       },
       "Gold ($/oz)": {
-        "price": 3877.7,
-        "change": 24.7,
-        "change_pct": 0.64
+        "price": 3868.4,
+        "change": 15.4,
+        "change_pct": 0.4
       },
       "USD / INR": {
-        "price": 93.66,
-        "change": -0.25,
-        "change_pct": -0.27
+        "price": 93.49,
+        "change": -0.42,
+        "change_pct": -0.45
       }
     },
     "fund_manager_takeaways": [
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 5.12%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-17 09:15:12"
+    "timestamp": "2026-11-17 15:26:15"
   },
   "market_regime": {
     "nifty_cmp": 25291.15,
@@ -212,7 +212,7 @@
       "name": "Laurus Labs Ltd.",
       "sector": "Healthcare / CDMO",
       "market_cap_type": "Mid Cap",
-      "cmp": 2234.7,
+      "cmp": 2345.0,
       "ret_1m": -5.7,
       "ret_3m": 21.5,
       "ret_6m": 54.5,
@@ -225,14 +225,16 @@
       "distance_from_52w_high": 10.2,
       "volume_surge": 0.0,
       "trend_status": "\ud83d\ude80 Multibagger Compounder (+100%+)",
-      "conviction": "Very High (Institutional Momentum)"
+      "conviction": "Very High (Institutional Momentum)",
+      "day_change": 125.0,
+      "day_change_pct": 5.63
     },
     {
       "symbol": "DIVISLAB",
       "name": "Divi's Laboratories Ltd.",
       "sector": "Healthcare / Active Pharma",
       "market_cap_type": "Large Cap",
-      "cmp": 11080.0,
+      "cmp": 11139.0,
       "ret_1m": -0.2,
       "ret_3m": 21.8,
       "ret_6m": 67.3,
@@ -245,14 +247,16 @@
       "distance_from_52w_high": 6.3,
       "volume_surge": 0.0,
       "trend_status": "\ud83c\udfdb\ufe0f Multi-Year Structural Bull",
-      "conviction": "Core Portfolio Compounder"
+      "conviction": "Core Portfolio Compounder",
+      "day_change": 59.0,
+      "day_change_pct": 0.53
     },
     {
       "symbol": "APARINDS",
       "name": "Apar Industries Ltd.",
       "sector": "Conductors & Transformers",
       "market_cap_type": "Mid Cap",
-      "cmp": 14650.0,
+      "cmp": 14101.0,
       "ret_1m": 0.5,
       "ret_3m": -15.9,
       "ret_6m": 5.6,
@@ -265,14 +269,16 @@
       "distance_from_52w_high": 24.0,
       "volume_surge": 0.0,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -730.0,
+      "day_change_pct": -4.92
     },
     {
       "symbol": "BHEL",
       "name": "Bharat Heavy Electricals Ltd.",
       "sector": "Power Equipment / Capital Goods",
       "market_cap_type": "Mid Cap",
-      "cmp": 427.7,
+      "cmp": 430.45,
       "ret_1m": 2.5,
       "ret_3m": -0.8,
       "ret_6m": 10.5,
@@ -285,14 +291,16 @@
       "distance_from_52w_high": 7.8,
       "volume_surge": 0.0,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 0.35,
+      "day_change_pct": 0.08
     },
     {
       "symbol": "SOLARINDS",
       "name": "Solar Industries India Ltd.",
       "sector": "Industrial Explosives / Defense",
       "market_cap_type": "Mid Cap",
-      "cmp": 18839.0,
+      "cmp": 18875.0,
       "ret_1m": 1.2,
       "ret_3m": -12.2,
       "ret_6m": 2.2,
@@ -305,14 +313,16 @@
       "distance_from_52w_high": 17.0,
       "volume_surge": 0.0,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 55.0,
+      "day_change_pct": 0.29
     },
     {
       "symbol": "BSE",
       "name": "BSE Ltd.",
       "sector": "Capital Markets / Exchanges",
       "market_cap_type": "Mid Cap",
-      "cmp": 3956.5,
+      "cmp": 3855.0,
       "ret_1m": 4.1,
       "ret_3m": 16.0,
       "ret_6m": 2.0,
@@ -325,14 +335,16 @@
       "distance_from_52w_high": 11.0,
       "volume_surge": 0.01,
       "trend_status": "\ud83c\udfdb\ufe0f Multi-Year Structural Bull",
-      "conviction": "Core Portfolio Compounder"
+      "conviction": "Core Portfolio Compounder",
+      "day_change": -32.4,
+      "day_change_pct": -0.83
     },
     {
       "symbol": "MOTHERSON",
       "name": "Samvardhana Motherson International Ltd.",
       "sector": "Auto Components",
       "market_cap_type": "Large Cap",
-      "cmp": 162.51,
+      "cmp": 163.49,
       "ret_1m": 2.0,
       "ret_3m": 1.1,
       "ret_6m": 13.2,
@@ -345,14 +357,16 @@
       "distance_from_52w_high": 6.2,
       "volume_surge": 0.01,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": 0.51,
+      "day_change_pct": 0.31
     },
     {
       "symbol": "POLYCAB",
       "name": "Polycab India Ltd.",
       "sector": "Cables & Infrastructure",
       "market_cap_type": "Large Cap",
-      "cmp": 7845.5,
+      "cmp": 7729.0,
       "ret_1m": 0.1,
       "ret_3m": -5.5,
       "ret_6m": -19.1,
@@ -365,14 +379,16 @@
       "distance_from_52w_high": 22.5,
       "volume_surge": 0.0,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -226.5,
+      "day_change_pct": -2.85
     },
     {
       "symbol": "HAL",
       "name": "Hindustan Aeronautics Ltd.",
       "sector": "Defense & Aerospace",
       "market_cap_type": "Large Cap",
-      "cmp": 4766.1,
+      "cmp": 4739.1,
       "ret_1m": -4.4,
       "ret_3m": -1.9,
       "ret_6m": 13.0,
@@ -385,14 +401,16 @@
       "distance_from_52w_high": 7.5,
       "volume_surge": 0.0,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -49.9,
+      "day_change_pct": -1.04
     },
     {
       "symbol": "BHARTIARTL",
       "name": "Bharti Airtel Ltd.",
       "sector": "Telecommunications",
       "market_cap_type": "Large Cap",
-      "cmp": 2150.3,
+      "cmp": 2149.8,
       "ret_1m": 3.1,
       "ret_3m": 16.9,
       "ret_6m": 19.6,
@@ -405,14 +423,16 @@
       "distance_from_52w_high": 1.1,
       "volume_surge": 0.01,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": -3.7,
+      "day_change_pct": -0.17
     },
     {
       "symbol": "SUNPHARMA",
       "name": "Sun Pharmaceutical Industries Ltd.",
       "sector": "Healthcare / Specialty Pharma",
       "market_cap_type": "Large Cap",
-      "cmp": 1864.8,
+      "cmp": 1874.3,
       "ret_1m": 4.9,
       "ret_3m": -2.9,
       "ret_6m": 3.6,
@@ -425,14 +445,16 @@
       "distance_from_52w_high": 8.9,
       "volume_surge": 0.0,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 6.8,
+      "day_change_pct": 0.36
     },
     {
       "symbol": "BEL",
       "name": "Bharat Electronics Ltd.",
       "sector": "Defense Electronics",
       "market_cap_type": "Large Cap",
-      "cmp": 400.0,
+      "cmp": 399.2,
       "ret_1m": 0.6,
       "ret_3m": -1.3,
       "ret_6m": -2.0,
@@ -445,14 +467,16 @@
       "distance_from_52w_high": 15.5,
       "volume_surge": 0.0,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -2.2,
+      "day_change_pct": -0.55
     },
     {
       "symbol": "PRESTIGE",
       "name": "Prestige Estates Projects Ltd.",
       "sector": "Real Estate Development",
       "market_cap_type": "Mid Cap",
-      "cmp": 1638.8,
+      "cmp": 1676.5,
       "ret_1m": 2.1,
       "ret_3m": 3.3,
       "ret_6m": 18.7,
@@ -465,14 +489,16 @@
       "distance_from_52w_high": 7.8,
       "volume_surge": 0.0,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 37.7,
+      "day_change_pct": 2.3
     },
     {
       "symbol": "AMBER",
       "name": "Amber Enterprises India Ltd.",
       "sector": "HVAC / Electronics",
       "market_cap_type": "Mid Cap",
-      "cmp": 6286.5,
+      "cmp": 6251.5,
       "ret_1m": -1.1,
       "ret_3m": -15.9,
       "ret_6m": -19.6,
@@ -485,14 +511,16 @@
       "distance_from_52w_high": 29.9,
       "volume_surge": 0.0,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -0.5,
+      "day_change_pct": -0.01
     },
     {
       "symbol": "PERSISTENT",
       "name": "Persistent Systems Ltd.",
       "sector": "IT & Cloud Services",
       "market_cap_type": "Mid Cap",
-      "cmp": 5971.5,
+      "cmp": 5926.5,
       "ret_1m": -1.3,
       "ret_3m": 1.6,
       "ret_6m": 15.0,
@@ -505,7 +533,9 @@
       "distance_from_52w_high": 9.5,
       "volume_surge": 0.0,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -52.0,
+      "day_change_pct": -0.87
     }
   ],
   "fifty_two_week_high_stocks": [
@@ -513,12 +543,12 @@
       "symbol": "KOTAKBANK",
       "name": "Kotak Mahindra Bank Ltd.",
       "sector": "Financial Services",
-      "cmp": 494.65,
+      "cmp": 497.9,
       "h52": 494.65,
       "l52": 345.5,
-      "dist_52w": 0.0,
-      "day_change": 0.45,
-      "day_change_pct": 0.09,
+      "dist_52w": -0.66,
+      "day_change": 3.7,
+      "day_change_pct": 0.75,
       "rsi": 83.25,
       "ema20": 468.06,
       "ema50": 444.83,
@@ -546,12 +576,12 @@
       "symbol": "ABDL",
       "name": "Allied Blenders and Distillers Ltd.",
       "sector": "Fast Moving Consumer Goods",
-      "cmp": 803.05,
+      "cmp": 789.65,
       "h52": 803.05,
       "l52": 382.1,
-      "dist_52w": 0.0,
-      "day_change": 18.8,
-      "day_change_pct": 2.45,
+      "dist_52w": 1.67,
+      "day_change": 5.4,
+      "day_change_pct": 0.69,
       "rsi": 84.67,
       "ema20": 729.78,
       "ema50": 697.79,
@@ -579,12 +609,12 @@
       "symbol": "ATHERENERG",
       "name": "Ather Energy Ltd.",
       "sector": "Automobile and Auto Components",
-      "cmp": 1956.1,
+      "cmp": 1918.0,
       "h52": 1964.9,
       "l52": 589.0,
-      "dist_52w": 0.45,
-      "day_change": 16.5,
-      "day_change_pct": 0.85,
+      "dist_52w": 2.39,
+      "day_change": -21.6,
+      "day_change_pct": -1.11,
       "rsi": 80.59,
       "ema20": 1770.57,
       "ema50": 1626.6,
@@ -612,12 +642,12 @@
       "symbol": "ANANDRATHI",
       "name": "Anand Rathi Wealth Ltd.",
       "sector": "Financial Services",
-      "cmp": 2389.6,
+      "cmp": 2372.0,
       "h52": 2410.0,
       "l52": 1353.85,
-      "dist_52w": 0.85,
-      "day_change": 2.3,
-      "day_change_pct": 0.1,
+      "dist_52w": 1.58,
+      "day_change": -15.3,
+      "day_change_pct": -0.64,
       "rsi": 87.84,
       "ema20": 2301.1,
       "ema50": 2224.94,
@@ -645,12 +675,12 @@
       "symbol": "BHARTIARTL",
       "name": "Bharti Airtel Ltd.",
       "sector": "Telecommunication",
-      "cmp": 2152.0,
+      "cmp": 2149.8,
       "h52": 2174.5,
       "l52": 1726.3,
-      "dist_52w": 1.03,
-      "day_change": -1.5,
-      "day_change_pct": -0.07,
+      "dist_52w": 1.14,
+      "day_change": -3.7,
+      "day_change_pct": -0.17,
       "rsi": 74.17,
       "ema20": 2030.32,
       "ema50": 1949.95,
@@ -678,12 +708,12 @@
       "symbol": "ASAHIINDIA",
       "name": "Asahi India Glass Ltd.",
       "sector": "Automobile and Auto Components",
-      "cmp": 1141.15,
+      "cmp": 1166.4,
       "h52": 1155.0,
       "l52": 775.1,
-      "dist_52w": 1.2,
-      "day_change": -23.9,
-      "day_change_pct": -2.03,
+      "dist_52w": -0.99,
+      "day_change": 1.35,
+      "day_change_pct": 0.12,
       "rsi": 86.07,
       "ema20": 1026.89,
       "ema50": 978.7,
@@ -711,12 +741,12 @@
       "symbol": "ICICIBANK",
       "name": "ICICI Bank Ltd.",
       "sector": "Financial Services",
-      "cmp": 1588.5,
+      "cmp": 1604.7,
       "h52": 1616.0,
       "l52": 1187.6,
-      "dist_52w": 1.7,
-      "day_change": 3.5,
-      "day_change_pct": 0.22,
+      "dist_52w": 0.7,
+      "day_change": 19.7,
+      "day_change_pct": 1.24,
       "rsi": 84.91,
       "ema20": 1491.12,
       "ema50": 1433.3,
@@ -744,12 +774,12 @@
       "symbol": "AUROPHARMA",
       "name": "Aurobindo Pharma Ltd.",
       "sector": "Healthcare",
-      "cmp": 1803.5,
+      "cmp": 1795.0,
       "h52": 1859.9,
       "l52": 1106.0,
-      "dist_52w": 3.03,
-      "day_change": 9.5,
-      "day_change_pct": 0.53,
+      "dist_52w": 3.49,
+      "day_change": 1.0,
+      "day_change_pct": 0.06,
       "rsi": 76.62,
       "ema20": 1743.97,
       "ema50": 1695.24,
@@ -777,12 +807,12 @@
       "symbol": "APLAPOLLO",
       "name": "APL Apollo Tubes Ltd.",
       "sector": "Capital Goods",
-      "cmp": 2230.0,
+      "cmp": 2190.0,
       "h52": 2301.4,
       "l52": 1690.0,
-      "dist_52w": 3.1,
-      "day_change": -20.2,
-      "day_change_pct": -0.9,
+      "dist_52w": 4.84,
+      "day_change": -60.2,
+      "day_change_pct": -2.67,
       "rsi": 51.45,
       "ema20": 2187.2,
       "ema50": 2149.24,
@@ -810,12 +840,12 @@
       "symbol": "APOLLOHOSP",
       "name": "Apollo Hospitals Enterprise Ltd.",
       "sector": "Healthcare",
-      "cmp": 8784.0,
+      "cmp": 8759.5,
       "h52": 9070.5,
       "l52": 6696.5,
-      "dist_52w": 3.16,
-      "day_change": 13.0,
-      "day_change_pct": 0.15,
+      "dist_52w": 3.43,
+      "day_change": -11.5,
+      "day_change_pct": -0.13,
       "rsi": 79.9,
       "ema20": 8405.98,
       "ema50": 8387.01,
@@ -843,12 +873,12 @@
       "symbol": "ADANIPORTS",
       "name": "Adani Ports and Special Economic Zone Ltd.",
       "sector": "Services",
-      "cmp": 1913.3,
+      "cmp": 1916.9,
       "h52": 1979.0,
       "l52": 1292.0,
-      "dist_52w": 3.32,
-      "day_change": 20.3,
-      "day_change_pct": 1.07,
+      "dist_52w": 3.14,
+      "day_change": 23.9,
+      "day_change_pct": 1.26,
       "rsi": 70.17,
       "ema20": 1862.22,
       "ema50": 1809.11,
@@ -878,7 +908,7 @@
       "symbol": "ACUTAAS",
       "name": "Acutaas Chemicals Ltd.",
       "sector": "Healthcare",
-      "cmp": 3939.2,
+      "cmp": 3941.9,
       "change_pct": -0.2,
       "ret_1y": 130.4,
       "tech_score": 8.5,
@@ -906,7 +936,7 @@
       "symbol": "BSE",
       "name": "BSE Ltd.",
       "sector": "Capital Markets",
-      "cmp": 3952.5,
+      "cmp": 3855.0,
       "change_pct": 1.68,
       "ret_1y": 40.6,
       "tech_score": 7.0,
@@ -934,7 +964,7 @@
       "symbol": "DIVISLAB",
       "name": "Divi's Laboratories Ltd.",
       "sector": "Healthcare / API",
-      "cmp": 11082.5,
+      "cmp": 11139.0,
       "change_pct": 0.02,
       "ret_1y": 70.0,
       "tech_score": 7.0,
@@ -962,7 +992,7 @@
       "symbol": "PERSISTENT",
       "name": "Persistent Systems Ltd.",
       "sector": "IT Services",
-      "cmp": 5926.0,
+      "cmp": 5926.5,
       "change_pct": -0.87,
       "ret_1y": -3.1,
       "tech_score": 7.0,
@@ -990,7 +1020,7 @@
       "symbol": "ACE",
       "name": "Action Construction Equipment Ltd.",
       "sector": "Capital Goods",
-      "cmp": 1170.0,
+      "cmp": 1171.8,
       "change_pct": -0.54,
       "ret_1y": 18.5,
       "tech_score": 7.0,
@@ -1018,7 +1048,7 @@
       "symbol": "TRENT",
       "name": "Trent Ltd.",
       "sector": "Retail & Apparel",
-      "cmp": 3205.5,
+      "cmp": 3170.0,
       "change_pct": 0.06,
       "ret_1y": -27.2,
       "tech_score": 7.0,
@@ -1046,7 +1076,7 @@
       "symbol": "BHEL",
       "name": "Bharat Heavy Electricals Ltd.",
       "sector": "Capital Goods / Power",
-      "cmp": 427.5,
+      "cmp": 430.45,
       "change_pct": -0.6,
       "ret_1y": 49.7,
       "tech_score": 8.5,
@@ -1074,7 +1104,7 @@
       "symbol": "ABB",
       "name": "ABB India Ltd.",
       "sector": "Capital Goods",
-      "cmp": 6873.5,
+      "cmp": 6936.0,
       "change_pct": -0.31,
       "ret_1y": 36.3,
       "tech_score": 7.0,
@@ -1102,7 +1132,7 @@
       "symbol": "ABCAPITAL",
       "name": "Aditya Birla Capital Ltd.",
       "sector": "Financial Services",
-      "cmp": 407.45,
+      "cmp": 411.4,
       "change_pct": -0.26,
       "ret_1y": 21.7,
       "tech_score": 7.0,
@@ -1129,7 +1159,7 @@
       "symbol": "ABDL",
       "name": "Allied Blenders and Distillers Ltd.",
       "sector": "Fast Moving Consumer Goods",
-      "cmp": 803.05,
+      "cmp": 789.65,
       "change_pct": 2.45,
       "ret_1y": 19.8,
       "tech_score": 7.0,
@@ -1157,7 +1187,7 @@
       "symbol": "MOTHERSON",
       "name": "Samvardhana Motherson Ltd.",
       "sector": "Auto Components",
-      "cmp": 162.51,
+      "cmp": 163.49,
       "change_pct": -0.29,
       "ret_1y": 47.7,
       "tech_score": 8.5,
@@ -1185,7 +1215,7 @@
       "symbol": "BHARTIARTL",
       "name": "Bharti Airtel Ltd.",
       "sector": "Telecom",
-      "cmp": 2150.0,
+      "cmp": 2149.8,
       "change_pct": -0.16,
       "ret_1y": 1.8,
       "tech_score": 7.0,
@@ -1213,7 +1243,7 @@
       "symbol": "LAURUSLABS",
       "name": "Laurus Labs Ltd.",
       "sector": "Healthcare / CDMO",
-      "cmp": 2236.3,
+      "cmp": 2345.0,
       "change_pct": 0.73,
       "ret_1y": 118.8,
       "tech_score": 5.5,
@@ -1240,7 +1270,7 @@
       "symbol": "ACMESOLAR",
       "name": "ACME Solar Holdings Ltd.",
       "sector": "Power",
-      "cmp": 405.55,
+      "cmp": 402.45,
       "change_pct": 0.78,
       "ret_1y": 60.8,
       "tech_score": 6.0,
@@ -1267,7 +1297,7 @@
       "symbol": "360ONE",
       "name": "360 ONE WAM Ltd.",
       "sector": "Financial Services",
-      "cmp": 1178.8,
+      "cmp": 1200.8,
       "change_pct": -0.02,
       "ret_1y": 10.0,
       "tech_score": 7.0,
@@ -1295,7 +1325,7 @@
       "symbol": "ADANIENSOL",
       "name": "Adani Energy Solutions Ltd.",
       "sector": "Power",
-      "cmp": 1446.1,
+      "cmp": 1488.3,
       "change_pct": -0.45,
       "ret_1y": 41.6,
       "tech_score": 5.5,
@@ -1322,7 +1352,7 @@
       "symbol": "DIXON",
       "name": "Dixon Technologies Ltd.",
       "sector": "Consumer Electronics / EMS",
-      "cmp": 12893.0,
+      "cmp": 13052.0,
       "change_pct": 0.02,
       "ret_1y": -17.6,
       "tech_score": 5.5,
@@ -1349,7 +1379,7 @@
       "symbol": "AARTIIND",
       "name": "Aarti Industries Ltd.",
       "sector": "Chemicals",
-      "cmp": 474.2,
+      "cmp": 470.65,
       "change_pct": -0.06,
       "ret_1y": 20.0,
       "tech_score": 5.5,
@@ -1393,7 +1423,7 @@
         "US FDA non-critical inspection clearance",
         "Non-ARV API diversification"
       ],
-      "cmp": 2234.0,
+      "cmp": 2345.0,
       "day_change_pct": 0.63,
       "fifty_two_week_high": 2488.0,
       "fifty_two_week_low": 917.95,
@@ -1417,7 +1447,7 @@
         "IT Hardware PLI 2.0 contract executions",
         "Operating leverage in high-volume smartphone segment"
       ],
-      "cmp": 12893.0,
+      "cmp": 13052.0,
       "day_change_pct": 0.02,
       "fifty_two_week_high": 15775.0,
       "fifty_two_week_low": 9600.0,
@@ -1441,7 +1471,7 @@
         "Star Bazaar grocery retail turning EBITDA positive",
         "Rapid store addition pace accelerating market share"
       ],
-      "cmp": 3205.5,
+      "cmp": 3170.0,
       "day_change_pct": 0.06,
       "fifty_two_week_high": 4417.8,
       "fifty_two_week_low": 2183.667,
@@ -1489,7 +1519,7 @@
         "Execution of massive Kavach railway safety system electronics",
         "Global aerospace export certifications"
       ],
-      "cmp": 2909.2,
+      "cmp": 2858.0,
       "day_change_pct": -2.38,
       "fifty_two_week_high": 6347.0,
       "fifty_two_week_low": 2902.2,
@@ -1513,7 +1543,7 @@
         "Monetization of StAR MF platform transaction fees",
         "New commodity and interest rate derivative product rollouts"
       ],
-      "cmp": 3956.5,
+      "cmp": 3855.0,
       "day_change_pct": 1.78,
       "fifty_two_week_high": 4446.8,
       "fifty_two_week_low": 2377.4,
@@ -1537,7 +1567,7 @@
         "Export agreements with friendly foreign nations (SE Asia / Africa)",
         "Fifth-generation AMCA fighter jet development milestone"
       ],
-      "cmp": 4781.5,
+      "cmp": 4739.1,
       "day_change_pct": -0.16,
       "fifty_two_week_high": 5149.9,
       "fifty_two_week_low": 3479.1,
@@ -1561,7 +1591,7 @@
         "Kakinada mega-facility commercial batch commencement",
         "EBITDA margins reverting to historical 38-40% band"
       ],
-      "cmp": 11080.0,
+      "cmp": 11139.0,
       "day_change_pct": -3.16,
       "fifty_two_week_high": 11824.0,
       "fifty_two_week_low": 5647.5,
