@@ -27,6 +27,7 @@ from core.institutional_flow_analyst import InstitutionalFlowAnalyst
 from core.corporate_actions_calendar import CorporateActionsCalendar
 from core.ai_performance_scorecard import AIPerformanceScorecard
 from core.telegram_alert_bot import TelegramAlertBot
+from core.market_movers_analyst import MarketMoversAnalyst
 
 def is_market_hours() -> bool:
     """Checks if current time is within Indian market trading hours (Mon-Fri 09:00 - 15:45 IST)."""
@@ -157,6 +158,12 @@ def refresh_all_live_data(mode: str = "quick") -> dict:
     # Load AI Performance Scorecard
     try:
         scan_payload["performance_scorecard"] = AIPerformanceScorecard().get_performance_metrics()
+    except Exception:
+        pass
+
+    # Load Real-Time Market Movers (Top Gainers & Losers)
+    try:
+        scan_payload["market_movers"] = MarketMoversAnalyst().get_market_movers(force_refresh=False)
     except Exception:
         pass
 
@@ -353,6 +360,17 @@ class SyncRequestHandler(BaseHTTPRequestHandler):
             try:
                 scorecard = AIPerformanceScorecard()
                 data = scorecard.get_performance_metrics()
+                self._set_cors_headers(200)
+                self.wfile.write(json.dumps(data).encode("utf-8"))
+            except Exception as e:
+                self._set_cors_headers(500)
+                self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
+            return
+
+        if path == "/api/market_movers":
+            try:
+                analyst = MarketMoversAnalyst()
+                data = analyst.get_market_movers(force_refresh=params.get("refresh", ["false"])[0] == "true")
                 self._set_cors_headers(200)
                 self.wfile.write(json.dumps(data).encode("utf-8"))
             except Exception as e:

@@ -105,21 +105,6 @@
     "analysis": "Issued at \u20b994.0, debuted at \u20b994.0 (+0.0% listing return)."
   },
   {
-    "name": "HGS (India)",
-    "category": "NSE Emerge",
-    "sector": "Recently Listed",
-    "status": "Recently Listed",
-    "issue_period": "Recently Listed",
-    "price_band": "\u20b9120.00",
-    "lot_size": "Standard",
-    "issue_size_cr": "Completed",
-    "gmp_inr": "\u20b928",
-    "gmp_pct": 33.3,
-    "subscription_total": "Listed @ \u20b9160.00 (+33.3%)",
-    "verdict": "\u2705 POSITIVE LISTING",
-    "analysis": "Issued at \u20b9120.0, debuted at \u20b9160.0 (+33.3% listing return)."
-  },
-  {
     "name": "Maxwell Engineering Solutions",
     "category": "NSE Emerge",
     "sector": "Recently Listed",
@@ -133,6 +118,21 @@
     "subscription_total": "Listed @ \u20b9300.00 (+89.9%)",
     "verdict": "\ud83c\udf89 MULTIBAGGER DEBUT",
     "analysis": "Issued at \u20b9158.0, debuted at \u20b9300.0 (+89.9% listing return)."
+  },
+  {
+    "name": "HGS (India)",
+    "category": "NSE Emerge",
+    "sector": "Recently Listed",
+    "status": "Recently Listed",
+    "issue_period": "Recently Listed",
+    "price_band": "\u20b9120.00",
+    "lot_size": "Standard",
+    "issue_size_cr": "Completed",
+    "gmp_inr": "\u20b928",
+    "gmp_pct": 33.3,
+    "subscription_total": "Listed @ \u20b9160.00 (+33.3%)",
+    "verdict": "\u2705 POSITIVE LISTING",
+    "analysis": "Issued at \u20b9120.0, debuted at \u20b9160.0 (+33.3% listing return)."
   },
   {
     "name": "Johnsoncab Electricals",

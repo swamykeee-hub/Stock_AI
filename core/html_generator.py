@@ -512,6 +512,76 @@ class HTMLReportGenerator:
             </tr>
             """
 
+        # Load Market Movers (Top Gainers & Losers)
+        movers_data = scan_data.get("market_movers")
+        if not movers_data:
+            try:
+                from core.market_movers_analyst import MarketMoversAnalyst
+                movers_data = MarketMoversAnalyst().get_market_movers(force_refresh=False)
+            except Exception:
+                movers_data = {"top_gainers": [], "top_losers": []}
+
+        top_gainers = movers_data.get("top_gainers", [])
+        top_losers = movers_data.get("top_losers", [])
+
+        # Generate Clickable Pill Badges
+        gainer_pills_html = ""
+        for g in top_gainers[:10]:
+            sym = g.get("symbol", "")
+            pct = g.get("change_pct", "+0.0%")
+            price = g.get("price", "")
+            gainer_pills_html += f"""
+            <button class="mover-pill gainer-pill" onclick="quickSearch('{sym}')" title="Click to search {g.get('name', sym)} ({price})">
+                <span class="mover-sym">🟢 {sym}</span>
+                <span class="mover-pct">{pct}</span>
+            </button>
+            """
+
+        loser_pills_html = ""
+        for l in top_losers[:10]:
+            sym = l.get("symbol", "")
+            pct = l.get("change_pct", "-0.0%")
+            price = l.get("price", "")
+            loser_pills_html += f"""
+            <button class="mover-pill loser-pill" onclick="quickSearch('{sym}')" title="Click to search {l.get('name', sym)} ({price})">
+                <span class="mover-sym">🔴 {sym}</span>
+                <span class="mover-pct">{pct}</span>
+            </button>
+            """
+
+        # Generate Detailed Movers Table Rows
+        gainer_rows = ""
+        for idx, g in enumerate(top_gainers, 1):
+            gainer_rows += f"""
+            <tr>
+                <td><b>#{idx}</b></td>
+                <td><b>{g.get('name', g.get('symbol'))}</b> <span class="sub-text">({g.get('symbol')})</span></td>
+                <td><b>{g.get('price')}</b></td>
+                <td style="color: #10b981; font-weight: 800; font-size: 14px;">{g.get('change_pct')}</td>
+                <td style="color: #10b981;">{g.get('change_val')}</td>
+                <td>{g.get('high')}</td>
+                <td>{g.get('low')}</td>
+                <td>{g.get('volume')}</td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('{g.get('symbol')}', this)">📈 Chart</button></td>
+            </tr>
+            """
+
+        loser_rows = ""
+        for idx, l in enumerate(top_losers, 1):
+            loser_rows += f"""
+            <tr>
+                <td><b>#{idx}</b></td>
+                <td><b>{l.get('name', l.get('symbol'))}</b> <span class="sub-text">({l.get('symbol')})</span></td>
+                <td><b>{l.get('price')}</b></td>
+                <td style="color: #ef4444; font-weight: 800; font-size: 14px;">{l.get('change_pct')}</td>
+                <td style="color: #ef4444;">{l.get('change_val')}</td>
+                <td>{l.get('high')}</td>
+                <td>{l.get('low')}</td>
+                <td>{l.get('volume')}</td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('{l.get('symbol')}', this)">📈 Chart</button></td>
+            </tr>
+            """
+
         html_template = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1452,6 +1522,97 @@ class HTMLReportGenerator:
         .outcome-profit {{ border-color: #38bdf8 !important; color: #38bdf8 !important; background: rgba(56, 189, 248, 0.1); }}
         .outcome-neutral {{ border-color: #f59e0b !important; color: #f59e0b !important; background: rgba(245, 158, 11, 0.1); }}
 
+        /* Pinned Market Movers Ribbon (Top Gainers & Losers Pills) */
+        .market-movers-ribbon {{
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 12px 18px;
+            margin-bottom: 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }}
+        .movers-section {{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-bottom: 4px;
+        }}
+        .movers-section::-webkit-scrollbar {{
+            height: 4px;
+        }}
+        .movers-section::-webkit-scrollbar-thumb {{
+            background: var(--border);
+            border-radius: 4px;
+        }}
+        .movers-label {{
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }}
+        .gainer-label {{ color: #10b981; }}
+        .loser-label {{ color: #ef4444; }}
+        .movers-pills-wrap {{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: nowrap;
+        }}
+        .mover-pill {{
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: all 0.15s ease-in-out;
+            background: var(--bg);
+            flex-shrink: 0;
+        }}
+        .mover-pill:hover {{
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }}
+        .gainer-pill {{
+            border-color: rgba(16, 185, 129, 0.35);
+            color: #10b981;
+            background: rgba(16, 185, 129, 0.08);
+        }}
+        .gainer-pill:hover {{
+            background: rgba(16, 185, 129, 0.22);
+            border-color: #10b981;
+        }}
+        .loser-pill {{
+            border-color: rgba(239, 68, 68, 0.35);
+            color: #ef4444;
+            background: rgba(239, 68, 68, 0.08);
+        }}
+        .loser-pill:hover {{
+            background: rgba(239, 68, 68, 0.22);
+            border-color: #ef4444;
+        }}
+        .mover-sym {{
+            font-weight: 800;
+        }}
+        .mover-pct {{
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 6px;
+            background: rgba(0,0,0,0.25);
+        }}
+
         /* SIP Compounding Calculator */
         .sip-calculator-card {{ background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 24px; }}
         .sip-control-row {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 20px; }}
@@ -1505,6 +1666,22 @@ class HTMLReportGenerator:
         {indices_html}
     </div>
 
+    <!-- Pinned Market Movers: Top Gainers & Losers (Clickable Pills) -->
+    <div class="market-movers-ribbon">
+        <div class="movers-section">
+            <span class="movers-label gainer-label">🔥 Top Gainers (NSE):</span>
+            <div class="movers-pills-wrap">
+                {gainer_pills_html}
+            </div>
+        </div>
+        <div class="movers-section">
+            <span class="movers-label loser-label">🧊 Top Losers (NSE):</span>
+            <div class="movers-pills-wrap">
+                {loser_pills_html}
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation & Search Controls -->
     <div class="controls-bar">
         <div class="tabs">
@@ -1519,6 +1696,7 @@ class HTMLReportGenerator:
             <button class="tab-btn" onclick="switchView('institutional', this)">🏛 Smart Money &amp; FII/DII</button>
             <button class="tab-btn" onclick="switchView('corporate_actions', this)">📅 Earnings &amp; Dividends</button>
             <button class="tab-btn" onclick="switchView('scorecard', this)">🎯 AI Win-Rate Scorecard</button>
+            <button class="tab-btn" onclick="switchView('movers', this)">⚡ Top Movers (Gainers &amp; Losers)</button>
         </div>
         <div class="search-actions-box">
             <select id="sectorFilter" class="filter-select" onchange="filterStocks()" title="Filter stocks by sector">
@@ -2072,6 +2250,67 @@ class HTMLReportGenerator:
                     {scorecard_rows}
                 </tbody>
             </table>
+        </div>
+    </div>
+
+    <!-- Tab: Top Gainers & Losers Detailed Tables -->
+    <div id="view-movers" class="view-panel" style="display: none;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 20px;">
+            <!-- Top Gainers Table -->
+            <div class="table-container" style="border: 1px solid rgba(16, 185, 129, 0.35);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding: 4px;">
+                    <h3 style="margin: 0; font-size: 16px; font-weight: 800; color: #10b981; display: flex; align-items: center; gap: 8px;">
+                        🟢 NSE Top Gainers Today
+                    </h3>
+                    <span class="badge" style="background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid #10b981;">High Momentum</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Stock / Company</th>
+                            <th>LTP</th>
+                            <th>Gain %</th>
+                            <th>Change (₹)</th>
+                            <th>High</th>
+                            <th>Low</th>
+                            <th>Volume</th>
+                            <th>Chart</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {gainer_rows}
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Top Losers Table -->
+            <div class="table-container" style="border: 1px solid rgba(239, 68, 68, 0.35);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding: 4px;">
+                    <h3 style="margin: 0; font-size: 16px; font-weight: 800; color: #ef4444; display: flex; align-items: center; gap: 8px;">
+                        🔴 NSE Top Losers Today
+                    </h3>
+                    <span class="badge" style="background: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid #ef4444;">Profit Booking</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Stock / Company</th>
+                            <th>LTP</th>
+                            <th>Loss %</th>
+                            <th>Change (₹)</th>
+                            <th>High</th>
+                            <th>Low</th>
+                            <th>Volume</th>
+                            <th>Chart</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {loser_rows}
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 

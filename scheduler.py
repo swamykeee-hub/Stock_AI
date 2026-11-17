@@ -18,6 +18,7 @@ from core.institutional_flow_analyst import InstitutionalFlowAnalyst
 from core.corporate_actions_calendar import CorporateActionsCalendar
 from core.ai_performance_scorecard import AIPerformanceScorecard
 from core.telegram_alert_bot import TelegramAlertBot
+from core.market_movers_analyst import MarketMoversAnalyst
 
 class DailyAutomator:
     """Manages autonomous daily scans, IPO updates, momentum rankings, and market intelligence generation."""
@@ -35,6 +36,7 @@ class DailyAutomator:
         self.corp_calendar = CorporateActionsCalendar()
         self.scorecard = AIPerformanceScorecard()
         self.telegram_bot = TelegramAlertBot()
+        self.movers_analyst = MarketMoversAnalyst()
 
     def run_daily_sync(self):
         """Executes full daily automation pipeline."""
@@ -123,6 +125,15 @@ class DailyAutomator:
             print(f"  -> Scorecard notice: {e}")
             scorecard_data = {}
 
+        # 9e. Market Movers: Real-Time NSE Top Gainers & Losers
+        print("  -> Syncing Real-Time NSE Top Gainers & Losers...")
+        try:
+            movers_data = self.movers_analyst.get_market_movers(force_refresh=True)
+            print(f"  -> Market Movers: {len(movers_data.get('top_gainers', []))} gainers & {len(movers_data.get('top_losers', []))} losers.")
+        except Exception as e:
+            print(f"  -> Movers notice: {e}")
+            movers_data = {}
+
         # 10. Save Structured Scan Output
         scan_payload = {
             "timestamp": now_str,
@@ -137,6 +148,7 @@ class DailyAutomator:
             "institutional_flow": inst_flow,
             "corporate_actions": corp_actions,
             "performance_scorecard": scorecard_data,
+            "market_movers": movers_data,
             "total_screened": 35,
             "disclaimer": config.DISCLAIMER
         }
