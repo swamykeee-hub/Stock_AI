@@ -3,16 +3,16 @@
     "name": "Crystal Crop Protection",
     "category": "Mainboard",
     "sector": "Agro",
-    "status": "Upcoming",
+    "status": "Open",
     "issue_period": "18 Nov 2026 \u2013 20 Nov 2026",
     "price_band": "\u20b9259.00 - \u20b9272.00",
     "lot_size": "55",
     "issue_size_cr": "455.97",
-    "gmp_inr": "\u20b913.00",
-    "gmp_pct": 4.8,
-    "subscription_total": "Yet to Open",
+    "gmp_inr": "\u20b918.00",
+    "gmp_pct": 6.6,
+    "subscription_total": "0.00x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 18 Nov 2026 \u2013 20 Nov 2026 \u2022 Est. Listing: \u20b9285 (+4.8%)"
+    "analysis": "Dates: 18 Nov 2026 \u2013 20 Nov 2026 \u2022 Est. Listing: \u20b9290 (+6.6%)"
   },
   {
     "name": "Watrana Rentals",
@@ -38,11 +38,11 @@
     "price_band": "\u20b9129.00 - \u20b9136.00",
     "lot_size": "110",
     "issue_size_cr": "9000.97",
-    "gmp_inr": "\u20b94.00",
-    "gmp_pct": 2.9,
+    "gmp_inr": "\u20b93.50",
+    "gmp_pct": 2.6,
     "subscription_total": "Yet to Open",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9140 (+2.9%)"
+    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9140 (+2.6%)"
   },
   {
     "name": "Foodlink F&B Holdings",
@@ -105,21 +105,6 @@
     "analysis": "Issued at \u20b994.0, debuted at \u20b994.0 (+0.0% listing return)."
   },
   {
-    "name": "Maxwell Engineering Solutions",
-    "category": "NSE Emerge",
-    "sector": "Recently Listed",
-    "status": "Recently Listed",
-    "issue_period": "Recently Listed",
-    "price_band": "\u20b9158.00",
-    "lot_size": "Standard",
-    "issue_size_cr": "Completed",
-    "gmp_inr": "\u20b9105",
-    "gmp_pct": 89.9,
-    "subscription_total": "Listed @ \u20b9300.00 (+89.9%)",
-    "verdict": "\ud83c\udf89 MULTIBAGGER DEBUT",
-    "analysis": "Issued at \u20b9158.0, debuted at \u20b9300.0 (+89.9% listing return)."
-  },
-  {
     "name": "HGS (India)",
     "category": "NSE Emerge",
     "sector": "Recently Listed",
@@ -133,6 +118,21 @@
     "subscription_total": "Listed @ \u20b9160.00 (+33.3%)",
     "verdict": "\u2705 POSITIVE LISTING",
     "analysis": "Issued at \u20b9120.0, debuted at \u20b9160.0 (+33.3% listing return)."
+  },
+  {
+    "name": "Maxwell Engineering Solutions",
+    "category": "NSE Emerge",
+    "sector": "Recently Listed",
+    "status": "Recently Listed",
+    "issue_period": "Recently Listed",
+    "price_band": "\u20b9158.00",
+    "lot_size": "Standard",
+    "issue_size_cr": "Completed",
+    "gmp_inr": "\u20b9105",
+    "gmp_pct": 89.9,
+    "subscription_total": "Listed @ \u20b9300.00 (+89.9%)",
+    "verdict": "\ud83c\udf89 MULTIBAGGER DEBUT",
+    "analysis": "Issued at \u20b9158.0, debuted at \u20b9300.0 (+89.9% listing return)."
   },
   {
     "name": "Johnsoncab Electricals",

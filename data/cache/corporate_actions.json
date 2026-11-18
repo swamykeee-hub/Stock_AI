@@ -1,103 +1,13 @@
 {
-  "timestamp": "2026-11-17 16:10:37",
+  "timestamp": "2026-11-18 08:45:47",
   "dividends": [
-    {
-      "stock_name": "Power Finance",
-      "symbol": "PFC02",
-      "event_type": "Dividend - Interim",
-      "ex_date": "17/11/2026",
-      "dividend_amount": "\u20b94.10",
-      "cmp": "\u20b9328.70",
-      "estimated_yield": "1.25%",
-      "announcement_date": "04/11/2026"
-    },
-    {
-      "stock_name": "MRF",
-      "symbol": "MRF",
-      "event_type": "Dividend - Interim",
-      "ex_date": "17/11/2026",
-      "dividend_amount": "\u20b93.00",
-      "cmp": "\u20b9128830.00",
-      "estimated_yield": "\u2014",
-      "announcement_date": "02/11/2026"
-    },
-    {
-      "stock_name": "EAAA India",
-      "symbol": "EIA",
-      "event_type": "Dividend - Interim",
-      "ex_date": "17/11/2026",
-      "dividend_amount": "\u20b97.00",
-      "cmp": "\u20b91963.60",
-      "estimated_yield": "0.36%",
-      "announcement_date": "11/11/2026"
-    },
-    {
-      "stock_name": "PowerGrid InvIT",
-      "symbol": "PII04",
-      "event_type": "Dividend - Treasury I",
-      "ex_date": "17/11/2026",
-      "dividend_amount": "\u20b90.01",
-      "cmp": "\u20b9104.20",
-      "estimated_yield": "0.01%",
-      "announcement_date": "08/11/2026"
-    },
-    {
-      "stock_name": "PowerGrid InvIT",
-      "symbol": "PII04",
-      "event_type": "Dividend - RepOfCapSP",
-      "ex_date": "17/11/2026",
-      "dividend_amount": "\u20b90.68",
-      "cmp": "\u20b9104.20",
-      "estimated_yield": "0.65%",
-      "announcement_date": "07/11/2026"
-    },
-    {
-      "stock_name": "PowerGrid InvIT",
-      "symbol": "PII04",
-      "event_type": "Dividend - Dividend",
-      "ex_date": "17/11/2026",
-      "dividend_amount": "\u20b90.62",
-      "cmp": "\u20b9104.20",
-      "estimated_yield": "0.6%",
-      "announcement_date": "06/11/2026"
-    },
-    {
-      "stock_name": "PowerGrid InvIT",
-      "symbol": "PII04",
-      "event_type": "Dividend - Interest",
-      "ex_date": "17/11/2026",
-      "dividend_amount": "\u20b91.69",
-      "cmp": "\u20b9104.20",
-      "estimated_yield": "1.62%",
-      "announcement_date": "05/11/2026"
-    },
-    {
-      "stock_name": "PowerGrid InvIT",
-      "symbol": "PII04",
-      "event_type": "Dividend - ",
-      "ex_date": "17/11/2026",
-      "dividend_amount": "\u20b9-",
-      "cmp": "\u20b9104.20",
-      "estimated_yield": "\u2014",
-      "announcement_date": "05/11/2026"
-    },
-    {
-      "stock_name": "Nile",
-      "symbol": "N01",
-      "event_type": "Dividend - Interim",
-      "ex_date": "17/11/2026",
-      "dividend_amount": "\u20b93.00",
-      "cmp": "\u20b91228.00",
-      "estimated_yield": "0.24%",
-      "announcement_date": "12/11/2026"
-    },
     {
       "stock_name": "Page Industries",
       "symbol": "PI35",
       "event_type": "Dividend - Interim",
       "ex_date": "18/11/2026",
       "dividend_amount": "\u20b9150.00",
-      "cmp": "\u20b931060.00",
+      "cmp": "\u20b931105.00",
       "estimated_yield": "0.48%",
       "announcement_date": "30/10/2026"
     },
@@ -112,13 +22,23 @@
       "announcement_date": "12/11/2026"
     },
     {
+      "stock_name": "TD Power System",
+      "symbol": "TPS",
+      "event_type": "Dividend - Interim",
+      "ex_date": "18/11/2026",
+      "dividend_amount": "\u20b90.65",
+      "cmp": "\u20b9620.90",
+      "estimated_yield": "0.1%",
+      "announcement_date": "12/11/2026"
+    },
+    {
       "stock_name": "Capital Infra T",
       "symbol": "CIT02",
       "event_type": "Dividend - Interest",
       "ex_date": "18/11/2026",
-      "dividend_amount": "\u20b9-",
-      "cmp": "\u20b981.10",
-      "estimated_yield": "\u2014",
+      "dividend_amount": "\u20b91.20",
+      "cmp": "\u20b981.09",
+      "estimated_yield": "1.48%",
       "announcement_date": "09/11/2026"
     },
     {
@@ -127,9 +47,19 @@
       "event_type": "Dividend - Interim",
       "ex_date": "18/11/2026",
       "dividend_amount": "\u20b918.00",
-      "cmp": "\u20b91983.60",
-      "estimated_yield": "0.91%",
+      "cmp": "\u20b92001.10",
+      "estimated_yield": "0.9%",
       "announcement_date": "12/11/2026"
+    },
+    {
+      "stock_name": "Connplex Cinema",
+      "symbol": "CCL06",
+      "event_type": "Dividend - Interim",
+      "ex_date": "18/11/2026",
+      "dividend_amount": "\u20b90.50",
+      "cmp": "\u20b9228.00",
+      "estimated_yield": "0.22%",
+      "announcement_date": "04/11/2026"
     },
     {
       "stock_name": "ARCL Organics",
@@ -137,8 +67,8 @@
       "event_type": "Dividend - Interim",
       "ex_date": "18/11/2026",
       "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b9229.95",
-      "estimated_yield": "0.43%",
+      "cmp": "\u20b9224.72",
+      "estimated_yield": "0.44%",
       "announcement_date": "12/11/2026"
     },
     {
@@ -147,27 +77,145 @@
       "event_type": "Dividend - Interim",
       "ex_date": "19/11/2026",
       "dividend_amount": "\u20b91.25",
-      "cmp": "\u20b9821.70",
+      "cmp": "\u20b9822.90",
       "estimated_yield": "0.15%",
       "announcement_date": "13/11/2026"
+    },
+    {
+      "stock_name": "Ingersoll Rand",
+      "symbol": "IRI01",
+      "event_type": "Dividend - Interim",
+      "ex_date": "19/11/2026",
+      "dividend_amount": "\u20b920.00",
+      "cmp": "\u20b93941.10",
+      "estimated_yield": "0.51%",
+      "announcement_date": "06/11/2026"
+    },
+    {
+      "stock_name": "Ashok Leyland",
+      "symbol": "AL",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b9-",
+      "cmp": "\u20b9160.50",
+      "estimated_yield": "\u2014",
+      "announcement_date": "11/11/2026"
+    },
+    {
+      "stock_name": "Oil India",
+      "symbol": "OI13",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b97.00",
+      "cmp": "\u20b9433.50",
+      "estimated_yield": "1.61%",
+      "announcement_date": "12/11/2026"
+    },
+    {
+      "stock_name": "Venus Pipes",
+      "symbol": "VPT01",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b90.50",
+      "cmp": "\u20b91795.30",
+      "estimated_yield": "0.03%",
+      "announcement_date": "05/11/2026"
+    },
+    {
+      "stock_name": "Steelcast",
+      "symbol": "S06",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b90.45",
+      "cmp": "\u20b9361.80",
+      "estimated_yield": "0.12%",
+      "announcement_date": "03/11/2026"
+    },
+    {
+      "stock_name": "Marsons",
+      "symbol": "M01",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b90.05",
+      "cmp": "\u20b9160.84",
+      "estimated_yield": "0.03%",
+      "announcement_date": "13/11/2026"
+    },
+    {
+      "stock_name": "Talbros Auto",
+      "symbol": "TAC",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b90.30",
+      "cmp": "\u20b9412.40",
+      "estimated_yield": "0.07%",
+      "announcement_date": "11/11/2026"
     }
   ],
   "earnings": [
     {
-      "date": "17 Nov",
-      "stock_name": "Core4 Engineers",
-      "symbol": "CORE4",
+      "date": "18 Nov",
+      "stock_name": "BLS Polymers",
+      "symbol": "BPL13",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b982.90",
-      "market_cap": "\u20b9171 Cr"
+      "ltp": "\u20b9275.50",
+      "market_cap": "\u20b91708.98 Cr"
     },
     {
       "date": "18 Nov",
-      "stock_name": "Tata Consumer Products",
-      "symbol": "TATACONSUM",
-      "result_type": "Board Meeting / Results",
-      "ltp": "\u20b9942.50",
-      "market_cap": "\u20b987,500 Cr"
+      "stock_name": "GVP Infotech",
+      "symbol": "FDS01",
+      "result_type": "Q2 FY26-27",
+      "ltp": "\u20b96.99",
+      "market_cap": "\u20b9121.24 Cr"
+    },
+    {
+      "date": "18 Nov",
+      "stock_name": "Malpani Pipes & Fittings",
+      "symbol": "MPF01",
+      "result_type": "Q2 FY26-27",
+      "ltp": "\u20b964.95",
+      "market_cap": "\u20b970 Cr"
+    },
+    {
+      "date": "18 Nov",
+      "stock_name": "Ansal Properties & Infrastructure",
+      "symbol": "API02",
+      "result_type": "Q2 FY26-27",
+      "ltp": "\u20b93.02",
+      "market_cap": "\u20b947.54 Cr"
+    },
+    {
+      "date": "18 Nov",
+      "stock_name": "Kaiser Corporation",
+      "symbol": "KP09",
+      "result_type": "Q2 FY26-27",
+      "ltp": "\u20b95.34",
+      "market_cap": "\u20b928.1 Cr"
+    },
+    {
+      "date": "18 Nov",
+      "stock_name": "Trans India House Impex",
+      "symbol": "MGB",
+      "result_type": "Q2 FY26-27",
+      "ltp": "\u20b92.72",
+      "market_cap": "\u20b919.33 Cr"
+    },
+    {
+      "date": "18 Nov",
+      "stock_name": "Samyak International",
+      "symbol": "MCS03",
+      "result_type": "Q2 FY26-27",
+      "ltp": "\u20b923.19",
+      "market_cap": "\u20b918.55 Cr"
+    },
+    {
+      "date": "18 Nov",
+      "stock_name": "SBL Infratech",
+      "symbol": "SIL16",
+      "result_type": "Q2 FY26-27",
+      "ltp": "\u20b942.50",
+      "market_cap": "\u20b93.45 Cr"
     }
   ],
   "splits_and_actions": [
@@ -188,6 +236,22 @@
       "announcement_date": "11/09/2026"
     },
     {
+      "stock_name": "Ironwood Edu.",
+      "symbol": "MJP01",
+      "action_type": "Rights Issue",
+      "ex_date": "18/11/2026",
+      "ratio": "34:100",
+      "announcement_date": "14/08/2026"
+    },
+    {
+      "stock_name": "Geetanjali Cred",
+      "symbol": "GCC05",
+      "action_type": "Rights Issue",
+      "ex_date": "18/11/2026",
+      "ratio": "16:1",
+      "announcement_date": "16/07/2026"
+    },
+    {
       "stock_name": "Indergiri Fin",
       "symbol": "IF06",
       "action_type": "Rights Issue",
@@ -196,5 +260,5 @@
       "announcement_date": "10/02/2026"
     }
   ],
-  "total_events": 20
+  "total_events": 28
 }

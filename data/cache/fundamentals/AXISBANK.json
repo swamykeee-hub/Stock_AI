@@ -1,0 +1,24 @@
+{
+  "score": 5.5,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        426372\n        \n          Cr.",
+    "current_price": "\u20b9\n        1369",
+    "stock_pe": "15.4",
+    "book_value": "\u20b9\n        703",
+    "dividend_yield_pct": "0.07\n        \n          %",
+    "roce_pct": "6.07\n        \n          %",
+    "roe_pct": "12.7\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        2.00"
+  },
+  "strengths": [
+    "Company has delivered good profit growth of 30.0% CAGR over last 5 years",
+    "Company's working capital requirements have reduced from 52.8 days to 18.3 days",
+    "Attractive Valuation Multiple (P/E: 15.4x)"
+  ],
+  "red_flags": [
+    "Company has low interest coverage ratio.",
+    "Promoter holding is low: 7.86%",
+    "Contingent liabilities of Rs.31,19,816 Cr."
+  ]
+}
