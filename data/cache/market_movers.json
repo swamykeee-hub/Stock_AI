@@ -1,77 +1,106 @@
 {
-  "timestamp": "2026-11-18 08:45:49",
+  "timestamp": "2026-11-18 09:16:27",
   "top_gainers": [
     {
-      "symbol": "FIRSTCRY",
-      "name": "Brainbees Solutions",
-      "price": "\u20b9178.97",
-      "change_pct": "+12.85%",
-      "change_val": "+20.38"
+      "symbol": "HONASA",
+      "name": "Honasa Consumer",
+      "price": "\u20b9521.45",
+      "price_raw": "521.45",
+      "change_pct": "+0.70%",
+      "change_val": "3.65",
+      "high": "521.90",
+      "low": "518.05",
+      "volume": "16,928"
     },
     {
-      "symbol": "SIGNATURE",
-      "name": "SignatureGlobal",
-      "price": "\u20b9835.60",
-      "change_pct": "+9.12%",
-      "change_val": "+69.80"
+      "symbol": "BHARTIARTL",
+      "name": "Bharti Airtel",
+      "price": "\u20b92,143.10",
+      "price_raw": "2143.10",
+      "change_pct": "+0.22%",
+      "change_val": "4.80",
+      "high": "2,145.60",
+      "low": "2,136.00",
+      "volume": "127,664"
     },
     {
-      "symbol": "WELSPUNLIV",
-      "name": "Welspun Living",
-      "price": "\u20b9265.62",
-      "change_pct": "+7.45%",
-      "change_val": "+18.40"
-    },
-    {
-      "symbol": "DFP",
-      "name": "Deepak Fertilizers",
-      "price": "\u20b91,443.70",
-      "change_pct": "+6.80%",
-      "change_val": "+91.80"
-    },
-    {
-      "symbol": "LAURUSLABS",
-      "name": "Laurus Labs",
-      "price": "\u20b92,338.00",
-      "change_pct": "+4.80%",
-      "change_val": "+107.00"
+      "symbol": "MEESHO",
+      "name": "Meesho",
+      "price": "\u20b9252.94",
+      "price_raw": "252.94",
+      "change_pct": "+0.12%",
+      "change_val": "0.30",
+      "high": "255.00",
+      "low": "252.74",
+      "volume": "256,891"
     }
   ],
   "top_losers": [
     {
-      "symbol": "URBANCO",
-      "name": "Urban Company",
-      "price": "\u20b9161.63",
-      "change_pct": "-5.86%",
-      "change_val": "-10.07"
+      "symbol": "GODREJPROP",
+      "name": "Godrej Prop",
+      "price": "\u20b91,861.70",
+      "price_raw": "1861.70",
+      "change_pct": "-1.62%",
+      "change_val": "-30.70",
+      "high": "1,872.20",
+      "low": "1,856.50",
+      "volume": "14,107"
     },
     {
-      "symbol": "INDIACEM",
-      "name": "India Cements",
-      "price": "\u20b9321.50",
-      "change_pct": "-4.56%",
-      "change_val": "-15.35"
+      "symbol": "COLPAL",
+      "name": "Colgate",
+      "price": "\u20b91,696.70",
+      "price_raw": "1696.70",
+      "change_pct": "-1.34%",
+      "change_val": "-23.00",
+      "high": "1,714.90",
+      "low": "1,693.60",
+      "volume": "7,998"
     },
     {
-      "symbol": "CONCORDBIO",
-      "name": "Concord Biotech",
-      "price": "\u20b9554.80",
-      "change_pct": "-4.51%",
-      "change_val": "-26.20"
+      "symbol": "MARICO",
+      "name": "Marico",
+      "price": "\u20b9915.35",
+      "price_raw": "915.35",
+      "change_pct": "-0.94%",
+      "change_val": "-8.65",
+      "high": "916.80",
+      "low": "912.25",
+      "volume": "35,978"
     },
     {
-      "symbol": "APARINDS",
-      "name": "Apar Industries",
-      "price": "\u20b914,171.00",
-      "change_pct": "-4.45%",
-      "change_val": "-660.00"
+      "symbol": "CHAMBLFERT",
+      "name": "Chambal Fert",
+      "price": "\u20b9371.15",
+      "price_raw": "371.15",
+      "change_pct": "-0.47%",
+      "change_val": "-1.75",
+      "high": "373.20",
+      "low": "369.90",
+      "volume": "19,376"
     },
     {
-      "symbol": "SAMMAANCAP",
-      "name": "Sammaan Capital",
-      "price": "\u20b9131.29",
-      "change_pct": "-4.42%",
-      "change_val": "-6.07"
+      "symbol": "ARE&M",
+      "name": "Amara Raja",
+      "price": "\u20b9743.40",
+      "price_raw": "743.40",
+      "change_pct": "-0.46%",
+      "change_val": "-3.45",
+      "high": "743.40",
+      "low": "737.65",
+      "volume": "4,261"
+    },
+    {
+      "symbol": "MAHABANK",
+      "name": "Bank of Mah",
+      "price": "\u20b995.87",
+      "price_raw": "95.87",
+      "change_pct": "-0.13%",
+      "change_val": "-0.12",
+      "high": "95.97",
+      "low": "95.44",
+      "volume": "965,379"
     }
   ]
 }

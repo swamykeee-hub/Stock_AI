@@ -1,9 +1,9 @@
 {
   "score": 4.0,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        491647\n        \n          Cr.",
-    "current_price": "\u20b9\n        494",
-    "stock_pe": "31.1",
+    "market_cap_cr": "\u20b9\n        494682\n        \n          Cr.",
+    "current_price": "\u20b9\n        497",
+    "stock_pe": "31.3",
     "book_value": "\u20b9\n        147",
     "dividend_yield_pct": "0.13\n        \n          %",
     "roce_pct": "6.42\n        \n          %",
@@ -15,7 +15,7 @@
     "Established market presence"
   ],
   "red_flags": [
-    "Stock is trading at 3.37 times its book value",
+    "Stock is trading at 3.39 times its book value",
     "Company has low interest coverage ratio.",
     "Company has a low return on equity of 13.9% over last 3 years."
   ]

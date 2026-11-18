@@ -1,9 +1,9 @@
 {
   "score": 4.7,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        2319\n        \n          Cr.",
-    "current_price": "\u20b9\n        56.7",
-    "stock_pe": "14.5",
+    "market_cap_cr": "\u20b9\n        2365\n        \n          Cr.",
+    "current_price": "\u20b9\n        57.9",
+    "stock_pe": "14.7",
     "book_value": "\u20b9\n        583",
     "dividend_yield_pct": "0.00\n        \n          %",
     "roce_pct": "-0.97\n        \n          %",
@@ -14,7 +14,7 @@
   "strengths": [
     "Company is almost debt free.",
     "Stock is trading at 0.10 times its book value",
-    "Attractive Valuation Multiple (P/E: 14.5x)"
+    "Attractive Valuation Multiple (P/E: 14.7x)"
   ],
   "red_flags": [
     "Company has low interest coverage ratio.",

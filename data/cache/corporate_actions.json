@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-18 08:45:47",
+  "timestamp": "2026-11-18 09:16:25",
   "dividends": [
     {
       "stock_name": "Page Industries",
@@ -158,16 +158,16 @@
       "stock_name": "BLS Polymers",
       "symbol": "BPL13",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9275.50",
-      "market_cap": "\u20b91708.98 Cr"
+      "ltp": "\u20b9282.32",
+      "market_cap": "\u20b91751.28 Cr"
     },
     {
       "date": "18 Nov",
       "stock_name": "GVP Infotech",
       "symbol": "FDS01",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b96.99",
-      "market_cap": "\u20b9121.24 Cr"
+      "ltp": "\u20b97.00",
+      "market_cap": "\u20b9121.41 Cr"
     },
     {
       "date": "18 Nov",
@@ -182,24 +182,24 @@
       "stock_name": "Ansal Properties & Infrastructure",
       "symbol": "API02",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b93.02",
-      "market_cap": "\u20b947.54 Cr"
+      "ltp": "\u20b93.07",
+      "market_cap": "\u20b948.32 Cr"
     },
     {
       "date": "18 Nov",
       "stock_name": "Kaiser Corporation",
       "symbol": "KP09",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b95.34",
-      "market_cap": "\u20b928.1 Cr"
+      "ltp": "\u20b95.38",
+      "market_cap": "\u20b928.31 Cr"
     },
     {
       "date": "18 Nov",
       "stock_name": "Trans India House Impex",
       "symbol": "MGB",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b92.72",
-      "market_cap": "\u20b919.33 Cr"
+      "ltp": "\u20b92.71",
+      "market_cap": "\u20b919.26 Cr"
     },
     {
       "date": "18 Nov",

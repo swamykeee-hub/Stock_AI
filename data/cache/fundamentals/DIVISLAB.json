@@ -1,9 +1,9 @@
 {
   "score": 6.0,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        294139\n        \n          Cr.",
-    "current_price": "\u20b9\n        11080",
-    "stock_pe": "85.5",
+    "market_cap_cr": "\u20b9\n        295997\n        \n          Cr.",
+    "current_price": "\u20b9\n        11150",
+    "stock_pe": "86.0",
     "book_value": "\u20b9\n        676",
     "dividend_yield_pct": "0.27\n        \n          %",
     "roce_pct": "22.4\n        \n          %",
@@ -18,8 +18,8 @@
     "Company has been maintaining a healthy dividend payout of 39.0%"
   ],
   "red_flags": [
-    "Stock is trading at 16.4 times its book value",
+    "Stock is trading at 16.5 times its book value",
     "The company has delivered a poor sales growth of 8.85% over past five years.",
-    "Premium Valuation (P/E: 85.5x)"
+    "Premium Valuation (P/E: 86.0x)"
   ]
 }
