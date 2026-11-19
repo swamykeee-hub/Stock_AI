@@ -8,11 +8,11 @@
     "price_band": "\u20b9259.00 - \u20b9272.00",
     "lot_size": "55",
     "issue_size_cr": "455.97",
-    "gmp_inr": "\u20b918.00",
-    "gmp_pct": 6.6,
-    "subscription_total": "1.41x",
+    "gmp_inr": "\u20b917.00",
+    "gmp_pct": 6.2,
+    "subscription_total": "2.89x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 18 Nov 2026 \u2013 20 Nov 2026 \u2022 Est. Listing: \u20b9290 (+6.6%)"
+    "analysis": "Dates: 18 Nov 2026 \u2013 20 Nov 2026 \u2022 Est. Listing: \u20b9289 (+6.2%)"
   },
   {
     "name": "Watrana Rentals",
@@ -23,11 +23,11 @@
     "price_band": "\u20b9232.00 - \u20b9245.00",
     "lot_size": "600",
     "issue_size_cr": "120.10",
-    "gmp_inr": "\u20b962.00",
-    "gmp_pct": 25.3,
-    "subscription_total": "Active",
+    "gmp_inr": "\u20b967.00",
+    "gmp_pct": 27.4,
+    "subscription_total": "3.74x",
     "verdict": "\u2705 APPLY (Moderate Listing Gain)",
-    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9307 (+25.3%)"
+    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9312 (+27.4%)"
   },
   {
     "name": "Mahanadi Coalfields",
@@ -38,18 +38,33 @@
     "price_band": "\u20b9129.00 - \u20b9136.00",
     "lot_size": "110",
     "issue_size_cr": "9000.97",
-    "gmp_inr": "\u20b93.00",
-    "gmp_pct": 2.2,
-    "subscription_total": "Active",
+    "gmp_inr": "\u20b92.30",
+    "gmp_pct": 1.7,
+    "subscription_total": "0.38x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9139 (+2.2%)"
+    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9138 (+1.7%)"
+  },
+  {
+    "name": "Shree Siddhivinayak Greentech Industries",
+    "category": "NSE Emerge",
+    "sector": "Agro",
+    "status": "Upcoming",
+    "issue_period": "25 Nov 2026 \u2013 27 Nov 2026",
+    "price_band": "\u20b9130.00 - \u20b9142.00",
+    "lot_size": "1,000",
+    "issue_size_cr": "93.66",
+    "gmp_inr": "\u20b90.00",
+    "gmp_pct": 0.0,
+    "subscription_total": "Yet to Open",
+    "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
+    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9142 (+0.0%)"
   },
   {
     "name": "Foodlink F&B Holdings",
     "category": "Mainboard",
     "sector": "Hotels & Resorts",
     "status": "Upcoming",
-    "issue_period": "25 Nov 2026 \u2013 27 Nov 2026",
+    "issue_period": "26 Nov 2026 \u2013 30 Nov 2026",
     "price_band": "TBA",
     "lot_size": "0",
     "issue_size_cr": "0.00",
@@ -57,7 +72,7 @@
     "gmp_pct": 0.0,
     "subscription_total": "Yet to Open",
     "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
-    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b90 (+0.0%)"
+    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b90 (+0.0%)"
   },
   {
     "name": "Hindustan Coca Cola",
@@ -105,21 +120,6 @@
     "analysis": "Issued at \u20b994.0, debuted at \u20b994.0 (+0.0% listing return)."
   },
   {
-    "name": "HGS (India)",
-    "category": "NSE Emerge",
-    "sector": "Recently Listed",
-    "status": "Recently Listed",
-    "issue_period": "Recently Listed",
-    "price_band": "\u20b9120.00",
-    "lot_size": "Standard",
-    "issue_size_cr": "Completed",
-    "gmp_inr": "\u20b928",
-    "gmp_pct": 33.3,
-    "subscription_total": "Listed @ \u20b9160.00 (+33.3%)",
-    "verdict": "\u2705 POSITIVE LISTING",
-    "analysis": "Issued at \u20b9120.0, debuted at \u20b9160.0 (+33.3% listing return)."
-  },
-  {
     "name": "Maxwell Engineering Solutions",
     "category": "NSE Emerge",
     "sector": "Recently Listed",
@@ -133,6 +133,21 @@
     "subscription_total": "Listed @ \u20b9300.00 (+89.9%)",
     "verdict": "\ud83c\udf89 MULTIBAGGER DEBUT",
     "analysis": "Issued at \u20b9158.0, debuted at \u20b9300.0 (+89.9% listing return)."
+  },
+  {
+    "name": "HGS (India)",
+    "category": "NSE Emerge",
+    "sector": "Recently Listed",
+    "status": "Recently Listed",
+    "issue_period": "Recently Listed",
+    "price_band": "\u20b9120.00",
+    "lot_size": "Standard",
+    "issue_size_cr": "Completed",
+    "gmp_inr": "\u20b928",
+    "gmp_pct": 33.3,
+    "subscription_total": "Listed @ \u20b9160.00 (+33.3%)",
+    "verdict": "\u2705 POSITIVE LISTING",
+    "analysis": "Issued at \u20b9120.0, debuted at \u20b9160.0 (+33.3% listing return)."
   },
   {
     "name": "Johnsoncab Electricals",

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-19 09:15:51",
+  "timestamp": "2026-11-19 18:01:12",
   "dividends": [
     {
       "stock_name": "Natco Pharma",
@@ -7,7 +7,7 @@
       "event_type": "Dividend - Interim",
       "ex_date": "19/11/2026",
       "dividend_amount": "\u20b91.25",
-      "cmp": "\u20b9820.60",
+      "cmp": "\u20b9821.95",
       "estimated_yield": "0.15%",
       "announcement_date": "13/11/2026"
     },
@@ -17,8 +17,8 @@
       "event_type": "Dividend - Interim",
       "ex_date": "19/11/2026",
       "dividend_amount": "\u20b920.00",
-      "cmp": "\u20b93902.50",
-      "estimated_yield": "0.51%",
+      "cmp": "\u20b93824.90",
+      "estimated_yield": "0.52%",
       "announcement_date": "06/11/2026"
     },
     {
@@ -27,8 +27,8 @@
       "event_type": "Dividend - Interim",
       "ex_date": "19/11/2026",
       "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b9139.90",
-      "estimated_yield": "0.71%",
+      "cmp": "\u20b9142.00",
+      "estimated_yield": "0.7%",
       "announcement_date": "16/11/2026"
     },
     {
@@ -37,8 +37,8 @@
       "event_type": "Dividend - Interim",
       "ex_date": "19/11/2026",
       "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b962.31",
-      "estimated_yield": "1.6%",
+      "cmp": "\u20b962.91",
+      "estimated_yield": "1.59%",
       "announcement_date": "16/11/2026"
     },
     {
@@ -47,8 +47,8 @@
       "event_type": "Dividend - Interim",
       "ex_date": "19/11/2026",
       "dividend_amount": "\u20b90.80",
-      "cmp": "\u20b9102.06",
-      "estimated_yield": "0.78%",
+      "cmp": "\u20b998.70",
+      "estimated_yield": "0.81%",
       "announcement_date": "16/11/2026"
     },
     {
@@ -57,8 +57,8 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b9162.45",
-      "estimated_yield": "0.62%",
+      "cmp": "\u20b9166.15",
+      "estimated_yield": "0.6%",
       "announcement_date": "11/11/2026"
     },
     {
@@ -67,8 +67,8 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b97.00",
-      "cmp": "\u20b9435.50",
-      "estimated_yield": "1.61%",
+      "cmp": "\u20b9437.90",
+      "estimated_yield": "1.6%",
       "announcement_date": "12/11/2026"
     },
     {
@@ -77,8 +77,8 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b9136.30",
-      "estimated_yield": "0.73%",
+      "cmp": "\u20b9140.69",
+      "estimated_yield": "0.71%",
       "announcement_date": "16/11/2026"
     },
     {
@@ -87,7 +87,7 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b90.50",
-      "cmp": "\u20b91804.50",
+      "cmp": "\u20b91768.80",
       "estimated_yield": "0.03%",
       "announcement_date": "05/11/2026"
     },
@@ -97,8 +97,8 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b90.45",
-      "cmp": "\u20b9356.40",
-      "estimated_yield": "0.13%",
+      "cmp": "\u20b9387.55",
+      "estimated_yield": "0.12%",
       "announcement_date": "03/11/2026"
     },
     {
@@ -107,8 +107,8 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b912.00",
-      "cmp": "\u20b9987.10",
-      "estimated_yield": "1.22%",
+      "cmp": "\u20b9989.30",
+      "estimated_yield": "1.21%",
       "announcement_date": "16/11/2026"
     },
     {
@@ -117,7 +117,7 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b90.05",
-      "cmp": "\u20b9164.77",
+      "cmp": "\u20b9154.83",
       "estimated_yield": "0.03%",
       "announcement_date": "13/11/2026"
     },
@@ -127,19 +127,9 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b90.30",
-      "cmp": "\u20b9406.95",
+      "cmp": "\u20b9404.05",
       "estimated_yield": "0.07%",
       "announcement_date": "11/11/2026"
-    },
-    {
-      "stock_name": "Skyways Air Ser",
-      "symbol": "S26",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b90.40",
-      "cmp": "\u20b9128.94",
-      "estimated_yield": "0.31%",
-      "announcement_date": "16/11/2026"
     },
     {
       "stock_name": "BF Investment",
@@ -147,9 +137,19 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b920.00",
-      "cmp": "\u20b9492.15",
-      "estimated_yield": "4.06%",
+      "cmp": "\u20b9487.25",
+      "estimated_yield": "4.1%",
       "announcement_date": "13/11/2026"
+    },
+    {
+      "stock_name": "Skyways Air Ser",
+      "symbol": "S26",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b90.40",
+      "cmp": "\u20b9123.35",
+      "estimated_yield": "0.32%",
+      "announcement_date": "16/11/2026"
     }
   ],
   "earnings": [
@@ -158,32 +158,40 @@
       "stock_name": "Muthoot Microfin",
       "symbol": "MML07",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9166.00",
-      "market_cap": "\u20b92830.17 Cr"
+      "ltp": "\u20b9169.80",
+      "market_cap": "\u20b92894.96 Cr"
     },
     {
       "date": "19 Nov",
       "stock_name": "Spice Islands Industries",
       "symbol": "SIA02",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9149.20",
-      "market_cap": "\u20b9465.01 Cr"
+      "ltp": "\u20b9150.35",
+      "market_cap": "\u20b9468.59 Cr"
     },
     {
       "date": "19 Nov",
       "stock_name": "KR Rail Enginerring",
       "symbol": "GCI02",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b915.38",
-      "market_cap": "\u20b958.61 Cr"
+      "ltp": "\u20b914.95",
+      "market_cap": "\u20b956.97 Cr"
+    },
+    {
+      "date": "19 Nov",
+      "stock_name": "GB Logistics Commerce",
+      "symbol": "GLC",
+      "result_type": "Q2 FY26-27",
+      "ltp": "\u20b927.00",
+      "market_cap": "\u20b922.13 Cr"
     },
     {
       "date": "19 Nov",
       "stock_name": "Boston Commerce",
       "symbol": "LEC01",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b911.63",
-      "market_cap": "\u20b98.14 Cr"
+      "ltp": "\u20b911.40",
+      "market_cap": "\u20b97.98 Cr"
     }
   ],
   "splits_and_actions": [
@@ -228,5 +236,5 @@
       "announcement_date": "10/02/2026"
     }
   ],
-  "total_events": 24
+  "total_events": 25
 }
