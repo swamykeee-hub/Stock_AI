@@ -1,8 +1,8 @@
 {
   "score": 6.2,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        571762\n        \n          Cr.",
-    "current_price": "\u20b9\n        4156",
+    "market_cap_cr": "\u20b9\n        572244\n        \n          Cr.",
+    "current_price": "\u20b9\n        4159",
     "stock_pe": "36.7",
     "book_value": "\u20b9\n        559",
     "dividend_yield_pct": "0.91\n        \n          %",
@@ -17,7 +17,7 @@
     "Healthy Capital Return (ROCE: 19.3%)"
   ],
   "red_flags": [
-    "Stock is trading at 7.43 times its book value",
+    "Stock is trading at 7.44 times its book value",
     "The company has delivered a poor sales growth of 12.0% over past five years.",
     "Earnings include an other income of Rs.8,543 Cr."
   ]

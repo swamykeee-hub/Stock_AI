@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-19 08:45:50",
+  "timestamp": "2026-11-19 09:15:51",
   "dividends": [
     {
       "stock_name": "Natco Pharma",
@@ -158,24 +158,24 @@
       "stock_name": "Muthoot Microfin",
       "symbol": "MML07",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9165.17",
-      "market_cap": "\u20b92816.02 Cr"
+      "ltp": "\u20b9166.00",
+      "market_cap": "\u20b92830.17 Cr"
     },
     {
       "date": "19 Nov",
       "stock_name": "Spice Islands Industries",
       "symbol": "SIA02",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9143.90",
-      "market_cap": "\u20b9448.49 Cr"
+      "ltp": "\u20b9149.20",
+      "market_cap": "\u20b9465.01 Cr"
     },
     {
       "date": "19 Nov",
       "stock_name": "KR Rail Enginerring",
       "symbol": "GCI02",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b915.01",
-      "market_cap": "\u20b957.2 Cr"
+      "ltp": "\u20b915.38",
+      "market_cap": "\u20b958.61 Cr"
     },
     {
       "date": "19 Nov",

@@ -1,40 +1,148 @@
 {
-  "timestamp": "2026-11-19 08:45:51",
+  "timestamp": "2026-11-19 09:15:53",
   "top_gainers": [
     {
-      "symbol": "FIRSTCRY",
-      "name": "Brainbees Solutions",
-      "price": "\u20b9178.97",
-      "change_pct": "+12.85%",
-      "change_val": "+20.38"
+      "symbol": "LENSKART",
+      "name": "Lenskart Solu",
+      "price": "\u20b9738.85",
+      "price_raw": "738.85",
+      "change_pct": "+0.92%",
+      "change_val": "6.75",
+      "high": "739.65",
+      "low": "732.00",
+      "volume": "26,960"
     },
     {
-      "symbol": "SIGNATURE",
-      "name": "SignatureGlobal",
-      "price": "\u20b9835.60",
-      "change_pct": "+9.12%",
-      "change_val": "+69.80"
+      "symbol": "CIPLA",
+      "name": "Cipla",
+      "price": "\u20b91,427.50",
+      "price_raw": "1427.50",
+      "change_pct": "+0.74%",
+      "change_val": "10.50",
+      "high": "1,427.50",
+      "low": "1,420.00",
+      "volume": "7,520"
     },
     {
-      "symbol": "WELSPUNLIV",
-      "name": "Welspun Living",
-      "price": "\u20b9265.62",
-      "change_pct": "+7.45%",
-      "change_val": "+18.40"
+      "symbol": "SBIN",
+      "name": "SBI",
+      "price": "\u20b91,143.00",
+      "price_raw": "1143.00",
+      "change_pct": "+0.70%",
+      "change_val": "8.00",
+      "high": "1,148.00",
+      "low": "1,141.30",
+      "volume": "879,212"
     },
     {
-      "symbol": "DFP",
-      "name": "Deepak Fertilizers",
-      "price": "\u20b91,443.70",
-      "change_pct": "+6.80%",
-      "change_val": "+91.80"
+      "symbol": "HEROMOTOCO",
+      "name": "Hero Motocorp",
+      "price": "\u20b95,289.50",
+      "price_raw": "5289.50",
+      "change_pct": "+0.69%",
+      "change_val": "36.50",
+      "high": "5,289.50",
+      "low": "5,264.00",
+      "volume": "8,861"
     },
     {
-      "symbol": "LAURUSLABS",
-      "name": "Laurus Labs",
-      "price": "\u20b92,338.00",
-      "change_pct": "+4.80%",
-      "change_val": "+107.00"
+      "symbol": "WAAREEENER",
+      "name": "Waaree Energies",
+      "price": "\u20b92,407.00",
+      "price_raw": "2407.00",
+      "change_pct": "+0.63%",
+      "change_val": "15.00",
+      "high": "2,407.00",
+      "low": "2,402.80",
+      "volume": "1,401"
+    },
+    {
+      "symbol": "NLCINDIA",
+      "name": "NLC India",
+      "price": "\u20b9228.05",
+      "price_raw": "228.05",
+      "change_pct": "+0.51%",
+      "change_val": "1.16",
+      "high": "228.05",
+      "low": "227.79",
+      "volume": "18,366"
+    },
+    {
+      "symbol": "BHARATFORG",
+      "name": "Bharat Forge",
+      "price": "\u20b91,692.90",
+      "price_raw": "1692.90",
+      "change_pct": "+0.50%",
+      "change_val": "8.40",
+      "high": "1,703.70",
+      "low": "1,688.00",
+      "volume": "11,659"
+    },
+    {
+      "symbol": "GLENMARK",
+      "name": "Glenmark",
+      "price": "\u20b92,655.80",
+      "price_raw": "2655.80",
+      "change_pct": "+0.37%",
+      "change_val": "9.70",
+      "high": "2,658.70",
+      "low": "2,652.10",
+      "volume": "644"
+    },
+    {
+      "symbol": "NIACL",
+      "name": "New India Assur",
+      "price": "\u20b9150.00",
+      "price_raw": "150.00",
+      "change_pct": "+0.24%",
+      "change_val": "0.36",
+      "high": "150.40",
+      "low": "150.00",
+      "volume": "2,014"
+    },
+    {
+      "symbol": "CYIENT",
+      "name": "Cyient",
+      "price": "\u20b91,088.00",
+      "price_raw": "1088.00",
+      "change_pct": "+0.15%",
+      "change_val": "1.60",
+      "high": "1,106.40",
+      "low": "1,087.00",
+      "volume": "13,708"
+    },
+    {
+      "symbol": "DRREDDY",
+      "name": "Dr Reddys Labs",
+      "price": "\u20b91,400.00",
+      "price_raw": "1400.00",
+      "change_pct": "+0.13%",
+      "change_val": "1.80",
+      "high": "1,400.00",
+      "low": "1,398.00",
+      "volume": "3,637"
+    },
+    {
+      "symbol": "NBCC",
+      "name": "NBCC (India)",
+      "price": "\u20b977.40",
+      "price_raw": "77.40",
+      "change_pct": "+0.10%",
+      "change_val": "0.08",
+      "high": "77.49",
+      "low": "77.30",
+      "volume": "27,328"
+    },
+    {
+      "symbol": "UPL",
+      "name": "UPL",
+      "price": "\u20b9552.15",
+      "price_raw": "552.15",
+      "change_pct": "+0.03%",
+      "change_val": "0.15",
+      "high": "552.15",
+      "low": "551.90",
+      "volume": "3,921"
     }
   ],
   "top_losers": [
