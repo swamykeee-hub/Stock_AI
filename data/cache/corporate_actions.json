@@ -1,76 +1,6 @@
 {
-  "timestamp": "2026-11-18 18:00:56",
+  "timestamp": "2026-11-19 08:45:50",
   "dividends": [
-    {
-      "stock_name": "Page Industries",
-      "symbol": "PI35",
-      "event_type": "Dividend - Interim",
-      "ex_date": "18/11/2026",
-      "dividend_amount": "\u20b9150.00",
-      "cmp": "\u20b930810.00",
-      "estimated_yield": "0.49%",
-      "announcement_date": "30/10/2026"
-    },
-    {
-      "stock_name": "Manappuram Fin",
-      "symbol": "MGF01",
-      "event_type": "Dividend - Interim",
-      "ex_date": "18/11/2026",
-      "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b9283.00",
-      "estimated_yield": "0.35%",
-      "announcement_date": "12/11/2026"
-    },
-    {
-      "stock_name": "TD Power System",
-      "symbol": "TPS",
-      "event_type": "Dividend - Interim",
-      "ex_date": "18/11/2026",
-      "dividend_amount": "\u20b90.65",
-      "cmp": "\u20b9632.30",
-      "estimated_yield": "0.1%",
-      "announcement_date": "12/11/2026"
-    },
-    {
-      "stock_name": "Capital Infra T",
-      "symbol": "CIT02",
-      "event_type": "Dividend - Interest",
-      "ex_date": "18/11/2026",
-      "dividend_amount": "\u20b91.20",
-      "cmp": "\u20b979.06",
-      "estimated_yield": "1.52%",
-      "announcement_date": "09/11/2026"
-    },
-    {
-      "stock_name": "A.K.Capital Ser",
-      "symbol": "AKC01",
-      "event_type": "Dividend - Interim",
-      "ex_date": "18/11/2026",
-      "dividend_amount": "\u20b918.00",
-      "cmp": "\u20b92011.20",
-      "estimated_yield": "0.89%",
-      "announcement_date": "12/11/2026"
-    },
-    {
-      "stock_name": "Connplex Cinema",
-      "symbol": "CCL06",
-      "event_type": "Dividend - Interim",
-      "ex_date": "18/11/2026",
-      "dividend_amount": "\u20b90.50",
-      "cmp": "\u20b9227.00",
-      "estimated_yield": "0.22%",
-      "announcement_date": "04/11/2026"
-    },
-    {
-      "stock_name": "ARCL Organics",
-      "symbol": "AO06",
-      "event_type": "Dividend - Interim",
-      "ex_date": "18/11/2026",
-      "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b9219.57",
-      "estimated_yield": "0.46%",
-      "announcement_date": "12/11/2026"
-    },
     {
       "stock_name": "Natco Pharma",
       "symbol": "NP01",
@@ -92,13 +22,43 @@
       "announcement_date": "06/11/2026"
     },
     {
+      "stock_name": "EASTINDIA",
+      "symbol": "VF01",
+      "event_type": "Dividend - Interim",
+      "ex_date": "19/11/2026",
+      "dividend_amount": "\u20b91.00",
+      "cmp": "\u20b9139.90",
+      "estimated_yield": "0.71%",
+      "announcement_date": "16/11/2026"
+    },
+    {
+      "stock_name": "Vibrant Global",
+      "symbol": "VGC",
+      "event_type": "Dividend - Interim",
+      "ex_date": "19/11/2026",
+      "dividend_amount": "\u20b91.00",
+      "cmp": "\u20b962.31",
+      "estimated_yield": "1.6%",
+      "announcement_date": "16/11/2026"
+    },
+    {
+      "stock_name": "Panchsheel Org",
+      "symbol": "PO02",
+      "event_type": "Dividend - Interim",
+      "ex_date": "19/11/2026",
+      "dividend_amount": "\u20b90.80",
+      "cmp": "\u20b9102.06",
+      "estimated_yield": "0.78%",
+      "announcement_date": "16/11/2026"
+    },
+    {
       "stock_name": "Ashok Leyland",
       "symbol": "AL",
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b9-",
+      "dividend_amount": "\u20b91.00",
       "cmp": "\u20b9162.45",
-      "estimated_yield": "\u2014",
+      "estimated_yield": "0.62%",
       "announcement_date": "11/11/2026"
     },
     {
@@ -110,6 +70,16 @@
       "cmp": "\u20b9435.50",
       "estimated_yield": "1.61%",
       "announcement_date": "12/11/2026"
+    },
+    {
+      "stock_name": "Jamna Auto",
+      "symbol": "JAI",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b91.00",
+      "cmp": "\u20b9136.30",
+      "estimated_yield": "0.73%",
+      "announcement_date": "16/11/2026"
     },
     {
       "stock_name": "Venus Pipes",
@@ -132,6 +102,16 @@
       "announcement_date": "03/11/2026"
     },
     {
+      "stock_name": "Polyplex Corp",
+      "symbol": "PC08",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b912.00",
+      "cmp": "\u20b9987.10",
+      "estimated_yield": "1.22%",
+      "announcement_date": "16/11/2026"
+    },
+    {
       "stock_name": "Marsons",
       "symbol": "M01",
       "event_type": "Dividend - Interim",
@@ -150,91 +130,71 @@
       "cmp": "\u20b9406.95",
       "estimated_yield": "0.07%",
       "announcement_date": "11/11/2026"
+    },
+    {
+      "stock_name": "Skyways Air Ser",
+      "symbol": "S26",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b90.40",
+      "cmp": "\u20b9128.94",
+      "estimated_yield": "0.31%",
+      "announcement_date": "16/11/2026"
+    },
+    {
+      "stock_name": "BF Investment",
+      "symbol": "BFI",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b920.00",
+      "cmp": "\u20b9492.15",
+      "estimated_yield": "4.06%",
+      "announcement_date": "13/11/2026"
     }
   ],
   "earnings": [
     {
-      "date": "18 Nov",
-      "stock_name": "BLS Polymers",
-      "symbol": "BPL13",
+      "date": "19 Nov",
+      "stock_name": "Muthoot Microfin",
+      "symbol": "MML07",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9279.98",
-      "market_cap": "\u20b91736.77 Cr"
+      "ltp": "\u20b9165.17",
+      "market_cap": "\u20b92816.02 Cr"
     },
     {
-      "date": "18 Nov",
-      "stock_name": "GVP Infotech",
-      "symbol": "FDS01",
+      "date": "19 Nov",
+      "stock_name": "Spice Islands Industries",
+      "symbol": "SIA02",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b96.86",
-      "market_cap": "\u20b9118.99 Cr"
+      "ltp": "\u20b9143.90",
+      "market_cap": "\u20b9448.49 Cr"
     },
     {
-      "date": "18 Nov",
-      "stock_name": "Malpani Pipes & Fittings",
-      "symbol": "MPF01",
+      "date": "19 Nov",
+      "stock_name": "KR Rail Enginerring",
+      "symbol": "GCI02",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b964.00",
-      "market_cap": "\u20b968.98 Cr"
+      "ltp": "\u20b915.01",
+      "market_cap": "\u20b957.2 Cr"
     },
     {
-      "date": "18 Nov",
-      "stock_name": "Ansal Properties & Infrastructure",
-      "symbol": "API02",
+      "date": "19 Nov",
+      "stock_name": "Boston Commerce",
+      "symbol": "LEC01",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b92.98",
-      "market_cap": "\u20b946.91 Cr"
-    },
-    {
-      "date": "18 Nov",
-      "stock_name": "STARBEAM VENTURES",
-      "symbol": "II19",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b90.67",
-      "market_cap": "\u20b943.79 Cr"
-    },
-    {
-      "date": "18 Nov",
-      "stock_name": "Happy Square Outsourcing Services",
-      "symbol": "HSOSL",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b932.80",
-      "market_cap": "\u20b938.05 Cr"
-    },
-    {
-      "date": "18 Nov",
-      "stock_name": "Kaiser Corporation",
-      "symbol": "KP09",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b95.25",
-      "market_cap": "\u20b927.63 Cr"
-    },
-    {
-      "date": "18 Nov",
-      "stock_name": "Trans India House Impex",
-      "symbol": "MGB",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b92.87",
-      "market_cap": "\u20b920.39 Cr"
-    },
-    {
-      "date": "18 Nov",
-      "stock_name": "Samyak International",
-      "symbol": "MCS03",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b922.75",
-      "market_cap": "\u20b918.19 Cr"
-    },
-    {
-      "date": "18 Nov",
-      "stock_name": "SBL Infratech",
-      "symbol": "SIL16",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b942.00",
-      "market_cap": "\u20b93.41 Cr"
+      "ltp": "\u20b911.63",
+      "market_cap": "\u20b98.14 Cr"
     }
   ],
   "splits_and_actions": [
+    {
+      "stock_name": "Varvee Global",
+      "symbol": "ADE",
+      "action_type": "Stock Split",
+      "ex_date": "27/11/2026",
+      "ratio": "5:2",
+      "announcement_date": "25/09/2026"
+    },
     {
       "stock_name": "Interarch Build",
       "symbol": "IBP01",
@@ -244,28 +204,20 @@
       "announcement_date": "06/08/2026"
     },
     {
-      "stock_name": "Praxis Home Ret",
-      "symbol": "PRAXI54090",
+      "stock_name": "SML Mahindra",
+      "symbol": "SM",
       "action_type": "Rights Issue",
-      "ex_date": "18/11/2026",
-      "ratio": "5:9",
-      "announcement_date": "11/09/2026"
+      "ex_date": "20/11/2026",
+      "ratio": "2:7",
+      "announcement_date": "06/11/2026"
     },
     {
-      "stock_name": "Ironwood Edu.",
-      "symbol": "MJP01",
+      "stock_name": "Om Metallogic",
+      "symbol": "OML01",
       "action_type": "Rights Issue",
-      "ex_date": "18/11/2026",
-      "ratio": "34:100",
-      "announcement_date": "14/08/2026"
-    },
-    {
-      "stock_name": "Geetanjali Cred",
-      "symbol": "GCC05",
-      "action_type": "Rights Issue",
-      "ex_date": "18/11/2026",
-      "ratio": "16:1",
-      "announcement_date": "16/07/2026"
+      "ex_date": "20/11/2026",
+      "ratio": "1:1",
+      "announcement_date": "10/08/2026"
     },
     {
       "stock_name": "Indergiri Fin",
@@ -276,5 +228,5 @@
       "announcement_date": "10/02/2026"
     }
   ],
-  "total_events": 30
+  "total_events": 24
 }

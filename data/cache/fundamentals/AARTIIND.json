@@ -1,11 +1,11 @@
 {
   "score": 3.2,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        17087\n        \n          Cr.",
-    "current_price": "\u20b9\n        471",
-    "stock_pe": "27.3",
+    "market_cap_cr": "\u20b9\n        16779\n        \n          Cr.",
+    "current_price": "\u20b9\n        463",
+    "stock_pe": "26.8",
     "book_value": "\u20b9\n        173",
-    "dividend_yield_pct": "0.21\n        \n          %",
+    "dividend_yield_pct": "0.22\n        \n          %",
     "roce_pct": "6.84\n        \n          %",
     "roe_pct": "7.20\n        \n          %",
     "debt_to_equity": "N/A",
@@ -15,7 +15,7 @@
     "Company is expected to give good quarter"
   ],
   "red_flags": [
-    "Stock is trading at 2.73 times its book value",
+    "Stock is trading at 2.67 times its book value",
     "Tax rate seems low",
     "Company has a low return on equity of 7.20% over last 3 years."
   ]
