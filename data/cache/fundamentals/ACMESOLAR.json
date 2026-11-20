@@ -1,9 +1,9 @@
 {
   "score": 3.2,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        28961\n        \n          Cr.",
-    "current_price": "\u20b9\n        410",
-    "stock_pe": "43.9",
+    "market_cap_cr": "\u20b9\n        28671\n        \n          Cr.",
+    "current_price": "\u20b9\n        405",
+    "stock_pe": "43.4",
     "book_value": "\u20b9\n        115",
     "dividend_yield_pct": "0.05\n        \n          %",
     "roce_pct": "7.78\n        \n          %",
@@ -15,7 +15,7 @@
     "Company has delivered good profit growth of 39.8% CAGR over last 5 years"
   ],
   "red_flags": [
-    "Stock is trading at 3.57 times its book value",
+    "Stock is trading at 3.53 times its book value",
     "Company has a low return on equity of 2.99% over last 3 years.",
     "Contingent liabilities of Rs.13,247 Cr."
   ]

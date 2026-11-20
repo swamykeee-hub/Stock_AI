@@ -1,64 +1,14 @@
 {
-  "timestamp": "2026-11-19 18:01:12",
+  "timestamp": "2026-11-20 18:01:11",
   "dividends": [
-    {
-      "stock_name": "Natco Pharma",
-      "symbol": "NP01",
-      "event_type": "Dividend - Interim",
-      "ex_date": "19/11/2026",
-      "dividend_amount": "\u20b91.25",
-      "cmp": "\u20b9821.95",
-      "estimated_yield": "0.15%",
-      "announcement_date": "13/11/2026"
-    },
-    {
-      "stock_name": "Ingersoll Rand",
-      "symbol": "IRI01",
-      "event_type": "Dividend - Interim",
-      "ex_date": "19/11/2026",
-      "dividend_amount": "\u20b920.00",
-      "cmp": "\u20b93824.90",
-      "estimated_yield": "0.52%",
-      "announcement_date": "06/11/2026"
-    },
-    {
-      "stock_name": "EASTINDIA",
-      "symbol": "VF01",
-      "event_type": "Dividend - Interim",
-      "ex_date": "19/11/2026",
-      "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b9142.00",
-      "estimated_yield": "0.7%",
-      "announcement_date": "16/11/2026"
-    },
-    {
-      "stock_name": "Vibrant Global",
-      "symbol": "VGC",
-      "event_type": "Dividend - Interim",
-      "ex_date": "19/11/2026",
-      "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b962.91",
-      "estimated_yield": "1.59%",
-      "announcement_date": "16/11/2026"
-    },
-    {
-      "stock_name": "Panchsheel Org",
-      "symbol": "PO02",
-      "event_type": "Dividend - Interim",
-      "ex_date": "19/11/2026",
-      "dividend_amount": "\u20b90.80",
-      "cmp": "\u20b998.70",
-      "estimated_yield": "0.81%",
-      "announcement_date": "16/11/2026"
-    },
     {
       "stock_name": "Ashok Leyland",
       "symbol": "AL",
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b9166.15",
-      "estimated_yield": "0.6%",
+      "cmp": "\u20b9163.35",
+      "estimated_yield": "0.61%",
       "announcement_date": "11/11/2026"
     },
     {
@@ -67,8 +17,8 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b97.00",
-      "cmp": "\u20b9437.90",
-      "estimated_yield": "1.6%",
+      "cmp": "\u20b9432.00",
+      "estimated_yield": "1.62%",
       "announcement_date": "12/11/2026"
     },
     {
@@ -77,8 +27,8 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b9140.69",
-      "estimated_yield": "0.71%",
+      "cmp": "\u20b9137.55",
+      "estimated_yield": "0.73%",
       "announcement_date": "16/11/2026"
     },
     {
@@ -87,7 +37,7 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b90.50",
-      "cmp": "\u20b91768.80",
+      "cmp": "\u20b91711.70",
       "estimated_yield": "0.03%",
       "announcement_date": "05/11/2026"
     },
@@ -97,7 +47,7 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b90.45",
-      "cmp": "\u20b9387.55",
+      "cmp": "\u20b9370.10",
       "estimated_yield": "0.12%",
       "announcement_date": "03/11/2026"
     },
@@ -107,8 +57,8 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b912.00",
-      "cmp": "\u20b9989.30",
-      "estimated_yield": "1.21%",
+      "cmp": "\u20b9985.60",
+      "estimated_yield": "1.22%",
       "announcement_date": "16/11/2026"
     },
     {
@@ -117,7 +67,7 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b90.05",
-      "cmp": "\u20b9154.83",
+      "cmp": "\u20b9152.56",
       "estimated_yield": "0.03%",
       "announcement_date": "13/11/2026"
     },
@@ -127,19 +77,9 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b90.30",
-      "cmp": "\u20b9404.05",
+      "cmp": "\u20b9402.65",
       "estimated_yield": "0.07%",
       "announcement_date": "11/11/2026"
-    },
-    {
-      "stock_name": "BF Investment",
-      "symbol": "BFI",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b920.00",
-      "cmp": "\u20b9487.25",
-      "estimated_yield": "4.1%",
-      "announcement_date": "13/11/2026"
     },
     {
       "stock_name": "Skyways Air Ser",
@@ -147,51 +87,111 @@
       "event_type": "Dividend - Interim",
       "ex_date": "20/11/2026",
       "dividend_amount": "\u20b90.40",
-      "cmp": "\u20b9123.35",
-      "estimated_yield": "0.32%",
+      "cmp": "\u20b9117.00",
+      "estimated_yield": "0.34%",
       "announcement_date": "16/11/2026"
+    },
+    {
+      "stock_name": "BF Investment",
+      "symbol": "BFI",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b920.00",
+      "cmp": "\u20b9446.95",
+      "estimated_yield": "4.47%",
+      "announcement_date": "13/11/2026"
+    },
+    {
+      "stock_name": "Alufluoride",
+      "symbol": "A01",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b92.50",
+      "cmp": "\u20b9679.95",
+      "estimated_yield": "0.37%",
+      "announcement_date": "16/11/2026"
+    },
+    {
+      "stock_name": "Prevest Denpro",
+      "symbol": "PD10",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b91.00",
+      "cmp": "\u20b9368.20",
+      "estimated_yield": "0.27%",
+      "announcement_date": "12/11/2026"
+    },
+    {
+      "stock_name": "Rama Phosphates",
+      "symbol": "RP07",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b90.50",
+      "cmp": "\u20b9119.68",
+      "estimated_yield": "0.42%",
+      "announcement_date": "05/11/2026"
+    },
+    {
+      "stock_name": "Envirotech Sys",
+      "symbol": "ESL04",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b91.00",
+      "cmp": "\u20b951.95",
+      "estimated_yield": "1.92%",
+      "announcement_date": "14/11/2026"
+    },
+    {
+      "stock_name": "Shanmuga Hospit",
+      "symbol": "SHL03",
+      "event_type": "Dividend - Interim",
+      "ex_date": "20/11/2026",
+      "dividend_amount": "\u20b90.10",
+      "cmp": "\u20b947.27",
+      "estimated_yield": "0.21%",
+      "announcement_date": "12/11/2026"
     }
   ],
   "earnings": [
     {
-      "date": "19 Nov",
-      "stock_name": "Muthoot Microfin",
-      "symbol": "MML07",
+      "date": "20 Nov",
+      "stock_name": "ELITECON INTERNATIONAL",
+      "symbol": "KJA",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9169.80",
-      "market_cap": "\u20b92894.96 Cr"
+      "ltp": "\u20b94.52",
+      "market_cap": "\u20b9722.52 Cr"
     },
     {
-      "date": "19 Nov",
-      "stock_name": "Spice Islands Industries",
-      "symbol": "SIA02",
+      "date": "20 Nov",
+      "stock_name": "GVP Infotech",
+      "symbol": "FDS01",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9150.35",
-      "market_cap": "\u20b9468.59 Cr"
+      "ltp": "\u20b96.92",
+      "market_cap": "\u20b9120.03 Cr"
     },
     {
-      "date": "19 Nov",
-      "stock_name": "KR Rail Enginerring",
-      "symbol": "GCI02",
+      "date": "20 Nov",
+      "stock_name": "STARBEAM VENTURES",
+      "symbol": "II19",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b914.95",
-      "market_cap": "\u20b956.97 Cr"
+      "ltp": "\u20b90.61",
+      "market_cap": "\u20b939.87 Cr"
     },
     {
-      "date": "19 Nov",
-      "stock_name": "GB Logistics Commerce",
-      "symbol": "GLC",
+      "date": "20 Nov",
+      "stock_name": "Trans India House Impex",
+      "symbol": "MGB",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b927.00",
-      "market_cap": "\u20b922.13 Cr"
+      "ltp": "\u20b92.66",
+      "market_cap": "\u20b918.9 Cr"
     },
     {
-      "date": "19 Nov",
+      "date": "20 Nov",
       "stock_name": "Boston Commerce",
       "symbol": "LEC01",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b911.40",
-      "market_cap": "\u20b97.98 Cr"
+      "ltp": "\u20b911.18",
+      "market_cap": "\u20b97.83 Cr"
     }
   ],
   "splits_and_actions": [

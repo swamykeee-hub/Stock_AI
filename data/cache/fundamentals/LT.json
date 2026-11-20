@@ -1,11 +1,11 @@
 {
   "score": 6.2,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        572244\n        \n          Cr.",
-    "current_price": "\u20b9\n        4159",
-    "stock_pe": "36.7",
+    "market_cap_cr": "\u20b9\n        568707\n        \n          Cr.",
+    "current_price": "\u20b9\n        4133",
+    "stock_pe": "36.5",
     "book_value": "\u20b9\n        559",
-    "dividend_yield_pct": "0.91\n        \n          %",
+    "dividend_yield_pct": "0.92\n        \n          %",
     "roce_pct": "19.3\n        \n          %",
     "roe_pct": "14.8\n        \n          %",
     "debt_to_equity": "N/A",
@@ -17,7 +17,7 @@
     "Healthy Capital Return (ROCE: 19.3%)"
   ],
   "red_flags": [
-    "Stock is trading at 7.44 times its book value",
+    "Stock is trading at 7.53 times its book value",
     "The company has delivered a poor sales growth of 12.0% over past five years.",
     "Earnings include an other income of Rs.8,543 Cr."
   ]

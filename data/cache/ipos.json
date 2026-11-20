@@ -8,11 +8,11 @@
     "price_band": "\u20b9259.00 - \u20b9272.00",
     "lot_size": "55",
     "issue_size_cr": "455.97",
-    "gmp_inr": "\u20b917.00",
-    "gmp_pct": 6.2,
-    "subscription_total": "2.89x",
+    "gmp_inr": "\u20b914.00",
+    "gmp_pct": 5.2,
+    "subscription_total": "17.19x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 18 Nov 2026 \u2013 20 Nov 2026 \u2022 Est. Listing: \u20b9289 (+6.2%)"
+    "analysis": "Dates: 18 Nov 2026 \u2013 20 Nov 2026 \u2022 Est. Listing: \u20b9286 (+5.2%)"
   },
   {
     "name": "Watrana Rentals",
@@ -25,7 +25,7 @@
     "issue_size_cr": "120.10",
     "gmp_inr": "\u20b967.00",
     "gmp_pct": 27.4,
-    "subscription_total": "3.74x",
+    "subscription_total": "11.96x",
     "verdict": "\u2705 APPLY (Moderate Listing Gain)",
     "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9312 (+27.4%)"
   },
@@ -38,11 +38,11 @@
     "price_band": "\u20b9129.00 - \u20b9136.00",
     "lot_size": "110",
     "issue_size_cr": "9000.97",
-    "gmp_inr": "\u20b92.30",
-    "gmp_pct": 1.7,
-    "subscription_total": "0.38x",
+    "gmp_inr": "\u20b91.30",
+    "gmp_pct": 1.0,
+    "subscription_total": "0.48x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9138 (+1.7%)"
+    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9137 (+1.0%)"
   },
   {
     "name": "Shree Siddhivinayak Greentech Industries",
@@ -68,11 +68,41 @@
     "price_band": "TBA",
     "lot_size": "0",
     "issue_size_cr": "0.00",
-    "gmp_inr": "\u2014",
+    "gmp_inr": "\u20b912.00",
     "gmp_pct": 0.0,
     "subscription_total": "Yet to Open",
     "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
-    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b90 (+0.0%)"
+    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b912 (+0.0%)"
+  },
+  {
+    "name": "Integris Medtech",
+    "category": "Mainboard",
+    "sector": "Pharmaceuticals",
+    "status": "Upcoming",
+    "issue_period": "27 Nov 2026 \u2013 1 Dec 2026",
+    "price_band": "TBA",
+    "lot_size": "0",
+    "issue_size_cr": "0.00",
+    "gmp_inr": "\u20b90.00",
+    "gmp_pct": 0.0,
+    "subscription_total": "Yet to Open",
+    "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
+    "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b90 (+0.0%)"
+  },
+  {
+    "name": "Monomark Engineering",
+    "category": "Mainboard",
+    "sector": "Engineering",
+    "status": "Upcoming",
+    "issue_period": "TBA",
+    "price_band": "TBA",
+    "lot_size": "0",
+    "issue_size_cr": "0.00",
+    "gmp_inr": "\u20b90.00",
+    "gmp_pct": 0.0,
+    "subscription_total": "Yet to Open",
+    "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
+    "analysis": "Dates: TBA \u2022 Est. Listing: \u20b90 (+0.0%)"
   },
   {
     "name": "Hindustan Coca Cola",
@@ -120,36 +150,6 @@
     "analysis": "Issued at \u20b994.0, debuted at \u20b994.0 (+0.0% listing return)."
   },
   {
-    "name": "Maxwell Engineering Solutions",
-    "category": "NSE Emerge",
-    "sector": "Recently Listed",
-    "status": "Recently Listed",
-    "issue_period": "Recently Listed",
-    "price_band": "\u20b9158.00",
-    "lot_size": "Standard",
-    "issue_size_cr": "Completed",
-    "gmp_inr": "\u20b9105",
-    "gmp_pct": 89.9,
-    "subscription_total": "Listed @ \u20b9300.00 (+89.9%)",
-    "verdict": "\ud83c\udf89 MULTIBAGGER DEBUT",
-    "analysis": "Issued at \u20b9158.0, debuted at \u20b9300.0 (+89.9% listing return)."
-  },
-  {
-    "name": "HGS (India)",
-    "category": "NSE Emerge",
-    "sector": "Recently Listed",
-    "status": "Recently Listed",
-    "issue_period": "Recently Listed",
-    "price_band": "\u20b9120.00",
-    "lot_size": "Standard",
-    "issue_size_cr": "Completed",
-    "gmp_inr": "\u20b928",
-    "gmp_pct": 33.3,
-    "subscription_total": "Listed @ \u20b9160.00 (+33.3%)",
-    "verdict": "\u2705 POSITIVE LISTING",
-    "analysis": "Issued at \u20b9120.0, debuted at \u20b9160.0 (+33.3% listing return)."
-  },
-  {
     "name": "Johnsoncab Electricals",
     "category": "BSE SME",
     "sector": "Recently Listed",
@@ -165,6 +165,21 @@
     "analysis": "Issued at \u20b9200.0, debuted at \u20b9238.0 (+19.0% listing return)."
   },
   {
+    "name": "Maxwell Engineering Solutions",
+    "category": "NSE Emerge",
+    "sector": "Recently Listed",
+    "status": "Recently Listed",
+    "issue_period": "Recently Listed",
+    "price_band": "\u20b9158.00",
+    "lot_size": "Standard",
+    "issue_size_cr": "Completed",
+    "gmp_inr": "\u20b9105",
+    "gmp_pct": 89.9,
+    "subscription_total": "Listed @ \u20b9300.00 (+89.9%)",
+    "verdict": "\ud83c\udf89 MULTIBAGGER DEBUT",
+    "analysis": "Issued at \u20b9158.0, debuted at \u20b9300.0 (+89.9% listing return)."
+  },
+  {
     "name": "Vectras Enprocon",
     "category": "BSE SME",
     "sector": "Recently Listed",
@@ -178,6 +193,21 @@
     "subscription_total": "Listed @ \u20b9106.00 (+1.0%)",
     "verdict": "\u2705 POSITIVE LISTING",
     "analysis": "Issued at \u20b9105.0, debuted at \u20b9106.0 (+1.0% listing return)."
+  },
+  {
+    "name": "HGS (India)",
+    "category": "NSE Emerge",
+    "sector": "Recently Listed",
+    "status": "Recently Listed",
+    "issue_period": "Recently Listed",
+    "price_band": "\u20b9120.00",
+    "lot_size": "Standard",
+    "issue_size_cr": "Completed",
+    "gmp_inr": "\u20b928",
+    "gmp_pct": 33.3,
+    "subscription_total": "Listed @ \u20b9160.00 (+33.3%)",
+    "verdict": "\u2705 POSITIVE LISTING",
+    "analysis": "Issued at \u20b9120.0, debuted at \u20b9160.0 (+33.3% listing return)."
   },
   {
     "name": "Bombay Coated and Special Steels",

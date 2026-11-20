@@ -1,17 +1,28 @@
 {
-  "timestamp": "2026-11-19 18:01:07",
+  "timestamp": "2026-11-20 18:01:06",
   "fii_dii_latest": {
-    "date": "2026-11-18",
-    "formatted_date": "Wed 18 Nov, 2026",
-    "fii_cash_net": "5,866.78",
-    "dii_cash_net": "-3,159.90",
-    "fii_index_futures": "-987.26",
-    "fii_index_options": "-12,026.99",
-    "fii_stock_futures": "-1,454.41",
-    "nifty_close": "25,227.95",
-    "nifty_change_pct": "-0.63"
+    "date": "2026-11-19",
+    "formatted_date": "Thu 19 Nov, 2026",
+    "fii_cash_net": "7,411.41",
+    "dii_cash_net": "-1,356.57",
+    "fii_index_futures": "507.20",
+    "fii_index_options": "7,983.14",
+    "fii_stock_futures": "2,346.80",
+    "nifty_close": "25,514.30",
+    "nifty_change_pct": "1.14"
   },
   "fii_dii_history": [
+    {
+      "date": "2026-11-19",
+      "formatted_date": "Thu 19 Nov, 2026",
+      "fii_cash_net": "7,411.41",
+      "dii_cash_net": "-1,356.57",
+      "fii_index_futures": "507.20",
+      "fii_index_options": "7,983.14",
+      "fii_stock_futures": "2,346.80",
+      "nifty_close": "25,514.30",
+      "nifty_change_pct": "1.14"
+    },
     {
       "date": "2026-11-18",
       "formatted_date": "Wed 18 Nov, 2026",
@@ -165,27 +176,16 @@
       "fii_stock_futures": "-287.66",
       "nifty_close": "23,053.10",
       "nifty_change_pct": "0.51"
-    },
-    {
-      "date": "2026-10-29",
-      "formatted_date": "Thu 29 Oct, 2026",
-      "fii_cash_net": "-943.60",
-      "dii_cash_net": "1,924.41",
-      "fii_index_futures": "-423.42",
-      "fii_index_options": "7,373.28",
-      "fii_stock_futures": "2,111.56",
-      "nifty_close": "22,936.75",
-      "nifty_change_pct": "1.05"
     }
   ],
   "derivatives": {
-    "pcr": 1.48,
-    "total_call_oi": 2448812,
-    "total_put_oi": 3623835,
-    "max_pain_strike": 25300.0,
+    "pcr": 1.69,
+    "total_call_oi": 2394777,
+    "total_put_oi": 4038193,
+    "max_pain_strike": 25500.0,
     "status": "LIVE"
   },
   "smart_money_sentiment": "BULLISH_EXPANSION",
   "sentiment_badge": "\ud83d\udfe2 STRONG BULLISH (SMART ACCUMULATION)",
-  "sentiment_rationale": "FIIs & DIIs are net buyers (\u20b9+2,706.88 Cr) with High PCR (1.48). Aggressive put writing at key support strikes indicates strong bullish bias."
+  "sentiment_rationale": "FIIs & DIIs are net buyers (\u20b9+6,054.84 Cr) with High PCR (1.69). Aggressive put writing at key support strikes indicates strong bullish bias."
 }

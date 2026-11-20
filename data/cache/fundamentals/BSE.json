@@ -1,9 +1,9 @@
 {
   "score": 8.5,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        153189\n        \n          Cr.",
-    "current_price": "\u20b9\n        3756",
-    "stock_pe": "52.4",
+    "market_cap_cr": "\u20b9\n        153568\n        \n          Cr.",
+    "current_price": "\u20b9\n        3765",
+    "stock_pe": "52.5",
     "book_value": "\u20b9\n        170",
     "dividend_yield_pct": "0.27\n        \n          %",
     "roce_pct": "66.2\n        \n          %",
@@ -18,6 +18,6 @@
     "Company has delivered good profit growth of 85.4% CAGR over last 5 years"
   ],
   "red_flags": [
-    "Stock is trading at 22.1 times its book value"
+    "Stock is trading at 22.2 times its book value"
   ]
 }
