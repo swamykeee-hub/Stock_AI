@@ -1,5 +1,5 @@
 # Daily Indian Market AI Intelligence Briefing
-**Generated:** 2026-11-21 08:45:02 | **Powered by Stock AI Agent (CIO Intelligence)**
+**Generated:** 2026-11-21 09:15:02 | **Powered by Stock AI Agent (CIO Intelligence)**
 
 ---
 ## 1. Domestic & Global Market Overview
@@ -28,7 +28,7 @@
 | **US 10-Yr Yield (%)** | 4.91 | -2.77% |
 | **US Dollar Index (DXY)** | 103.84 | -0.05% |
 | **Gold ($/oz)** | 3539.0 | -3.98% |
-| **USD / INR** | 92.66 | -0.66% |
+| **USD / INR** | 92.67 | -0.65% |
 
 ## 2. Multi-Timeframe Super-Trend & Momentum Leaders (3M / 1Y / 3Y)
 | Symbol | CMP (₹) | 3M Return | 6M Return | 1Y Return | 3Y Return | Trend Status |

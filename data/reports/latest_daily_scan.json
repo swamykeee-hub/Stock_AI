@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-21 08:45:02",
+  "timestamp": "2026-11-21 09:15:02",
   "indices": {
     "NIFTY 50": {
       "value": 25800.6,
@@ -91,7 +91,7 @@
       },
       "Nikkei 225": {
         "price": 56436.65,
-        "change": -3007.55,
+        "change": -3007.56,
         "change_pct": -5.06
       },
       "FTSE 100": {
@@ -106,8 +106,8 @@
       },
       "Hang Seng": {
         "price": 22410.8,
-        "change": -884.0,
-        "change_pct": -3.79
+        "change": -430.82,
+        "change_pct": -1.89
       }
     },
     "macro": {
@@ -132,16 +132,16 @@
         "change_pct": -3.98
       },
       "USD / INR": {
-        "price": 92.66,
-        "change": -0.62,
-        "change_pct": -0.66
+        "price": 92.67,
+        "change": -0.61,
+        "change_pct": -0.65
       }
     },
     "fund_manager_takeaways": [
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.91%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-21 08:45:11"
+    "timestamp": "2026-11-21 09:15:10"
   },
   "market_regime": {
     "nifty_cmp": 25800.6,
@@ -204,7 +204,7 @@
         "month_pct": -2.1
       }
     ],
-    "timestamp": "2026-11-21 08:45:14"
+    "timestamp": "2026-11-21 09:15:14"
   },
   "top_momentum_stocks": [
     {
@@ -1798,7 +1798,7 @@
     }
   ],
   "institutional_flow": {
-    "timestamp": "2026-11-21 08:45:50",
+    "timestamp": "2026-11-21 09:15:46",
     "fii_dii_latest": {
       "date": "2026-11-20",
       "formatted_date": "Fri 20 Nov, 2026",
@@ -1989,7 +1989,7 @@
     "sentiment_rationale": "FIIs & DIIs are net buyers (\u20b9+5,448.62 Cr) with High PCR (1.67). Aggressive put writing at key support strikes indicates strong bullish bias."
   },
   "corporate_actions": {
-    "timestamp": "2026-11-21 08:45:54",
+    "timestamp": "2026-11-21 09:15:49",
     "dividends": [
       {
         "stock_name": "Pashupati Cotsp",
@@ -2117,7 +2117,7 @@
     "total_events": 14
   },
   "performance_scorecard": {
-    "timestamp": "2026-11-21 08:45:54",
+    "timestamp": "2026-11-21 09:15:49",
     "total_picks_tracked": 8,
     "win_rate_pct": 85.7,
     "resolved_trades_count": 7,
@@ -2250,7 +2250,7 @@
     ]
   },
   "market_movers": {
-    "timestamp": "2026-11-21 08:45:57",
+    "timestamp": "2026-11-21 09:15:50",
     "top_gainers": [
       {
         "symbol": "INDUSINDBK",
