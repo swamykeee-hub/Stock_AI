@@ -8,11 +8,11 @@
     "price_band": "\u20b9259.00 - \u20b9272.00",
     "lot_size": "55",
     "issue_size_cr": "455.97",
-    "gmp_inr": "\u20b914.50",
-    "gmp_pct": 5.3,
+    "gmp_inr": "\u20b914.00",
+    "gmp_pct": 5.2,
     "subscription_total": "17.19x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 18 Nov 2026 \u2013 20 Nov 2026 \u2022 Est. Listing: \u20b9286 (+5.3%)"
+    "analysis": "Dates: 18 Nov 2026 \u2013 20 Nov 2026 \u2022 Est. Listing: \u20b9286 (+5.2%)"
   },
   {
     "name": "Watrana Rentals",
@@ -23,11 +23,11 @@
     "price_band": "\u20b9232.00 - \u20b9245.00",
     "lot_size": "600",
     "issue_size_cr": "120.10",
-    "gmp_inr": "\u20b967.00",
-    "gmp_pct": 27.4,
+    "gmp_inr": "\u20b965.00",
+    "gmp_pct": 26.5,
     "subscription_total": "11.96x",
     "verdict": "\u2705 APPLY (Moderate Listing Gain)",
-    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9312 (+27.4%)"
+    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9310 (+26.5%)"
   },
   {
     "name": "Mahanadi Coalfields",
@@ -38,11 +38,11 @@
     "price_band": "\u20b9129.00 - \u20b9136.00",
     "lot_size": "110",
     "issue_size_cr": "9000.97",
-    "gmp_inr": "\u20b91.00",
-    "gmp_pct": 0.7,
+    "gmp_inr": "\u20b90.70",
+    "gmp_pct": 0.5,
     "subscription_total": "0.48x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9137 (+0.7%)"
+    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9137 (+0.5%)"
   },
   {
     "name": "Shree Siddhivinayak Greentech Industries",
@@ -88,6 +88,21 @@
     "subscription_total": "Yet to Open",
     "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
     "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b90 (+0.0%)"
+  },
+  {
+    "name": "A J Packaging",
+    "category": "NSE Emerge",
+    "sector": "Aluminium, Copper & Zinc Products",
+    "status": "Upcoming",
+    "issue_period": "1 Dec 2026 \u2013 3 Dec 2026",
+    "price_band": "TBA",
+    "lot_size": "0",
+    "issue_size_cr": "0.00",
+    "gmp_inr": "\u2014",
+    "gmp_pct": 0.0,
+    "subscription_total": "Yet to Open",
+    "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
+    "analysis": "Dates: 1 Dec 2026 \u2013 3 Dec 2026 \u2022 Est. Listing: \u20b90 (+0.0%)"
   },
   {
     "name": "Monomark Engineering",

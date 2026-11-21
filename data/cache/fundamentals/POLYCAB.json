@@ -1,11 +1,11 @@
 {
   "score": 8.5,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        111583\n        \n          Cr.",
-    "current_price": "\u20b9\n        7404",
-    "stock_pe": "36.0",
+    "market_cap_cr": "\u20b9\n        114087\n        \n          Cr.",
+    "current_price": "\u20b9\n        7570",
+    "stock_pe": "36.8",
     "book_value": "\u20b9\n        856",
-    "dividend_yield_pct": "0.63\n        \n          %",
+    "dividend_yield_pct": "0.62\n        \n          %",
     "roce_pct": "32.9\n        \n          %",
     "roe_pct": "23.3\n        \n          %",
     "debt_to_equity": "N/A",
@@ -18,7 +18,7 @@
     "Company has delivered good profit growth of 25.1% CAGR over last 5 years"
   ],
   "red_flags": [
-    "Stock is trading at 8.82 times its book value",
+    "Stock is trading at 8.84 times its book value",
     "Promoter holding has decreased over last 3 years: -4.47%"
   ]
 }

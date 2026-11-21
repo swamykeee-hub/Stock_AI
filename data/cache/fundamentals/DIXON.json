@@ -1,9 +1,9 @@
 {
   "score": 3.2,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        79540\n        \n          Cr.",
-    "current_price": "\u20b9\n        12995",
-    "stock_pe": "89.7",
+    "market_cap_cr": "\u20b9\n        80305\n        \n          Cr.",
+    "current_price": "\u20b9\n        13120",
+    "stock_pe": "90.6",
     "book_value": "\u20b9\n        671",
     "dividend_yield_pct": "0.08\n        \n          %",
     "roce_pct": "8.46\n        \n          %",
@@ -15,7 +15,7 @@
     "Company is almost debt free."
   ],
   "red_flags": [
-    "Stock is trading at 19.5 times its book value",
+    "Stock is trading at 19.6 times its book value",
     "The company has delivered a poor sales growth of -7.08% over past five years.",
     "Tax rate seems low"
   ]

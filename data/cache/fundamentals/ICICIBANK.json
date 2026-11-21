@@ -1,21 +1,21 @@
 {
   "score": 5.5,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        1158425\n        \n          Cr.",
-    "current_price": "\u20b9\n        1612",
-    "stock_pe": "21.2",
+    "market_cap_cr": "\u20b9\n        1178327\n        \n          Cr.",
+    "current_price": "\u20b9\n        1640",
+    "stock_pe": "21.6",
     "book_value": "\u20b9\n        498",
-    "dividend_yield_pct": "0.75\n        \n          %",
+    "dividend_yield_pct": "0.73\n        \n          %",
     "roce_pct": "6.90\n        \n          %",
     "roe_pct": "15.8\n        \n          %",
     "debt_to_equity": "N/A",
     "face_value": "\u20b9\n        2.00"
   },
   "strengths": [
-    "Attractive Valuation Multiple (P/E: 21.2x)"
+    "Attractive Valuation Multiple (P/E: 21.6x)"
   ],
   "red_flags": [
-    "Stock is trading at 3.23 times its book value",
+    "Stock is trading at 3.29 times its book value",
     "Company has low interest coverage ratio.",
     "Contingent liabilities of Rs.45,59,054 Cr."
   ]

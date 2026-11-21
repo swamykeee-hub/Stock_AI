@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-11-21 09:15:02",
+  "timestamp": "2026-11-21 18:00:02",
   "indices": {
     "NIFTY 50": {
       "value": 25800.6,
-      "change": 286.3,
-      "percent": 1.12
+      "change": 572.7,
+      "percent": 2.27
     },
     "SENSEX": {
       "value": 83919.71,
@@ -13,52 +13,52 @@
     },
     "BANK NIFTY": {
       "value": 64635.2,
-      "change": 1572.2,
-      "percent": 2.49
+      "change": 2596.6,
+      "percent": 4.18
     },
     "INDIA VIX": {
       "value": 17.32,
-      "change": 1.21,
-      "percent": 7.51
+      "change": 1.75,
+      "percent": 11.24
     },
     "NIFTY 100": {
       "value": 26662.85,
-      "change": 263.95,
-      "percent": 1.0
+      "change": 583.25,
+      "percent": 2.24
     },
     "NIFTY 200": {
       "value": 14587.75,
-      "change": 135.1,
-      "percent": 0.94
+      "change": 305.45,
+      "percent": 2.14
     },
     "NIFTY IT": {
       "value": 31322.65,
-      "change": 403.2,
-      "percent": 1.3
+      "change": 60.35,
+      "percent": 0.19
     },
     "NIFTY PHARMA": {
       "value": 28386.9,
-      "change": 15.1,
-      "percent": 0.05
+      "change": 186.4,
+      "percent": 0.66
     },
     "NIFTY FMCG": {
       "value": 48535.7,
-      "change": -28.55,
-      "percent": -0.06
+      "change": 966.6,
+      "percent": 2.03
     },
     "NIFTY AUTO": {
       "value": 28787.65,
-      "change": 186.35,
-      "percent": 0.65
+      "change": 1392.75,
+      "percent": 5.08
     },
     "NIFTY METAL": {
       "value": 12271.1,
-      "change": -28.65,
-      "percent": -0.23
+      "change": 48.8,
+      "percent": 0.4
     },
     "NIFTY PRIVATE BANK": {
       "value": 31671.75,
-      "change": 924.8,
+      "change": 924.85,
       "percent": 3.01
     },
     "NIFTY FIN-SERVICES": {
@@ -86,35 +86,35 @@
       },
       "Dow Jones": {
         "price": 48147.33,
-        "change": -949.73,
+        "change": -949.77,
         "change_pct": -1.93
       },
       "Nikkei 225": {
         "price": 56436.65,
-        "change": -3007.56,
+        "change": -3007.55,
         "change_pct": -5.06
       },
       "FTSE 100": {
         "price": 10346.34,
-        "change": -106.34,
+        "change": -106.36,
         "change_pct": -1.02
       },
       "DAX": {
         "price": 24802.78,
-        "change": -661.03,
+        "change": -661.02,
         "change_pct": -2.6
       },
       "Hang Seng": {
         "price": 22410.8,
-        "change": -430.82,
-        "change_pct": -1.89
+        "change": -884.0,
+        "change_pct": -3.79
       }
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 89.87,
-        "change": 0.43,
-        "change_pct": 0.48
+        "price": 89.95,
+        "change": 0.51,
+        "change_pct": 0.57
       },
       "US 10-Yr Yield (%)": {
         "price": 4.91,
@@ -123,13 +123,13 @@
       },
       "US Dollar Index (DXY)": {
         "price": 103.84,
-        "change": -0.06,
-        "change_pct": -0.05
+        "change": 0.03,
+        "change_pct": 0.03
       },
       "Gold ($/oz)": {
-        "price": 3539.0,
-        "change": -146.5,
-        "change_pct": -3.98
+        "price": 3515.4,
+        "change": -170.1,
+        "change_pct": -4.62
       },
       "USD / INR": {
         "price": 92.67,
@@ -141,7 +141,7 @@
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.91%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-21 09:15:10"
+    "timestamp": "2026-11-21 18:00:12"
   },
   "market_regime": {
     "nifty_cmp": 25800.6,
@@ -204,7 +204,7 @@
         "month_pct": -2.1
       }
     ],
-    "timestamp": "2026-11-21 09:15:14"
+    "timestamp": "2026-11-21 18:00:16"
   },
   "top_momentum_stocks": [
     {
@@ -252,17 +252,17 @@
       "name": "Apar Industries Ltd.",
       "sector": "Conductors & Transformers",
       "market_cap_type": "Mid Cap",
-      "cmp": 14339.0,
-      "ret_1m": -1.6,
-      "ret_3m": -17.7,
-      "ret_6m": 3.3,
-      "ret_1y": 61.1,
-      "ret_2y": 43.3,
-      "ret_3y": 170.7,
-      "ret_5y": 2011.5,
+      "cmp": 14320.0,
+      "ret_1m": -1.7,
+      "ret_3m": -17.8,
+      "ret_6m": 3.2,
+      "ret_1y": 60.9,
+      "ret_2y": 43.1,
+      "ret_3y": 170.3,
+      "ret_5y": 2008.7,
       "fifty_two_week_high": 19265.0,
       "fifty_two_week_low": 6801.0,
-      "distance_from_52w_high": 25.6,
+      "distance_from_52w_high": 25.7,
       "volume_surge": 0.18,
       "trend_status": "\ud83d\udcc8 Positive Trend",
       "conviction": "Moderate"
@@ -440,9 +440,9 @@
       "ret_2y": 35.3,
       "ret_3y": 116.1,
       "ret_5y": 204.2,
-      "fifty_two_week_high": 2174.5,
+      "fifty_two_week_high": 2172.3,
       "fifty_two_week_low": 1726.3,
-      "distance_from_52w_high": 0.6,
+      "distance_from_52w_high": 0.5,
       "volume_surge": 0.16,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
       "conviction": "Watchlist / Accumulate"
@@ -500,9 +500,9 @@
       "ret_2y": -24.7,
       "ret_3y": 120.0,
       "ret_5y": 136.6,
-      "fifty_two_week_high": 15310.0,
+      "fifty_two_week_high": 15000.0,
       "fifty_two_week_low": 9600.0,
-      "distance_from_52w_high": 14.3,
+      "distance_from_52w_high": 12.5,
       "volume_surge": 0.13,
       "trend_status": "\ud83d\udcc8 Positive Trend",
       "conviction": "Moderate"
@@ -613,33 +613,33 @@
       "name": "Bharti Airtel Ltd.",
       "sector": "Telecommunication",
       "cmp": 2161.7,
-      "h52": 2174.5,
+      "h52": 2172.3,
       "l52": 1726.3,
-      "dist_52w": 0.59,
+      "dist_52w": 0.49,
       "day_change": 17.7,
       "day_change_pct": 0.83,
-      "rsi": 75.85,
-      "ema20": 2048.92,
-      "ema50": 1963.96,
-      "ema200": 1936.53,
-      "vol_surge": 0.65,
-      "ret_1m": 14.1,
-      "ret_3m": 11.7,
-      "ret_6m": 18.2,
+      "rsi": 76.96,
+      "ema20": 2059.66,
+      "ema50": 1971.72,
+      "ema200": 1938.77,
+      "vol_surge": 0.59,
+      "ret_1m": 14.2,
+      "ret_3m": 11.0,
+      "ret_6m": 19.4,
       "ret_1y": 0.2,
       "pe": 28.5,
       "roce": 24.2,
       "roe": 20.1,
       "mcap_cr": 15000.0,
-      "quality": "\u26a0\ufe0f Extended Momentum - Watch For Retest",
-      "quality_badge": "#d97706",
-      "conviction": "Moderate (Wait for 20-EMA Cushion)",
+      "quality": "\ud83d\udd25 Fresh 52W / All-Time High Breakout",
+      "quality_badge": "#059669",
+      "conviction": "High (Stage-2 Mark-up Expansion)",
       "suggested_entry": "\u20b92,096.85 \u2014 \u20b92,172.51",
-      "target_1": 2370.21,
-      "target_2": 2631.14,
-      "stop_loss": 1963.96,
+      "target_1": 2367.81,
+      "target_2": 2628.48,
+      "stop_loss": 1971.04,
       "risk_reward": "1 : 1.1",
-      "buy_strategy": "<b>BHARTIARTL</b> is exhibiting stellar institutional sponsorship, currently trading within <b>0.59% of its 52-week peak (\u20b92,174.50)</b> with a 1-year return of <b>+0.2%</b>. Price action is trending decisively above the 20-Day EMA (\u20b92,048.92) and 50-Day EMA (\u20b91,963.96) supported by an RSI of <b>75.85</b> and volume surge factor of <b>0.65x</b>. <b>Fund Manager Action:</b> Accumulate within the <b>\u20b92,096.85 \u2014 \u20b92,172.51</b> pocket. Ride the Stage-2 markup targeting <b>\u20b92,370.21</b> (Target 1) and <b>\u20b92,631.14</b> (Target 2), maintaining a protective stop loss at <b>\u20b91,963.96</b>."
+      "buy_strategy": "<b>BHARTIARTL</b> is exhibiting stellar institutional sponsorship, currently trading within <b>0.49% of its 52-week peak (\u20b92,172.30)</b> with a 1-year return of <b>+0.2%</b>. Price action is trending decisively above the 20-Day EMA (\u20b92,059.66) and 50-Day EMA (\u20b91,971.72) supported by an RSI of <b>76.96</b> and volume surge factor of <b>0.59x</b>. <b>Fund Manager Action:</b> Accumulate within the <b>\u20b92,096.85 \u2014 \u20b92,172.51</b> pocket. Ride the Stage-2 markup targeting <b>\u20b92,367.81</b> (Target 1) and <b>\u20b92,628.48</b> (Target 2), maintaining a protective stop loss at <b>\u20b91,971.04</b>."
     },
     {
       "symbol": "APOLLOHOSP",
@@ -711,34 +711,34 @@
       "symbol": "BAJAJHLDNG",
       "name": "Bajaj Holdings & Investment Ltd.",
       "sector": "Financial Services",
-      "cmp": 11669.0,
+      "cmp": 11659.0,
       "h52": 11846.0,
       "l52": 8588.0,
-      "dist_52w": 1.49,
-      "day_change": 357.0,
-      "day_change_pct": 3.16,
-      "rsi": 77.17,
-      "ema20": 11025.71,
-      "ema50": 10967.01,
-      "ema200": 10901.46,
-      "vol_surge": 0.98,
-      "ret_1m": 3.3,
-      "ret_3m": 4.9,
-      "ret_6m": 12.6,
+      "dist_52w": 1.58,
+      "day_change": 347.0,
+      "day_change_pct": 3.07,
+      "rsi": 80.0,
+      "ema20": 11086.98,
+      "ema50": 10994.54,
+      "ema200": 10909.1,
+      "vol_surge": 1.66,
+      "ret_1m": 4.3,
+      "ret_3m": 3.3,
+      "ret_6m": 13.5,
       "ret_1y": -0.7,
       "pe": 28.5,
       "roce": 24.2,
       "roe": 20.1,
       "mcap_cr": 15000.0,
-      "quality": "\u26a0\ufe0f Extended Momentum - Watch For Retest",
-      "quality_badge": "#d97706",
-      "conviction": "Moderate (Wait for 20-EMA Cushion)",
-      "suggested_entry": "\u20b911,318.93 \u2014 \u20b911,727.34",
+      "quality": "\u26a1 High-Momentum Base Breakout",
+      "quality_badge": "#2563eb",
+      "conviction": "Very High (Institutional Accumulation)",
+      "suggested_entry": "\u20b911,309.23 \u2014 \u20b911,717.29",
       "target_1": 12912.14,
       "target_2": 14333.66,
-      "stop_loss": 10639.79,
+      "stop_loss": 10630.68,
       "risk_reward": "1 : 1.2",
-      "buy_strategy": "<b>BAJAJHLDNG</b> is exhibiting stellar institutional sponsorship, currently trading within <b>1.49% of its 52-week peak (\u20b911,846.00)</b> with a 1-year return of <b>+-0.7%</b>. Price action is trending decisively above the 20-Day EMA (\u20b911,025.71) and 50-Day EMA (\u20b910,967.01) supported by an RSI of <b>77.17</b> and volume surge factor of <b>0.98x</b>. <b>Fund Manager Action:</b> Accumulate within the <b>\u20b911,318.93 \u2014 \u20b911,727.34</b> pocket. Ride the Stage-2 markup targeting <b>\u20b912,912.14</b> (Target 1) and <b>\u20b914,333.66</b> (Target 2), maintaining a protective stop loss at <b>\u20b910,639.79</b>."
+      "buy_strategy": "<b>BAJAJHLDNG</b> is exhibiting stellar institutional sponsorship, currently trading within <b>1.58% of its 52-week peak (\u20b911,846.00)</b> with a 1-year return of <b>+-0.7%</b>. Price action is trending decisively above the 20-Day EMA (\u20b911,086.98) and 50-Day EMA (\u20b910,994.54) supported by an RSI of <b>80.0</b> and volume surge factor of <b>1.66x</b>. <b>Fund Manager Action:</b> Accumulate within the <b>\u20b911,309.23 \u2014 \u20b911,717.29</b> pocket. Ride the Stage-2 markup targeting <b>\u20b912,912.14</b> (Target 1) and <b>\u20b914,333.66</b> (Target 2), maintaining a protective stop loss at <b>\u20b910,630.68</b>."
     },
     {
       "symbol": "ABCAPITAL",
@@ -810,20 +810,20 @@
       "symbol": "ASAHIINDIA",
       "name": "Asahi India Glass Ltd.",
       "sector": "Automobile and Auto Components",
-      "cmp": 1163.6,
+      "cmp": 1163.45,
       "h52": 1199.0,
       "l52": 775.1,
-      "dist_52w": 2.95,
-      "day_change": -28.45,
-      "day_change_pct": -2.39,
-      "rsi": 92.72,
-      "ema20": 1055.68,
-      "ema50": 994.64,
-      "ema200": 942.02,
-      "vol_surge": 1.2,
-      "ret_1m": 27.4,
-      "ret_3m": 20.9,
-      "ret_6m": 28.9,
+      "dist_52w": 2.96,
+      "day_change": -28.6,
+      "day_change_pct": -2.4,
+      "rsi": 86.96,
+      "ema20": 1065.96,
+      "ema50": 1001.27,
+      "ema200": 944.22,
+      "vol_surge": 0.5,
+      "ret_1m": 30.1,
+      "ret_3m": 21.7,
+      "ret_6m": 29.4,
       "ret_1y": 16.7,
       "pe": 28.5,
       "roce": 24.2,
@@ -832,12 +832,12 @@
       "quality": "\u26a0\ufe0f Extended Momentum - Watch For Retest",
       "quality_badge": "#d97706",
       "conviction": "Moderate (Wait for 20-EMA Cushion)",
-      "suggested_entry": "\u20b91,128.69 \u2014 \u20b91,169.42",
+      "suggested_entry": "\u20b91,128.55 \u2014 \u20b91,169.27",
       "target_1": 1306.91,
       "target_2": 1450.79,
-      "stop_loss": 994.64,
-      "risk_reward": "1 : 0.8",
-      "buy_strategy": "<b>ASAHIINDIA</b> is exhibiting stellar institutional sponsorship, currently trading within <b>2.95% of its 52-week peak (\u20b91,199.00)</b> with a 1-year return of <b>+16.7%</b>. Price action is trending decisively above the 20-Day EMA (\u20b91,055.68) and 50-Day EMA (\u20b9994.64) supported by an RSI of <b>92.72</b> and volume surge factor of <b>1.2x</b>. <b>Fund Manager Action:</b> Accumulate within the <b>\u20b91,128.69 \u2014 \u20b91,169.42</b> pocket. Ride the Stage-2 markup targeting <b>\u20b91,306.91</b> (Target 1) and <b>\u20b91,450.79</b> (Target 2), maintaining a protective stop loss at <b>\u20b9994.64</b>."
+      "stop_loss": 1001.27,
+      "risk_reward": "1 : 0.9",
+      "buy_strategy": "<b>ASAHIINDIA</b> is exhibiting stellar institutional sponsorship, currently trading within <b>2.96% of its 52-week peak (\u20b91,199.00)</b> with a 1-year return of <b>+16.7%</b>. Price action is trending decisively above the 20-Day EMA (\u20b91,065.96) and 50-Day EMA (\u20b91,001.27) supported by an RSI of <b>86.96</b> and volume surge factor of <b>0.5x</b>. <b>Fund Manager Action:</b> Accumulate within the <b>\u20b91,128.55 \u2014 \u20b91,169.27</b> pocket. Ride the Stage-2 markup targeting <b>\u20b91,306.91</b> (Target 1) and <b>\u20b91,450.79</b> (Target 2), maintaining a protective stop loss at <b>\u20b91,001.27</b>."
     },
     {
       "symbol": "ADANIPORTS",
@@ -882,14 +882,14 @@
       "dist_52w": 3.27,
       "day_change": -6.7,
       "day_change_pct": -0.37,
-      "rsi": 74.27,
-      "ema20": 1753.62,
-      "ema50": 1703.03,
-      "ema200": 1536.13,
-      "vol_surge": 0.65,
-      "ret_1m": 11.7,
-      "ret_3m": 11.9,
-      "ret_6m": 26.1,
+      "rsi": 70.59,
+      "ema20": 1757.94,
+      "ema50": 1706.8,
+      "ema200": 1538.74,
+      "vol_surge": 0.62,
+      "ret_1m": 14.5,
+      "ret_3m": 11.2,
+      "ret_6m": 25.5,
       "ret_1y": 49.0,
       "pe": 28.5,
       "roce": 24.2,
@@ -898,12 +898,12 @@
       "quality": "\u26a0\ufe0f Extended Momentum - Watch For Retest",
       "quality_badge": "#d97706",
       "conviction": "Moderate (Wait for 20-EMA Cushion)",
-      "suggested_entry": "\u20b91,753.62 \u2014 \u20b91,807.99",
+      "suggested_entry": "\u20b91,757.94 \u2014 \u20b91,807.99",
       "target_1": 2027.29,
       "target_2": 2250.48,
-      "stop_loss": 1648.4,
-      "risk_reward": "1 : 1.5",
-      "buy_strategy": "<b>AUROPHARMA</b> is exhibiting stellar institutional sponsorship, currently trading within <b>3.27% of its 52-week peak (\u20b91,859.90)</b> with a 1-year return of <b>+49.0%</b>. Price action is trending decisively above the 20-Day EMA (\u20b91,753.62) and 50-Day EMA (\u20b91,703.03) supported by an RSI of <b>74.27</b> and volume surge factor of <b>0.65x</b>. <b>Fund Manager Action:</b> Accumulate within the <b>\u20b91,753.62 \u2014 \u20b91,807.99</b> pocket. Ride the Stage-2 markup targeting <b>\u20b92,027.29</b> (Target 1) and <b>\u20b92,250.48</b> (Target 2), maintaining a protective stop loss at <b>\u20b91,648.40</b>."
+      "stop_loss": 1652.46,
+      "risk_reward": "1 : 1.6",
+      "buy_strategy": "<b>AUROPHARMA</b> is exhibiting stellar institutional sponsorship, currently trading within <b>3.27% of its 52-week peak (\u20b91,859.90)</b> with a 1-year return of <b>+49.0%</b>. Price action is trending decisively above the 20-Day EMA (\u20b91,757.94) and 50-Day EMA (\u20b91,706.80) supported by an RSI of <b>70.59</b> and volume surge factor of <b>0.62x</b>. <b>Fund Manager Action:</b> Accumulate within the <b>\u20b91,757.94 \u2014 \u20b91,807.99</b> pocket. Ride the Stage-2 markup targeting <b>\u20b92,027.29</b> (Target 1) and <b>\u20b92,250.48</b> (Target 2), maintaining a protective stop loss at <b>\u20b91,652.46</b>."
     }
   ],
   "top_bullish_stocks": [
@@ -939,16 +939,16 @@
       "symbol": "ACUTAAS",
       "name": "Acutaas Chemicals Ltd.",
       "sector": "Healthcare",
-      "cmp": 3833.5,
-      "change_pct": -3.61,
-      "ret_1y": 121.3,
+      "cmp": 3826.0,
+      "change_pct": -3.8,
+      "ret_1y": 120.8,
       "tech_score": 6.0,
       "fund_score": 8.5,
       "conviction_score": 7.2,
       "rsi": 39.71,
       "ema_20": 3798.17,
       "volume_surge": 0.52,
-      "distance_from_52w_high_pct": 7.2,
+      "distance_from_52w_high_pct": 7.4,
       "stop_loss": 3606.64,
       "target_1": 4135.99,
       "target_2": 4362.85,
@@ -995,16 +995,16 @@
       "symbol": "ACE",
       "name": "Action Construction Equipment Ltd.",
       "sector": "Capital Goods",
-      "cmp": 1170.35,
-      "change_pct": -1.31,
-      "ret_1y": 21.1,
+      "cmp": 1171.0,
+      "change_pct": -1.26,
+      "ret_1y": 21.2,
       "tech_score": 7.0,
       "fund_score": 8.5,
       "conviction_score": 7.1,
       "rsi": 88.13,
       "ema_20": 1144.89,
       "volume_surge": 0.38,
-      "distance_from_52w_high_pct": 7.7,
+      "distance_from_52w_high_pct": 7.6,
       "stop_loss": 1101.14,
       "target_1": 1262.64,
       "target_2": 1331.85,
@@ -1029,13 +1029,13 @@
       "tech_score": 7.0,
       "fund_score": 6.0,
       "conviction_score": 6.8,
-      "rsi": 75.44,
-      "ema_20": 10534.15,
-      "volume_surge": 0.72,
+      "rsi": 74.46,
+      "ema_20": 10595.71,
+      "volume_surge": 0.49,
       "distance_from_52w_high_pct": 5.4,
-      "stop_loss": 10626.7,
-      "target_1": 11913.07,
-      "target_2": 12464.38,
+      "stop_loss": 10636.75,
+      "target_1": 11905.5,
+      "target_2": 12449.25,
       "risk_reward": "1:1.33",
       "bullish_signals": [
         "Price trading above 20-Day EMA (Short-term Bullish)",
@@ -1060,7 +1060,7 @@
       "rsi": 77.24,
       "ema_20": 3091.65,
       "volume_surge": 1.23,
-      "distance_from_52w_high_pct": 25.9,
+      "distance_from_52w_high_pct": 25.5,
       "stop_loss": 3141.02,
       "target_1": 3409.54,
       "target_2": 3524.63,
@@ -1079,16 +1079,16 @@
       "symbol": "ABDL",
       "name": "Allied Blenders and Distillers Ltd.",
       "sector": "Fast Moving Consumer Goods",
-      "cmp": 794.3,
-      "change_pct": -1.72,
-      "ret_1y": 21.4,
+      "cmp": 792.5,
+      "change_pct": -1.94,
+      "ret_1y": 21.1,
       "tech_score": 7.5,
       "fund_score": 6.0,
       "conviction_score": 6.5,
       "rsi": 81.63,
       "ema_20": 746.67,
       "volume_surge": 1.29,
-      "distance_from_52w_high_pct": 7.1,
+      "distance_from_52w_high_pct": 7.3,
       "stop_loss": 747.17,
       "target_1": 857.14,
       "target_2": 904.28,
@@ -1278,13 +1278,13 @@
       "tech_score": 7.0,
       "fund_score": 5.0,
       "conviction_score": 5.4,
-      "rsi": 75.85,
-      "ema_20": 2048.92,
-      "volume_surge": 0.65,
-      "distance_from_52w_high_pct": 0.6,
-      "stop_loss": 2077.8,
-      "target_1": 2232.27,
-      "target_2": 2298.48,
+      "rsi": 76.96,
+      "ema_20": 2059.66,
+      "volume_surge": 0.59,
+      "distance_from_52w_high_pct": 0.5,
+      "stop_loss": 2094.77,
+      "target_1": 2250.94,
+      "target_2": 2317.87,
       "risk_reward": "1:1.33",
       "bullish_signals": [
         "Price trading above 20-Day EMA (Short-term Bullish)",
@@ -1300,24 +1300,24 @@
       "symbol": "ACMESOLAR",
       "name": "ACME Solar Holdings Ltd.",
       "sector": "Power",
-      "cmp": 405.4,
-      "change_pct": -0.92,
-      "ret_1y": 65.9,
-      "tech_score": 6.0,
+      "cmp": 406.0,
+      "change_pct": -0.77,
+      "ret_1y": 66.1,
+      "tech_score": 7.0,
       "fund_score": 3.2,
-      "conviction_score": 4.8,
-      "rsi": 47.09,
-      "ema_20": 410.11,
-      "volume_surge": 0.27,
-      "distance_from_52w_high_pct": 15.0,
-      "stop_loss": 387.81,
-      "target_1": 437.6,
-      "target_2": 458.94,
+      "conviction_score": 5.3,
+      "rsi": 50.28,
+      "ema_20": 409.67,
+      "volume_surge": 0.73,
+      "distance_from_52w_high_pct": 14.9,
+      "stop_loss": 385.02,
+      "target_1": 432.57,
+      "target_2": 452.95,
       "risk_reward": "1:1.33",
       "bullish_signals": [
         "20 EMA above 50 EMA (Medium-term Bullish Trend)",
         "Price above 200-Day EMA (Long-term Bull Market structure)",
-        "MACD Bullish Crossover above signal line with positive momentum"
+        "RSI at 50.3 in optimal bullish expansion territory (50-68)"
       ],
       "fundamental_strengths": [
         "Company has delivered good profit growth of 39.8% CAGR over last 5 years"
@@ -1358,16 +1358,16 @@
       "cmp": 13120.0,
       "change_pct": 0.51,
       "ret_1y": -14.3,
-      "tech_score": 6.0,
+      "tech_score": 5.5,
       "fund_score": 3.2,
-      "conviction_score": 3.8,
-      "rsi": 69.56,
-      "ema_20": 12569.69,
-      "volume_surge": 0.86,
-      "distance_from_52w_high_pct": 14.3,
-      "stop_loss": 12357.46,
-      "target_1": 13982.71,
-      "target_2": 14679.25,
+      "conviction_score": 3.6,
+      "rsi": 79.59,
+      "ema_20": 12622.1,
+      "volume_surge": 0.6,
+      "distance_from_52w_high_pct": 12.5,
+      "stop_loss": 12453.68,
+      "target_1": 14008.43,
+      "target_2": 14674.75,
       "risk_reward": "1:1.33",
       "bullish_signals": [
         "Price trading above 20-Day EMA (Short-term Bullish)",
@@ -1425,9 +1425,9 @@
       ],
       "cmp": 13120.0,
       "day_change_pct": 0.51,
-      "fifty_two_week_high": 15310.0,
+      "fifty_two_week_high": 15000.0,
       "fifty_two_week_low": 9600.0,
-      "dist_from_52w_high": 14.3
+      "dist_from_52w_high": 12.5
     },
     {
       "symbol": "TRENT",
@@ -1449,9 +1449,9 @@
       ],
       "cmp": 3256.1,
       "day_change_pct": 0.96,
-      "fifty_two_week_high": 4397.0,
+      "fifty_two_week_high": 4370.0,
       "fifty_two_week_low": 2183.667,
-      "dist_from_52w_high": 25.9
+      "dist_from_52w_high": 25.5
     },
     {
       "symbol": "SUZLON",
@@ -1497,9 +1497,9 @@
       ],
       "cmp": 2910.0,
       "day_change_pct": 0.69,
-      "fifty_two_week_high": 6048.5,
+      "fifty_two_week_high": 5962.0,
       "fifty_two_week_low": 2744.0,
-      "dist_from_52w_high": 51.9
+      "dist_from_52w_high": 51.2
     },
     {
       "symbol": "BSE",
@@ -1798,7 +1798,7 @@
     }
   ],
   "institutional_flow": {
-    "timestamp": "2026-11-21 09:15:46",
+    "timestamp": "2026-11-21 18:00:55",
     "fii_dii_latest": {
       "date": "2026-11-20",
       "formatted_date": "Fri 20 Nov, 2026",
@@ -1989,7 +1989,7 @@
     "sentiment_rationale": "FIIs & DIIs are net buyers (\u20b9+5,448.62 Cr) with High PCR (1.67). Aggressive put writing at key support strikes indicates strong bullish bias."
   },
   "corporate_actions": {
-    "timestamp": "2026-11-21 09:15:49",
+    "timestamp": "2026-11-21 18:01:00",
     "dividends": [
       {
         "stock_name": "Pashupati Cotsp",
@@ -2117,7 +2117,7 @@
     "total_events": 14
   },
   "performance_scorecard": {
-    "timestamp": "2026-11-21 09:15:49",
+    "timestamp": "2026-11-21 18:01:00",
     "total_picks_tracked": 8,
     "win_rate_pct": 85.7,
     "resolved_trades_count": 7,
@@ -2250,7 +2250,7 @@
     ]
   },
   "market_movers": {
-    "timestamp": "2026-11-21 09:15:50",
+    "timestamp": "2026-11-21 18:01:02",
     "top_gainers": [
       {
         "symbol": "INDUSINDBK",

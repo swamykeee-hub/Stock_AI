@@ -1,22 +1,22 @@
 # Daily Indian Market AI Intelligence Briefing
-**Generated:** 2026-11-21 09:15:02 | **Powered by Stock AI Agent (CIO Intelligence)**
+**Generated:** 2026-11-21 18:00:02 | **Powered by Stock AI Agent (CIO Intelligence)**
 
 ---
 ## 1. Domestic & Global Market Overview
 ### Domestic Indices
 | Index | Value | Change (%) |
 | :--- | :--- | :--- |
-| **NIFTY 50** | 25800.6 | +1.12% |
+| **NIFTY 50** | 25800.6 | +2.27% |
 | **SENSEX** | 83919.71 | +2.30% |
-| **BANK NIFTY** | 64635.2 | +2.49% |
-| **INDIA VIX** | 17.32 | +7.51% |
-| **NIFTY 100** | 26662.85 | +1.00% |
-| **NIFTY 200** | 14587.75 | +0.94% |
-| **NIFTY IT** | 31322.65 | +1.30% |
-| **NIFTY PHARMA** | 28386.9 | +0.05% |
-| **NIFTY FMCG** | 48535.7 | -0.06% |
-| **NIFTY AUTO** | 28787.65 | +0.65% |
-| **NIFTY METAL** | 12271.1 | -0.23% |
+| **BANK NIFTY** | 64635.2 | +4.18% |
+| **INDIA VIX** | 17.32 | +11.24% |
+| **NIFTY 100** | 26662.85 | +2.24% |
+| **NIFTY 200** | 14587.75 | +2.14% |
+| **NIFTY IT** | 31322.65 | +0.19% |
+| **NIFTY PHARMA** | 28386.9 | +0.66% |
+| **NIFTY FMCG** | 48535.7 | +2.03% |
+| **NIFTY AUTO** | 28787.65 | +5.08% |
+| **NIFTY METAL** | 12271.1 | +0.40% |
 | **NIFTY PRIVATE BANK** | 31671.75 | +3.01% |
 | **NIFTY FIN-SERVICES** | 30728.1 | +1.66% |
 | **NIFTY AI CATALYSTS** | 1006.42 | +0.03% |
@@ -24,10 +24,10 @@
 ### Global Macro & Commodities
 | Commodity / Index | Price | Change (%) |
 | :--- | :--- | :--- |
-| **Brent Crude ($/bbl)** | 89.87 | +0.48% |
+| **Brent Crude ($/bbl)** | 89.95 | +0.57% |
 | **US 10-Yr Yield (%)** | 4.91 | -2.77% |
-| **US Dollar Index (DXY)** | 103.84 | -0.05% |
-| **Gold ($/oz)** | 3539.0 | -3.98% |
+| **US Dollar Index (DXY)** | 103.84 | +0.03% |
+| **Gold ($/oz)** | 3515.4 | -4.62% |
 | **USD / INR** | 92.67 | -0.65% |
 
 ## 2. Multi-Timeframe Super-Trend & Momentum Leaders (3M / 1Y / 3Y)
@@ -35,7 +35,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **LAURUSLABS** | ₹2294.6 | +24.7% | +58.6% | +123.6% | +498.1% | 🚀 Multibagger Compounder (+100%+) |
 | **DIVISLAB** | ₹11180.5 | +22.9% | +68.8% | +72.7% | +203.7% | 🏛️ Multi-Year Structural Bull |
-| **APARINDS** | ₹14339.0 | +-17.7% | +3.3% | +61.1% | +170.7% | 📈 Positive Trend |
+| **APARINDS** | ₹14320.0 | +-17.8% | +3.2% | +60.9% | +170.3% | 📈 Positive Trend |
 | **BHEL** | ₹433.65 | +0.6% | +12.1% | +56.1% | +145.4% | 🎯 Near Breakout Zone |
 | **SOLARINDS** | ₹18710.0 | +-12.8% | +1.5% | +46.0% | +197.1% | 📈 Positive Trend |
 | **MOTHERSON** | ₹166.53 | +3.6% | +16.0% | +42.3% | +162.9% | 🎯 Near Breakout Zone |
@@ -60,12 +60,12 @@
 | Symbol | CMP (₹) | Conviction | RSI | Target 1 (₹) | Stop Loss (₹) | R:R |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **PERSISTENT** | ₹6124.0 | 7.3/10 | 55.01 | ₹6430.43 | ₹5894.18 | 1:1.33 |
-| **ACUTAAS** | ₹3833.5 | 7.2/10 | 39.71 | ₹4135.99 | ₹3606.64 | 1:1.33 |
+| **ACUTAAS** | ₹3826.0 | 7.2/10 | 39.71 | ₹4135.99 | ₹3606.64 | 1:1.33 |
 | **BSE** | ₹3781.0 | 7.1/10 | 66.83 | ₹4029.57 | ₹3594.57 | 1:1.33 |
-| **ACE** | ₹1170.35 | 7.1/10 | 88.13 | ₹1262.64 | ₹1101.14 | 1:1.33 |
-| **DIVISLAB** | ₹11180.5 | 6.8/10 | 75.44 | ₹11913.07 | ₹10626.7 | 1:1.33 |
+| **ACE** | ₹1171.0 | 7.1/10 | 88.13 | ₹1262.64 | ₹1101.14 | 1:1.33 |
+| **DIVISLAB** | ₹11180.5 | 6.8/10 | 74.46 | ₹11905.5 | ₹10636.75 | 1:1.33 |
 | **TRENT** | ₹3256.1 | 6.5/10 | 77.24 | ₹3409.54 | ₹3141.02 | 1:1.33 |
-| **ABDL** | ₹794.3 | 6.5/10 | 81.63 | ₹857.14 | ₹747.17 | 1:1.33 |
+| **ABDL** | ₹792.5 | 6.5/10 | 81.63 | ₹857.14 | ₹747.17 | 1:1.33 |
 | **BHEL** | ₹433.65 | 6.1/10 | 74.99 | ₹461.46 | ₹412.79 | 1:1.33 |
 
 ## 5. Curated Mutual Fund Recommendations & Rationale
@@ -80,12 +80,13 @@
 ## 6. Indian IPO Updates & GMP
 | IPO Name | Status | Price Band | GMP (%) | Verdict |
 | :--- | :--- | :--- | :--- | :--- |
-| **Crystal Crop Protection** | Closed | ₹259.00 - ₹272.00 | +5.3% | ℹ️ CAUTIOUS / LONG TERM ONLY |
-| **Watrana Rentals** | Open | ₹232.00 - ₹245.00 | +27.4% | ✅ APPLY (Moderate Listing Gain) |
-| **Mahanadi Coalfields** | Open | ₹129.00 - ₹136.00 | +0.7% | ℹ️ CAUTIOUS / LONG TERM ONLY |
+| **Crystal Crop Protection** | Closed | ₹259.00 - ₹272.00 | +5.2% | ℹ️ CAUTIOUS / LONG TERM ONLY |
+| **Watrana Rentals** | Open | ₹232.00 - ₹245.00 | +26.5% | ✅ APPLY (Moderate Listing Gain) |
+| **Mahanadi Coalfields** | Open | ₹129.00 - ₹136.00 | +0.5% | ℹ️ CAUTIOUS / LONG TERM ONLY |
 | **Shree Siddhivinayak Greentech Industries** | Upcoming | ₹130.00 - ₹142.00 | +0.0% | ⏸️ AVOID / WATCH SUBSCRIPTION |
 | **Foodlink F&B Holdings** | Upcoming | TBA | +0.0% | ⏸️ AVOID / WATCH SUBSCRIPTION |
 | **Integris Medtech** | Upcoming | TBA | +0.0% | ⏸️ AVOID / WATCH SUBSCRIPTION |
+| **A J Packaging** | Upcoming | TBA | +0.0% | ⏸️ AVOID / WATCH SUBSCRIPTION |
 | **Monomark Engineering** | Upcoming | TBA | +0.0% | ⏸️ AVOID / WATCH SUBSCRIPTION |
 | **Hindustan Coca Cola** | Upcoming | TBA | +0.0% | ⏸️ AVOID / WATCH SUBSCRIPTION |
 | **Antala Industries** | Recently Listed | ₹66.00 | +-21.2% | 🔴 DISCOUNT LISTING |

@@ -1,8 +1,8 @@
 {
   "score": 3.2,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        7972\n        \n          Cr.",
-    "current_price": "\u20b9\n        231",
+    "market_cap_cr": "\u20b9\n        7910\n        \n          Cr.",
+    "current_price": "\u20b9\n        229",
     "stock_pe": "",
     "book_value": "\u20b9\n        77.0",
     "dividend_yield_pct": "0.00\n        \n          %",
@@ -16,7 +16,7 @@
     "Company is almost debt free."
   ],
   "red_flags": [
-    "Stock is trading at 2.99 times its book value",
+    "Stock is trading at 2.98 times its book value",
     "Company has low interest coverage ratio.",
     "The company has delivered a poor sales growth of -41.3% over past five years."
   ]

@@ -1,11 +1,11 @@
 {
   "score": 5.0,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        688535\n        \n          Cr.",
-    "current_price": "\u20b9\n        1086",
-    "stock_pe": "35.4",
+    "market_cap_cr": "\u20b9\n        711359\n        \n          Cr.",
+    "current_price": "\u20b9\n        1122",
+    "stock_pe": "36.5",
     "book_value": "\u20b9\n        178",
-    "dividend_yield_pct": "0.49\n        \n          %",
+    "dividend_yield_pct": "0.48\n        \n          %",
     "roce_pct": "11.2\n        \n          %",
     "roe_pct": "17.1\n        \n          %",
     "debt_to_equity": "N/A",
@@ -16,6 +16,6 @@
     "Company's median sales growth is 29.1% of last 10 years"
   ],
   "red_flags": [
-    "Stock is trading at 6.13 times its book value"
+    "Stock is trading at 6.30 times its book value"
   ]
 }
