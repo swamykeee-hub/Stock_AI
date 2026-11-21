@@ -1,197 +1,77 @@
 {
-  "timestamp": "2026-11-20 18:01:11",
+  "timestamp": "2026-11-21 08:45:54",
   "dividends": [
     {
-      "stock_name": "Ashok Leyland",
-      "symbol": "AL",
+      "stock_name": "Pashupati Cotsp",
+      "symbol": "PC25",
       "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b9163.35",
-      "estimated_yield": "0.61%",
-      "announcement_date": "11/11/2026"
-    },
-    {
-      "stock_name": "Oil India",
-      "symbol": "OI13",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b97.00",
-      "cmp": "\u20b9432.00",
-      "estimated_yield": "1.62%",
-      "announcement_date": "12/11/2026"
-    },
-    {
-      "stock_name": "Jamna Auto",
-      "symbol": "JAI",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b9137.55",
-      "estimated_yield": "0.73%",
-      "announcement_date": "16/11/2026"
-    },
-    {
-      "stock_name": "Venus Pipes",
-      "symbol": "VPT01",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b90.50",
-      "cmp": "\u20b91711.70",
-      "estimated_yield": "0.03%",
-      "announcement_date": "05/11/2026"
-    },
-    {
-      "stock_name": "Steelcast",
-      "symbol": "S06",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b90.45",
-      "cmp": "\u20b9370.10",
-      "estimated_yield": "0.12%",
-      "announcement_date": "03/11/2026"
-    },
-    {
-      "stock_name": "Polyplex Corp",
-      "symbol": "PC08",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b912.00",
-      "cmp": "\u20b9985.60",
-      "estimated_yield": "1.22%",
-      "announcement_date": "16/11/2026"
-    },
-    {
-      "stock_name": "Marsons",
-      "symbol": "M01",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b90.05",
-      "cmp": "\u20b9152.56",
-      "estimated_yield": "0.03%",
-      "announcement_date": "13/11/2026"
-    },
-    {
-      "stock_name": "Talbros Auto",
-      "symbol": "TAC",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b90.30",
-      "cmp": "\u20b9402.65",
+      "ex_date": "23/11/2026",
+      "dividend_amount": "\u20b90.02",
+      "cmp": "\u20b927.18",
       "estimated_yield": "0.07%",
-      "announcement_date": "11/11/2026"
+      "announcement_date": "06/11/2026"
     },
     {
-      "stock_name": "Skyways Air Ser",
-      "symbol": "S26",
+      "stock_name": "Vraj Iron",
+      "symbol": "VISL",
       "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b90.40",
-      "cmp": "\u20b9117.00",
-      "estimated_yield": "0.34%",
+      "ex_date": "25/11/2026",
+      "dividend_amount": "\u20b90.60",
+      "cmp": "\u20b9129.30",
+      "estimated_yield": "0.46%",
       "announcement_date": "16/11/2026"
     },
     {
-      "stock_name": "BF Investment",
-      "symbol": "BFI",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b920.00",
-      "cmp": "\u20b9446.95",
-      "estimated_yield": "4.47%",
-      "announcement_date": "13/11/2026"
-    },
-    {
-      "stock_name": "Alufluoride",
-      "symbol": "A01",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b92.50",
-      "cmp": "\u20b9679.95",
-      "estimated_yield": "0.37%",
-      "announcement_date": "16/11/2026"
-    },
-    {
-      "stock_name": "Prevest Denpro",
-      "symbol": "PD10",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b9368.20",
+      "stock_name": "Fusion CX",
+      "symbol": "FCL01",
+      "event_type": "Dividend - Final",
+      "ex_date": "27/11/2026",
+      "dividend_amount": "\u20b90.75",
+      "cmp": "\u20b9278.65",
       "estimated_yield": "0.27%",
-      "announcement_date": "12/11/2026"
-    },
-    {
-      "stock_name": "Rama Phosphates",
-      "symbol": "RP07",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b90.50",
-      "cmp": "\u20b9119.68",
-      "estimated_yield": "0.42%",
-      "announcement_date": "05/11/2026"
-    },
-    {
-      "stock_name": "Envirotech Sys",
-      "symbol": "ESL04",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b91.00",
-      "cmp": "\u20b951.95",
-      "estimated_yield": "1.92%",
-      "announcement_date": "14/11/2026"
-    },
-    {
-      "stock_name": "Shanmuga Hospit",
-      "symbol": "SHL03",
-      "event_type": "Dividend - Interim",
-      "ex_date": "20/11/2026",
-      "dividend_amount": "\u20b90.10",
-      "cmp": "\u20b947.27",
-      "estimated_yield": "0.21%",
-      "announcement_date": "12/11/2026"
+      "announcement_date": "16/11/2026"
     }
   ],
   "earnings": [
     {
-      "date": "20 Nov",
-      "stock_name": "ELITECON INTERNATIONAL",
-      "symbol": "KJA",
+      "date": "21 Nov",
+      "stock_name": "Shri Venkatesh Refineries",
+      "symbol": "SVR",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b94.52",
-      "market_cap": "\u20b9722.52 Cr"
+      "ltp": "\u20b9735.10",
+      "market_cap": "\u20b91625.99 Cr"
     },
     {
-      "date": "20 Nov",
-      "stock_name": "GVP Infotech",
-      "symbol": "FDS01",
+      "date": "21 Nov",
+      "stock_name": "Spice Islands Industries",
+      "symbol": "SIA02",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b96.92",
-      "market_cap": "\u20b9120.03 Cr"
+      "ltp": "\u20b9142.85",
+      "market_cap": "\u20b9445.22 Cr"
     },
     {
-      "date": "20 Nov",
-      "stock_name": "STARBEAM VENTURES",
-      "symbol": "II19",
+      "date": "21 Nov",
+      "stock_name": "Healthy Life Agritec",
+      "symbol": "HLA",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b90.61",
-      "market_cap": "\u20b939.87 Cr"
+      "ltp": "\u20b95.00",
+      "market_cap": "\u20b924.81 Cr"
     },
     {
-      "date": "20 Nov",
-      "stock_name": "Trans India House Impex",
-      "symbol": "MGB",
+      "date": "21 Nov",
+      "stock_name": "Ekam Leasing and Finance Company",
+      "symbol": "ELF01",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b92.66",
-      "market_cap": "\u20b918.9 Cr"
+      "ltp": "\u20b910.88",
+      "market_cap": "\u20b96.53 Cr"
     },
     {
-      "date": "20 Nov",
-      "stock_name": "Boston Commerce",
-      "symbol": "LEC01",
+      "date": "21 Nov",
+      "stock_name": "A F Enterprises",
+      "symbol": "AFE01",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b911.18",
-      "market_cap": "\u20b97.83 Cr"
+      "ltp": "\u20b91.77",
+      "market_cap": "\u20b93.43 Cr"
     }
   ],
   "splits_and_actions": [
@@ -212,20 +92,12 @@
       "announcement_date": "06/08/2026"
     },
     {
-      "stock_name": "SML Mahindra",
-      "symbol": "SM",
+      "stock_name": "Bonlon Industri",
+      "symbol": "BIL04",
       "action_type": "Rights Issue",
-      "ex_date": "20/11/2026",
-      "ratio": "2:7",
-      "announcement_date": "06/11/2026"
-    },
-    {
-      "stock_name": "Om Metallogic",
-      "symbol": "OML01",
-      "action_type": "Rights Issue",
-      "ex_date": "20/11/2026",
+      "ex_date": "25/11/2026",
       "ratio": "1:1",
-      "announcement_date": "10/08/2026"
+      "announcement_date": "14/08/2026"
     },
     {
       "stock_name": "Indergiri Fin",
@@ -234,7 +106,23 @@
       "ex_date": "25/11/2026",
       "ratio": "7:4",
       "announcement_date": "10/02/2026"
+    },
+    {
+      "stock_name": "VELLORA IMPACT",
+      "symbol": "PC10",
+      "action_type": "Rights Issue",
+      "ex_date": "25/11/2026",
+      "ratio": "25:2",
+      "announcement_date": "30/07/2026"
+    },
+    {
+      "stock_name": "JTL DEFENCE",
+      "symbol": "RIT",
+      "action_type": "Rights Issue",
+      "ex_date": "27/11/2026",
+      "ratio": "3:2",
+      "announcement_date": "14/10/2026"
     }
   ],
-  "total_events": 25
+  "total_events": 14
 }
