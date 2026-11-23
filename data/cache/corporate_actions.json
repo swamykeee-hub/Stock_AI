@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-21 18:01:00",
+  "timestamp": "2026-11-23 18:00:59",
   "dividends": [
     {
       "stock_name": "Pashupati Cotsp",
@@ -7,7 +7,7 @@
       "event_type": "Dividend - Interim",
       "ex_date": "23/11/2026",
       "dividend_amount": "\u20b90.02",
-      "cmp": "\u20b927.18",
+      "cmp": "\u20b928.51",
       "estimated_yield": "0.07%",
       "announcement_date": "06/11/2026"
     },
@@ -17,8 +17,8 @@
       "event_type": "Dividend - Interim",
       "ex_date": "25/11/2026",
       "dividend_amount": "\u20b90.60",
-      "cmp": "\u20b9129.30",
-      "estimated_yield": "0.46%",
+      "cmp": "\u20b9125.88",
+      "estimated_yield": "0.48%",
       "announcement_date": "16/11/2026"
     },
     {
@@ -27,51 +27,75 @@
       "event_type": "Dividend - Final",
       "ex_date": "27/11/2026",
       "dividend_amount": "\u20b90.75",
-      "cmp": "\u20b9278.65",
-      "estimated_yield": "0.27%",
+      "cmp": "\u20b9271.70",
+      "estimated_yield": "0.28%",
       "announcement_date": "16/11/2026"
     }
   ],
   "earnings": [
     {
-      "date": "21 Nov",
-      "stock_name": "Shri Venkatesh Refineries",
-      "symbol": "SVR",
+      "date": "23 Nov",
+      "stock_name": "SFC Environmental Technologies",
+      "symbol": "SETL",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9735.10",
-      "market_cap": "\u20b91625.99 Cr"
+      "ltp": "\u20b9437.35",
+      "market_cap": "\u20b94284.14 Cr"
     },
     {
-      "date": "21 Nov",
-      "stock_name": "Spice Islands Industries",
-      "symbol": "SIA02",
+      "date": "23 Nov",
+      "stock_name": "ELITECON INTERNATIONAL",
+      "symbol": "KJA",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9142.85",
-      "market_cap": "\u20b9445.22 Cr"
+      "ltp": "\u20b94.67",
+      "market_cap": "\u20b9746.5 Cr"
     },
     {
-      "date": "21 Nov",
-      "stock_name": "Healthy Life Agritec",
-      "symbol": "HLA",
+      "date": "23 Nov",
+      "stock_name": "Exhicon Events Media Solutions",
+      "symbol": "EEM",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b95.00",
-      "market_cap": "\u20b924.81 Cr"
+      "ltp": "\u20b9495.90",
+      "market_cap": "\u20b9642.81 Cr"
     },
     {
-      "date": "21 Nov",
-      "stock_name": "Ekam Leasing and Finance Company",
-      "symbol": "ELF01",
+      "date": "23 Nov",
+      "stock_name": "Bombay Coated and Special Steels",
+      "symbol": "BCSSL",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b910.88",
-      "market_cap": "\u20b96.53 Cr"
+      "ltp": "\u20b984.70",
+      "market_cap": "\u20b9532.12 Cr"
     },
     {
-      "date": "21 Nov",
-      "stock_name": "A F Enterprises",
-      "symbol": "AFE01",
+      "date": "23 Nov",
+      "stock_name": "Krishca Strapping Solutions",
+      "symbol": "KSS02",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b91.77",
-      "market_cap": "\u20b93.43 Cr"
+      "ltp": "\u20b9194.10",
+      "market_cap": "\u20b9309.16 Cr"
+    },
+    {
+      "date": "23 Nov",
+      "stock_name": "Carver Roboweld",
+      "symbol": "CRL03",
+      "result_type": "Q2 FY26-27",
+      "ltp": "\u20b997.00",
+      "market_cap": "\u20b9127.1 Cr"
+    },
+    {
+      "date": "23 Nov",
+      "stock_name": "Kore Digital",
+      "symbol": "KD09",
+      "result_type": "Q2 FY26-27",
+      "ltp": "\u20b925.35",
+      "market_cap": "\u20b930.48 Cr"
+    },
+    {
+      "date": "23 Nov",
+      "stock_name": "Sabar Flex India",
+      "symbol": "SFI06",
+      "result_type": "Q2 FY26-27",
+      "ltp": "\u20b98.80",
+      "market_cap": "\u20b916.91 Cr"
     }
   ],
   "splits_and_actions": [
@@ -124,5 +148,5 @@
       "announcement_date": "14/10/2026"
     }
   ],
-  "total_events": 14
+  "total_events": 17
 }

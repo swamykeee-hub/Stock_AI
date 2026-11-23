@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-21 18:00:55",
+  "timestamp": "2026-11-23 18:00:55",
   "fii_dii_latest": {
     "date": "2026-11-20",
     "formatted_date": "Fri 20 Nov, 2026",
@@ -179,13 +179,13 @@
     }
   ],
   "derivatives": {
-    "pcr": 1.67,
-    "total_call_oi": 2321507,
-    "total_put_oi": 3884392,
-    "max_pain_strike": 25500.0,
+    "pcr": 0.74,
+    "total_call_oi": 3373316,
+    "total_put_oi": 2511179,
+    "max_pain_strike": 25350.0,
     "status": "LIVE"
   },
-  "smart_money_sentiment": "BULLISH_EXPANSION",
-  "sentiment_badge": "\ud83d\udfe2 STRONG BULLISH (SMART ACCUMULATION)",
-  "sentiment_rationale": "FIIs & DIIs are net buyers (\u20b9+5,448.62 Cr) with High PCR (1.67). Aggressive put writing at key support strikes indicates strong bullish bias."
+  "smart_money_sentiment": "BALANCED",
+  "sentiment_badge": "\ud83d\udd35 BALANCED / RANGE-BOUND",
+  "sentiment_rationale": "Nifty PCR is balanced at 0.74 around Max Pain strike (25350.0). Institutions active with FII 10,308.42 Cr and DII -4,859.80 Cr."
 }
