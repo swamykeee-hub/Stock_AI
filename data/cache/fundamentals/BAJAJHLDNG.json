@@ -1,11 +1,11 @@
 {
   "score": 5.0,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        129822\n        \n          Cr.",
-    "current_price": "\u20b9\n        11669",
-    "stock_pe": "58.0",
+    "market_cap_cr": "\u20b9\n        128428\n        \n          Cr.",
+    "current_price": "\u20b9\n        11541",
+    "stock_pe": "57.4",
     "book_value": "\u20b9\n        2238",
-    "dividend_yield_pct": "1.24\n        \n          %",
+    "dividend_yield_pct": "1.26\n        \n          %",
     "roce_pct": "12.8\n        \n          %",
     "roe_pct": "11.1\n        \n          %",
     "debt_to_equity": "N/A",
@@ -17,7 +17,7 @@
     "Company has been maintaining a healthy dividend payout of 58.8%"
   ],
   "red_flags": [
-    "Stock is trading at 5.21 times its book value",
+    "Stock is trading at 5.15 times its book value",
     "Tax rate seems low",
     "Company has a low return on equity of 11.3% over last 3 years."
   ]

@@ -1,9 +1,9 @@
 {
   "score": 5.2,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        132179\n        \n          Cr.",
-    "current_price": "\u20b9\n        9200",
-    "stock_pe": "80.8",
+    "market_cap_cr": "\u20b9\n        133246\n        \n          Cr.",
+    "current_price": "\u20b9\n        9257",
+    "stock_pe": "81.5",
     "book_value": "\u20b9\n        745",
     "dividend_yield_pct": "0.22\n        \n          %",
     "roce_pct": "17.0\n        \n          %",
@@ -16,7 +16,7 @@
     "Healthy Capital Return (ROCE: 17.0%)"
   ],
   "red_flags": [
-    "Stock is trading at 12.3 times its book value",
-    "Premium Valuation (P/E: 80.8x)"
+    "Stock is trading at 12.5 times its book value",
+    "Premium Valuation (P/E: 81.5x)"
   ]
 }

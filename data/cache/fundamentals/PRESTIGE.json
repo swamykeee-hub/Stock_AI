@@ -1,0 +1,23 @@
+{
+  "score": 2.2,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        72868\n        \n          Cr.",
+    "current_price": "\u20b9\n        1687",
+    "stock_pe": "384",
+    "book_value": "\u20b9\n        277",
+    "dividend_yield_pct": "0.12\n        \n          %",
+    "roce_pct": "4.36\n        \n          %",
+    "roe_pct": "1.49\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        10.0"
+  },
+  "strengths": [
+    "Company is expected to give good quarter",
+    "Company has been maintaining a healthy dividend payout of 39.3%"
+  ],
+  "red_flags": [
+    "Stock is trading at 6.08 times its book value",
+    "Company has low interest coverage ratio.",
+    "The company has delivered a poor sales growth of 0.13% over past five years."
+  ]
+}
