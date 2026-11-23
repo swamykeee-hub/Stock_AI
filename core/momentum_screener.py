@@ -17,8 +17,12 @@ class MomentumScreener:
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     }
 
-    def __init__(self, cache_file: Path = Path("D:/STOCK_AI/data/cache/momentum_cache.json")):
-        self.cache_file = cache_file
+    def __init__(self, cache_file: Path = None):
+        if cache_file is None:
+            from config import CACHE_DIR
+            self.cache_file = CACHE_DIR / "momentum_cache.json"
+        else:
+            self.cache_file = Path(cache_file)
         self.cache_file.parent.mkdir(parents=True, exist_ok=True)
         # Curated universe covering High-Growth Midcaps, Smallcaps, and Market Leaders
         self.curated_momentum_universe = [

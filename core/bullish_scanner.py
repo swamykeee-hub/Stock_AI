@@ -37,12 +37,16 @@ class BullishScanner:
         {"symbol": "BHARTIARTL", "name": "Bharti Airtel Ltd.", "sector": "Telecom"}
     ]
 
-    def __init__(self, data_path: Path = Path("D:/STOCK_AI/data/nse_stocks.json")):
+    def __init__(self, data_path: Path = None):
         self.market_data = MarketDataManager()
         self.tech_analyst = TechnicalAnalyst()
         self.fund_analyst = FundamentalAnalyst()
         self.news_analyst = NewsSentimentAnalyst()
-        self.data_path = data_path
+        if data_path is None:
+            from config import DATA_DIR
+            self.data_path = DATA_DIR / "nse_stocks.json"
+        else:
+            self.data_path = Path(data_path)
 
     def load_stock_universe(self) -> List[Dict[str, str]]:
         """Loads curated list of NSE stocks, ensuring high momentum leaders are first in queue."""

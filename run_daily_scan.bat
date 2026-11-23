@@ -10,4 +10,3 @@ if %errorlevel% neq 0 (
     echo [INFO] Starting Live Sync Daemon on port 5005 in background...
     start "Indian Stock AI Live Sync Daemon" /min "C:\Users\swamy.VISION\AppData\Local\Programs\Python\Python314\python.exe" "D:\STOCK_AI\core\sync_server.py" --port 5005
 )
-pause

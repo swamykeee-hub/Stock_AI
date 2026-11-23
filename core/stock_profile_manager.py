@@ -16,7 +16,8 @@ class StockProfileManager:
     for benchmark NSE stocks and searched tickers.
     """
 
-    CACHE_FILE = Path("D:/STOCK_AI/data/cache/enriched_stock_profiles.json")
+    from config import CACHE_DIR
+    CACHE_FILE = CACHE_DIR / "enriched_stock_profiles.json"
 
     KEY_BENCHMARK_STOCKS = [
         {"symbol": "TCS", "name": "Tata Consultancy Services Ltd.", "sector": "Information Technology"},

@@ -32,7 +32,8 @@ class HTMLReportGenerator:
         # Load backend NSE 500 catalog for universal lookup fallback
         nse_catalog = []
         try:
-            catalog_file = Path("D:/STOCK_AI/data/nse_stocks.json")
+            from config import DATA_DIR, CACHE_DIR
+            catalog_file = DATA_DIR / "nse_stocks.json"
             if catalog_file.exists():
                 with open(catalog_file, "r", encoding="utf-8") as f:
                     nse_catalog = json.load(f)
@@ -53,7 +54,8 @@ class HTMLReportGenerator:
         # Load universal 503-stock CMP cache for instant portfolio valuation
         all_stock_cmps = {}
         try:
-            cmps_file = Path("D:/STOCK_AI/data/cache/all_stock_cmps.json")
+            from config import CACHE_DIR
+            cmps_file = CACHE_DIR / "all_stock_cmps.json"
             if cmps_file.exists():
                 with open(cmps_file, "r", encoding="utf-8") as f:
                     all_stock_cmps = json.load(f)
@@ -2713,44 +2715,60 @@ class HTMLReportGenerator:
             btnText.innerText = 'Syncing Live Feeds...';
             btn.disabled = true;
 
+            const isOnlineHosted = window.location.hostname.includes('github.io') || (window.location.protocol.startsWith('http') && !window.location.hostname.includes('127.0.0.1') && !window.location.hostname.includes('localhost'));
+
             try {{
-                showSyncToast('⏳ <b>Syncing Live Feeds:</b> Fetching latest 14 Indian indices & CMP for all stocks...');
+                showSyncToast('⏳ <b>Syncing Live Feeds:</b> Querying real-time market quotes...');
                 const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 25000);
+                const timeoutId = setTimeout(() => controller.abort(), 12000);
 
-                const response = await fetch('http://127.0.0.1:5005/api/refresh?mode=quick', {{
-                    method: 'GET',
-                    headers: {{ 'Accept': 'application/json' }},
-                    signal: controller.signal
-                }});
-                clearTimeout(timeoutId);
+                let localSuccess = false;
+                try {{
+                    const response = await fetch('http://127.0.0.1:5005/api/refresh?mode=quick&push=true', {{
+                        method: 'GET',
+                        headers: {{ 'Accept': 'application/json' }},
+                        signal: controller.signal
+                    }});
+                    clearTimeout(timeoutId);
 
-                if (response.ok) {{
-                    const data = await response.json();
-                    showSyncToast('✅ <b>Market Data & CMP Synced!</b> Reloading updated dashboard...');
+                    if (response.ok) {{
+                        localSuccess = true;
+                        const data = await response.json();
+                        showSyncToast('✅ <b>Market Data & CMP Synced!</b> Updated local dashboard & pushed live to GitHub Pages. Reloading...');
+                        setTimeout(() => {{
+                            window.location.reload();
+                        }}, 700);
+                        return;
+                    }}
+                }} catch (fetchErr) {{
+                    // Daemon not reachable on 127.0.0.1:5005
+                }}
+
+                if (isOnlineHosted) {{
+                    showSyncToast('🌐 <b>Cloud Data Sync:</b> Reloading newest live market intelligence from GitHub Actions...');
                     setTimeout(() => {{
-                        window.location.reload();
-                    }}, 600);
-                    return;
+                        const url = new URL(window.location.href);
+                        url.searchParams.set('_sync', Date.now());
+                        window.location.href = url.toString();
+                    }}, 900);
                 }} else {{
-                    throw new Error('Sync server responded with status ' + response.status);
+                    checkDaemonStatus(false);
+                    showSyncToast(`
+                        <div style="font-weight:700; color:#f87171; font-size:13px; margin-bottom:4px;">⚠️ Live Sync Daemon is Offline</div>
+                        <div style="font-size:12px; line-height:1.4; color:#cbd5e1;">
+                            Could not reach sync server at <b>http://127.0.0.1:5005</b>.<br/>
+                            Run <b>start_sync_daemon.bat</b> on Desktop to start local 3-minute streaming feeds.
+                        </div>
+                    `, 5500);
                 }}
             }} catch (err) {{
                 console.warn('Sync server connection notice:', err);
-                checkDaemonStatus(false);
-                showSyncToast(`
-                    <div style="font-weight:700; color:#f87171; font-size:13px; margin-bottom:4px;">⚠️ Live Sync Daemon is Offline</div>
-                    <div style="font-size:12px; line-height:1.4; color:#cbd5e1;">
-                        Could not reach sync server at <b>http://127.0.0.1:5005</b>.<br/>
-                        Run <b>start_sync_daemon.bat</b> on Desktop or in <code>D:\\STOCK_AI</code> to start live feeds.
-                    </div>
-                `, 6500);
             }} finally {{
                 setTimeout(() => {{
                     icon.classList.remove('spinning');
                     btnText.innerText = 'Refresh Live Data';
                     btn.disabled = false;
-                }}, 1000);
+                }}, 1200);
             }}
         }}
 
@@ -3992,7 +4010,7 @@ class HTMLReportGenerator:
                         if (rawRow.length <= Math.max(symIdx, qtyIdx)) continue;
 
                         let rawSym = rawRow[symIdx].toUpperCase().replace('-EQ', '').replace('.NS', '').replace('NSE:', '').trim();
-                        rawSym = rawSym.replace(/['"\s]/g, '');
+                        rawSym = rawSym.replace(/['"\\s]/g, '');
 
                         const qtyStr = (rawRow[qtyIdx] || '0').replace(/,/g, '').trim();
                         const qty = parseFloat(qtyStr);

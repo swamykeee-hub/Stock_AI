@@ -9,8 +9,12 @@ class AIPerformanceScorecard:
     of the Stock AI 360° Bullish Scanner and Momentum models over 30, 60, and 90-day horizons.
     """
 
-    def __init__(self, history_file: Path = Path("D:/STOCK_AI/data/cache/ai_performance_history.json")):
-        self.history_file = history_file
+    def __init__(self, history_file: Path = None):
+        if history_file is None:
+            from config import CACHE_DIR
+            self.history_file = CACHE_DIR / "ai_performance_history.json"
+        else:
+            self.history_file = Path(history_file)
         self.history_file.parent.mkdir(parents=True, exist_ok=True)
 
     def get_performance_metrics(self) -> Dict[str, Any]:

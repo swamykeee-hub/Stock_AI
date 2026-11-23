@@ -17,8 +17,12 @@ class InstitutionalFlowAnalyst:
         "Accept": "application/json, text/plain, */*"
     }
 
-    def __init__(self, cache_file: Path = Path("D:/STOCK_AI/data/cache/institutional_flow.json")):
-        self.cache_file = cache_file
+    def __init__(self, cache_file: Path = None):
+        if cache_file is None:
+            from config import CACHE_DIR
+            self.cache_file = CACHE_DIR / "institutional_flow.json"
+        else:
+            self.cache_file = Path(cache_file)
         self.cache_file.parent.mkdir(parents=True, exist_ok=True)
 
     def get_institutional_flow(self, force_refresh: bool = False) -> Dict[str, Any]:

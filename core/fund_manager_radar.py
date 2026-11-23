@@ -11,7 +11,8 @@ class FundManagerRadar:
     future breakout entries, pullback buys, and multi-year compounding.
     """
 
-    RADAR_FILE = Path("D:/STOCK_AI/data/monitored_stocks.json")
+    from config import DATA_DIR
+    RADAR_FILE = DATA_DIR / "monitored_stocks.json"
 
     DEFAULT_MONITORED_STOCKS = [
         {

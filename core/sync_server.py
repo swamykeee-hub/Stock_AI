@@ -6,9 +6,15 @@ import sys
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from socketserver import ThreadingMixIn
 from urllib.parse import urlparse, parse_qs
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
+
+IST = timezone(timedelta(hours=5, minutes=30))
+
+def get_ist_now() -> datetime:
+    """Returns current datetime in Indian Standard Time (IST)."""
+    return datetime.now(timezone.utc).astimezone(IST)
 
 # Ensure project root is in sys.path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -31,20 +37,39 @@ from core.market_movers_analyst import MarketMoversAnalyst
 
 def is_market_hours() -> bool:
     """Checks if current time is within Indian market trading hours (Mon-Fri 09:00 - 15:45 IST)."""
-    now = datetime.now()
+    now = get_ist_now()
     if now.weekday() >= 5:  # Saturday or Sunday
         return False
     market_open = now.replace(hour=9, minute=0, second=0, microsecond=0)
     market_close = now.replace(hour=15, minute=45, second=0, microsecond=0)
     return market_open <= now <= market_close
 
-def refresh_all_live_data(mode: str = "quick") -> dict:
+def push_to_github_pages(commit_msg: str = None) -> bool:
+    """Non-blocking background git commit and push to GitHub Pages."""
+    try:
+        import subprocess
+        now_str = get_ist_now().strftime("%Y-%m-%d %H:%M:%S")
+        msg = commit_msg or f"chore(auto-update): live market sync {now_str}"
+        subprocess.run(["git", "add", "index.html", "dashboard.html", "data/"], cwd=str(config.BASE_DIR), capture_output=True, timeout=15)
+        res_commit = subprocess.run(["git", "commit", "-m", msg], cwd=str(config.BASE_DIR), capture_output=True, timeout=15)
+        res_push = subprocess.run(["git", "push", "origin", "main"], cwd=str(config.BASE_DIR), capture_output=True, text=True, timeout=30)
+        if res_push.returncode == 0:
+            print(f"[{now_str}] 🚀 Automatically published live update to GitHub Pages!")
+            return True
+        else:
+            print(f"[{now_str}] Git push output: {res_push.stderr.strip() or res_push.stdout.strip()}")
+            return False
+    except Exception as e:
+        print(f"[AutoPush Notice] Could not publish to GitHub: {e}")
+        return False
+
+def refresh_all_live_data(mode: str = "quick", auto_push: bool = False) -> dict:
     """
     Refreshes all domestic benchmark indices, global macro, and updates
     real-time CMP for all stocks across momentum, 52W breakouts, radar, and bullish picks.
     Regenerates dashboard.html and Desktop report.
     """
-    now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    now_str = get_ist_now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"[{now_str}] SyncServer: Executing live refresh (mode={mode})...")
 
     m = MarketDataManager()
@@ -53,7 +78,7 @@ def refresh_all_live_data(mode: str = "quick") -> dict:
     macro_analyst = GlobalMacroNewsAnalyst()
     macro_snap = macro_analyst.get_global_markets_snapshot()
 
-    scan_file = config.SCHEDULE_CONFIG.get("DAILY_SCAN_FILE", Path("D:/STOCK_AI/data/reports/latest_daily_scan.json"))
+    scan_file = config.SCHEDULE_CONFIG.get("DAILY_SCAN_FILE", config.REPORTS_DIR / "latest_daily_scan.json")
     scan_payload = {}
     if Path(scan_file).exists():
         try:
@@ -183,6 +208,10 @@ def refresh_all_live_data(mode: str = "quick") -> dict:
     ]
     HTMLReportGenerator.generate(scan_payload, ipo_data, html_destinations)
     print(f"[{now_str}] SyncServer: Refreshed {len(indices)} indices & {len(symbols_to_update)} stock CMPs. HTML reports regenerated.")
+
+    if auto_push:
+        threading.Thread(target=push_to_github_pages, args=(f"chore(auto-update): live market sync {now_str}",), daemon=True).start()
+
     return {
         "status": "success",
         "timestamp": now_str,
@@ -242,7 +271,7 @@ class SyncRequestHandler(BaseHTTPRequestHandler):
                 "status": "online",
                 "service": "Indian Stock AI Live Sync Server",
                 "port": 5005,
-                "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "timestamp": get_ist_now().strftime("%Y-%m-%d %H:%M:%S"),
                 "is_market_hours": is_market_hours()
             }).encode("utf-8"))
             return
@@ -323,7 +352,7 @@ class SyncRequestHandler(BaseHTTPRequestHandler):
                     from scheduler import DailyAutomator
                     automator = DailyAutomator()
                     scan_payload = automator.run_daily_sync()
-                    timestamp = scan_payload.get("timestamp", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+                    timestamp = scan_payload.get("timestamp", get_ist_now().strftime("%Y-%m-%d %H:%M:%S"))
                     indices_count = len(scan_payload.get("indices", {}))
                     resp = {
                         "status": "success",
@@ -333,7 +362,8 @@ class SyncRequestHandler(BaseHTTPRequestHandler):
                         "message": "Full daily market scan completed successfully!"
                     }
                 else:
-                    resp = refresh_all_live_data(mode=mode)
+                    auto_push = params.get("push", ["true"])[0] == "true" or is_market_hours()
+                    resp = refresh_all_live_data(mode=mode, auto_push=auto_push)
 
                 self._set_cors_headers(200)
                 self.wfile.write(json.dumps(resp).encode("utf-8"))
@@ -414,8 +444,8 @@ def background_periodic_sync_worker(interval_seconds: int = 180):
         try:
             time.sleep(interval_seconds)
             if is_market_hours():
-                print("[AutoSync] Market hours active. Auto-refreshing live quotes & CMP...")
-                refresh_all_live_data(mode="quick")
+                print("[AutoSync] Market hours active. Auto-refreshing live quotes & publishing to GitHub...")
+                refresh_all_live_data(mode="quick", auto_push=True)
         except Exception as e:
             print(f"[AutoSync Warning] Periodic sync encountered: {e}")
 
@@ -470,9 +500,21 @@ def start_sync_server_thread(port=None, host="0.0.0.0", enable_bg_sync=True) -> 
 if __name__ == "__main__":
     import os
     default_port = int(os.environ.get("PORT", 5005))
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Indian Stock AI Live Sync Server")
     parser.add_argument("--host", type=str, default="0.0.0.0", help="Host interface to listen on")
     parser.add_argument("--port", type=int, default=default_port, help="Port to listen on")
     parser.add_argument("--no-bg-sync", action="store_true", help="Disable background periodic auto-sync")
+    parser.add_argument("--run-once", action="store_true", help="Execute single live refresh cycle and exit")
+    parser.add_argument("--push", action="store_true", help="Commit and push changes to GitHub Pages on --run-once")
     args = parser.parse_args()
+
+    if args.run_once:
+        print("[SyncServer] Executing single-run live refresh...")
+        res = refresh_all_live_data(mode="quick", auto_push=args.push)
+        if args.push:
+            # When run from CLI, push synchronously to ensure it lands
+            push_to_github_pages()
+        print("Run-once completed successfully.")
+        sys.exit(0)
+
     run_server(port=args.port, host=args.host, enable_bg_sync=not args.no_bg_sync)

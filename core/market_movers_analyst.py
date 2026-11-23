@@ -16,8 +16,12 @@ class MarketMoversAnalyst:
         "Accept": "application/json, text/plain, */*"
     }
 
-    def __init__(self, cache_file: Path = Path("D:/STOCK_AI/data/cache/market_movers.json")):
-        self.cache_file = cache_file
+    def __init__(self, cache_file: Path = None):
+        if cache_file is None:
+            from config import CACHE_DIR
+            self.cache_file = CACHE_DIR / "market_movers.json"
+        else:
+            self.cache_file = Path(cache_file)
         self.cache_file.parent.mkdir(parents=True, exist_ok=True)
 
     def get_market_movers(self, force_refresh: bool = False) -> Dict[str, Any]:

@@ -19,8 +19,12 @@ class IPOAnalyst:
         "Accept": "application/json, text/plain, */*"
     }
 
-    def __init__(self, cache_file: Path = Path("D:/STOCK_AI/data/cache/ipos.json")):
-        self.cache_file = cache_file
+    def __init__(self, cache_file: Path = None):
+        if cache_file is None:
+            from config import CACHE_DIR
+            self.cache_file = CACHE_DIR / "ipos.json"
+        else:
+            self.cache_file = Path(cache_file)
         self.cache_file.parent.mkdir(parents=True, exist_ok=True)
 
     def fetch_live_ipos(self) -> List[Dict[str, Any]]:

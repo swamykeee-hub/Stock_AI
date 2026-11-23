@@ -103,7 +103,7 @@ market_data, synthesizer, scanner, momentum_screener, fund_radar, macro_news, mf
 @st.cache_data
 def load_nse_stock_options():
     try:
-        stocks_path = Path("D:/STOCK_AI/data/nse_stocks.json")
+        stocks_path = config.DATA_DIR / "nse_stocks.json"
         if stocks_path.exists():
             with open(stocks_path, "r", encoding="utf-8") as f:
                 stocks = json.load(f)
@@ -899,9 +899,9 @@ with tab_automation:
     with col_a2:
         st.markdown("#### ⚖️ Compliance & Disclaimers")
         st.warning(config.DISCLAIMER)
-        st.markdown("""
+        st.markdown(f"""
         **Developer Information**:
-        - Codebase Location: `D:\\STOCK_AI`
+        - Codebase Location: `{config.BASE_DIR}`
         - Exchange Feeds: NSE / BSE India & Global Benchmarks
         - Engine: Agentic Multi-Model Financial Analytics & Senior Fund Manager Intelligence
         """)

@@ -1,10 +1,16 @@
 import time
 import json
 import argparse
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import schedule
 import config
+
+IST = timezone(timedelta(hours=5, minutes=30))
+
+def get_ist_now() -> datetime:
+    """Returns current datetime in Indian Standard Time (IST)."""
+    return datetime.now(timezone.utc).astimezone(IST)
 from core.market_data import MarketDataManager
 from core.bullish_scanner import BullishScanner
 from core.momentum_screener import MomentumScreener
@@ -40,8 +46,8 @@ class DailyAutomator:
 
     def run_daily_sync(self):
         """Executes full daily automation pipeline."""
-        now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        date_stamp = datetime.now().strftime("%Y-%m-%d")
+        now_str = get_ist_now().strftime("%Y-%m-%d %H:%M:%S")
+        date_stamp = get_ist_now().strftime("%Y-%m-%d")
         print(f"\n[{now_str}] Starting Autonomous Daily Stock AI Cycle...")
 
         # 1. Benchmark Indices Update
@@ -171,7 +177,7 @@ class DailyAutomator:
 
         # 13. Dispatch Automated Telegram Alerts (Pre-Market / Evening Wrap)
         try:
-            current_hour = datetime.now().hour
+            current_hour = get_ist_now().hour
             if current_hour < 12:
                 self.telegram_bot.send_pre_market_pulse(indices, macro_snap, market_regime, fifty_two_week_stocks, ipo_data, inst_flow)
             else:
@@ -190,7 +196,7 @@ class DailyAutomator:
         except Exception as e:
             print(f"  -> GitHub Pages auto-publish notice: {e}")
 
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] Daily AI Cycle Completed Successfully!")
+        print(f"[{get_ist_now().strftime('%H:%M:%S')}] Daily AI Cycle Completed Successfully!")
         print(f"Report saved to: {report_file}\n")
         return scan_payload
 

@@ -24,8 +24,9 @@ class FiftyTwoWeekHighTracker:
     and actionable senior fund manager buy entry setups with targets and stop losses.
     """
 
-    CACHE_FILE = Path("D:/STOCK_AI/data/cache/fifty_two_week_high_cache.json")
-    NSE_CATALOG = Path("D:/STOCK_AI/data/nse_stocks.json")
+    from config import CACHE_DIR, DATA_DIR
+    CACHE_FILE = CACHE_DIR / "fifty_two_week_high_cache.json"
+    NSE_CATALOG = DATA_DIR / "nse_stocks.json"
 
     HEADERS = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
