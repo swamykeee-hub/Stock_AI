@@ -1,0 +1,25 @@
+{
+  "score": 6.5,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        6238\n        \n          Cr.",
+    "current_price": "\u20b9\n        316",
+    "stock_pe": "17.6",
+    "book_value": "\u20b9\n        135",
+    "dividend_yield_pct": "0.29\n        \n          %",
+    "roce_pct": "12.2\n        \n          %",
+    "roe_pct": "16.8\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        5.00"
+  },
+  "strengths": [
+    "Company has delivered good profit growth of 91.9% CAGR over last 5 years",
+    "Company's median sales growth is 60.4% of last 10 years",
+    "Company's working capital requirements have reduced from 80.6 days to 48.1 days",
+    "Attractive Valuation Multiple (P/E: 17.6x)"
+  ],
+  "red_flags": [
+    "Company might be capitalizing the interest cost",
+    "Promoters have pledged 44.7% of their holding.",
+    "Promoter holding has decreased over last 3 years: -5.42%"
+  ]
+}

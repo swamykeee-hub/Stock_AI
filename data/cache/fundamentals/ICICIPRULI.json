@@ -1,0 +1,20 @@
+{
+  "score": 5.0,
+  "metrics": {
+    "market_cap_cr": "N/A",
+    "current_price": "N/A",
+    "stock_pe": "N/A",
+    "book_value": "N/A",
+    "dividend_yield_pct": "N/A",
+    "roce_pct": "N/A",
+    "roe_pct": "N/A",
+    "debt_to_equity": "N/A",
+    "face_value": "N/A"
+  },
+  "strengths": [
+    "Established market presence"
+  ],
+  "red_flags": [
+    "Standard market cyclical risks apply"
+  ]
+}

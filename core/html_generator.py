@@ -1703,11 +1703,13 @@ class HTMLReportGenerator:
                 <input type="text" id="searchInput" placeholder="Search 501+ NSE stocks (e.g. TCS, LAURUSLABS)..." onkeyup="filterStocks()">
                 <div style="margin-top: 6px; font-size: 11px; color: var(--text-muted);">
                     Quick Search: 
-                    <a href="javascript:void(0)" onclick="quickSearch('TCS')" style="color:#38bdf8; text-decoration:none; margin-right:6px;">TCS</a>
                     <a href="javascript:void(0)" onclick="quickSearch('LAURUSLABS')" style="color:#38bdf8; text-decoration:none; margin-right:6px;">LAURUSLABS</a>
+                    <a href="javascript:void(0)" onclick="quickSearch('TRENT')" style="color:#38bdf8; text-decoration:none; margin-right:6px;">TRENT</a>
+                    <a href="javascript:void(0)" onclick="quickSearch('HAL')" style="color:#38bdf8; text-decoration:none; margin-right:6px;">HAL</a>
+                    <a href="javascript:void(0)" onclick="quickSearch('MCX')" style="color:#38bdf8; text-decoration:none; margin-right:6px;">MCX</a>
+                    <a href="javascript:void(0)" onclick="quickSearch('BSE')" style="color:#38bdf8; text-decoration:none; margin-right:6px;">BSE</a>
                     <a href="javascript:void(0)" onclick="quickSearch('DIXON')" style="color:#38bdf8; text-decoration:none; margin-right:6px;">DIXON</a>
-                    <a href="javascript:void(0)" onclick="quickSearch('INFY')" style="color:#38bdf8; text-decoration:none; margin-right:6px;">INFY</a>
-                    <a href="javascript:void(0)" onclick="quickSearch('TRENT')" style="color:#38bdf8; text-decoration:none;">TRENT</a>
+                    <a href="javascript:void(0)" onclick="quickSearch('PERSISTENT')" style="color:#38bdf8; text-decoration:none;">PERSISTENT</a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,23 @@
+{
+  "score": 6.5,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        37138\n        \n          Cr.",
+    "current_price": "\u20b9\n        132",
+    "stock_pe": "18.9",
+    "book_value": "\u20b9\n        51.0",
+    "dividend_yield_pct": "1.02\n        \n          %",
+    "roce_pct": "8.69\n        \n          %",
+    "roe_pct": "15.6\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        10.0"
+  },
+  "strengths": [
+    "Company has delivered good profit growth of 40.2% CAGR over last 5 years",
+    "Attractive Valuation Multiple (P/E: 18.9x)"
+  ],
+  "red_flags": [
+    "Stock is trading at 2.59 times its book value",
+    "Company has low interest coverage ratio.",
+    "Company might be capitalizing the interest cost"
+  ]
+}

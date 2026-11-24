@@ -1,0 +1,23 @@
+{
+  "score": 5.7,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        34157\n        \n          Cr.",
+    "current_price": "\u20b9\n        402",
+    "stock_pe": "24.9",
+    "book_value": "\u20b9\n        174",
+    "dividend_yield_pct": "0.50\n        \n          %",
+    "roce_pct": "10.1\n        \n          %",
+    "roe_pct": "7.49\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        1.00"
+  },
+  "strengths": [
+    "Company is almost debt free.",
+    "Company's working capital requirements have reduced from 32.5 days to 23.1 days",
+    "Attractive Valuation Multiple (P/E: 24.9x)"
+  ],
+  "red_flags": [
+    "The company has delivered a poor sales growth of 11.4% over past five years.",
+    "Company has a low return on equity of 7.76% over last 3 years."
+  ]
+}

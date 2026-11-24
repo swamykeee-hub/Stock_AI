@@ -1,0 +1,25 @@
+{
+  "score": 6.7,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        94917\n        \n          Cr.",
+    "current_price": "\u20b9\n        2142",
+    "stock_pe": "76.7",
+    "book_value": "\u20b9\n        460",
+    "dividend_yield_pct": "0.56\n        \n          %",
+    "roce_pct": "19.3\n        \n          %",
+    "roe_pct": "19.0\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        2.00"
+  },
+  "strengths": [
+    "Company is expected to give good quarter",
+    "Company has delivered good profit growth of 44.5% CAGR over last 5 years",
+    "Company has been maintaining a healthy dividend payout of 35.5%",
+    "Company's median sales growth is 18.0% of last 10 years"
+  ],
+  "red_flags": [
+    "Tax rate seems low",
+    "Earnings include an other income of Rs.532 Cr.",
+    "Premium Valuation (P/E: 76.7x)"
+  ]
+}

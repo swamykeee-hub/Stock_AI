@@ -1,0 +1,25 @@
+{
+  "score": 8.5,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        72649\n        \n          Cr.",
+    "current_price": "\u20b9\n        1801",
+    "stock_pe": "33.8",
+    "book_value": "\u20b9\n        236",
+    "dividend_yield_pct": "1.01\n        \n          %",
+    "roce_pct": "41.3\n        \n          %",
+    "roe_pct": "30.4\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        5.00"
+  },
+  "strengths": [
+    "Exceptional ROCE: 41.3% (>20%)",
+    "Company is almost debt free.",
+    "Company has delivered good profit growth of 33.4% CAGR over last 5 years",
+    "Company has a good return on equity (ROE) track record: 3 Years ROE 34.3%"
+  ],
+  "red_flags": [
+    "Stock is trading at 7.64 times its book value",
+    "Contingent liabilities of Rs.28,055 Cr.",
+    "Earnings include an other income of Rs.1,129 Cr."
+  ]
+}

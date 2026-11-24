@@ -1,0 +1,22 @@
+{
+  "score": 5.0,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        372769\n        \n          Cr.",
+    "current_price": "\u20b9\n        12650",
+    "stock_pe": "47.1",
+    "book_value": "\u20b9\n        2416",
+    "dividend_yield_pct": "1.90\n        \n          %",
+    "roce_pct": "12.6\n        \n          %",
+    "roe_pct": "10.3\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        10.0"
+  },
+  "strengths": [
+    "Company has been maintaining a healthy dividend payout of 53.9%"
+  ],
+  "red_flags": [
+    "Stock is trading at 5.24 times its book value",
+    "Promoter holding has decreased over last quarter: -0.85%",
+    "Company has a low return on equity of 10.6% over last 3 years."
+  ]
+}

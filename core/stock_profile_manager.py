@@ -16,46 +16,17 @@ class StockProfileManager:
     for benchmark NSE stocks and searched tickers.
     """
 
-    from config import CACHE_DIR
+    from config import CACHE_DIR, DATA_DIR
     CACHE_FILE = CACHE_DIR / "enriched_stock_profiles.json"
+    TOP_100_FILE = DATA_DIR / "top_100_curated_stocks.json"
 
-    KEY_BENCHMARK_STOCKS = [
-        {"symbol": "TCS", "name": "Tata Consultancy Services Ltd.", "sector": "Information Technology"},
-        {"symbol": "INFY", "name": "Infosys Ltd.", "sector": "Information Technology"},
-        {"symbol": "WIPRO", "name": "Wipro Ltd.", "sector": "Information Technology"},
-        {"symbol": "HCLTECH", "name": "HCL Technologies Ltd.", "sector": "Information Technology"},
-        {"symbol": "RELIANCE", "name": "Reliance Industries Ltd.", "sector": "Energy & Retail"},
-        {"symbol": "HDFCBANK", "name": "HDFC Bank Ltd.", "sector": "Financial Services"},
-        {"symbol": "ICICIBANK", "name": "ICICI Bank Ltd.", "sector": "Financial Services"},
-        {"symbol": "SBIN", "name": "State Bank of India", "sector": "Public Sector Bank"},
-        {"symbol": "KOTAKBANK", "name": "Kotak Mahindra Bank Ltd.", "sector": "Financial Services"},
-        {"symbol": "ITC", "name": "ITC Ltd.", "sector": "Consumer Goods & FMCG"},
-        {"symbol": "LT", "name": "Larsen & Toubro Ltd.", "sector": "Engineering & Construction"},
-        {"symbol": "BHARTIARTL", "name": "Bharti Airtel Ltd.", "sector": "Telecommunications"},
-        {"symbol": "TATAMOTORS", "name": "Tata Motors Ltd.", "sector": "Automobiles"},
-        {"symbol": "SUNPHARMA", "name": "Sun Pharmaceutical Industries Ltd.", "sector": "Healthcare / Pharma"},
-        {"symbol": "CIPLA", "name": "Cipla Ltd.", "sector": "Healthcare / Respiratory"},
-        {"symbol": "DIVISLAB", "name": "Divi's Laboratories Ltd.", "sector": "Healthcare / CDMO & API"},
-        {"symbol": "LAURUSLABS", "name": "Laurus Labs Ltd.", "sector": "Healthcare / CDMO"},
-        {"symbol": "DIXON", "name": "Dixon Technologies Ltd.", "sector": "Electronics / EMS"},
-        {"symbol": "TRENT", "name": "Trent Ltd.", "sector": "Retail & Apparel"},
-        {"symbol": "SUZLON", "name": "Suzlon Energy Ltd.", "sector": "Renewable Energy / Wind"},
-        {"symbol": "KAYNES", "name": "Kaynes Technology India Ltd.", "sector": "Aerospace & Defense EMS"},
-        {"symbol": "BSE", "name": "BSE Ltd.", "sector": "Capital Markets"},
-        {"symbol": "HAL", "name": "Hindustan Aeronautics Ltd.", "sector": "Defense & Aerospace"},
-        {"symbol": "BEL", "name": "Bharat Electronics Ltd.", "sector": "Defense Electronics"},
-        {"symbol": "PERSISTENT", "name": "Persistent Systems Ltd.", "sector": "IT Services"},
-        {"symbol": "POLYCAB", "name": "Polycab India Ltd.", "sector": "Cables & Infrastructure"},
-        {"symbol": "ZOMATO", "name": "Zomato Ltd.", "sector": "Platform / Quick Commerce"},
-        {"symbol": "VOLTAS", "name": "Voltas Ltd.", "sector": "Consumer Durables"},
-        {"symbol": "FSL", "name": "Firstsource Solutions Ltd.", "sector": "Information Technology / BPM"},
-        {"symbol": "RELINFRA", "name": "Reliance Infrastructure Ltd.", "sector": "Construction & Infrastructure"},
-        {"symbol": "RELIGARE", "name": "Religare Enterprises Ltd.", "sector": "Financial Services"},
-        {"symbol": "TITAN", "name": "Titan Company Ltd.", "sector": "Consumer Discretionary"},
-        {"symbol": "BAJFINANCE", "name": "Bajaj Finance Ltd.", "sector": "Financial Services"},
-        {"symbol": "TATAPOWER", "name": "Tata Power Co. Ltd.", "sector": "Power"},
-        {"symbol": "IRFC", "name": "Indian Railway Finance Corporation Ltd.", "sector": "Financial Services"}
-    ]
+    KEY_BENCHMARK_STOCKS = []
+    if TOP_100_FILE.exists():
+        try:
+            with open(TOP_100_FILE, "r", encoding="utf-8") as _f:
+                KEY_BENCHMARK_STOCKS = json.load(_f)
+        except Exception:
+            KEY_BENCHMARK_STOCKS = []
 
     def __init__(self):
         self.market_data = MarketDataManager()

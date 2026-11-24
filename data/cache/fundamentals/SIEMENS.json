@@ -1,0 +1,25 @@
+{
+  "score": 6.7,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        127423\n        \n          Cr.",
+    "current_price": "\u20b9\n        3578",
+    "stock_pe": "84.8",
+    "book_value": "\u20b9\n        439",
+    "dividend_yield_pct": "0.50\n        \n          %",
+    "roce_pct": "19.5\n        \n          %",
+    "roe_pct": "18.0\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        2.00"
+  },
+  "strengths": [
+    "Company is almost debt free.",
+    "Company has delivered good profit growth of 27.9% CAGR over last 5 years",
+    "Company has been maintaining a healthy dividend payout of 19.9%",
+    "Debtor days have improved from 78.8 to 56.9 days."
+  ],
+  "red_flags": [
+    "Stock is trading at 8.16 times its book value",
+    "Earnings include an other income of Rs.2,401 Cr.",
+    "Working capital days have increased from 53.4 days to 79.8 days"
+  ]
+}

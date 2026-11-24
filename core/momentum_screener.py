@@ -24,39 +24,27 @@ class MomentumScreener:
         else:
             self.cache_file = Path(cache_file)
         self.cache_file.parent.mkdir(parents=True, exist_ok=True)
-        # Curated universe covering High-Growth Midcaps, Smallcaps, and Market Leaders
-        self.curated_momentum_universe = [
-            {"symbol": "LAURUSLABS", "name": "Laurus Labs Ltd.", "sector": "Healthcare / CDMO", "market_cap_type": "Mid Cap"},
-            {"symbol": "DIXON", "name": "Dixon Technologies Ltd.", "sector": "Consumer Electronics / EMS", "market_cap_type": "Mid Cap"},
-            {"symbol": "TRENT", "name": "Trent Ltd. (Tata Group)", "sector": "Retail & Apparel", "market_cap_type": "Large Cap"},
-            {"symbol": "SUZLON", "name": "Suzlon Energy Ltd.", "sector": "Green Energy / Wind", "market_cap_type": "Mid Cap"},
-            {"symbol": "KAYNES", "name": "Kaynes Technology India Ltd.", "sector": "Defense / Aerospace Electronics", "market_cap_type": "Mid Cap"},
-            {"symbol": "POLYCAB", "name": "Polycab India Ltd.", "sector": "Cables & Infrastructure", "market_cap_type": "Large Cap"},
-            {"symbol": "PERSISTENT", "name": "Persistent Systems Ltd.", "sector": "IT & Cloud Services", "market_cap_type": "Mid Cap"},
-            {"symbol": "BSE", "name": "BSE Ltd.", "sector": "Capital Markets / Exchanges", "market_cap_type": "Mid Cap"},
-            {"symbol": "CDSL", "name": "Central Depository Services Ltd.", "sector": "Capital Markets / FinTech", "market_cap_type": "Mid Cap"},
-            {"symbol": "HAL", "name": "Hindustan Aeronautics Ltd.", "sector": "Defense & Aerospace", "market_cap_type": "Large Cap"},
-            {"symbol": "BEL", "name": "Bharat Electronics Ltd.", "sector": "Defense Electronics", "market_cap_type": "Large Cap"},
-            {"symbol": "ZOMATO", "name": "Zomato Ltd.", "sector": "Platform / Quick Commerce", "market_cap_type": "Large Cap"},
-            {"symbol": "SOLARINDS", "name": "Solar Industries India Ltd.", "sector": "Industrial Explosives / Defense", "market_cap_type": "Mid Cap"},
-            {"symbol": "MAZDOCK", "name": "Mazagon Dock Shipbuilders Ltd.", "sector": "Defense Shipyard", "market_cap_type": "Mid Cap"},
-            {"symbol": "COCHINSHIP", "name": "Cochin Shipyard Ltd.", "sector": "Shipbuilding & Marine", "market_cap_type": "Mid Cap"},
-            {"symbol": "AMBER", "name": "Amber Enterprises India Ltd.", "sector": "HVAC / Electronics", "market_cap_type": "Mid Cap"},
-            {"symbol": "KPITTECH", "name": "KPIT Technologies Ltd.", "sector": "Automotive Software / Tech", "market_cap_type": "Mid Cap"},
-            {"symbol": "TATAELXSI", "name": "Tata Elxsi Ltd.", "sector": "Design & Tech Services", "market_cap_type": "Mid Cap"},
-            {"symbol": "APARINDS", "name": "Apar Industries Ltd.", "sector": "Conductors & Transformers", "market_cap_type": "Mid Cap"},
-            {"symbol": "PRESTIGE", "name": "Prestige Estates Projects Ltd.", "sector": "Real Estate Development", "market_cap_type": "Mid Cap"},
-            {"symbol": "BHARTIARTL", "name": "Bharti Airtel Ltd.", "sector": "Telecommunications", "market_cap_type": "Large Cap"},
-            {"symbol": "TATAMOTORS", "name": "Tata Motors Ltd.", "sector": "Automobiles / EV", "market_cap_type": "Large Cap"},
-            {"symbol": "SUNPHARMA", "name": "Sun Pharmaceutical Industries Ltd.", "sector": "Healthcare / Specialty Pharma", "market_cap_type": "Large Cap"},
-            {"symbol": "CIPLA", "name": "Cipla Ltd.", "sector": "Healthcare / Respiratory", "market_cap_type": "Large Cap"},
-            {"symbol": "DIVISLAB", "name": "Divi's Laboratories Ltd.", "sector": "Healthcare / Active Pharma", "market_cap_type": "Large Cap"},
-            {"symbol": "MOTHERSON", "name": "Samvardhana Motherson International Ltd.", "sector": "Auto Components", "market_cap_type": "Large Cap"},
-            {"symbol": "CUMMINSIND", "name": "Cummins India Ltd.", "sector": "Power Generation & Engines", "market_cap_type": "Mid Cap"},
-            {"symbol": "BHEL", "name": "Bharat Heavy Electricals Ltd.", "sector": "Power Equipment / Capital Goods", "market_cap_type": "Mid Cap"},
-            {"symbol": "HUDCO", "name": "Housing & Urban Development Corp Ltd.", "sector": "Infrastructure Finance", "market_cap_type": "Mid Cap"},
-            {"symbol": "IRFC", "name": "Indian Railway Finance Corp Ltd.", "sector": "Railway Finance", "market_cap_type": "Mid Cap"}
-        ]
+        # Curated Top 100 universe covering High-Growth Midcaps, Smallcaps, and Market Leaders
+        from config import DATA_DIR
+        top_100_file = DATA_DIR / "top_100_curated_stocks.json"
+        if top_100_file.exists():
+            try:
+                import json
+                with open(top_100_file, "r", encoding="utf-8") as f:
+                    curated = json.load(f)
+                    self.curated_momentum_universe = [
+                        {
+                            "symbol": s["symbol"],
+                            "name": s["name"],
+                            "sector": s["sector"],
+                            "market_cap_type": "Large Cap" if idx < 35 else ("Mid Cap" if idx < 75 else "Small / High Growth")
+                        }
+                        for idx, s in enumerate(curated)
+                    ]
+            except Exception:
+                self.curated_momentum_universe = []
+        else:
+            self.curated_momentum_universe = []
 
     def fetch_stock_multi_timeframe(self, item: Dict[str, str]) -> Optional[Dict[str, Any]]:
         """Calculates multi-timeframe returns for a stock using weekly candles over 5 years."""
@@ -143,7 +131,7 @@ class MomentumScreener:
         except Exception:
             return None
 
-    def scan_universe(self, max_stocks: int = 35, force_refresh: bool = False) -> List[Dict[str, Any]]:
+    def scan_universe(self, max_stocks: int = 100, force_refresh: bool = False) -> List[Dict[str, Any]]:
         """Scans momentum universe with multithreading and local file caching."""
         if not force_refresh and self.cache_file.exists():
             try:
@@ -152,7 +140,7 @@ class MomentumScreener:
                 if (time.time() - mtime) < 7200:
                     with open(self.cache_file, "r", encoding="utf-8") as f:
                         data = json.load(f)
-                        if data and len(data) >= 15:
+                        if data and len(data) >= 20:
                             return data
             except Exception:
                 pass

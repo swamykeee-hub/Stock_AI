@@ -1,0 +1,25 @@
+{
+  "score": 8.0,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        31662\n        \n          Cr.",
+    "current_price": "\u20b9\n        158",
+    "stock_pe": "7.10",
+    "book_value": "\u20b9\n        115",
+    "dividend_yield_pct": "3.83\n        \n          %",
+    "roce_pct": "8.39\n        \n          %",
+    "roe_pct": "20.0\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        10.0"
+  },
+  "strengths": [
+    "Stock is providing a good dividend yield of 3.83%.",
+    "Company has delivered good profit growth of 20.5% CAGR over last 5 years",
+    "Company has been maintaining a healthy dividend payout of 33.3%",
+    "Strong Return on Equity: 20.0%"
+  ],
+  "red_flags": [
+    "Company has low interest coverage ratio.",
+    "Tax rate seems low",
+    "Company might be capitalizing the interest cost"
+  ]
+}

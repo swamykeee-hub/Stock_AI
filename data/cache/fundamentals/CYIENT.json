@@ -1,0 +1,24 @@
+{
+  "score": 5.4,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        12900\n        \n          Cr.",
+    "current_price": "\u20b9\n        1160",
+    "stock_pe": "31.1",
+    "book_value": "\u20b9\n        284",
+    "dividend_yield_pct": "1.38\n        \n          %",
+    "roce_pct": "16.6\n        \n          %",
+    "roe_pct": "7.96\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        5.00"
+  },
+  "strengths": [
+    "Company has been maintaining a healthy dividend payout of 69.2%",
+    "Debtor days have improved from 125 to 88.0 days.",
+    "Company's working capital requirements have reduced from 117 days to 50.8 days",
+    "Healthy Capital Return (ROCE: 16.6%)"
+  ],
+  "red_flags": [
+    "The company has delivered a poor sales growth of 11.4% over past five years.",
+    "Company has a low return on equity of 12.5% over last 3 years."
+  ]
+}

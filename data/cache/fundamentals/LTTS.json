@@ -1,0 +1,23 @@
+{
+  "score": 8.5,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        44800\n        \n          Cr.",
+    "current_price": "\u20b9\n        4223",
+    "stock_pe": "34.6",
+    "book_value": "\u20b9\n        610",
+    "dividend_yield_pct": "1.37\n        \n          %",
+    "roce_pct": "26.8\n        \n          %",
+    "roe_pct": "21.6\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        2.00"
+  },
+  "strengths": [
+    "Exceptional ROCE: 26.8% (>20%)",
+    "Company is almost debt free.",
+    "Company has been maintaining a healthy dividend payout of 47.0%",
+    "Strong Return on Equity: 21.6%"
+  ],
+  "red_flags": [
+    "Standard market cyclical risks apply"
+  ]
+}

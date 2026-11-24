@@ -1,0 +1,22 @@
+{
+  "score": 4.0,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        115276\n        \n          Cr.",
+    "current_price": "\u20b9\n        1380",
+    "stock_pe": "119",
+    "book_value": "\u20b9\n        383",
+    "dividend_yield_pct": "0.58\n        \n          %",
+    "roce_pct": "12.1\n        \n          %",
+    "roe_pct": "10.2\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        1.00"
+  },
+  "strengths": [
+    "Company's working capital requirements have reduced from 77.3 days to 38.9 days"
+  ],
+  "red_flags": [
+    "The company has delivered a poor sales growth of 8.99% over past five years.",
+    "Earnings include an other income of Rs.1,585 Cr.",
+    "Premium Valuation (P/E: 119.0x)"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "score": 6.2,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        222138\n        \n          Cr.",
+    "current_price": "\u20b9\n        3405",
+    "stock_pe": "65.6",
+    "book_value": "\u20b9\n        418",
+    "dividend_yield_pct": "0.00\n        \n          %",
+    "roce_pct": "17.5\n        \n          %",
+    "roe_pct": "13.5\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        10.0"
+  },
+  "strengths": [
+    "Healthy Capital Return (ROCE: 17.5%)"
+  ],
+  "red_flags": [
+    "Stock is trading at 8.14 times its book value",
+    "Though the company is reporting repeated profits, it is not paying out dividend"
+  ]
+}

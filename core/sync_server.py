@@ -91,6 +91,25 @@ def refresh_all_live_data(mode: str = "quick", auto_push: bool = False) -> dict:
     scan_payload["indices"] = indices
     scan_payload["macro_snapshot"] = macro_snap
 
+    # Always ensure monitored_radar has all latest curated radar stocks
+    try:
+        from core.fund_manager_radar import FundManagerRadar
+        radar_stocks = FundManagerRadar().get_monitored_stocks(sync_live_prices=False)
+        if radar_stocks:
+            scan_payload["monitored_radar"] = radar_stocks
+    except Exception:
+        pass
+
+    # Ensure top_momentum_stocks contains curated momentum universe
+    try:
+        from core.momentum_screener import MomentumScreener
+        mom_screener = MomentumScreener()
+        cached_mom = mom_screener.scan_universe(max_stocks=100, force_refresh=False)
+        if cached_mom:
+            scan_payload["top_momentum_stocks"] = cached_mom
+    except Exception:
+        pass
+
     # Collect all unique stock symbols across tables to refresh their live quotes
     symbols_to_update = set()
     for cat in ["top_momentum_stocks", "fifty_two_week_high_stocks", "monitored_radar", "top_bullish_stocks"]:

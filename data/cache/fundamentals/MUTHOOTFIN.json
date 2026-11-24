@@ -1,0 +1,23 @@
+{
+  "score": 9.2,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        102105\n        \n          Cr.",
+    "current_price": "\u20b9\n        2543",
+    "stock_pe": "9.06",
+    "book_value": "\u20b9\n        1047",
+    "dividend_yield_pct": "1.18\n        \n          %",
+    "roce_pct": "16.0\n        \n          %",
+    "roe_pct": "30.6\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        10.0"
+  },
+  "strengths": [
+    "Company is expected to give good quarter",
+    "Company has delivered good profit growth of 22.2% CAGR over last 5 years",
+    "Company has been maintaining a healthy dividend payout of 18.6%",
+    "Company's median sales growth is 19.0% of last 10 years"
+  ],
+  "red_flags": [
+    "Standard market cyclical risks apply"
+  ]
+}

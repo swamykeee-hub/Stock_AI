@@ -2513,5 +2513,35 @@
     "symbol": "ZYDUSWELL",
     "name": "Zydus Wellness Ltd.",
     "sector": "Fast Moving Consumer Goods"
+  },
+  {
+    "symbol": "ZOMATO",
+    "name": "Zomato Ltd.",
+    "sector": "Consumer Services"
+  },
+  {
+    "symbol": "TATAMOTORS",
+    "name": "Tata Motors Ltd.",
+    "sector": "Automobile and Auto Components"
+  },
+  {
+    "symbol": "METROBRAND",
+    "name": "Metro Brands Ltd.",
+    "sector": "Consumer Discretionary"
+  },
+  {
+    "symbol": "PARAS",
+    "name": "Paras Defence and Space Technologies Ltd.",
+    "sector": "Capital Goods"
+  },
+  {
+    "symbol": "CYIENTDLM",
+    "name": "Cyient DLM Ltd.",
+    "sector": "Capital Goods"
+  },
+  {
+    "symbol": "KPIGREEN",
+    "name": "KPI Green Energy Ltd.",
+    "sector": "Power"
   }
 ]

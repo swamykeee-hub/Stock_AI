@@ -1,0 +1,24 @@
+{
+  "score": 2.2,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        16827\n        \n          Cr.",
+    "current_price": "\u20b9\n        587",
+    "stock_pe": "173",
+    "book_value": "\u20b9\n        95.3",
+    "dividend_yield_pct": "0.04\n        \n          %",
+    "roce_pct": "6.60\n        \n          %",
+    "roe_pct": "4.75\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        1.00"
+  },
+  "strengths": [
+    "Company is almost debt free.",
+    "Company has delivered good profit growth of 59.6% CAGR over last 5 years",
+    "Company's median sales growth is 17.9% of last 10 years"
+  ],
+  "red_flags": [
+    "Stock is trading at 6.15 times its book value",
+    "Company has a low return on equity of 5.75% over last 3 years.",
+    "Promoter holding has decreased over last 3 years: -10.4%"
+  ]
+}

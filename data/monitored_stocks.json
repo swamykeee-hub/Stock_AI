@@ -191,5 +191,157 @@
     "fifty_two_week_high": 11824.0,
     "fifty_two_week_low": 5647.5,
     "dist_from_52w_high": 5.7
+  },
+  {
+    "symbol": "MCX",
+    "name": "Multi Commodity Exchange of India Ltd.",
+    "sector": "Commodity Derivatives / Exchanges",
+    "setup_type": "Monopoly Commodity Growth & Tech Migration",
+    "monitoring_status": "Active Pullback near 20-Day EMA (\u20b93,500 - \u20b93,560)",
+    "entry_trigger": 3580.0,
+    "target_3m": 3880.0,
+    "target_1y": 4400.0,
+    "stop_loss": 3350.0,
+    "risk_reward": "1:3.0",
+    "cio_conviction": 8.4,
+    "institutional_thesis": "Monopoly position (>96% market share) in Indian commodity derivatives trading across crude, natural gas, gold, and silver. Migration from third-party vendor to in-house TCS platform eliminating huge license royalties and expanding EBITDA margins to 60%+. Explosive growth in commodity options contracts driving secular transaction revenue compounding.",
+    "catalysts": [
+      "TCS platform software cost savings expansion",
+      "Institutional and FPI commodity participation growth",
+      "New electricity and base metal index derivative launches"
+    ]
+  },
+  {
+    "symbol": "PERSISTENT",
+    "name": "Persistent Systems Ltd.",
+    "sector": "Information Technology / AI & Cloud Services",
+    "setup_type": "AI Engineering Outperformance & Margin Expansion",
+    "monitoring_status": "Stage-2 Bull Mark-Up Breakout Watch",
+    "entry_trigger": 6280.0,
+    "target_3m": 6600.0,
+    "target_1y": 7400.0,
+    "stop_loss": 5950.0,
+    "risk_reward": "1:2.8",
+    "cio_conviction": 8.0,
+    "institutional_thesis": "Outperforming Tier-1 IT services giants with consistent 14%+ constant currency revenue growth. Deep enterprise expertise in AI software engineering, cloud modernization, and BFSI digital transformation. High capital efficiency (ROCE 35.6%, ROE 26.8%) with expanding client contract wallet sizes.",
+    "catalysts": [
+      "Enterprise GenAI adoption contracts",
+      "BFSI tech modernization spending rebound",
+      "High margin software IP solutions ramp-up"
+    ]
+  },
+  {
+    "symbol": "COFORGE",
+    "name": "Coforge Ltd.",
+    "sector": "Information Technology / Travel & BFSI Cloud",
+    "setup_type": "High-Growth Cloud & AI Transformation Breakout",
+    "monitoring_status": "Pullback Entry near 20-EMA (\u20b92,050 - \u20b92,120)",
+    "entry_trigger": 2140.0,
+    "target_3m": 2280.0,
+    "target_1y": 2600.0,
+    "stop_loss": 2040.0,
+    "risk_reward": "1:2.7",
+    "cio_conviction": 7.4,
+    "institutional_thesis": "Industry-leading organic order intake across Travel, Transportation, and Insurance verticals. Strategic acquisition of Cigniti Technologies expanding market share in digital engineering, AI testing, and US enterprise clients. Strong multi-year execution with sustainable 18%+ operating margins.",
+    "catalysts": [
+      "Cigniti acquisition revenue synergies realization",
+      "Airline and airport digital modernization deals",
+      "BFSI generative AI testing contracts scale"
+    ]
+  },
+  {
+    "symbol": "KFINTECH",
+    "name": "Kfin Technologies Ltd.",
+    "sector": "Financial Services / Mutual Fund Registrar (RTA)",
+    "setup_type": "Digital Mutual Fund & Global Asset Servicing Tollgate",
+    "monitoring_status": "Accumulate at 20/50 EMA Confluence (\u20b9910 - \u20b9930)",
+    "entry_trigger": 930.0,
+    "target_3m": 995.0,
+    "target_1y": 1150.0,
+    "stop_loss": 880.0,
+    "risk_reward": "1:2.9",
+    "cio_conviction": 7.2,
+    "institutional_thesis": "Duopoly registrar and transfer agent (RTA) for Indian mutual funds, pensions, and alternatives. Direct beneficiary of structural growth in Indian household SIPs and corporate IPO registries. Asset-light balance sheet with zero debt, 30.6% ROCE, and rapid expansion into Southeast Asia / Middle East asset servicing.",
+    "catalysts": [
+      "International asset management outsourcing expansion",
+      "Record new mutual fund folio and SIP inflows",
+      "Alternative Investment Fund (AIF) administration fees growth"
+    ]
+  },
+  {
+    "symbol": "SONACOMS",
+    "name": "Sona BLW Precision Forgings Ltd.",
+    "sector": "Automobile Components / EV Drivetrain Technology",
+    "setup_type": "Global EV Traction Motor & Drivetrain Scale",
+    "monitoring_status": "Resting directly on 20-Day EMA (\u20b9880 - \u20b9890)",
+    "entry_trigger": 886.0,
+    "target_3m": 935.0,
+    "target_1y": 1080.0,
+    "stop_loss": 840.0,
+    "risk_reward": "1:2.8",
+    "cio_conviction": 6.8,
+    "institutional_thesis": "India's premier Tier-1 electric vehicle drivetrain and traction motor supplier to global automotive OEMs. EV order book contribution exceeding 30% with strong expansion into commercial EV and hybrid platforms. High export revenue share with industry-leading EBITDA margins (>26%).",
+    "catalysts": [
+      "Global OEM electric passenger vehicle production ramp-up",
+      "Execution of new electric two-wheeler and three-wheeler motor orders",
+      "North America and Europe supply agreement expansions"
+    ]
+  },
+  {
+    "symbol": "CDSL",
+    "name": "Central Depository Services (India) Ltd.",
+    "sector": "Financial Market Infrastructure / Depository",
+    "setup_type": "Demat Account Monopoly & Annuity Cash Machine",
+    "monitoring_status": "Pullback Buy Zone near 20-EMA (\u20b91,370 - \u20b91,400)",
+    "entry_trigger": 1395.0,
+    "target_3m": 1485.0,
+    "target_1y": 1720.0,
+    "stop_loss": 1325.0,
+    "risk_reward": "1:2.9",
+    "cio_conviction": 6.6,
+    "institutional_thesis": "First listed depository in Asia with over 11.5 Crore active demat accounts (>77% market share in retail demats). Annuity business model collecting recurring annual issuer fees, transaction charges per debit, and corporate action processing fees. Debt-free balance sheet with exceptional return on capital (ROCE: 40.4%, ROE: 31.3%).",
+    "catalysts": [
+      "Record monthly demat account opening momentum in India",
+      "Surge in IPO listings driving corporate fee revenues",
+      "Insurance electronic depository (e-IA) policy adoption"
+    ]
+  },
+  {
+    "symbol": "BEL",
+    "name": "Bharat Electronics Ltd.",
+    "sector": "Defense Electronics & Radar Systems",
+    "setup_type": "Defense Modernization Sovereign Compounder",
+    "monitoring_status": "Sitting right on 20/50 EMA (\u20b9390 - \u20b9396)",
+    "entry_trigger": 395.0,
+    "target_3m": 425.0,
+    "target_1y": 480.0,
+    "stop_loss": 375.0,
+    "risk_reward": "1:3.0",
+    "cio_conviction": 9.0,
+    "institutional_thesis": "Leading aerospace and defense electronics manufacturer with order book exceeding \u20b976,000 Crore. Sole vendor for indigenous radar systems, naval sonar, and electronic warfare suites. Fortress balance sheet with zero debt, high ROCE (37.0%), and steady 20%+ operating margins.",
+    "catalysts": [
+      "Quick Reaction Surface-to-Air Missile (QRSAM) order finalization",
+      "Railway Kavach collision avoidance electronics rollout",
+      "Defense export orders expansion to Southeast Asia and Middle East"
+    ]
+  },
+  {
+    "symbol": "TITAN",
+    "name": "Titan Company Ltd.",
+    "sector": "Consumer Discretionary / Jewelry & Watches",
+    "setup_type": "Dual EMA Support & Consumption Monopoly",
+    "monitoring_status": "Converging on 20/50 EMA (\u20b94,650 - \u20b94,700)",
+    "entry_trigger": 4680.0,
+    "target_3m": 5000.0,
+    "target_1y": 5400.0,
+    "stop_loss": 4490.0,
+    "risk_reward": "1:2.8",
+    "cio_conviction": 8.8,
+    "institutional_thesis": "Tata Group's crown jewel in retail consumer discretionary with dominant market share in organized jewelry (Tanishq, Mia, CaratLane). Strong formalization tailwinds taking market share away from unorganized jewelers. High capital efficiency (ROE: 25.2%), consistent 20%+ profit growth, and international store rollouts in the US and Gulf.",
+    "catalysts": [
+      "Gold import duty reduction boosting retail volume growth",
+      "Wedding season demand acceleration across Tanishq stores",
+      "International Tanishq store additions in North America"
+    ]
   }
 ]

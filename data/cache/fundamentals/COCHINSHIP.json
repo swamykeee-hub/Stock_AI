@@ -1,11 +1,11 @@
 {
   "score": 6.2,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        33937\n        \n          Cr.",
-    "current_price": "\u20b9\n        1290",
-    "stock_pe": "57.4",
-    "book_value": "\u20b9\n        224",
-    "dividend_yield_pct": "0.70\n        \n          %",
+    "market_cap_cr": "\u20b9\n        28676\n        \n          Cr.",
+    "current_price": "\u20b9\n        1090",
+    "stock_pe": "53.4",
+    "book_value": "\u20b9\n        230",
+    "dividend_yield_pct": "0.83\n        \n          %",
     "roce_pct": "14.5\n        \n          %",
     "roe_pct": "11.2\n        \n          %",
     "debt_to_equity": "N/A",
@@ -17,6 +17,6 @@
   ],
   "red_flags": [
     "Promoter holding has decreased over last quarter: -4.58%",
-    "Earnings include an other income of Rs.422 Cr."
+    "Earnings include an other income of Rs.379 Cr."
   ]
 }

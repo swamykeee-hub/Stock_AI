@@ -1,0 +1,21 @@
+{
+  "score": 6.2,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        74545\n        \n          Cr.",
+    "current_price": "\u20b9\n        2515",
+    "stock_pe": "36.4",
+    "book_value": "\u20b9\n        461",
+    "dividend_yield_pct": "0.36\n        \n          %",
+    "roce_pct": "15.9\n        \n          %",
+    "roe_pct": "14.8\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        10.0"
+  },
+  "strengths": [
+    "Healthy Capital Return (ROCE: 15.9%)"
+  ],
+  "red_flags": [
+    "Stock is trading at 5.46 times its book value",
+    "Company has a low return on equity of 13.4% over last 3 years."
+  ]
+}

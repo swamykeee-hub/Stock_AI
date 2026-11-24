@@ -1,0 +1,23 @@
+{
+  "score": 6.5,
+  "metrics": {
+    "market_cap_cr": "\u20b9\n        305881\n        \n          Cr.",
+    "current_price": "\u20b9\n        315",
+    "stock_pe": "12.5",
+    "book_value": "\u20b9\n        188",
+    "dividend_yield_pct": "2.85\n        \n          %",
+    "roce_pct": "8.50\n        \n          %",
+    "roe_pct": "13.9\n        \n          %",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9\n        10.0"
+  },
+  "strengths": [
+    "Company has been maintaining a healthy dividend payout of 40.2%",
+    "Attractive Valuation Multiple (P/E: 12.5x)"
+  ],
+  "red_flags": [
+    "The company has delivered a poor sales growth of 10.8% over past five years.",
+    "Tax rate seems low",
+    "Company has a low return on equity of 13.6% over last 3 years."
+  ]
+}
