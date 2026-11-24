@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24 12:00:56",
+  "timestamp": "2026-11-24 12:01:11",
   "indices": {
     "NIFTY 50": {
       "value": 25349.65,
@@ -90,9 +90,9 @@
         "change_pct": 3.01
       },
       "Nikkei 225": {
-        "price": 58433.84,
-        "change": 1997.19,
-        "change_pct": 3.54
+        "price": 58449.15,
+        "change": 2012.5,
+        "change_pct": 3.57
       },
       "FTSE 100": {
         "price": 10480.82,
@@ -105,9 +105,9 @@
         "change_pct": 2.15
       },
       "Hang Seng": {
-        "price": 22202.73,
-        "change": -181.01,
-        "change_pct": -0.81
+        "price": 22204.1,
+        "change": -179.64,
+        "change_pct": -0.8
       }
     },
     "macro": {
@@ -127,9 +127,9 @@
         "change_pct": -0.02
       },
       "Gold ($/oz)": {
-        "price": 3625.6,
-        "change": -25.8,
-        "change_pct": -0.71
+        "price": 3626.6,
+        "change": -24.8,
+        "change_pct": -0.68
       },
       "USD / INR": {
         "price": 92.9,
@@ -141,7 +141,7 @@
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.92%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-24 12:01:11"
+    "timestamp": "2026-11-24 12:01:29"
   },
   "market_regime": {
     "nifty_cmp": 25349.65,
