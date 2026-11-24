@@ -1,5 +1,5 @@
 # Daily Indian Market AI Intelligence Briefing
-**Generated:** 2026-11-24 08:45:02 | **Powered by Stock AI Agent (CIO Intelligence)**
+**Generated:** 2026-11-24 09:15:02 | **Powered by Stock AI Agent (CIO Intelligence)**
 
 ---
 ## 1. Domestic & Global Market Overview
@@ -24,10 +24,10 @@
 ### Global Macro & Commodities
 | Commodity / Index | Price | Change (%) |
 | :--- | :--- | :--- |
-| **Brent Crude ($/bbl)** | 86.65 | -0.04% |
+| **Brent Crude ($/bbl)** | 86.53 | -0.17% |
 | **US 10-Yr Yield (%)** | 4.92 | +0.12% |
-| **US Dollar Index (DXY)** | 104.27 | -0.05% |
-| **Gold ($/oz)** | 3634.9 | -0.45% |
+| **US Dollar Index (DXY)** | 104.26 | -0.05% |
+| **Gold ($/oz)** | 3630.2 | -0.58% |
 | **USD / INR** | 92.9 | +0.24% |
 
 ## 2. Multi-Timeframe Super-Trend & Momentum Leaders (3M / 1Y / 3Y)

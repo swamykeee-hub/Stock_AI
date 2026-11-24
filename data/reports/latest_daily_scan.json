@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24 09:15:37",
+  "timestamp": "2026-11-24 09:15:02",
   "indices": {
     "NIFTY 50": {
       "value": 25349.65,
@@ -90,8 +90,8 @@
         "change_pct": 3.01
       },
       "Nikkei 225": {
-        "price": 58586.95,
-        "change": 2150.3,
+        "price": 58587.51,
+        "change": 2150.86,
         "change_pct": 3.81
       },
       "FTSE 100": {
@@ -105,16 +105,16 @@
         "change_pct": 2.15
       },
       "Hang Seng": {
-        "price": 22309.53,
-        "change": -74.21,
-        "change_pct": -0.33
+        "price": 22315.95,
+        "change": -67.79,
+        "change_pct": -0.3
       }
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 86.48,
-        "change": -0.2,
-        "change_pct": -0.23
+        "price": 86.53,
+        "change": -0.15,
+        "change_pct": -0.17
       },
       "US 10-Yr Yield (%)": {
         "price": 4.92,
@@ -127,9 +127,9 @@
         "change_pct": -0.05
       },
       "Gold ($/oz)": {
-        "price": 3629.1,
-        "change": -22.3,
-        "change_pct": -0.61
+        "price": 3630.2,
+        "change": -21.2,
+        "change_pct": -0.58
       },
       "USD / INR": {
         "price": 92.9,
@@ -141,7 +141,7 @@
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.92%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-24 09:16:14"
+    "timestamp": "2026-11-24 09:15:17"
   },
   "market_regime": {
     "nifty_cmp": 25349.65,
@@ -204,7 +204,7 @@
         "month_pct": -1.31
       }
     ],
-    "timestamp": "2026-11-24 08:45:16"
+    "timestamp": "2026-11-24 09:15:27"
   },
   "top_momentum_stocks": [
     {
@@ -225,9 +225,7 @@
       "distance_from_52w_high": 4.7,
       "volume_surge": 0.17,
       "trend_status": "\ud83d\ude80 Multibagger Compounder (+100%+)",
-      "conviction": "Very High (Institutional Momentum)",
-      "day_change": 76.1,
-      "day_change_pct": 3.32
+      "conviction": "Very High (Institutional Momentum)"
     },
     {
       "symbol": "DIVISLAB",
@@ -247,9 +245,7 @@
       "distance_from_52w_high": 5.3,
       "volume_surge": 0.46,
       "trend_status": "\ud83c\udfdb\ufe0f Multi-Year Structural Bull",
-      "conviction": "Core Portfolio Compounder",
-      "day_change": 22.5,
-      "day_change_pct": 0.2
+      "conviction": "Core Portfolio Compounder"
     },
     {
       "symbol": "APARINDS",
@@ -269,9 +265,7 @@
       "distance_from_52w_high": 26.4,
       "volume_surge": 0.08,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate",
-      "day_change": -155.0,
-      "day_change_pct": -1.08
+      "conviction": "Moderate"
     },
     {
       "symbol": "SOLARINDS",
@@ -291,9 +285,7 @@
       "distance_from_52w_high": 19.9,
       "volume_surge": 0.21,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate",
-      "day_change": -532.0,
-      "day_change_pct": -2.84
+      "conviction": "Moderate"
     },
     {
       "symbol": "BHEL",
@@ -313,9 +305,7 @@
       "distance_from_52w_high": 10.4,
       "volume_surge": 0.23,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate",
-      "day_change": -17.95,
-      "day_change_pct": -4.14
+      "conviction": "Moderate"
     },
     {
       "symbol": "BSE",
@@ -335,9 +325,7 @@
       "distance_from_52w_high": 15.5,
       "volume_surge": 0.13,
       "trend_status": "\ud83c\udfdb\ufe0f Multi-Year Structural Bull",
-      "conviction": "Core Portfolio Compounder",
-      "day_change": -24.0,
-      "day_change_pct": -0.64
+      "conviction": "Core Portfolio Compounder"
     },
     {
       "symbol": "MOTHERSON",
@@ -357,9 +345,7 @@
       "distance_from_52w_high": 4.3,
       "volume_surge": 0.15,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate",
-      "day_change": -0.77,
-      "day_change_pct": -0.46
+      "conviction": "Watchlist / Accumulate"
     },
     {
       "symbol": "HAL",
@@ -379,9 +365,7 @@
       "distance_from_52w_high": 7.2,
       "volume_surge": 0.12,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate",
-      "day_change": -29.0,
-      "day_change_pct": -0.6
+      "conviction": "Moderate"
     },
     {
       "symbol": "AMBER",
@@ -401,9 +385,7 @@
       "distance_from_52w_high": 23.7,
       "volume_surge": 0.3,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate",
-      "day_change": 109.5,
-      "day_change_pct": 1.62
+      "conviction": "Moderate"
     },
     {
       "symbol": "SUNPHARMA",
@@ -423,9 +405,7 @@
       "distance_from_52w_high": 9.1,
       "volume_surge": 0.19,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate",
-      "day_change": -24.9,
-      "day_change_pct": -1.32
+      "conviction": "Moderate"
     },
     {
       "symbol": "POLYCAB",
@@ -445,9 +425,7 @@
       "distance_from_52w_high": 26.6,
       "volume_surge": 0.3,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate",
-      "day_change": -140.0,
-      "day_change_pct": -1.85
+      "conviction": "Moderate"
     },
     {
       "symbol": "BEL",
@@ -467,9 +445,7 @@
       "distance_from_52w_high": 16.4,
       "volume_surge": 0.14,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate",
-      "day_change": -6.2,
-      "day_change_pct": -1.54
+      "conviction": "Moderate"
     },
     {
       "symbol": "BHARTIARTL",
@@ -489,9 +465,7 @@
       "distance_from_52w_high": 2.0,
       "volume_surge": 0.18,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate",
-      "day_change": -33.2,
-      "day_change_pct": -1.54
+      "conviction": "Watchlist / Accumulate"
     },
     {
       "symbol": "DIXON",
@@ -511,9 +485,7 @@
       "distance_from_52w_high": 10.7,
       "volume_surge": 0.31,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate",
-      "day_change": 270.0,
-      "day_change_pct": 2.06
+      "conviction": "Moderate"
     },
     {
       "symbol": "PRESTIGE",
@@ -533,9 +505,7 @@
       "distance_from_52w_high": 3.1,
       "volume_surge": 0.74,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate",
-      "day_change": 7.0,
-      "day_change_pct": 0.42
+      "conviction": "Watchlist / Accumulate"
     }
   ],
   "fifty_two_week_high_stocks": [
@@ -1856,7 +1826,7 @@
     }
   ],
   "institutional_flow": {
-    "timestamp": "2026-11-24 08:45:56",
+    "timestamp": "2026-11-24 09:16:30",
     "fii_dii_latest": {
       "date": "2026-11-23",
       "formatted_date": "Mon 23 Nov, 2026",
@@ -2047,7 +2017,7 @@
     "sentiment_rationale": "Nifty PCR is balanced at 0.7 around Max Pain strike (25500.0). Institutions active with FII 5,672.99 Cr and DII -2,760.12 Cr."
   },
   "corporate_actions": {
-    "timestamp": "2026-11-24 08:45:59",
+    "timestamp": "2026-11-24 09:16:34",
     "dividends": [
       {
         "stock_name": "Vraj Iron",
@@ -2189,7 +2159,7 @@
     "total_events": 16
   },
   "performance_scorecard": {
-    "timestamp": "2026-11-24 08:45:59",
+    "timestamp": "2026-11-24 09:16:34",
     "total_picks_tracked": 8,
     "win_rate_pct": 85.7,
     "resolved_trades_count": 7,
@@ -2322,7 +2292,7 @@
     ]
   },
   "market_movers": {
-    "timestamp": "2026-11-24 08:46:01",
+    "timestamp": "2026-11-24 09:16:36",
     "top_gainers": [
       {
         "symbol": "ITI",
