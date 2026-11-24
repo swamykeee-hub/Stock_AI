@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24 08:45:02",
+  "timestamp": "2026-11-24 09:01:19",
   "indices": {
     "NIFTY 50": {
       "value": 25349.65,
@@ -105,16 +105,16 @@
         "change_pct": 2.15
       },
       "Hang Seng": {
-        "price": 22361.41,
-        "change": -22.33,
-        "change_pct": -0.1
+        "price": 22313.61,
+        "change": -70.13,
+        "change_pct": -0.31
       }
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 86.65,
-        "change": -0.03,
-        "change_pct": -0.04
+        "price": 86.6,
+        "change": -0.08,
+        "change_pct": -0.09
       },
       "US 10-Yr Yield (%)": {
         "price": 4.92,
@@ -122,14 +122,14 @@
         "change_pct": 0.12
       },
       "US Dollar Index (DXY)": {
-        "price": 104.27,
-        "change": -0.05,
+        "price": 104.26,
+        "change": -0.06,
         "change_pct": -0.05
       },
       "Gold ($/oz)": {
-        "price": 3634.9,
-        "change": -16.5,
-        "change_pct": -0.45
+        "price": 3634.0,
+        "change": -17.4,
+        "change_pct": -0.48
       },
       "USD / INR": {
         "price": 92.9,
@@ -141,7 +141,7 @@
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.92%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-24 08:45:12"
+    "timestamp": "2026-11-24 09:01:35"
   },
   "market_regime": {
     "nifty_cmp": 25349.65,
@@ -225,7 +225,9 @@
       "distance_from_52w_high": 4.7,
       "volume_surge": 0.17,
       "trend_status": "\ud83d\ude80 Multibagger Compounder (+100%+)",
-      "conviction": "Very High (Institutional Momentum)"
+      "conviction": "Very High (Institutional Momentum)",
+      "day_change": 76.1,
+      "day_change_pct": 3.32
     },
     {
       "symbol": "DIVISLAB",
@@ -245,7 +247,9 @@
       "distance_from_52w_high": 5.3,
       "volume_surge": 0.46,
       "trend_status": "\ud83c\udfdb\ufe0f Multi-Year Structural Bull",
-      "conviction": "Core Portfolio Compounder"
+      "conviction": "Core Portfolio Compounder",
+      "day_change": 22.5,
+      "day_change_pct": 0.2
     },
     {
       "symbol": "APARINDS",
@@ -265,7 +269,9 @@
       "distance_from_52w_high": 26.4,
       "volume_surge": 0.08,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -155.0,
+      "day_change_pct": -1.08
     },
     {
       "symbol": "SOLARINDS",
@@ -285,7 +291,9 @@
       "distance_from_52w_high": 19.9,
       "volume_surge": 0.21,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -532.0,
+      "day_change_pct": -2.84
     },
     {
       "symbol": "BHEL",
@@ -305,7 +313,9 @@
       "distance_from_52w_high": 10.4,
       "volume_surge": 0.23,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -17.95,
+      "day_change_pct": -4.14
     },
     {
       "symbol": "BSE",
@@ -325,7 +335,9 @@
       "distance_from_52w_high": 15.5,
       "volume_surge": 0.13,
       "trend_status": "\ud83c\udfdb\ufe0f Multi-Year Structural Bull",
-      "conviction": "Core Portfolio Compounder"
+      "conviction": "Core Portfolio Compounder",
+      "day_change": -24.0,
+      "day_change_pct": -0.64
     },
     {
       "symbol": "MOTHERSON",
@@ -345,7 +357,9 @@
       "distance_from_52w_high": 4.3,
       "volume_surge": 0.15,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": -0.77,
+      "day_change_pct": -0.46
     },
     {
       "symbol": "HAL",
@@ -365,7 +379,9 @@
       "distance_from_52w_high": 7.2,
       "volume_surge": 0.12,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -29.0,
+      "day_change_pct": -0.6
     },
     {
       "symbol": "AMBER",
@@ -385,7 +401,9 @@
       "distance_from_52w_high": 23.7,
       "volume_surge": 0.3,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 109.5,
+      "day_change_pct": 1.62
     },
     {
       "symbol": "SUNPHARMA",
@@ -405,7 +423,9 @@
       "distance_from_52w_high": 9.1,
       "volume_surge": 0.19,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -24.9,
+      "day_change_pct": -1.32
     },
     {
       "symbol": "POLYCAB",
@@ -425,7 +445,9 @@
       "distance_from_52w_high": 26.6,
       "volume_surge": 0.3,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -140.0,
+      "day_change_pct": -1.85
     },
     {
       "symbol": "BEL",
@@ -445,7 +467,9 @@
       "distance_from_52w_high": 16.4,
       "volume_surge": 0.14,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -6.2,
+      "day_change_pct": -1.54
     },
     {
       "symbol": "BHARTIARTL",
@@ -465,7 +489,9 @@
       "distance_from_52w_high": 2.0,
       "volume_surge": 0.18,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": -33.2,
+      "day_change_pct": -1.54
     },
     {
       "symbol": "DIXON",
@@ -485,7 +511,9 @@
       "distance_from_52w_high": 10.7,
       "volume_surge": 0.31,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 270.0,
+      "day_change_pct": 2.06
     },
     {
       "symbol": "PRESTIGE",
@@ -505,7 +533,9 @@
       "distance_from_52w_high": 3.1,
       "volume_surge": 0.74,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": 7.0,
+      "day_change_pct": 0.42
     }
   ],
   "fifty_two_week_high_stocks": [
