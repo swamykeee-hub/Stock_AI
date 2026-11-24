@@ -75,6 +75,21 @@
     "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9206 (+7.8%)"
   },
   {
+    "name": "Airpro Technology",
+    "category": "NSE Emerge",
+    "sector": "Information Technology",
+    "status": "Upcoming",
+    "issue_period": "27 Nov 2026 \u2013 1 Dec 2026",
+    "price_band": "\u20b999.00",
+    "lot_size": "1,200",
+    "issue_size_cr": "35.64",
+    "gmp_inr": "\u20b90.00",
+    "gmp_pct": 0.0,
+    "subscription_total": "Yet to Open",
+    "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
+    "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b999 (+0.0%)"
+  },
+  {
     "name": "Integris Medtech",
     "category": "Mainboard",
     "sector": "Pharmaceuticals",
@@ -135,9 +150,9 @@
     "analysis": "Dates: 2 Dec 2026 \u2013 4 Dec 2026 \u2022 Est. Listing: \u20b923 (+0.0%)"
   },
   {
-    "name": "Hindustan Coca Cola",
+    "name": "Encube Ethicals",
     "category": "Mainboard",
-    "sector": " FMCG ",
+    "sector": "Pharmaceuticals",
     "status": "Upcoming",
     "issue_period": "TBA",
     "price_band": "TBA",
@@ -150,9 +165,9 @@
     "analysis": "Dates: TBA \u2022 Est. Listing: \u20b90 (+0.0%)"
   },
   {
-    "name": "Encube Ethicals",
+    "name": "Hindustan Coca Cola",
     "category": "Mainboard",
-    "sector": "Pharmaceuticals",
+    "sector": " FMCG ",
     "status": "Upcoming",
     "issue_period": "TBA",
     "price_band": "TBA",
