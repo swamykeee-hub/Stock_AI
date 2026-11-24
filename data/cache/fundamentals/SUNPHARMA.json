@@ -1,11 +1,11 @@
 {
   "score": 5.2,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        452251\n        \n          Cr.",
-    "current_price": "\u20b9\n        1885",
-    "stock_pe": "130",
+    "market_cap_cr": "\u20b9\n        446276\n        \n          Cr.",
+    "current_price": "\u20b9\n        1860",
+    "stock_pe": "128",
     "book_value": "\u20b9\n        97.4",
-    "dividend_yield_pct": "0.85\n        \n          %",
+    "dividend_yield_pct": "0.86\n        \n          %",
     "roce_pct": "14.8\n        \n          %",
     "roe_pct": "12.7\n        \n          %",
     "debt_to_equity": "N/A",
@@ -16,7 +16,7 @@
     "Healthy Capital Return (ROCE: 14.8%)"
   ],
   "red_flags": [
-    "Stock is trading at 19.4 times its book value",
+    "Stock is trading at 19.1 times its book value",
     "Promoter holding has decreased over last quarter: -1.80%",
     "The company has delivered a poor sales growth of 8.01% over past five years."
   ]

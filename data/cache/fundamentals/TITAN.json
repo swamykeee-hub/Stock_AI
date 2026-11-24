@@ -1,9 +1,9 @@
 {
   "score": 7.7,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        410157\n        \n          Cr.",
-    "current_price": "\u20b9\n        4620",
-    "stock_pe": "69.2",
+    "market_cap_cr": "\u20b9\n        415484\n        \n          Cr.",
+    "current_price": "\u20b9\n        4680",
+    "stock_pe": "70.0",
     "book_value": "\u20b9\n        249",
     "dividend_yield_pct": "0.32\n        \n          %",
     "roce_pct": "18.7\n        \n          %",
@@ -18,7 +18,7 @@
     "Company's median sales growth is 21.6% of last 10 years"
   ],
   "red_flags": [
-    "Stock is trading at 18.5 times its book value",
+    "Stock is trading at 18.8 times its book value",
     "Company might be capitalizing the interest cost"
   ]
 }

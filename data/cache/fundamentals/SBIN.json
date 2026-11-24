@@ -1,11 +1,11 @@
 {
   "score": 5.5,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        1075477\n        \n          Cr.",
-    "current_price": "\u20b9\n        1165",
-    "stock_pe": "13.6",
+    "market_cap_cr": "\u20b9\n        1045523\n        \n          Cr.",
+    "current_price": "\u20b9\n        1133",
+    "stock_pe": "13.2",
     "book_value": "\u20b9\n        650",
-    "dividend_yield_pct": "1.49\n        \n          %",
+    "dividend_yield_pct": "1.53\n        \n          %",
     "roce_pct": "6.09\n        \n          %",
     "roe_pct": "16.2\n        \n          %",
     "debt_to_equity": "N/A",
@@ -13,7 +13,7 @@
   },
   "strengths": [
     "Company has been maintaining a healthy dividend payout of 20.0%",
-    "Attractive Valuation Multiple (P/E: 13.6x)"
+    "Attractive Valuation Multiple (P/E: 13.2x)"
   ],
   "red_flags": [
     "Company has low interest coverage ratio.",

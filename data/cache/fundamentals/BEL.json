@@ -1,11 +1,11 @@
 {
   "score": 8.5,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        293853\n        \n          Cr.",
-    "current_price": "\u20b9\n        402",
-    "stock_pe": "46.0",
+    "market_cap_cr": "\u20b9\n        289321\n        \n          Cr.",
+    "current_price": "\u20b9\n        396",
+    "stock_pe": "45.3",
     "book_value": "\u20b9\n        35.5",
-    "dividend_yield_pct": "0.62\n        \n          %",
+    "dividend_yield_pct": "0.63\n        \n          %",
     "roce_pct": "37.0\n        \n          %",
     "roe_pct": "27.8\n        \n          %",
     "debt_to_equity": "N/A",
@@ -18,7 +18,7 @@
     "Company has a good return on equity (ROE) track record: 3 Years ROE 28.1%"
   ],
   "red_flags": [
-    "Stock is trading at 11.3 times its book value",
+    "Stock is trading at 11.1 times its book value",
     "Company has high debtors of 171 days.",
     "Working capital days have increased from 79.1 days to 135 days"
   ]

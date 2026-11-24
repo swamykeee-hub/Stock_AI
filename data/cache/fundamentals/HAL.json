@@ -1,9 +1,9 @@
 {
   "score": 8.5,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        321614\n        \n          Cr.",
-    "current_price": "\u20b9\n        4809",
-    "stock_pe": "34.0",
+    "market_cap_cr": "\u20b9\n        319674\n        \n          Cr.",
+    "current_price": "\u20b9\n        4780",
+    "stock_pe": "33.8",
     "book_value": "\u20b9\n        654",
     "dividend_yield_pct": "0.94\n        \n          %",
     "roce_pct": "32.0\n        \n          %",
@@ -18,7 +18,7 @@
     "Company has a good return on equity (ROE) track record: 3 Years ROE 26.0%"
   ],
   "red_flags": [
-    "Stock is trading at 7.36 times its book value",
+    "Stock is trading at 7.31 times its book value",
     "The company has delivered a poor sales growth of 7.66% over past five years.",
     "Earnings include an other income of Rs.3,958 Cr."
   ]
