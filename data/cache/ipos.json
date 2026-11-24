@@ -18,7 +18,7 @@
     "name": "Watrana Rentals",
     "category": "NSE Emerge",
     "sector": "Logistics Solution Provider",
-    "status": "Open",
+    "status": "Closed",
     "issue_period": "19 Nov 2026 \u2013 23 Nov 2026",
     "price_band": "\u20b9232.00 - \u20b9245.00",
     "lot_size": "600",
@@ -33,16 +33,16 @@
     "name": "Mahanadi Coalfields",
     "category": "Mainboard",
     "sector": "Minerals",
-    "status": "Open",
+    "status": "Closed",
     "issue_period": "19 Nov 2026 \u2013 23 Nov 2026",
     "price_band": "\u20b9129.00 - \u20b9136.00",
     "lot_size": "110",
     "issue_size_cr": "9000.97",
-    "gmp_inr": "\u20b90.40",
-    "gmp_pct": 0.3,
+    "gmp_inr": "\u20b90.00",
+    "gmp_pct": 0.0,
     "subscription_total": "1.52x",
-    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9136 (+0.3%)"
+    "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
+    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9136 (+0.0%)"
   },
   {
     "name": "Shree Siddhivinayak Greentech Industries",
@@ -53,11 +53,11 @@
     "price_band": "\u20b9130.00 - \u20b9142.00",
     "lot_size": "1,000",
     "issue_size_cr": "93.66",
-    "gmp_inr": "\u20b95.00",
-    "gmp_pct": 3.5,
+    "gmp_inr": "\u20b910.00",
+    "gmp_pct": 7.0,
     "subscription_total": "Yet to Open",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9147 (+3.5%)"
+    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9152 (+7.0%)"
   },
   {
     "name": "Foodlink F&B Holdings",
@@ -68,11 +68,11 @@
     "price_band": "\u20b9181.00 - \u20b9191.00",
     "lot_size": "78",
     "issue_size_cr": "360.76",
-    "gmp_inr": "\u20b912.00",
-    "gmp_pct": 6.3,
+    "gmp_inr": "\u20b915.00",
+    "gmp_pct": 7.8,
     "subscription_total": "Yet to Open",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9203 (+6.3%)"
+    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9206 (+7.8%)"
   },
   {
     "name": "Integris Medtech",

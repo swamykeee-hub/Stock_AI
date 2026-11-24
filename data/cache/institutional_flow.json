@@ -1,17 +1,28 @@
 {
-  "timestamp": "2026-11-23 18:00:55",
+  "timestamp": "2026-11-24 08:45:56",
   "fii_dii_latest": {
-    "date": "2026-11-20",
-    "formatted_date": "Fri 20 Nov, 2026",
-    "fii_cash_net": "10,308.42",
-    "dii_cash_net": "-4,859.80",
-    "fii_index_futures": "-369.75",
-    "fii_index_options": "6,765.91",
-    "fii_stock_futures": "770.37",
-    "nifty_close": "25,800.60",
-    "nifty_change_pct": "1.12"
+    "date": "2026-11-23",
+    "formatted_date": "Mon 23 Nov, 2026",
+    "fii_cash_net": "5,672.99",
+    "dii_cash_net": "-2,760.12",
+    "fii_index_futures": "-3,629.83",
+    "fii_index_options": "40,855.08",
+    "fii_stock_futures": "-5,444.91",
+    "nifty_close": "25,349.65",
+    "nifty_change_pct": "-1.75"
   },
   "fii_dii_history": [
+    {
+      "date": "2026-11-23",
+      "formatted_date": "Mon 23 Nov, 2026",
+      "fii_cash_net": "5,672.99",
+      "dii_cash_net": "-2,760.12",
+      "fii_index_futures": "-3,629.83",
+      "fii_index_options": "40,855.08",
+      "fii_stock_futures": "-5,444.91",
+      "nifty_close": "25,349.65",
+      "nifty_change_pct": "-1.75"
+    },
     {
       "date": "2026-11-20",
       "formatted_date": "Fri 20 Nov, 2026",
@@ -165,27 +176,16 @@
       "fii_stock_futures": "3,001.08",
       "nifty_close": "23,810.85",
       "nifty_change_pct": "1.58"
-    },
-    {
-      "date": "2026-11-02",
-      "formatted_date": "Mon 02 Nov, 2026",
-      "fii_cash_net": "3,114.68",
-      "dii_cash_net": "-392.20",
-      "fii_index_futures": "1,113.16",
-      "fii_index_options": "10,513.20",
-      "fii_stock_futures": "3,771.17",
-      "nifty_close": "23,440.80",
-      "nifty_change_pct": "1.68"
     }
   ],
   "derivatives": {
-    "pcr": 0.74,
-    "total_call_oi": 3373316,
-    "total_put_oi": 2511179,
-    "max_pain_strike": 25350.0,
+    "pcr": 0.7,
+    "total_call_oi": 1482410,
+    "total_put_oi": 1036881,
+    "max_pain_strike": 25500.0,
     "status": "LIVE"
   },
   "smart_money_sentiment": "BALANCED",
   "sentiment_badge": "\ud83d\udd35 BALANCED / RANGE-BOUND",
-  "sentiment_rationale": "Nifty PCR is balanced at 0.74 around Max Pain strike (25350.0). Institutions active with FII 10,308.42 Cr and DII -4,859.80 Cr."
+  "sentiment_rationale": "Nifty PCR is balanced at 0.7 around Max Pain strike (25500.0). Institutions active with FII 5,672.99 Cr and DII -2,760.12 Cr."
 }

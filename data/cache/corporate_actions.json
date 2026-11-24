@@ -1,16 +1,6 @@
 {
-  "timestamp": "2026-11-23 18:00:59",
+  "timestamp": "2026-11-24 08:45:59",
   "dividends": [
-    {
-      "stock_name": "Pashupati Cotsp",
-      "symbol": "PC25",
-      "event_type": "Dividend - Interim",
-      "ex_date": "23/11/2026",
-      "dividend_amount": "\u20b90.02",
-      "cmp": "\u20b928.51",
-      "estimated_yield": "0.07%",
-      "announcement_date": "06/11/2026"
-    },
     {
       "stock_name": "Vraj Iron",
       "symbol": "VISL",
@@ -34,68 +24,68 @@
   ],
   "earnings": [
     {
-      "date": "23 Nov",
-      "stock_name": "SFC Environmental Technologies",
-      "symbol": "SETL",
+      "date": "24 Nov",
+      "stock_name": "M K Sons Fine Jewels",
+      "symbol": "SFJ",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9437.35",
-      "market_cap": "\u20b94284.14 Cr"
+      "ltp": "\u20b9158.36",
+      "market_cap": "\u20b9891.42 Cr"
     },
     {
-      "date": "23 Nov",
-      "stock_name": "ELITECON INTERNATIONAL",
-      "symbol": "KJA",
+      "date": "24 Nov",
+      "stock_name": "Wiscon Industries",
+      "symbol": "WIL02",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b94.67",
-      "market_cap": "\u20b9746.5 Cr"
+      "ltp": "\u20b9231.00",
+      "market_cap": "\u20b9461.71 Cr"
     },
     {
-      "date": "23 Nov",
-      "stock_name": "Exhicon Events Media Solutions",
-      "symbol": "EEM",
+      "date": "24 Nov",
+      "stock_name": "Setco Automotive",
+      "symbol": "GSC01",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9495.90",
-      "market_cap": "\u20b9642.81 Cr"
+      "ltp": "\u20b917.73",
+      "market_cap": "\u20b9237.17 Cr"
     },
     {
-      "date": "23 Nov",
-      "stock_name": "Bombay Coated and Special Steels",
-      "symbol": "BCSSL",
+      "date": "24 Nov",
+      "stock_name": "STARBEAM VENTURES",
+      "symbol": "II19",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b984.70",
-      "market_cap": "\u20b9532.12 Cr"
+      "ltp": "\u20b90.58",
+      "market_cap": "\u20b937.91 Cr"
     },
     {
-      "date": "23 Nov",
-      "stock_name": "Krishca Strapping Solutions",
-      "symbol": "KSS02",
+      "date": "24 Nov",
+      "stock_name": "Lexus Granito(India)",
+      "symbol": "LG",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9194.10",
-      "market_cap": "\u20b9309.16 Cr"
+      "ltp": "\u20b911.33",
+      "market_cap": "\u20b923.56 Cr"
     },
     {
-      "date": "23 Nov",
-      "stock_name": "Carver Roboweld",
-      "symbol": "CRL03",
+      "date": "24 Nov",
+      "stock_name": "Heads UP Ventures",
+      "symbol": "TMR",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b997.00",
-      "market_cap": "\u20b9127.1 Cr"
+      "ltp": "\u20b95.10",
+      "market_cap": "\u20b911.26 Cr"
     },
     {
-      "date": "23 Nov",
-      "stock_name": "Kore Digital",
-      "symbol": "KD09",
+      "date": "24 Nov",
+      "stock_name": "Mitshi India",
+      "symbol": "DPC",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b925.35",
-      "market_cap": "\u20b930.48 Cr"
+      "ltp": "\u20b912.17",
+      "market_cap": "\u20b910.71 Cr"
     },
     {
-      "date": "23 Nov",
-      "stock_name": "Sabar Flex India",
-      "symbol": "SFI06",
+      "date": "24 Nov",
+      "stock_name": "Natural Biocon (India)",
+      "symbol": "NBI01",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b98.80",
-      "market_cap": "\u20b916.91 Cr"
+      "ltp": "\u20b92.45",
+      "market_cap": "\u20b96.32 Cr"
     }
   ],
   "splits_and_actions": [
@@ -148,5 +138,5 @@
       "announcement_date": "14/10/2026"
     }
   ],
-  "total_events": 17
+  "total_events": 16
 }

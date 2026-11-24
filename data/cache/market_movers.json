@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-23 18:01:01",
+  "timestamp": "2026-11-24 08:46:01",
   "top_gainers": [
     {
       "symbol": "ITI",
@@ -323,15 +323,15 @@
       "volume": "13,235,320"
     },
     {
-      "symbol": "IRB",
-      "name": "IRB Infra",
-      "price": "\u20b917.40",
-      "price_raw": "17.40",
-      "change_pct": "-3.60%",
-      "change_val": "-0.65",
-      "high": "18.22",
-      "low": "17.31",
-      "volume": "8,530,600"
+      "symbol": "GROWW",
+      "name": "Billionbrains G",
+      "price": "\u20b9216.46",
+      "price_raw": "216.46",
+      "change_pct": "-3.61%",
+      "change_val": "-8.11",
+      "high": "222.97",
+      "low": "214.75",
+      "volume": "67,337,248"
     }
   ]
 }
