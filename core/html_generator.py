@@ -133,9 +133,21 @@ class HTMLReportGenerator:
             </div>
             """
 
+        # Generate Radar Score Map for quick lookup
+        radar_score_map = {r['symbol']: float(r.get('cio_conviction', 8.5)) for r in monitored_radar}
+
         # Generate Momentum Rows
         momentum_rows = ""
         for s in momentum_stocks:
+            sym = s.get('symbol', '')
+            if sym in radar_score_map:
+                cio_score = radar_score_map[sym]
+            else:
+                ret1y = float(s.get('ret_1y', 0))
+                cio_score = 8.5 if ret1y > 45 else (8.0 if ret1y > 15 else 7.5)
+            score_color = "#10b981" if cio_score >= 9.0 else ("#38bdf8" if cio_score >= 8.0 else "#f59e0b")
+            score_bg = "rgba(16, 185, 129, 0.15)" if cio_score >= 9.0 else ("rgba(56, 189, 248, 0.15)" if cio_score >= 8.0 else "rgba(245, 158, 11, 0.15)")
+
             momentum_rows += f"""
             <tr class="stock-row" data-symbol="{s['symbol']}" data-name="{s['name']}" data-sector="{s['sector']}">
                 <td>
@@ -143,6 +155,11 @@ class HTMLReportGenerator:
                     <div class="sub-text">{s['name']}</div>
                 </td>
                 <td><span class="sector-pill">{s['sector']}</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background: {score_bg}; color: {score_color}; border: 1px solid {score_color}55; padding: 3px 8px; border-radius: 6px; font-weight: 800; font-size: 12px;">
+                        ⭐ {cio_score:.1f}
+                    </span>
+                </td>
                 <td><b>₹{s['cmp']:,.2f}</b></td>
                 <td style="color: #10b981; font-weight: 700;">+{s.get('ret_3m', 0)}%</td>
                 <td style="color: #10b981; font-weight: 700;">+{s.get('ret_6m', 0)}%</td>
@@ -251,6 +268,9 @@ class HTMLReportGenerator:
         # Generate Monitored Radar Rows
         radar_rows = ""
         for r in monitored_radar:
+            cio_score = float(r.get("cio_conviction", 9.0))
+            score_color = "#10b981" if cio_score >= 9.0 else "#38bdf8"
+            score_bg = "rgba(16, 185, 129, 0.15)" if cio_score >= 9.0 else "rgba(56, 189, 248, 0.15)"
             radar_rows += f"""
             <tr class="stock-row" data-symbol="{r['symbol']}" data-name="{r['name']}" data-sector="{r['sector']}">
                 <td>
@@ -258,6 +278,7 @@ class HTMLReportGenerator:
                     <div class="sub-text">{r['name']}</div>
                 </td>
                 <td><span class="status-pill">{r['setup_type']}</span></td>
+                <td><span style="display:inline-flex; align-items:center; gap:5px; background: {score_bg}; color: {score_color}; border: 1px solid {score_color}55; padding: 4px 8px; border-radius: 6px; font-weight: 800; font-size: 13px;">⭐ {cio_score:.1f} / 10</span></td>
                 <td><b>₹{r.get('cmp', r['entry_trigger']):,.2f}</b></td>
                 <td style="color: #34d399;">₹{r['target_3m']}</td>
                 <td style="color: #10b981; font-weight: 700;">₹{r['target_1y']}</td>
@@ -1726,12 +1747,13 @@ class HTMLReportGenerator:
                     <tr>
                         <th class="sortable" onclick="sortTable(this, 0)">Stock / Company</th>
                         <th class="sortable" onclick="sortTable(this, 1)">Sector</th>
-                        <th class="sortable" onclick="sortTable(this, 2)">CMP</th>
-                        <th class="sortable" onclick="sortTable(this, 3)">3M Return</th>
-                        <th class="sortable" onclick="sortTable(this, 4)">6M Return</th>
-                        <th class="sortable" onclick="sortTable(this, 5)">1Y Return</th>
-                        <th class="sortable" onclick="sortTable(this, 6)">3Y Return</th>
-                        <th class="sortable" onclick="sortTable(this, 7)">Trend Status</th>
+                        <th class="sortable" onclick="sortTable(this, 2)">CIO Rating</th>
+                        <th class="sortable" onclick="sortTable(this, 3)">CMP</th>
+                        <th class="sortable" onclick="sortTable(this, 4)">3M Return</th>
+                        <th class="sortable" onclick="sortTable(this, 5)">6M Return</th>
+                        <th class="sortable" onclick="sortTable(this, 6)">1Y Return</th>
+                        <th class="sortable" onclick="sortTable(this, 7)">3Y Return</th>
+                        <th class="sortable" onclick="sortTable(this, 8)">Trend Status</th>
                         <th>Chart</th>
                     </tr>
                 </thead>
@@ -1811,11 +1833,12 @@ class HTMLReportGenerator:
                     <tr>
                         <th class="sortable" onclick="sortTable(this, 0)">Stock / Company</th>
                         <th class="sortable" onclick="sortTable(this, 1)">Setup Type</th>
-                        <th class="sortable" onclick="sortTable(this, 2)">CMP</th>
-                        <th class="sortable" onclick="sortTable(this, 3)">Target 3M</th>
-                        <th class="sortable" onclick="sortTable(this, 4)">Target 1Y</th>
-                        <th class="sortable" onclick="sortTable(this, 5)">Stop Loss</th>
-                        <th class="sortable" onclick="sortTable(this, 6)">Monitoring Status</th>
+                        <th class="sortable" onclick="sortTable(this, 2)">CIO Rating</th>
+                        <th class="sortable" onclick="sortTable(this, 3)">CMP</th>
+                        <th class="sortable" onclick="sortTable(this, 4)">Target 3M</th>
+                        <th class="sortable" onclick="sortTable(this, 5)">Target 1Y</th>
+                        <th class="sortable" onclick="sortTable(this, 6)">Stop Loss</th>
+                        <th class="sortable" onclick="sortTable(this, 7)">Monitoring Status</th>
                         <th>Institutional Thesis</th>
                         <th>Chart</th>
                     </tr>
@@ -2805,8 +2828,8 @@ class HTMLReportGenerator:
                 const cellA = rowA.children[colIdx]?.innerText?.trim() || '';
                 const cellB = rowB.children[colIdx]?.innerText?.trim() || '';
 
-                const cleanA = cellA.replace(/[₹,%+x]/g, '').trim();
-                const cleanB = cellB.replace(/[₹,%+x]/g, '').trim();
+                const cleanA = cellA.replace(/[₹,%+x⭐]/g, '').split('/')[0].trim();
+                const cleanB = cellB.replace(/[₹,%+x⭐]/g, '').split('/')[0].trim();
                 const numA = parseFloat(cleanA);
                 const numB = parseFloat(cleanB);
 
