@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24 15:33:01",
+  "timestamp": "2026-11-24 15:36:28",
   "indices": {
     "NIFTY 50": {
       "value": 25349.65,
@@ -95,14 +95,14 @@
         "change_pct": 3.91
       },
       "FTSE 100": {
-        "price": 10478.26,
-        "change": -2.56,
-        "change_pct": -0.02
+        "price": 10480.88,
+        "change": 0.06,
+        "change_pct": 0.0
       },
       "DAX": {
-        "price": 25230.76,
-        "change": -106.51,
-        "change_pct": -0.42
+        "price": 25233.11,
+        "change": -104.16,
+        "change_pct": -0.41
       },
       "Hang Seng": {
         "price": 22219.65,
@@ -112,9 +112,9 @@
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 86.63,
-        "change": -0.05,
-        "change_pct": -0.06
+        "price": 86.57,
+        "change": -0.11,
+        "change_pct": -0.13
       },
       "US 10-Yr Yield (%)": {
         "price": 4.92,
@@ -122,13 +122,13 @@
         "change_pct": 0.12
       },
       "US Dollar Index (DXY)": {
-        "price": 104.19,
-        "change": -0.13,
-        "change_pct": -0.12
+        "price": 104.15,
+        "change": -0.17,
+        "change_pct": -0.16
       },
       "Gold ($/oz)": {
-        "price": 3621.5,
-        "change": -29.9,
+        "price": 3621.3,
+        "change": -30.1,
         "change_pct": -0.82
       },
       "USD / INR": {
@@ -141,7 +141,7 @@
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.92%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-24 15:33:16"
+    "timestamp": "2026-11-24 15:36:43"
   },
   "market_regime": {
     "nifty_cmp": 25349.65,
