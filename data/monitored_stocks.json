@@ -18,8 +18,8 @@
       "US FDA non-critical inspection clearance",
       "Non-ARV API diversification"
     ],
-    "cmp": 2338.0,
-    "day_change_pct": 5.32,
+    "cmp": 2370.7,
+    "day_change_pct": 3.32,
     "fifty_two_week_high": 2488.0,
     "fifty_two_week_low": 917.95,
     "dist_from_52w_high": 6.0
@@ -42,8 +42,8 @@
       "IT Hardware PLI 2.0 contract executions",
       "Operating leverage in high-volume smartphone segment"
     ],
-    "cmp": 13081.0,
-    "day_change_pct": 1.48,
+    "cmp": 13390.0,
+    "day_change_pct": 2.06,
     "fifty_two_week_high": 15775.0,
     "fifty_two_week_low": 9600.0,
     "dist_from_52w_high": 17.1
@@ -66,8 +66,8 @@
       "Star Bazaar grocery retail turning EBITDA positive",
       "Rapid store addition pace accelerating market share"
     ],
-    "cmp": 3176.3,
-    "day_change_pct": -0.85,
+    "cmp": 3208.0,
+    "day_change_pct": -1.48,
     "fifty_two_week_high": 4417.8,
     "fifty_two_week_low": 2183.667,
     "dist_from_52w_high": 28.1
@@ -90,8 +90,8 @@
       "High margin offshore/C&I order inflows",
       "Clean balance sheet driving institutional re-rating"
     ],
-    "cmp": 37.19,
-    "day_change_pct": -0.64,
+    "cmp": 35.86,
+    "day_change_pct": -2.98,
     "fifty_two_week_high": 60.45,
     "fifty_two_week_low": 33.15,
     "dist_from_52w_high": 38.5
@@ -114,8 +114,8 @@
       "Execution of massive Kavach railway safety system electronics",
       "Global aerospace export certifications"
     ],
-    "cmp": 2858.0,
-    "day_change_pct": -4.09,
+    "cmp": 2809.0,
+    "day_change_pct": -3.47,
     "fifty_two_week_high": 6202.0,
     "fifty_two_week_low": 2744.0,
     "dist_from_52w_high": 53.9
@@ -138,8 +138,8 @@
       "Monetization of StAR MF platform transaction fees",
       "New commodity and interest rate derivative product rollouts"
     ],
-    "cmp": 3864.9,
-    "day_change_pct": -0.58,
+    "cmp": 3757.0,
+    "day_change_pct": -0.64,
     "fifty_two_week_high": 4446.8,
     "fifty_two_week_low": 2377.4,
     "dist_from_52w_high": 13.1
@@ -162,8 +162,8 @@
       "Export agreements with friendly foreign nations (SE Asia / Africa)",
       "Fifth-generation AMCA fighter jet development milestone"
     ],
-    "cmp": 4727.0,
-    "day_change_pct": -1.29,
+    "cmp": 4780.0,
+    "day_change_pct": -0.6,
     "fifty_two_week_high": 5149.9,
     "fifty_two_week_low": 3479.1,
     "dist_from_52w_high": 8.2
@@ -186,8 +186,8 @@
       "Kakinada mega-facility commercial batch commencement",
       "EBITDA margins reverting to historical 38-40% band"
     ],
-    "cmp": 11150.0,
-    "day_change_pct": 0.63,
+    "cmp": 11203.0,
+    "day_change_pct": 0.2,
     "fifty_two_week_high": 11824.0,
     "fifty_two_week_low": 5647.5,
     "dist_from_52w_high": 5.7
@@ -209,7 +209,9 @@
       "TCS platform software cost savings expansion",
       "Institutional and FPI commodity participation growth",
       "New electricity and base metal index derivative launches"
-    ]
+    ],
+    "cmp": 3581.6,
+    "day_change_pct": 1.32
   },
   {
     "symbol": "PERSISTENT",
@@ -228,7 +230,9 @@
       "Enterprise GenAI adoption contracts",
       "BFSI tech modernization spending rebound",
       "High margin software IP solutions ramp-up"
-    ]
+    ],
+    "cmp": 6282.5,
+    "day_change_pct": 2.59
   },
   {
     "symbol": "COFORGE",
@@ -247,7 +251,9 @@
       "Cigniti acquisition revenue synergies realization",
       "Airline and airport digital modernization deals",
       "BFSI generative AI testing contracts scale"
-    ]
+    ],
+    "cmp": 2142.3,
+    "day_change_pct": 2.66
   },
   {
     "symbol": "KFINTECH",
@@ -266,7 +272,9 @@
       "International asset management outsourcing expansion",
       "Record new mutual fund folio and SIP inflows",
       "Alternative Investment Fund (AIF) administration fees growth"
-    ]
+    ],
+    "cmp": 929.75,
+    "day_change_pct": -0.55
   },
   {
     "symbol": "SONACOMS",
@@ -285,7 +293,9 @@
       "Global OEM electric passenger vehicle production ramp-up",
       "Execution of new electric two-wheeler and three-wheeler motor orders",
       "North America and Europe supply agreement expansions"
-    ]
+    ],
+    "cmp": 886.0,
+    "day_change_pct": -0.73
   },
   {
     "symbol": "CDSL",
@@ -304,7 +314,9 @@
       "Record monthly demat account opening momentum in India",
       "Surge in IPO listings driving corporate fee revenues",
       "Insurance electronic depository (e-IA) policy adoption"
-    ]
+    ],
+    "cmp": 1395.0,
+    "day_change_pct": -2.45
   },
   {
     "symbol": "BEL",
@@ -323,7 +335,9 @@
       "Quick Reaction Surface-to-Air Missile (QRSAM) order finalization",
       "Railway Kavach collision avoidance electronics rollout",
       "Defense export orders expansion to Southeast Asia and Middle East"
-    ]
+    ],
+    "cmp": 395.8,
+    "day_change_pct": -1.54
   },
   {
     "symbol": "TITAN",
@@ -342,6 +356,8 @@
       "Gold import duty reduction boosting retail volume growth",
       "Wedding season demand acceleration across Tanishq stores",
       "International Tanishq store additions in North America"
-    ]
+    ],
+    "cmp": 4680.0,
+    "day_change_pct": 1.3
   }
 ]

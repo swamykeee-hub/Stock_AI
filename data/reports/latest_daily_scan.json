@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24 17:38:56",
+  "timestamp": "2026-11-24 17:44:32",
   "indices": {
     "NIFTY 50": {
       "value": 25349.65,
@@ -95,14 +95,14 @@
         "change_pct": 3.91
       },
       "FTSE 100": {
-        "price": 10470.1,
-        "change": -10.72,
-        "change_pct": -0.1
+        "price": 10467.06,
+        "change": -13.76,
+        "change_pct": -0.13
       },
       "DAX": {
-        "price": 25174.02,
-        "change": -163.25,
-        "change_pct": -0.64
+        "price": 25168.27,
+        "change": -169.0,
+        "change_pct": -0.67
       },
       "Hang Seng": {
         "price": 22219.65,
@@ -112,9 +112,9 @@
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 87.06,
-        "change": 0.38,
-        "change_pct": 0.44
+        "price": 87.14,
+        "change": 0.46,
+        "change_pct": 0.53
       },
       "US 10-Yr Yield (%)": {
         "price": 4.92,
@@ -122,14 +122,14 @@
         "change_pct": 0.12
       },
       "US Dollar Index (DXY)": {
-        "price": 103.95,
-        "change": -0.37,
-        "change_pct": -0.35
+        "price": 103.98,
+        "change": -0.34,
+        "change_pct": -0.33
       },
       "Gold ($/oz)": {
-        "price": 3634.8,
-        "change": -16.6,
-        "change_pct": -0.46
+        "price": 3626.9,
+        "change": -24.5,
+        "change_pct": -0.67
       },
       "USD / INR": {
         "price": 92.9,
@@ -141,7 +141,7 @@
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.92%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-24 17:39:17"
+    "timestamp": "2026-11-24 17:44:47"
   },
   "market_regime": {
     "nifty_cmp": 25349.65,
@@ -3284,7 +3284,7 @@
         "Non-ARV API diversification"
       ],
       "cmp": 2370.7,
-      "day_change_pct": 5.32,
+      "day_change_pct": 3.32,
       "fifty_two_week_high": 2488.0,
       "fifty_two_week_low": 917.95,
       "dist_from_52w_high": 6.0
@@ -3308,7 +3308,7 @@
         "Operating leverage in high-volume smartphone segment"
       ],
       "cmp": 13390.0,
-      "day_change_pct": 1.48,
+      "day_change_pct": 2.06,
       "fifty_two_week_high": 15775.0,
       "fifty_two_week_low": 9600.0,
       "dist_from_52w_high": 17.1
@@ -3332,7 +3332,7 @@
         "Rapid store addition pace accelerating market share"
       ],
       "cmp": 3208.0,
-      "day_change_pct": -0.85,
+      "day_change_pct": -1.48,
       "fifty_two_week_high": 4417.8,
       "fifty_two_week_low": 2183.667,
       "dist_from_52w_high": 28.1
@@ -3356,7 +3356,7 @@
         "Clean balance sheet driving institutional re-rating"
       ],
       "cmp": 35.86,
-      "day_change_pct": -0.64,
+      "day_change_pct": -2.98,
       "fifty_two_week_high": 60.45,
       "fifty_two_week_low": 33.15,
       "dist_from_52w_high": 38.5
@@ -3380,7 +3380,7 @@
         "Global aerospace export certifications"
       ],
       "cmp": 2809.0,
-      "day_change_pct": -4.09,
+      "day_change_pct": -3.47,
       "fifty_two_week_high": 6202.0,
       "fifty_two_week_low": 2744.0,
       "dist_from_52w_high": 53.9
@@ -3404,7 +3404,7 @@
         "New commodity and interest rate derivative product rollouts"
       ],
       "cmp": 3757.0,
-      "day_change_pct": -0.58,
+      "day_change_pct": -0.64,
       "fifty_two_week_high": 4446.8,
       "fifty_two_week_low": 2377.4,
       "dist_from_52w_high": 13.1
@@ -3428,7 +3428,7 @@
         "Fifth-generation AMCA fighter jet development milestone"
       ],
       "cmp": 4780.0,
-      "day_change_pct": -1.29,
+      "day_change_pct": -0.6,
       "fifty_two_week_high": 5149.9,
       "fifty_two_week_low": 3479.1,
       "dist_from_52w_high": 8.2
@@ -3452,7 +3452,7 @@
         "EBITDA margins reverting to historical 38-40% band"
       ],
       "cmp": 11203.0,
-      "day_change_pct": 0.63,
+      "day_change_pct": 0.2,
       "fifty_two_week_high": 11824.0,
       "fifty_two_week_low": 5647.5,
       "dist_from_52w_high": 5.7
@@ -3475,7 +3475,8 @@
         "Institutional and FPI commodity participation growth",
         "New electricity and base metal index derivative launches"
       ],
-      "cmp": 3581.6
+      "cmp": 3581.6,
+      "day_change_pct": 1.32
     },
     {
       "symbol": "PERSISTENT",
@@ -3495,7 +3496,8 @@
         "BFSI tech modernization spending rebound",
         "High margin software IP solutions ramp-up"
       ],
-      "cmp": 6282.5
+      "cmp": 6282.5,
+      "day_change_pct": 2.59
     },
     {
       "symbol": "COFORGE",
@@ -3515,7 +3517,8 @@
         "Airline and airport digital modernization deals",
         "BFSI generative AI testing contracts scale"
       ],
-      "cmp": 2142.3
+      "cmp": 2142.3,
+      "day_change_pct": 2.66
     },
     {
       "symbol": "KFINTECH",
@@ -3535,7 +3538,8 @@
         "Record new mutual fund folio and SIP inflows",
         "Alternative Investment Fund (AIF) administration fees growth"
       ],
-      "cmp": 929.75
+      "cmp": 929.75,
+      "day_change_pct": -0.55
     },
     {
       "symbol": "SONACOMS",
@@ -3555,7 +3559,8 @@
         "Execution of new electric two-wheeler and three-wheeler motor orders",
         "North America and Europe supply agreement expansions"
       ],
-      "cmp": 886.0
+      "cmp": 886.0,
+      "day_change_pct": -0.73
     },
     {
       "symbol": "CDSL",
@@ -3575,7 +3580,8 @@
         "Surge in IPO listings driving corporate fee revenues",
         "Insurance electronic depository (e-IA) policy adoption"
       ],
-      "cmp": 1395.0
+      "cmp": 1395.0,
+      "day_change_pct": -2.45
     },
     {
       "symbol": "BEL",
@@ -3595,7 +3601,8 @@
         "Railway Kavach collision avoidance electronics rollout",
         "Defense export orders expansion to Southeast Asia and Middle East"
       ],
-      "cmp": 395.8
+      "cmp": 395.8,
+      "day_change_pct": -1.54
     },
     {
       "symbol": "TITAN",
@@ -3615,7 +3622,8 @@
         "Wedding season demand acceleration across Tanishq stores",
         "International Tanishq store additions in North America"
       ],
-      "cmp": 4680.0
+      "cmp": 4680.0,
+      "day_change_pct": 1.3
     }
   ],
   "mutual_funds": [
