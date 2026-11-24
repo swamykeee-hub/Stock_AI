@@ -1,7 +1,7 @@
 {
   "score": 7.5,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        39116\n        \n          Cr.",
+    "market_cap_cr": "\u20b9\n        39118\n        \n          Cr.",
     "current_price": "\u20b9\n        2356",
     "stock_pe": "86.2",
     "book_value": "\u20b9\n        78.9",
@@ -18,7 +18,7 @@
     "Company has a good return on equity (ROE) track record: 3 Years ROE 42.2%"
   ],
   "red_flags": [
-    "Stock is trading at 29.8 times its book value",
+    "Stock is trading at 29.9 times its book value",
     "Promoter holding has decreased over last quarter: -0.42%",
     "Earnings include an other income of Rs.203 Cr."
   ]

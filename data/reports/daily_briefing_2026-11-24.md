@@ -1,5 +1,5 @@
 # Daily Indian Market AI Intelligence Briefing
-**Generated:** 2026-11-24 09:15:02 | **Powered by Stock AI Agent (CIO Intelligence)**
+**Generated:** 2026-11-24 18:00:02 | **Powered by Stock AI Agent (CIO Intelligence)**
 
 ---
 ## 1. Domestic & Global Market Overview
@@ -24,25 +24,25 @@
 ### Global Macro & Commodities
 | Commodity / Index | Price | Change (%) |
 | :--- | :--- | :--- |
-| **Brent Crude ($/bbl)** | 86.53 | -0.17% |
+| **Brent Crude ($/bbl)** | 86.85 | +0.20% |
 | **US 10-Yr Yield (%)** | 4.92 | +0.12% |
-| **US Dollar Index (DXY)** | 104.26 | -0.05% |
-| **Gold ($/oz)** | 3630.2 | -0.58% |
+| **US Dollar Index (DXY)** | 103.94 | -0.36% |
+| **Gold ($/oz)** | 3623.7 | -0.76% |
 | **USD / INR** | 92.9 | +0.24% |
 
 ## 2. Multi-Timeframe Super-Trend & Momentum Leaders (3M / 1Y / 3Y)
 | Symbol | CMP (₹) | 3M Return | 6M Return | 1Y Return | 3Y Return | Trend Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **LAURUSLABS** | ₹2370.7 | +20.4% | +70.0% | +134.2% | +514.6% | 🚀 Multibagger Compounder (+100%+) |
+| **SYRMA** | ₹1491.1 | +-6.2% | +17.7% | +101.8% | +122.6% | 🚀 Multibagger Compounder (+100%+) |
+| **PARAS** | ₹1257.9 | +-12.4% | +14.7% | +88.5% | +68.7% | 📈 Positive Trend |
+| **CYIENTDLM** | ₹776.7 | +-14.1% | +72.7% | +81.3% | +19.1% | 📈 Positive Trend |
+| **SONACOMS** | ₹886.0 | +12.4% | +49.4% | +79.9% | +60.3% | 🎯 Near Breakout Zone |
+| **MCX** | ₹3581.6 | +9.3% | +25.5% | +76.2% | +447.1% | 🏛️ Multi-Year Structural Bull |
 | **DIVISLAB** | ₹11203.0 | +20.2% | +68.8% | +74.3% | +203.0% | 🏛️ Multi-Year Structural Bull |
+| **DATAPATTNS** | ₹4225.0 | +-12.5% | +-7.1% | +62.9% | +111.0% | 📈 Positive Trend |
 | **APARINDS** | ₹14184.0 | +-18.9% | +-6.8% | +57.2% | +162.5% | 📈 Positive Trend |
 | **SOLARINDS** | ₹18178.0 | +-18.4% | +6.0% | +47.7% | +164.0% | 📈 Positive Trend |
-| **BHEL** | ₹415.7 | +-3.5% | +9.8% | +45.8% | +129.0% | 📈 Positive Trend |
-| **BSE** | ₹3757.0 | +11.0% | +-7.0% | +37.4% | +387.1% | 🏛️ Multi-Year Structural Bull |
-| **MOTHERSON** | ₹165.76 | +0.8% | +15.6% | +36.7% | +153.1% | 🎯 Near Breakout Zone |
-| **HAL** | ₹4780.0 | +-2.5% | +14.0% | +11.1% | +73.1% | 📈 Positive Trend |
-| **AMBER** | ₹6850.0 | +-8.3% | +-12.4% | +4.4% | +121.5% | 📈 Positive Trend |
-| **SUNPHARMA** | ₹1860.0 | +-2.1% | +4.4% | +3.0% | +50.5% | 📈 Positive Trend |
 
 ## 3. Agentic AI Monitored Radar (Future Setups)
 | Symbol | Setup Type | Status | CMP (₹) | Target (3M) | Target (1Y) | Stop Loss |
@@ -55,18 +55,26 @@
 | **BSE** | Market Share Re-Rating & Derivative Boom | Pullback Buy Zone near 20-EMA | ₹3757.0 | ₹4400.0 | ₹5200.0 | ₹3520.0 |
 | **HAL** | Multi-Year Indigenization Super-Cycle | Consolidation Accumulation (₹4,850 - ₹5,000) | ₹4780.0 | ₹5700.0 | ₹6800.0 | ₹4620.0 |
 | **DIVISLAB** | Big Pharma Outsourcing Breakout | Momentum Breakout above ₹10,200 | ₹11203.0 | ₹11800.0 | ₹13500.0 | ₹9700.0 |
+| **MCX** | Monopoly Commodity Growth & Tech Migration | Active Pullback near 20-Day EMA (₹3,500 - ₹3,560) | ₹3581.6 | ₹3880.0 | ₹4400.0 | ₹3350.0 |
+| **PERSISTENT** | AI Engineering Outperformance & Margin Expansion | Stage-2 Bull Mark-Up Breakout Watch | ₹6282.5 | ₹6600.0 | ₹7400.0 | ₹5950.0 |
+| **COFORGE** | High-Growth Cloud & AI Transformation Breakout | Pullback Entry near 20-EMA (₹2,050 - ₹2,120) | ₹2142.3 | ₹2280.0 | ₹2600.0 | ₹2040.0 |
+| **KFINTECH** | Digital Mutual Fund & Global Asset Servicing Tollgate | Accumulate at 20/50 EMA Confluence (₹910 - ₹930) | ₹929.75 | ₹995.0 | ₹1150.0 | ₹880.0 |
+| **SONACOMS** | Global EV Traction Motor & Drivetrain Scale | Resting directly on 20-Day EMA (₹880 - ₹890) | ₹886.0 | ₹935.0 | ₹1080.0 | ₹840.0 |
+| **CDSL** | Demat Account Monopoly & Annuity Cash Machine | Pullback Buy Zone near 20-EMA (₹1,370 - ₹1,400) | ₹1395.0 | ₹1485.0 | ₹1720.0 | ₹1325.0 |
+| **BEL** | Defense Modernization Sovereign Compounder | Sitting right on 20/50 EMA (₹390 - ₹396) | ₹395.8 | ₹425.0 | ₹480.0 | ₹375.0 |
+| **TITAN** | Dual EMA Support & Consumption Monopoly | Converging on 20/50 EMA (₹4,650 - ₹4,700) | ₹4680.0 | ₹5000.0 | ₹5400.0 | ₹4490.0 |
 
 ## 4. Top Bullish Stock Picks (360° Verified)
 | Symbol | CMP (₹) | Conviction | RSI | Target 1 (₹) | Stop Loss (₹) | R:R |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **PERSISTENT** | ₹6282.5 | 8.0/10 | 62.67 | ₹6597.93 | ₹6045.93 | 1:1.33 |
-| **ACUTAAS** | ₹3875.0 | 7.2/10 | 39.71 | ₹4135.99 | ₹3606.64 | 1:1.33 |
+| **ACUTAAS** | ₹3875.0 | 7.2/10 | 48.84 | ₹4177.27 | ₹3648.3 | 1:1.33 |
 | **BSE** | ₹3757.0 | 7.1/10 | 66.53 | ₹4010.36 | ₹3566.98 | 1:1.33 |
-| **ACE** | ₹1187.45 | 7.1/10 | 88.13 | ₹1262.64 | ₹1101.14 | 1:1.33 |
+| **ACE** | ₹1187.45 | 7.1/10 | 87.6 | ₹1274.93 | ₹1121.84 | 1:1.33 |
 | **TRENT** | ₹3208.0 | 7.0/10 | 67.67 | ₹3365.16 | ₹3090.13 | 1:1.33 |
 | **DIVISLAB** | ₹11203.0 | 7.0/10 | 73.12 | ₹11925.79 | ₹10660.91 | 1:1.33 |
+| **ACMESOLAR** | ₹411.6 | 6.7/10 | 46.41 | ₹438.48 | ₹391.44 | 1:1.33 |
 | **LAURUSLABS** | ₹2370.7 | 6.5/10 | 51.65 | ₹2540.27 | ₹2243.52 | 1:1.33 |
-| **ABDL** | ₹802.85 | 6.5/10 | 81.63 | ₹857.14 | ₹747.17 | 1:1.33 |
 
 ## 5. Curated Mutual Fund Recommendations & Rationale
 | Fund Name | Category | 1Y Return | 3Y CAGR | 5Y CAGR | Sharpe | Key Rationale |
@@ -80,16 +88,19 @@
 ## 6. Indian IPO Updates & GMP
 | IPO Name | Status | Price Band | GMP (%) | Verdict |
 | :--- | :--- | :--- | :--- | :--- |
-| **Crystal Crop Protection** | Closed | ₹259.00 - ₹272.00 | +5.2% | ℹ️ CAUTIOUS / LONG TERM ONLY |
+| **Crystal Crop Protection** | Closed | ₹259.00 - ₹272.00 | +5.7% | ℹ️ CAUTIOUS / LONG TERM ONLY |
 | **Watrana Rentals** | Closed | ₹232.00 - ₹245.00 | +16.3% | ✅ APPLY (Moderate Listing Gain) |
 | **Mahanadi Coalfields** | Closed | ₹129.00 - ₹136.00 | +0.0% | ⏸️ AVOID / WATCH SUBSCRIPTION |
 | **Shree Siddhivinayak Greentech Industries** | Upcoming | ₹130.00 - ₹142.00 | +7.0% | ℹ️ CAUTIOUS / LONG TERM ONLY |
-| **Foodlink F&B Holdings** | Upcoming | ₹181.00 - ₹191.00 | +7.8% | ℹ️ CAUTIOUS / LONG TERM ONLY |
+| **Foodlink F&B Holdings** | Upcoming | ₹181.00 - ₹191.00 | +8.4% | ℹ️ CAUTIOUS / LONG TERM ONLY |
+| **Airpro Technology** | Upcoming | ₹99.00 | +0.0% | ⏸️ AVOID / WATCH SUBSCRIPTION |
 | **Integris Medtech** | Upcoming | TBA | +0.0% | ⏸️ AVOID / WATCH SUBSCRIPTION |
 | **A J Packaging** | Upcoming | ₹175.00 - ₹180.00 | +11.1% | ℹ️ CAUTIOUS / LONG TERM ONLY |
-| **Matangi Rubber** | Upcoming | ₹163.00 - ₹172.00 | +12.2% | ℹ️ CAUTIOUS / LONG TERM ONLY |
+| **Matangi Rubber** | Upcoming | ₹163.00 - ₹172.00 | +12.5% | ℹ️ CAUTIOUS / LONG TERM ONLY |
 | **Monomark Engineering** | Upcoming | TBA | +0.0% | ⏸️ AVOID / WATCH SUBSCRIPTION |
+| **Encube Ethicals** | Upcoming | TBA | +0.0% | ⏸️ AVOID / WATCH SUBSCRIPTION |
 | **Hindustan Coca Cola** | Upcoming | TBA | +0.0% | ⏸️ AVOID / WATCH SUBSCRIPTION |
+| **Milestone Gears** | Upcoming | TBA | +0.0% | ⏸️ AVOID / WATCH SUBSCRIPTION |
 | **Antala Industries** | Recently Listed | ₹66.00 | +-21.2% | 🔴 DISCOUNT LISTING |
 | **Vedant Poly Fabs** | Recently Listed | ₹94.00 | +0.0% | 🔴 DISCOUNT LISTING |
 | **Johnsoncab Electricals** | Recently Listed | ₹200.00 | +19.0% | ✅ POSITIVE LISTING |

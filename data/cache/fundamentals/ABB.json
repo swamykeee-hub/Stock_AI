@@ -1,9 +1,9 @@
 {
   "score": 7.5,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        145960\n        \n          Cr.",
+    "market_cap_cr": "\u20b9\n        145549\n        \n          Cr.",
     "current_price": "\u20b9\n        6868",
-    "stock_pe": "92.8",
+    "stock_pe": "92.6",
     "book_value": "\u20b9\n        441",
     "dividend_yield_pct": "0.57\n        \n          %",
     "roce_pct": "29.9\n        \n          %",
@@ -20,6 +20,6 @@
   "red_flags": [
     "Stock is trading at 15.6 times its book value",
     "Earnings include an other income of Rs.1,796 Cr.",
-    "Premium Valuation (P/E: 92.8x)"
+    "Premium Valuation (P/E: 92.6x)"
   ]
 }

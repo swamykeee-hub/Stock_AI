@@ -1,7 +1,7 @@
 {
   "score": 3.2,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        442985\n        \n          Cr.",
+    "market_cap_cr": "\u20b9\n        442130\n        \n          Cr.",
     "current_price": "\u20b9\n        1919",
     "stock_pe": "136",
     "book_value": "\u20b9\n        272",
@@ -15,7 +15,7 @@
     "Company has been maintaining a healthy dividend payout of 74.3%"
   ],
   "red_flags": [
-    "Stock is trading at 7.05 times its book value",
+    "Stock is trading at 7.06 times its book value",
     "Company has low interest coverage ratio.",
     "Company has a low return on equity of 6.02% over last 3 years."
   ]

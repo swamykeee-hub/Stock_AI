@@ -1,7 +1,7 @@
 {
   "score": 2.2,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        177225\n        \n          Cr.",
+    "market_cap_cr": "\u20b9\n        176661\n        \n          Cr.",
     "current_price": "\u20b9\n        166",
     "stock_pe": "117",
     "book_value": "\u20b9\n        36.7",
@@ -17,7 +17,7 @@
     "Company has been maintaining a healthy dividend payout of 43.5%"
   ],
   "red_flags": [
-    "Stock is trading at 4.53 times its book value",
+    "Stock is trading at 4.52 times its book value",
     "Company has a low return on equity of 4.08% over last 3 years.",
     "Earnings include an other income of Rs.821 Cr."
   ]
