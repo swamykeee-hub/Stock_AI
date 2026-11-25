@@ -1,13 +1,13 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "is_consolidated": true,
   "score": 8.2,
   "quality_score": 6.8,
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "30105",
-    "current_price": "11510",
+    "market_cap_cr": "30070",
+    "current_price": "11497",
     "stock_pe": "56.7",
     "book_value": "2107",
     "dividend_yield_pct": "0.1",
@@ -16,8 +16,8 @@
     "debt_to_equity": "0.71",
     "face_value": "5",
     "pb_ratio": "5.46",
-    "market_cap_num": 30105.0,
-    "current_price_num": 11510.0,
+    "market_cap_num": 30070.0,
+    "current_price_num": 11497.0,
     "pe_num": 56.7,
     "book_value_num": 2107.0,
     "roce_num": 13.9,
@@ -40,6 +40,7 @@
   },
   "inflection": {
     "qtr_sales_yoy_pct": 47.0,
+    "qtr_pat_qoq_pct": 1.3,
     "qtr_pat_yoy_pct": 68.1,
     "qtr_pat_prev_yoy_pct": 115.7,
     "qtr_eps_yoy_pct": 53.8,
@@ -52,6 +53,9 @@
   "balance_inst": {
     "is_financial_sector": false,
     "debt_to_equity": 0.71,
+    "roce_latest_tbl_pct": 14.0,
+    "roce_prev_pct": 12.0,
+    "roce_delta_pct": 2.0,
     "cwip_cr": 733.0,
     "cwip_growth_pct": 91.9,
     "cwip_to_fixed_assets_pct": 14.1,
@@ -60,6 +64,8 @@
     "cfo_ebitda_pct": 50.0,
     "cfo_to_pat_3y": 1.43,
     "promoter_pct": 42.41,
+    "promoter_qoq_delta_pct": 0.0,
+    "promoter_4q_delta_pct": -6.29,
     "promoter_pledge_pct": 0.0,
     "fii_pct": 16.46,
     "dii_pct": 33.63,
@@ -71,8 +77,8 @@
     "Cash Generative Profits (CFO/EBITDA: 50%)",
     "Explosive Quarterly PAT Surge (+68.1% YoY)",
     "Smart Money Accumulation (FII+DII +10.3% over 4Q)",
-    "Capex Capacity Runway Active (CWIP: \u20b9733 Cr)",
-    "Deep GARP Value (PEG: 0.55x)"
+    "Expanding ROCE Efficiency (+2.0% YoY)",
+    "Capex Capacity Runway Active (CWIP: \u20b9733 Cr)"
   ],
   "red_flags": [
     "Company has a low return on equity of 13.2% over last 3 years.",

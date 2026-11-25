@@ -1,13 +1,13 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "is_consolidated": false,
-  "score": 4.4,
+  "score": 4.7,
   "quality_score": 2.0,
-  "inflection_score": 7.1,
+  "inflection_score": 8.0,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "444676",
-    "current_price": "1930",
+    "market_cap_cr": "445816",
+    "current_price": "1935",
     "stock_pe": "137",
     "book_value": "272",
     "dividend_yield_pct": "0.39",
@@ -15,14 +15,14 @@
     "roe_pct": "3.72",
     "debt_to_equity": "0.87",
     "face_value": "2",
-    "pb_ratio": "7.10",
-    "market_cap_num": 444676.0,
-    "current_price_num": 1930.0,
+    "pb_ratio": "7.11",
+    "market_cap_num": 445816.0,
+    "current_price_num": 1935.0,
     "pe_num": 137.0,
     "book_value_num": 272.0,
     "roce_num": 8.12,
     "roe_num": 3.72,
-    "pb_num": 7.1,
+    "pb_num": 7.11,
     "peg_ratio": "2.12",
     "peg_num": 2.12
   },
@@ -40,6 +40,7 @@
   },
   "inflection": {
     "qtr_sales_yoy_pct": 11.0,
+    "qtr_pat_qoq_pct": -39.6,
     "qtr_pat_yoy_pct": 64.5,
     "qtr_pat_prev_yoy_pct": 160.8,
     "qtr_eps_yoy_pct": 54.0,
@@ -52,6 +53,9 @@
   "balance_inst": {
     "is_financial_sector": false,
     "debt_to_equity": 0.87,
+    "roce_latest_tbl_pct": 8.0,
+    "roce_prev_pct": 9.0,
+    "roce_delta_pct": -1.0,
     "cwip_cr": 1359.0,
     "cwip_growth_pct": 19.6,
     "cwip_to_fixed_assets_pct": 12.2,
@@ -60,6 +64,8 @@
     "cfo_ebitda_pct": 117.0,
     "cfo_to_pat_3y": 2.35,
     "promoter_pct": 66.03,
+    "promoter_qoq_delta_pct": 0.0,
+    "promoter_4q_delta_pct": 0.14,
     "promoter_pledge_pct": 0.0,
     "fii_pct": 15.95,
     "dii_pct": 13.26,
@@ -70,6 +76,7 @@
   "strengths": [
     "Cash Generative Profits (CFO/EBITDA: 117%)",
     "Explosive Quarterly PAT Surge (+64.5% YoY)",
+    "Promoter Stake Increased (+0.14%)",
     "Company has been maintaining a healthy dividend payout of 74.3%"
   ],
   "red_flags": [

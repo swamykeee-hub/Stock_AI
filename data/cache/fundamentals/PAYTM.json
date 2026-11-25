@@ -1,13 +1,13 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "is_consolidated": true,
   "score": 6.8,
   "quality_score": 3.7,
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "110720",
-    "current_price": "1724",
+    "market_cap_cr": "110855",
+    "current_price": "1726",
     "stock_pe": "132",
     "book_value": "259",
     "dividend_yield_pct": "0",
@@ -16,8 +16,8 @@
     "debt_to_equity": "0.02",
     "face_value": "1",
     "pb_ratio": "6.66",
-    "market_cap_num": 110720.0,
-    "current_price_num": 1724.0,
+    "market_cap_num": 110855.0,
+    "current_price_num": 1726.0,
     "pe_num": 132.0,
     "book_value_num": 259.0,
     "roce_num": 4.96,
@@ -40,6 +40,7 @@
   },
   "inflection": {
     "qtr_sales_yoy_pct": 28.0,
+    "qtr_pat_qoq_pct": 2.3,
     "qtr_pat_yoy_pct": 971.4,
     "qtr_pat_prev_yoy_pct": 78.9,
     "qtr_eps_yoy_pct": 966.7,
@@ -52,6 +53,9 @@
   "balance_inst": {
     "is_financial_sector": false,
     "debt_to_equity": 0.02,
+    "roce_latest_tbl_pct": 5.0,
+    "roce_prev_pct": -10.0,
+    "roce_delta_pct": 15.0,
     "cwip_cr": 3.0,
     "cwip_growth_pct": -72.7,
     "cwip_to_fixed_assets_pct": 0.3,
@@ -60,6 +64,8 @@
     "cfo_ebitda_pct": -142.0,
     "cfo_to_pat_3y": null,
     "promoter_pct": null,
+    "promoter_qoq_delta_pct": 0.0,
+    "promoter_4q_delta_pct": 0.0,
     "promoter_pledge_pct": 0.0,
     "fii_pct": 43.52,
     "dii_pct": 29.51,
@@ -72,7 +78,7 @@
     "Sharp Margin Inflection (OPM +300 bps YoY)",
     "Explosive Quarterly PAT Surge (+971.4% YoY)",
     "Multi-Year Profit Compounding (3Y CAGR: +34%)",
-    "Deep GARP Value (PEG: 0.14x)"
+    "Expanding ROCE Efficiency (+15.0% YoY)"
   ],
   "red_flags": [
     "Sub-par ROCE (5.0%)",

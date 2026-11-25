@@ -1,13 +1,13 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "is_consolidated": true,
-  "score": 6.9,
+  "score": 7.2,
   "quality_score": 6.8,
-  "inflection_score": 6.5,
+  "inflection_score": 7.3,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "75099",
-    "current_price": "2534",
+    "market_cap_cr": "75040",
+    "current_price": "2532",
     "stock_pe": "31.8",
     "book_value": "516",
     "dividend_yield_pct": "0.36",
@@ -16,8 +16,8 @@
     "debt_to_equity": "0.35",
     "face_value": "10",
     "pb_ratio": "4.91",
-    "market_cap_num": 75099.0,
-    "current_price_num": 2534.0,
+    "market_cap_num": 75040.0,
+    "current_price_num": 2532.0,
     "pe_num": 31.8,
     "book_value_num": 516.0,
     "roce_num": 14.6,
@@ -40,6 +40,7 @@
   },
   "inflection": {
     "qtr_sales_yoy_pct": 35.0,
+    "qtr_pat_qoq_pct": -32.9,
     "qtr_pat_yoy_pct": 31.2,
     "qtr_pat_prev_yoy_pct": 75.7,
     "qtr_eps_yoy_pct": 31.1,
@@ -52,6 +53,9 @@
   "balance_inst": {
     "is_financial_sector": false,
     "debt_to_equity": 0.35,
+    "roce_latest_tbl_pct": 15.0,
+    "roce_prev_pct": 12.0,
+    "roce_delta_pct": 3.0,
     "cwip_cr": 2122.0,
     "cwip_growth_pct": 12.3,
     "cwip_to_fixed_assets_pct": 14.6,
@@ -60,6 +64,8 @@
     "cfo_ebitda_pct": 90.0,
     "cfo_to_pat_3y": 1.61,
     "promoter_pct": 50.26,
+    "promoter_qoq_delta_pct": 0.0,
+    "promoter_4q_delta_pct": 0.0,
     "promoter_pledge_pct": 0.0,
     "fii_pct": 15.2,
     "dii_pct": 22.5,
@@ -69,6 +75,7 @@
   },
   "strengths": [
     "Cash Generative Profits (CFO/EBITDA: 90%)",
+    "Expanding ROCE Efficiency (+3.0% YoY)",
     "Deep GARP Value (PEG: 0.69x)"
   ],
   "red_flags": [

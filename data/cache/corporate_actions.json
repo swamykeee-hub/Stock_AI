@@ -1,23 +1,13 @@
 {
-  "timestamp": "2026-11-25 09:16:18",
+  "timestamp": "2026-11-25 10:03:18",
   "dividends": [
-    {
-      "stock_name": "Vraj Iron",
-      "symbol": "VISL",
-      "event_type": "Dividend - Interim",
-      "ex_date": "25/11/2026",
-      "dividend_amount": "\u20b90.60",
-      "cmp": "\u20b9125.88",
-      "estimated_yield": "0.48%",
-      "announcement_date": "16/11/2026"
-    },
     {
       "stock_name": "Fusion CX",
       "symbol": "FCL01",
       "event_type": "Dividend - Final",
       "ex_date": "27/11/2026",
       "dividend_amount": "\u20b90.75",
-      "cmp": "\u20b9271.70",
+      "cmp": "\u20b9268.55",
       "estimated_yield": "0.28%",
       "announcement_date": "16/11/2026"
     }
@@ -28,16 +18,16 @@
       "stock_name": "Siemens Energy India",
       "symbol": "SEI11",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b92976.50",
-      "market_cap": "\u20b9105999.27 Cr"
+      "ltp": "\u20b92941.10",
+      "market_cap": "\u20b9104738.6 Cr"
     },
     {
       "date": "25 Nov",
       "stock_name": "RBM Infracon",
       "symbol": "RI45",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9202.50",
-      "market_cap": "\u20b9215.32 Cr"
+      "ltp": "\u20b9200.00",
+      "market_cap": "\u20b9212.66 Cr"
     },
     {
       "date": "25 Nov",
@@ -46,14 +36,6 @@
       "result_type": "Q2 FY26-27",
       "ltp": "\u20b980.15",
       "market_cap": "\u20b944.09 Cr"
-    },
-    {
-      "date": "25 Nov",
-      "stock_name": "Simbhaoli Sugars",
-      "symbol": "SSM04",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b96.24",
-      "market_cap": "\u20b925.76 Cr"
     }
   ],
   "splits_and_actions": [
@@ -106,5 +88,5 @@
       "announcement_date": "14/10/2026"
     }
   ],
-  "total_events": 12
+  "total_events": 10
 }

@@ -1,14 +1,14 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "is_consolidated": true,
-  "score": 5.5,
+  "score": 5.7,
   "quality_score": 6.8,
-  "inflection_score": 5.2,
+  "inflection_score": 5.8,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "31798",
-    "current_price": "2669",
-    "stock_pe": "58.3",
+    "market_cap_cr": "31814",
+    "current_price": "2670",
+    "stock_pe": "58.4",
     "book_value": "460",
     "dividend_yield_pct": "0.52",
     "roce_pct": "13.9",
@@ -16,15 +16,15 @@
     "debt_to_equity": "0.53",
     "face_value": "2",
     "pb_ratio": "5.80",
-    "market_cap_num": 31798.0,
-    "current_price_num": 2669.0,
-    "pe_num": 58.3,
+    "market_cap_num": 31814.0,
+    "current_price_num": 2670.0,
+    "pe_num": 58.4,
     "book_value_num": 460.0,
     "roce_num": 13.9,
     "roe_num": 12.0,
     "pb_num": 5.8,
-    "peg_ratio": "5.30",
-    "peg_num": 5.3
+    "peg_ratio": "5.31",
+    "peg_num": 5.31
   },
   "ranges": {
     "sales_cagr_3y": 10.0,
@@ -40,6 +40,7 @@
   },
   "inflection": {
     "qtr_sales_yoy_pct": 11.0,
+    "qtr_pat_qoq_pct": 413.6,
     "qtr_pat_yoy_pct": -5.0,
     "qtr_pat_prev_yoy_pct": -85.4,
     "qtr_eps_yoy_pct": -4.3,
@@ -52,6 +53,9 @@
   "balance_inst": {
     "is_financial_sector": false,
     "debt_to_equity": 0.53,
+    "roce_latest_tbl_pct": 14.0,
+    "roce_prev_pct": 14.0,
+    "roce_delta_pct": 0.0,
     "cwip_cr": 1798.0,
     "cwip_growth_pct": 24.7,
     "cwip_to_fixed_assets_pct": 57.9,
@@ -60,6 +64,8 @@
     "cfo_ebitda_pct": 86.0,
     "cfo_to_pat_3y": 0.94,
     "promoter_pct": 61.99,
+    "promoter_qoq_delta_pct": 0.0,
+    "promoter_4q_delta_pct": 0.0,
     "promoter_pledge_pct": 0.0,
     "fii_pct": 11.3,
     "dii_pct": 14.94,
@@ -72,7 +78,7 @@
     "Capex Capacity Runway Active (CWIP: \u20b91,798 Cr)"
   ],
   "red_flags": [
-    "Expensive Valuation vs Growth (PEG: 5.30x)",
+    "Expensive Valuation vs Growth (PEG: 5.31x)",
     "Company has a low return on equity of 12.6% over last 3 years.",
     "Earnings include an other income of Rs.328 Cr."
   ]

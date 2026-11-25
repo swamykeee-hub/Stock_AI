@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-25 09:16:11",
+  "timestamp": "2026-11-25 10:03:12",
   "fii_dii_latest": {
     "date": "2026-11-23",
     "formatted_date": "Mon 23 Nov, 2026",
@@ -179,13 +179,13 @@
     }
   ],
   "derivatives": {
-    "pcr": 0.73,
-    "total_call_oi": 1537671,
-    "total_put_oi": 1117601,
-    "max_pain_strike": 25500.0,
+    "pcr": 0.9,
+    "total_call_oi": 1907261,
+    "total_put_oi": 1723809,
+    "max_pain_strike": 25700.0,
     "status": "LIVE"
   },
   "smart_money_sentiment": "BALANCED",
   "sentiment_badge": "\ud83d\udd35 BALANCED / RANGE-BOUND",
-  "sentiment_rationale": "Nifty PCR is balanced at 0.73 around Max Pain strike (25500.0). Institutions active with FII 5,672.99 Cr and DII -2,760.12 Cr."
+  "sentiment_rationale": "Nifty PCR is balanced at 0.9 around Max Pain strike (25700.0). Institutions active with FII 5,672.99 Cr and DII -2,760.12 Cr."
 }

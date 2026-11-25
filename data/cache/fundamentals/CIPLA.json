@@ -1,30 +1,30 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "is_consolidated": true,
   "score": 5.3,
   "quality_score": 8.3,
   "inflection_score": 2.6,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "114579",
-    "current_price": "1418",
-    "stock_pe": "36.9",
+    "market_cap_cr": "115043",
+    "current_price": "1424",
+    "stock_pe": "37",
     "book_value": "438",
     "dividend_yield_pct": "0.92",
     "roce_pct": "15.5",
     "roe_pct": "11.6",
     "debt_to_equity": "0.02",
     "face_value": "2",
-    "pb_ratio": "3.24",
-    "market_cap_num": 114579.0,
-    "current_price_num": 1418.0,
-    "pe_num": 36.9,
+    "pb_ratio": "3.25",
+    "market_cap_num": 115043.0,
+    "current_price_num": 1424.0,
+    "pe_num": 37.0,
     "book_value_num": 438.0,
     "roce_num": 15.5,
     "roe_num": 11.6,
-    "pb_num": 3.24,
-    "peg_ratio": "3.69",
-    "peg_num": 3.69
+    "pb_num": 3.25,
+    "peg_ratio": "3.70",
+    "peg_num": 3.7
   },
   "ranges": {
     "sales_cagr_3y": 7.0,
@@ -40,6 +40,7 @@
   },
   "inflection": {
     "qtr_sales_yoy_pct": -2.0,
+    "qtr_pat_qoq_pct": 8.4,
     "qtr_pat_yoy_pct": -37.0,
     "qtr_pat_prev_yoy_pct": -39.2,
     "qtr_eps_yoy_pct": -35.1,
@@ -52,6 +53,9 @@
   "balance_inst": {
     "is_financial_sector": false,
     "debt_to_equity": 0.02,
+    "roce_latest_tbl_pct": 15.0,
+    "roce_prev_pct": 23.0,
+    "roce_delta_pct": -8.0,
     "cwip_cr": 1711.0,
     "cwip_growth_pct": -16.2,
     "cwip_to_fixed_assets_pct": 12.5,
@@ -60,6 +64,8 @@
     "cfo_ebitda_pct": 94.0,
     "cfo_to_pat_3y": 0.98,
     "promoter_pct": 29.2,
+    "promoter_qoq_delta_pct": -0.02,
+    "promoter_4q_delta_pct": -0.02,
     "promoter_pledge_pct": 0.0,
     "fii_pct": 20.24,
     "dii_pct": 34.61,
@@ -77,7 +83,7 @@
   "red_flags": [
     "Operating Margin Compression (-600 bps YoY)",
     "Quarterly Earnings Contraction (-37.0% YoY)",
-    "Expensive Valuation vs Growth (PEG: 3.69x)",
+    "Expensive Valuation vs Growth (PEG: 3.70x)",
     "The company has delivered a poor sales growth of 8.01% over past five years."
   ]
 }

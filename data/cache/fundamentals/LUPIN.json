@@ -1,13 +1,13 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "is_consolidated": true,
-  "score": 7.3,
+  "score": 7.6,
   "quality_score": 10.0,
-  "inflection_score": 3.4,
+  "inflection_score": 4.2,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "91596",
-    "current_price": "2003",
+    "market_cap_cr": "91722",
+    "current_price": "2006",
     "stock_pe": "16.3",
     "book_value": "526",
     "dividend_yield_pct": "0.88",
@@ -16,8 +16,8 @@
     "debt_to_equity": "0.26",
     "face_value": "2",
     "pb_ratio": "3.81",
-    "market_cap_num": 91596.0,
-    "current_price_num": 2003.0,
+    "market_cap_num": 91722.0,
+    "current_price_num": 2006.0,
     "pe_num": 16.3,
     "book_value_num": 526.0,
     "roce_num": 29.9,
@@ -40,6 +40,7 @@
   },
   "inflection": {
     "qtr_sales_yoy_pct": 11.0,
+    "qtr_pat_qoq_pct": -18.5,
     "qtr_pat_yoy_pct": -22.2,
     "qtr_pat_prev_yoy_pct": 16.1,
     "qtr_eps_yoy_pct": -21.9,
@@ -52,6 +53,9 @@
   "balance_inst": {
     "is_financial_sector": false,
     "debt_to_equity": 0.26,
+    "roce_latest_tbl_pct": 30.0,
+    "roce_prev_pct": 21.0,
+    "roce_delta_pct": 9.0,
     "cwip_cr": 931.0,
     "cwip_growth_pct": -8.4,
     "cwip_to_fixed_assets_pct": 7.0,
@@ -60,6 +64,8 @@
     "cfo_ebitda_pct": 105.0,
     "cfo_to_pat_3y": 1.32,
     "promoter_pct": 46.84,
+    "promoter_qoq_delta_pct": -0.01,
+    "promoter_4q_delta_pct": -0.05,
     "promoter_pledge_pct": 0.0,
     "fii_pct": 23.28,
     "dii_pct": 23.78,
@@ -72,7 +78,7 @@
     "Superior ROE: 28.7%",
     "Cash Generative Profits (CFO/EBITDA: 105%)",
     "Multi-Year Profit Compounding (3Y CAGR: +140%)",
-    "Deep GARP Value (PEG: 0.12x)"
+    "Expanding ROCE Efficiency (+9.0% YoY)"
   ],
   "red_flags": [
     "Operating Margin Compression (-700 bps YoY)",

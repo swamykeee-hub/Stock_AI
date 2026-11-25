@@ -1,30 +1,30 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "is_consolidated": false,
-  "score": 6.8,
+  "score": 7.3,
   "quality_score": 8.4,
-  "inflection_score": 6.8,
+  "inflection_score": 8.2,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "132400",
-    "current_price": "9208",
-    "stock_pe": "80.9",
+    "market_cap_cr": "132835",
+    "current_price": "9238",
+    "stock_pe": "81.2",
     "book_value": "745",
     "dividend_yield_pct": "0.22",
     "roce_pct": "17",
     "roe_pct": "15.4",
     "debt_to_equity": "0.29",
     "face_value": "5",
-    "pb_ratio": "12.36",
-    "market_cap_num": 132400.0,
-    "current_price_num": 9208.0,
-    "pe_num": 80.9,
+    "pb_ratio": "12.40",
+    "market_cap_num": 132835.0,
+    "current_price_num": 9238.0,
+    "pe_num": 81.2,
     "book_value_num": 745.0,
     "roce_num": 17.0,
     "roe_num": 15.4,
-    "pb_num": 12.36,
-    "peg_ratio": "4.76",
-    "peg_num": 4.76
+    "pb_num": 12.4,
+    "peg_ratio": "4.78",
+    "peg_num": 4.78
   },
   "ranges": {
     "sales_cagr_3y": 13.0,
@@ -40,6 +40,7 @@
   },
   "inflection": {
     "qtr_sales_yoy_pct": 23.0,
+    "qtr_pat_qoq_pct": 23.6,
     "qtr_pat_yoy_pct": 13.3,
     "qtr_pat_prev_yoy_pct": 25.4,
     "qtr_eps_yoy_pct": 13.3,
@@ -52,6 +53,9 @@
   "balance_inst": {
     "is_financial_sector": false,
     "debt_to_equity": 0.29,
+    "roce_latest_tbl_pct": 17.0,
+    "roce_prev_pct": 16.0,
+    "roce_delta_pct": 1.0,
     "cwip_cr": 549.0,
     "cwip_growth_pct": 71.6,
     "cwip_to_fixed_assets_pct": 7.7,
@@ -60,6 +64,8 @@
     "cfo_ebitda_pct": 108.0,
     "cfo_to_pat_3y": 1.31,
     "promoter_pct": 28.02,
+    "promoter_qoq_delta_pct": 0.0,
+    "promoter_4q_delta_pct": 0.0,
     "promoter_pledge_pct": 0.0,
     "fii_pct": 43.19,
     "dii_pct": 22.07,
@@ -70,11 +76,12 @@
   "strengths": [
     "Strong Capital Return (ROCE: 17.0%)",
     "Cash Generative Profits (CFO/EBITDA: 108%)",
+    "Expanding ROCE Efficiency (+1.0% YoY)",
     "Capex Capacity Runway Active (CWIP: \u20b9549 Cr)",
     "Company has been maintaining a healthy dividend payout of 18.7%"
   ],
   "red_flags": [
-    "Expensive Valuation vs Growth (PEG: 4.76x)",
+    "Expensive Valuation vs Growth (PEG: 4.78x)",
     "Stock is trading at 12.4 times its book value"
   ]
 }

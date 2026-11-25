@@ -1,23 +1,29 @@
 {
-  "score": 4.0,
+  "schema_version": 3,
+  "is_consolidated": false,
+  "score": 4.6,
+  "quality_score": 4.5,
+  "inflection_score": 4.5,
+  "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        13376\n        \n          Cr.",
-    "current_price": "\u20b9\n        1198",
-    "stock_pe": "68.8",
-    "book_value": "\u20b9\n        505",
-    "dividend_yield_pct": "0.21\n        \n          %",
-    "roce_pct": "3.66\n        \n          %",
-    "roe_pct": "8.07\n        \n          %",
+    "market_cap_cr": "N/A",
+    "current_price": "N/A",
+    "stock_pe": "N/A",
+    "book_value": "N/A",
+    "dividend_yield_pct": "N/A",
+    "roce_pct": "N/A",
+    "roe_pct": "N/A",
     "debt_to_equity": "N/A",
-    "face_value": "\u20b9\n        10.0"
+    "face_value": "N/A",
+    "pb_ratio": "N/A"
   },
+  "ranges": {},
+  "inflection": {},
+  "balance_inst": {},
   "strengths": [
-    "Company has reduced debt.",
-    "Debtor days have improved from 62.6 to 19.3 days."
+    "Standard market capitalization profile"
   ],
   "red_flags": [
-    "The company has delivered a poor sales growth of -36.9% over past five years.",
-    "Tax rate seems low",
-    "Company has a low return on equity of 5.18% over last 3 years."
+    "Standard market & execution risks apply"
   ]
 }

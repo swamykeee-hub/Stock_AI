@@ -1,0 +1,80 @@
+{
+  "schema_version": 3,
+  "is_consolidated": true,
+  "score": 4.1,
+  "quality_score": 3.3,
+  "inflection_score": 4.5,
+  "valuation_score": 5.0,
+  "metrics": {
+    "market_cap_cr": "\u20b9 Cr.",
+    "current_price": "\u20b9",
+    "stock_pe": "",
+    "book_value": "\u20b9",
+    "dividend_yield_pct": "%",
+    "roce_pct": "%",
+    "roe_pct": "%",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9",
+    "pb_ratio": "N/A",
+    "market_cap_num": null,
+    "current_price_num": null,
+    "pe_num": null,
+    "book_value_num": null,
+    "roce_num": null,
+    "roe_num": null,
+    "peg_ratio": "N/A"
+  },
+  "ranges": {
+    "sales_cagr_3y": null,
+    "sales_cagr_5y": null,
+    "sales_growth_ttm": null,
+    "profit_cagr_3y": null,
+    "profit_cagr_5y": null,
+    "profit_growth_ttm": null,
+    "roe_3y": null,
+    "roe_5y": null,
+    "price_cagr_3y": null,
+    "price_cagr_5y": null
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 7.8,
+    "qtr_pat_qoq_pct": 2.6,
+    "qtr_pat_yoy_pct": 9.6,
+    "qtr_pat_prev_yoy_pct": 19.6,
+    "qtr_eps_yoy_pct": 9.2,
+    "opm_latest_pct": 31.0,
+    "opm_year_ago_pct": 32.0,
+    "opm_expansion_bps": -100.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": true
+  },
+  "balance_inst": {
+    "is_financial_sector": true,
+    "debt_to_equity": null,
+    "roce_latest_tbl_pct": null,
+    "roce_prev_pct": null,
+    "roce_delta_pct": null,
+    "cwip_cr": 0.0,
+    "cwip_growth_pct": -100.0,
+    "cwip_to_fixed_assets_pct": 0.0,
+    "cfo_latest_cr": -2910.0,
+    "fcf_latest_cr": -2987.0,
+    "cfo_ebitda_pct": null,
+    "cfo_to_pat_3y": -2.87,
+    "promoter_pct": 29.99,
+    "promoter_qoq_delta_pct": 0.0,
+    "promoter_4q_delta_pct": 0.0,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 12.51,
+    "dii_pct": 23.45,
+    "inst_total_pct": 35.96,
+    "inst_4q_delta_pct": -0.44,
+    "public_4q_delta_pct": 0.43
+  },
+  "strengths": [
+    "Established market presence"
+  ],
+  "red_flags": [
+    "Weak Operating Cash Conversion (3Y CFO/PAT: -2.87x)"
+  ]
+}

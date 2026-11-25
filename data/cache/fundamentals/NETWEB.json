@@ -1,9 +1,9 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "is_consolidated": true,
-  "score": 7.2,
+  "score": 7.5,
   "quality_score": 6.7,
-  "inflection_score": 9.1,
+  "inflection_score": 10.0,
   "valuation_score": 5.0,
   "metrics": {
     "market_cap_cr": "\u20b9 Cr.",
@@ -38,6 +38,7 @@
   },
   "inflection": {
     "qtr_sales_yoy_pct": 336.0,
+    "qtr_pat_qoq_pct": 61.2,
     "qtr_pat_yoy_pct": 341.9,
     "qtr_pat_prev_yoy_pct": 183.3,
     "qtr_eps_yoy_pct": 314.2,
@@ -50,6 +51,9 @@
   "balance_inst": {
     "is_financial_sector": false,
     "debt_to_equity": 0.16,
+    "roce_latest_tbl_pct": 37.0,
+    "roce_prev_pct": 32.0,
+    "roce_delta_pct": 5.0,
     "cwip_cr": 1.0,
     "cwip_growth_pct": -50.0,
     "cwip_to_fixed_assets_pct": 1.6,
@@ -58,6 +62,8 @@
     "cfo_ebitda_pct": 84.0,
     "cfo_to_pat_3y": 0.44,
     "promoter_pct": 64.16,
+    "promoter_qoq_delta_pct": -2.82,
+    "promoter_4q_delta_pct": -6.84,
     "promoter_pledge_pct": 0.0,
     "fii_pct": 9.47,
     "dii_pct": 7.22,
@@ -69,7 +75,8 @@
     "Fortress Balance Sheet (D/E: 0.16x)",
     "Cash Generative Profits (CFO/EBITDA: 84%)",
     "Explosive Quarterly PAT Surge (+341.9% YoY)",
-    "Smart Money Accumulation (FII+DII +2.3% over 4Q)"
+    "Smart Money Accumulation (FII+DII +2.3% over 4Q)",
+    "Expanding ROCE Efficiency (+5.0% YoY)"
   ],
   "red_flags": [
     "Standard market & execution risks apply"

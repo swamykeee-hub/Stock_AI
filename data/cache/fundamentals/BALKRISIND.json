@@ -1,30 +1,30 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "is_consolidated": true,
   "score": 4.9,
   "quality_score": 6.0,
   "inflection_score": 4.5,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "45379",
-    "current_price": "2347",
-    "stock_pe": "31.8",
+    "market_cap_cr": "45426",
+    "current_price": "2350",
+    "stock_pe": "31.9",
     "book_value": "603",
     "dividend_yield_pct": "0.85",
     "roce_pct": "11.2",
     "roe_pct": "10.4",
     "debt_to_equity": "0.52",
     "face_value": "2",
-    "pb_ratio": "3.89",
-    "market_cap_num": 45379.0,
-    "current_price_num": 2347.0,
-    "pe_num": 31.8,
+    "pb_ratio": "3.90",
+    "market_cap_num": 45426.0,
+    "current_price_num": 2350.0,
+    "pe_num": 31.9,
     "book_value_num": 603.0,
     "roce_num": 11.2,
     "roe_num": 10.4,
-    "pb_num": 3.89,
-    "peg_ratio": "4.36",
-    "peg_num": 4.36
+    "pb_num": 3.9,
+    "peg_ratio": "4.37",
+    "peg_num": 4.37
   },
   "ranges": {
     "sales_cagr_3y": 4.0,
@@ -40,6 +40,7 @@
   },
   "inflection": {
     "qtr_sales_yoy_pct": 45.0,
+    "qtr_pat_qoq_pct": -35.0,
     "qtr_pat_yoy_pct": 7.3,
     "qtr_pat_prev_yoy_pct": 56.6,
     "qtr_eps_yoy_pct": 7.1,
@@ -52,6 +53,9 @@
   "balance_inst": {
     "is_financial_sector": false,
     "debt_to_equity": 0.52,
+    "roce_latest_tbl_pct": 11.0,
+    "roce_prev_pct": 17.0,
+    "roce_delta_pct": -6.0,
     "cwip_cr": 3741.0,
     "cwip_growth_pct": 51.3,
     "cwip_to_fixed_assets_pct": 47.7,
@@ -60,6 +64,8 @@
     "cfo_ebitda_pct": 115.0,
     "cfo_to_pat_3y": 1.4,
     "promoter_pct": 58.3,
+    "promoter_qoq_delta_pct": 0.0,
+    "promoter_4q_delta_pct": 0.0,
     "promoter_pledge_pct": 0.0,
     "fii_pct": 9.06,
     "dii_pct": 25.45,
@@ -74,7 +80,7 @@
   ],
   "red_flags": [
     "Operating Margin Compression (-300 bps YoY)",
-    "Expensive Valuation vs Growth (PEG: 4.36x)",
+    "Expensive Valuation vs Growth (PEG: 4.37x)",
     "Stock is trading at 3.89 times its book value",
     "Company has a low return on equity of 13.8% over last 3 years."
   ]
