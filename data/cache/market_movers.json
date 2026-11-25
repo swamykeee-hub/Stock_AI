@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-25 13:47:54",
+  "timestamp": "2026-11-25 13:52:17",
   "top_gainers": [
     {
       "symbol": "JWL",
@@ -10,106 +10,106 @@
       "change_val": "37.07",
       "high": "222.46",
       "low": "191.17",
-      "volume": "63,586,911"
+      "volume": "63,592,145"
     },
     {
       "symbol": "DABUR",
       "name": "Dabur India",
-      "price": "\u20b9426.15",
-      "price_raw": "426.15",
-      "change_pct": "+6.80%",
-      "change_val": "27.15",
+      "price": "\u20b9426.00",
+      "price_raw": "426.00",
+      "change_pct": "+6.77%",
+      "change_val": "27.00",
       "high": "433.60",
       "low": "401.45",
-      "volume": "12,742,372"
-    },
-    {
-      "symbol": "CANHLIFE",
-      "name": "Canara HSBC",
-      "price": "\u20b9130.26",
-      "price_raw": "130.26",
-      "change_pct": "+4.61%",
-      "change_val": "5.74",
-      "high": "131.69",
-      "low": "123.50",
-      "volume": "1,574,701"
-    },
-    {
-      "symbol": "BAJAJFINSV",
-      "name": "Bajaj Finserv",
-      "price": "\u20b91,963.10",
-      "price_raw": "1963.10",
-      "change_pct": "+4.41%",
-      "change_val": "83.00",
-      "high": "1,990.00",
-      "low": "1,879.10",
-      "volume": "3,157,309"
-    },
-    {
-      "symbol": "HINDUNILVR",
-      "name": "HUL",
-      "price": "\u20b92,107.40",
-      "price_raw": "2107.40",
-      "change_pct": "+4.37%",
-      "change_val": "88.30",
-      "high": "2,108.50",
-      "low": "2,027.00",
-      "volume": "2,744,542"
+      "volume": "12,814,820"
     },
     {
       "symbol": "GODREJCP",
       "name": "Godrej Consumer",
-      "price": "\u20b9950.25",
-      "price_raw": "950.25",
-      "change_pct": "+4.16%",
-      "change_val": "37.95",
-      "high": "953.45",
+      "price": "\u20b9960.45",
+      "price_raw": "960.45",
+      "change_pct": "+5.28%",
+      "change_val": "48.15",
+      "high": "962.30",
       "low": "911.95",
-      "volume": "1,247,993"
+      "volume": "2,244,146"
     },
     {
-      "symbol": "INDIGO",
-      "name": "Interglobe Avi",
-      "price": "\u20b95,751.70",
-      "price_raw": "5751.70",
-      "change_pct": "+4.14%",
-      "change_val": "228.70",
-      "high": "5,765.00",
-      "low": "5,600.00",
-      "volume": "1,153,881"
+      "symbol": "CANHLIFE",
+      "name": "Canara HSBC",
+      "price": "\u20b9130.41",
+      "price_raw": "130.41",
+      "change_pct": "+4.73%",
+      "change_val": "5.89",
+      "high": "131.69",
+      "low": "123.50",
+      "volume": "1,597,067"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "name": "Bajaj Finserv",
+      "price": "\u20b91,962.80",
+      "price_raw": "1962.80",
+      "change_pct": "+4.40%",
+      "change_val": "82.70",
+      "high": "1,990.00",
+      "low": "1,879.10",
+      "volume": "3,273,107"
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "name": "HUL",
+      "price": "\u20b92,104.80",
+      "price_raw": "2104.80",
+      "change_pct": "+4.24%",
+      "change_val": "85.70",
+      "high": "2,108.50",
+      "low": "2,027.00",
+      "volume": "2,820,098"
     },
     {
       "symbol": "DMART",
       "name": "Avenue Supermar",
-      "price": "\u20b93,546.20",
-      "price_raw": "3546.20",
-      "change_pct": "+4.13%",
-      "change_val": "140.80",
+      "price": "\u20b93,545.70",
+      "price_raw": "3545.70",
+      "change_pct": "+4.12%",
+      "change_val": "140.30",
       "high": "3,582.00",
       "low": "3,426.00",
-      "volume": "818,464"
+      "volume": "827,528"
     },
     {
-      "symbol": "DOMS",
-      "name": "DOMS Industries",
-      "price": "\u20b92,217.00",
-      "price_raw": "2217.00",
-      "change_pct": "+4.04%",
-      "change_val": "86.00",
-      "high": "2,221.20",
-      "low": "2,110.10",
-      "volume": "63,734"
+      "symbol": "INDIGO",
+      "name": "Interglobe Avi",
+      "price": "\u20b95,750.00",
+      "price_raw": "5750.00",
+      "change_pct": "+4.11%",
+      "change_val": "227.00",
+      "high": "5,765.00",
+      "low": "5,600.00",
+      "volume": "1,169,898"
     },
     {
       "symbol": "ABFRL",
       "name": "Aditya Birla F",
-      "price": "\u20b939.33",
-      "price_raw": "39.33",
-      "change_pct": "+3.94%",
-      "change_val": "1.49",
+      "price": "\u20b939.36",
+      "price_raw": "39.36",
+      "change_pct": "+4.02%",
+      "change_val": "1.52",
       "high": "41.85",
       "low": "37.85",
-      "volume": "40,110,836"
+      "volume": "40,216,874"
+    },
+    {
+      "symbol": "DOMS",
+      "name": "DOMS Industries",
+      "price": "\u20b92,214.90",
+      "price_raw": "2214.90",
+      "change_pct": "+3.94%",
+      "change_val": "83.90",
+      "high": "2,221.20",
+      "low": "2,110.10",
+      "volume": "65,346"
     },
     {
       "symbol": "GODIGIT",
@@ -120,152 +120,152 @@
       "change_val": "9.15",
       "high": "249.30",
       "low": "238.05",
-      "volume": "506,993"
+      "volume": "509,315"
     },
     {
       "symbol": "CEATLTD",
       "name": "Ceat",
-      "price": "\u20b93,627.00",
-      "price_raw": "3627.00",
-      "change_pct": "+3.85%",
-      "change_val": "134.60",
+      "price": "\u20b93,625.00",
+      "price_raw": "3625.00",
+      "change_pct": "+3.80%",
+      "change_val": "132.60",
       "high": "3,707.00",
       "low": "3,517.00",
-      "volume": "333,741"
+      "volume": "339,165"
     },
     {
       "symbol": "HDFCLIFE",
       "name": "HDFC Life",
-      "price": "\u20b9596.35",
-      "price_raw": "596.35",
-      "change_pct": "+3.72%",
-      "change_val": "21.40",
+      "price": "\u20b9596.65",
+      "price_raw": "596.65",
+      "change_pct": "+3.77%",
+      "change_val": "21.70",
       "high": "609.10",
       "low": "582.30",
-      "volume": "6,886,527"
-    },
-    {
-      "symbol": "TITAGARH",
-      "name": "TITAGARH",
-      "price": "\u20b9744.20",
-      "price_raw": "744.20",
-      "change_pct": "+3.71%",
-      "change_val": "26.60",
-      "high": "751.00",
-      "low": "721.25",
-      "volume": "1,518,188"
+      "volume": "6,925,837"
     },
     {
       "symbol": "TATACONSUM",
       "name": "TATA Cons. Prod",
-      "price": "\u20b91,174.90",
-      "price_raw": "1174.90",
-      "change_pct": "+3.70%",
-      "change_val": "41.90",
+      "price": "\u20b91,175.40",
+      "price_raw": "1175.40",
+      "change_pct": "+3.74%",
+      "change_val": "42.40",
       "high": "1,180.20",
       "low": "1,153.40",
-      "volume": "2,243,502"
+      "volume": "2,273,303"
+    },
+    {
+      "symbol": "ABSLAMC",
+      "name": "ABSL AMC",
+      "price": "\u20b9962.95",
+      "price_raw": "962.95",
+      "change_pct": "+3.67%",
+      "change_val": "34.10",
+      "high": "970.00",
+      "low": "924.50",
+      "volume": "209,122"
     }
   ],
   "top_losers": [
     {
       "symbol": "APLAPOLLO",
       "name": "APL Apollo",
-      "price": "\u20b91,516.80",
-      "price_raw": "1516.80",
-      "change_pct": "-9.17%",
-      "change_val": "-153.20",
+      "price": "\u20b91,520.30",
+      "price_raw": "1520.30",
+      "change_pct": "-8.96%",
+      "change_val": "-149.70",
       "high": "1,549.00",
       "low": "1,342.20",
-      "volume": "38,269,732"
+      "volume": "38,576,017"
     },
     {
       "symbol": "SUNTV",
       "name": "Sun TV Network",
-      "price": "\u20b9631.55",
-      "price_raw": "631.55",
-      "change_pct": "-6.96%",
-      "change_val": "-47.25",
+      "price": "\u20b9631.15",
+      "price_raw": "631.15",
+      "change_pct": "-7.02%",
+      "change_val": "-47.65",
       "high": "680.80",
       "low": "631.10",
-      "volume": "636,581"
-    },
-    {
-      "symbol": "SAREGAMA",
-      "name": "Saregama India",
-      "price": "\u20b9613.80",
-      "price_raw": "613.80",
-      "change_pct": "-6.66%",
-      "change_val": "-43.80",
-      "high": "638.90",
-      "low": "606.85",
-      "volume": "1,110,644"
+      "volume": "646,887"
     },
     {
       "symbol": "ITI",
       "name": "ITI",
-      "price": "\u20b9257.93",
-      "price_raw": "257.93",
-      "change_pct": "-6.62%",
-      "change_val": "-18.28",
+      "price": "\u20b9257.71",
+      "price_raw": "257.71",
+      "change_pct": "-6.70%",
+      "change_val": "-18.50",
       "high": "270.27",
       "low": "256.07",
-      "volume": "4,811,831"
+      "volume": "4,830,320"
+    },
+    {
+      "symbol": "SAREGAMA",
+      "name": "Saregama India",
+      "price": "\u20b9613.65",
+      "price_raw": "613.65",
+      "change_pct": "-6.68%",
+      "change_val": "-43.95",
+      "high": "638.90",
+      "low": "606.85",
+      "volume": "1,119,402"
     },
     {
       "symbol": "ZEEL",
       "name": "Zee Entertain",
-      "price": "\u20b966.95",
-      "price_raw": "66.95",
-      "change_pct": "-6.55%",
-      "change_val": "-4.69",
+      "price": "\u20b966.96",
+      "price_raw": "66.96",
+      "change_pct": "-6.53%",
+      "change_val": "-4.68",
       "high": "69.99",
       "low": "66.33",
-      "volume": "15,406,097"
+      "volume": "15,430,323"
     },
     {
       "symbol": "HEGAM",
       "name": "HEGAM",
-      "price": "\u20b9243.46",
-      "price_raw": "243.46",
-      "change_pct": "-5.88%",
-      "change_val": "-15.21",
+      "price": "\u20b9242.96",
+      "price_raw": "242.96",
+      "change_pct": "-6.07%",
+      "change_val": "-15.71",
       "high": "260.70",
-      "low": "243.01",
-      "volume": "1,136,481"
+      "low": "242.50",
+      "volume": "1,190,274"
     },
     {
       "symbol": "IREDA",
       "name": "Indian Renew",
-      "price": "\u20b9124.65",
-      "price_raw": "124.65",
-      "change_pct": "-5.71%",
-      "change_val": "-7.55",
+      "price": "\u20b9124.64",
+      "price_raw": "124.64",
+      "change_pct": "-5.72%",
+      "change_val": "-7.56",
       "high": "131.50",
       "low": "124.55",
-      "volume": "9,520,531"
+      "volume": "9,578,539"
     },
     {
       "symbol": "CHENNPETRO",
       "name": "Chennai Petro",
-      "price": "\u20b91,364.00",
-      "price_raw": "1364.00",
-      "change_pct": "-5.53%",
-      "change_val": "-79.80",
+      "price": "\u20b91,364.80",
+      "price_raw": "1364.80",
+      "change_pct": "-5.47%",
+      "change_val": "-79.00",
       "high": "1,450.00",
-      "low": "1,363.10",
-      "volume": "749,233"
+      "low": "1,363.00",
+      "volume": "767,684"
     },
     {
       "symbol": "MRPL",
       "name": "MRPL",
-      "price": "\u20b9166.35",
-      "price_raw": "166.35",
-      "change_pct": "-5.14%",
-      "change_val": "-9.01",
+      "price": "\u20b9166.05",
+      "price_raw": "166.05",
+      "change_pct": "-5.31%",
+      "change_val": "-9.31",
       "high": "175.95",
-      "low": "166.10",
-      "volume": "3,787,023"
+      "low": "166.01",
+      "volume": "3,819,927"
     },
     {
       "symbol": "HFCL",
@@ -276,62 +276,62 @@
       "change_val": "-8.93",
       "high": "174.70",
       "low": "169.67",
-      "volume": "10,236,652"
-    },
-    {
-      "symbol": "OFSS",
-      "name": "Oracle Fin Serv",
-      "price": "\u20b99,222.00",
-      "price_raw": "9222.00",
-      "change_pct": "-4.68%",
-      "change_val": "-453.00",
-      "high": "9,799.00",
-      "low": "9,216.00",
-      "volume": "235,291"
+      "volume": "10,237,945"
     },
     {
       "symbol": "ATHERENERG",
       "name": "Ather Energy",
-      "price": "\u20b91,886.50",
-      "price_raw": "1886.50",
-      "change_pct": "-4.68%",
-      "change_val": "-92.70",
+      "price": "\u20b91,883.90",
+      "price_raw": "1883.90",
+      "change_pct": "-4.82%",
+      "change_val": "-95.30",
       "high": "1,993.80",
       "low": "1,883.20",
-      "volume": "2,139,190"
+      "volume": "2,151,400"
     },
     {
-      "symbol": "KALYANKJIL",
-      "name": "Kalyan Jeweller",
-      "price": "\u20b9626.55",
-      "price_raw": "626.55",
-      "change_pct": "-4.04%",
-      "change_val": "-26.35",
-      "high": "662.45",
-      "low": "624.00",
-      "volume": "6,046,231"
+      "symbol": "OFSS",
+      "name": "Oracle Fin Serv",
+      "price": "\u20b99,216.50",
+      "price_raw": "9216.50",
+      "change_pct": "-4.74%",
+      "change_val": "-458.50",
+      "high": "9,799.00",
+      "low": "9,212.00",
+      "volume": "237,548"
+    },
+    {
+      "symbol": "KAYNES",
+      "name": "Kaynes Tech",
+      "price": "\u20b92,695.70",
+      "price_raw": "2695.70",
+      "change_pct": "-4.03%",
+      "change_val": "-113.30",
+      "high": "2,846.30",
+      "low": "2,693.00",
+      "volume": "1,318,124"
     },
     {
       "symbol": "CARTRADE",
       "name": "CarTrade Tech",
-      "price": "\u20b92,510.50",
-      "price_raw": "2510.50",
-      "change_pct": "-3.94%",
-      "change_val": "-103.00",
+      "price": "\u20b92,510.00",
+      "price_raw": "2510.00",
+      "change_pct": "-3.96%",
+      "change_val": "-103.50",
       "high": "2,657.50",
       "low": "2,498.50",
-      "volume": "248,564"
+      "volume": "251,819"
     },
     {
-      "symbol": "NATIONALUM",
-      "name": "NALCO",
-      "price": "\u20b9286.95",
-      "price_raw": "286.95",
+      "symbol": "KALYANKJIL",
+      "name": "Kalyan Jeweller",
+      "price": "\u20b9627.30",
+      "price_raw": "627.30",
       "change_pct": "-3.92%",
-      "change_val": "-11.70",
-      "high": "296.50",
-      "low": "285.20",
-      "volume": "7,305,335"
+      "change_val": "-25.60",
+      "high": "662.45",
+      "low": "624.00",
+      "volume": "6,066,103"
     }
   ]
 }
