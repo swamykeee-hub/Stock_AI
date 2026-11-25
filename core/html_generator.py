@@ -72,7 +72,8 @@ class HTMLReportGenerator:
             pass
         all_stock_cmps_json = json.dumps(all_stock_cmps)
 
-        # Generate Indices HTML
+        # Generate Indices HTML with Animated Sector Backdrops
+        from core.index_visuals import get_index_visual_backdrop
         indices_html = ""
         for name, data in indices.items():
             chg = data.get("change", 0.0)
@@ -82,11 +83,15 @@ class HTMLReportGenerator:
             color = "#10b981" if is_pos else "#ef4444"
             sign = "+" if is_pos else ""
             val_prefix = "" if any(k in name.upper() for k in ["VIX", "AI CATALYST"]) else "₹"
+            bg_art, theme_cls = get_index_visual_backdrop(name)
             indices_html += f"""
-            <div class="index-card">
-                <div class="index-name">{name}</div>
-                <div class="index-val">{val_prefix}{val:,.2f}</div>
-                <div class="index-chg" style="color: {color};">{sign}{chg} ({sign}{pct:.2f}%)</div>
+            <div class="index-card {theme_cls}">
+                {bg_art}
+                <div class="index-card-content">
+                    <div class="index-name">{name}</div>
+                    <div class="index-val">{val_prefix}{val:,.2f}</div>
+                    <div class="index-chg" style="color: {color};">{sign}{chg} ({sign}{pct:.2f}%)</div>
+                </div>
             </div>
             """
 
@@ -96,11 +101,15 @@ class HTMLReportGenerator:
             price = m_data.get("price", 0.0)
             color = "#10b981" if chg_pct >= 0 else "#ef4444"
             sign = "+" if chg_pct >= 0 else ""
+            bg_art, theme_cls = get_index_visual_backdrop(m_name)
             indices_html += f"""
-            <div class="index-card">
-                <div class="index-name">{m_name}</div>
-                <div class="index-val">{price:,.2f}</div>
-                <div class="index-chg" style="color: {color};">{sign}{chg_pct:.2f}%</div>
+            <div class="index-card {theme_cls}">
+                {bg_art}
+                <div class="index-card-content">
+                    <div class="index-name">{m_name}</div>
+                    <div class="index-val">{price:,.2f}</div>
+                    <div class="index-chg" style="color: {color};">{sign}{chg_pct:.2f}%</div>
+                </div>
             </div>
             """
 
@@ -110,11 +119,15 @@ class HTMLReportGenerator:
             score = market_regime.get("market_score", 75)
             regime_label = market_regime.get("regime_label", "Bull Market")
             lead = ", ".join(market_regime.get("leading_sectors", [])[:2])
+            bg_art, theme_cls = get_index_visual_backdrop("SENIOR CIO MARKET STANCE")
             indices_html += f"""
-            <div class="index-card" style="border: 1px solid #10b981; background: rgba(16, 185, 129, 0.08);">
-                <div class="index-name" style="color: #38bdf8;">🎯 Senior CIO Market Stance</div>
-                <div class="index-val" style="font-size: 15px; color: #10b981;">{regime_label}</div>
-                <div class="index-chg" style="color: var(--text-heading); font-size: 11px;">Health: <b>{score}/100</b> &bull; Leading: {lead}</div>
+            <div class="index-card {theme_cls}" style="border: 1px solid #10b981; background: rgba(16, 185, 129, 0.08);">
+                {bg_art}
+                <div class="index-card-content">
+                    <div class="index-name" style="color: #38bdf8;">🎯 Senior CIO Market Stance</div>
+                    <div class="index-val" style="font-size: 15px; color: #10b981;">{regime_label}</div>
+                    <div class="index-chg" style="color: var(--text-heading); font-size: 11px;">Health: <b>{score}/100</b> &bull; Leading: {lead}</div>
+                </div>
             </div>
             """
 
@@ -134,11 +147,15 @@ class HTMLReportGenerator:
             pcr_color = "#10b981" if pcr_val > 1.0 else ("#f59e0b" if pcr_val > 0.75 else "#ef4444")
             fii_val = lat.get("fii_cash_net", "0")
             dii_val = lat.get("dii_cash_net", "0")
+            bg_art, theme_cls = get_index_visual_backdrop("INSTITUTIONAL FLOW & PCR")
             indices_html += f"""
-            <div class="index-card" style="border: 1px solid #38bdf8; background: rgba(56, 189, 248, 0.08);">
-                <div class="index-name" style="color: #a78bfa;">🏛 Institutional Flow &amp; PCR</div>
-                <div class="index-val" style="font-size: 15px; color: {pcr_color};">Nifty PCR: {pcr_val} &bull; Max Pain: {deriv.get('max_pain_strike', '—')}</div>
-                <div class="index-chg" style="color: var(--text-heading); font-size: 11px;">FII: <b>₹{fii_val} Cr</b> &bull; DII: <b>₹{dii_val} Cr</b></div>
+            <div class="index-card {theme_cls}" style="border: 1px solid #38bdf8; background: rgba(56, 189, 248, 0.08);">
+                {bg_art}
+                <div class="index-card-content">
+                    <div class="index-name" style="color: #a78bfa;">🏛 Institutional Flow &amp; PCR</div>
+                    <div class="index-val" style="font-size: 15px; color: {pcr_color};">Nifty PCR: {pcr_val} &bull; Max Pain: {deriv.get('max_pain_strike', '—')}</div>
+                    <div class="index-chg" style="color: var(--text-heading); font-size: 11px;">FII: <b>₹{fii_val} Cr</b> &bull; DII: <b>₹{dii_val} Cr</b></div>
+                </div>
             </div>
             """
 
@@ -864,6 +881,20 @@ class HTMLReportGenerator:
         }}
         [data-theme="light"] .index-val {{
             color: #0f172a;
+            text-shadow: none;
+        }}
+        [data-theme="light"] .index-chg {{
+            text-shadow: none;
+        }}
+        [data-theme="light"] .idx-bg-art {{
+            opacity: 0.48;
+            filter: saturate(1.15) brightness(0.68) contrast(1.15);
+        }}
+        [data-theme="light"] .index-card:hover .idx-bg-art {{
+            opacity: 0.82;
+        }}
+        [data-theme="light"] .idx-bg-glow {{
+            opacity: 0.16;
         }}
         [data-theme="light"] .table-container {{
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -1052,13 +1083,105 @@ class HTMLReportGenerator:
             line-height: 1.5;
         }}
         
-        /* Indices */
-        .indices-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); gap: 12px; margin-bottom: 26px; }}
-        .index-card {{ background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; transition: transform 0.2s; }}
-        .index-card:hover {{ transform: translateY(-2px); border-color: #38bdf8; }}
+        /* Indices & Animated Sector Backdrops */
+        .indices-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(195px, 1fr)); gap: 12px; margin-bottom: 26px; }}
+        .index-card {{
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
+            min-height: 98px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px 16px;
+            transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+        }}
+        .index-card:hover {{ transform: translateY(-2px); border-color: #38bdf8; box-shadow: 0 8px 20px rgba(15, 23, 42, 0.35); }}
+        .index-card-content {{ position: relative; z-index: 2; max-width: 78%; }}
         .index-name {{ color: var(--text-muted); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }}
-        .index-val {{ font-size: 20px; font-weight: 800; margin: 4px 0; color: #fff; }}
-        .index-chg {{ font-size: 12px; font-weight: 600; }}
+        .index-val {{ font-size: 20px; font-weight: 800; margin: 4px 0; color: #fff; text-shadow: 0 1px 8px rgba(9, 13, 22, 0.85); }}
+        .index-chg {{ font-size: 12px; font-weight: 600; text-shadow: 0 1px 4px rgba(9, 13, 22, 0.7); }}
+
+        .idx-bg-glow {{
+            position: absolute;
+            right: -18px;
+            bottom: -18px;
+            width: 128px;
+            height: 102px;
+            border-radius: 50%;
+            filter: blur(16px);
+            opacity: 0.42;
+            z-index: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }}
+        .idx-bg-art {{
+            position: absolute;
+            right: 2px;
+            bottom: -2px;
+            width: 132px;
+            height: 92px;
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0.72;
+            -webkit-mask-image: linear-gradient(112deg, rgba(0,0,0,0.06) 4%, rgba(0,0,0,0.72) 45%, rgba(0,0,0,1) 88%);
+            mask-image: linear-gradient(112deg, rgba(0,0,0,0.06) 4%, rgba(0,0,0,0.72) 45%, rgba(0,0,0,1) 88%);
+            transition: opacity 0.32s ease, transform 0.35s ease;
+        }}
+        .idx-bg-art svg {{ width: 100%; height: 100%; display: block; overflow: visible; }}
+        .index-card:hover .idx-bg-art {{ opacity: 0.96; transform: scale(1.06) translate(-2px, -1px); }}
+        .index-card:hover .idx-bg-glow {{ opacity: 0.65; transform: scale(1.1); }}
+
+        /* Sub-element GPU Animations inside Each Index Box */
+        .idx-anim-float {{ transform-box: fill-box; transform-origin: center; animation: idxFloat 4.2s ease-in-out infinite; }}
+        .idx-anim-float-rev {{ transform-box: fill-box; transform-origin: center; animation: idxFloatRev 4.8s ease-in-out infinite; }}
+        .idx-anim-spin {{ transform-box: fill-box; transform-origin: center; animation: idxSpin 5.5s linear infinite; }}
+        .idx-anim-spin-slow {{ transform-box: fill-box; transform-origin: center; animation: idxSpin 12s linear infinite; }}
+        .idx-anim-dash {{ stroke-dasharray: 140; animation: idxDashFlow 3.6s linear infinite; }}
+        .idx-anim-pulse {{ transform-box: fill-box; transform-origin: center; animation: idxPulse 2.6s ease-in-out infinite; }}
+        .idx-anim-pump {{ transform-box: fill-box; transform-origin: center; animation: idxPumpNod 3.2s ease-in-out infinite; }}
+        .idx-anim-flow-left {{ animation: idxFlowLeft 2.8s ease-in-out infinite; }}
+        .idx-anim-flow-right {{ animation: idxFlowRight 2.8s ease-in-out infinite; }}
+
+        @keyframes idxFloat {{
+            0%, 100% {{ transform: translateY(0px); }}
+            50% {{ transform: translateY(-4px); }}
+        }}
+        @keyframes idxFloatRev {{
+            0%, 100% {{ transform: translateY(-2px); }}
+            50% {{ transform: translateY(3px); }}
+        }}
+        @keyframes idxSpin {{
+            from {{ transform: rotate(0deg); }}
+            to {{ transform: rotate(360deg); }}
+        }}
+        @keyframes idxDashFlow {{
+            0% {{ stroke-dashoffset: 140; opacity: 0.55; }}
+            50% {{ opacity: 1; }}
+            100% {{ stroke-dashoffset: -140; opacity: 0.55; }}
+        }}
+        @keyframes idxPulse {{
+            0%, 100% {{ transform: scale(0.95); opacity: 0.55; }}
+            50% {{ transform: scale(1.06); opacity: 1; }}
+        }}
+        @keyframes idxPumpNod {{
+            0%, 100% {{ transform: rotate(-6deg); }}
+            50% {{ transform: rotate(8deg); }}
+        }}
+        @keyframes idxFlowLeft {{
+            0%, 100% {{ transform: translateX(4px); opacity: 0.45; }}
+            50% {{ transform: translateX(-5px); opacity: 0.9; }}
+        }}
+        @keyframes idxFlowRight {{
+            0%, 100% {{ transform: translateX(-5px); opacity: 0.45; }}
+            50% {{ transform: translateX(5px); opacity: 0.95; }}
+        }}
+        @media (prefers-reduced-motion: reduce) {{
+            .idx-anim-float, .idx-anim-float-rev, .idx-anim-spin, .idx-anim-spin-slow,
+            .idx-anim-dash, .idx-anim-pulse, .idx-anim-pump, .idx-anim-flow-left, .idx-anim-flow-right {{
+                animation: none !important;
+            }}
+        }}
 
         /* Tabs & Search */
         .controls-bar {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 14px; }}
