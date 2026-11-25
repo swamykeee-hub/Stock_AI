@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "is_consolidated": true,
   "score": 9.6,
   "quality_score": 10.0,
@@ -40,6 +40,7 @@
   },
   "inflection": {
     "qtr_sales_yoy_pct": 34.0,
+    "qtr_pat_qoq_pct": -7.4,
     "qtr_pat_yoy_pct": 45.1,
     "qtr_pat_prev_yoy_pct": 62.3,
     "qtr_eps_yoy_pct": 44.3,
@@ -52,6 +53,9 @@
   "balance_inst": {
     "is_financial_sector": false,
     "debt_to_equity": 0.0,
+    "roce_latest_tbl_pct": 60.0,
+    "roce_prev_pct": 47.0,
+    "roce_delta_pct": 13.0,
     "cwip_cr": 69.0,
     "cwip_growth_pct": -10.4,
     "cwip_to_fixed_assets_pct": 9.6,
@@ -60,6 +64,8 @@
     "cfo_ebitda_pct": 108.0,
     "cfo_to_pat_3y": 1.34,
     "promoter_pct": null,
+    "promoter_qoq_delta_pct": 0.0,
+    "promoter_4q_delta_pct": 0.0,
     "promoter_pledge_pct": 0.0,
     "fii_pct": 17.1,
     "dii_pct": 25.89,
