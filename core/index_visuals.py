@@ -102,47 +102,67 @@ def get_index_visual_backdrop(card_title: str) -> Tuple[str, str]:
         """
         return _svg_wrapper(svg, "#10b981"), "idx-theme-emerald"
 
-    # 3. NIFTY METAL: Heavy Chrome Motorcycle + Forged Industrial Steel Gear (as explicitly requested)
+    # 3. NIFTY METAL: Corrugated Metal Roof Sheets + Stacked Steel TMT Rods (Rebar Bundle)
     if "METAL" in key:
         svg = """
         <defs>
-            <linearGradient id="iv-met-chrome" x1="36" y1="26" x2="128" y2="82" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#f8fafc" stop-opacity="0.88"/>
-                <stop offset="50%" stop-color="#94a3b8" stop-opacity="0.62"/>
-                <stop offset="100%" stop-color="#f97316" stop-opacity="0.52"/>
+            <linearGradient id="iv-met-sheet" x1="50" y1="16" x2="130" y2="56" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#e2e8f0" stop-opacity="0.82"/>
+                <stop offset="55%" stop-color="#64748b" stop-opacity="0.58"/>
+                <stop offset="100%" stop-color="#334155" stop-opacity="0.45"/>
+            </linearGradient>
+            <linearGradient id="iv-met-rod" x1="40" y1="54" x2="128" y2="86" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#cbd5e1" stop-opacity="0.90"/>
+                <stop offset="55%" stop-color="#94a3b8" stop-opacity="0.65"/>
+                <stop offset="100%" stop-color="#fb923c" stop-opacity="0.62"/>
             </linearGradient>
         </defs>
-        <!-- Rotating Industrial Forged Alloy Gear in Upper Right -->
-        <g class="idx-anim-spin-slow" opacity="0.42">
-            <circle cx="110" cy="30" r="14" stroke="#fdba74" stroke-width="3.5" stroke-dasharray="4.5 3.5"/>
-            <circle cx="110" cy="30" r="7" stroke="#e2e8f0" stroke-width="1.6"/>
+        <!-- Back Layer: Stacked Corrugated Metal Roof Sheets -->
+        <g class="idx-anim-float-rev">
+            <!-- Lower Stacked Sheet Edge -->
+            <path d="M56 38 L78 21 L132 25 L110 44 Z"
+                  fill="#475569" fill-opacity="0.55" stroke="#94a3b8" stroke-width="1.1"/>
+            <!-- Top Corrugated Roof Sheet Body -->
+            <path d="M52 33 L76 15 L130 19 L106 38 Z"
+                  fill="url(#iv-met-sheet)" stroke="#e2e8f0" stroke-width="1.3" stroke-linejoin="round"/>
+            <!-- Parallel Corrugation Ridges across Sheet -->
+            <g stroke="#f8fafc" stroke-opacity="0.55" stroke-width="1.1" stroke-linecap="round">
+                <line x1="60" y1="31" x2="83" y2="16"/>
+                <line x1="70" y1="32" x2="93" y2="17"/>
+                <line x1="80" y1="33" x2="103" y2="17.5"/>
+                <line x1="90" y1="34" x2="113" y2="18"/>
+                <line x1="100" y1="35" x2="122" y2="19"/>
+            </g>
+            <!-- Rhythmic Corrugated Wave Front Lip -->
+            <path d="M52 33 Q55 37 58 34 T64 34 T70 35 T76 35 T82 36 T88 36 T94 37 T100 37 T106 38"
+                  stroke="#bae6fd" stroke-width="1.6" stroke-linecap="round" class="idx-anim-dash"/>
         </g>
-        <!-- Speed Streaks -->
-        <g class="idx-anim-flow-left" opacity="0.55">
-            <line x1="20" y1="52" x2="42" y2="52" stroke="#fb923c" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="14" y1="62" x2="34" y2="62" stroke="#cbd5e1" stroke-width="1.3" stroke-linecap="round"/>
-        </g>
-        <!-- Metallic Heavy Motorcycle Silhouette + Dual Spinning Alloy Wheels -->
+        <!-- Front Layer: Bundled Steel Metal Rods (TMT Rebar Stack) -->
         <g class="idx-anim-float">
-            <!-- Rear Wheel -->
-            <g class="idx-anim-spin">
-                <circle cx="52" cy="70" r="13.5" stroke="#e2e8f0" stroke-width="2.6" fill="#0f172a" fill-opacity="0.45"/>
-                <circle cx="52" cy="70" r="8.5" stroke="#fb923c" stroke-width="1.3" stroke-dasharray="3 3"/>
-                <circle cx="52" cy="70" r="2.8" fill="#fed7aa"/>
+            <!-- Bottom Row (3 Steel Rods) -->
+            <path d="M40 68 L100 62 L100 71 L40 77 Z" fill="url(#iv-met-rod)" stroke="#cbd5e1" stroke-width="1"/>
+            <path d="M46 75 L108 69 L108 78 L46 84 Z" fill="url(#iv-met-rod)" stroke="#e2e8f0" stroke-width="1.1"/>
+            <path d="M54 80 L118 74 L118 83 L54 89 Z" fill="url(#iv-met-rod)" stroke="#f8fafc" stroke-width="1.2"/>
+            <!-- Top Row (2 Steel Rods resting in pyramid) -->
+            <path d="M44 59 L104 53 L104 62 L44 68 Z" fill="url(#iv-met-rod)" stroke="#e2e8f0" stroke-width="1.1"/>
+            <path d="M52 65 L114 59 L114 68 L52 74 Z" fill="url(#iv-met-rod)" stroke="#f8fafc" stroke-width="1.2"/>
+            <!-- Subtle Rebar Ribs Highlight -->
+            <g stroke="#fed7aa" stroke-opacity="0.65" stroke-width="1">
+                <line x1="68" y1="57" x2="68" y2="65"/><line x1="78" y1="56" x2="78" y2="64"/><line x1="88" y1="55" x2="88" y2="63"/>
+                <line x1="76" y1="63" x2="76" y2="71"/><line x1="86" y1="62" x2="86" y2="70"/><line x1="96" y1="61" x2="96" y2="69"/>
             </g>
-            <!-- Front Wheel -->
-            <g class="idx-anim-spin">
-                <circle cx="112" cy="70" r="13.5" stroke="#e2e8f0" stroke-width="2.6" fill="#0f172a" fill-opacity="0.45"/>
-                <circle cx="112" cy="70" r="8.5" stroke="#fb923c" stroke-width="1.3" stroke-dasharray="3 3"/>
-                <circle cx="112" cy="70" r="2.8" fill="#fed7aa"/>
-            </g>
-            <!-- Frame, Fuel Tank, Chrome Exhaust, Seat & Handlebar -->
-            <path d="M52 70 L68 56 L88 56 L96 42 L106 39 M96 42 L112 70 M68 56 L58 46 H46"
-                  stroke="url(#iv-met-chrome)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M68 49 C74 42, 88 43, 94 49 L86 58 H70 Z" fill="url(#iv-met-chrome)" stroke="#f8fafc" stroke-width="1.2"/>
-            <rect x="64" y="61" width="19" height="10" rx="2.5" fill="#94a3b8" fill-opacity="0.6" stroke="#fed7aa" stroke-width="1.1"/>
-            <path d="M62 72 L37 74" stroke="#fdba74" stroke-width="2.8" stroke-linecap="round"/>
-            <circle cx="109" cy="43" r="3" fill="#fef08a"/>
+            <!-- Clean Circular Rod End-Caps -->
+            <circle cx="104" cy="57.5" r="4.6" fill="#1e293b" stroke="#fdba74" stroke-width="1.5"/>
+            <circle cx="114" cy="63.5" r="4.6" fill="#1e293b" stroke="#fde68a" stroke-width="1.5"/>
+            <circle cx="100" cy="66.5" r="4.4" fill="#1e293b" stroke="#cbd5e1" stroke-width="1.3"/>
+            <circle cx="108" cy="73.5" r="4.6" fill="#1e293b" stroke="#fdba74" stroke-width="1.5"/>
+            <circle cx="118" cy="78.5" r="4.8" fill="#1e293b" stroke="#fde68a" stroke-width="1.6"/>
+            <circle cx="118" cy="78.5" r="1.6" fill="#fb923c"/>
+            <circle cx="114" cy="63.5" r="1.6" fill="#fb923c"/>
+        </g>
+        <!-- Molten Forge Spark Accents -->
+        <g class="idx-anim-pulse" fill="#fb923c">
+            <circle cx="129" cy="48" r="2"/><circle cx="125" cy="57" r="1.5"/><circle cx="35" cy="58" r="1.6"/>
         </g>
         """
         return _svg_wrapper(svg, "#f97316"), "idx-theme-orange"
