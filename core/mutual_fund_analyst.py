@@ -1,20 +1,28 @@
-from typing import List, Dict, Any, Optional
 import json
+import math
+import time
+import concurrent.futures
+from datetime import datetime, timedelta
 from pathlib import Path
+from typing import List, Dict, Any, Optional
+import requests
+import config
+
 
 class MutualFundAnalyst:
     """
-    Acts as a Senior Mutual Fund Research Analyst and Wealth Allocator.
-    Provides institutional-grade mutual fund recommendations with comprehensive
-    quantitative metrics, risk-adjusted ratios, and fund manager rationale.
+    Senior Mutual Fund Research Analyst & Wealth Allocator.
+    Enriches curated institutional mutual funds with live AMFI NAVs, real 1Y returns,
+    real 3Y & 5Y annualized CAGRs, and calculated 3-Year Sharpe ratios via api.mfapi.in
+    with 12-hour disk caching and safe offline fallback.
     """
 
+    CACHE_FILE = config.CACHE_DIR / "mutual_funds_cache.json"
+
     RECOMMENDED_FUNDS = [
-        # ==========================================
-        # 1. FLEXI CAP & LARGE CAP (Core Compounders)
-        # ==========================================
         {
             "id": "ppfas_flexi",
+            "amfi_code": 122639,
             "name": "Parag Parikh Flexi Cap Fund",
             "fund_house": "PPFAS Mutual Fund",
             "category": "Flexi Cap",
@@ -34,13 +42,13 @@ class MutualFundAnalyst:
             "cio_rationale": (
                 "The undisputed gold standard for core equity wealth compounding in India. "
                 "Manager Rajeev Thakkar exercises legendary discipline with a value-oriented 'Growth at Reasonable Price' (GARP) philosophy. "
-                "The fund uniquely holds a ~15-20% allocation in global mega-cap tech cash machines (Alphabet, Microsoft) acting as a natural currency hedge against INR depreciation. "
-                "Its ultra-low portfolio turnover and high cash buffer during euphoric markets provides superior downside protection."
+                "The fund uniquely holds a ~15-20% allocation in global mega-cap tech cash machines (Alphabet, Microsoft) acting as a natural currency hedge against INR depreciation."
             ),
             "suitable_for": "Core long-term SIP portfolio for all conservative and aggressive equity investors."
         },
         {
             "id": "hdfc_flexi",
+            "amfi_code": 118955,
             "name": "HDFC Flexi Cap Fund",
             "fund_house": "HDFC Mutual Fund",
             "category": "Flexi Cap",
@@ -59,17 +67,13 @@ class MutualFundAnalyst:
             "top_holdings": ["ICICI Bank", "HDFC Bank", "Infosys", "Cipla", "Larsen & Toubro", "SBI"],
             "cio_rationale": (
                 "Roshi Jain's contrarian and cash-flow-driven stock-picking has established this fund as an alpha juggernaut. "
-                "The fund aggressively capitalizes on market mispricings in out-of-favor large and mid-cap sectors before the broad street catches on. "
-                "Maintains high conviction overweights in domestic private banks, manufacturing capex, and healthcare turnaround plays."
+                "Capitalizes on market mispricings in domestic private banks, manufacturing capex, and healthcare turnaround plays."
             ),
             "suitable_for": "Investors seeking aggressive alpha from cyclical turnaround and value-unlocking themes."
         },
-
-        # ==========================================
-        # 2. MID CAP FUNDS (High Growth Momentum)
-        # ==========================================
         {
             "id": "motilal_midcap",
+            "amfi_code": 127042,
             "name": "Motilal Oswal Midcap Fund",
             "fund_house": "Motilal Oswal Mutual Fund",
             "category": "Mid Cap",
@@ -87,16 +91,15 @@ class MutualFundAnalyst:
             "beta": 0.98,
             "top_holdings": ["Trent Ltd", "Persistent Systems", "Laurus Labs", "Kaynes Tech", "Dixon Tech", "Polycab"],
             "cio_rationale": (
-                "The top-performing high-momentum mid-cap fund in India. "
-                "Niket Shah implements a high active-share, concentrated strategy targeting businesses at the inflection point of exponential earnings growth. "
-                "The fund heavily participated in massive multibaggers like Trent, Dixon, and healthcare leaders like Laurus Labs and Persistent Systems. "
-                "Exceptional portfolio EPS growth velocity (>25%) justifies higher portfolio valuation multiples."
+                "High active-share, concentrated mid-cap strategy targeting businesses at the inflection point of exponential earnings growth. "
+                "Heavily participated in multibaggers like Trent, Dixon, Persistent Systems, and healthcare leaders."
             ),
             "suitable_for": "Aggressive growth investors wanting direct institutional exposure to explosive midcap market leaders."
         },
         {
             "id": "kotak_emerging",
-            "name": "Kotak Emerging Equity Fund",
+            "amfi_code": 119775,
+            "name": "Kotak Mid Cap Fund (Emerging Equity)",
             "fund_house": "Kotak Mahindra Mutual Fund",
             "category": "Mid Cap",
             "risk_profile": "Very High",
@@ -113,18 +116,14 @@ class MutualFundAnalyst:
             "beta": 0.82,
             "top_holdings": ["Supreme Industries", "Cummins India", "Schaeffler India", "Solar Industries", "Thermax"],
             "cio_rationale": (
-                "The most resilient mid-cap fund with best-in-class downside risk management. "
-                "Unlike peers who chase ephemeral momentum, Kotak focuses rigorously on companies with dominant economic moats, clean corporate governance, and high ROCE (>18%). "
-                "Heavy structural tilt towards domestic capital goods, precision engineering, and specialized industrial manufacturing."
+                "Resilient mid-cap compounder focusing rigorously on dominant economic moats, clean governance, and high ROCE (>18%) "
+                "across domestic capital goods and precision industrial manufacturing."
             ),
-            "suitable_for": "Long-term wealth builders who want midcap returns without excessive volatility during market drawdowns."
+            "suitable_for": "Long-term wealth builders seeking midcap compounding with controlled drawdown risk."
         },
-
-        # ==========================================
-        # 3. SMALL CAP FUNDS (Aggressive Wealth Multipliers)
-        # ==========================================
         {
             "id": "nippon_smallcap",
+            "amfi_code": 118778,
             "name": "Nippon India Small Cap Fund",
             "fund_house": "Nippon Life India AMC",
             "category": "Small Cap",
@@ -142,14 +141,14 @@ class MutualFundAnalyst:
             "beta": 0.88,
             "top_holdings": ["Tube Investments", "Apar Industries", "HBL Power", "Voltamp Transformers", "Karur Vysya Bank"],
             "cio_rationale": (
-                "India's largest and most battle-hardened small-cap fund. "
-                "Samir Rachh maintains hyper-diversification across 180+ small businesses, effectively mitigating individual stock insolvency or liquidity risks. "
-                "Unequalled proprietary bottom-up research capabilities that discover hidden market gems 18-24 months before institutional coverage initiates."
+                "India's largest battle-hardened small-cap wealth multiplier maintaining hyper-diversification across emerging businesses, "
+                "capturing bottom-up leaders 18-24 months before institutional coverage initiates."
             ),
             "suitable_for": "Disciplined monthly SIP investors looking to build generational wealth over 7 to 10 year horizons."
         },
         {
             "id": "quant_smallcap",
+            "amfi_code": 120828,
             "name": "Quant Small Cap Fund",
             "fund_house": "Quant Mutual Fund",
             "category": "Small Cap",
@@ -167,18 +166,14 @@ class MutualFundAnalyst:
             "beta": 1.12,
             "top_holdings": ["Reliance Industries", "Bikaji Foods", "Jio Financial", "Adani Power", "HFCL"],
             "cio_rationale": (
-                "Operates on Quant AMC's proprietary VLRT framework (Valuation, Liquidity, Risk appetite, and Timing). "
-                "Aggressively rotates capital into high-velocity momentum sectors and does not hesitate to hold high cash or liquid large caps when small-cap valuations froth. "
-                "Produces blistering upside capture during raging bull markets."
+                "Operates on Quant AMC's proprietary VLRT framework (Valuation, Liquidity, Risk appetite, Timing), dynamically rotating capital "
+                "into high-velocity momentum sectors during bull expansions."
             ),
-            "suitable_for": "High-risk tolerance investors comfortable with frequent portfolio churn and quantitative factor rotation."
+            "suitable_for": "High-risk tolerance investors comfortable with quantitative factor rotation."
         },
-
-        # ==========================================
-        # 4. SECTORAL & THEMATIC FUNDS (Megatrends)
-        # ==========================================
         {
             "id": "nippon_pharma",
+            "amfi_code": 118759,
             "name": "Nippon India Pharma & Healthcare Fund",
             "fund_house": "Nippon Life India AMC",
             "category": "Thematic / Healthcare & CDMO",
@@ -196,14 +191,14 @@ class MutualFundAnalyst:
             "beta": 0.79,
             "top_holdings": ["Sun Pharma", "Cipla", "Laurus Labs", "Divi's Laboratories", "Dr. Reddy's", "Lupin"],
             "cio_rationale": (
-                "Direct sectoral vehicle to capture the multi-year secular bull market in Indian CDMO, API manufacturing, and formulations. "
-                "Directly holds high-flying momentum stocks like Laurus Labs (+139% 1Y) and Divi's Lab along with defensive domestic pharma powerhouses. "
-                "US FDA clearance cycles, patent expiries in the US/EU, and China+1 supply chain diversification make this a must-have tactical satellite allocation."
+                "Direct sectoral vehicle capturing the multi-year secular bull run in Indian CDMO, API manufacturing, and formulations "
+                "benefiting from China+1 outsourcing and specialty launches."
             ),
-            "suitable_for": "Tactical thematic investors wanting focused participation in the pharmaceutical and CDMO revival supercycle."
+            "suitable_for": "Tactical thematic investors wanting focused participation in the pharmaceutical and CDMO supercycle."
         },
         {
             "id": "icici_infra",
+            "amfi_code": 120621,
             "name": "ICICI Prudential Infrastructure Fund",
             "fund_house": "ICICI Prudential AMC",
             "category": "Thematic / Manufacturing & Infra",
@@ -221,21 +216,118 @@ class MutualFundAnalyst:
             "beta": 0.96,
             "top_holdings": ["Larsen & Toubro", "NTPC", "Bharti Airtel", "BHEL", "Adani Ports", "Siemens India"],
             "cio_rationale": (
-                "Riding India's massive ₹111 lakh crore National Infrastructure Pipeline and private capex expansion. "
-                "Heavy investments into power transmission, railway electrification, defense fabrication, and telecom infrastructure. "
-                "Top-tier earnings visibility backed by record multi-year order books."
+                "Riding India's massive National Infrastructure Pipeline, power transmission, railways, and defense fabrication "
+                "backed by record multi-year capex order books."
             ),
-            "suitable_for": "Investors seeking high-octane growth driven by Government capex and domestic industrial revitalization."
+            "suitable_for": "Investors seeking high-octane growth driven by domestic industrial capex revitalization."
         }
     ]
 
-    def get_all_funds(self) -> List[Dict[str, Any]]:
-        """Returns all curated institutional fund recommendations."""
-        return self.RECOMMENDED_FUNDS
+    def __init__(self):
+        self.CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+    @staticmethod
+    def _find_nav_at_offset(entries: List[tuple], target_dt: datetime) -> Optional[float]:
+        """Finds closest trading day NAV on or before target_dt (entries sorted newest first)."""
+        for dt, nav in entries:
+            if dt <= target_dt and nav > 0:
+                return nav
+        return entries[-1][1] if entries else None
+
+    def _enrich_single_fund_live(self, base_fund: Dict[str, Any]) -> Dict[str, Any]:
+        """Fetches live AMFI NAV series via api.mfapi.in and calculates real 1Y/3Y/5Y CAGR and Sharpe."""
+        fund = dict(base_fund)
+        code = fund.get("amfi_code")
+        if not code:
+            return fund
+
+        try:
+            url = f"https://api.mfapi.in/mf/{code}"
+            r = requests.get(url, timeout=8)
+            if r.status_code != 200:
+                return fund
+            payload = r.json()
+            raw_data = payload.get("data", [])
+            if not raw_data:
+                return fund
+
+            parsed: List[tuple] = []
+            for row in raw_data:
+                try:
+                    dt = datetime.strptime(row["date"], "%d-%m-%Y")
+                    nv = float(row["nav"])
+                    if nv > 0:
+                        parsed.append((dt, nv))
+                except Exception:
+                    continue
+
+            if len(parsed) < 20:
+                return fund
+
+            # AMFI returns newest first, verify sort descending
+            parsed.sort(key=lambda x: x[0], reverse=True)
+            latest_dt, nav_now = parsed[0]
+
+            nav_1y = self._find_nav_at_offset(parsed, latest_dt - timedelta(days=365))
+            nav_3y = self._find_nav_at_offset(parsed, latest_dt - timedelta(days=365 * 3))
+            nav_5y = self._find_nav_at_offset(parsed, latest_dt - timedelta(days=365 * 5))
+
+            if nav_1y and nav_1y > 0:
+                fund["return_1y"] = round(((nav_now / nav_1y) - 1.0) * 100.0, 1)
+            if nav_3y and nav_3y > 0 and (latest_dt - parsed[-1][0]).days >= 950:
+                fund["return_3y_cagr"] = round((((nav_now / nav_3y) ** (1.0 / 3.0)) - 1.0) * 100.0, 1)
+            if nav_5y and nav_5y > 0 and (latest_dt - parsed[-1][0]).days >= 1700:
+                fund["return_5y_cagr"] = round((((nav_now / nav_5y) ** (1.0 / 5.0)) - 1.0) * 100.0, 1)
+
+            # Calculate 3-Year Sharpe Ratio from daily returns (Risk-Free Rate = 6.5% p.a.)
+            cutoff_3y = latest_dt - timedelta(days=365 * 3)
+            chrono_3y = sorted([(d, v) for d, v in parsed if d >= cutoff_3y], key=lambda x: x[0])
+            if len(chrono_3y) >= 120:
+                rets = [
+                    (chrono_3y[i][1] - chrono_3y[i - 1][1]) / chrono_3y[i - 1][1]
+                    for i in range(1, len(chrono_3y))
+                ]
+                mean_d = sum(rets) / len(rets)
+                var_d = sum((x - mean_d) ** 2 for x in rets) / max(1, len(rets) - 1)
+                ann_vol = math.sqrt(var_d) * math.sqrt(252.0)
+                if ann_vol > 1e-4:
+                    ann_ret = fund["return_3y_cagr"] / 100.0
+                    fund["sharpe_ratio"] = round((ann_ret - 0.065) / ann_vol, 2)
+
+            fund["nav"] = round(nav_now, 2)
+            fund["nav_date"] = latest_dt.strftime("%d-%b-%Y")
+            fund["is_live_nav"] = True
+        except Exception:
+            pass
+
+        return fund
+
+    def get_all_funds(self, force_refresh: bool = False) -> List[Dict[str, Any]]:
+        """Returns institutional fund recommendations enriched with live AMFI NAVs & CAGRs (12h cache)."""
+        if not force_refresh and self.CACHE_FILE.exists():
+            try:
+                if (time.time() - self.CACHE_FILE.stat().st_mtime) < 43200:
+                    with open(self.CACHE_FILE, "r", encoding="utf-8") as f:
+                        cached = json.load(f)
+                        if cached and isinstance(cached, list) and cached[0].get("is_live_nav"):
+                            return cached
+            except Exception:
+                pass
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
+            enriched = list(executor.map(self._enrich_single_fund_live, self.RECOMMENDED_FUNDS))
+
+        try:
+            with open(self.CACHE_FILE, "w", encoding="utf-8") as f:
+                json.dump(enriched, f, indent=2)
+        except Exception:
+            pass
+
+        return enriched
 
     def filter_funds(self, category: Optional[str] = None, min_3y_cagr: float = 0.0) -> List[Dict[str, Any]]:
-        """Filters mutual funds by category and historical CAGR threshold."""
-        funds = self.RECOMMENDED_FUNDS
+        """Filters live-enriched mutual funds by category and historical CAGR threshold."""
+        funds = self.get_all_funds(force_refresh=False)
         if category and category != "All":
             funds = [f for f in funds if category.lower() in f["category"].lower()]
         if min_3y_cagr > 0:
@@ -244,7 +336,7 @@ class MutualFundAnalyst:
 
     def get_fund_by_id(self, fund_id: str) -> Optional[Dict[str, Any]]:
         """Returns single fund details by ID."""
-        for f in self.RECOMMENDED_FUNDS:
+        for f in self.get_all_funds(force_refresh=False):
             if f["id"] == fund_id:
                 return f
         return None
@@ -262,15 +354,13 @@ class MutualFundAnalyst:
                 ],
                 "sip_advice": "Maintain disciplined monthly SIPs. Add 20% lumpsum top-up whenever Nifty corrects 4-6% from all-time highs."
             }
-        else:
-            return {
-                "profile": "Balanced / Moderate Growth (12-14% Target CAGR)",
-                "allocation": [
-                    {"category": "Flexi Cap Funds (Parag Parikh & HDFC)", "percentage": 50, "purpose": "Rock-Solid Core Wealth Compounder"},
-                    {"category": "Mid Cap Funds (Kotak Emerging Equity)", "percentage": 30, "purpose": "Controlled Beta Growth"},
-                    {"category": "Small Cap Funds (Nippon India Small Cap)", "percentage": 10, "purpose": "High-Growth Booster"},
-                    {"category": "Arbitrage / Liquid Reserve", "percentage": 10, "purpose": "Capital Preservation & Volatility Cushion"}
-                ],
-                "sip_advice": "Ideal for 5+ year horizons with low portfolio volatility and peace of mind."
-            }
-
+        return {
+            "profile": "Balanced / Moderate Growth (12-14% Target CAGR)",
+            "allocation": [
+                {"category": "Flexi Cap Funds (Parag Parikh & HDFC)", "percentage": 50, "purpose": "Rock-Solid Core Wealth Compounder"},
+                {"category": "Mid Cap Funds (Kotak Mid Cap)", "percentage": 30, "purpose": "Controlled Beta Growth"},
+                {"category": "Small Cap Funds (Nippon India Small Cap)", "percentage": 10, "purpose": "High-Growth Booster"},
+                {"category": "Arbitrage / Liquid Reserve", "percentage": 10, "purpose": "Capital Preservation & Volatility Cushion"}
+            ],
+            "sip_advice": "Ideal for 5+ year horizons with low portfolio volatility and peace of mind."
+        }

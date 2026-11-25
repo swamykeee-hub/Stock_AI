@@ -34,6 +34,7 @@ from core.corporate_actions_calendar import CorporateActionsCalendar
 from core.ai_performance_scorecard import AIPerformanceScorecard
 from core.telegram_alert_bot import TelegramAlertBot
 from core.market_movers_analyst import MarketMoversAnalyst
+from core.mutual_fund_analyst import MutualFundAnalyst
 
 def is_market_hours() -> bool:
     """Checks if current time is within Indian market trading hours (Mon-Fri 09:00 - 15:45 IST)."""
@@ -91,12 +92,25 @@ def refresh_all_live_data(mode: str = "quick", auto_push: bool = False) -> dict:
     scan_payload["indices"] = indices
     scan_payload["macro_snapshot"] = macro_snap
 
-    # Always ensure monitored_radar has all latest curated radar stocks
+    # Always ensure monitored_radar is calibrated with latest bullish scan & curated watchlist
     try:
         from core.fund_manager_radar import FundManagerRadar
-        radar_stocks = FundManagerRadar().get_monitored_stocks(sync_live_prices=False)
+        radar_mgr = FundManagerRadar()
+        radar_stocks = radar_mgr.get_monitored_stocks(sync_live_prices=False)
+        top_bullish = scan_payload.get("top_bullish_stocks", [])
+        needs_calibration = radar_stocks and not any(r.get("conviction_source") for r in radar_stocks)
+        if top_bullish and (mode == "full" or needs_calibration or not radar_stocks):
+            radar_stocks = radar_mgr.sync_with_scanner_results(top_bullish, max_promote=4)
         if radar_stocks:
             scan_payload["monitored_radar"] = radar_stocks
+    except Exception:
+        pass
+
+    # Always keep Institutional Mutual Funds enriched with Live AMFI NAVs (12h cache in quick mode)
+    try:
+        mf_data = MutualFundAnalyst().get_all_funds(force_refresh=(mode == "full"))
+        if mf_data:
+            scan_payload["mutual_funds"] = mf_data
     except Exception:
         pass
 
@@ -220,17 +234,38 @@ def refresh_all_live_data(mode: str = "quick", auto_push: bool = False) -> dict:
     except Exception as e:
         print(f"Profile sync note: {e}")
 
-    # Load IPO data
-    try:
-        ipo_data = IPOAnalyst().fetch_live_ipos()
-    except Exception:
-        ipo_data = []
+    # Concurrently refresh live IPOs, Institutional Flow (PCR/FII-DII), & Real-Time Market Movers every sync
+    def _fetch_ipos_safe():
+        try:
+            return IPOAnalyst().fetch_live_ipos()
+        except Exception:
+            return []
 
-    # Load Institutional Flow & Derivatives
-    try:
-        scan_payload["institutional_flow"] = InstitutionalFlowAnalyst().get_institutional_flow(force_refresh=False)
-    except Exception:
-        pass
+    def _fetch_inst_flow_live():
+        try:
+            return InstitutionalFlowAnalyst().get_institutional_flow(force_refresh=True)
+        except Exception:
+            return {}
+
+    def _fetch_movers_live():
+        try:
+            return MarketMoversAnalyst().get_market_movers(force_refresh=True)
+        except Exception:
+            return {}
+
+    with ThreadPoolExecutor(max_workers=3) as live_exec:
+        fut_ipos = live_exec.submit(_fetch_ipos_safe)
+        fut_inst = live_exec.submit(_fetch_inst_flow_live)
+        fut_movers = live_exec.submit(_fetch_movers_live)
+
+        ipo_data = fut_ipos.result()
+        inst_flow_data = fut_inst.result()
+        movers_data = fut_movers.result()
+
+    if inst_flow_data:
+        scan_payload["institutional_flow"] = inst_flow_data
+    if movers_data and (movers_data.get("top_gainers") or movers_data.get("top_losers")):
+        scan_payload["market_movers"] = movers_data
 
     # Load Corporate Actions & Earnings Calendar
     try:
@@ -244,11 +279,9 @@ def refresh_all_live_data(mode: str = "quick", auto_push: bool = False) -> dict:
     except Exception:
         pass
 
-    # Load Real-Time Market Movers (Top Gainers & Losers)
-    try:
-        scan_payload["market_movers"] = MarketMoversAnalyst().get_market_movers(force_refresh=False)
-    except Exception:
-        pass
+    # Persist final enriched JSON report (with fresh movers, institutional flow, MF NAVs & radar)
+    with open(scan_file, "w", encoding="utf-8") as f:
+        json.dump(scan_payload, f, indent=2)
 
     # Regenerate dashboard.html, index.html, and Desktop report
     html_destinations = [

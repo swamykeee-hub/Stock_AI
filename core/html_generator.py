@@ -297,6 +297,8 @@ class HTMLReportGenerator:
             cio_score = float(r.get("cio_conviction", 9.0))
             score_color = "#10b981" if cio_score >= 9.0 else "#38bdf8"
             score_bg = "rgba(16, 185, 129, 0.15)" if cio_score >= 9.0 else "rgba(56, 189, 248, 0.15)"
+            conv_src = r.get("conviction_source", "")
+            src_label = f'<div style="font-size: 10px; color: #94a3b8; margin-top: 3px;">{conv_src}</div>' if conv_src else ""
             radar_rows += f"""
             <tr class="stock-row" data-symbol="{r['symbol']}" data-name="{r['name']}" data-sector="{r['sector']}">
                 <td>
@@ -304,7 +306,7 @@ class HTMLReportGenerator:
                     <div class="sub-text">{r['name']}</div>
                 </td>
                 <td><span class="status-pill">{r['setup_type']}</span></td>
-                <td><span style="display:inline-flex; align-items:center; gap:5px; background: {score_bg}; color: {score_color}; border: 1px solid {score_color}55; padding: 4px 8px; border-radius: 6px; font-weight: 800; font-size: 13px;">⭐ {cio_score:.1f} / 10</span></td>
+                <td><span style="display:inline-flex; align-items:center; gap:5px; background: {score_bg}; color: {score_color}; border: 1px solid {score_color}55; padding: 4px 8px; border-radius: 6px; font-weight: 800; font-size: 13px;">⭐ {cio_score:.1f} / 10</span>{src_label}</td>
                 <td><b>₹{r.get('cmp', r['entry_trigger']):,.2f}</b></td>
                 <td style="color: #34d399;">₹{r['target_3m']}</td>
                 <td style="color: #10b981; font-weight: 700;">₹{r['target_1y']}</td>
@@ -318,6 +320,16 @@ class HTMLReportGenerator:
         # Generate Mutual Funds Rows
         mf_rows = ""
         for f in mutual_funds:
+            nav_val = f.get("nav")
+            nav_display = f"₹{float(nav_val):,.2f}" if nav_val else "N/A"
+            nav_date = f.get("nav_date", "Baseline")
+            nav_badge = "🟢 AMFI Live" if f.get("is_live_nav") else "Baseline Ref"
+            r1 = float(f.get("return_1y", 0.0))
+            r3 = float(f.get("return_3y_cagr", 0.0))
+            r5 = float(f.get("return_5y_cagr", 0.0))
+            c1 = "#10b981" if r1 >= 0 else "#f87171"
+            c3 = "#34d399" if r3 >= 0 else "#f87171"
+            c5 = "#38bdf8" if r5 >= 0 else "#f87171"
             mf_rows += f"""
             <tr>
                 <td>
@@ -325,9 +337,13 @@ class HTMLReportGenerator:
                     <div class="sub-text">{f['fund_house']} &bull; Manager: {f['fund_manager']}</div>
                 </td>
                 <td><span class="sector-pill">{f['category']}</span></td>
-                <td style="color: #10b981; font-weight: 700;">+{f['return_1y']}%</td>
-                <td style="color: #34d399; font-weight: 800;">+{f['return_3y_cagr']}%</td>
-                <td style="color: #38bdf8; font-weight: 700;">+{f['return_5y_cagr']}%</td>
+                <td>
+                    <b style="color: #f8fafc;">{nav_display}</b>
+                    <div class="sub-text" style="font-size: 11px;">{nav_badge} ({nav_date})</div>
+                </td>
+                <td style="color: {c1}; font-weight: 700;">{r1:+.1f}%</td>
+                <td style="color: {c3}; font-weight: 800;">{r3:+.1f}%</td>
+                <td style="color: {c5}; font-weight: 700;">{r5:+.1f}%</td>
                 <td><b>{f['sharpe_ratio']}</b></td>
                 <td>₹{f['aum_cr']:,.0f} Cr</td>
                 <td style="font-size: 12px; color: #cbd5e1; max-width: 320px;">{f['cio_rationale'][:130]}...</td>
@@ -2325,11 +2341,12 @@ class HTMLReportGenerator:
                     <tr>
                         <th class="sortable" onclick="sortTable(this, 0)">Fund Scheme &amp; House</th>
                         <th class="sortable" onclick="sortTable(this, 1)">Category</th>
-                        <th class="sortable" onclick="sortTable(this, 2)">1Y Return</th>
-                        <th class="sortable" onclick="sortTable(this, 3)">3Y CAGR</th>
-                        <th class="sortable" onclick="sortTable(this, 4)">5Y CAGR</th>
-                        <th class="sortable" onclick="sortTable(this, 5)">Sharpe</th>
-                        <th class="sortable" onclick="sortTable(this, 6)">AUM</th>
+                        <th class="sortable" onclick="sortTable(this, 2)">Live NAV (AMFI)</th>
+                        <th class="sortable" onclick="sortTable(this, 3)">1Y Return</th>
+                        <th class="sortable" onclick="sortTable(this, 4)">3Y CAGR</th>
+                        <th class="sortable" onclick="sortTable(this, 5)">5Y CAGR</th>
+                        <th class="sortable" onclick="sortTable(this, 6)">Sharpe</th>
+                        <th class="sortable" onclick="sortTable(this, 7)">AUM</th>
                         <th>Institutional Fund Manager Rationale</th>
                     </tr>
                 </thead>

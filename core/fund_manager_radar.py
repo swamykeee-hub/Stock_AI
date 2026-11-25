@@ -252,6 +252,99 @@ class FundManagerRadar:
 
         return stocks
 
+    def sync_with_scanner_results(self, bullish_picks: List[Dict[str, Any]], max_promote: int = 4) -> List[Dict[str, Any]]:
+        """
+        Automatically synchronizes Radar CIO conviction ratings with live BullishScanner results
+        and auto-promotes top newly discovered Stage-2 / Laurus-Type Inflection setups into the watchlist.
+        Preserves all manually curated core stocks while rotating auto-promoted slots daily.
+        """
+        stocks = self.get_monitored_stocks(sync_live_prices=False)
+        # Keep manually curated core entries intact; rotate prior auto-promoted entries cleanly
+        core_stocks = [s for s in stocks if not s.get("auto_promoted")]
+        core_syms = {s["symbol"] for s in core_stocks}
+        pick_map = {p["symbol"]: p for p in bullish_picks if p.get("symbol")}
+
+        # 1. Dynamically recalibrate CIO conviction & prices on curated core radar stocks
+        for s in core_stocks:
+            sym = s["symbol"]
+            if "baseline_conviction" not in s:
+                s["baseline_conviction"] = float(s.get("cio_conviction", 8.5))
+            if sym in pick_map:
+                p = pick_map[sym]
+                live_sc = float(p.get("conviction_score", s["baseline_conviction"]))
+                s["cio_conviction"] = round((float(s["baseline_conviction"]) * 0.45) + (live_sc * 0.55), 1)
+                s["cmp"] = p.get("cmp", s.get("cmp", s.get("entry_trigger", 0)))
+                s["day_change_pct"] = p.get("change_pct", s.get("day_change_pct", 0.0))
+                s["conviction_source"] = "Live Auto-Synced"
+            else:
+                s["conviction_source"] = "Core Curated"
+
+        # 2. Auto-promote top new high-conviction whole-market discoveries (Score >= 9.0)
+        promoted: List[Dict[str, Any]] = []
+        eligible = [
+            p for p in bullish_picks
+            if p.get("symbol") not in core_syms and float(p.get("conviction_score", 0.0)) >= 9.0
+        ]
+        # Prefer Laurus-Type Inflections first, then highest conviction score
+        eligible.sort(
+            key=lambda x: (
+                1 if "Inflection" in str(x.get("archetype_short", "")) else 0,
+                float(x.get("conviction_score", 0.0)),
+                float(x.get("inflection_score", 0.0)),
+            ),
+            reverse=True,
+        )
+
+        for p in eligible[:max_promote]:
+            cmp_val = float(p.get("cmp", 0.0))
+            if cmp_val <= 0:
+                continue
+            roce_v = p.get("roce_pct", "N/A")
+            opm_bps = p.get("opm_expansion_bps")
+            pat_yoy = p.get("qtr_pat_yoy_pct")
+            inst_d = p.get("inst_4q_delta_pct", 0.0)
+            opm_str = f"OPM {opm_bps:+.0f} bps, " if opm_bps is not None else ""
+            pat_str = f"Qtr PAT {pat_yoy:+.1f}% YoY, " if pat_yoy is not None else ""
+            thesis = (
+                f"Auto-promoted from 509-stock whole-market scan ({p.get('mcap_tier', 'NSE')}). "
+                f"Trading with 1Y return {p.get('ret_1y', 0):+.1f}%, ROCE {roce_v}%, "
+                f"{opm_str}{pat_str}and FII+DII 4Q accumulation {inst_d:+.1f}%."
+            )
+            catalysts = [c for c in p.get("fundamental_strengths", [])[:3] if c] or [
+                "Margin & EPS acceleration",
+                "Stage-2 institutional breakout",
+            ]
+            promoted.append({
+                "symbol": p["symbol"],
+                "name": p.get("name", p["symbol"]),
+                "sector": p.get("sector", "Equities"),
+                "setup_type": f"Auto-Promoted {p.get('archetype_short', 'Stage-2 Leader')}",
+                "monitoring_status": f"Auto-Discovered Entry ({p.get('suggested_entry', 'Near CMP')})",
+                "entry_trigger": cmp_val,
+                "target_3m": p.get("target_1", round(cmp_val * 1.14, 2)),
+                "target_1y": p.get("target_2", round(cmp_val * 1.35, 2)),
+                "stop_loss": p.get("stop_loss", round(cmp_val * 0.91, 2)),
+                "risk_reward": p.get("risk_reward", "1:2.5"),
+                "cio_conviction": p.get("conviction_score", 9.0),
+                "conviction_source": "Auto-Promoted Discovery",
+                "auto_promoted": True,
+                "institutional_thesis": thesis,
+                "catalysts": catalysts,
+                "cmp": cmp_val,
+                "day_change_pct": p.get("change_pct", 0.0),
+            })
+
+        merged = core_stocks + promoted
+        merged.sort(key=lambda x: float(x.get("cio_conviction", 0.0)), reverse=True)
+
+        try:
+            with open(self.RADAR_FILE, "w", encoding="utf-8") as f:
+                json.dump(merged, f, indent=2)
+        except Exception:
+            pass
+
+        return merged
+
     def add_to_radar(self, symbol: str, setup_type: str, thesis: str, target_3m: float, target_1y: float, stop_loss: float) -> bool:
         """Adds a new stock to the agentic AI monitoring list."""
         stocks = self.get_monitored_stocks(sync_live_prices=False)

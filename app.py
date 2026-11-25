@@ -820,14 +820,20 @@ with tab_macro_news:
 # ==============================================================================
 with tab_mutual_funds:
     st.subheader("💼 Institutional Mutual Fund Advisory & Recommendations")
-    st.write("Curated mutual fund recommendations across categories with detailed CAGR returns, risk-adjusted ratios, and institutional fund manager reasoning.")
+    st.write("Curated mutual fund recommendations with live AMFI NAV tracking, real 1Y/3Y/5Y CAGR calculations, Sharpe ratios, and institutional manager reasoning.")
 
-    # Category Filter
-    mf_c1, mf_c2 = st.columns([2, 1])
+    # Category Filter & Live AMFI Refresh
+    mf_c1, mf_c2, mf_c3 = st.columns([2, 1.5, 1])
     with mf_c1:
         selected_mf_cat = st.selectbox("Select Mutual Fund Category:", ["All", "Flexi Cap", "Mid Cap", "Small Cap", "Thematic / Healthcare", "Thematic / Manufacturing"])
     with mf_c2:
         risk_model = st.selectbox("View Asset Allocation Model:", ["Aggressive", "Moderate"])
+    with mf_c3:
+        st.write("")
+        if st.button("🔄 Refresh Live AMFI NAVs"):
+            with st.spinner("Fetching daily NAV series from AMFI (api.mfapi.in)..."):
+                mf_analyst.get_all_funds(force_refresh=True)
+            st.success("AMFI NAVs updated!")
 
     # Asset Allocation Model
     alloc_data = mf_analyst.get_portfolio_allocation_model(risk_model)
@@ -839,20 +845,29 @@ with tab_mutual_funds:
                 st.metric(label=a_item["category"], value=f"{a_item['percentage']}%", delta=a_item["purpose"])
 
     st.markdown("---")
-    st.markdown("#### 🌟 Top Recommended Funds")
+    st.markdown("#### 🌟 Top Recommended Funds (Live AMFI NAV Enriched)")
 
     funds = mf_analyst.filter_funds(category=selected_mf_cat)
     for f in funds:
-        with st.expander(f"🏆 {f['name']} ({f['fund_house']}) — {f['category']} | 3Y CAGR: +{f['return_3y_cagr']}% | Alpha: {f['alpha']}", expanded=True):
-            fc1, fc2, fc3, fc4 = st.columns(4)
-            fc1.metric("1-Year Return", f"+{f['return_1y']}%")
-            fc1.write(f"**Fund Manager:** {f['fund_manager']}")
-            fc2.metric("3-Year CAGR", f"+{f['return_3y_cagr']}%")
-            fc2.write(f"**AUM:** ₹{f['aum_cr']:,.0f} Cr")
-            fc3.metric("5-Year CAGR", f"+{f['return_5y_cagr']}%")
-            fc3.write(f"**Expense Ratio:** {f['expense_ratio_pct']}%")
-            fc4.metric("Sharpe Ratio", f"{f['sharpe_ratio']}")
-            fc4.write(f"**Min Horizon:** {f['min_horizon']}")
+        nav_val = f.get("nav")
+        nav_str = f"₹{float(nav_val):,.2f}" if nav_val else "N/A"
+        nav_date = f.get("nav_date", "Baseline")
+        nav_src = "AMFI Live" if f.get("is_live_nav") else "Baseline Ref"
+        r1 = float(f.get("return_1y", 0.0))
+        r3 = float(f.get("return_3y_cagr", 0.0))
+        r5 = float(f.get("return_5y_cagr", 0.0))
+        with st.expander(f"🏆 {f['name']} ({f['fund_house']}) — NAV: {nav_str} | 3Y CAGR: {r3:+.1f}% | Alpha: {f['alpha']}", expanded=True):
+            fc1, fc2, fc3, fc4, fc5 = st.columns(5)
+            fc1.metric("Live NAV", nav_str, nav_date)
+            fc1.write(f"**Feed:** {nav_src}")
+            fc2.metric("1-Year Return", f"{r1:+.1f}%")
+            fc2.write(f"**Fund Manager:** {f['fund_manager']}")
+            fc3.metric("3-Year CAGR", f"{r3:+.1f}%")
+            fc3.write(f"**AUM:** ₹{f['aum_cr']:,.0f} Cr")
+            fc4.metric("5-Year CAGR", f"{r5:+.1f}%")
+            fc4.write(f"**Expense Ratio:** {f['expense_ratio_pct']}%")
+            fc5.metric("Sharpe Ratio", f"{f['sharpe_ratio']}")
+            fc5.write(f"**Min Horizon:** {f['min_horizon']}")
 
             st.markdown("##### 🏛️ Senior Fund Manager Investment Rationale (Why Recommended?):")
             st.info(f["cio_rationale"])

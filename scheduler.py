@@ -81,13 +81,17 @@ class DailyAutomator:
         except Exception as e:
             print(f"  -> Factor Screener notice: {e}")
 
-        # 5. AI Fund Manager Radar
-        print("  -> Updating AI Fund Manager Monitored Radar...")
+        # 5. AI Fund Manager Radar (Recalibrate CIO Conviction & Auto-Promote Top Discoveries)
+        print("  -> Auto-Syncing AI Fund Manager Monitored Radar with Live Scanner Results...")
+        try:
+            self.fund_radar.sync_with_scanner_results(bullish_picks, max_promote=4)
+        except Exception as e:
+            print(f"  -> Radar auto-sync notice: {e}")
         monitored_radar = self.fund_radar.get_monitored_stocks(sync_live_prices=True)
 
-        # 6. Mutual Fund Advisory Recommendations
-        print("  -> Syncing Institutional Mutual Fund Picks...")
-        mutual_funds = self.mf_analyst.get_all_funds()
+        # 6. Mutual Fund Advisory Recommendations (Live AMFI NAVs & Real 1Y/3Y/5Y CAGR)
+        print("  -> Syncing Institutional Mutual Fund Picks (Live AMFI NAVs)...")
+        mutual_funds = self.mf_analyst.get_all_funds(force_refresh=True)
 
         # 7. Pre-compute Enriched Stock Profiles (TCS, INFY, etc. with Buy Entry Strategy)
         print("  -> Compiling Enriched Stock Profiles & Buy Entry Intelligence...")
