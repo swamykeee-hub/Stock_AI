@@ -9,14 +9,14 @@
     "stop_loss": 1457.28,
     "peak_price": 1557.9,
     "trough_price": 1534.2,
-    "cmp": 1544.3,
+    "cmp": 1543.8,
     "conviction_score": 8.8,
     "gain_pct": "-0.1%",
     "status": "ACTIVE",
     "sector": "Services",
     "benchmark_entry": 25915.75,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.61
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.77
   },
   {
     "symbol": "KPRMILL",
@@ -28,14 +28,14 @@
     "stop_loss": 1111.59,
     "peak_price": 1209.8,
     "trough_price": 1168.6,
-    "cmp": 1187.6,
+    "cmp": 1189.9,
     "conviction_score": 8.8,
-    "gain_pct": "+0.4%",
+    "gain_pct": "+0.6%",
     "status": "ACTIVE",
     "sector": "Textiles",
     "benchmark_entry": 25915.75,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 1.08
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 1.46
   },
   {
     "symbol": "APARINDS",
@@ -47,14 +47,14 @@
     "stop_loss": 13055.22,
     "peak_price": 14393.0,
     "trough_price": 13930.0,
-    "cmp": 14107.0,
+    "cmp": 14105.0,
     "conviction_score": 8.8,
     "gain_pct": "+0.2%",
     "status": "ACTIVE",
     "sector": "Capital Goods",
     "benchmark_entry": 25915.75,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.92
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 1.1
   },
   {
     "symbol": "TRENT",
@@ -66,14 +66,14 @@
     "stop_loss": 2956.49,
     "peak_price": 3349.9,
     "trough_price": 3221.0,
-    "cmp": 3296.6,
+    "cmp": 3293.3,
     "conviction_score": 8.8,
-    "gain_pct": "-0.7%",
+    "gain_pct": "-0.8%",
     "status": "ACTIVE",
     "sector": "Consumer Services",
     "benchmark_entry": 25915.75,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": -0.05
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.04
   },
   {
     "symbol": "KAYNES",
@@ -85,14 +85,14 @@
     "stop_loss": 2657.9,
     "peak_price": 2846.3,
     "trough_price": 2695.9,
-    "cmp": 2701.0,
+    "cmp": 2696.6,
     "conviction_score": 9.0,
-    "gain_pct": "-1.0%",
+    "gain_pct": "-1.2%",
     "status": "ACTIVE",
     "sector": "Aerospace, Defense & OSAT Semiconductor",
     "benchmark_entry": 25910.65,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": -0.36
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": -0.32
   },
   {
     "symbol": "LAURUSLABS",
@@ -104,14 +104,14 @@
     "stop_loss": 2123.39,
     "peak_price": 2450.0,
     "trough_price": 2371.1,
-    "cmp": 2441.3,
+    "cmp": 2439.6,
     "conviction_score": 8.9,
     "gain_pct": "+1.5%",
     "status": "ACTIVE",
     "sector": "Healthcare",
     "benchmark_entry": 25910.65,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 2.19
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 2.32
   },
   {
     "symbol": "UNOMINDA",
@@ -123,14 +123,14 @@
     "stop_loss": 1216.41,
     "peak_price": 1384.9,
     "trough_price": 1353.0,
-    "cmp": 1374.9,
+    "cmp": 1374.2,
     "conviction_score": 8.9,
-    "gain_pct": "+0.4%",
+    "gain_pct": "+0.3%",
     "status": "ACTIVE",
     "sector": "Automobile and Auto Components",
     "benchmark_entry": 25910.65,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 1.05
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 1.2
   },
   {
     "symbol": "COFORGE",
@@ -141,15 +141,15 @@
     "target_1": 2370.93,
     "stop_loss": 1924.36,
     "peak_price": 2185.6,
-    "trough_price": 2065.4,
-    "cmp": 2066.2,
+    "trough_price": 2060.1,
+    "cmp": 2066.1,
     "conviction_score": 8.9,
     "gain_pct": "-1.5%",
     "status": "ACTIVE",
     "sector": "Information Technology",
     "benchmark_entry": 25910.65,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": -0.88
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": -0.69
   },
   {
     "symbol": "CUPID",
@@ -161,14 +161,14 @@
     "stop_loss": 322.58,
     "peak_price": 370.0,
     "trough_price": 358.15,
-    "cmp": 367.3,
+    "cmp": 367.05,
     "conviction_score": 8.8,
     "gain_pct": "+0.2%",
     "status": "ACTIVE",
     "sector": "Fast Moving Consumer Goods",
     "benchmark_entry": 25910.65,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.88
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 1.0
   },
   {
     "symbol": "CPPLUS",
@@ -178,16 +178,16 @@
     "entry_price": 4125.5,
     "target_1": 4604.54,
     "stop_loss": 3802.34,
-    "peak_price": 4222.3,
+    "peak_price": 4224.8,
     "trough_price": 4085.6,
-    "cmp": 4221.8,
+    "cmp": 4200.8,
     "conviction_score": 9.0,
-    "gain_pct": "+2.3%",
+    "gain_pct": "+1.8%",
     "status": "ACTIVE",
     "sector": "Capital Goods",
     "benchmark_entry": 25913.5,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 3.0
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 2.69
   },
   {
     "symbol": "CDSL",
@@ -199,14 +199,14 @@
     "stop_loss": 1320.29,
     "peak_price": 1426.5,
     "trough_price": 1398.8,
-    "cmp": 1411.3,
+    "cmp": 1409.1,
     "conviction_score": 9.0,
-    "gain_pct": "-0.2%",
+    "gain_pct": "-0.4%",
     "status": "ACTIVE",
     "sector": "Financial Services",
     "benchmark_entry": 25913.5,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.42
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.46
   },
   {
     "symbol": "HEROMOTOCO",
@@ -218,14 +218,14 @@
     "stop_loss": 5235.67,
     "peak_price": 5674.0,
     "trough_price": 5560.0,
-    "cmp": 5637.0,
+    "cmp": 5633.0,
     "conviction_score": 9.0,
-    "gain_pct": "-0.0%",
+    "gain_pct": "-0.1%",
     "status": "ACTIVE",
     "sector": "Automobile and Auto Components",
     "benchmark_entry": 25913.5,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.63
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.75
   },
   {
     "symbol": "IPCALAB",
@@ -237,14 +237,14 @@
     "stop_loss": 1728.68,
     "peak_price": 1854.8,
     "trough_price": 1815.0,
-    "cmp": 1833.0,
+    "cmp": 1830.5,
     "conviction_score": 9.0,
-    "gain_pct": "+0.1%",
+    "gain_pct": "-0.1%",
     "status": "ACTIVE",
     "sector": "Healthcare",
     "benchmark_entry": 25913.5,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.75
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.81
   },
   {
     "symbol": "LTTS",
@@ -256,14 +256,14 @@
     "stop_loss": 3814.54,
     "peak_price": 4299.0,
     "trough_price": 4152.2,
-    "cmp": 4172.4,
+    "cmp": 4174.0,
     "conviction_score": 9.0,
-    "gain_pct": "-0.4%",
+    "gain_pct": "-0.3%",
     "status": "ACTIVE",
     "sector": "Information Technology",
     "benchmark_entry": 25913.5,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.32
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.55
   },
   {
     "symbol": "HONASA",
@@ -275,14 +275,14 @@
     "stop_loss": 471.28,
     "peak_price": 554.95,
     "trough_price": 534.15,
-    "cmp": 535.5,
+    "cmp": 535.7,
     "conviction_score": 9.1,
-    "gain_pct": "-0.8%",
+    "gain_pct": "-0.7%",
     "status": "ACTIVE",
     "sector": "Fast Moving Consumer Goods",
     "benchmark_entry": 25922.45,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": -0.06
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.17
   },
   {
     "symbol": "MEDANTA",
@@ -294,14 +294,14 @@
     "stop_loss": 1363.09,
     "peak_price": 1536.0,
     "trough_price": 1508.3,
-    "cmp": 1516.4,
+    "cmp": 1516.7,
     "conviction_score": 9.1,
     "gain_pct": "-0.3%",
     "status": "ACTIVE",
     "sector": "Healthcare",
     "benchmark_entry": 25922.45,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.41
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.62
   },
   {
     "symbol": "SOLARINDS",
@@ -313,14 +313,14 @@
     "stop_loss": 17281.17,
     "peak_price": 18449.0,
     "trough_price": 18085.0,
-    "cmp": 18126.0,
+    "cmp": 18107.0,
     "conviction_score": 9.1,
-    "gain_pct": "-0.6%",
+    "gain_pct": "-0.7%",
     "status": "ACTIVE",
     "sector": "Chemicals",
     "benchmark_entry": 25922.45,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.13
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.22
   },
   {
     "symbol": "PETRONET",
@@ -332,14 +332,14 @@
     "stop_loss": 300.39,
     "peak_price": 330.4,
     "trough_price": 324.4,
-    "cmp": 325.35,
+    "cmp": 324.95,
     "conviction_score": 9.1,
-    "gain_pct": "-0.8%",
+    "gain_pct": "-0.9%",
     "status": "ACTIVE",
     "sector": "Oil Gas & Consumable Fuels",
     "benchmark_entry": 25922.45,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": -0.09
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": -0.02
   },
   {
     "symbol": "DIVISLAB",
@@ -351,14 +351,14 @@
     "stop_loss": 9825.14,
     "peak_price": 11562.0,
     "trough_price": 11201.0,
-    "cmp": 11542.5,
+    "cmp": 11543.0,
     "conviction_score": 9.0,
     "gain_pct": "+0.0%",
     "status": "ACTIVE",
     "sector": "Healthcare",
     "benchmark_entry": 25922.45,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.71
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.91
   },
   {
     "symbol": "IGIL",
@@ -370,14 +370,14 @@
     "stop_loss": 376.49,
     "peak_price": 448.0,
     "trough_price": 425.5,
-    "cmp": 430.15,
+    "cmp": 429.7,
     "conviction_score": 9.3,
-    "gain_pct": "-3.4%",
+    "gain_pct": "-3.5%",
     "status": "ACTIVE",
     "sector": "Services",
     "benchmark_entry": 25916.75,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": -2.75
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": -2.66
   },
   {
     "symbol": "TECHM",
@@ -389,14 +389,14 @@
     "stop_loss": 1674.57,
     "peak_price": 1817.4,
     "trough_price": 1784.1,
-    "cmp": 1790.0,
+    "cmp": 1790.1,
     "conviction_score": 9.2,
     "gain_pct": "-0.1%",
     "status": "ACTIVE",
     "sector": "Information Technology",
     "benchmark_entry": 25916.75,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.59
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.79
   },
   {
     "symbol": "BSE",
@@ -408,14 +408,14 @@
     "stop_loss": 3510.44,
     "peak_price": 3837.6,
     "trough_price": 3754.1,
-    "cmp": 3770.4,
+    "cmp": 3769.8,
     "conviction_score": 9.2,
     "gain_pct": "-0.9%",
     "status": "ACTIVE",
     "sector": "Financial Services",
     "benchmark_entry": 25916.75,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": -0.24
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": -0.06
   },
   {
     "symbol": "WELCORP",
@@ -427,14 +427,14 @@
     "stop_loss": 1926.17,
     "peak_price": 2235.0,
     "trough_price": 2095.6,
-    "cmp": 2125.6,
+    "cmp": 2122.1,
     "conviction_score": 9.2,
-    "gain_pct": "+0.7%",
+    "gain_pct": "+0.5%",
     "status": "ACTIVE",
     "sector": "Capital Goods",
     "benchmark_entry": 25916.75,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 1.36
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 1.39
   },
   {
     "symbol": "GLAND",
@@ -446,14 +446,14 @@
     "stop_loss": 3028.18,
     "peak_price": 3399.2,
     "trough_price": 3308.0,
-    "cmp": 3354.0,
+    "cmp": 3348.3,
     "conviction_score": 9.1,
-    "gain_pct": "+1.0%",
+    "gain_pct": "+0.8%",
     "status": "ACTIVE",
     "sector": "Healthcare",
     "benchmark_entry": 25916.75,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 1.69
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 1.71
   },
   {
     "symbol": "MCX",
@@ -465,14 +465,14 @@
     "stop_loss": 3276.38,
     "peak_price": 3629.0,
     "trough_price": 3475.2,
-    "cmp": 3528.3,
+    "cmp": 3527.6,
     "conviction_score": 9.5,
     "gain_pct": "-0.7%",
     "status": "ACTIVE",
     "sector": "Financial Services",
     "benchmark_entry": 25904.05,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": -0.09
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.08
   },
   {
     "symbol": "RADICO",
@@ -484,14 +484,14 @@
     "stop_loss": 4387.83,
     "peak_price": 4747.0,
     "trough_price": 4646.0,
-    "cmp": 4717.5,
+    "cmp": 4711.1,
     "conviction_score": 9.4,
-    "gain_pct": "+0.2%",
+    "gain_pct": "+0.1%",
     "status": "ACTIVE",
     "sector": "Fast Moving Consumer Goods",
     "benchmark_entry": 25904.05,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.88
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.94
   },
   {
     "symbol": "EMCURE",
@@ -503,14 +503,14 @@
     "stop_loss": 2027.81,
     "peak_price": 2343.0,
     "trough_price": 2290.8,
-    "cmp": 2294.5,
+    "cmp": 2292.5,
     "conviction_score": 9.3,
-    "gain_pct": "-1.1%",
+    "gain_pct": "-1.2%",
     "status": "ACTIVE",
     "sector": "Healthcare",
     "benchmark_entry": 25904.05,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": -0.48
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": -0.37
   },
   {
     "symbol": "ENGINERSIN",
@@ -522,14 +522,14 @@
     "stop_loss": 272.84,
     "peak_price": 300.75,
     "trough_price": 289.4,
-    "cmp": 290.75,
+    "cmp": 290.3,
     "conviction_score": 9.3,
-    "gain_pct": "-0.5%",
+    "gain_pct": "-0.7%",
     "status": "ACTIVE",
     "sector": "Construction",
     "benchmark_entry": 25904.05,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.09
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.13
   },
   {
     "symbol": "ANTHEM",
@@ -541,14 +541,14 @@
     "stop_loss": 876.08,
     "peak_price": 974.0,
     "trough_price": 951.05,
-    "cmp": 966.7,
+    "cmp": 966.45,
     "conviction_score": 9.3,
     "gain_pct": "-0.2%",
     "status": "ACTIVE",
     "sector": "Healthcare",
     "benchmark_entry": 25904.05,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.46
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.63
   },
   {
     "symbol": "ACUTAAS",
@@ -560,14 +560,14 @@
     "stop_loss": 3543.25,
     "peak_price": 3985.0,
     "trough_price": 3808.2,
-    "cmp": 3969.7,
+    "cmp": 3967.6,
     "conviction_score": 9.6,
     "gain_pct": "+1.5%",
     "status": "ACTIVE",
     "sector": "Healthcare",
     "benchmark_entry": 25927.75,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 2.25
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 2.39
   },
   {
     "symbol": "RUBICON",
@@ -579,14 +579,14 @@
     "stop_loss": 1535.7,
     "peak_price": 1723.0,
     "trough_price": 1655.0,
-    "cmp": 1719.4,
+    "cmp": 1714.8,
     "conviction_score": 9.5,
-    "gain_pct": "+1.8%",
+    "gain_pct": "+1.6%",
     "status": "ACTIVE",
     "sector": "Healthcare",
     "benchmark_entry": 25927.75,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 2.57
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 2.49
   },
   {
     "symbol": "CEMPRO",
@@ -598,14 +598,14 @@
     "stop_loss": 1260.99,
     "peak_price": 1456.0,
     "trough_price": 1415.4,
-    "cmp": 1453.0,
+    "cmp": 1451.7,
     "conviction_score": 9.5,
-    "gain_pct": "+2.3%",
+    "gain_pct": "+2.2%",
     "status": "ACTIVE",
     "sector": "Construction",
     "benchmark_entry": 25927.75,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 3.02
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 3.12
   },
   {
     "symbol": "ACE",
@@ -617,14 +617,14 @@
     "stop_loss": 1092.12,
     "peak_price": 1198.8,
     "trough_price": 1161.75,
-    "cmp": 1166.6,
+    "cmp": 1166.3,
     "conviction_score": 9.5,
     "gain_pct": "-0.1%",
     "status": "ACTIVE",
     "sector": "Capital Goods",
     "benchmark_entry": 25927.75,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": 0.64
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": 0.81
   },
   {
     "symbol": "CHENNPETRO",
@@ -635,15 +635,15 @@
     "target_1": 1587.04,
     "stop_loss": 1316.27,
     "peak_price": 1450.0,
-    "trough_price": 1375.9,
-    "cmp": 1381.6,
+    "trough_price": 1375.0,
+    "cmp": 1375.0,
     "conviction_score": 9.5,
-    "gain_pct": "-1.7%",
+    "gain_pct": "-2.1%",
     "status": "ACTIVE",
     "sector": "Oil Gas & Consumable Fuels",
     "benchmark_entry": 25927.75,
-    "benchmark_cmp": 25739.8,
-    "alpha_vs_nifty_pct": -0.94
+    "benchmark_cmp": 25689.75,
+    "alpha_vs_nifty_pct": -1.22
   },
   {
     "symbol": "TRENT",
@@ -653,12 +653,12 @@
     "target_1": 6200.0,
     "stop_loss": 5150.0,
     "peak_price": 7180.0,
-    "cmp": 3296.6,
+    "cmp": 3293.3,
     "gain_pct": "-39.2%",
     "status": "TARGET_HIT",
     "sector": "Retail & Quick Fashion",
     "trough_price": 3221.0,
-    "benchmark_cmp": 25739.8
+    "benchmark_cmp": 25689.75
   },
   {
     "symbol": "DIXON",
@@ -668,12 +668,12 @@
     "target_1": 13500.0,
     "stop_loss": 11100.0,
     "peak_price": 15450.0,
-    "cmp": 12951.0,
-    "gain_pct": "+9.8%",
+    "cmp": 12834.0,
+    "gain_pct": "+8.8%",
     "status": "TARGET_HIT",
     "sector": "Electronics Manufacturing (EMS)",
-    "trough_price": 12929.0,
-    "benchmark_cmp": 25739.8
+    "trough_price": 12791.0,
+    "benchmark_cmp": 25689.75
   },
   {
     "symbol": "BEL",
@@ -683,12 +683,12 @@
     "target_1": 320.0,
     "stop_loss": 268.0,
     "peak_price": 405.1,
-    "cmp": 403.1,
-    "gain_pct": "+41.9%",
+    "cmp": 401.45,
+    "gain_pct": "+41.4%",
     "status": "TARGET_HIT",
     "sector": "Aerospace & Defense PSU",
     "trough_price": 395.8,
-    "benchmark_cmp": 25739.8
+    "benchmark_cmp": 25689.75
   },
   {
     "symbol": "PERSISTENT",
@@ -698,12 +698,12 @@
     "target_1": 5600.0,
     "stop_loss": 4720.0,
     "peak_price": 6420.5,
-    "cmp": 6136.5,
-    "gain_pct": "+24.0%",
+    "cmp": 6140.5,
+    "gain_pct": "+24.1%",
     "status": "TARGET_HIT",
     "sector": "IT & Cloud Engineering",
     "trough_price": 6131.5,
-    "benchmark_cmp": 25739.8
+    "benchmark_cmp": 25689.75
   },
   {
     "symbol": "LAURUSLABS",
@@ -713,12 +713,12 @@
     "target_1": 490.0,
     "stop_loss": 395.0,
     "peak_price": 2450.0,
-    "cmp": 2441.3,
-    "gain_pct": "+481.3%",
+    "cmp": 2439.6,
+    "gain_pct": "+480.9%",
     "status": "TARGET_HIT",
     "sector": "Pharmaceuticals & CDMO",
     "trough_price": 2371.1,
-    "benchmark_cmp": 25739.8
+    "benchmark_cmp": 25689.75
   },
   {
     "symbol": "KAYNES",
@@ -728,12 +728,12 @@
     "target_1": 5500.0,
     "stop_loss": 4580.0,
     "peak_price": 5680.0,
-    "cmp": 2701.0,
-    "gain_pct": "-44.3%",
+    "cmp": 2696.6,
+    "gain_pct": "-44.4%",
     "status": "TARGET_HIT",
     "sector": "Semiconductors & Electronics",
     "trough_price": 2695.9,
-    "benchmark_cmp": 25739.8
+    "benchmark_cmp": 25689.75
   },
   {
     "symbol": "BOMDYEING",
@@ -756,12 +756,12 @@
     "target_1": 4480.0,
     "stop_loss": 3990.0,
     "peak_price": 4240.0,
-    "cmp": 2495.9,
+    "cmp": 2492.6,
     "gain_pct": "-39.9%",
     "status": "STOP_LOSS_HIT",
     "sector": "IT Services",
     "trough_price": 2487.0,
-    "benchmark_cmp": 25739.8,
+    "benchmark_cmp": 25689.75,
     "resolved_date": "2026-11-25"
   }
 ]
