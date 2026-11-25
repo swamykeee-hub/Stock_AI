@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-11-25 09:05:19",
+  "timestamp": "2026-11-25 09:08:51",
   "indices": {
     "NIFTY 50": {
-      "value": 25349.65,
-      "change": -450.95,
-      "percent": -1.75
+      "value": 25658.35,
+      "change": -142.25,
+      "percent": -0.55
     },
     "SENSEX": {
       "value": 82435.99,
@@ -12,9 +12,9 @@
       "percent": -1.77
     },
     "BANK NIFTY": {
-      "value": 62585.35,
-      "change": -2049.85,
-      "percent": -3.17
+      "value": 63408.6,
+      "change": -1226.6,
+      "percent": -1.9
     },
     "INDIA VIX": {
       "value": 17.7,
@@ -22,34 +22,34 @@
       "percent": 2.18
     },
     "NIFTY 100": {
-      "value": 26217.3,
-      "change": -445.5,
-      "percent": -1.67
+      "value": 26521.2,
+      "change": -141.6,
+      "percent": -0.53
     },
     "NIFTY 200": {
-      "value": 14362.3,
-      "change": -225.5,
-      "percent": -1.55
-    },
-    "NIFTY IT": {
-      "value": 31850.8,
-      "change": 528.1,
-      "percent": 1.69
-    },
-    "NIFTY PHARMA": {
-      "value": 28288.85,
-      "change": -98.05,
-      "percent": -0.34
-    },
-    "NIFTY FMCG": {
-      "value": 48312.55,
-      "change": -223.15,
+      "value": 14521.0,
+      "change": -66.8,
       "percent": -0.46
     },
+    "NIFTY IT": {
+      "value": 32554.45,
+      "change": 1231.75,
+      "percent": 3.93
+    },
+    "NIFTY PHARMA": {
+      "value": 28620.75,
+      "change": 233.85,
+      "percent": 0.82
+    },
+    "NIFTY FMCG": {
+      "value": 48548.9,
+      "change": 13.2,
+      "percent": 0.03
+    },
     "NIFTY AUTO": {
-      "value": 28490.7,
-      "change": -297.0,
-      "percent": -1.03
+      "value": 28654.2,
+      "change": -133.5,
+      "percent": -0.46
     },
     "NIFTY METAL": {
       "value": 11819.25,
@@ -57,14 +57,14 @@
       "percent": -3.68
     },
     "NIFTY PRIVATE BANK": {
-      "value": 30659.85,
-      "change": -1011.95,
-      "percent": -3.19
+      "value": 31146.25,
+      "change": -525.55,
+      "percent": -1.66
     },
     "NIFTY FIN-SERVICES": {
-      "value": 30017.3,
-      "change": -710.8,
-      "percent": -2.31
+      "value": 30464.85,
+      "change": -263.25,
+      "percent": -0.86
     },
     "NIFTY AI CATALYSTS": {
       "value": 986.34,
@@ -105,16 +105,16 @@
         "change_pct": -1.26
       },
       "Hang Seng": {
-        "price": 22337.65,
-        "change": 118.0,
-        "change_pct": 0.53
+        "price": 22335.15,
+        "change": 115.5,
+        "change_pct": 0.52
       }
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 87.71,
-        "change": -1.07,
-        "change_pct": -1.21
+        "price": 87.69,
+        "change": -1.09,
+        "change_pct": -1.23
       },
       "US 10-Yr Yield (%)": {
         "price": 4.9,
@@ -127,21 +127,21 @@
         "change_pct": 0.09
       },
       "Gold ($/oz)": {
-        "price": 3553.3,
-        "change": -8.6,
-        "change_pct": -0.24
+        "price": 3549.9,
+        "change": -12.0,
+        "change_pct": -0.34
       },
       "USD / INR": {
-        "price": 92.74,
-        "change": -0.16,
-        "change_pct": -0.17
+        "price": 92.72,
+        "change": -0.17,
+        "change_pct": -0.19
       }
     },
     "fund_manager_takeaways": [
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.9%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-25 09:05:29"
+    "timestamp": "2026-11-25 09:08:59"
   },
   "market_regime": {
     "nifty_cmp": 25349.65,
