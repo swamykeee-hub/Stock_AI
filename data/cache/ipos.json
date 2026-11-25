@@ -8,11 +8,11 @@
     "price_band": "\u20b9259.00 - \u20b9272.00",
     "lot_size": "55",
     "issue_size_cr": "455.97",
-    "gmp_inr": "\u20b915.50",
-    "gmp_pct": 5.7,
+    "gmp_inr": "\u20b919.00",
+    "gmp_pct": 7.0,
     "subscription_total": "17.19x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 18 Nov 2026 \u2013 20 Nov 2026 \u2022 Est. Listing: \u20b9288 (+5.7%)"
+    "analysis": "Dates: 18 Nov 2026 \u2013 20 Nov 2026 \u2022 Est. Listing: \u20b9291 (+7.0%)"
   },
   {
     "name": "Watrana Rentals",
@@ -48,16 +48,16 @@
     "name": "Shree Siddhivinayak Greentech Industries",
     "category": "NSE Emerge",
     "sector": "Agro",
-    "status": "Upcoming",
+    "status": "Open",
     "issue_period": "25 Nov 2026 \u2013 27 Nov 2026",
     "price_band": "\u20b9130.00 - \u20b9142.00",
     "lot_size": "1,000",
     "issue_size_cr": "93.66",
-    "gmp_inr": "\u20b910.00",
-    "gmp_pct": 7.0,
-    "subscription_total": "Yet to Open",
+    "gmp_inr": "\u20b920.00",
+    "gmp_pct": 14.1,
+    "subscription_total": "Active",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9152 (+7.0%)"
+    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9162 (+14.1%)"
   },
   {
     "name": "Foodlink F&B Holdings",
@@ -68,11 +68,11 @@
     "price_band": "\u20b9181.00 - \u20b9191.00",
     "lot_size": "78",
     "issue_size_cr": "360.76",
-    "gmp_inr": "\u20b916.00",
-    "gmp_pct": 8.4,
+    "gmp_inr": "\u20b921.00",
+    "gmp_pct": 11.0,
     "subscription_total": "Yet to Open",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9207 (+8.4%)"
+    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9212 (+11.0%)"
   },
   {
     "name": "Airpro Technology",
@@ -113,11 +113,11 @@
     "price_band": "\u20b9175.00 - \u20b9180.00",
     "lot_size": "800",
     "issue_size_cr": "54.00",
-    "gmp_inr": "\u20b920.00",
-    "gmp_pct": 11.1,
+    "gmp_inr": "\u20b918.00",
+    "gmp_pct": 10.0,
     "subscription_total": "Yet to Open",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 1 Dec 2026 \u2013 3 Dec 2026 \u2022 Est. Listing: \u20b9200 (+11.1%)"
+    "analysis": "Dates: 1 Dec 2026 \u2013 3 Dec 2026 \u2022 Est. Listing: \u20b9198 (+10.0%)"
   },
   {
     "name": "Matangi Rubber",
@@ -140,14 +140,14 @@
     "sector": "Engineering",
     "status": "Upcoming",
     "issue_period": "2 Dec 2026 \u2013 4 Dec 2026",
-    "price_band": "TBA",
+    "price_band": "\u20b960.00 - \u20b965.00",
     "lot_size": "0",
-    "issue_size_cr": "0.00",
+    "issue_size_cr": "175.50",
     "gmp_inr": "\u20b923.00",
-    "gmp_pct": 0.0,
+    "gmp_pct": 35.4,
     "subscription_total": "Yet to Open",
-    "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
-    "analysis": "Dates: 2 Dec 2026 \u2013 4 Dec 2026 \u2022 Est. Listing: \u20b923 (+0.0%)"
+    "verdict": "\ud83d\udd25 STRONG APPLY (High Listing Gain)",
+    "analysis": "Dates: 2 Dec 2026 \u2013 4 Dec 2026 \u2022 Est. Listing: \u20b988 (+35.4%)"
   },
   {
     "name": "Encube Ethicals",
@@ -158,7 +158,7 @@
     "price_band": "TBA",
     "lot_size": "0",
     "issue_size_cr": "0.00",
-    "gmp_inr": "\u2014",
+    "gmp_inr": "\u20b90.00",
     "gmp_pct": 0.0,
     "subscription_total": "Yet to Open",
     "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",

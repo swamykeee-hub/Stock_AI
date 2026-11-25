@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24 18:01:10",
+  "timestamp": "2026-11-25 08:46:05",
   "dividends": [
     {
       "stock_name": "Vraj Iron",
@@ -24,68 +24,36 @@
   ],
   "earnings": [
     {
-      "date": "24 Nov",
-      "stock_name": "M K Sons Fine Jewels",
-      "symbol": "SFJ",
+      "date": "25 Nov",
+      "stock_name": "Siemens Energy India",
+      "symbol": "SEI11",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9158.36",
-      "market_cap": "\u20b9891.42 Cr"
+      "ltp": "\u20b92976.50",
+      "market_cap": "\u20b9105999.27 Cr"
     },
     {
-      "date": "24 Nov",
-      "stock_name": "Wiscon Industries",
-      "symbol": "WIL02",
+      "date": "25 Nov",
+      "stock_name": "RBM Infracon",
+      "symbol": "RI45",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9231.00",
-      "market_cap": "\u20b9461.71 Cr"
+      "ltp": "\u20b9202.60",
+      "market_cap": "\u20b9215.42 Cr"
     },
     {
-      "date": "24 Nov",
-      "stock_name": "Setco Automotive",
-      "symbol": "GSC01",
+      "date": "25 Nov",
+      "stock_name": "Ajwa Projects",
+      "symbol": "APL13",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b917.73",
-      "market_cap": "\u20b9237.17 Cr"
+      "ltp": "\u20b984.35",
+      "market_cap": "\u20b946.4 Cr"
     },
     {
-      "date": "24 Nov",
-      "stock_name": "STARBEAM VENTURES",
-      "symbol": "II19",
+      "date": "25 Nov",
+      "stock_name": "Simbhaoli Sugars",
+      "symbol": "SSM04",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b90.58",
-      "market_cap": "\u20b937.91 Cr"
-    },
-    {
-      "date": "24 Nov",
-      "stock_name": "Lexus Granito(India)",
-      "symbol": "LG",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b911.33",
-      "market_cap": "\u20b923.56 Cr"
-    },
-    {
-      "date": "24 Nov",
-      "stock_name": "Heads UP Ventures",
-      "symbol": "TMR",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b95.10",
-      "market_cap": "\u20b911.26 Cr"
-    },
-    {
-      "date": "24 Nov",
-      "stock_name": "Mitshi India",
-      "symbol": "DPC",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b912.17",
-      "market_cap": "\u20b910.71 Cr"
-    },
-    {
-      "date": "24 Nov",
-      "stock_name": "Natural Biocon (India)",
-      "symbol": "NBI01",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b92.45",
-      "market_cap": "\u20b96.32 Cr"
+      "ltp": "\u20b96.20",
+      "market_cap": "\u20b925.59 Cr"
     }
   ],
   "splits_and_actions": [
@@ -138,5 +106,5 @@
       "announcement_date": "14/10/2026"
     }
   ],
-  "total_events": 16
+  "total_events": 12
 }
