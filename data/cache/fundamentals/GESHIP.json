@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 9.2,
+  "quality_score": 9.1,
+  "inflection_score": 10.0,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "22136",
+    "current_price": "1550",
+    "stock_pe": "4.99",
+    "book_value": "1326",
+    "dividend_yield_pct": "2.25",
+    "roce_pct": "15.8",
+    "roe_pct": "15.9",
+    "debt_to_equity": "0.04",
+    "face_value": "10",
+    "pb_ratio": "1.17",
+    "market_cap_num": 22136.0,
+    "current_price_num": 1550.0,
+    "pe_num": 4.99,
+    "book_value_num": 1326.0,
+    "roce_num": 15.8,
+    "roe_num": 15.9,
+    "pb_num": 1.17,
+    "peg_ratio": "0.03",
+    "peg_num": 0.03
+  },
+  "ranges": {
+    "sales_cagr_3y": -2.0,
+    "sales_cagr_5y": 10.0,
+    "sales_growth_ttm": 39.0,
+    "profit_cagr_3y": 0.0,
+    "profit_cagr_5y": 24.0,
+    "profit_growth_ttm": 149.0,
+    "roe_3y": 17.0,
+    "roe_5y": 17.0,
+    "price_cagr_3y": 23.0,
+    "price_cagr_5y": 38.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 47.0,
+    "qtr_pat_yoy_pct": 118.4,
+    "qtr_pat_prev_yoy_pct": 159.7,
+    "qtr_eps_yoy_pct": 118.3,
+    "opm_latest_pct": 63.0,
+    "opm_year_ago_pct": 59.0,
+    "opm_expansion_bps": 400.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.04,
+    "cwip_cr": 81.0,
+    "cwip_growth_pct": 76.1,
+    "cwip_to_fixed_assets_pct": 0.8,
+    "cfo_latest_cr": 2854.0,
+    "fcf_latest_cr": 1276.0,
+    "cfo_ebitda_pct": 93.0,
+    "cfo_to_pat_3y": 1.05,
+    "promoter_pct": 30.91,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 29.98,
+    "dii_pct": 11.55,
+    "inst_total_pct": 41.53,
+    "inst_4q_delta_pct": -0.37,
+    "public_4q_delta_pct": -0.44
+  },
+  "strengths": [
+    "Strong Capital Return (ROCE: 15.8%)",
+    "Fortress Balance Sheet (D/E: 0.04x)",
+    "Cash Generative Profits (CFO/EBITDA: 93%)",
+    "Sharp Margin Inflection (OPM +400 bps YoY)",
+    "Explosive Quarterly PAT Surge (+118.4% YoY)"
+  ],
+  "red_flags": [
+    "The company has delivered a poor sales growth of 10.2% over past five years.",
+    "Tax rate seems low"
+  ]
+}

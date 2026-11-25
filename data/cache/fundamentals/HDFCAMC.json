@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 4.6,
+  "quality_score": 4.5,
+  "inflection_score": 4.5,
+  "valuation_score": 5.0,
+  "metrics": {
+    "market_cap_cr": "N/A",
+    "current_price": "N/A",
+    "stock_pe": "N/A",
+    "book_value": "N/A",
+    "dividend_yield_pct": "N/A",
+    "roce_pct": "N/A",
+    "roe_pct": "N/A",
+    "debt_to_equity": "N/A",
+    "face_value": "N/A",
+    "pb_ratio": "N/A"
+  },
+  "ranges": {},
+  "inflection": {},
+  "balance_inst": {},
+  "strengths": [
+    "Standard market capitalization profile"
+  ],
+  "red_flags": [
+    "Standard market & execution risks apply"
+  ]
+}

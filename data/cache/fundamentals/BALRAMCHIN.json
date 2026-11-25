@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 7.3,
+  "quality_score": 6.0,
+  "inflection_score": 8.5,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "13175",
+    "current_price": "622",
+    "stock_pe": "31.4",
+    "book_value": "224",
+    "dividend_yield_pct": "0.64",
+    "roce_pct": "9.27",
+    "roe_pct": "9.52",
+    "debt_to_equity": "0.33",
+    "face_value": "1",
+    "pb_ratio": "2.78",
+    "market_cap_num": 13175.0,
+    "current_price_num": 622.0,
+    "pe_num": 31.4,
+    "book_value_num": 224.0,
+    "roce_num": 9.27,
+    "roe_num": 9.52,
+    "pb_num": 2.78,
+    "peg_ratio": "0.35",
+    "peg_num": 0.35
+  },
+  "ranges": {
+    "sales_cagr_3y": 10.0,
+    "sales_cagr_5y": 5.0,
+    "sales_growth_ttm": 11.0,
+    "profit_cagr_3y": 10.0,
+    "profit_cagr_5y": -4.0,
+    "profit_growth_ttm": 4.0,
+    "roe_3y": 11.0,
+    "roe_5y": 12.0,
+    "price_cagr_3y": 10.0,
+    "price_cagr_5y": 14.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 12.0,
+    "qtr_pat_yoy_pct": 88.9,
+    "qtr_pat_prev_yoy_pct": -15.4,
+    "qtr_eps_yoy_pct": 80.9,
+    "opm_latest_pct": 9.0,
+    "opm_year_ago_pct": 7.0,
+    "opm_expansion_bps": 200.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.33,
+    "cwip_cr": 2537.0,
+    "cwip_growth_pct": 45.2,
+    "cwip_to_fixed_assets_pct": 99.6,
+    "cfo_latest_cr": 599.0,
+    "fcf_latest_cr": -346.0,
+    "cfo_ebitda_pct": 96.0,
+    "cfo_to_pat_3y": 0.89,
+    "promoter_pct": 42.79,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 8.96,
+    "dii_pct": 30.92,
+    "inst_total_pct": 39.88,
+    "inst_4q_delta_pct": 1.09,
+    "public_4q_delta_pct": -1.01
+  },
+  "strengths": [
+    "Cash Generative Profits (CFO/EBITDA: 96%)",
+    "Expanding Operating Margins (+200 bps)",
+    "Explosive Quarterly PAT Surge (+88.9% YoY)",
+    "Capex Capacity Runway Active (CWIP: \u20b92,537 Cr)",
+    "Deep GARP Value (PEG: 0.35x)"
+  ],
+  "red_flags": [
+    "Stock is trading at 2.76 times its book value",
+    "The company has delivered a poor sales growth of 5.44% over past five years.",
+    "Company has a low return on equity of 11.3% over last 3 years.",
+    "Company might be capitalizing the interest cost"
+  ]
+}

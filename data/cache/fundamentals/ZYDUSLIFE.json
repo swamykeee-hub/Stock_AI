@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 6.6,
+  "quality_score": 8.4,
+  "inflection_score": 4.3,
+  "valuation_score": 6.8,
+  "metrics": {
+    "market_cap_cr": "120409",
+    "current_price": "1207",
+    "stock_pe": "37.6",
+    "book_value": "236",
+    "dividend_yield_pct": "0.08",
+    "roce_pct": "16.6",
+    "roe_pct": "16.5",
+    "debt_to_equity": "0.30",
+    "face_value": "1",
+    "pb_ratio": "5.11",
+    "market_cap_num": 120409.0,
+    "current_price_num": 1207.0,
+    "pe_num": 37.6,
+    "book_value_num": 236.0,
+    "roce_num": 16.6,
+    "roe_num": 16.5,
+    "pb_num": 5.11,
+    "peg_ratio": "1.18",
+    "peg_num": 1.18
+  },
+  "ranges": {
+    "sales_cagr_3y": 10.0,
+    "sales_cagr_5y": 8.0,
+    "sales_growth_ttm": -10.0,
+    "profit_cagr_3y": 32.0,
+    "profit_cagr_5y": 18.0,
+    "profit_growth_ttm": -34.0,
+    "roe_3y": 23.0,
+    "roe_5y": 19.0,
+    "price_cagr_3y": 23.0,
+    "price_cagr_5y": 20.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 21.0,
+    "qtr_pat_yoy_pct": -38.3,
+    "qtr_pat_prev_yoy_pct": -11.7,
+    "qtr_eps_yoy_pct": -37.7,
+    "opm_latest_pct": 30.0,
+    "opm_year_ago_pct": 40.0,
+    "opm_expansion_bps": -1000.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.3,
+    "cwip_cr": 950.0,
+    "cwip_growth_pct": 53.0,
+    "cwip_to_fixed_assets_pct": 18.9,
+    "cfo_latest_cr": 2234.0,
+    "fcf_latest_cr": 1351.0,
+    "cfo_ebitda_pct": 84.0,
+    "cfo_to_pat_3y": 0.58,
+    "promoter_pct": 75.01,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 7.05,
+    "dii_pct": 11.28,
+    "inst_total_pct": 18.33,
+    "inst_4q_delta_pct": 0.13,
+    "public_4q_delta_pct": -0.15
+  },
+  "strengths": [
+    "Strong Capital Return (ROCE: 16.6%)",
+    "Cash Generative Profits (CFO/EBITDA: 84%)",
+    "Multi-Year Profit Compounding (3Y CAGR: +32%)",
+    "Capex Capacity Runway Active (CWIP: \u20b9950 Cr)",
+    "Reasonable GARP Multiple (PEG: 1.18x)"
+  ],
+  "red_flags": [
+    "Operating Margin Compression (-1000 bps YoY)",
+    "Quarterly Earnings Contraction (-38.3% YoY)",
+    "The company has delivered a poor sales growth of 8.10% over past five years.",
+    "Company has high debtors of 270 days."
+  ]
+}

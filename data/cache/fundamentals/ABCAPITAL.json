@@ -1,22 +1,29 @@
 {
-  "score": 5.0,
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 4.6,
+  "quality_score": 4.5,
+  "inflection_score": 4.5,
+  "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        113890\n        \n          Cr.",
-    "current_price": "\u20b9\n        416",
-    "stock_pe": "31.2",
-    "book_value": "\u20b9\n        128",
-    "dividend_yield_pct": "0.00\n        \n          %",
-    "roce_pct": "8.75\n        \n          %",
-    "roe_pct": "11.6\n        \n          %",
+    "market_cap_cr": "N/A",
+    "current_price": "N/A",
+    "stock_pe": "N/A",
+    "book_value": "N/A",
+    "dividend_yield_pct": "N/A",
+    "roce_pct": "N/A",
+    "roe_pct": "N/A",
     "debt_to_equity": "N/A",
-    "face_value": "\u20b9\n        10.0"
+    "face_value": "N/A",
+    "pb_ratio": "N/A"
   },
+  "ranges": {},
+  "inflection": {},
+  "balance_inst": {},
   "strengths": [
-    "Company has delivered good profit growth of 112% CAGR over last 5 years"
+    "Standard market capitalization profile"
   ],
   "red_flags": [
-    "Stock is trading at 3.24 times its book value",
-    "Though the company is reporting repeated profits, it is not paying out dividend",
-    "Company has low interest coverage ratio."
+    "Standard market & execution risks apply"
   ]
 }

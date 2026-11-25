@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 8.6,
+  "quality_score": 9.1,
+  "inflection_score": 8.9,
+  "valuation_score": 6.8,
+  "metrics": {
+    "market_cap_cr": "308205",
+    "current_price": "1924",
+    "stock_pe": "119",
+    "book_value": "80.5",
+    "dividend_yield_pct": "0.08",
+    "roce_pct": "19.2",
+    "roe_pct": "15.4",
+    "debt_to_equity": "0.00",
+    "face_value": "1",
+    "pb_ratio": "23.90",
+    "market_cap_num": 308205.0,
+    "current_price_num": 1924.0,
+    "pe_num": 119.0,
+    "book_value_num": 80.5,
+    "roce_num": 19.2,
+    "roe_num": 15.4,
+    "pb_num": 23.9,
+    "peg_ratio": "1.47",
+    "peg_num": 1.47
+  },
+  "ranges": {
+    "sales_cagr_3y": 22.0,
+    "sales_cagr_5y": 40.0,
+    "sales_growth_ttm": 79.0,
+    "profit_cagr_3y": 25.0,
+    "profit_cagr_5y": 52.0,
+    "profit_growth_ttm": 81.0,
+    "roe_3y": 18.0,
+    "roe_5y": 17.0,
+    "price_cagr_3y": 5.0,
+    "price_cagr_5y": 2.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 36.0,
+    "qtr_pat_yoy_pct": 34.5,
+    "qtr_pat_prev_yoy_pct": 238.8,
+    "qtr_eps_yoy_pct": 34.0,
+    "opm_latest_pct": 95.0,
+    "opm_year_ago_pct": 95.0,
+    "opm_expansion_bps": 0.0,
+    "is_sequential_pat_accel": true,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.0,
+    "cwip_cr": 14.0,
+    "cwip_growth_pct": 7.7,
+    "cwip_to_fixed_assets_pct": 1.7,
+    "cfo_latest_cr": 1610.0,
+    "fcf_latest_cr": 1548.0,
+    "cfo_ebitda_pct": 114.0,
+    "cfo_to_pat_3y": 1.12,
+    "promoter_pct": 58.65,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 8.16,
+    "dii_pct": 11.1,
+    "inst_total_pct": 19.26,
+    "inst_4q_delta_pct": 0.66,
+    "public_4q_delta_pct": -0.54
+  },
+  "strengths": [
+    "Strong Capital Return (ROCE: 19.2%)",
+    "Fortress Balance Sheet (D/E: 0.00x)",
+    "Cash Generative Profits (CFO/EBITDA: 114%)",
+    "Multi-Year Profit Compounding (3Y CAGR: +25%)",
+    "Reasonable GARP Multiple (PEG: 1.47x)"
+  ],
+  "red_flags": [
+    "Stock is trading at 23.4 times its book value",
+    "Working capital days have increased from 42.6 days to 66.8 days"
+  ]
+}

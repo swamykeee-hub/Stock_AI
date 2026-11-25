@@ -1,24 +1,29 @@
 {
-  "score": 8.5,
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 4.6,
+  "quality_score": 4.5,
+  "inflection_score": 4.5,
+  "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        29156\n        \n          Cr.",
-    "current_price": "\u20b9\n        1395",
-    "stock_pe": "58.7",
-    "book_value": "\u20b9\n        78.4",
-    "dividend_yield_pct": "0.91\n        \n          %",
-    "roce_pct": "40.4\n        \n          %",
-    "roe_pct": "31.3\n        \n          %",
+    "market_cap_cr": "N/A",
+    "current_price": "N/A",
+    "stock_pe": "N/A",
+    "book_value": "N/A",
+    "dividend_yield_pct": "N/A",
+    "roce_pct": "N/A",
+    "roe_pct": "N/A",
     "debt_to_equity": "N/A",
-    "face_value": "\u20b9\n        10.0"
+    "face_value": "N/A",
+    "pb_ratio": "N/A"
   },
+  "ranges": {},
+  "inflection": {},
+  "balance_inst": {},
   "strengths": [
-    "Exceptional ROCE: 40.4% (>20%)",
-    "Company has reduced debt.",
-    "Company is almost debt free.",
-    "Company has delivered good profit growth of 24.0% CAGR over last 5 years"
+    "Standard market capitalization profile"
   ],
   "red_flags": [
-    "Stock is trading at 17.8 times its book value",
-    "Promoter holding is low: 15.0%"
+    "Standard market & execution risks apply"
   ]
 }

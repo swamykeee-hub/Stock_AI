@@ -1,24 +1,83 @@
 {
-  "score": 7.7,
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 6.0,
+  "quality_score": 9.1,
+  "inflection_score": 2.5,
+  "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        23835\n        \n          Cr.",
-    "current_price": "\u20b9\n        1571",
+    "market_cap_cr": "23861",
+    "current_price": "1573",
     "stock_pe": "21.1",
-    "book_value": "\u20b9\n        778",
-    "dividend_yield_pct": "0.95\n        \n          %",
-    "roce_pct": "18.0\n        \n          %",
-    "roe_pct": "14.2\n        \n          %",
-    "debt_to_equity": "N/A",
-    "face_value": "\u20b9\n        1.00"
+    "book_value": "778",
+    "dividend_yield_pct": "0.94",
+    "roce_pct": "18",
+    "roe_pct": "14.2",
+    "debt_to_equity": "0.00",
+    "face_value": "1",
+    "pb_ratio": "2.02",
+    "market_cap_num": 23861.0,
+    "current_price_num": 1573.0,
+    "pe_num": 21.1,
+    "book_value_num": 778.0,
+    "roce_num": 18.0,
+    "roe_num": 14.2,
+    "pb_num": 2.02,
+    "peg_ratio": "2.64",
+    "peg_num": 2.64
+  },
+  "ranges": {
+    "sales_cagr_3y": 0.0,
+    "sales_cagr_5y": 7.0,
+    "sales_growth_ttm": -17.0,
+    "profit_cagr_3y": 8.0,
+    "profit_cagr_5y": 17.0,
+    "profit_growth_ttm": -36.0,
+    "roe_3y": 18.0,
+    "roe_5y": 18.0,
+    "price_cagr_3y": -25.0,
+    "price_cagr_5y": -12.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": -12.0,
+    "qtr_pat_yoy_pct": -57.8,
+    "qtr_pat_prev_yoy_pct": -26.3,
+    "qtr_eps_yoy_pct": -57.8,
+    "opm_latest_pct": 19.0,
+    "opm_year_ago_pct": 35.0,
+    "opm_expansion_bps": -1600.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.0,
+    "cwip_cr": 842.0,
+    "cwip_growth_pct": -3.8,
+    "cwip_to_fixed_assets_pct": 23.4,
+    "cfo_latest_cr": 694.0,
+    "fcf_latest_cr": -268.0,
+    "cfo_ebitda_pct": 53.0,
+    "cfo_to_pat_3y": 0.85,
+    "promoter_pct": 46.09,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 14.79,
+    "dii_pct": 31.39,
+    "inst_total_pct": 46.18,
+    "inst_4q_delta_pct": -0.5,
+    "public_4q_delta_pct": 0.51
   },
   "strengths": [
-    "Company is almost debt free.",
-    "Healthy Capital Return (ROCE: 18.0%)",
-    "Attractive Valuation Multiple (P/E: 21.1x)"
+    "Strong Capital Return (ROCE: 18.0%)",
+    "Fortress Balance Sheet (D/E: 0.00x)",
+    "Cash Generative Profits (CFO/EBITDA: 53%)",
+    "Capex Capacity Runway Active (CWIP: \u20b9842 Cr)",
+    "Company is almost debt free."
   ],
   "red_flags": [
+    "Operating Margin Compression (-1600 bps YoY)",
+    "Quarterly Earnings Contraction (-57.8% YoY)",
     "The company has delivered a poor sales growth of 7.23% over past five years.",
-    "Debtor days have increased from 57.8 to 80.0 days.",
-    "Working capital days have increased from 72.8 days to 120 days"
+    "Debtor days have increased from 57.8 to 80.0 days."
   ]
 }

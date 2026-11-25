@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 6.8,
+  "quality_score": 4.7,
+  "inflection_score": 9.6,
+  "valuation_score": 6.8,
+  "metrics": {
+    "market_cap_cr": "15303",
+    "current_price": "783",
+    "stock_pe": "47.5",
+    "book_value": "296",
+    "dividend_yield_pct": "0.9",
+    "roce_pct": "6.51",
+    "roe_pct": "4.87",
+    "debt_to_equity": "0.03",
+    "face_value": "2",
+    "pb_ratio": "2.65",
+    "market_cap_num": 15303.0,
+    "current_price_num": 783.0,
+    "pe_num": 47.5,
+    "book_value_num": 296.0,
+    "roce_num": 6.51,
+    "roe_num": 4.87,
+    "pb_num": 2.65,
+    "peg_ratio": "1.21",
+    "peg_num": 1.21
+  },
+  "ranges": {
+    "sales_cagr_3y": -1.0,
+    "sales_cagr_5y": 9.0,
+    "sales_growth_ttm": 20.0,
+    "profit_cagr_3y": -8.0,
+    "profit_cagr_5y": 6.0,
+    "profit_growth_ttm": 7.0,
+    "roe_3y": 5.0,
+    "roe_5y": 7.0,
+    "price_cagr_3y": 18.0,
+    "price_cagr_5y": 13.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 14.0,
+    "qtr_pat_yoy_pct": 39.1,
+    "qtr_pat_prev_yoy_pct": 8.3,
+    "qtr_eps_yoy_pct": 39.1,
+    "opm_latest_pct": 12.0,
+    "opm_year_ago_pct": 7.0,
+    "opm_expansion_bps": 500.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.03,
+    "cwip_cr": 149.0,
+    "cwip_growth_pct": 140.3,
+    "cwip_to_fixed_assets_pct": 14.6,
+    "cfo_latest_cr": 103.0,
+    "fcf_latest_cr": -146.0,
+    "cfo_ebitda_pct": 18.0,
+    "cfo_to_pat_3y": 0.86,
+    "promoter_pct": 65.34,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 8.11,
+    "dii_pct": 9.66,
+    "inst_total_pct": 17.77,
+    "inst_4q_delta_pct": 1.59,
+    "public_4q_delta_pct": -1.61
+  },
+  "strengths": [
+    "Fortress Balance Sheet (D/E: 0.03x)",
+    "Cash Generative Profits (CFO/EBITDA: 18%)",
+    "Sharp Margin Inflection (OPM +500 bps YoY)",
+    "Smart Money Accumulation (FII+DII +1.6% over 4Q)",
+    "Capex Capacity Runway Active (CWIP: \u20b9149 Cr)"
+  ],
+  "red_flags": [
+    "Sub-par ROCE (6.5%)",
+    "Stock is trading at 2.67 times its book value",
+    "The company has delivered a poor sales growth of 8.87% over past five years.",
+    "Company has a low return on equity of 5.16% over last 3 years."
+  ]
+}

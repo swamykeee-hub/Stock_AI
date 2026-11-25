@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 6.7,
+  "quality_score": 10.0,
+  "inflection_score": 4.5,
+  "valuation_score": 3.2,
+  "metrics": {
+    "market_cap_cr": "18540",
+    "current_price": "425",
+    "stock_pe": "24.6",
+    "book_value": "67",
+    "dividend_yield_pct": "2.35",
+    "roce_pct": "28.1",
+    "roe_pct": "26.2",
+    "debt_to_equity": "0.08",
+    "face_value": "1",
+    "pb_ratio": "6.34",
+    "market_cap_num": 18540.0,
+    "current_price_num": 425.0,
+    "pe_num": 24.6,
+    "book_value_num": 67.0,
+    "roce_num": 28.1,
+    "roe_num": 26.2,
+    "pb_num": 6.34,
+    "peg_ratio": "4.92",
+    "peg_num": 4.92
+  },
+  "ranges": {
+    "sales_cagr_3y": 4.0,
+    "sales_cagr_5y": 6.0,
+    "sales_growth_ttm": 13.0,
+    "profit_cagr_3y": 5.0,
+    "profit_cagr_5y": 11.0,
+    "profit_growth_ttm": 0.0,
+    "roe_3y": 28.0,
+    "roe_5y": 31.0,
+    "price_cagr_3y": -6.0,
+    "price_cagr_5y": -5.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 36.0,
+    "qtr_pat_yoy_pct": -1.4,
+    "qtr_pat_prev_yoy_pct": -15.2,
+    "qtr_eps_yoy_pct": -2.9,
+    "opm_latest_pct": 20.0,
+    "opm_year_ago_pct": 22.0,
+    "opm_expansion_bps": -200.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.08,
+    "cwip_cr": 2.0,
+    "cwip_growth_pct": 0.0,
+    "cwip_to_fixed_assets_pct": 0.1,
+    "cfo_latest_cr": 801.0,
+    "fcf_latest_cr": 770.0,
+    "cfo_ebitda_pct": 101.0,
+    "cfo_to_pat_3y": 1.08,
+    "promoter_pct": 54.84,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 9.02,
+    "dii_pct": 23.57,
+    "inst_total_pct": 32.59,
+    "inst_4q_delta_pct": -3.34,
+    "public_4q_delta_pct": 3.35
+  },
+  "strengths": [
+    "Elite Capital Efficiency (ROCE: 28.1%)",
+    "Superior ROE: 26.2%",
+    "Fortress Balance Sheet (D/E: 0.08x)",
+    "Cash Generative Profits (CFO/EBITDA: 101%)",
+    "Company is almost debt free."
+  ],
+  "red_flags": [
+    "Institutional Distribution (FII+DII -3.3% over 4Q)",
+    "Expensive Valuation vs Growth (PEG: 4.92x)",
+    "The company has delivered a poor sales growth of 5.58% over past five years."
+  ]
+}

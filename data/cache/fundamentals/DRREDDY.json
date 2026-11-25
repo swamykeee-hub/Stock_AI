@@ -1,22 +1,81 @@
 {
-  "score": 4.0,
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 7.9,
+  "quality_score": 6.7,
+  "inflection_score": 10.0,
+  "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        115276\n        \n          Cr.",
-    "current_price": "\u20b9\n        1380",
+    "market_cap_cr": "115226",
+    "current_price": "1380",
     "stock_pe": "119",
-    "book_value": "\u20b9\n        383",
-    "dividend_yield_pct": "0.58\n        \n          %",
-    "roce_pct": "12.1\n        \n          %",
-    "roe_pct": "10.2\n        \n          %",
-    "debt_to_equity": "N/A",
-    "face_value": "\u20b9\n        1.00"
+    "book_value": "383",
+    "dividend_yield_pct": "0.58",
+    "roce_pct": "12.1",
+    "roe_pct": "10.2",
+    "debt_to_equity": "0.18",
+    "face_value": "1",
+    "pb_ratio": "3.60",
+    "market_cap_num": 115226.0,
+    "current_price_num": 1380.0,
+    "pe_num": 119.0,
+    "book_value_num": 383.0,
+    "roce_num": 12.1,
+    "roe_num": 10.2,
+    "pb_num": 3.6,
+    "peg_ratio": "1.49",
+    "peg_num": 1.49
+  },
+  "ranges": {
+    "sales_cagr_3y": 7.0,
+    "sales_cagr_5y": 9.0,
+    "sales_growth_ttm": -18.0,
+    "profit_cagr_3y": 5.0,
+    "profit_cagr_5y": 11.0,
+    "profit_growth_ttm": -82.0,
+    "roe_3y": 16.0,
+    "roe_5y": 15.0,
+    "price_cagr_3y": 7.0,
+    "price_cagr_5y": 8.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 21.0,
+    "qtr_pat_yoy_pct": 79.8,
+    "qtr_pat_prev_yoy_pct": -86.3,
+    "qtr_eps_yoy_pct": 79.7,
+    "opm_latest_pct": 20.0,
+    "opm_year_ago_pct": 10.0,
+    "opm_expansion_bps": 1000.0,
+    "is_sequential_pat_accel": true,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.18,
+    "cwip_cr": 1123.0,
+    "cwip_growth_pct": -18.0,
+    "cwip_to_fixed_assets_pct": 10.2,
+    "cfo_latest_cr": 4660.0,
+    "fcf_latest_cr": 1846.0,
+    "cfo_ebitda_pct": 143.0,
+    "cfo_to_pat_3y": 0.96,
+    "promoter_pct": 26.63,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 20.3,
+    "dii_pct": 31.87,
+    "inst_total_pct": 52.17,
+    "inst_4q_delta_pct": -0.51,
+    "public_4q_delta_pct": 0.54
   },
   "strengths": [
-    "Company's working capital requirements have reduced from 77.3 days to 38.9 days"
+    "Fortress Balance Sheet (D/E: 0.18x)",
+    "Cash Generative Profits (CFO/EBITDA: 143%)",
+    "Sharp Margin Inflection (OPM +1000 bps YoY)",
+    "Explosive Quarterly PAT Surge (+79.8% YoY)",
+    "Reasonable GARP Multiple (PEG: 1.49x)"
   ],
   "red_flags": [
     "The company has delivered a poor sales growth of 8.99% over past five years.",
-    "Earnings include an other income of Rs.1,585 Cr.",
-    "Premium Valuation (P/E: 119.0x)"
+    "Earnings include an other income of Rs.1,585 Cr."
   ]
 }

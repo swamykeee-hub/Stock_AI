@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 8.9,
+  "quality_score": 9.1,
+  "inflection_score": 9.3,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "46599",
+    "current_price": "1837",
+    "stock_pe": "32.4",
+    "book_value": "342",
+    "dividend_yield_pct": "0.33",
+    "roce_pct": "17",
+    "roe_pct": "15.7",
+    "debt_to_equity": "0.09",
+    "face_value": "1",
+    "pb_ratio": "5.37",
+    "market_cap_num": 46599.0,
+    "current_price_num": 1837.0,
+    "pe_num": 32.4,
+    "book_value_num": 342.0,
+    "roce_num": 17.0,
+    "roe_num": 15.7,
+    "pb_num": 5.37,
+    "peg_ratio": "0.70",
+    "peg_num": 0.7
+  },
+  "ranges": {
+    "sales_cagr_3y": 16.0,
+    "sales_cagr_5y": 12.0,
+    "sales_growth_ttm": 12.0,
+    "profit_cagr_3y": 37.0,
+    "profit_cagr_5y": 1.0,
+    "profit_growth_ttm": 46.0,
+    "roe_3y": 13.0,
+    "roe_5y": 13.0,
+    "price_cagr_3y": 18.0,
+    "price_cagr_5y": 12.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 14.0,
+    "qtr_pat_yoy_pct": 38.4,
+    "qtr_pat_prev_yoy_pct": 82.0,
+    "qtr_eps_yoy_pct": 32.8,
+    "opm_latest_pct": 23.0,
+    "opm_year_ago_pct": 21.0,
+    "opm_expansion_bps": 200.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.09,
+    "cwip_cr": 832.0,
+    "cwip_growth_pct": 7.6,
+    "cwip_to_fixed_assets_pct": 17.6,
+    "cfo_latest_cr": 1142.0,
+    "fcf_latest_cr": 486.0,
+    "cfo_ebitda_pct": 78.0,
+    "cfo_to_pat_3y": 1.37,
+    "promoter_pct": 44.72,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 11.53,
+    "dii_pct": 36.6,
+    "inst_total_pct": 48.13,
+    "inst_4q_delta_pct": 1.26,
+    "public_4q_delta_pct": -0.94
+  },
+  "strengths": [
+    "Strong Capital Return (ROCE: 17.0%)",
+    "Fortress Balance Sheet (D/E: 0.09x)",
+    "Cash Generative Profits (CFO/EBITDA: 78%)",
+    "Expanding Operating Margins (+200 bps)",
+    "Multi-Year Profit Compounding (3Y CAGR: +37%)"
+  ],
+  "red_flags": [
+    "Stock is trading at 5.31 times its book value",
+    "Company has a low return on equity of 12.9% over last 3 years."
+  ]
+}

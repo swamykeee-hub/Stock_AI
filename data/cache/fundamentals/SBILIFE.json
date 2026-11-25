@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 5.6,
+  "quality_score": 6.7,
+  "inflection_score": 4.5,
+  "valuation_score": 5.0,
+  "metrics": {
+    "market_cap_cr": "\u20b9 Cr.",
+    "current_price": "\u20b9",
+    "stock_pe": "",
+    "book_value": "\u20b9",
+    "dividend_yield_pct": "%",
+    "roce_pct": "%",
+    "roe_pct": "%",
+    "debt_to_equity": "0.00",
+    "face_value": "\u20b9",
+    "pb_ratio": "N/A",
+    "market_cap_num": null,
+    "current_price_num": null,
+    "pe_num": null,
+    "book_value_num": null,
+    "roce_num": null,
+    "roe_num": null,
+    "peg_ratio": "N/A"
+  },
+  "ranges": {
+    "sales_cagr_3y": null,
+    "sales_cagr_5y": null,
+    "sales_growth_ttm": null,
+    "profit_cagr_3y": null,
+    "profit_cagr_5y": null,
+    "profit_growth_ttm": null,
+    "roe_3y": null,
+    "roe_5y": null,
+    "price_cagr_3y": null,
+    "price_cagr_5y": null
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 7.0,
+    "qtr_pat_yoy_pct": 10.9,
+    "qtr_pat_prev_yoy_pct": 22.1,
+    "qtr_eps_yoy_pct": 11.0,
+    "opm_latest_pct": 2.3,
+    "opm_year_ago_pct": 2.2,
+    "opm_expansion_bps": 10.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.0,
+    "cwip_cr": 0.0,
+    "cwip_growth_pct": -100.0,
+    "cwip_to_fixed_assets_pct": 0.0,
+    "cfo_latest_cr": 34523.0,
+    "fcf_latest_cr": 34338.0,
+    "cfo_ebitda_pct": 4112.0,
+    "cfo_to_pat_3y": 13.16,
+    "promoter_pct": 55.31,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 20.68,
+    "dii_pct": 20.05,
+    "inst_total_pct": 40.73,
+    "inst_4q_delta_pct": 0.18,
+    "public_4q_delta_pct": -0.15
+  },
+  "strengths": [
+    "Fortress Balance Sheet (D/E: 0.00x)",
+    "Cash Generative Profits (CFO/EBITDA: 4112%)"
+  ],
+  "red_flags": [
+    "Standard market & execution risks apply"
+  ]
+}

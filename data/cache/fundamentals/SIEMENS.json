@@ -1,25 +1,29 @@
 {
-  "score": 6.7,
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 4.6,
+  "quality_score": 4.5,
+  "inflection_score": 4.5,
+  "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        127423\n        \n          Cr.",
-    "current_price": "\u20b9\n        3578",
-    "stock_pe": "84.8",
-    "book_value": "\u20b9\n        439",
-    "dividend_yield_pct": "0.50\n        \n          %",
-    "roce_pct": "19.5\n        \n          %",
-    "roe_pct": "18.0\n        \n          %",
+    "market_cap_cr": "N/A",
+    "current_price": "N/A",
+    "stock_pe": "N/A",
+    "book_value": "N/A",
+    "dividend_yield_pct": "N/A",
+    "roce_pct": "N/A",
+    "roe_pct": "N/A",
     "debt_to_equity": "N/A",
-    "face_value": "\u20b9\n        2.00"
+    "face_value": "N/A",
+    "pb_ratio": "N/A"
   },
+  "ranges": {},
+  "inflection": {},
+  "balance_inst": {},
   "strengths": [
-    "Company is almost debt free.",
-    "Company has delivered good profit growth of 27.9% CAGR over last 5 years",
-    "Company has been maintaining a healthy dividend payout of 19.9%",
-    "Debtor days have improved from 78.8 to 56.9 days."
+    "Standard market capitalization profile"
   ],
   "red_flags": [
-    "Stock is trading at 8.16 times its book value",
-    "Earnings include an other income of Rs.2,401 Cr.",
-    "Working capital days have increased from 53.4 days to 79.8 days"
+    "Standard market & execution risks apply"
   ]
 }

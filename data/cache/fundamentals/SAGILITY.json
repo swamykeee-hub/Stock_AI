@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 7.4,
+  "quality_score": 6.7,
+  "inflection_score": 7.9,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "21637",
+    "current_price": "46.2",
+    "stock_pe": "20.4",
+    "book_value": "21.8",
+    "dividend_yield_pct": "0.33",
+    "roce_pct": "13.4",
+    "roe_pct": "10.6",
+    "debt_to_equity": "0.09",
+    "face_value": "10",
+    "pb_ratio": "2.12",
+    "market_cap_num": 21637.0,
+    "current_price_num": 46.2,
+    "pe_num": 20.4,
+    "book_value_num": 21.8,
+    "roce_num": 13.4,
+    "roe_num": 10.6,
+    "pb_num": 2.12,
+    "peg_ratio": "0.24",
+    "peg_num": 0.24
+  },
+  "ranges": {
+    "sales_cagr_3y": 19.0,
+    "sales_cagr_5y": null,
+    "sales_growth_ttm": 28.0,
+    "profit_cagr_3y": 86.0,
+    "profit_cagr_5y": null,
+    "profit_growth_ttm": 33.0,
+    "roe_3y": 8.0,
+    "roe_5y": 6.0,
+    "price_cagr_3y": null,
+    "price_cagr_5y": null
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 23.0,
+    "qtr_pat_yoy_pct": 13.1,
+    "qtr_pat_prev_yoy_pct": 45.6,
+    "qtr_eps_yoy_pct": 13.0,
+    "opm_latest_pct": 25.0,
+    "opm_year_ago_pct": 25.0,
+    "opm_expansion_bps": 0.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.09,
+    "cwip_cr": 4.0,
+    "cwip_growth_pct": -90.7,
+    "cwip_to_fixed_assets_pct": 0.0,
+    "cfo_latest_cr": 1203.0,
+    "fcf_latest_cr": 1011.0,
+    "cfo_ebitda_pct": 89.0,
+    "cfo_to_pat_3y": 2.0,
+    "promoter_pct": 50.95,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 10.38,
+    "dii_pct": 22.59,
+    "inst_total_pct": 32.97,
+    "inst_4q_delta_pct": 12.51,
+    "public_4q_delta_pct": 3.92
+  },
+  "strengths": [
+    "Fortress Balance Sheet (D/E: 0.09x)",
+    "Cash Generative Profits (CFO/EBITDA: 89%)",
+    "Multi-Year Profit Compounding (3Y CAGR: +86%)",
+    "Smart Money Accumulation (FII+DII +12.5% over 4Q)",
+    "Deep GARP Value (PEG: 0.24x)"
+  ],
+  "red_flags": [
+    "Company has a low return on equity of 7.59% over last 3 years."
+  ]
+}

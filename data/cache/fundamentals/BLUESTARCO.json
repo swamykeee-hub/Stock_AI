@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 7.5,
+  "quality_score": 8.1,
+  "inflection_score": 8.1,
+  "valuation_score": 5.0,
+  "metrics": {
+    "market_cap_cr": "37529",
+    "current_price": "1825",
+    "stock_pe": "70",
+    "book_value": "170",
+    "dividend_yield_pct": "0.47",
+    "roce_pct": "21.2",
+    "roe_pct": "17.2",
+    "debt_to_equity": "0.22",
+    "face_value": "2",
+    "pb_ratio": "10.74",
+    "market_cap_num": 37529.0,
+    "current_price_num": 1825.0,
+    "pe_num": 70.0,
+    "book_value_num": 170.0,
+    "roce_num": 21.2,
+    "roe_num": 17.2,
+    "pb_num": 10.74,
+    "peg_ratio": "2.59",
+    "peg_num": 2.59
+  },
+  "ranges": {
+    "sales_cagr_3y": 16.0,
+    "sales_cagr_5y": 24.0,
+    "sales_growth_ttm": 9.0,
+    "profit_cagr_3y": 27.0,
+    "profit_cagr_5y": 50.0,
+    "profit_growth_ttm": 0.0,
+    "roe_3y": 19.0,
+    "roe_5y": 20.0,
+    "price_cagr_3y": 21.0,
+    "price_cagr_5y": 31.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 21.0,
+    "qtr_pat_yoy_pct": 25.3,
+    "qtr_pat_prev_yoy_pct": -14.9,
+    "qtr_eps_yoy_pct": 25.1,
+    "opm_latest_pct": 7.0,
+    "opm_year_ago_pct": 8.0,
+    "opm_expansion_bps": -100.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.22,
+    "cwip_cr": 73.0,
+    "cwip_growth_pct": -46.7,
+    "cwip_to_fixed_assets_pct": 3.9,
+    "cfo_latest_cr": 154.0,
+    "fcf_latest_cr": -169.0,
+    "cfo_ebitda_pct": 35.0,
+    "cfo_to_pat_3y": 0.74,
+    "promoter_pct": 36.49,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 12.29,
+    "dii_pct": 29.12,
+    "inst_total_pct": 41.41,
+    "inst_4q_delta_pct": 0.04,
+    "public_4q_delta_pct": -0.03
+  },
+  "strengths": [
+    "Strong Capital Return (ROCE: 21.2%)",
+    "Fortress Balance Sheet (D/E: 0.22x)",
+    "Multi-Year Profit Compounding (3Y CAGR: +27%)",
+    "Company has delivered good profit growth of 49.6% CAGR over last 5 years",
+    "Company has been maintaining a healthy dividend payout of 33.0%"
+  ],
+  "red_flags": [
+    "Stock is trading at 10.5 times its book value"
+  ]
+}

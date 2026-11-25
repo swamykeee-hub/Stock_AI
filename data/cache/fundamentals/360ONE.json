@@ -1,23 +1,83 @@
 {
-  "score": 2.2,
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 4.8,
+  "quality_score": 2.5,
+  "inflection_score": 6.0,
+  "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        51515\n        \n          Cr.",
-    "current_price": "\u20b9\n        1201",
+    "market_cap_cr": "51588",
+    "current_price": "1203",
     "stock_pe": "103",
-    "book_value": "\u20b9\n        186",
-    "dividend_yield_pct": "1.12\n        \n          %",
-    "roce_pct": "6.89\n        \n          %",
-    "roe_pct": "6.09\n        \n          %",
-    "debt_to_equity": "N/A",
-    "face_value": "\u20b9\n        1.00"
+    "book_value": "186",
+    "dividend_yield_pct": "1.1",
+    "roce_pct": "6.89",
+    "roe_pct": "6.09",
+    "debt_to_equity": "0.22",
+    "face_value": "1",
+    "pb_ratio": "6.47",
+    "market_cap_num": 51588.0,
+    "current_price_num": 1203.0,
+    "pe_num": 103.0,
+    "book_value_num": 186.0,
+    "roce_num": 6.89,
+    "roe_num": 6.09,
+    "pb_num": 6.47,
+    "peg_ratio": "0.26",
+    "peg_num": 0.26
+  },
+  "ranges": {
+    "sales_cagr_3y": 5.0,
+    "sales_cagr_5y": 0.0,
+    "sales_growth_ttm": -31.0,
+    "profit_cagr_3y": -7.0,
+    "profit_cagr_5y": -9.0,
+    "profit_growth_ttm": 69.0,
+    "roe_3y": 11.0,
+    "roe_5y": 13.0,
+    "price_cagr_3y": 30.0,
+    "price_cagr_5y": 26.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": -69.0,
+    "qtr_pat_yoy_pct": 391.2,
+    "qtr_pat_prev_yoy_pct": -25.9,
+    "qtr_eps_yoy_pct": 381.2,
+    "opm_latest_pct": -33.0,
+    "opm_year_ago_pct": 45.0,
+    "opm_expansion_bps": -7800.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.22,
+    "cwip_cr": 4.0,
+    "cwip_growth_pct": 0.0,
+    "cwip_to_fixed_assets_pct": 1.4,
+    "cfo_latest_cr": -495.0,
+    "fcf_latest_cr": -495.0,
+    "cfo_ebitda_pct": -73.0,
+    "cfo_to_pat_3y": -0.34,
+    "promoter_pct": 5.88,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 56.0,
+    "dii_pct": 22.69,
+    "inst_total_pct": 78.69,
+    "inst_4q_delta_pct": 2.36,
+    "public_4q_delta_pct": -2.0
   },
   "strengths": [
-    "Company is expected to give good quarter",
-    "Company has been maintaining a healthy dividend payout of 93.7%"
+    "Fortress Balance Sheet (D/E: 0.22x)",
+    "Explosive Quarterly PAT Surge (+391.2% YoY)",
+    "Smart Money Accumulation (FII+DII +2.4% over 4Q)",
+    "Deep GARP Value (PEG: 0.26x)",
+    "Company is expected to give good quarter"
   ],
   "red_flags": [
-    "Stock is trading at 6.46 times its book value",
-    "The company has delivered a poor sales growth of 0.08% over past five years.",
-    "Promoter holding is low: 5.88%"
+    "Sub-par ROCE (6.9%)",
+    "Weak Operating Cash Conversion (3Y CFO/PAT: -0.34x)",
+    "Operating Margin Compression (-7800 bps YoY)",
+    "Stock is trading at 6.46 times its book value"
   ]
 }

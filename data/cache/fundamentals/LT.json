@@ -1,24 +1,29 @@
 {
-  "score": 6.2,
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 4.6,
+  "quality_score": 4.5,
+  "inflection_score": 4.5,
+  "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        564112\n        \n          Cr.",
-    "current_price": "\u20b9\n        4100",
-    "stock_pe": "36.2",
-    "book_value": "\u20b9\n        559",
-    "dividend_yield_pct": "0.93\n        \n          %",
-    "roce_pct": "19.3\n        \n          %",
-    "roe_pct": "14.8\n        \n          %",
+    "market_cap_cr": "N/A",
+    "current_price": "N/A",
+    "stock_pe": "N/A",
+    "book_value": "N/A",
+    "dividend_yield_pct": "N/A",
+    "roce_pct": "N/A",
+    "roe_pct": "N/A",
     "debt_to_equity": "N/A",
-    "face_value": "\u20b9\n        2.00"
+    "face_value": "N/A",
+    "pb_ratio": "N/A"
   },
+  "ranges": {},
+  "inflection": {},
+  "balance_inst": {},
   "strengths": [
-    "Company has reduced debt.",
-    "Company has been maintaining a healthy dividend payout of 58.8%",
-    "Healthy Capital Return (ROCE: 19.3%)"
+    "Standard market capitalization profile"
   ],
   "red_flags": [
-    "Stock is trading at 7.33 times its book value",
-    "The company has delivered a poor sales growth of 12.0% over past five years.",
-    "Earnings include an other income of Rs.8,543 Cr."
+    "Standard market & execution risks apply"
   ]
 }
