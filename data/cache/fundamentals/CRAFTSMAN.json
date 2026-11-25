@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 8.2,
+  "quality_score": 6.8,
+  "inflection_score": 10.0,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "30105",
+    "current_price": "11510",
+    "stock_pe": "56.7",
+    "book_value": "2107",
+    "dividend_yield_pct": "0.1",
+    "roce_pct": "13.9",
+    "roe_pct": "12.5",
+    "debt_to_equity": "0.71",
+    "face_value": "5",
+    "pb_ratio": "5.46",
+    "market_cap_num": 30105.0,
+    "current_price_num": 11510.0,
+    "pe_num": 56.7,
+    "book_value_num": 2107.0,
+    "roce_num": 13.9,
+    "roe_num": 12.5,
+    "pb_num": 5.46,
+    "peg_ratio": "0.55",
+    "peg_num": 0.55
+  },
+  "ranges": {
+    "sales_cagr_3y": 36.0,
+    "sales_cagr_5y": 39.0,
+    "sales_growth_ttm": 36.0,
+    "profit_cagr_3y": 16.0,
+    "profit_cagr_5y": 32.0,
+    "profit_growth_ttm": 104.0,
+    "roe_3y": 13.0,
+    "roe_5y": 14.0,
+    "price_cagr_3y": 32.0,
+    "price_cagr_5y": 39.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 47.0,
+    "qtr_pat_yoy_pct": 68.1,
+    "qtr_pat_prev_yoy_pct": 115.7,
+    "qtr_eps_yoy_pct": 53.8,
+    "opm_latest_pct": 13.0,
+    "opm_year_ago_pct": 15.0,
+    "opm_expansion_bps": -200.0,
+    "is_sequential_pat_accel": true,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.71,
+    "cwip_cr": 733.0,
+    "cwip_growth_pct": 91.9,
+    "cwip_to_fixed_assets_pct": 14.1,
+    "cfo_latest_cr": 522.0,
+    "fcf_latest_cr": -647.0,
+    "cfo_ebitda_pct": 50.0,
+    "cfo_to_pat_3y": 1.43,
+    "promoter_pct": 42.41,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 16.46,
+    "dii_pct": 33.63,
+    "inst_total_pct": 50.09,
+    "inst_4q_delta_pct": 10.28,
+    "public_4q_delta_pct": -4.0
+  },
+  "strengths": [
+    "Cash Generative Profits (CFO/EBITDA: 50%)",
+    "Explosive Quarterly PAT Surge (+68.1% YoY)",
+    "Smart Money Accumulation (FII+DII +10.3% over 4Q)",
+    "Capex Capacity Runway Active (CWIP: \u20b9733 Cr)",
+    "Deep GARP Value (PEG: 0.55x)"
+  ],
+  "red_flags": [
+    "Company has a low return on equity of 13.2% over last 3 years.",
+    "Promoter holding has decreased over last 3 years: -12.6%"
+  ]
+}

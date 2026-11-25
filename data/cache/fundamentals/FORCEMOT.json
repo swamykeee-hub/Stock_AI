@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 8.1,
+  "quality_score": 10.0,
+  "inflection_score": 5.7,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "26589",
+    "current_price": "20179",
+    "stock_pe": "25.5",
+    "book_value": "3520",
+    "dividend_yield_pct": "0.25",
+    "roce_pct": "36",
+    "roe_pct": "29.2",
+    "debt_to_equity": "0.00",
+    "face_value": "10",
+    "pb_ratio": "5.73",
+    "market_cap_num": 26589.0,
+    "current_price_num": 20179.0,
+    "pe_num": 25.5,
+    "book_value_num": 3520.0,
+    "roce_num": 36.0,
+    "roe_num": 29.2,
+    "pb_num": 5.73,
+    "peg_ratio": "0.12",
+    "peg_num": 0.12
+  },
+  "ranges": {
+    "sales_cagr_3y": 22.0,
+    "sales_cagr_5y": 35.0,
+    "sales_growth_ttm": 16.0,
+    "profit_cagr_3y": 221.0,
+    "profit_cagr_5y": 65.0,
+    "profit_growth_ttm": 27.0,
+    "roe_3y": 24.0,
+    "roe_5y": 16.0,
+    "price_cagr_3y": 71.0,
+    "price_cagr_5y": 71.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 41.0,
+    "qtr_pat_yoy_pct": -16.2,
+    "qtr_pat_prev_yoy_pct": 23.3,
+    "qtr_eps_yoy_pct": -16.2,
+    "opm_latest_pct": 15.0,
+    "opm_year_ago_pct": 17.0,
+    "opm_expansion_bps": -200.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.0,
+    "cwip_cr": 176.0,
+    "cwip_growth_pct": -67.2,
+    "cwip_to_fixed_assets_pct": 6.8,
+    "cfo_latest_cr": 1297.0,
+    "fcf_latest_cr": 761.0,
+    "cfo_ebitda_pct": 116.0,
+    "cfo_to_pat_3y": 1.61,
+    "promoter_pct": 61.63,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 7.1,
+    "dii_pct": 2.48,
+    "inst_total_pct": 9.58,
+    "inst_4q_delta_pct": -2.17,
+    "public_4q_delta_pct": 2.15
+  },
+  "strengths": [
+    "Elite Capital Efficiency (ROCE: 36.0%)",
+    "Superior ROE: 29.2%",
+    "Fortress Balance Sheet (D/E: 0.00x)",
+    "Cash Generative Profits (CFO/EBITDA: 116%)",
+    "Multi-Year Profit Compounding (3Y CAGR: +221%)"
+  ],
+  "red_flags": [
+    "Quarterly Earnings Contraction (-16.2% YoY)"
+  ]
+}

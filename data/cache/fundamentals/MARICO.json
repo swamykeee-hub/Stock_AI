@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 8.2,
+  "quality_score": 10.0,
+  "inflection_score": 7.7,
+  "valuation_score": 5.0,
+  "metrics": {
+    "market_cap_cr": "120273",
+    "current_price": "925",
+    "stock_pe": "59.6",
+    "book_value": "36.4",
+    "dividend_yield_pct": "0.44",
+    "roce_pct": "47",
+    "roe_pct": "42.9",
+    "debt_to_equity": "0.26",
+    "face_value": "1",
+    "pb_ratio": "25.41",
+    "market_cap_num": 120273.0,
+    "current_price_num": 925.0,
+    "pe_num": 59.6,
+    "book_value_num": 36.4,
+    "roce_num": 47.0,
+    "roe_num": 42.9,
+    "pb_num": 25.41,
+    "peg_ratio": "2.04",
+    "peg_num": 2.04
+  },
+  "ranges": {
+    "sales_cagr_3y": 12.0,
+    "sales_cagr_5y": 11.0,
+    "sales_growth_ttm": 20.0,
+    "profit_cagr_3y": 11.0,
+    "profit_cagr_5y": 9.0,
+    "profit_growth_ttm": 21.0,
+    "roe_3y": 41.0,
+    "roe_5y": 39.0,
+    "price_cagr_3y": 21.0,
+    "price_cagr_5y": 11.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 13.0,
+    "qtr_pat_yoy_pct": 29.2,
+    "qtr_pat_prev_yoy_pct": 27.1,
+    "qtr_eps_yoy_pct": 30.6,
+    "opm_latest_pct": 18.0,
+    "opm_year_ago_pct": 16.0,
+    "opm_expansion_bps": 200.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.26,
+    "cwip_cr": 144.0,
+    "cwip_growth_pct": 69.4,
+    "cwip_to_fixed_assets_pct": 3.6,
+    "cfo_latest_cr": 2084.0,
+    "fcf_latest_cr": 1772.0,
+    "cfo_ebitda_pct": 114.0,
+    "cfo_to_pat_3y": 0.97,
+    "promoter_pct": 58.84,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 22.25,
+    "dii_pct": 14.11,
+    "inst_total_pct": 36.36,
+    "inst_4q_delta_pct": 0.27,
+    "public_4q_delta_pct": -0.07
+  },
+  "strengths": [
+    "Elite Capital Efficiency (ROCE: 47.0%)",
+    "Superior ROE: 42.9%",
+    "Cash Generative Profits (CFO/EBITDA: 114%)",
+    "Expanding Operating Margins (+200 bps)",
+    "Capex Capacity Runway Active (CWIP: \u20b9144 Cr)"
+  ],
+  "red_flags": [
+    "Stock is trading at 25.2 times its book value",
+    "The company has delivered a poor sales growth of 11.1% over past five years."
+  ]
+}

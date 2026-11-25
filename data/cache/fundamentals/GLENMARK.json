@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 6.0,
+  "quality_score": 2.5,
+  "inflection_score": 9.5,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "75106",
+    "current_price": "2661",
+    "stock_pe": "41.4",
+    "book_value": "894",
+    "dividend_yield_pct": "0.19",
+    "roce_pct": "6.51",
+    "roe_pct": "3.87",
+    "debt_to_equity": "0.00",
+    "face_value": "1",
+    "pb_ratio": "2.98",
+    "market_cap_num": 75106.0,
+    "current_price_num": 2661.0,
+    "pe_num": 41.4,
+    "book_value_num": 894.0,
+    "roce_num": 6.51,
+    "roe_num": 3.87,
+    "pb_num": 2.98,
+    "peg_ratio": "0.41",
+    "peg_num": 0.41
+  },
+  "ranges": {
+    "sales_cagr_3y": 1.0,
+    "sales_cagr_5y": 2.0,
+    "sales_growth_ttm": 15.0,
+    "profit_cagr_3y": -16.0,
+    "profit_cagr_5y": -10.0,
+    "profit_growth_ttm": 23.0,
+    "roe_3y": 6.0,
+    "roe_5y": 7.0,
+    "price_cagr_3y": 50.0,
+    "price_cagr_5y": 38.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 61.0,
+    "qtr_pat_yoy_pct": 100.0,
+    "qtr_pat_prev_yoy_pct": 123.0,
+    "qtr_eps_yoy_pct": 100.0,
+    "opm_latest_pct": 28.0,
+    "opm_year_ago_pct": -12.0,
+    "opm_expansion_bps": 4000.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.0,
+    "cwip_cr": 111.0,
+    "cwip_growth_pct": -30.2,
+    "cwip_to_fixed_assets_pct": 5.3,
+    "cfo_latest_cr": 543.0,
+    "fcf_latest_cr": 266.0,
+    "cfo_ebitda_pct": 58.0,
+    "cfo_to_pat_3y": 0.1,
+    "promoter_pct": 46.65,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 21.51,
+    "dii_pct": 17.63,
+    "inst_total_pct": 39.14,
+    "inst_4q_delta_pct": -0.2,
+    "public_4q_delta_pct": 0.2
+  },
+  "strengths": [
+    "Fortress Balance Sheet (D/E: 0.00x)",
+    "Sharp Margin Inflection (OPM +4000 bps YoY)",
+    "Explosive Quarterly PAT Surge (+100.0% YoY)",
+    "Deep GARP Value (PEG: 0.41x)",
+    "Company has reduced debt."
+  ],
+  "red_flags": [
+    "Sub-par ROCE (6.5%)",
+    "Weak Operating Cash Conversion (3Y CFO/PAT: 0.10x)",
+    "Stock is trading at 2.97 times its book value",
+    "The company has delivered a poor sales growth of 2.21% over past five years."
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 9.0,
+  "quality_score": 9.1,
+  "inflection_score": 9.4,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "49440",
+    "current_price": "330",
+    "stock_pe": "10.7",
+    "book_value": "162",
+    "dividend_yield_pct": "3.05",
+    "roce_pct": "22.6",
+    "roe_pct": "18.4",
+    "debt_to_equity": "0.09",
+    "face_value": "10",
+    "pb_ratio": "2.04",
+    "market_cap_num": 49440.0,
+    "current_price_num": 330.0,
+    "pe_num": 10.7,
+    "book_value_num": 162.0,
+    "roce_num": 22.6,
+    "roe_num": 18.4,
+    "pb_num": 2.04,
+    "peg_ratio": "0.21",
+    "peg_num": 0.21
+  },
+  "ranges": {
+    "sales_cagr_3y": -10.0,
+    "sales_cagr_5y": 11.0,
+    "sales_growth_ttm": -30.0,
+    "profit_cagr_3y": 5.0,
+    "profit_cagr_5y": 6.0,
+    "profit_growth_ttm": 26.0,
+    "roe_3y": 20.0,
+    "roe_5y": 22.0,
+    "price_cagr_3y": 19.0,
+    "price_cagr_5y": 8.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": -35.0,
+    "qtr_pat_yoy_pct": 51.3,
+    "qtr_pat_prev_yoy_pct": 35.0,
+    "qtr_eps_yoy_pct": 51.3,
+    "opm_latest_pct": 23.0,
+    "opm_year_ago_pct": 10.0,
+    "opm_expansion_bps": 1300.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.09,
+    "cwip_cr": 3523.0,
+    "cwip_growth_pct": 41.1,
+    "cwip_to_fixed_assets_pct": 41.5,
+    "cfo_latest_cr": 4750.0,
+    "fcf_latest_cr": 2231.0,
+    "cfo_ebitda_pct": 112.0,
+    "cfo_to_pat_3y": 1.22,
+    "promoter_pct": 50.0,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 25.97,
+    "dii_pct": 14.21,
+    "inst_total_pct": 40.18,
+    "inst_4q_delta_pct": 0.5,
+    "public_4q_delta_pct": -0.5
+  },
+  "strengths": [
+    "Strong Capital Return (ROCE: 22.6%)",
+    "Fortress Balance Sheet (D/E: 0.09x)",
+    "Cash Generative Profits (CFO/EBITDA: 112%)",
+    "Sharp Margin Inflection (OPM +1300 bps YoY)",
+    "Explosive Quarterly PAT Surge (+51.3% YoY)"
+  ],
+  "red_flags": [
+    "The company has delivered a poor sales growth of 10.8% over past five years."
+  ]
+}

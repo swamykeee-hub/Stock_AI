@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 4.9,
+  "quality_score": 6.0,
+  "inflection_score": 4.5,
+  "valuation_score": 3.2,
+  "metrics": {
+    "market_cap_cr": "45379",
+    "current_price": "2347",
+    "stock_pe": "31.8",
+    "book_value": "603",
+    "dividend_yield_pct": "0.85",
+    "roce_pct": "11.2",
+    "roe_pct": "10.4",
+    "debt_to_equity": "0.52",
+    "face_value": "2",
+    "pb_ratio": "3.89",
+    "market_cap_num": 45379.0,
+    "current_price_num": 2347.0,
+    "pe_num": 31.8,
+    "book_value_num": 603.0,
+    "roce_num": 11.2,
+    "roe_num": 10.4,
+    "pb_num": 3.89,
+    "peg_ratio": "4.36",
+    "peg_num": 4.36
+  },
+  "ranges": {
+    "sales_cagr_3y": 4.0,
+    "sales_cagr_5y": 13.0,
+    "sales_growth_ttm": 20.0,
+    "profit_cagr_3y": 4.0,
+    "profit_cagr_5y": -1.0,
+    "profit_growth_ttm": 3.0,
+    "roe_3y": 14.0,
+    "roe_5y": 15.0,
+    "price_cagr_3y": -3.0,
+    "price_cagr_5y": 2.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 45.0,
+    "qtr_pat_yoy_pct": 7.3,
+    "qtr_pat_prev_yoy_pct": 56.6,
+    "qtr_eps_yoy_pct": 7.1,
+    "opm_latest_pct": 18.0,
+    "opm_year_ago_pct": 21.0,
+    "opm_expansion_bps": -300.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.52,
+    "cwip_cr": 3741.0,
+    "cwip_growth_pct": 51.3,
+    "cwip_to_fixed_assets_pct": 47.7,
+    "cfo_latest_cr": 2249.0,
+    "fcf_latest_cr": -749.0,
+    "cfo_ebitda_pct": 115.0,
+    "cfo_to_pat_3y": 1.4,
+    "promoter_pct": 58.3,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 9.06,
+    "dii_pct": 25.45,
+    "inst_total_pct": 34.51,
+    "inst_4q_delta_pct": -0.74,
+    "public_4q_delta_pct": 0.87
+  },
+  "strengths": [
+    "Cash Generative Profits (CFO/EBITDA: 115%)",
+    "Capex Capacity Runway Active (CWIP: \u20b93,741 Cr)",
+    "Company has been maintaining a healthy dividend payout of 21.5%"
+  ],
+  "red_flags": [
+    "Operating Margin Compression (-300 bps YoY)",
+    "Expensive Valuation vs Growth (PEG: 4.36x)",
+    "Stock is trading at 3.89 times its book value",
+    "Company has a low return on equity of 13.8% over last 3 years."
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 9.6,
+  "quality_score": 10.0,
+  "inflection_score": 10.0,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "21163",
+    "current_price": "1421",
+    "stock_pe": "3.74",
+    "book_value": "893",
+    "dividend_yield_pct": "4.34",
+    "roce_pct": "35.4",
+    "roe_pct": "32.5",
+    "debt_to_equity": "0.17",
+    "face_value": "10",
+    "pb_ratio": "1.59",
+    "market_cap_num": 21163.0,
+    "current_price_num": 1421.0,
+    "pe_num": 3.74,
+    "book_value_num": 893.0,
+    "roce_num": 35.4,
+    "roe_num": 32.5,
+    "pb_num": 1.59,
+    "peg_ratio": "0.01",
+    "peg_num": 0.01
+  },
+  "ranges": {
+    "sales_cagr_3y": -6.0,
+    "sales_cagr_5y": 23.0,
+    "sales_growth_ttm": 31.0,
+    "profit_cagr_3y": -5.0,
+    "profit_cagr_5y": 67.0,
+    "profit_growth_ttm": 400.0,
+    "roe_3y": 24.0,
+    "roe_5y": 34.0,
+    "price_cagr_3y": 34.0,
+    "price_cagr_5y": 67.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 26.0,
+    "qtr_pat_yoy_pct": 210.2,
+    "qtr_pat_prev_yoy_pct": 100.0,
+    "qtr_eps_yoy_pct": 210.5,
+    "opm_latest_pct": 16.0,
+    "opm_year_ago_pct": 7.0,
+    "opm_expansion_bps": 900.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.17,
+    "cwip_cr": 602.0,
+    "cwip_growth_pct": 74.0,
+    "cwip_to_fixed_assets_pct": 8.6,
+    "cfo_latest_cr": 2945.0,
+    "fcf_latest_cr": 2045.0,
+    "cfo_ebitda_pct": 82.0,
+    "cfo_to_pat_3y": 1.18,
+    "promoter_pct": 67.29,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 15.79,
+    "dii_pct": 1.18,
+    "inst_total_pct": 16.97,
+    "inst_4q_delta_pct": 5.57,
+    "public_4q_delta_pct": -5.55
+  },
+  "strengths": [
+    "Elite Capital Efficiency (ROCE: 35.4%)",
+    "Superior ROE: 32.5%",
+    "Fortress Balance Sheet (D/E: 0.17x)",
+    "Cash Generative Profits (CFO/EBITDA: 82%)",
+    "Sharp Margin Inflection (OPM +900 bps YoY)"
+  ],
+  "red_flags": [
+    "Standard market & execution risks apply"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 5.2,
+  "quality_score": 4.1,
+  "inflection_score": 5.0,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "31413",
+    "current_price": "1204",
+    "stock_pe": "13.2",
+    "book_value": "778",
+    "dividend_yield_pct": "0.67",
+    "roce_pct": "9.44",
+    "roe_pct": "12.9",
+    "debt_to_equity": "N/A",
+    "face_value": "10",
+    "pb_ratio": "1.55",
+    "market_cap_num": 31413.0,
+    "current_price_num": 1204.0,
+    "pe_num": 13.2,
+    "book_value_num": 778.0,
+    "roce_num": 9.44,
+    "roe_num": 12.9,
+    "pb_num": 1.55,
+    "peg_ratio": "0.44",
+    "peg_num": 0.44
+  },
+  "ranges": {
+    "sales_cagr_3y": 9.0,
+    "sales_cagr_5y": 2.0,
+    "sales_growth_ttm": 10.0,
+    "profit_cagr_3y": 30.0,
+    "profit_cagr_5y": 20.0,
+    "profit_growth_ttm": 9.0,
+    "roe_3y": 12.0,
+    "roe_5y": 12.0,
+    "price_cagr_3y": 15.0,
+    "price_cagr_5y": 23.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 13.5,
+    "qtr_pat_yoy_pct": 5.6,
+    "qtr_pat_prev_yoy_pct": 4.1,
+    "qtr_eps_yoy_pct": 5.4,
+    "opm_latest_pct": 35.0,
+    "opm_year_ago_pct": 38.0,
+    "opm_expansion_bps": -300.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": true
+  },
+  "balance_inst": {
+    "is_financial_sector": true,
+    "debt_to_equity": null,
+    "cwip_cr": 4.0,
+    "cwip_growth_pct": -33.3,
+    "cwip_to_fixed_assets_pct": 1.5,
+    "cfo_latest_cr": -8973.0,
+    "fcf_latest_cr": -9005.0,
+    "cfo_ebitda_pct": null,
+    "cfo_to_pat_3y": -3.75,
+    "promoter_pct": 28.01,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 14.19,
+    "dii_pct": 49.29,
+    "inst_total_pct": 63.48,
+    "inst_4q_delta_pct": 4.19,
+    "public_4q_delta_pct": -4.14
+  },
+  "strengths": [
+    "Multi-Year Profit Compounding (3Y CAGR: +30%)",
+    "Smart Money Accumulation (FII+DII +4.2% over 4Q)",
+    "Deep GARP Value (PEG: 0.44x)",
+    "Company has delivered good profit growth of 20.2% CAGR over last 5 years"
+  ],
+  "red_flags": [
+    "Weak Operating Cash Conversion (3Y CFO/PAT: -3.75x)",
+    "Operating Margin Compression (-300 bps YoY)",
+    "Company has low interest coverage ratio.",
+    "The company has delivered a poor sales growth of 2.36% over past five years."
+  ]
+}

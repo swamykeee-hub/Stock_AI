@@ -1,21 +1,29 @@
 {
-  "score": 5.0,
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 4.6,
+  "quality_score": 4.5,
+  "inflection_score": 4.5,
+  "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        694558\n        \n          Cr.",
-    "current_price": "\u20b9\n        1096",
-    "stock_pe": "35.7",
-    "book_value": "\u20b9\n        178",
-    "dividend_yield_pct": "0.49\n        \n          %",
-    "roce_pct": "11.2\n        \n          %",
-    "roe_pct": "17.1\n        \n          %",
+    "market_cap_cr": "N/A",
+    "current_price": "N/A",
+    "stock_pe": "N/A",
+    "book_value": "N/A",
+    "dividend_yield_pct": "N/A",
+    "roce_pct": "N/A",
+    "roe_pct": "N/A",
     "debt_to_equity": "N/A",
-    "face_value": "\u20b9\n        1.00"
+    "face_value": "N/A",
+    "pb_ratio": "N/A"
   },
+  "ranges": {},
+  "inflection": {},
+  "balance_inst": {},
   "strengths": [
-    "Company has been maintaining a healthy dividend payout of 19.8%",
-    "Company's median sales growth is 29.1% of last 10 years"
+    "Standard market capitalization profile"
   ],
   "red_flags": [
-    "Stock is trading at 6.15 times its book value"
+    "Standard market & execution risks apply"
   ]
 }

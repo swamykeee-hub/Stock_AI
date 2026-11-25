@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "is_consolidated": false,
+  "score": 8.6,
+  "quality_score": 9.1,
+  "inflection_score": 10.0,
+  "valuation_score": 5.0,
+  "metrics": {
+    "market_cap_cr": "40775",
+    "current_price": "1516",
+    "stock_pe": "74.2",
+    "book_value": "160",
+    "dividend_yield_pct": "0.03",
+    "roce_pct": "16.4",
+    "roe_pct": "13.2",
+    "debt_to_equity": "0.08",
+    "face_value": "2",
+    "pb_ratio": "9.47",
+    "market_cap_num": 40775.0,
+    "current_price_num": 1516.0,
+    "pe_num": 74.2,
+    "book_value_num": 160.0,
+    "roce_num": 16.4,
+    "roe_num": 13.2,
+    "pb_num": 9.47,
+    "peg_ratio": "2.53",
+    "peg_num": 2.53
+  },
+  "ranges": {
+    "sales_cagr_3y": 23.0,
+    "sales_cagr_5y": 25.0,
+    "sales_growth_ttm": 22.0,
+    "profit_cagr_3y": 23.0,
+    "profit_cagr_5y": 54.0,
+    "profit_growth_ttm": 5.0,
+    "roe_3y": 15.0,
+    "roe_5y": 15.0,
+    "price_cagr_3y": 18.0,
+    "price_cagr_5y": null
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 30.0,
+    "qtr_pat_yoy_pct": 29.3,
+    "qtr_pat_prev_yoy_pct": -9.9,
+    "qtr_eps_yoy_pct": 29.1,
+    "opm_latest_pct": 24.0,
+    "opm_year_ago_pct": 21.0,
+    "opm_expansion_bps": 300.0,
+    "is_sequential_pat_accel": true,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.08,
+    "cwip_cr": 199.0,
+    "cwip_growth_pct": 65.8,
+    "cwip_to_fixed_assets_pct": 6.5,
+    "cfo_latest_cr": 573.0,
+    "fcf_latest_cr": -102.0,
+    "cfo_ebitda_pct": 89.0,
+    "cfo_to_pat_3y": 1.15,
+    "promoter_pct": 33.0,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 9.92,
+    "dii_pct": 17.01,
+    "inst_total_pct": 26.93,
+    "inst_4q_delta_pct": 2.55,
+    "public_4q_delta_pct": -2.6
+  },
+  "strengths": [
+    "Strong Capital Return (ROCE: 16.4%)",
+    "Fortress Balance Sheet (D/E: 0.08x)",
+    "Cash Generative Profits (CFO/EBITDA: 89%)",
+    "Sharp Margin Inflection (OPM +300 bps YoY)",
+    "Multi-Year Profit Compounding (3Y CAGR: +23%)"
+  ],
+  "red_flags": [
+    "Stock is trading at 9.35 times its book value"
+  ]
+}
