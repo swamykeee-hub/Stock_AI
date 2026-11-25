@@ -35,6 +35,46 @@ from core.ai_performance_scorecard import AIPerformanceScorecard
 from core.telegram_alert_bot import TelegramAlertBot
 from core.market_movers_analyst import MarketMoversAnalyst
 from core.mutual_fund_analyst import MutualFundAnalyst
+from core.feed_health import collect_feed_health
+
+PORTFOLIO_FILE = config.DATA_DIR / "portfolio_holdings.json"
+
+
+def _load_portfolio_file() -> list:
+    """Loads persisted personal portfolio holdings from disk safely."""
+    if not PORTFOLIO_FILE.exists():
+        return []
+    try:
+        with open(PORTFOLIO_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, list) else []
+    except Exception:
+        return []
+
+
+def _save_portfolio_file(holdings: list) -> list:
+    """Sanitizes and persists personal portfolio holdings to disk."""
+    cleaned = []
+    for h in holdings or []:
+        if not isinstance(h, dict):
+            continue
+        sym = str(h.get("symbol", "")).strip().upper().replace(".NS", "").replace(".BO", "")
+        try:
+            qty = int(h.get("qty", 0))
+            buy_price = float(h.get("buyPrice", h.get("buy_price", 0.0)))
+        except Exception:
+            continue
+        if not sym or qty <= 0 or buy_price <= 0:
+            continue
+        entry = {"symbol": sym, "qty": qty, "buyPrice": round(buy_price, 2)}
+        buy_date = str(h.get("buyDate", h.get("buy_date", ""))).strip()[:10]
+        if buy_date:
+            entry["buyDate"] = buy_date
+        cleaned.append(entry)
+    PORTFOLIO_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(PORTFOLIO_FILE, "w", encoding="utf-8") as f:
+        json.dump(cleaned, f, indent=2)
+    return cleaned
 
 def is_market_hours() -> bool:
     """Checks if current time is within Indian market trading hours (Mon-Fri 09:00 - 15:45 IST)."""
@@ -69,6 +109,8 @@ def push_to_github_pages(commit_msg: str = None, force: bool = False) -> bool:
             files_to_stage = ["index.html", "dashboard.html", "data/"]
             if (config.BASE_DIR / ".nojekyll").exists():
                 files_to_stage.append(".nojekyll")
+            if (config.BASE_DIR / "web").exists():
+                files_to_stage.append("web/")
 
             subprocess.run(["git", "add"] + files_to_stage, cwd=str(config.BASE_DIR), capture_output=True, timeout=15)
             diff_check = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=str(config.BASE_DIR), capture_output=True, timeout=10)
@@ -313,9 +355,24 @@ def _refresh_all_live_data_locked(mode: str = "quick", auto_push: bool = False) 
     except Exception:
         pass
 
-    # Load AI Performance Scorecard
+    # Update & Refresh Live Forward-Tested AI Performance Scorecard
     try:
-        scan_payload["performance_scorecard"] = AIPerformanceScorecard().get_performance_metrics()
+        nifty_val = indices.get("NIFTY 50", {}).get("value")
+        scorecard = AIPerformanceScorecard()
+        scorecard.record_new_signals(
+            scan_payload.get("top_bullish_stocks", []),
+            radar_stocks=scan_payload.get("monitored_radar", []),
+            nifty_close=nifty_val,
+        )
+        scan_payload["performance_scorecard"] = scorecard.refresh_outcomes(
+            quotes_map=fresh_quotes, nifty_close=nifty_val
+        )
+    except Exception:
+        pass
+
+    # Audit Feed Freshness & Health Telemetry
+    try:
+        scan_payload["feed_health"] = collect_feed_health(scan_payload)
     except Exception:
         pass
 
@@ -399,6 +456,27 @@ class SyncRequestHandler(BaseHTTPRequestHandler):
                         pass
                     return
 
+        # Serve modular static CSS/JS assets cleanly under /web/
+        if path.startswith("/web/"):
+            rel_name = Path(path[len("/web/"):]).name
+            web_dir = (config.BASE_DIR / "web").resolve()
+            asset_path = (web_dir / rel_name).resolve()
+            if asset_path.parent == web_dir and asset_path.exists() and asset_path.is_file():
+                ctype = "text/css; charset=utf-8" if rel_name.endswith(".css") else (
+                    "application/javascript; charset=utf-8" if rel_name.endswith(".js") else "application/octet-stream"
+                )
+                try:
+                    content = asset_path.read_bytes()
+                    self._set_cors_headers(200, content_type=ctype)
+                    self.wfile.write(content)
+                    return
+                except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
+                    return
+                except Exception as e:
+                    self._set_cors_headers(500)
+                    self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
+                    return
+
         if path == "/api/status":
             self._set_cors_headers(200)
             self.wfile.write(json.dumps({
@@ -406,8 +484,33 @@ class SyncRequestHandler(BaseHTTPRequestHandler):
                 "service": "Indian Stock AI Live Sync Server",
                 "port": 5005,
                 "timestamp": get_ist_now().strftime("%Y-%m-%d %H:%M:%S"),
-                "is_market_hours": is_market_hours()
+                "is_market_hours": is_market_hours(),
+                "feed_health": collect_feed_health(),
+                "portfolio_count": len(_load_portfolio_file()),
             }).encode("utf-8"))
+            return
+
+        if path == "/api/feed_health":
+            self._set_cors_headers(200)
+            self.wfile.write(json.dumps(collect_feed_health()).encode("utf-8"))
+            return
+
+        if path == "/api/portfolio":
+            try:
+                if self.command == "POST":
+                    content_length = int(self.headers.get("Content-Length", 0))
+                    raw = self.rfile.read(content_length).decode("utf-8") if content_length > 0 else "{}"
+                    payload = json.loads(raw)
+                    saved = _save_portfolio_file(payload.get("holdings", []))
+                    self._set_cors_headers(200)
+                    self.wfile.write(json.dumps({"status": "saved", "holdings": saved, "count": len(saved)}).encode("utf-8"))
+                else:
+                    holdings = _load_portfolio_file()
+                    self._set_cors_headers(200)
+                    self.wfile.write(json.dumps({"holdings": holdings, "count": len(holdings)}).encode("utf-8"))
+            except Exception as e:
+                self._set_cors_headers(500)
+                self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
             return
 
         if path == "/api/quote":
@@ -600,7 +703,7 @@ def is_port_in_use(port: int = 5005) -> bool:
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         return s.connect_ex(('127.0.0.1', port)) == 0
 
-def run_server(port=None, host="0.0.0.0", enable_bg_sync=True):
+def run_server(port=None, host="127.0.0.1", enable_bg_sync=True):
     if port is None:
         import os
         port = int(os.environ.get("PORT", 5005))
@@ -622,7 +725,7 @@ def run_server(port=None, host="0.0.0.0", enable_bg_sync=True):
     finally:
         server.server_close()
 
-def start_sync_server_thread(port=None, host="0.0.0.0", enable_bg_sync=True) -> threading.Thread:
+def start_sync_server_thread(port=None, host="127.0.0.1", enable_bg_sync=True) -> threading.Thread:
     """Starts the sync server in a daemon background thread if not already running."""
     if port is None:
         import os
@@ -646,7 +749,7 @@ if __name__ == "__main__":
     import os
     default_port = int(os.environ.get("PORT", 5005))
     parser = argparse.ArgumentParser(description="Indian Stock AI Live Sync Server")
-    parser.add_argument("--host", type=str, default="0.0.0.0", help="Host interface to listen on")
+    parser.add_argument("--host", type=str, default="127.0.0.1", help="Host interface to listen on")
     parser.add_argument("--port", type=int, default=default_port, help="Port to listen on")
     parser.add_argument("--no-bg-sync", action="store_true", help="Disable background periodic auto-sync")
     parser.add_argument("--run-once", action="store_true", help="Execute single live refresh cycle and exit")

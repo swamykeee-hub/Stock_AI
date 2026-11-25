@@ -136,11 +136,13 @@ class DailyAutomator:
             print(f"  -> Corp Actions notice: {e}")
             corp_actions = {}
 
-        # 9d. AI Recommendation Performance Scorecard
-        print("  -> Computing AI Win-Rate & Track Record Scorecard...")
+        # 9d. AI Recommendation Performance Scorecard (Record New + Live Forward Audit)
+        print("  -> Updating AI Win-Rate & Forward-Tested Scorecard...")
         try:
-            scorecard_data = self.scorecard.get_performance_metrics()
-            print(f"  -> AI Model Win-Rate: {scorecard_data.get('win_rate_pct')}% (Profit Factor: {scorecard_data.get('profit_factor')})")
+            nifty_val = indices.get("NIFTY 50", {}).get("value")
+            added_cnt = self.scorecard.record_new_signals(bullish_picks, radar_stocks=monitored_radar, nifty_close=nifty_val)
+            scorecard_data = self.scorecard.refresh_outcomes(market_data=self.market_data, nifty_close=nifty_val)
+            print(f"  -> AI Scorecard: +{added_cnt} new signals | Win-Rate: {scorecard_data.get('win_rate_pct')}% (Profit Factor: {scorecard_data.get('profit_factor')})")
         except Exception as e:
             print(f"  -> Scorecard notice: {e}")
             scorecard_data = {}
@@ -174,6 +176,12 @@ class DailyAutomator:
             "disclaimer": config.DISCLAIMER
         }
 
+        try:
+            from core.feed_health import collect_feed_health
+            scan_payload["feed_health"] = collect_feed_health(scan_payload)
+        except Exception:
+            pass
+
         with open(config.SCHEDULE_CONFIG["DAILY_SCAN_FILE"], "w", encoding="utf-8") as f:
             json.dump(scan_payload, f, indent=2)
 
@@ -190,24 +198,32 @@ class DailyAutomator:
         HTMLReportGenerator.generate(scan_payload, ipo_data, html_destinations)
         print(f"  -> Generated standalone HTML report at {html_destinations[0]} and Desktop.")
 
-        # 13. Dispatch Automated Telegram Alerts (Pre-Market / Evening Wrap)
+        # 13. Dispatch Automated Telegram Alerts (Pre-Market / Evening Wrap + Portfolio Catalyst Digest)
         try:
             current_hour = get_ist_now().hour
             if current_hour < 12:
                 self.telegram_bot.send_pre_market_pulse(indices, macro_snap, market_regime, fifty_two_week_stocks, ipo_data, inst_flow)
             else:
                 self.telegram_bot.send_evening_wrap(indices, momentum_stocks, bullish_picks)
+
+            if self.telegram_bot.enabled:
+                from core.sync_server import _load_portfolio_file
+                from core.portfolio_health_auditor import PortfolioHealthAuditor
+                held = _load_portfolio_file()
+                port_audit = PortfolioHealthAuditor().audit_entire_portfolio(held) if held else None
+                self.telegram_bot.send_portfolio_catalyst_alerts(
+                    portfolio_audit=port_audit,
+                    corporate_actions=corp_actions,
+                    radar_stocks=monitored_radar,
+                    bullish_picks=bullish_picks,
+                )
         except Exception as e:
             print(f"  -> Telegram dispatch notice: {e}")
 
-        # 14. Auto-push updated web application to GitHub Pages
+        # 14. Auto-push updated web application cleanly via serialized Pages publisher
         try:
-            import subprocess
-            subprocess.run(["git", "add", "index.html", "dashboard.html", "data/"], cwd=str(config.BASE_DIR), capture_output=True, timeout=15)
-            subprocess.run(["git", "commit", "-m", f"chore(auto-update): market scan {now_str}"], cwd=str(config.BASE_DIR), capture_output=True, timeout=15)
-            res = subprocess.run(["git", "push", "origin", "main"], cwd=str(config.BASE_DIR), capture_output=True, text=True, timeout=30)
-            if res.returncode == 0:
-                print("  -> Automatically published updated website to GitHub Pages!")
+            from core.sync_server import push_to_github_pages
+            push_to_github_pages(commit_msg=f"chore(auto-update): market scan {now_str}", force=True)
         except Exception as e:
             print(f"  -> GitHub Pages auto-publish notice: {e}")
 

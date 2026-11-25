@@ -145,6 +145,69 @@ class TelegramAlertBot:
         )
         return self.send_raw_message(msg)
 
+    def send_portfolio_catalyst_alerts(
+        self,
+        portfolio_audit: Dict[str, Any] = None,
+        corporate_actions: Dict[str, Any] = None,
+        radar_stocks: List[Dict[str, Any]] = None,
+        bullish_picks: List[Dict[str, Any]] = None,
+    ) -> bool:
+        """
+        Dispatches proactive Telegram alert digest for held/radar stocks covering:
+        - Urgent CIO portfolio risk / exit warnings
+        - Upcoming ex-dividend dates & quarterly earnings
+        - High-conviction Laurus-Type Inflections (>= 9.2)
+        """
+        sections: List[str] = []
+
+        urgent = (portfolio_audit or {}).get("urgent_alerts", [])
+        if urgent:
+            lines = [f"  • <b>{u['symbol']}</b>: {u['badge']} — {u['detail']}" for u in urgent[:4]]
+            sections.append("🛑 <b>Urgent Portfolio Risk Alerts:</b>\n" + "\n".join(lines))
+
+        conc = (portfolio_audit or {}).get("concentration_alerts", [])
+        if conc:
+            sections.append("⚠️ <b>Allocation Guardrails:</b>\n" + "\n".join(f"  • {c}" for c in conc[:3]))
+
+        held_syms = {h.get("symbol", "").upper() for h in (portfolio_audit or {}).get("holdings", []) if h.get("symbol")}
+        watch_syms = held_syms | {r.get("symbol", "").upper() for r in (radar_stocks or []) if r.get("symbol")}
+
+        ca_hits: List[str] = []
+        if watch_syms and corporate_actions:
+            for d in corporate_actions.get("dividends", []):
+                s = str(d.get("symbol", "")).upper()
+                if s in watch_syms:
+                    ca_hits.append(f"  💰 <b>{s}</b> Dividend {d.get('dividend_amount')} (Ex: {d.get('ex_date')})")
+            for e in corporate_actions.get("earnings", []):
+                s = str(e.get("symbol", "")).upper()
+                if s in watch_syms:
+                    ca_hits.append(f"  📊 <b>{s}</b> {e.get('result_type', 'Results')} on {e.get('date')}")
+        if ca_hits:
+            sections.append("📅 <b>Watchlist & Portfolio Catalysts:</b>\n" + "\n".join(ca_hits[:5]))
+
+        inflections = [
+            p for p in (bullish_picks or [])
+            if float(p.get("conviction_score", 0.0)) >= 9.2
+        ][:4]
+        if inflections:
+            inf_lines = [
+                f"  🔥 <b>{p['symbol']}</b> ({p['conviction_score']}/10, {p.get('archetype_short', 'Breakout')}) @ ₹{p.get('cmp')}"
+                for p in inflections
+            ]
+            sections.append("💎 <b>Top High-Conviction Inflections (>=9.2):</b>\n" + "\n".join(inf_lines))
+
+        if not sections:
+            return False
+
+        date_str = datetime.now().strftime("%d %b %Y")
+        msg = (
+            f"📌 <b>STOCK AI PORTFOLIO & CATALYST BRIEF</b> ({date_str})\n"
+            f"━━━━━━━━━━━━━━━━━━━\n"
+            + "\n\n".join(sections)
+            + "\n\n👉 https://swamykeee-hub.github.io/Stock_AI/"
+        )
+        return self.send_raw_message(msg)
+
 if __name__ == "__main__":
     bot = TelegramAlertBot()
     print("Telegram Bot is configured:", bot.is_configured())

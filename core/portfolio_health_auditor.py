@@ -1,6 +1,10 @@
+import concurrent.futures
+from datetime import datetime
+import json
 from typing import Dict, Any, List, Optional
 import math
 import pandas as pd
+import config
 from core.market_data import MarketDataManager
 from core.technical_analyst import TechnicalAnalyst
 from core.fundamental_analyst import FundamentalAnalyst, parse_float_safe
@@ -15,13 +19,58 @@ class PortfolioHealthAuditor:
       catastrophe floors (-15%), fundamental thesis checks (OPM/PAT trajectory), and verified governance alerts
       instead of choking winners on 8% noise shakeouts or RSI spikes.
     - "swing": Tactical position protection anchored to 20/50-EMA, -8% stops, and partial profit booking.
+    Adds Indian STCG/LTCG holding-period tax awareness and portfolio-level sector concentration risk guardrails.
     """
+
+    _NSE_META_CACHE: Dict[str, Dict[str, str]] = {}
 
     def __init__(self):
         self.market_data = MarketDataManager()
         self.tech_analyst = TechnicalAnalyst()
         self.fund_analyst = FundamentalAnalyst()
         self.news_analyst = NewsSentimentAnalyst()
+
+    @classmethod
+    def _resolve_stock_meta(cls, clean_sym: str) -> Dict[str, str]:
+        if not cls._NSE_META_CACHE:
+            try:
+                catalog = config.DATA_DIR / "nse_stocks.json"
+                if catalog.exists():
+                    with open(catalog, "r", encoding="utf-8") as f:
+                        for row in json.load(f):
+                            s = str(row.get("symbol", "")).upper().strip()
+                            if s:
+                                cls._NSE_META_CACHE[s] = {
+                                    "name": str(row.get("name", s)).strip(),
+                                    "sector": str(row.get("sector", "Equities")).strip() or "Equities",
+                                }
+            except Exception:
+                pass
+        return cls._NSE_META_CACHE.get(clean_sym, {"name": clean_sym, "sector": "Equities"})
+
+    @staticmethod
+    def _evaluate_tax_status(buy_date: Optional[str]) -> Dict[str, Any]:
+        """Evaluates Indian STCG (<365d) vs LTCG (>=365d) and flags approaching LTCG transitions."""
+        if not buy_date:
+            return {"holding_days": None, "tax_status": "Buy Date N/A", "tax_hint": ""}
+        try:
+            bdt = datetime.strptime(str(buy_date).strip()[:10], "%Y-%m-%d").date()
+            days = max(0, (datetime.now().date() - bdt).days)
+            if days >= 365:
+                return {"holding_days": days, "tax_status": "LTCG Eligible (12.5%)", "tax_hint": ""}
+            days_left = 365 - days
+            if days_left <= 30:
+                return {
+                    "holding_days": days,
+                    "tax_status": f"Near-LTCG ({days_left}d left)",
+                    "tax_hint": (
+                        f"Only {days_left} day(s) left to qualify for LTCG (12.5% vs 20% STCG). "
+                        "Consider tax spread before voluntary trim/booking."
+                    ),
+                }
+            return {"holding_days": days, "tax_status": f"STCG ({days}d held)", "tax_hint": ""}
+        except Exception:
+            return {"holding_days": None, "tax_status": "Buy Date N/A", "tax_hint": ""}
 
     def audit_holding(
         self,
@@ -31,9 +80,12 @@ class PortfolioHealthAuditor:
         cached_cmp: Optional[float] = None,
         cached_change_pct: Optional[float] = None,
         strategy_mode: str = "long_term",
+        buy_date: Optional[str] = None,
     ) -> Dict[str, Any]:
         """Runs comprehensive 360-degree audit on a single portfolio holding."""
         clean_sym = symbol.strip().upper().replace(".NS", "").replace(".BO", "")
+        meta = self._resolve_stock_meta(clean_sym)
+        tax_info = self._evaluate_tax_status(buy_date)
         mode = "swing" if str(strategy_mode).lower() == "swing" else "long_term"
 
         candles = self.market_data.get_historical_candles(clean_sym, period="1y", interval="1d")
@@ -242,12 +294,20 @@ class PortfolioHealthAuditor:
             )
             suggested_action_detail = f"Hold {qty} shares. Structural stop at ₹{trailing_sl} ({dist_to_sl_pct}% away)."
 
+        if tax_info["tax_hint"] and action_code in ("EXIT_TRAILING_SL", "BOOK_PARTIAL_PROFIT", "TRIM_ON_WEAKNESS") and pnl_pct > 0:
+            rationale = f"{rationale} [Tax Note: {tax_info['tax_hint']}]"
+
         return {
             "symbol": clean_sym,
             "strategy_mode": mode,
-            "company_name": clean_sym,
+            "company_name": meta.get("name", clean_sym),
+            "sector": meta.get("sector", "Equities"),
             "qty": qty,
             "buy_price": buy_price,
+            "buy_date": buy_date or "",
+            "holding_days": tax_info["holding_days"],
+            "tax_status": tax_info["tax_status"],
+            "tax_hint": tax_info["tax_hint"],
             "cmp": cmp,
             "invested": invested,
             "current_val": current_val,
@@ -278,28 +338,40 @@ class PortfolioHealthAuditor:
         }
 
     def audit_entire_portfolio(self, holdings: List[Dict[str, Any]], strategy_mode: str = "long_term") -> Dict[str, Any]:
-        """Audits all portfolio holdings under the chosen strategy horizon and computes aggregate KPIs."""
+        """Concurrently audits all portfolio holdings and computes tax, concentration & sector risk KPIs."""
+        valid_inputs = []
+        for h in holdings:
+            sym = str(h.get("symbol", "")).strip().upper()
+            qty = int(h.get("qty", 0))
+            buy_price = float(h.get("buyPrice", h.get("buy_price", 0.0)))
+            cached_cmp = float(h.get("cmp", 0.0)) if h.get("cmp") else None
+            buy_date = h.get("buyDate") or h.get("buy_date")
+            if sym and qty > 0:
+                valid_inputs.append((sym, qty, buy_price, cached_cmp, buy_date))
+
         audited_holdings = []
+        if valid_inputs:
+            def _worker(args):
+                s, q, bp, cc, bd = args
+                return self.audit_holding(s, q, bp, cached_cmp=cc, strategy_mode=strategy_mode, buy_date=bd)
+
+            with concurrent.futures.ThreadPoolExecutor(max_workers=min(6, len(valid_inputs))) as executor:
+                audited_holdings = list(executor.map(_worker, valid_inputs))
+
         total_invested = 0.0
         total_current = 0.0
         at_risk_count = 0
         profit_booking_count = 0
         urgent_alerts = []
+        sector_totals: Dict[str, float] = {}
 
-        for h in holdings:
-            sym = h.get("symbol", "").strip().upper()
-            qty = int(h.get("qty", 0))
-            buy_price = float(h.get("buyPrice", 0.0))
-            cached_cmp = float(h.get("cmp", 0.0)) if h.get("cmp") else None
-
-            if not sym or qty <= 0:
-                continue
-
-            audit_res = self.audit_holding(sym, qty, buy_price, cached_cmp=cached_cmp, strategy_mode=strategy_mode)
-            audited_holdings.append(audit_res)
-
+        for audit_res in audited_holdings:
+            sym = audit_res["symbol"]
+            sec = audit_res.get("sector", "Equities")
+            val = audit_res["current_val"]
             total_invested += audit_res["invested"]
-            total_current += audit_res["current_val"]
+            total_current += val
+            sector_totals[sec] = sector_totals.get(sec, 0.0) + val
 
             if audit_res["action_code"] in ["EMERGENCY_SELL", "EXIT_TRAILING_SL", "CUT_LOSS", "TREND_BREAKDOWN_SELL"]:
                 at_risk_count += 1
@@ -313,6 +385,30 @@ class PortfolioHealthAuditor:
             elif audit_res["action_code"] == "BOOK_PARTIAL_PROFIT":
                 profit_booking_count += 1
 
+        # Sector Allocation & Concentration Risk Guardrails
+        sector_allocation = []
+        concentration_alerts = []
+        hhi = 0.0
+        if total_current > 0:
+            for audit_res in audited_holdings:
+                w = (audit_res["current_val"] / total_current) * 100.0
+                audit_res["weight_pct"] = round(w, 1)
+                if len(audited_holdings) >= 2 and w >= 25.0:
+                    concentration_alerts.append(
+                        f"Single-Stock Overweight: {audit_res['symbol']} is {w:.1f}% of portfolio (>25% cap)."
+                    )
+            for sec, val in sorted(sector_totals.items(), key=lambda x: x[1], reverse=True):
+                w = (val / total_current) * 100.0
+                hhi += (w / 100.0) ** 2
+                sector_allocation.append({"sector": sec, "value": round(val, 2), "weight_pct": round(w, 1)})
+                if len(audited_holdings) >= 3 and w >= 35.0:
+                    concentration_alerts.append(
+                        f"Sector Concentration Risk: {sec} represents {w:.1f}% of portfolio (>35% cap)."
+                    )
+
+        # Diversification score (10 = well spread across sectors; penalize high HHI)
+        diversification_score = round(max(1.0, min(10.0, (1.0 - hhi) * 12.5)), 1) if len(sector_allocation) > 1 else (10.0 if not audited_holdings else 3.5)
+
         total_pnl = total_current - total_invested
         total_pnl_pct = round((total_pnl / (total_invested + 1e-6)) * 100, 2) if total_invested > 0 else 0.0
         health_score = round(((len(audited_holdings) - at_risk_count) / len(audited_holdings)) * 10.0, 1) if audited_holdings else 10.0
@@ -325,6 +421,9 @@ class PortfolioHealthAuditor:
             "total_pnl": round(total_pnl, 2),
             "total_pnl_pct": total_pnl_pct,
             "portfolio_health_score": health_score,
+            "diversification_score": diversification_score,
+            "sector_allocation": sector_allocation,
+            "concentration_alerts": concentration_alerts,
             "at_risk_count": at_risk_count,
             "profit_booking_count": profit_booking_count,
             "urgent_alerts": urgent_alerts,

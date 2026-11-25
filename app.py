@@ -985,6 +985,23 @@ with tab_automation:
                 st.success("Daily synchronization completed successfully! Latest briefing saved.")
 
     with col_a2:
+        st.markdown("#### 📡 Upstream Feed Health & Telegram Readiness")
+        try:
+            from core.feed_health import collect_feed_health
+            fh = collect_feed_health()
+            st.caption(f"Checked at {fh['checked_at']} — {fh['healthy_count']}/{fh['total_feeds']} feeds healthy")
+            for fd in fh["feeds"]:
+                st.write(f"- **{fd['feed']}**: `{fd['status']}` ({fd['age']}) — {fd['detail']}")
+        except Exception as e:
+            st.caption(f"Feed health unavailable: {e}")
+
+        from core.telegram_alert_bot import TelegramAlertBot
+        tg = TelegramAlertBot()
+        st.write(
+            f"- **Telegram Phone Alerts:** `{'ACTIVE' if tg.enabled else ('CONFIGURED (Disabled)' if tg.is_configured() else 'NOT CONFIGURED')}` "
+            "(via `STOCK_AI_TELEGRAM_ENABLED`, `STOCK_AI_TELEGRAM_TOKEN`, `STOCK_AI_TELEGRAM_CHAT_ID`)"
+        )
+
         st.markdown("#### ⚖️ Compliance & Disclaimers")
         st.warning(config.DISCLAIMER)
         st.markdown(f"""
