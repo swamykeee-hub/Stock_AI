@@ -1,227 +1,227 @@
 {
-  "timestamp": "2026-11-25 10:40:27",
+  "timestamp": "2026-11-25 10:43:08",
   "top_gainers": [
     {
       "symbol": "JWL",
       "name": "Jupiter Wagons",
-      "price": "\u20b9218.50",
-      "price_raw": "218.50",
-      "change_pct": "+17.86%",
-      "change_val": "33.11",
-      "high": "219.80",
+      "price": "\u20b9222.46",
+      "price_raw": "222.46",
+      "change_pct": "+20.00%",
+      "change_val": "37.07",
+      "high": "222.46",
       "low": "191.17",
-      "volume": "58,222,014"
+      "volume": "62,113,795"
     },
     {
       "symbol": "COHANCE",
       "name": "Cohance Life",
-      "price": "\u20b9514.20",
-      "price_raw": "514.20",
-      "change_pct": "+8.30%",
-      "change_val": "39.40",
+      "price": "\u20b9514.30",
+      "price_raw": "514.30",
+      "change_pct": "+8.32%",
+      "change_val": "39.50",
       "high": "519.30",
       "low": "474.00",
-      "volume": "4,979,991"
-    },
-    {
-      "symbol": "CREDITACC",
-      "name": "CreditAccess Gr",
-      "price": "\u20b91,042.00",
-      "price_raw": "1042.00",
-      "change_pct": "+5.92%",
-      "change_val": "58.20",
-      "high": "1,058.30",
-      "low": "985.50",
-      "volume": "1,042,614"
+      "volume": "5,091,228"
     },
     {
       "symbol": "HDFCLIFE",
       "name": "HDFC Life",
-      "price": "\u20b9606.50",
-      "price_raw": "606.50",
-      "change_pct": "+5.49%",
-      "change_val": "31.55",
+      "price": "\u20b9603.55",
+      "price_raw": "603.55",
+      "change_pct": "+4.97%",
+      "change_val": "28.60",
       "high": "609.10",
       "low": "582.30",
-      "volume": "3,520,079"
-    },
-    {
-      "symbol": "MFSL",
-      "name": "Max Financial",
-      "price": "\u20b91,501.80",
-      "price_raw": "1501.80",
-      "change_pct": "+4.88%",
-      "change_val": "69.90",
-      "high": "1,538.80",
-      "low": "1,455.10",
-      "volume": "1,756,212"
+      "volume": "3,648,068"
     },
     {
       "symbol": "LTF",
       "name": "L&T Finance",
-      "price": "\u20b9287.10",
-      "price_raw": "287.10",
-      "change_pct": "+4.78%",
-      "change_val": "13.10",
+      "price": "\u20b9287.20",
+      "price_raw": "287.20",
+      "change_pct": "+4.82%",
+      "change_val": "13.20",
       "high": "292.40",
       "low": "278.54",
-      "volume": "8,257,138"
-    },
-    {
-      "symbol": "ICICILIFE",
-      "name": "ICICI Life Insu",
-      "price": "\u20b9486.90",
-      "price_raw": "486.90",
-      "change_pct": "+4.71%",
-      "change_val": "21.90",
-      "high": "491.50",
-      "low": "466.65",
-      "volume": "1,502,803"
+      "volume": "8,347,880"
     },
     {
       "symbol": "CEATLTD",
       "name": "Ceat",
-      "price": "\u20b93,650.80",
-      "price_raw": "3650.80",
-      "change_pct": "+4.54%",
-      "change_val": "158.40",
+      "price": "\u20b93,653.00",
+      "price_raw": "3653.00",
+      "change_pct": "+4.60%",
+      "change_val": "160.60",
       "high": "3,684.00",
       "low": "3,517.00",
-      "volume": "145,657"
+      "volume": "146,942"
+    },
+    {
+      "symbol": "MFSL",
+      "name": "Max Financial",
+      "price": "\u20b91,496.60",
+      "price_raw": "1496.60",
+      "change_pct": "+4.52%",
+      "change_val": "64.70",
+      "high": "1,538.80",
+      "low": "1,455.10",
+      "volume": "1,764,544"
+    },
+    {
+      "symbol": "ICICILIFE",
+      "name": "ICICI Life Insu",
+      "price": "\u20b9486.00",
+      "price_raw": "486.00",
+      "change_pct": "+4.52%",
+      "change_val": "21.00",
+      "high": "491.50",
+      "low": "466.65",
+      "volume": "1,531,053"
+    },
+    {
+      "symbol": "CREDITACC",
+      "name": "CreditAccess Gr",
+      "price": "\u20b91,024.00",
+      "price_raw": "1024.00",
+      "change_pct": "+4.09%",
+      "change_val": "40.20",
+      "high": "1,058.30",
+      "low": "985.50",
+      "volume": "1,117,358"
     },
     {
       "symbol": "DABUR",
       "name": "Dabur India",
-      "price": "\u20b9415.00",
-      "price_raw": "415.00",
-      "change_pct": "+4.01%",
-      "change_val": "16.00",
+      "price": "\u20b9415.20",
+      "price_raw": "415.20",
+      "change_pct": "+4.06%",
+      "change_val": "16.20",
       "high": "415.90",
       "low": "401.45",
-      "volume": "2,571,382"
-    },
-    {
-      "symbol": "ICICIBANK",
-      "name": "ICICI Bank",
-      "price": "\u20b91,647.90",
-      "price_raw": "1647.90",
-      "change_pct": "+3.94%",
-      "change_val": "62.40",
-      "high": "1,648.30",
-      "low": "1,617.00",
-      "volume": "7,168,682"
-    },
-    {
-      "symbol": "TATACONSUM",
-      "name": "TATA Cons. Prod",
-      "price": "\u20b91,176.80",
-      "price_raw": "1176.80",
-      "change_pct": "+3.87%",
-      "change_val": "43.80",
-      "high": "1,178.00",
-      "low": "1,153.40",
-      "volume": "1,250,771"
-    },
-    {
-      "symbol": "POLICYBZR",
-      "name": "PB Fintech",
-      "price": "\u20b91,131.00",
-      "price_raw": "1131.00",
-      "change_pct": "+3.85%",
-      "change_val": "41.90",
-      "high": "1,176.40",
-      "low": "1,129.00",
-      "volume": "6,547,789"
-    },
-    {
-      "symbol": "AADHARHFC",
-      "name": "Aadhar Housing",
-      "price": "\u20b9430.90",
-      "price_raw": "430.90",
-      "change_pct": "+3.78%",
-      "change_val": "15.70",
-      "high": "433.60",
-      "low": "414.00",
-      "volume": "245,704"
+      "volume": "2,615,062"
     },
     {
       "symbol": "IKS",
       "name": "Inventurus Know",
-      "price": "\u20b91,662.70",
-      "price_raw": "1662.70",
-      "change_pct": "+3.67%",
-      "change_val": "58.90",
+      "price": "\u20b91,666.10",
+      "price_raw": "1666.10",
+      "change_pct": "+3.88%",
+      "change_val": "62.30",
       "high": "1,676.90",
       "low": "1,603.00",
-      "volume": "50,122"
+      "volume": "50,844"
     },
     {
-      "symbol": "NUVOCO",
-      "name": "Nuvoco Vistas",
-      "price": "\u20b9368.65",
-      "price_raw": "368.65",
-      "change_pct": "+3.51%",
-      "change_val": "12.50",
-      "high": "369.90",
-      "low": "355.00",
-      "volume": "566,075"
+      "symbol": "AADHARHFC",
+      "name": "Aadhar Housing",
+      "price": "\u20b9431.30",
+      "price_raw": "431.30",
+      "change_pct": "+3.88%",
+      "change_val": "16.10",
+      "high": "433.60",
+      "low": "414.00",
+      "volume": "246,866"
+    },
+    {
+      "symbol": "ICICIBANK",
+      "name": "ICICI Bank",
+      "price": "\u20b91,646.50",
+      "price_raw": "1646.50",
+      "change_pct": "+3.85%",
+      "change_val": "61.00",
+      "high": "1,650.00",
+      "low": "1,617.00",
+      "volume": "7,549,825"
+    },
+    {
+      "symbol": "TATACONSUM",
+      "name": "TATA Cons. Prod",
+      "price": "\u20b91,176.50",
+      "price_raw": "1176.50",
+      "change_pct": "+3.84%",
+      "change_val": "43.50",
+      "high": "1,178.00",
+      "low": "1,153.40",
+      "volume": "1,265,340"
+    },
+    {
+      "symbol": "POLICYBZR",
+      "name": "PB Fintech",
+      "price": "\u20b91,126.90",
+      "price_raw": "1126.90",
+      "change_pct": "+3.47%",
+      "change_val": "37.80",
+      "high": "1,176.40",
+      "low": "1,126.20",
+      "volume": "6,647,323"
+    },
+    {
+      "symbol": "NAUKRI",
+      "name": "Info Edge",
+      "price": "\u20b91,228.50",
+      "price_raw": "1228.50",
+      "change_pct": "+3.45%",
+      "change_val": "41.00",
+      "high": "1,231.60",
+      "low": "1,200.00",
+      "volume": "454,203"
     }
   ],
   "top_losers": [
     {
       "symbol": "APLAPOLLO",
       "name": "APL Apollo",
-      "price": "\u20b91,495.30",
-      "price_raw": "1495.30",
-      "change_pct": "-10.46%",
-      "change_val": "-174.70",
-      "high": "1,503.00",
+      "price": "\u20b91,504.50",
+      "price_raw": "1504.50",
+      "change_pct": "-9.91%",
+      "change_val": "-165.50",
+      "high": "1,512.60",
       "low": "1,342.20",
-      "volume": "20,342,140"
+      "volume": "21,153,377"
     },
     {
       "symbol": "SAREGAMA",
       "name": "Saregama India",
-      "price": "\u20b9608.15",
-      "price_raw": "608.15",
-      "change_pct": "-7.52%",
-      "change_val": "-49.45",
+      "price": "\u20b9608.05",
+      "price_raw": "608.05",
+      "change_pct": "-7.53%",
+      "change_val": "-49.55",
       "high": "638.90",
       "low": "606.85",
-      "volume": "757,104"
+      "volume": "761,609"
     },
     {
       "symbol": "ZEEL",
       "name": "Zee Entertain",
-      "price": "\u20b966.64",
-      "price_raw": "66.64",
-      "change_pct": "-6.98%",
-      "change_val": "-5.00",
+      "price": "\u20b966.60",
+      "price_raw": "66.60",
+      "change_pct": "-7.04%",
+      "change_val": "-5.04",
       "high": "69.99",
       "low": "66.33",
-      "volume": "9,309,879"
+      "volume": "9,622,725"
     },
     {
       "symbol": "SUNTV",
       "name": "Sun TV Network",
-      "price": "\u20b9641.45",
-      "price_raw": "641.45",
-      "change_pct": "-5.50%",
-      "change_val": "-37.35",
+      "price": "\u20b9642.40",
+      "price_raw": "642.40",
+      "change_pct": "-5.36%",
+      "change_val": "-36.40",
       "high": "680.80",
       "low": "638.00",
-      "volume": "358,752"
+      "volume": "364,806"
     },
     {
       "symbol": "HEGAM",
       "name": "HEGAM",
-      "price": "\u20b9245.34",
-      "price_raw": "245.34",
+      "price": "\u20b9245.36",
+      "price_raw": "245.36",
       "change_pct": "-5.15%",
-      "change_val": "-13.33",
+      "change_val": "-13.31",
       "high": "260.70",
       "low": "244.41",
-      "volume": "715,332"
+      "volume": "719,562"
     },
     {
       "symbol": "HFCL",
@@ -232,95 +232,95 @@
       "change_val": "-8.93",
       "high": "174.70",
       "low": "169.67",
-      "volume": "9,662,222"
+      "volume": "9,681,025"
     },
     {
       "symbol": "ITI",
       "name": "ITI",
-      "price": "\u20b9262.53",
-      "price_raw": "262.53",
+      "price": "\u20b9262.54",
+      "price_raw": "262.54",
       "change_pct": "-4.95%",
-      "change_val": "-13.68",
+      "change_val": "-13.67",
       "high": "270.27",
       "low": "261.20",
-      "volume": "3,306,626"
+      "volume": "3,339,150"
     },
     {
       "symbol": "PPLPHARMA",
       "name": "Piramal Pharma",
-      "price": "\u20b9225.46",
-      "price_raw": "225.46",
-      "change_pct": "-4.83%",
-      "change_val": "-11.43",
+      "price": "\u20b9225.30",
+      "price_raw": "225.30",
+      "change_pct": "-4.89%",
+      "change_val": "-11.59",
       "high": "228.99",
       "low": "220.47",
-      "volume": "15,556,142"
+      "volume": "15,597,015"
     },
     {
       "symbol": "ATHERENERG",
       "name": "Ather Energy",
-      "price": "\u20b91,903.00",
-      "price_raw": "1903.00",
-      "change_pct": "-3.85%",
-      "change_val": "-76.20",
+      "price": "\u20b91,907.40",
+      "price_raw": "1907.40",
+      "change_pct": "-3.63%",
+      "change_val": "-71.80",
       "high": "1,993.80",
       "low": "1,901.00",
-      "volume": "980,192"
-    },
-    {
-      "symbol": "WOCKPHARMA",
-      "name": "Wockhardt",
-      "price": "\u20b92,075.10",
-      "price_raw": "2075.10",
-      "change_pct": "-3.59%",
-      "change_val": "-77.20",
-      "high": "2,187.00",
-      "low": "2,071.00",
-      "volume": "319,676"
+      "volume": "994,040"
     },
     {
       "symbol": "OFSS",
       "name": "Oracle Fin Serv",
-      "price": "\u20b99,348.00",
-      "price_raw": "9348.00",
-      "change_pct": "-3.38%",
-      "change_val": "-327.00",
+      "price": "\u20b99,357.00",
+      "price_raw": "9357.00",
+      "change_pct": "-3.29%",
+      "change_val": "-318.00",
       "high": "9,799.00",
       "low": "9,325.50",
-      "volume": "125,951"
+      "volume": "128,013"
     },
     {
       "symbol": "IREDA",
       "name": "Indian Renew",
-      "price": "\u20b9127.78",
-      "price_raw": "127.78",
-      "change_pct": "-3.34%",
-      "change_val": "-4.42",
+      "price": "\u20b9127.92",
+      "price_raw": "127.92",
+      "change_pct": "-3.24%",
+      "change_val": "-4.28",
       "high": "131.50",
       "low": "127.32",
-      "volume": "4,497,326"
+      "volume": "4,540,938"
     },
     {
       "symbol": "NATIONALUM",
       "name": "NALCO",
-      "price": "\u20b9288.95",
-      "price_raw": "288.95",
-      "change_pct": "-3.25%",
-      "change_val": "-9.70",
+      "price": "\u20b9289.05",
+      "price_raw": "289.05",
+      "change_pct": "-3.21%",
+      "change_val": "-9.60",
       "high": "296.50",
       "low": "285.20",
-      "volume": "4,190,358"
+      "volume": "4,289,131"
+    },
+    {
+      "symbol": "WOCKPHARMA",
+      "name": "Wockhardt",
+      "price": "\u20b92,084.30",
+      "price_raw": "2084.30",
+      "change_pct": "-3.16%",
+      "change_val": "-68.00",
+      "high": "2,187.00",
+      "low": "2,071.00",
+      "volume": "330,413"
     },
     {
       "symbol": "SYRMA",
       "name": "Syrma SGS",
-      "price": "\u20b91,445.00",
-      "price_raw": "1445.00",
-      "change_pct": "-3.09%",
-      "change_val": "-46.10",
+      "price": "\u20b91,447.20",
+      "price_raw": "1447.20",
+      "change_pct": "-2.94%",
+      "change_val": "-43.90",
       "high": "1,529.10",
-      "low": "1,445.00",
-      "volume": "399,550"
+      "low": "1,444.90",
+      "volume": "411,477"
     },
     {
       "symbol": "TTML",
@@ -331,7 +331,7 @@
       "change_val": "-1.02",
       "high": "34.92",
       "low": "33.55",
-      "volume": "2,597,561"
+      "volume": "2,615,631"
     }
   ]
 }
