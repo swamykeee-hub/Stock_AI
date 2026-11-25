@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 6.8,
+  "quality_score": 3.7,
+  "inflection_score": 10.0,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "110720",
+    "current_price": "1724",
+    "stock_pe": "132",
+    "book_value": "259",
+    "dividend_yield_pct": "0",
+    "roce_pct": "4.96",
+    "roe_pct": "4.64",
+    "debt_to_equity": "0.02",
+    "face_value": "1",
+    "pb_ratio": "6.66",
+    "market_cap_num": 110720.0,
+    "current_price_num": 1724.0,
+    "pe_num": 132.0,
+    "book_value_num": 259.0,
+    "roce_num": 4.96,
+    "roe_num": 4.64,
+    "pb_num": 6.66,
+    "peg_ratio": "0.14",
+    "peg_num": 0.14
+  },
+  "ranges": {
+    "sales_cagr_3y": 2.0,
+    "sales_cagr_5y": 25.0,
+    "sales_growth_ttm": 24.0,
+    "profit_cagr_3y": 34.0,
+    "profit_cagr_5y": 19.0,
+    "profit_growth_ttm": 670.0,
+    "roe_3y": -5.0,
+    "roe_5y": -9.0,
+    "price_cagr_3y": 25.0,
+    "price_cagr_5y": -1.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 28.0,
+    "qtr_pat_yoy_pct": 971.4,
+    "qtr_pat_prev_yoy_pct": 78.9,
+    "qtr_eps_yoy_pct": 966.7,
+    "opm_latest_pct": 10.0,
+    "opm_year_ago_pct": 7.0,
+    "opm_expansion_bps": 300.0,
+    "is_sequential_pat_accel": true,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.02,
+    "cwip_cr": 3.0,
+    "cwip_growth_pct": -72.7,
+    "cwip_to_fixed_assets_pct": 0.3,
+    "cfo_latest_cr": -743.0,
+    "fcf_latest_cr": -1211.0,
+    "cfo_ebitda_pct": -142.0,
+    "cfo_to_pat_3y": null,
+    "promoter_pct": null,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 43.52,
+    "dii_pct": 29.51,
+    "inst_total_pct": 73.03,
+    "inst_4q_delta_pct": 1.37,
+    "public_4q_delta_pct": -1.39
+  },
+  "strengths": [
+    "Fortress Balance Sheet (D/E: 0.02x)",
+    "Sharp Margin Inflection (OPM +300 bps YoY)",
+    "Explosive Quarterly PAT Surge (+971.4% YoY)",
+    "Multi-Year Profit Compounding (3Y CAGR: +34%)",
+    "Deep GARP Value (PEG: 0.14x)"
+  ],
+  "red_flags": [
+    "Sub-par ROCE (5.0%)",
+    "Stock is trading at 6.69 times its book value",
+    "Company has a low return on equity of -4.60% over last 3 years.",
+    "Earnings include an other income of Rs.771 Cr."
+  ]
+}

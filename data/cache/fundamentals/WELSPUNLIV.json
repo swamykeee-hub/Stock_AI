@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 6.9,
+  "quality_score": 4.0,
+  "inflection_score": 10.0,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "25891",
+    "current_price": "274",
+    "stock_pe": "58.9",
+    "book_value": "53.6",
+    "dividend_yield_pct": "0.04",
+    "roce_pct": "6.26",
+    "roe_pct": "4.48",
+    "debt_to_equity": "0.47",
+    "face_value": "1",
+    "pb_ratio": "5.11",
+    "market_cap_num": 25891.0,
+    "current_price_num": 274.0,
+    "pe_num": 58.9,
+    "book_value_num": 53.6,
+    "roce_num": 6.26,
+    "roe_num": 4.48,
+    "pb_num": 5.11,
+    "peg_ratio": "0.06",
+    "peg_num": 0.06
+  },
+  "ranges": {
+    "sales_cagr_3y": 5.0,
+    "sales_cagr_5y": 5.0,
+    "sales_growth_ttm": 5.0,
+    "profit_cagr_3y": 4.0,
+    "profit_cagr_5y": -17.0,
+    "profit_growth_ttm": 24.0,
+    "roe_3y": 11.0,
+    "roe_5y": 11.0,
+    "price_cagr_3y": 19.0,
+    "price_cagr_5y": 14.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 16.0,
+    "qtr_pat_yoy_pct": 1033.3,
+    "qtr_pat_prev_yoy_pct": 83.1,
+    "qtr_eps_yoy_pct": 1178.6,
+    "opm_latest_pct": 12.0,
+    "opm_year_ago_pct": 6.0,
+    "opm_expansion_bps": 600.0,
+    "is_sequential_pat_accel": true,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.47,
+    "cwip_cr": 57.0,
+    "cwip_growth_pct": -78.8,
+    "cwip_to_fixed_assets_pct": 1.3,
+    "cfo_latest_cr": 1175.0,
+    "fcf_latest_cr": 726.0,
+    "cfo_ebitda_pct": 160.0,
+    "cfo_to_pat_3y": 1.57,
+    "promoter_pct": 63.77,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 9.07,
+    "dii_pct": 12.09,
+    "inst_total_pct": 21.16,
+    "inst_4q_delta_pct": 7.61,
+    "public_4q_delta_pct": -5.13
+  },
+  "strengths": [
+    "Cash Generative Profits (CFO/EBITDA: 160%)",
+    "Sharp Margin Inflection (OPM +600 bps YoY)",
+    "Explosive Quarterly PAT Surge (+1033.3% YoY)",
+    "Smart Money Accumulation (FII+DII +7.6% over 4Q)",
+    "Deep GARP Value (PEG: 0.06x)"
+  ],
+  "red_flags": [
+    "Sub-par ROCE (6.3%)",
+    "Stock is trading at 5.05 times its book value",
+    "Promoter holding has decreased over last quarter: -2.59%",
+    "The company has delivered a poor sales growth of 5.07% over past five years."
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 6.0,
+  "quality_score": 2.0,
+  "inflection_score": 10.0,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "16532",
+    "current_price": "1684",
+    "stock_pe": "34.8",
+    "book_value": "753",
+    "dividend_yield_pct": "0",
+    "roce_pct": "6.79",
+    "roe_pct": "4.92",
+    "debt_to_equity": "0.85",
+    "face_value": "10",
+    "pb_ratio": "2.24",
+    "market_cap_num": 16532.0,
+    "current_price_num": 1684.0,
+    "pe_num": 34.8,
+    "book_value_num": 753.0,
+    "roce_num": 6.79,
+    "roe_num": 4.92,
+    "pb_num": 2.24,
+    "peg_ratio": "0.02",
+    "peg_num": 0.02
+  },
+  "ranges": {
+    "sales_cagr_3y": 21.0,
+    "sales_cagr_5y": 88.0,
+    "sales_growth_ttm": 15.0,
+    "profit_cagr_3y": 45.0,
+    "profit_cagr_5y": 20.0,
+    "profit_growth_ttm": 2148.0,
+    "roe_3y": 0.0,
+    "roe_5y": -3.0,
+    "price_cagr_3y": 1.0,
+    "price_cagr_5y": 4.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 17.0,
+    "qtr_pat_yoy_pct": 148.1,
+    "qtr_pat_prev_yoy_pct": 100.0,
+    "qtr_eps_yoy_pct": 149.0,
+    "opm_latest_pct": 37.0,
+    "opm_year_ago_pct": 34.0,
+    "opm_expansion_bps": 300.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.85,
+    "cwip_cr": 54.0,
+    "cwip_growth_pct": 68.8,
+    "cwip_to_fixed_assets_pct": 0.4,
+    "cfo_latest_cr": 2160.0,
+    "fcf_latest_cr": 1906.0,
+    "cfo_ebitda_pct": 103.0,
+    "cfo_to_pat_3y": 321.42,
+    "promoter_pct": 27.6,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 19.65,
+    "dii_pct": 34.16,
+    "inst_total_pct": 53.81,
+    "inst_4q_delta_pct": -1.86,
+    "public_4q_delta_pct": 1.79
+  },
+  "strengths": [
+    "Cash Generative Profits (CFO/EBITDA: 103%)",
+    "Sharp Margin Inflection (OPM +300 bps YoY)",
+    "Explosive Quarterly PAT Surge (+148.1% YoY)",
+    "Multi-Year Profit Compounding (3Y CAGR: +45%)",
+    "Capex Capacity Runway Active (CWIP: \u20b954 Cr)"
+  ],
+  "red_flags": [
+    "Sub-par ROCE (6.8%)",
+    "Elevated Leverage (D/E: 0.85x)",
+    "Company has low interest coverage ratio.",
+    "Company has a low return on equity of 0.01% over last 3 years."
+  ]
+}

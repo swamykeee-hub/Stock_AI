@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 8.4,
+  "quality_score": 7.4,
+  "inflection_score": 10.0,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "122199",
+    "current_price": "1223",
+    "stock_pe": "28.1",
+    "book_value": "253",
+    "dividend_yield_pct": "0.35",
+    "roce_pct": "16.4",
+    "roe_pct": "15.6",
+    "debt_to_equity": "0.41",
+    "face_value": "10",
+    "pb_ratio": "4.83",
+    "market_cap_num": 122199.0,
+    "current_price_num": 1223.0,
+    "pe_num": 28.1,
+    "book_value_num": 253.0,
+    "roce_num": 16.4,
+    "roe_num": 15.6,
+    "pb_num": 4.83,
+    "peg_ratio": "0.49",
+    "peg_num": 0.49
+  },
+  "ranges": {
+    "sales_cagr_3y": 21.0,
+    "sales_cagr_5y": 25.0,
+    "sales_growth_ttm": 21.0,
+    "profit_cagr_3y": 57.0,
+    "profit_cagr_5y": 59.0,
+    "profit_growth_ttm": 31.0,
+    "roe_3y": 14.0,
+    "roe_5y": 13.0,
+    "price_cagr_3y": 11.0,
+    "price_cagr_5y": 12.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 18.0,
+    "qtr_pat_yoy_pct": 28.4,
+    "qtr_pat_prev_yoy_pct": 103.4,
+    "qtr_eps_yoy_pct": 28.4,
+    "opm_latest_pct": 33.0,
+    "opm_year_ago_pct": 29.0,
+    "opm_expansion_bps": 400.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.41,
+    "cwip_cr": 0.0,
+    "cwip_growth_pct": -100.0,
+    "cwip_to_fixed_assets_pct": 0.0,
+    "cfo_latest_cr": 959.0,
+    "fcf_latest_cr": 709.0,
+    "cfo_ebitda_pct": 39.0,
+    "cfo_to_pat_3y": 0.65,
+    "promoter_pct": 70.29,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 25.33,
+    "dii_pct": 2.55,
+    "inst_total_pct": 27.88,
+    "inst_4q_delta_pct": 1.04,
+    "public_4q_delta_pct": 0.54
+  },
+  "strengths": [
+    "Strong Capital Return (ROCE: 16.4%)",
+    "Sharp Margin Inflection (OPM +400 bps YoY)",
+    "Multi-Year Profit Compounding (3Y CAGR: +57%)",
+    "Deep GARP Value (PEG: 0.49x)",
+    "Company has delivered good profit growth of 58.6% CAGR over last 5 years"
+  ],
+  "red_flags": [
+    "Stock is trading at 4.82 times its book value",
+    "Company has a low return on equity of 13.8% over last 3 years.",
+    "Promoter holding has decreased over last 3 years: -4.64%"
+  ]
+}

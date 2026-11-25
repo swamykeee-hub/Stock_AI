@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 7.9,
+  "quality_score": 7.1,
+  "inflection_score": 8.9,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "66499",
+    "current_price": "644",
+    "stock_pe": "42.2",
+    "book_value": "64.3",
+    "dividend_yield_pct": "0.38",
+    "roce_pct": "21.2",
+    "roe_pct": "24.8",
+    "debt_to_equity": "0.92",
+    "face_value": "10",
+    "pb_ratio": "10.02",
+    "market_cap_num": 66499.0,
+    "current_price_num": 644.0,
+    "pe_num": 42.2,
+    "book_value_num": 64.3,
+    "roce_num": 21.2,
+    "roe_num": 24.8,
+    "pb_num": 10.02,
+    "peg_ratio": "0.61",
+    "peg_num": 0.61
+  },
+  "ranges": {
+    "sales_cagr_3y": 36.0,
+    "sales_cagr_5y": 33.0,
+    "sales_growth_ttm": 45.0,
+    "profit_cagr_3y": 45.0,
+    "profit_cagr_5y": 195.0,
+    "profit_growth_ttm": 69.0,
+    "roe_3y": 19.0,
+    "roe_5y": 17.0,
+    "price_cagr_3y": 26.0,
+    "price_cagr_5y": 57.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 31.0,
+    "qtr_pat_yoy_pct": 63.6,
+    "qtr_pat_prev_yoy_pct": 32.2,
+    "qtr_eps_yoy_pct": 64.3,
+    "opm_latest_pct": 6.0,
+    "opm_year_ago_pct": 6.0,
+    "opm_expansion_bps": 0.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.92,
+    "cwip_cr": 16.0,
+    "cwip_growth_pct": -11.1,
+    "cwip_to_fixed_assets_pct": 0.5,
+    "cfo_latest_cr": 1318.0,
+    "fcf_latest_cr": 939.0,
+    "cfo_ebitda_pct": 68.0,
+    "cfo_to_pat_3y": 1.45,
+    "promoter_pct": 62.85,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 13.83,
+    "dii_pct": 14.41,
+    "inst_total_pct": 28.24,
+    "inst_4q_delta_pct": -0.44,
+    "public_4q_delta_pct": 0.36
+  },
+  "strengths": [
+    "Strong Capital Return (ROCE: 21.2%)",
+    "Superior ROE: 24.8%",
+    "Cash Generative Profits (CFO/EBITDA: 68%)",
+    "Explosive Quarterly PAT Surge (+63.6% YoY)",
+    "Multi-Year Profit Compounding (3Y CAGR: +45%)"
+  ],
+  "red_flags": [
+    "Elevated Leverage (D/E: 0.92x)",
+    "Stock is trading at 10.2 times its book value"
+  ]
+}

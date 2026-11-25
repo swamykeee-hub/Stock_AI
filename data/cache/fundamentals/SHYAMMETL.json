@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 8.1,
+  "quality_score": 6.7,
+  "inflection_score": 10.0,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "36399",
+    "current_price": "1304",
+    "stock_pe": "26.9",
+    "book_value": "442",
+    "dividend_yield_pct": "0.35",
+    "roce_pct": "13",
+    "roe_pct": "9.7",
+    "debt_to_equity": "0.11",
+    "face_value": "10",
+    "pb_ratio": "2.95",
+    "market_cap_num": 36399.0,
+    "current_price_num": 1304.0,
+    "pe_num": 26.9,
+    "book_value_num": 442.0,
+    "roce_num": 13.0,
+    "roe_num": 9.7,
+    "pb_num": 2.95,
+    "peg_ratio": "0.28",
+    "peg_num": 0.28
+  },
+  "ranges": {
+    "sales_cagr_3y": 14.0,
+    "sales_cagr_5y": 24.0,
+    "sales_growth_ttm": 26.0,
+    "profit_cagr_3y": 9.0,
+    "profit_cagr_5y": 5.0,
+    "profit_growth_ttm": 40.0,
+    "roe_3y": 10.0,
+    "roe_5y": 14.0,
+    "price_cagr_3y": 42.0,
+    "price_cagr_5y": 32.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 33.0,
+    "qtr_pat_yoy_pct": 96.5,
+    "qtr_pat_prev_yoy_pct": 20.6,
+    "qtr_eps_yoy_pct": 88.4,
+    "opm_latest_pct": 14.0,
+    "opm_year_ago_pct": 12.0,
+    "opm_expansion_bps": 200.0,
+    "is_sequential_pat_accel": true,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.11,
+    "cwip_cr": 3020.0,
+    "cwip_growth_pct": 8.2,
+    "cwip_to_fixed_assets_pct": 33.4,
+    "cfo_latest_cr": 2024.0,
+    "fcf_latest_cr": -614.0,
+    "cfo_ebitda_pct": 101.0,
+    "cfo_to_pat_3y": 1.84,
+    "promoter_pct": 74.59,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 5.29,
+    "dii_pct": 11.16,
+    "inst_total_pct": 16.45,
+    "inst_4q_delta_pct": 4.16,
+    "public_4q_delta_pct": -4.09
+  },
+  "strengths": [
+    "Fortress Balance Sheet (D/E: 0.11x)",
+    "Cash Generative Profits (CFO/EBITDA: 101%)",
+    "Expanding Operating Margins (+200 bps)",
+    "Explosive Quarterly PAT Surge (+96.5% YoY)",
+    "Smart Money Accumulation (FII+DII +4.2% over 4Q)"
+  ],
+  "red_flags": [
+    "Stock is trading at 2.88 times its book value",
+    "Company has a low return on equity of 10.2% over last 3 years.",
+    "Dividend payout has been low at 12.5% of profits over last 3 years"
+  ]
+}

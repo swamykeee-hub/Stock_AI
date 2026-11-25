@@ -1,24 +1,82 @@
 {
-  "score": 5.5,
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 5.7,
+  "quality_score": 5.1,
+  "inflection_score": 5.1,
+  "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "\u20b9\n        1262178\n        \n          Cr.",
-    "current_price": "\u20b9\n        818",
-    "stock_pe": "16.5",
-    "book_value": "\u20b9\n        376",
-    "dividend_yield_pct": "1.59\n        \n          %",
-    "roce_pct": "6.92\n        \n          %",
-    "roe_pct": "14.0\n        \n          %",
+    "market_cap_cr": "1301843",
+    "current_price": "844",
+    "stock_pe": "16.2",
+    "book_value": "391",
+    "dividend_yield_pct": "1.53",
+    "roce_pct": "7.02",
+    "roe_pct": "13.6",
     "debt_to_equity": "N/A",
-    "face_value": "\u20b9\n        1.00"
+    "face_value": "1",
+    "pb_ratio": "2.16",
+    "market_cap_num": 1301843.0,
+    "current_price_num": 844.0,
+    "pe_num": 16.2,
+    "book_value_num": 391.0,
+    "roce_num": 7.02,
+    "roe_num": 13.6,
+    "pb_num": 2.16,
+    "peg_ratio": "0.90",
+    "peg_num": 0.9
+  },
+  "ranges": {
+    "sales_cagr_3y": 27.0,
+    "sales_cagr_5y": 22.0,
+    "sales_growth_ttm": 4.0,
+    "profit_cagr_3y": 18.0,
+    "profit_cagr_5y": 19.0,
+    "profit_growth_ttm": 11.0,
+    "roe_3y": 15.0,
+    "roe_5y": 15.0,
+    "price_cagr_3y": 2.0,
+    "price_cagr_5y": 2.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 9.4,
+    "qtr_pat_yoy_pct": 5.8,
+    "qtr_pat_prev_yoy_pct": 19.3,
+    "qtr_eps_yoy_pct": 5.3,
+    "opm_latest_pct": -6.0,
+    "opm_year_ago_pct": -6.0,
+    "opm_expansion_bps": 0.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": true
+  },
+  "balance_inst": {
+    "is_financial_sector": true,
+    "debt_to_equity": null,
+    "cwip_cr": 0.0,
+    "cwip_growth_pct": 0.0,
+    "cwip_to_fixed_assets_pct": 0.0,
+    "cfo_latest_cr": 113506.0,
+    "fcf_latest_cr": 110144.0,
+    "cfo_ebitda_pct": null,
+    "cfo_to_pat_3y": 1.19,
+    "promoter_pct": null,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 39.39,
+    "dii_pct": 43.44,
+    "inst_total_pct": 82.83,
+    "inst_4q_delta_pct": -1.62,
+    "public_4q_delta_pct": 1.63
   },
   "strengths": [
-    "Company has delivered good profit growth of 19.1% CAGR over last 5 years",
-    "Company has been maintaining a healthy dividend payout of 27.1%",
-    "Attractive Valuation Multiple (P/E: 16.5x)"
+    "Deep GARP Value (PEG: 0.90x)",
+    "Company has delivered good profit growth of 18.9% CAGR over last 5 years",
+    "Company has been maintaining a healthy dividend payout of 26.1%",
+    "Company's median sales growth is 16.3% of last 10 years"
   ],
   "red_flags": [
+    "Sub-par ROCE (7.0%)",
     "Company has low interest coverage ratio.",
-    "Contingent liabilities of Rs.35,00,416 Cr.",
-    "Company might be capitalizing the interest cost"
+    "Contingent liabilities of Rs.35,61,957 Cr.",
+    "Earnings include an other income of Rs.1,46,360 Cr."
   ]
 }

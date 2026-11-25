@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 7.5,
+  "quality_score": 9.1,
+  "inflection_score": 6.9,
+  "valuation_score": 5.0,
+  "metrics": {
+    "market_cap_cr": "130529",
+    "current_price": "917",
+    "stock_pe": "64.9",
+    "book_value": "95.8",
+    "dividend_yield_pct": "0.36",
+    "roce_pct": "17.1",
+    "roe_pct": "15.4",
+    "debt_to_equity": "0.25",
+    "face_value": "1",
+    "pb_ratio": "9.57",
+    "market_cap_num": 130529.0,
+    "current_price_num": 917.0,
+    "pe_num": 64.9,
+    "book_value_num": 95.8,
+    "roce_num": 17.1,
+    "roe_num": 15.4,
+    "pb_num": 9.57,
+    "peg_ratio": "2.60",
+    "peg_num": 2.6
+  },
+  "ranges": {
+    "sales_cagr_3y": 19.0,
+    "sales_cagr_5y": 44.0,
+    "sales_growth_ttm": 15.0,
+    "profit_cagr_3y": 25.0,
+    "profit_cagr_5y": 33.0,
+    "profit_growth_ttm": 19.0,
+    "roe_3y": 15.0,
+    "roe_5y": 12.0,
+    "price_cagr_3y": 29.0,
+    "price_cagr_5y": 38.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 22.0,
+    "qtr_pat_yoy_pct": 19.5,
+    "qtr_pat_prev_yoy_pct": 18.8,
+    "qtr_eps_yoy_pct": 23.0,
+    "opm_latest_pct": 28.0,
+    "opm_year_ago_pct": 28.0,
+    "opm_expansion_bps": 0.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.25,
+    "cwip_cr": 673.0,
+    "cwip_growth_pct": -14.5,
+    "cwip_to_fixed_assets_pct": 5.1,
+    "cfo_latest_cr": 2471.0,
+    "fcf_latest_cr": 1444.0,
+    "cfo_ebitda_pct": 98.0,
+    "cfo_to_pat_3y": 1.18,
+    "promoter_pct": 38.12,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 22.12,
+    "dii_pct": 24.46,
+    "inst_total_pct": 46.58,
+    "inst_4q_delta_pct": 1.04,
+    "public_4q_delta_pct": -0.89
+  },
+  "strengths": [
+    "Strong Capital Return (ROCE: 17.1%)",
+    "Fortress Balance Sheet (D/E: 0.25x)",
+    "Cash Generative Profits (CFO/EBITDA: 98%)",
+    "Multi-Year Profit Compounding (3Y CAGR: +25%)",
+    "Company has delivered good profit growth of 32.7% CAGR over last 5 years"
+  ],
+  "red_flags": [
+    "Stock is trading at 9.45 times its book value"
+  ]
+}

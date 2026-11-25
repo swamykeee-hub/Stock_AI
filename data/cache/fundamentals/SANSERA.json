@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 7.7,
+  "quality_score": 6.7,
+  "inflection_score": 9.5,
+  "valuation_score": 6.8,
+  "metrics": {
+    "market_cap_cr": "28883",
+    "current_price": "4627",
+    "stock_pe": "70.6",
+    "book_value": "524",
+    "dividend_yield_pct": "0.09",
+    "roce_pct": "14.5",
+    "roe_pct": "11.8",
+    "debt_to_equity": "0.24",
+    "face_value": "2",
+    "pb_ratio": "8.83",
+    "market_cap_num": 28883.0,
+    "current_price_num": 4627.0,
+    "pe_num": 70.6,
+    "book_value_num": 524.0,
+    "roce_num": 14.5,
+    "roe_num": 11.8,
+    "pb_num": 8.83,
+    "peg_ratio": "1.10",
+    "peg_num": 1.1
+  },
+  "ranges": {
+    "sales_cagr_3y": 14.0,
+    "sales_cagr_5y": 18.0,
+    "sales_growth_ttm": 30.0,
+    "profit_cagr_3y": 33.0,
+    "profit_cagr_5y": 26.0,
+    "profit_growth_ttm": 64.0,
+    "roe_3y": 12.0,
+    "roe_5y": 12.0,
+    "price_cagr_3y": 76.0,
+    "price_cagr_5y": 43.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 32.0,
+    "qtr_pat_yoy_pct": 53.5,
+    "qtr_pat_prev_yoy_pct": 38.1,
+    "qtr_eps_yoy_pct": 49.9,
+    "opm_latest_pct": 19.0,
+    "opm_year_ago_pct": 17.0,
+    "opm_expansion_bps": 200.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.24,
+    "cwip_cr": 277.0,
+    "cwip_growth_pct": 25.9,
+    "cwip_to_fixed_assets_pct": 11.4,
+    "cfo_latest_cr": 387.0,
+    "fcf_latest_cr": -123.0,
+    "cfo_ebitda_pct": 75.0,
+    "cfo_to_pat_3y": 1.55,
+    "promoter_pct": 29.03,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 22.96,
+    "dii_pct": 29.59,
+    "inst_total_pct": 52.55,
+    "inst_4q_delta_pct": -4.02,
+    "public_4q_delta_pct": 5.24
+  },
+  "strengths": [
+    "Fortress Balance Sheet (D/E: 0.24x)",
+    "Cash Generative Profits (CFO/EBITDA: 75%)",
+    "Expanding Operating Margins (+200 bps)",
+    "Explosive Quarterly PAT Surge (+53.5% YoY)",
+    "Multi-Year Profit Compounding (3Y CAGR: +33%)"
+  ],
+  "red_flags": [
+    "Institutional Distribution (FII+DII -4.0% over 4Q)",
+    "Stock is trading at 8.81 times its book value",
+    "Company has a low return on equity of 12.1% over last 3 years.",
+    "Promoter holding has decreased over last 3 years: -6.19%"
+  ]
+}

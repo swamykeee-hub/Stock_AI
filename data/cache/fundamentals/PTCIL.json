@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 5.6,
+  "quality_score": 2.5,
+  "inflection_score": 10.0,
+  "valuation_score": 5.0,
+  "metrics": {
+    "market_cap_cr": "39079",
+    "current_price": "24650",
+    "stock_pe": "278",
+    "book_value": "1049",
+    "dividend_yield_pct": "0",
+    "roce_pct": "8.59",
+    "roe_pct": "7.16",
+    "debt_to_equity": "0.25",
+    "face_value": "10",
+    "pb_ratio": "23.50",
+    "market_cap_num": 39079.0,
+    "current_price_num": 24650.0,
+    "pe_num": 278.0,
+    "book_value_num": 1049.0,
+    "roce_num": 8.59,
+    "roe_num": 7.16,
+    "pb_num": 23.5,
+    "peg_ratio": "2.24",
+    "peg_num": 2.24
+  },
+  "ranges": {
+    "sales_cagr_3y": 40.0,
+    "sales_cagr_5y": 30.0,
+    "sales_growth_ttm": 94.0,
+    "profit_cagr_3y": 59.0,
+    "profit_cagr_5y": 102.0,
+    "profit_growth_ttm": 124.0,
+    "roe_3y": 7.0,
+    "roe_5y": 7.0,
+    "price_cagr_3y": 64.0,
+    "price_cagr_5y": 81.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 80.0,
+    "qtr_pat_yoy_pct": 83.3,
+    "qtr_pat_prev_yoy_pct": 480.0,
+    "qtr_eps_yoy_pct": 83.3,
+    "opm_latest_pct": 25.0,
+    "opm_year_ago_pct": 21.0,
+    "opm_expansion_bps": 400.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.25,
+    "cwip_cr": 460.0,
+    "cwip_growth_pct": 47.9,
+    "cwip_to_fixed_assets_pct": 65.4,
+    "cfo_latest_cr": -69.0,
+    "fcf_latest_cr": -386.0,
+    "cfo_ebitda_pct": -38.0,
+    "cfo_to_pat_3y": -0.74,
+    "promoter_pct": 56.46,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 8.39,
+    "dii_pct": 10.07,
+    "inst_total_pct": 18.46,
+    "inst_4q_delta_pct": 6.15,
+    "public_4q_delta_pct": -2.91
+  },
+  "strengths": [
+    "Fortress Balance Sheet (D/E: 0.25x)",
+    "Sharp Margin Inflection (OPM +400 bps YoY)",
+    "Explosive Quarterly PAT Surge (+83.3% YoY)",
+    "Multi-Year Profit Compounding (3Y CAGR: +59%)",
+    "Smart Money Accumulation (FII+DII +6.2% over 4Q)"
+  ],
+  "red_flags": [
+    "Sub-par ROCE (8.6%)",
+    "Weak Operating Cash Conversion (3Y CFO/PAT: -0.74x)",
+    "Stock is trading at 23.3 times its book value",
+    "Though the company is reporting repeated profits, it is not paying out dividend"
+  ]
+}

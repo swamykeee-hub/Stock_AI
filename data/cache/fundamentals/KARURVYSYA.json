@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 6.9,
+  "quality_score": 5.5,
+  "inflection_score": 9.7,
+  "valuation_score": 5.0,
+  "metrics": {
+    "market_cap_cr": "\u20b9 Cr.",
+    "current_price": "\u20b9",
+    "stock_pe": "",
+    "book_value": "\u20b9",
+    "dividend_yield_pct": "%",
+    "roce_pct": "%",
+    "roe_pct": "%",
+    "debt_to_equity": "N/A",
+    "face_value": "\u20b9",
+    "pb_ratio": "N/A",
+    "market_cap_num": null,
+    "current_price_num": null,
+    "pe_num": null,
+    "book_value_num": null,
+    "roce_num": null,
+    "roe_num": null,
+    "peg_ratio": "N/A"
+  },
+  "ranges": {
+    "sales_cagr_3y": null,
+    "sales_cagr_5y": null,
+    "sales_growth_ttm": null,
+    "profit_cagr_3y": null,
+    "profit_cagr_5y": null,
+    "profit_growth_ttm": null,
+    "roe_3y": null,
+    "roe_5y": null,
+    "price_cagr_3y": null,
+    "price_cagr_5y": null
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 15.2,
+    "qtr_pat_yoy_pct": 37.3,
+    "qtr_pat_prev_yoy_pct": 45.1,
+    "qtr_eps_yoy_pct": 37.2,
+    "opm_latest_pct": 19.0,
+    "opm_year_ago_pct": 8.0,
+    "opm_expansion_bps": 1100.0,
+    "is_sequential_pat_accel": true,
+    "is_financial_sector": true
+  },
+  "balance_inst": {
+    "is_financial_sector": true,
+    "debt_to_equity": null,
+    "cwip_cr": 0.0,
+    "cwip_growth_pct": -100.0,
+    "cwip_to_fixed_assets_pct": 0.0,
+    "cfo_latest_cr": -554.0,
+    "fcf_latest_cr": -683.0,
+    "cfo_ebitda_pct": null,
+    "cfo_to_pat_3y": 1.14,
+    "promoter_pct": 1.95,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 18.1,
+    "dii_pct": 42.1,
+    "inst_total_pct": 60.2,
+    "inst_4q_delta_pct": 4.42,
+    "public_4q_delta_pct": -4.26
+  },
+  "strengths": [
+    "Sharp Margin Inflection (OPM +1100 bps YoY)",
+    "Smart Money Accumulation (FII+DII +4.4% over 4Q)"
+  ],
+  "red_flags": [
+    "Standard market & execution risks apply"
+  ]
+}

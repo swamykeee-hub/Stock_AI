@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 8.4,
+  "quality_score": 9.1,
+  "inflection_score": 7.6,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "38025",
+    "current_price": "1789",
+    "stock_pe": "99.5",
+    "book_value": "127",
+    "dividend_yield_pct": "0",
+    "roce_pct": "19.6",
+    "roe_pct": "15.4",
+    "debt_to_equity": "0.23",
+    "face_value": "1",
+    "pb_ratio": "14.09",
+    "market_cap_num": 38025.0,
+    "current_price_num": 1789.0,
+    "pe_num": 99.5,
+    "book_value_num": 127.0,
+    "roce_num": 19.6,
+    "roe_num": 15.4,
+    "pb_num": 14.09,
+    "peg_ratio": "0.44",
+    "peg_num": 0.44
+  },
+  "ranges": {
+    "sales_cagr_3y": 22.0,
+    "sales_cagr_5y": 24.0,
+    "sales_growth_ttm": 16.0,
+    "profit_cagr_3y": 227.0,
+    "profit_cagr_5y": 42.0,
+    "profit_growth_ttm": 33.0,
+    "roe_3y": 13.0,
+    "roe_5y": 9.0,
+    "price_cagr_3y": null,
+    "price_cagr_5y": null
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 23.0,
+    "qtr_pat_yoy_pct": 16.7,
+    "qtr_pat_prev_yoy_pct": 21.7,
+    "qtr_eps_yoy_pct": 15.7,
+    "opm_latest_pct": 28.0,
+    "opm_year_ago_pct": 27.0,
+    "opm_expansion_bps": 100.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.23,
+    "cwip_cr": 560.0,
+    "cwip_growth_pct": 107.4,
+    "cwip_to_fixed_assets_pct": 27.4,
+    "cfo_latest_cr": 509.0,
+    "fcf_latest_cr": -83.0,
+    "cfo_ebitda_pct": 86.0,
+    "cfo_to_pat_3y": 1.8,
+    "promoter_pct": 34.5,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 19.91,
+    "dii_pct": 32.32,
+    "inst_total_pct": 52.23,
+    "inst_4q_delta_pct": -0.19,
+    "public_4q_delta_pct": 0.6
+  },
+  "strengths": [
+    "Strong Capital Return (ROCE: 19.6%)",
+    "Fortress Balance Sheet (D/E: 0.23x)",
+    "Cash Generative Profits (CFO/EBITDA: 86%)",
+    "Multi-Year Profit Compounding (3Y CAGR: +227%)",
+    "Capex Capacity Runway Active (CWIP: \u20b9560 Cr)"
+  ],
+  "red_flags": [
+    "Stock is trading at 14.3 times its book value",
+    "Though the company is reporting repeated profits, it is not paying out dividend",
+    "Company has a low return on equity of 12.7% over last 3 years.",
+    "Working capital days have increased from 49.2 days to 69.8 days"
+  ]
+}

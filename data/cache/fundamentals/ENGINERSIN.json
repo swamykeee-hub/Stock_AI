@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 8.9,
+  "quality_score": 8.5,
+  "inflection_score": 10.0,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "16496",
+    "current_price": "294",
+    "stock_pe": "18.4",
+    "book_value": "59.4",
+    "dividend_yield_pct": "1.69",
+    "roce_pct": "30.4",
+    "roe_pct": "23.4",
+    "debt_to_equity": "0.00",
+    "face_value": "5",
+    "pb_ratio": "4.95",
+    "market_cap_num": 16496.0,
+    "current_price_num": 294.0,
+    "pe_num": 18.4,
+    "book_value_num": 59.4,
+    "roce_num": 30.4,
+    "roe_num": 23.4,
+    "pb_num": 4.95,
+    "peg_ratio": "0.13",
+    "peg_num": 0.13
+  },
+  "ranges": {
+    "sales_cagr_3y": 6.0,
+    "sales_cagr_5y": 5.0,
+    "sales_growth_ttm": 6.0,
+    "profit_cagr_3y": 26.0,
+    "profit_cagr_5y": 15.0,
+    "profit_growth_ttm": 67.0,
+    "roe_3y": 23.0,
+    "roe_5y": 19.0,
+    "price_cagr_3y": 27.0,
+    "price_cagr_5y": 32.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": -11.0,
+    "qtr_pat_yoy_pct": 137.3,
+    "qtr_pat_prev_yoy_pct": 143.1,
+    "qtr_eps_yoy_pct": 134.9,
+    "opm_latest_pct": 21.0,
+    "opm_year_ago_pct": 10.0,
+    "opm_expansion_bps": 1100.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.0,
+    "cwip_cr": 47.0,
+    "cwip_growth_pct": 51.6,
+    "cwip_to_fixed_assets_pct": 14.1,
+    "cfo_latest_cr": 319.0,
+    "fcf_latest_cr": 252.0,
+    "cfo_ebitda_pct": 70.0,
+    "cfo_to_pat_3y": 0.38,
+    "promoter_pct": 51.32,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 8.09,
+    "dii_pct": 16.61,
+    "inst_total_pct": 24.7,
+    "inst_4q_delta_pct": 3.96,
+    "public_4q_delta_pct": -3.95
+  },
+  "strengths": [
+    "Elite Capital Efficiency (ROCE: 30.4%)",
+    "Superior ROE: 23.4%",
+    "Fortress Balance Sheet (D/E: 0.00x)",
+    "Sharp Margin Inflection (OPM +1100 bps YoY)",
+    "Explosive Quarterly PAT Surge (+137.3% YoY)"
+  ],
+  "red_flags": [
+    "Weak Operating Cash Conversion (3Y CFO/PAT: 0.38x)",
+    "The company has delivered a poor sales growth of 4.55% over past five years.",
+    "Earnings include an other income of Rs.370 Cr."
+  ]
+}

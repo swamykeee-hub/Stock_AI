@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 8.4,
+  "quality_score": 10.0,
+  "inflection_score": 8.3,
+  "valuation_score": 5.0,
+  "metrics": {
+    "market_cap_cr": "34397",
+    "current_price": "2049",
+    "stock_pe": "56.8",
+    "book_value": "164",
+    "dividend_yield_pct": "0.69",
+    "roce_pct": "28",
+    "roe_pct": "22.3",
+    "debt_to_equity": "0.08",
+    "face_value": "10",
+    "pb_ratio": "12.49",
+    "market_cap_num": 34397.0,
+    "current_price_num": 2049.0,
+    "pe_num": 56.8,
+    "book_value_num": 164.0,
+    "roce_num": 28.0,
+    "roe_num": 22.3,
+    "pb_num": 12.49,
+    "peg_ratio": "1.89",
+    "peg_num": 1.89
+  },
+  "ranges": {
+    "sales_cagr_3y": 11.0,
+    "sales_cagr_5y": 12.0,
+    "sales_growth_ttm": 17.0,
+    "profit_cagr_3y": 30.0,
+    "profit_cagr_5y": 12.0,
+    "profit_growth_ttm": 13.0,
+    "roe_3y": 22.0,
+    "roe_5y": 21.0,
+    "price_cagr_3y": 15.0,
+    "price_cagr_5y": 2.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 20.0,
+    "qtr_pat_yoy_pct": 27.6,
+    "qtr_pat_prev_yoy_pct": 26.9,
+    "qtr_eps_yoy_pct": 28.5,
+    "opm_latest_pct": 32.0,
+    "opm_year_ago_pct": 31.0,
+    "opm_expansion_bps": 100.0,
+    "is_sequential_pat_accel": true,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.08,
+    "cwip_cr": 5.0,
+    "cwip_growth_pct": -28.6,
+    "cwip_to_fixed_assets_pct": 0.4,
+    "cfo_latest_cr": 636.0,
+    "fcf_latest_cr": 463.0,
+    "cfo_ebitda_pct": 104.0,
+    "cfo_to_pat_3y": 1.28,
+    "promoter_pct": 52.93,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 18.73,
+    "dii_pct": 21.57,
+    "inst_total_pct": 40.3,
+    "inst_4q_delta_pct": 0.22,
+    "public_4q_delta_pct": 0.28
+  },
+  "strengths": [
+    "Elite Capital Efficiency (ROCE: 28.0%)",
+    "Superior ROE: 22.3%",
+    "Fortress Balance Sheet (D/E: 0.08x)",
+    "Cash Generative Profits (CFO/EBITDA: 104%)",
+    "Multi-Year Profit Compounding (3Y CAGR: +30%)"
+  ],
+  "red_flags": [
+    "Stock is trading at 12.5 times its book value",
+    "The company has delivered a poor sales growth of 11.8% over past five years."
+  ]
+}

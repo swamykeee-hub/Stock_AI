@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 6.2,
+  "quality_score": 9.1,
+  "inflection_score": 2.2,
+  "valuation_score": 6.5,
+  "metrics": {
+    "market_cap_cr": "25612",
+    "current_price": "650",
+    "stock_pe": "16.1",
+    "book_value": "341",
+    "dividend_yield_pct": "1.92",
+    "roce_pct": "16.4",
+    "roe_pct": "12.2",
+    "debt_to_equity": "0.01",
+    "face_value": "5",
+    "pb_ratio": "1.91",
+    "market_cap_num": 25612.0,
+    "current_price_num": 650.0,
+    "pe_num": 16.1,
+    "book_value_num": 341.0,
+    "roce_num": 16.4,
+    "roe_num": 12.2,
+    "pb_num": 1.91,
+    "peg_ratio": "N/A"
+  },
+  "ranges": {
+    "sales_cagr_3y": 5.0,
+    "sales_cagr_5y": 6.0,
+    "sales_growth_ttm": -5.0,
+    "profit_cagr_3y": -4.0,
+    "profit_cagr_5y": 0.0,
+    "profit_growth_ttm": -4.0,
+    "roe_3y": 16.0,
+    "roe_5y": 17.0,
+    "price_cagr_3y": 0.0,
+    "price_cagr_5y": 5.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": -28.0,
+    "qtr_pat_yoy_pct": 2.8,
+    "qtr_pat_prev_yoy_pct": 17.0,
+    "qtr_eps_yoy_pct": 2.8,
+    "opm_latest_pct": 48.0,
+    "opm_year_ago_pct": 58.0,
+    "opm_expansion_bps": -1000.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.01,
+    "cwip_cr": 4.0,
+    "cwip_growth_pct": -99.5,
+    "cwip_to_fixed_assets_pct": 0.1,
+    "cfo_latest_cr": 1802.0,
+    "fcf_latest_cr": -409.0,
+    "cfo_ebitda_pct": 105.0,
+    "cfo_to_pat_3y": 1.11,
+    "promoter_pct": 75.0,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 5.52,
+    "dii_pct": 10.81,
+    "inst_total_pct": 16.33,
+    "inst_4q_delta_pct": -0.57,
+    "public_4q_delta_pct": 0.56
+  },
+  "strengths": [
+    "Strong Capital Return (ROCE: 16.4%)",
+    "Fortress Balance Sheet (D/E: 0.01x)",
+    "Cash Generative Profits (CFO/EBITDA: 105%)",
+    "Company is almost debt free.",
+    "Company has been maintaining a healthy dividend payout of 34.4%"
+  ],
+  "red_flags": [
+    "Operating Margin Compression (-1000 bps YoY)",
+    "The company has delivered a poor sales growth of 6.41% over past five years."
+  ]
+}

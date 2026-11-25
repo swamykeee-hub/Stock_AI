@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 6.5,
+  "quality_score": 4.7,
+  "inflection_score": 9.6,
+  "valuation_score": 5.0,
+  "metrics": {
+    "market_cap_cr": "356677",
+    "current_price": "370",
+    "stock_pe": "723",
+    "book_value": "32.4",
+    "dividend_yield_pct": "0",
+    "roce_pct": "2.48",
+    "roe_pct": "0.94",
+    "debt_to_equity": "0.18",
+    "face_value": "1",
+    "pb_ratio": "11.42",
+    "market_cap_num": 356677.0,
+    "current_price_num": 370.0,
+    "pe_num": 723.0,
+    "book_value_num": 32.4,
+    "roce_num": 2.48,
+    "roe_num": 0.94,
+    "pb_num": 11.42,
+    "peg_ratio": "4.46",
+    "peg_num": 4.46
+  },
+  "ranges": {
+    "sales_cagr_3y": 97.0,
+    "sales_cagr_5y": 94.0,
+    "sales_growth_ttm": 144.0,
+    "profit_cagr_3y": 31.0,
+    "profit_cagr_5y": 20.0,
+    "profit_growth_ttm": 162.0,
+    "roe_3y": 1.0,
+    "roe_5y": -2.0,
+    "price_cagr_3y": 47.0,
+    "price_cagr_5y": 20.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 78.0,
+    "qtr_pat_yoy_pct": 92.3,
+    "qtr_pat_prev_yoy_pct": 268.0,
+    "qtr_eps_yoy_pct": 85.7,
+    "opm_latest_pct": 3.1,
+    "opm_year_ago_pct": 1.8,
+    "opm_expansion_bps": 130.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": 0.18,
+    "cwip_cr": 296.0,
+    "cwip_growth_pct": 117.6,
+    "cwip_to_fixed_assets_pct": 2.0,
+    "cfo_latest_cr": 632.0,
+    "fcf_latest_cr": -1114.0,
+    "cfo_ebitda_pct": 83.0,
+    "cfo_to_pat_3y": 1.27,
+    "promoter_pct": null,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 33.01,
+    "dii_pct": 36.22,
+    "inst_total_pct": 69.23,
+    "inst_4q_delta_pct": 0.15,
+    "public_4q_delta_pct": 1.14
+  },
+  "strengths": [
+    "Fortress Balance Sheet (D/E: 0.18x)",
+    "Cash Generative Profits (CFO/EBITDA: 83%)",
+    "Explosive Quarterly PAT Surge (+92.3% YoY)",
+    "Multi-Year Profit Compounding (3Y CAGR: +31%)",
+    "Capex Capacity Runway Active (CWIP: \u20b9296 Cr)"
+  ],
+  "red_flags": [
+    "Sub-par ROCE (2.5%)",
+    "Stock is trading at 11.2 times its book value",
+    "Though the company is reporting repeated profits, it is not paying out dividend",
+    "Company has a low return on equity of 1.23% over last 3 years."
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "is_consolidated": true,
+  "score": 6.9,
+  "quality_score": 4.1,
+  "inflection_score": 10.0,
+  "valuation_score": 8.0,
+  "metrics": {
+    "market_cap_cr": "169291",
+    "current_price": "147",
+    "stock_pe": "7.42",
+    "book_value": "140",
+    "dividend_yield_pct": "2.02",
+    "roce_pct": "6.13",
+    "roe_pct": "13",
+    "debt_to_equity": "N/A",
+    "face_value": "2",
+    "pb_ratio": "1.05",
+    "market_cap_num": 169291.0,
+    "current_price_num": 147.0,
+    "pe_num": 7.42,
+    "book_value_num": 140.0,
+    "roce_num": 6.13,
+    "roe_num": 13.0,
+    "pb_num": 1.05,
+    "peg_ratio": "0.10",
+    "peg_num": 0.1
+  },
+  "ranges": {
+    "sales_cagr_3y": 15.0,
+    "sales_cagr_5y": 10.0,
+    "sales_growth_ttm": 4.0,
+    "profit_cagr_3y": 76.0,
+    "profit_cagr_5y": 48.0,
+    "profit_growth_ttm": 34.0,
+    "roe_3y": 12.0,
+    "roe_5y": 9.0,
+    "price_cagr_3y": 25.0,
+    "price_cagr_5y": 31.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 8.5,
+    "qtr_pat_yoy_pct": 15.6,
+    "qtr_pat_prev_yoy_pct": 169.3,
+    "qtr_eps_yoy_pct": 15.0,
+    "opm_latest_pct": 11.0,
+    "opm_year_ago_pct": 7.0,
+    "opm_expansion_bps": 400.0,
+    "is_sequential_pat_accel": true,
+    "is_financial_sector": true
+  },
+  "balance_inst": {
+    "is_financial_sector": true,
+    "debt_to_equity": null,
+    "cwip_cr": 0.0,
+    "cwip_growth_pct": 0.0,
+    "cwip_to_fixed_assets_pct": 0.0,
+    "cfo_latest_cr": 25635.0,
+    "fcf_latest_cr": 24052.0,
+    "cfo_ebitda_pct": null,
+    "cfo_to_pat_3y": 0.43,
+    "promoter_pct": 70.08,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 6.66,
+    "dii_pct": 16.14,
+    "inst_total_pct": 22.8,
+    "inst_4q_delta_pct": 1.59,
+    "public_4q_delta_pct": -1.57
+  },
+  "strengths": [
+    "Sharp Margin Inflection (OPM +400 bps YoY)",
+    "Multi-Year Profit Compounding (3Y CAGR: +76%)",
+    "Smart Money Accumulation (FII+DII +1.6% over 4Q)",
+    "Deep GARP Value (PEG: 0.10x)",
+    "Stock is trading at 1.07 times its book value"
+  ],
+  "red_flags": [
+    "Sub-par ROCE (6.1%)",
+    "Company has low interest coverage ratio.",
+    "The company has delivered a poor sales growth of 9.80% over past five years.",
+    "Company has a low return on equity of 12.4% over last 3 years."
+  ]
+}
