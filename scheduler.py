@@ -66,10 +66,20 @@ class DailyAutomator:
         print("  -> Screened Multi-Timeframe Super-Trend Stocks (3M, 6M, 1Y, 3Y)...")
         momentum_stocks = self.momentum_screener.scan_universe(force_refresh=True)
 
-        # 4. Bullish Stock Scanning (360° Setups)
-        print("  -> Scanning Indian market for Bullish 360-degree setups...")
-        bullish_picks = self.scanner.scan_market(max_stocks=35, max_workers=8)
-        print(f"  -> Discovered {len(bullish_picks)} high-conviction bullish candidates.")
+        # 4. Bullish & Multibagger Inflection Scanning (Two-Pass across Full 509-Stock NSE Universe)
+        print("  -> Scanning all 509+ NSE stocks for Laurus-Type Inflections & Stage-2 Compounders...")
+        bullish_picks = self.scanner.scan_market(max_stocks=509, max_workers=6)
+        print(f"  -> Discovered {len(bullish_picks)} high-conviction multibagger / inflection candidates.")
+
+        # 4b. Dedicated 5-Factor Value & Promoter Inflection Screener (Vol, Promoter, QoQ/YoY PAT, ROCE/ROE, Value)
+        print("  -> Running Dedicated 5-Factor Value & Promoter Screener...")
+        factor_stocks = []
+        try:
+            from core.factor_screener import SmartFactorScreener
+            factor_stocks = SmartFactorScreener().scan_factors(max_candidates=240, force_refresh=True)
+            print(f"  -> 5-Factor Screener surfaced {len(factor_stocks)} high-conviction candidates.")
+        except Exception as e:
+            print(f"  -> Factor Screener notice: {e}")
 
         # 5. AI Fund Manager Radar
         print("  -> Updating AI Fund Manager Monitored Radar...")
@@ -146,16 +156,17 @@ class DailyAutomator:
             "indices": indices,
             "macro_snapshot": macro_snap,
             "market_regime": market_regime,
-            "top_momentum_stocks": momentum_stocks[:15],
+            "top_momentum_stocks": momentum_stocks[:100],
             "fifty_two_week_high_stocks": fifty_two_week_stocks,
             "top_bullish_stocks": bullish_picks,
+            "factor_screener_stocks": factor_stocks,
             "monitored_radar": monitored_radar,
             "mutual_funds": mutual_funds,
             "institutional_flow": inst_flow,
             "corporate_actions": corp_actions,
             "performance_scorecard": scorecard_data,
             "market_movers": movers_data,
-            "total_screened": 35,
+            "total_screened": max(len(self.scanner.load_stock_universe()), len(momentum_stocks)),
             "disclaimer": config.DISCLAIMER
         }
 

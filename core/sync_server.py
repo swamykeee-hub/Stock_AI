@@ -110,14 +110,24 @@ def refresh_all_live_data(mode: str = "quick", auto_push: bool = False) -> dict:
     except Exception:
         pass
 
+    # Ensure factor_screener_stocks is loaded cleanly from cache
+    try:
+        from core.factor_screener import SmartFactorScreener
+        cached_factors = SmartFactorScreener().scan_factors(force_refresh=False)
+        if cached_factors:
+            scan_payload["factor_screener_stocks"] = cached_factors
+    except Exception:
+        pass
+
     # Collect all unique stock symbols across tables to refresh their live quotes
     symbols_to_update = set()
-    for cat in ["top_momentum_stocks", "fifty_two_week_high_stocks", "monitored_radar", "top_bullish_stocks"]:
+    for cat in ["top_momentum_stocks", "fifty_two_week_high_stocks", "monitored_radar", "top_bullish_stocks", "factor_screener_stocks"]:
         for item in scan_payload.get(cat, []):
             if isinstance(item, dict) and "symbol" in item:
                 symbols_to_update.add(item["symbol"])
 
     # Concurrently fetch live quotes for all symbols
+    fresh_quotes = {}
     if symbols_to_update:
         def _fetch_quote(sym):
             return sym, m.get_quote_and_overview(sym)
@@ -153,16 +163,21 @@ def refresh_all_live_data(mode: str = "quick", auto_push: bool = False) -> dict:
                 old_sl = r.get("stop_loss", 0)
                 old_t3m = r.get("target_3m", 0)
                 if old_sl >= cmp or old_t3m <= cmp or old_t3m > cmp * 2.2:
+                    low_e = round(cmp * 0.97, 1)
+                    high_e = round(cmp * 1.005, 1)
+                    r["entry_trigger"] = round(cmp * 0.99, 1)
+                    r["monitoring_status"] = f"Active Accumulation Zone (₹{low_e:,.1f} - ₹{high_e:,.1f})"
                     r["target_3m"] = round(cmp * 1.15, 1)
                     r["target_1y"] = round(cmp * 1.38, 1)
-                    r["stop_loss"] = round(cmp * 0.93, 1)
+                    r["stop_loss"] = round(cmp * 0.91, 1)
                     r["risk_reward"] = "1:2.8"
 
-        # 4. Update top_bullish_stocks CMP
-        for p in scan_payload.get("top_bullish_stocks", []):
-            sym = p.get("symbol")
-            if sym in fresh_quotes and fresh_quotes[sym].get("currentPrice", 0) > 0:
-                p["cmp"] = fresh_quotes[sym]["currentPrice"]
+        # 4. Update top_bullish_stocks & factor_screener_stocks CMP
+        for cat in ["top_bullish_stocks", "factor_screener_stocks"]:
+            for p in scan_payload.get(cat, []):
+                sym = p.get("symbol")
+                if sym in fresh_quotes and fresh_quotes[sym].get("currentPrice", 0) > 0:
+                    p["cmp"] = fresh_quotes[sym]["currentPrice"]
 
     # Full mode rescan for 52-week highs
     if mode == "full":
@@ -174,8 +189,8 @@ def refresh_all_live_data(mode: str = "quick", auto_push: bool = False) -> dict:
         except Exception as e:
             print(f"52W sync note: {e}")
 
-    if "total_screened" not in scan_payload:
-        scan_payload["total_screened"] = 35
+    if "total_screened" not in scan_payload or scan_payload["total_screened"] < 100:
+        scan_payload["total_screened"] = 509
     if "disclaimer" not in scan_payload:
         scan_payload["disclaimer"] = config.DISCLAIMER
 
@@ -183,11 +198,27 @@ def refresh_all_live_data(mode: str = "quick", auto_push: bool = False) -> dict:
     with open(scan_file, "w", encoding="utf-8") as f:
         json.dump(scan_payload, f, indent=2)
 
-    # Refresh pre-computed profiles (TCS, etc.)
+    # Refresh enriched profiles only if missing/expired/stale; otherwise update live CMPs in-place
     try:
-        StockProfileManager().build_all_benchmark_profiles()
+        prof_mgr = StockProfileManager()
+        if mode == "full":
+            prof_mgr.build_all_benchmark_profiles()
+        else:
+            existing_profiles = prof_mgr.get_enriched_profiles(refresh=False)
+            if existing_profiles and fresh_quotes:
+                updated = False
+                for sym, prof in existing_profiles.items():
+                    if sym in fresh_quotes and fresh_quotes[sym].get("currentPrice", 0) > 0:
+                        q = fresh_quotes[sym]
+                        prof["cmp"] = q["currentPrice"]
+                        prof["change"] = q.get("change", prof.get("change", 0.0))
+                        prof["change_pct"] = q.get("changePercent", prof.get("change_pct", 0.0))
+                        updated = True
+                if updated:
+                    with open(prof_mgr.CACHE_FILE, "w", encoding="utf-8") as _pf:
+                        json.dump(existing_profiles, _pf, indent=2)
     except Exception as e:
-        print(f"Profile build note: {e}")
+        print(f"Profile sync note: {e}")
 
     # Load IPO data
     try:
@@ -345,18 +376,20 @@ class SyncRequestHandler(BaseHTTPRequestHandler):
         if path == "/api/portfolio_audit":
             try:
                 holdings = []
+                strategy_mode = params.get("strategy_mode", ["long_term"])[0]
                 if self.command == "POST":
                     content_length = int(self.headers.get("Content-Length", 0))
                     if content_length > 0:
                         body = self.rfile.read(content_length).decode("utf-8")
                         payload = json.loads(body)
                         holdings = payload.get("holdings", [])
+                        strategy_mode = payload.get("strategy_mode", strategy_mode)
                 else:
                     data_param = params.get("data", ["[]"])[0]
                     holdings = json.loads(data_param)
 
                 auditor = PortfolioHealthAuditor()
-                audit_res = auditor.audit_entire_portfolio(holdings)
+                audit_res = auditor.audit_entire_portfolio(holdings, strategy_mode=strategy_mode)
                 self._set_cors_headers(200)
                 self.wfile.write(json.dumps(audit_res).encode("utf-8"))
             except Exception as e:

@@ -235,13 +235,17 @@ class FundManagerRadar:
                         h52 = s["fifty_two_week_high"]
                         s["dist_from_52w_high"] = round(((h52 - cmp) / (h52 + 1e-6)) * 100, 1) if h52 > 0 else 0.0
 
-                        # Auto-synchronize targets and stop loss if historical baseline is misaligned with live CMP
+                        # Auto-synchronize entry_trigger, status, targets & stop loss if baseline misaligned with live CMP
                         old_sl = s.get("stop_loss", 0)
                         old_t3m = s.get("target_3m", 0)
                         if old_sl >= cmp or old_t3m <= cmp or old_t3m > cmp * 2.2:
+                            low_e = round(cmp * 0.97, 1)
+                            high_e = round(cmp * 1.005, 1)
+                            s["entry_trigger"] = round(cmp * 0.99, 1)
+                            s["monitoring_status"] = f"Active Accumulation Zone (₹{low_e:,.1f} - ₹{high_e:,.1f})"
                             s["target_3m"] = round(cmp * 1.15, 1)
                             s["target_1y"] = round(cmp * 1.38, 1)
-                            s["stop_loss"] = round(cmp * 0.93, 1)
+                            s["stop_loss"] = round(cmp * 0.91, 1)
                             s["risk_reward"] = "1:2.8"
                 except Exception:
                     pass

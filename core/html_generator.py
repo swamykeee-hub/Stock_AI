@@ -29,6 +29,15 @@ class HTMLReportGenerator:
             except Exception:
                 fifty_two_week_stocks = []
 
+        # Dedicated 5-Factor Value & Promoter Inflection Candidates
+        factor_stocks = scan_data.get("factor_screener_stocks", [])
+        if not factor_stocks:
+            try:
+                from core.factor_screener import SmartFactorScreener
+                factor_stocks = SmartFactorScreener().scan_factors(force_refresh=False)
+            except Exception:
+                factor_stocks = []
+
         # Load backend NSE 500 catalog for universal lookup fallback
         nse_catalog = []
         try:
@@ -308,27 +317,45 @@ class HTMLReportGenerator:
             </tr>
             """
 
-        # Generate Bullish Picks Table Rows
+        # Generate Bullish Picks Table Rows (Whole-Market 509-Stock Multibagger & Inflection Scanner)
         picks_rows = ""
         for p in picks:
-            score = p.get("conviction_score", 0.0)
-            badge_color = "#10b981" if score >= 8.0 else "#3b82f6"
-            action = "STRONG BUY" if score >= 8.0 else "ACCUMULATE"
-            
+            score = float(p.get("conviction_score", 0.0))
+            badge_color = "#059669" if score >= 8.0 else ("#2563eb" if score >= 7.0 else "#4f46e5")
+            arch_short = p.get("archetype_short", "Stage-2 Breakout")
+            arch_bg = "#065f46" if "Inflection" in arch_short else ("#1e3a8a" if "Compounder" in arch_short else "#4c1d95")
+            mcap_tier = p.get("mcap_tier", "Mid/Large Cap")
+            roce_val = p.get("roce_pct", "—")
+            de_val = p.get("debt_to_equity")
+            de_str = f"D/E: {de_val:.2f}x" if isinstance(de_val, (int, float)) else "D/E: —"
+            opm_bps = p.get("opm_expansion_bps")
+            pat_yoy = p.get("qtr_pat_yoy_pct")
+            fii_dii = p.get("inst_4q_delta_pct", 0.0)
+
+            inf_parts = []
+            if pat_yoy is not None:
+                inf_parts.append(f"PAT: <b style='color:{'#34d399' if pat_yoy >= 0 else '#f87171'};'>{pat_yoy:+.1f}%</b>")
+            if opm_bps is not None:
+                inf_parts.append(f"OPM: <b style='color:{'#38bdf8' if opm_bps >= 0 else '#f87171'};'>{opm_bps:+.0f}bps</b>")
+            if fii_dii:
+                inf_parts.append(f"Inst: <b>{fii_dii:+.1f}%</b>")
+            inf_html = " &bull; ".join(inf_parts) if inf_parts else f"1Y: {p.get('ret_1y', 0):+.1f}%"
+
             picks_rows += f"""
             <tr class="stock-row" data-symbol="{p['symbol']}" data-name="{p['name']}" data-sector="{p['sector']}">
                 <td>
                     <div class="sym-name">{p['symbol']}</div>
-                    <div class="sub-text">{p['name']}</div>
+                    <div class="sub-text">{p['name']} &bull; <span style="color:#38bdf8;">{mcap_tier}</span></div>
                 </td>
                 <td><span class="sector-pill">{p['sector']}</span></td>
-                <td><b>₹{p['cmp']}</b></td>
-                <td><span class="badge" style="background: {badge_color};">{action} ({score}/10)</span></td>
-                <td><span class="rsi-tag">{p['rsi']}</span></td>
-                <td style="color: #10b981; font-weight: 600;">₹{p['target_1']}</td>
-                <td style="color: #34d399; font-weight: 600;">₹{p['target_2']}</td>
-                <td style="color: #f87171; font-weight: 600;">₹{p['stop_loss']}</td>
-                <td>{p['risk_reward']}</td>
+                <td><span class="badge" style="background: {arch_bg}; font-size: 11px;">{arch_short}</span></td>
+                <td><b>₹{p['cmp']:,.2f}</b></td>
+                <td><span style="display:inline-flex; align-items:center; gap:4px; background: {badge_color}22; color: #34d399; border: 1px solid {badge_color}; padding: 3px 8px; border-radius: 6px; font-weight: 800; font-size: 13px;">⭐ {score:.1f} / 10</span></td>
+                <td><b>{roce_val}%</b><div class="sub-text">{de_str}</div></td>
+                <td style="font-size: 12px;">{inf_html}</td>
+                <td style="color: #10b981; font-weight: 600;">₹{p['target_1']:,.2f}</td>
+                <td style="color: #34d399; font-weight: 700;">₹{p['target_2']:,.2f}</td>
+                <td style="color: #f87171; font-weight: 600;">₹{p['stop_loss']:,.2f}</td>
                 <td><button class="chart-btn" onclick="toggleCandleChart('{p['symbol']}', this)">📈 Chart</button></td>
             </tr>
             """
@@ -336,56 +363,175 @@ class HTMLReportGenerator:
         # Generate Detailed 360° Stock Cards
         cards_html = ""
         for p in picks:
-            signals_li = "".join([f"<li>✅ {s}</li>" for s in p.get("bullish_signals", [])])
-            strengths_li = "".join([f"<li>⭐ {s}</li>" for s in p.get("fundamental_strengths", [])])
-            score = p.get("conviction_score", 0.0)
-            badge_color = "#10b981" if score >= 8.0 else "#3b82f6"
-            action = "STRONG BUY" if score >= 8.0 else "ACCUMULATE"
+            signals_li = "".join([f"<li>✅ {s}</li>" for s in p.get("bullish_signals", []) if s])
+            strengths_li = "".join([f"<li>⭐ {s}</li>" for s in p.get("fundamental_strengths", []) if s])
+            score = float(p.get("conviction_score", 0.0))
+            badge_color = "#059669" if score >= 8.0 else "#2563eb"
+            arch_label = p.get("archetype", "Stage-2 Breakout")
+            roce_val = p.get("roce_pct", "—")
+            de_val = p.get("debt_to_equity")
+            de_str = f"{de_val:.2f}x" if isinstance(de_val, (int, float)) else "N/A"
+            opm_bps = p.get("opm_expansion_bps")
+            opm_str = f"{opm_bps:+.0f} bps" if opm_bps is not None else "—"
+            pat_yoy = p.get("qtr_pat_yoy_pct")
+            pat_str = f"{pat_yoy:+.1f}%" if pat_yoy is not None else "—"
 
             cards_html += f"""
             <div class="stock-card" data-symbol="{p['symbol']}" data-name="{p['name']}" data-sector="{p['sector']}">
                 <div class="card-header">
                     <div>
                         <span class="card-symbol">{p['symbol']}</span>
-                        <span class="card-company">{p['name']}</span>
+                        <span class="card-company">{p['name']} &bull; {p.get('mcap_tier', 'NSE')}</span>
                     </div>
-                    <span class="badge" style="background: {badge_color};">{action} &bull; {score}/10</span>
+                    <span class="badge" style="background: {badge_color};">{arch_label} &bull; ⭐ {score:.1f}/10</span>
                 </div>
                 <div class="card-meta">
-                    <span><b>CMP:</b> ₹{p['cmp']}</span>
+                    <span><b>CMP:</b> ₹{p['cmp']:,.2f}</span>
                     <span><b>Sector:</b> {p['sector']}</span>
-                    <span><b>RSI:</b> {p['rsi']}</span>
-                    <span><b>20 EMA:</b> ₹{p['ema_20']}</span>
+                    <span><b>ROCE:</b> {roce_val}%</span>
+                    <span><b>D/E:</b> {de_str}</span>
+                    <span><b>Qtr PAT YoY:</b> {pat_str}</span>
+                    <span><b>OPM Exp:</b> {opm_str}</span>
                 </div>
                 <div class="levels-grid">
                     <div class="level-box">
-                        <small>Target 1</small>
-                        <div class="lvl-val" style="color: #10b981;">₹{p['target_1']}</div>
+                        <small>Entry Zone</small>
+                        <div class="lvl-val" style="color: #38bdf8; font-size:12px;">{p.get('suggested_entry', 'Near CMP')}</div>
                     </div>
                     <div class="level-box">
-                        <small>Target 2</small>
-                        <div class="lvl-val" style="color: #34d399;">₹{p['target_2']}</div>
+                        <small>Target 1</small>
+                        <div class="lvl-val" style="color: #10b981;">₹{p['target_1']:,.2f}</div>
+                    </div>
+                    <div class="level-box">
+                        <small>Target 2 (Long-Term)</small>
+                        <div class="lvl-val" style="color: #34d399;">₹{p['target_2']:,.2f}</div>
                     </div>
                     <div class="level-box">
                         <small>Stop Loss</small>
-                        <div class="lvl-val" style="color: #f87171;">₹{p['stop_loss']}</div>
-                    </div>
-                    <div class="level-box">
-                        <small>Risk:Reward</small>
-                        <div class="lvl-val">{p['risk_reward']}</div>
+                        <div class="lvl-val" style="color: #f87171;">₹{p['stop_loss']:,.2f}</div>
                     </div>
                 </div>
                 <div class="audit-split">
                     <div class="audit-col">
-                        <div class="audit-title">⚡ Technical Checklist</div>
+                        <div class="audit-title">⚡ Weekly &amp; Technical Checklist</div>
                         <ul>{signals_li}</ul>
                     </div>
                     <div class="audit-col">
-                        <div class="audit-title">🏛️ Fundamental Strengths</div>
+                        <div class="audit-title">🏛️ Consolidated Inflection &amp; Quality</div>
                         <ul>{strengths_li}</ul>
                     </div>
                 </div>
             </div>
+            """
+
+        # Generate Dedicated 5-Factor Value & Promoter Inflection Rows
+        fac_multi4 = sum(1 for f in factor_stocks if f.get("matches_count", 0) >= 4)
+        fac_vol_up = sum(1 for f in factor_stocks if f.get("flag_vol"))
+        fac_prom_up = sum(1 for f in factor_stocks if f.get("flag_promoter"))
+        fac_pat_up = sum(1 for f in factor_stocks if f.get("flag_profit_high"))
+        fac_eff_up = sum(1 for f in factor_stocks if f.get("flag_eff_up"))
+        fac_val_low = sum(1 for f in factor_stocks if f.get("flag_low_value"))
+
+        factor_rows = ""
+        for f in factor_stocks:
+            sym = f["symbol"]
+            fscore = float(f.get("factor_score", 5.0))
+            mcount = int(f.get("matches_count", 0))
+            badge_col = "#10b981" if mcount >= 4 else ("#38bdf8" if mcount == 3 else "#8b5cf6")
+
+            chips = []
+            if f.get("flag_vol"):
+                chips.append("<span style='color:#34d399;'>✓Vol</span>")
+            if f.get("flag_promoter"):
+                chips.append("<span style='color:#fbbf24;'>✓Prom</span>")
+            elif f.get("flag_smart_money"):
+                chips.append("<span style='color:#38bdf8;'>✓Inst</span>")
+            if f.get("flag_profit_high"):
+                chips.append("<span style='color:#34d399;'>✓PAT</span>")
+            if f.get("flag_eff_up"):
+                chips.append("<span style='color:#a78bfa;'>✓ROCE/ROE</span>")
+            if f.get("flag_low_value"):
+                chips.append("<span style='color:#38bdf8;'>✓Value</span>")
+            chips_html = " ".join(chips)
+
+            vol_badge = "🔥 " if f.get("flag_vol") else ""
+            prom_4q = float(f.get("promoter_4q_delta", 0.0))
+            prom_qoq = float(f.get("promoter_qoq_delta", 0.0))
+            best_prom_d = prom_4q if abs(prom_4q) >= abs(prom_qoq) else prom_qoq
+            prom_col = "#10b981" if f.get("flag_promoter") else "#94a3b8"
+            inst_d = float(f.get("inst_4q_delta", 0.0))
+
+            pat_qoq = f.get("qtr_pat_qoq_pct")
+            pat_yoy = f.get("qtr_pat_yoy_pct")
+            pat_qoq_str = f"{pat_qoq:+.1f}%" if pat_qoq is not None else "—"
+            pat_yoy_str = f"{pat_yoy:+.1f}%" if pat_yoy is not None else "—"
+            pat_q_col = "#34d399" if (pat_qoq or 0) >= 10 else ("#f87171" if (pat_qoq or 0) < 0 else "#cbd5e1")
+            pat_y_col = "#10b981" if (pat_yoy or 0) >= 20 else ("#f87171" if (pat_yoy or 0) < 0 else "#cbd5e1")
+
+            roce_v = f.get("roce_latest", 0.0)
+            roce_d = f.get("roce_delta")
+            roe_v = f.get("roe_latest", 0.0)
+            roe_d = f.get("roe_delta")
+            roce_str = f"{roce_v:.1f}% (<b style='color:{'#34d399' if (roce_d or 0)>0 else '#94a3b8'};'>{roce_d:+.1f}%</b>)" if roce_d is not None else f"{roce_v:.1f}%"
+            roe_str = f"{roe_v:.1f}% (<b style='color:{'#34d399' if (roe_d or 0)>0 else '#94a3b8'};'>{roe_d:+.1f}%</b>)" if roe_d is not None else f"{roe_v:.1f}%"
+
+            pe_v = f.get("pe", 0.0)
+            peg_v = f.get("peg")
+            peg_str = f"PEG: {peg_v:.2f}" if peg_v is not None else f"Off 52W: -{f.get('dist_52w', 0)}%"
+            val_tag = f.get("valuation_tag", "⚖️ Fair")
+            de_v = f.get("debt_to_equity")
+            de_lbl = f"D/E: {de_v:.2f}x" if isinstance(de_v, (int, float)) else ""
+            mcap_v = f.get("mcap_cr", 0)
+            mcap_lbl = f"₹{mcap_v:,.0f} Cr" if mcap_v else ""
+
+            factor_rows += f"""
+            <tr class="stock-row factor-row"
+                data-symbol="{sym}" data-name="{f.get('name', sym)}" data-sector="{f.get('sector', 'Equities')}"
+                data-vol="{1 if f.get('flag_vol') else 0}"
+                data-prom="{1 if f.get('flag_promoter') else 0}"
+                data-sm="{1 if f.get('flag_smart_money') else 0}"
+                data-pat="{1 if f.get('flag_profit_high') else 0}"
+                data-eff="{1 if f.get('flag_eff_up') else 0}"
+                data-val="{1 if f.get('flag_low_value') else 0}"
+                data-matches="{mcount}">
+                <td>
+                    <div class="sym-name">{sym}</div>
+                    <div class="sub-text">{f.get('name', sym)}</div>
+                    <div class="sub-text" style="color:#64748b;">{mcap_lbl} {('• ' + de_lbl) if de_lbl else ''}</div>
+                </td>
+                <td><span class="sector-pill">{f.get('sector', 'Equities')}</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:{badge_col}22; color:{badge_col}; border:1px solid {badge_col}; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        ⭐ {fscore:.1f} ({mcount}/5)
+                    </span>
+                    <div style="font-size:10px; margin-top:4px; line-height:1.3;">{chips_html}</div>
+                </td>
+                <td>
+                    <b>₹{f['cmp']:,.2f}</b>
+                    <div class="sub-text" style="color:#38bdf8;">-{f.get('dist_52w', 0)}% off 52W</div>
+                </td>
+                <td>
+                    <b style="color:{'#10b981' if f.get('flag_vol') else '#cbd5e1'};">{vol_badge}{f.get('vol_trend_4w', 1.0)}x (4W)</b>
+                    <div class="sub-text">Wk Surge: {f.get('vol_surge', 1.0)}x</div>
+                </td>
+                <td>
+                    <b style="color:{prom_col};">{f.get('promoter_pct', 0)}% ({best_prom_d:+.2f}%)</b>
+                    <div class="sub-text" style="color:{'#34d399' if inst_d > 0 else '#94a3b8'};">FII+DII 4Q: {inst_d:+.1f}%</div>
+                </td>
+                <td>
+                    <div>QoQ: <b style="color:{pat_q_col};">{pat_qoq_str}</b></div>
+                    <div>YoY: <b style="color:{pat_y_col};">{pat_yoy_str}</b></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>ROCE: {roce_str}</div>
+                    <div>ROE: {roe_str}</div>
+                </td>
+                <td>
+                    <b>P/E: {pe_v:.1f}x</b> <span style="font-size:11px; color:#94a3b8;">({peg_str})</span>
+                    <div style="font-size:11px; color:{'#10b981' if f.get('flag_low_value') else '#94a3b8'}; font-weight:700; margin-top:2px;">{val_tag}</div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('{sym}', this)">📈 Chart</button></td>
+            </tr>
             """
 
         # Generate IPO Table
@@ -1701,6 +1847,7 @@ class HTMLReportGenerator:
     <div class="controls-bar">
         <div class="tabs">
             <button class="tab-btn active" onclick="switchView('momentum', this)">🏆 Super-Trend Leaders (3M/1Y/3Y)</button>
+            <button class="tab-btn" onclick="switchView('factor_screener', this)" style="border-color: #10b981; color: #34d399; font-weight: 700;">💎 Factor &amp; Value Finder</button>
             <button id="tabBtnMovers" class="tab-btn" onclick="switchView('movers', this)" style="border-color: #f59e0b; color: #f59e0b; font-weight: 700;">⚡ Top Movers (Gainers &amp; Losers)</button>
             <button class="tab-btn" onclick="switchView('fifty_two_week', this)">🚀 52-Week High Leaders</button>
             <button class="tab-btn" onclick="switchView('radar', this)">🎯 AI Fund Manager Radar</button>
@@ -1759,6 +1906,91 @@ class HTMLReportGenerator:
                 </thead>
                 <tbody id="momentumTbody">
                     {momentum_rows}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Tab 1B: Dedicated 5-Factor Value, Promoter & Earnings Inflection Finder -->
+    <div id="view-factor_screener" class="view-panel" style="display: none;">
+        <div style="background: linear-gradient(135deg, #064e3b, #0f172a); border: 1px solid #10b981; border-radius: 12px; padding: 18px 22px; margin-bottom: 18px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                <div>
+                    <h3 style="color: #fff; font-size: 18px; margin: 0 0 6px 0; display: flex; align-items: center; gap: 8px;">
+                        <span>💎 Smart 5-Factor Multibagger &amp; Undervalued Turnaround Finder</span>
+                        <span style="background: #065f46; color: #34d399; font-size: 11px; padding: 2px 8px; border-radius: 12px;">NSE 509 Screened</span>
+                    </h3>
+                    <p style="color: #cbd5e1; font-size: 13px; margin: 0;">
+                        Traces <b>Volume Rising</b> &bull; <b>Promoter Stake Increasing</b> &bull; <b>QoQ &amp; YoY Profit Surge</b> &bull; <b>ROCE &amp; ROE Up</b> &bull; <b>Low Valuation / Discounted GARP</b> in one unified screen.
+                    </p>
+                </div>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <div style="background: #111827; border: 1px solid #10b98155; padding: 8px 12px; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 10px; color: #94a3b8; display: block;">4+/5 Factor Hits</span>
+                        <b style="font-size: 15px; color: #34d399;">{fac_multi4} Stocks</b>
+                    </div>
+                    <div style="background: #111827; border: 1px solid #374151; padding: 8px 12px; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 10px; color: #94a3b8; display: block;">Promoter Buying</span>
+                        <b style="font-size: 15px; color: #fbbf24;">{fac_prom_up}</b>
+                    </div>
+                    <div style="background: #111827; border: 1px solid #374151; padding: 8px 12px; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 10px; color: #94a3b8; display: block;">QoQ &amp; YoY PAT Up</span>
+                        <b style="font-size: 15px; color: #10b981;">{fac_pat_up}</b>
+                    </div>
+                    <div style="background: #111827; border: 1px solid #374151; padding: 8px 12px; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 10px; color: #94a3b8; display: block;">ROCE &amp; ROE Up</span>
+                        <b style="font-size: 15px; color: #a78bfa;">{fac_eff_up}</b>
+                    </div>
+                    <div style="background: #111827; border: 1px solid #374151; padding: 8px 12px; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 10px; color: #94a3b8; display: block;">Low Valuation</span>
+                        <b style="font-size: 15px; color: #38bdf8;">{fac_val_low}</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive 5-Factor Filter Controls & Quick Presets -->
+        <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; margin-bottom: 18px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+                <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+                    <span style="font-size: 12px; font-weight: 800; color: var(--text-heading);">⚡ Quick Presets:</span>
+                    <button class="sip-preset-btn" onclick="applyFactorPreset('all')" style="font-weight:700; color:#38bdf8;">All Screened</button>
+                    <button class="sip-preset-btn" onclick="applyFactorPreset('multi3')" style="font-weight:700; color:#34d399;">🔥 3+ Factors Matched</button>
+                    <button class="sip-preset-btn" onclick="applyFactorPreset('prom_pat')" style="font-weight:700; color:#fbbf24;">🤝 Promoter Up + High Profit</button>
+                    <button class="sip-preset-btn" onclick="applyFactorPreset('val_eff')" style="font-weight:700; color:#38bdf8;">💎 Undervalued + ROCE/ROE Up</button>
+                    <button class="sip-preset-btn" onclick="applyFactorPreset('vol_pat')" style="font-weight:700; color:#a78bfa;">📈 Volume Surge + High Profit</button>
+                </div>
+                <span id="factorMatchCountBadge" class="badge" style="background: #0284c7;">Showing {len(factor_stocks)} Stocks</span>
+            </div>
+
+            <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center; font-size: 13px; color: var(--text-heading);">
+                <label style="cursor:pointer; display:inline-flex; align-items:center; gap:6px;"><input type="checkbox" id="fltVolUp" onchange="filterFactorScreener()"> 📈 Volume Increasing</label>
+                <label style="cursor:pointer; display:inline-flex; align-items:center; gap:6px;"><input type="checkbox" id="fltPromUp" onchange="filterFactorScreener()"> 🤝 Promoter Shares Increasing</label>
+                <label style="cursor:pointer; display:inline-flex; align-items:center; gap:6px;"><input type="checkbox" id="fltSmartMoneyUp" onchange="filterFactorScreener()"> 🏛️ Promoter or FII/DII Up</label>
+                <label style="cursor:pointer; display:inline-flex; align-items:center; gap:6px;"><input type="checkbox" id="fltPatHigh" onchange="filterFactorScreener()"> 🚀 QoQ &amp; YoY High Profit</label>
+                <label style="cursor:pointer; display:inline-flex; align-items:center; gap:6px;"><input type="checkbox" id="fltEffUp" onchange="filterFactorScreener()"> ⚡ ROCE &amp; ROE Increased</label>
+                <label style="cursor:pointer; display:inline-flex; align-items:center; gap:6px;"><input type="checkbox" id="fltLowVal" onchange="filterFactorScreener()"> 💎 Trading Under Low Value</label>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="factorScreenerTable">
+                <thead>
+                    <tr>
+                        <th class="sortable" onclick="sortTable(this, 0)">Stock / Company</th>
+                        <th class="sortable" onclick="sortTable(this, 1)">Sector</th>
+                        <th class="sortable" onclick="sortTable(this, 2)">Factor Score</th>
+                        <th class="sortable" onclick="sortTable(this, 3)">CMP &amp; Off-High</th>
+                        <th class="sortable" onclick="sortTable(this, 4)">Volume Trend</th>
+                        <th class="sortable" onclick="sortTable(this, 5)">Promoter &amp; Inst &Delta;</th>
+                        <th>QoQ &amp; YoY PAT</th>
+                        <th>ROCE &amp; ROE &Delta;</th>
+                        <th class="sortable" onclick="sortTable(this, 8)">Low Valuation</th>
+                        <th>Chart</th>
+                    </tr>
+                </thead>
+                <tbody id="factorScreenerTbody">
+                    {factor_rows}
                 </tbody>
             </table>
         </div>
@@ -1993,13 +2225,14 @@ class HTMLReportGenerator:
                     <tr>
                         <th class="sortable" onclick="sortTable(this, 0)">Stock / Company</th>
                         <th class="sortable" onclick="sortTable(this, 1)">Sector</th>
-                        <th class="sortable" onclick="sortTable(this, 2)">CMP</th>
-                        <th class="sortable" onclick="sortTable(this, 3)">Verdict &amp; Conviction</th>
-                        <th class="sortable" onclick="sortTable(this, 4)">RSI</th>
-                        <th class="sortable" onclick="sortTable(this, 5)">Target 1</th>
-                        <th class="sortable" onclick="sortTable(this, 6)">Target 2</th>
-                        <th class="sortable" onclick="sortTable(this, 7)">Stop Loss</th>
-                        <th class="sortable" onclick="sortTable(this, 8)">R:R</th>
+                        <th class="sortable" onclick="sortTable(this, 2)">Setup Archetype</th>
+                        <th class="sortable" onclick="sortTable(this, 3)">CMP</th>
+                        <th class="sortable" onclick="sortTable(this, 4)">Multibagger Score</th>
+                        <th class="sortable" onclick="sortTable(this, 5)">ROCE &amp; D/E</th>
+                        <th>Qtr Inflection &amp; Flow</th>
+                        <th class="sortable" onclick="sortTable(this, 7)">Target 1</th>
+                        <th class="sortable" onclick="sortTable(this, 8)">Target 2</th>
+                        <th class="sortable" onclick="sortTable(this, 9)">Stop Loss</th>
                         <th>Chart</th>
                     </tr>
                 </thead>
@@ -2094,6 +2327,10 @@ class HTMLReportGenerator:
                 <input type="file" id="brokerCsvFileInput" accept=".csv" style="display: none;" onchange="handleBrokerCsvUpload(this)">
             </label>
             <button class="action-btn" onclick="syncAllPortfolioQuotes()" style="padding: 8px 14px; font-size: 12px; border-radius: 6px; background: #0284c7; color: #fff; border-color: #38bdf8;" title="Fetch latest live market CMP for all portfolio holdings">🔄 Sync Live CMP</button>
+            <select id="portStrategyMode" class="portfolio-input" onchange="onPortfolioStrategyChange()" style="padding: 8px 10px; font-size: 12px; font-weight: 700; color: #38bdf8;" title="Switch between Long-Term Multibagger Compounder protection (200-EMA) and Tactical Swing (20/50-EMA)">
+                <option value="long_term" selected>🏛️ Strategy: Long-Term Compounder (200-EMA)</option>
+                <option value="swing">⚡ Strategy: Tactical Swing (20/50-EMA)</option>
+            </select>
             <button class="action-btn" onclick="resetPortfolioToDemo()" style="padding: 8px 14px; font-size: 12px; border-radius: 6px;" title="Reset to high-conviction benchmark demo portfolio">↺ Reset Demo</button>
             <span id="portSelectedChip" class="selected-stock-chip" style="display: none;"></span>
         </div>
@@ -2449,6 +2686,75 @@ class HTMLReportGenerator:
             if (current) select.value = current;
         }}
 
+        let activeFactorMinMatches = 0;
+
+        function applyFactorPreset(preset) {{
+            const ids = ['fltVolUp', 'fltPromUp', 'fltSmartMoneyUp', 'fltPatHigh', 'fltEffUp', 'fltLowVal'];
+            ids.forEach(id => {{
+                const el = document.getElementById(id);
+                if (el) el.checked = false;
+            }});
+            activeFactorMinMatches = 0;
+
+            if (preset === 'multi3') {{
+                activeFactorMinMatches = 3;
+            }} else if (preset === 'prom_pat') {{
+                const e1 = document.getElementById('fltPromUp');
+                const e2 = document.getElementById('fltPatHigh');
+                if (e1) e1.checked = true;
+                if (e2) e2.checked = true;
+            }} else if (preset === 'val_eff') {{
+                const e1 = document.getElementById('fltLowVal');
+                const e2 = document.getElementById('fltEffUp');
+                if (e1) e1.checked = true;
+                if (e2) e2.checked = true;
+            }} else if (preset === 'vol_pat') {{
+                const e1 = document.getElementById('fltVolUp');
+                const e2 = document.getElementById('fltPatHigh');
+                if (e1) e1.checked = true;
+                if (e2) e2.checked = true;
+            }}
+            filterFactorScreener();
+        }}
+
+        function filterFactorScreener() {{
+            const query = (document.getElementById('searchInput')?.value || '').toLowerCase().trim();
+            const sectorVal = (document.getElementById('sectorFilter')?.value || '').toLowerCase().trim();
+            const reqVol = !!document.getElementById('fltVolUp')?.checked;
+            const reqProm = !!document.getElementById('fltPromUp')?.checked;
+            const reqSm = !!document.getElementById('fltSmartMoneyUp')?.checked;
+            const reqPat = !!document.getElementById('fltPatHigh')?.checked;
+            const reqEff = !!document.getElementById('fltEffUp')?.checked;
+            const reqVal = !!document.getElementById('fltLowVal')?.checked;
+
+            let shown = 0;
+            document.querySelectorAll('.factor-row').forEach(row => {{
+                const sym = (row.getAttribute('data-symbol') || '').toLowerCase();
+                const name = (row.getAttribute('data-name') || '').toLowerCase();
+                const sector = (row.getAttribute('data-sector') || '').toLowerCase();
+                const matchQuery = !query || sym.includes(query) || name.includes(query) || sector.includes(query);
+                const matchSector = !sectorVal || sector === sectorVal || sector.includes(sectorVal);
+
+                const okVol = !reqVol || row.getAttribute('data-vol') === '1';
+                const okProm = !reqProm || row.getAttribute('data-prom') === '1';
+                const okSm = !reqSm || row.getAttribute('data-sm') === '1';
+                const okPat = !reqPat || row.getAttribute('data-pat') === '1';
+                const okEff = !reqEff || row.getAttribute('data-eff') === '1';
+                const okVal = !reqVal || row.getAttribute('data-val') === '1';
+                const matches = parseInt(row.getAttribute('data-matches') || '0', 10);
+                const okMin = matches >= activeFactorMinMatches;
+
+                if (matchQuery && matchSector && okVol && okProm && okSm && okPat && okEff && okVal && okMin) {{
+                    row.style.display = '';
+                    shown++;
+                }} else {{
+                    row.style.display = 'none';
+                }}
+            }});
+            const badge = document.getElementById('factorMatchCountBadge');
+            if (badge) badge.innerText = 'Showing ' + shown + ' Stocks';
+        }}
+
         function filterStocks() {{
             const query = (document.getElementById('searchInput')?.value || '').toLowerCase().trim();
             const sectorVal = (document.getElementById('sectorFilter')?.value || '').toLowerCase().trim();
@@ -2456,8 +2762,8 @@ class HTMLReportGenerator:
             
             let matchedRowCount = 0;
 
-            // Filter table rows
-            document.querySelectorAll('.stock-row').forEach(row => {{
+            // Filter table rows (skip factor-row here and handle via filterFactorScreener to preserve checkboxes)
+            document.querySelectorAll('.stock-row:not(.factor-row)').forEach(row => {{
                 const sym = (row.getAttribute('data-symbol') || '').toLowerCase();
                 const name = (row.getAttribute('data-name') || '').toLowerCase();
                 const sector = (row.getAttribute('data-sector') || '').toLowerCase();
@@ -2472,6 +2778,7 @@ class HTMLReportGenerator:
                     row.style.display = 'none';
                 }}
             }});
+            filterFactorScreener();
 
             // Filter cards
             document.querySelectorAll('.stock-card').forEach(card => {{
@@ -2536,22 +2843,23 @@ class HTMLReportGenerator:
                                 <span style="font-size:11px; color:#38bdf8;">1Y Return: ${{prof.ret_1y}}%</span>
                             </div>
                             <div class="m-card">
-                                <small>Valuation Multiple</small>
-                                <b>Stock P/E: ${{prof.pe}}x</b>
-                                <span style="font-size:11px; color:#94a3b8;">Market Cap: ₹${{prof.market_cap_cr}} Cr</span>
+                                <small>Valuation &amp; Leverage</small>
+                                <b>P/E: ${{prof.pe}}x | D/E: ${{prof.debt_to_equity || 'N/A'}}x</b>
+                                <span style="font-size:11px; color:#94a3b8;">MCap: ₹${{prof.market_cap_cr}} Cr &bull; PEG: ${{prof.peg || 'N/A'}}</span>
                             </div>
                             <div class="m-card">
-                                <small>Capital Efficiency</small>
-                                <b>ROCE: ${{prof.roce}}% | ROE: ${{prof.roe}}%</b>
-                                <span style="font-size:11px; color:#10b981;">Top-tier Quality Franchise</span>
+                                <small>Quality &amp; Inflection</small>
+                                <b>ROCE: ${{prof.roce}}% | LT Score: ⭐ ${{prof.long_term_score || prof.fund_score || '—'}}/10</b>
+                                <span style="font-size:11px; color:#10b981;">OPM: ${{prof.opm_latest || 'N/A'}} | Qtr PAT YoY: ${{prof.qtr_pat_yoy_pct != null ? prof.qtr_pat_yoy_pct + '%' : 'N/A'}}</span>
                             </div>
                         </div>
 
-                        <!-- Technical Moving Averages Bar -->
+                        <!-- Technical Moving Averages & Institutional Flow Bar -->
                         <div class="tech-bar">
                             <span><b>20 EMA:</b> ₹${{prof.ema_20}}</span>
                             <span><b>50 EMA:</b> ₹${{prof.ema_50}}</span>
                             <span><b>200 EMA:</b> ₹${{prof.ema_200}}</span>
+                            <span><b>FII+DII 4Q Flow:</b> ${{prof.fii_dii_delta_pct != null ? (prof.fii_dii_delta_pct >= 0 ? '+' : '') + prof.fii_dii_delta_pct + '%' : 'N/A'}}</span>
                             <span style="color:#38bdf8;"><b>Structure:</b> ${{prof.trend_posture}}</span>
                         </div>
 
@@ -2828,8 +3136,8 @@ class HTMLReportGenerator:
                 const cellA = rowA.children[colIdx]?.innerText?.trim() || '';
                 const cellB = rowB.children[colIdx]?.innerText?.trim() || '';
 
-                const cleanA = cellA.replace(/[₹,%+x⭐]/g, '').split('/')[0].trim();
-                const cleanB = cellB.replace(/[₹,%+x⭐]/g, '').split('/')[0].trim();
+                const cleanA = cellA.replace(/^(P\\/E:|ROCE:|QoQ:|Prom:)/i, '').replace(/[₹,%+x⭐🔥]/g, '').split('/')[0].trim();
+                const cleanB = cellB.replace(/^(P\\/E:|ROCE:|QoQ:|Prom:)/i, '').replace(/[₹,%+x⭐🔥]/g, '').split('/')[0].trim();
                 const numA = parseFloat(cleanA);
                 const numB = parseFloat(cleanB);
 
@@ -3550,6 +3858,27 @@ class HTMLReportGenerator:
             showSyncToast('✅ <b>Live CMP &amp; Sell Advisory Synced:</b> Accurate market quotes &amp; exit recommendations updated!');
         }}
 
+        function getPortfolioStrategyMode() {{
+            const sel = document.getElementById('portStrategyMode');
+            if (sel && sel.value) return sel.value;
+            try {{
+                return localStorage.getItem('stock_ai_port_strategy') || 'long_term';
+            }} catch (e) {{
+                return 'long_term';
+            }}
+        }}
+
+        async function onPortfolioStrategyChange() {{
+            const mode = getPortfolioStrategyMode();
+            try {{
+                localStorage.setItem('stock_ai_port_strategy', mode);
+            }} catch (e) {{}}
+            window.PORTFOLIO_AUDIT_DATA = {{}};
+            renderPortfolio();
+            await syncPortfolioAuditFromServer();
+            renderPortfolio();
+        }}
+
         async function syncPortfolioAuditFromServer() {{
             const port = getPortfolio();
             if (!port || port.length === 0) return;
@@ -3559,7 +3888,7 @@ class HTMLReportGenerator:
                 const res = await fetch('http://127.0.0.1:5005/api/portfolio_audit', {{
                     method: 'POST',
                     headers: {{ 'Content-Type': 'application/json' }},
-                    body: JSON.stringify({{ holdings: port }}),
+                    body: JSON.stringify({{ holdings: port, strategy_mode: getPortfolioStrategyMode() }}),
                     signal: controller.signal
                 }});
                 clearTimeout(timeoutId);
@@ -3587,18 +3916,23 @@ class HTMLReportGenerator:
             if (typeof ENRICHED_PROFILES !== 'undefined' && ENRICHED_PROFILES[sym] && ENRICHED_PROFILES[sym].cmp > 0) {{
                 return {{ cmp: ENRICHED_PROFILES[sym].cmp, change_pct: ENRICHED_PROFILES[sym].change_pct || 0 }};
             }}
-            // 4. Check scanned market tables (EXCLUDING portfolio table to avoid buy-price collision!)
-            const marketRow = document.querySelector(
-                '#view-momentum tr[data-symbol="' + sym + '"], ' +
-                '#view-fifty_two_week tr[data-symbol="' + sym + '"], ' +
-                '#view-radar tr[data-symbol="' + sym + '"], ' +
-                '#view-leaderboard tr[data-symbol="' + sym + '"]'
-            );
-            if (marketRow) {{
-                const cmpCell = marketRow.children[2]?.innerText || '';
-                const clean = parseFloat(cmpCell.replace(/[₹,]/g, ''));
-                if (!isNaN(clean) && clean > 0) {{
-                    return {{ cmp: clean, change_pct: 0.0 }};
+            // 4. Table-aware CMP lookup (accounting for dedicated CIO Rating / Archetype columns)
+            const tableColLookups = [
+                ['#view-momentum tr[data-symbol="' + sym + '"]', 3],
+                ['#view-radar tr[data-symbol="' + sym + '"]', 3],
+                ['#view-leaderboard tr[data-symbol="' + sym + '"]', 3],
+                ['#view-fifty_two_week tr[data-symbol="' + sym + '"]', 2],
+            ];
+            for (const [sel, colIdx] of tableColLookups) {{
+                const row = document.querySelector(sel);
+                if (row && row.children[colIdx]) {{
+                    const cmpCell = row.children[colIdx].innerText || '';
+                    if (cmpCell.includes('₹')) {{
+                        const clean = parseFloat(cmpCell.replace(/[₹,]/g, '').split(/\\s+/)[0]);
+                        if (!isNaN(clean) && clean > 0) {{
+                            return {{ cmp: clean, change_pct: 0.0 }};
+                        }}
+                    }}
                 }}
             }}
             return null;
@@ -3647,25 +3981,39 @@ class HTMLReportGenerator:
                     ? `<b style="color:#38bdf8;">₹${{cmp.toLocaleString('en-IN', {{minimumFractionDigits: 2}})}}</b>`
                     : `<span style="color:#f59e0b; font-size:12px;" title="Fetching live quote from daemon...">⏳ ₹${{cmp.toLocaleString('en-IN', {{minimumFractionDigits: 2}})}}</span>`;
 
-                // Calculate Trailing Stop-Loss & Senior CIO Action
-                let trailingSL = h.buyPrice * 0.92;
+                // Calculate Trailing Stop-Loss & Senior CIO Action based on active Strategy Horizon
+                const stratMode = getPortfolioStrategyMode();
+                let trailingSL = h.buyPrice * 0.88;
                 let actionBadge = '🟢 STRONG HOLD';
                 let actionColor = '#10b981';
-                let actionReason = 'Price maintaining support above trailing SL. Hold for target.';
+                let actionReason = 'Structural posture intact above long-term floor. Let winner compound.';
 
                 const prof = (typeof ENRICHED_PROFILES !== 'undefined' && ENRICHED_PROFILES[h.symbol]) ? ENRICHED_PROFILES[h.symbol] : null;
                 const ema20 = prof && prof.ema_20 ? prof.ema_20 : (cmp * 0.97);
                 const ema50 = prof && prof.ema_50 ? prof.ema_50 : (cmp * 0.94);
+                const ema200 = prof && prof.ema_200 ? prof.ema_200 : (cmp * 0.88);
                 const rsi = prof && prof.rsi ? prof.rsi : 55.0;
 
-                if (pnlPct >= 35.0) {{
-                    trailingSL = Math.max(ema20 * 0.985, cmp * 0.91, h.buyPrice * 1.15);
-                }} else if (pnlPct >= 15.0) {{
-                    trailingSL = Math.max(ema50 * 0.98, h.buyPrice * 1.02);
-                }} else if (pnlPct >= 0) {{
-                    trailingSL = Math.min(h.buyPrice * 0.92, ema50 * 0.97);
+                if (stratMode === 'long_term') {{
+                    if (pnlPct >= 50.0) {{
+                        trailingSL = Math.max(ema200 * 0.98, cmp * 0.85, h.buyPrice * 1.15);
+                    }} else if (pnlPct >= 15.0) {{
+                        trailingSL = Math.max(ema200 * 0.96, h.buyPrice * 1.00);
+                    }} else if (pnlPct >= 0) {{
+                        trailingSL = Math.min(h.buyPrice * 0.88, ema200 * 0.95);
+                    }} else {{
+                        trailingSL = Math.min(h.buyPrice * 0.85, ema200 * 0.93);
+                    }}
                 }} else {{
-                    trailingSL = h.buyPrice * 0.92;
+                    if (pnlPct >= 35.0) {{
+                        trailingSL = Math.max(ema20 * 0.985, cmp * 0.91, h.buyPrice * 1.15);
+                    }} else if (pnlPct >= 15.0) {{
+                        trailingSL = Math.max(ema50 * 0.98, h.buyPrice * 1.02);
+                    }} else if (pnlPct >= 0) {{
+                        trailingSL = Math.min(h.buyPrice * 0.92, ema50 * 0.97);
+                    }} else {{
+                        trailingSL = h.buyPrice * 0.92;
+                    }}
                 }}
                 trailingSL = Math.round(trailingSL * 100) / 100;
 
@@ -3676,9 +4024,9 @@ class HTMLReportGenerator:
                         actionColor = '#f97316';
                         actionReason = 'CMP breached trailing profit stop of ₹' + trailingSL.toFixed(2) + '. Lock in remaining gains!';
                     }} else {{
-                        actionBadge = '🔴 CUT LOSS';
+                        actionBadge = '🔴 FLOOR BREACHED';
                         actionColor = '#dc2626';
-                        actionReason = 'CMP breached -8% risk stop at ₹' + trailingSL.toFixed(2) + '. Cut loser quickly!';
+                        actionReason = 'CMP breached risk stop at ₹' + trailingSL.toFixed(2) + '. Reassess or cut loser.';
                     }}
                     atRiskCount++;
                     urgentAlerts.push({{
@@ -3686,16 +4034,20 @@ class HTMLReportGenerator:
                         badge: actionBadge,
                         color: actionColor,
                         reason: actionReason,
-                        action: 'Sell ' + h.qty + ' shares at ₹' + cmp.toFixed(2) + ' to preserve capital.'
+                        action: 'Review / exit ' + h.qty + ' shares at ₹' + cmp.toFixed(2) + ' to preserve capital.'
                     }});
-                }} else if (pnlPct >= 40.0 && rsi >= 75.0) {{
+                }} else if (stratMode === 'swing' && pnlPct >= 40.0 && rsi >= 75.0) {{
                     actionBadge = '🟠 BOOK 35% PROFIT';
                     actionColor = '#f59e0b';
-                    actionReason = 'Extremely overbought (RSI ' + rsi.toFixed(1) + ') after +' + pnlPct.toFixed(1) + '% run. Book partial gains!';
-                }} else if (pnlPct >= 25.0 && cmp < ema20) {{
+                    actionReason = 'Overbought swing (RSI ' + rsi.toFixed(1) + ') after +' + pnlPct.toFixed(1) + '% run. Book partial gains!';
+                }} else if (stratMode === 'swing' && pnlPct >= 25.0 && cmp < ema20) {{
                     actionBadge = '🟡 TRIM 25%';
                     actionColor = '#eab308';
                     actionReason = 'Slipped below 20-EMA; protect +' + pnlPct.toFixed(1) + '% profit by trimming 25%.';
+                }} else if (stratMode === 'long_term' && cmp >= ema200 && prof && (prof.fund_score >= 6.8 || prof.is_bullish)) {{
+                    actionBadge = '🟢 LET COMPOUNDER RIDE';
+                    actionColor = '#10b981';
+                    actionReason = 'Long-term wealth posture intact above 200-EMA (₹' + ema200.toFixed(2) + ') with strong fundamentals.';
                 }} else if (prof && prof.is_bullish) {{
                     actionBadge = '🟢 STRONG HOLD (LEADER)';
                     actionColor = '#10b981';
@@ -3710,7 +4062,7 @@ class HTMLReportGenerator:
                     if (srv.trailing_stop_loss) trailingSL = srv.trailing_stop_loss;
                     if (srv.rationale) actionReason = srv.rationale;
 
-                    if (srv.action_code === 'EMERGENCY_SELL' || srv.action_code === 'EXIT_TRAILING_SL' || srv.action_code === 'CUT_LOSS') {{
+                    if (srv.action_code === 'EMERGENCY_SELL' || srv.action_code === 'EXIT_TRAILING_SL' || srv.action_code === 'CUT_LOSS' || srv.action_code === 'TREND_BREAKDOWN_SELL') {{
                         if (!urgentAlerts.find(a => a.symbol === h.symbol)) {{
                             atRiskCount++;
                             urgentAlerts.push({{
@@ -3865,9 +4217,9 @@ class HTMLReportGenerator:
 
             let actionBadge = srv ? srv.action_badge : (pnlPct >= 35 ? '🟢 STRONG HOLD' : '🟢 HOLD');
             let actionColor = srv ? srv.action_color : '#10b981';
-            let rationale = srv ? srv.rationale : (prof ? prof.strategy_exp : 'Trend structure intact with stop-loss protection active.');
-            let actionDetail = srv ? srv.suggested_action_detail : ('Maintain position of ' + h.qty + ' shares with active trailing stop.');
-            let trailingSL = srv ? srv.trailing_stop_loss : (pnlPct >= 35 ? cmp * 0.92 : h.buyPrice * 0.92);
+            let rationale = srv ? srv.rationale : (prof ? (prof.buy_entry_strategy || prof.strategy_exp || 'Structural posture intact.') : 'Trend structure intact with stop-loss protection active.');
+            let actionDetail = srv ? srv.suggested_action_detail : ('Maintain position of ' + h.qty + ' shares with active structural floor.');
+            let trailingSL = srv ? srv.trailing_stop_loss : (pnlPct >= 35 ? cmp * 0.88 : h.buyPrice * 0.88);
             let catalyst = srv && srv.news_catalyst ? srv.news_catalyst : 'Stable financial news flow with no critical governance warnings detected.';
 
             const ema20 = prof && prof.ema_20 ? ('₹' + prof.ema_20.toFixed(2)) : 'N/A';
@@ -3946,6 +4298,11 @@ class HTMLReportGenerator:
                 currentTheme = localStorage.getItem('stock_ai_theme') || 'dark';
             }} catch (e) {{}}
             applyTheme(currentTheme);
+            try {{
+                const savedMode = localStorage.getItem('stock_ai_port_strategy');
+                const modeSel = document.getElementById('portStrategyMode');
+                if (savedMode && modeSel) modeSel.value = savedMode;
+            }} catch (e) {{}}
 
             populateSectorFilter();
             renderPortfolio();

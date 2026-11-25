@@ -1,23 +1,35 @@
+import json
 import urllib.parse
 import xml.etree.ElementTree as ET
 import requests
 from typing import List, Dict, Any, Tuple
 from datetime import datetime
+import config
+
 
 class NewsSentimentAnalyst:
     """
-    Advanced financial news & sentiment analyst.
-    Queries real-time Indian financial news (Google News RSS), classifies events by severity,
-    and detects critical corporate governance, forensic, regulatory, and earnings catalysts
-    for both Buy discovery and Portfolio Sell/Exit warnings.
+    Financial news & governance risk analyst.
+    Resolves full company names from NSE catalog to prevent ticker acronym collisions,
+    filters out generic market-wide crash listicles / past recovery headlines,
+    and isolates genuine company-specific regulatory, forensic, and earnings catalysts.
     """
 
-    CRITICAL_BEARISH_KEYWORDS = [
+    STRICT_GOVERNANCE_KEYWORDS = [
         "sebi probe", "sebi notice", "cbi probe", "ed probe", "fraud", "auditor resigns",
         "forensic audit", "debt default", "insolvency", "nclt", "us fda warning", "import alert",
-        "oai status", "promoter pledged", "pledge increased", "strike", "delisting",
-        "q1 net loss", "q2 net loss", "q3 net loss", "q4 net loss", "profit sinks", "crash",
-        "tax evasion", "cfo resigns", "ceo resigns abruptly", "governance lapse", "fined by sebi"
+        "oai status", "tax evasion", "cfo resigns", "ceo resigns abruptly", "governance lapse",
+        "fined by sebi", "delisting"
+    ]
+
+    CONTEXTUAL_NEGATIVE_KEYWORDS = [
+        "q1 net loss", "q2 net loss", "q3 net loss", "q4 net loss", "profit sinks",
+        "pledge increased", "strike", "crash"
+    ]
+
+    GENERIC_MARKET_NOISE_PHRASES = [
+        "stock market crash", "sensex falls", "nifty falls", "top losers today",
+        "why sensex", "market crash", "rebounds", "recovers after", "bounces back"
     ]
 
     BEARISH_KEYWORDS = [
@@ -40,15 +52,46 @@ class NewsSentimentAnalyst:
         "block deal", "bulk deal", "promoter buying", "insider buy"
     ]
 
+    _COMPANY_NAME_MAP: Dict[str, str] = {}
+
+    @classmethod
+    def _resolve_company_name(cls, clean_sym: str, company_name: str = "") -> str:
+        """Resolves official company name from nse_stocks.json to eliminate short-ticker ambiguity."""
+        if company_name and company_name.strip().upper() != clean_sym:
+            return company_name.strip()
+        if not cls._COMPANY_NAME_MAP:
+            try:
+                catalog_path = config.DATA_DIR / "nse_stocks.json"
+                if catalog_path.exists():
+                    with open(catalog_path, "r", encoding="utf-8") as f:
+                        for item in json.load(f):
+                            s = item.get("symbol", "").strip().upper()
+                            n = item.get("name", "").strip()
+                            if s and n:
+                                cls._COMPANY_NAME_MAP[s] = n
+            except Exception:
+                pass
+        return cls._COMPANY_NAME_MAP.get(clean_sym, clean_sym)
+
     def fetch_stock_news(self, symbol: str, company_name: str = "", limit: int = 12) -> List[Dict[str, Any]]:
-        """Queries Google News RSS for Indian market context."""
+        """Queries Google News RSS using resolved company name + exchange context."""
         clean_sym = symbol.strip().upper().replace(".NS", "").replace(".BO", "")
-        query_term = f"{clean_sym} share price OR {company_name} NSE stock" if company_name else f"{clean_sym} share price NSE"
+        resolved_name = self._resolve_company_name(clean_sym, company_name)
+        short_brand = resolved_name.replace(" Ltd.", "").replace(" Limited", "").strip()
+
+        query_term = (
+            f'"{short_brand}" OR {clean_sym} NSE share'
+            if short_brand and short_brand.upper() != clean_sym
+            else f"{clean_sym} share price NSE"
+        )
         encoded_query = urllib.parse.quote(query_term)
         rss_url = f"https://news.google.com/rss/search?q={encoded_query}&hl=en-IN&gl=IN&ceid=IN:en"
 
         headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            )
         }
 
         articles = []
@@ -62,7 +105,9 @@ class NewsSentimentAnalyst:
                     pub_date = item.find("pubDate").text if item.find("pubDate") is not None else ""
                     source = item.find("source").text if item.find("source") is not None else "Financial News"
 
-                    sentiment, score_contrib, is_critical = self._evaluate_headline_event(title)
+                    sentiment, score_contrib, is_strict_gov, is_ctx_neg = self._evaluate_headline_event(
+                        title, clean_sym, short_brand
+                    )
                     articles.append({
                         "title": title,
                         "source": source,
@@ -70,7 +115,8 @@ class NewsSentimentAnalyst:
                         "link": link,
                         "sentiment": sentiment,
                         "weight": score_contrib,
-                        "is_critical": is_critical
+                        "is_strict_governance": is_strict_gov,
+                        "is_critical": is_strict_gov or is_ctx_neg,
                     })
         except Exception as e:
             articles.append({
@@ -80,38 +126,55 @@ class NewsSentimentAnalyst:
                 "link": "#",
                 "sentiment": "Neutral",
                 "weight": 0,
-                "is_critical": False
+                "is_strict_governance": False,
+                "is_critical": False,
             })
 
         return articles
 
-    def _evaluate_headline_event(self, text: str) -> Tuple[str, float, bool]:
-        """Classifies headline sentiment with severity grading for senior fund manager auditing."""
+    def _evaluate_headline_event(
+        self, text: str, clean_sym: str = "", brand_name: str = ""
+    ) -> Tuple[str, float, bool, bool]:
+        """Classifies headline sentiment while guarding against generic roundup false positives."""
         lower = text.lower()
+        is_generic_roundup = any(p in lower for p in self.GENERIC_MARKET_NOISE_PHRASES)
 
-        # Check critical events first
-        for kw in self.CRITICAL_BEARISH_KEYWORDS:
-            if kw in lower:
-                return "Critical Bearish", -4.0, True
+        mentions_company = True
+        if clean_sym or brand_name:
+            first_word = brand_name.split()[0].lower() if brand_name else ""
+            mentions_company = (
+                (clean_sym.lower() in lower)
+                or (len(first_word) >= 4 and first_word in lower)
+            )
 
-        for kw in self.CRITICAL_BULLISH_KEYWORDS:
-            if kw in lower:
-                return "Strong Bullish", +3.0, False
+        # 1. Strict governance / regulatory hazards (explicit company attribution required)
+        if mentions_company and any(kw in lower for kw in self.STRICT_GOVERNANCE_KEYWORDS):
+            return "Critical Bearish", -4.0, True, False
 
-        # Regular catalysts
+        # 2. Severe operational negative headlines (suppress generic market-crash roundups)
+        if mentions_company and not is_generic_roundup and any(kw in lower for kw in self.CONTEXTUAL_NEGATIVE_KEYWORDS):
+            return "Critical Bearish", -3.0, False, True
+
+        # 3. Structural bullish catalysts
+        if not is_generic_roundup and any(kw in lower for kw in self.CRITICAL_BULLISH_KEYWORDS):
+            return "Strong Bullish", +3.0, False, False
+
         bear_matches = sum(1 for kw in self.BEARISH_KEYWORDS if kw in lower)
         bull_matches = sum(1 for kw in self.BULLISH_KEYWORDS if kw in lower)
 
         if bear_matches > bull_matches:
-            return "Bearish", -2.0, False
-        elif bull_matches > bear_matches:
-            return "Bullish", +1.5, False
+            return "Bearish", -1.8 if not is_generic_roundup else -0.5, False, False
+        if bull_matches > bear_matches:
+            return "Bullish", +1.5, False, False
 
-        return "Neutral", 0.0, False
+        return "Neutral", 0.0, False, False
 
     def analyze(self, symbol: str, company_name: str = "") -> Dict[str, Any]:
-        """Generates comprehensive news sentiment audit and sell risk evaluation."""
-        articles = self.fetch_stock_news(symbol, company_name)
+        """Generates news sentiment audit with multi-article confirmation for critical alerts."""
+        clean_sym = symbol.strip().upper().replace(".NS", "").replace(".BO", "")
+        resolved_name = self._resolve_company_name(clean_sym, company_name)
+        articles = self.fetch_stock_news(clean_sym, resolved_name)
+
         if not articles:
             return {
                 "score": 5.0,
@@ -123,10 +186,15 @@ class NewsSentimentAnalyst:
                 "catalysts": [],
                 "has_critical_bearish_event": False,
                 "critical_alerts": [],
-                "sell_risk_score": 3.0,
+                "sell_risk_score": 2.5,
                 "top_bearish_catalysts": [],
-                "top_bullish_catalysts": []
+                "top_bullish_catalysts": [],
             }
+
+        strict_gov_alerts = [a["title"] for a in articles if a.get("is_strict_governance")]
+        all_crit_alerts = [a["title"] for a in articles if a.get("is_critical")]
+        # Require either strict governance probe/fraud alert OR >=2 corroborated critical bearish articles
+        has_critical = (len(strict_gov_alerts) >= 1) or (len(all_crit_alerts) >= 2)
 
         crit_bear_count = sum(1 for a in articles if a["sentiment"] == "Critical Bearish")
         reg_bear_count = sum(1 for a in articles if a["sentiment"] == "Bearish")
@@ -137,17 +205,10 @@ class NewsSentimentAnalyst:
         total_bear = crit_bear_count + reg_bear_count
         neutral_count = len(articles) - total_bull - total_bear
 
-        critical_alerts = [a["title"] for a in articles if a.get("is_critical", False)]
-        has_critical = len(critical_alerts) > 0
+        sentiment_delta = (crit_bull_count * 2.2) + (reg_bull_count * 1.2) - (crit_bear_count * 3.5) - (reg_bear_count * 1.5)
+        final_score = max(1.0, min(round(5.0 + sentiment_delta, 1), 10.0))
 
-        # Sentiment Delta Calculation:
-        # Critical bearish events heavily penalize score
-        sentiment_delta = (crit_bull_count * 2.5) + (reg_bull_count * 1.5) - (crit_bear_count * 4.0) - (reg_bear_count * 2.0)
-        raw_score = 5.0 + sentiment_delta
-        final_score = max(1.0, min(round(raw_score, 1), 10.0))
-
-        # Sell risk score (1.0 = safe, 10.0 = emergency sell risk)
-        raw_sell_risk = 2.0 + (crit_bear_count * 4.0) + (reg_bear_count * 1.5) - (total_bull * 1.0)
+        raw_sell_risk = 2.0 + (len(strict_gov_alerts) * 4.5) + (crit_bear_count * 2.0) + (reg_bear_count * 1.0) - (total_bull * 0.8)
         sell_risk = max(1.0, min(round(raw_sell_risk, 1), 10.0))
 
         if has_critical:
@@ -174,8 +235,8 @@ class NewsSentimentAnalyst:
             "neutral_count": neutral_count,
             "catalysts": catalysts,
             "has_critical_bearish_event": has_critical,
-            "critical_alerts": critical_alerts,
+            "critical_alerts": all_crit_alerts if has_critical else [],
             "sell_risk_score": sell_risk,
             "top_bearish_catalysts": top_bear,
-            "top_bullish_catalysts": top_bull
+            "top_bullish_catalysts": top_bull,
         }

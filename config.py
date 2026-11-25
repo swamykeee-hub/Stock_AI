@@ -37,12 +37,22 @@ TECH_CONFIG = {
 
 # Fundamental Criteria
 FUNDAMENTAL_CONFIG = {
-    "MIN_ROCE": 15.0,           # >= 15%
-    "MIN_ROE": 12.0,            # >= 12%
-    "MAX_DEBT_TO_EQUITY": 1.5,  # <= 1.5
-    "MIN_PROMOTER_HOLDING": 45.0, # >= 45%
-    "MAX_PROMOTER_PLEDGE": 5.0, # <= 5%
-    "MIN_3YR_PROFIT_GROWTH": 10.0 # >= 10%
+    "MIN_ROCE": 15.0,             # >= 15%
+    "MIN_ROE": 12.0,              # >= 12%
+    "MAX_DEBT_TO_EQUITY": 0.75,   # <= 0.75 for non-financial compounders
+    "MIN_PROMOTER_HOLDING": 40.0, # >= 40% (relaxed for widely held institutional monopolies)
+    "MAX_PROMOTER_PLEDGE": 5.0,   # <= 5%
+    "MIN_3YR_PROFIT_GROWTH": 12.0 # >= 12%
+}
+
+# Long-Term Multibagger & Turnaround Inflection Criteria ("Laurus Labs Blueprint")
+MULTIBAGGER_CONFIG = {
+    "MIN_OPM_EXPANSION_BPS": 150,     # >= +1.5% (+150 bps) quarterly operating margin expansion
+    "MIN_QTR_PAT_YOY_SURGE": 20.0,    # >= +20% YoY quarterly profit acceleration
+    "MIN_CFO_TO_PAT_3Y": 0.75,        # >= 75% 3-Year Operating Cash Flow / Net Profit conversion
+    "MAX_PEG_RATIO": 1.8,             # Fair GARP valuation ceiling
+    "MIDCAP_SWEET_SPOT_MIN_CR": 1500, # High-growth wealth compounding runway min market cap (Cr)
+    "MIDCAP_SWEET_SPOT_MAX_CR": 60000 # High-growth runway ceiling (Cr); larger = Core Blue-Chip
 }
 
 # Daily Automation Settings

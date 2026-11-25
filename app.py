@@ -80,6 +80,7 @@ from core.global_macro_news import GlobalMacroNewsAnalyst
 from core.mutual_fund_analyst import MutualFundAnalyst
 from core.ipo_analyst import IPOAnalyst
 from core.fifty_two_week_high_tracker import FiftyTwoWeekHighTracker
+from core.factor_screener import SmartFactorScreener
 from scheduler import DailyAutomator
 
 # Initialize core agents
@@ -95,9 +96,10 @@ def get_agents():
     ipo_analyst = IPOAnalyst()
     automator = DailyAutomator()
     tracker_52w = FiftyTwoWeekHighTracker()
-    return market_data, synthesizer, scanner, momentum_screener, fund_radar, macro_news, mf_analyst, ipo_analyst, automator, tracker_52w
+    factor_screener = SmartFactorScreener()
+    return market_data, synthesizer, scanner, momentum_screener, fund_radar, macro_news, mf_analyst, ipo_analyst, automator, tracker_52w, factor_screener
 
-market_data, synthesizer, scanner, momentum_screener, fund_radar, macro_news, mf_analyst, ipo_analyst, automator, tracker_52w = get_agents()
+market_data, synthesizer, scanner, momentum_screener, fund_radar, macro_news, mf_analyst, ipo_analyst, automator, tracker_52w, factor_screener = get_agents()
 
 # Load 501+ NSE Universe from Backend Server Data for Autocomplete & Tracking
 @st.cache_data
@@ -186,8 +188,9 @@ except Exception as e:
 st.markdown("---")
 
 # Navigation Tabs
-tab_momentum, tab_52w, tab_radar, tab_deep_dive, tab_macro_news, tab_mutual_funds, tab_scanner, tab_ipo, tab_automation = st.tabs([
+tab_momentum, tab_factors, tab_52w, tab_radar, tab_deep_dive, tab_macro_news, tab_mutual_funds, tab_scanner, tab_ipo, tab_automation = st.tabs([
     "🏆 Super-Trend & Momentum Scanner (3M/6M/1Y/2Y/3Y)",
+    "💎 Factor & Value Finder (Vol/Promoter/PAT/ROCE/Val)",
     "🚀 52-Week High Leaders (Dynamic Live Radar)",
     "🎯 AI Fund Manager Radar (Monitored Stocks)",
     "🔍 360° Stock Deep Dive",
@@ -324,6 +327,69 @@ with tab_momentum:
                 st.info(f"ℹ️ **Status for {sym_clean}:** 1-Year return is {res_tf.get('ret_1y')}% (trading {res_tf.get('dist_52w')}% below 52W high). It is currently in sideways consolidation/base-building and is omitted from top momentum breakout lists until Stage-2 momentum resumes.")
             else:
                 st.success(f"✅ **Status for {sym_clean}:** In positive multi-horizon momentum (+{res_tf.get('ret_1y')}% 1Y). Trading {res_tf.get('dist_52w')}% from 52-week high.")
+
+# ==============================================================================
+# TAB 1B: DEDICATED 5-FACTOR VALUE & PROMOTER INFLECTION FINDER
+# ==============================================================================
+with tab_factors:
+    st.subheader("💎 5-Factor Value, Promoter Buying & Earnings Inflection Finder")
+    st.caption(
+        "Traces Volume Increasing + Promoter Shares Increasing + QoQ & YoY Profit Surge + "
+        "ROCE & ROE Expansion + Undervalued / Low Multiple setups across 509 NSE stocks."
+    )
+
+    fc_col1, fc_col2 = st.columns([3, 1])
+    with fc_col2:
+        refresh_fac = st.button("🔄 Rescan 5-Factor Screener", type="primary", use_container_width=True)
+
+    with st.spinner("Scanning NSE 509 universe for 5-Factor Value & Inflection setups..."):
+        factor_rows_data = factor_screener.scan_factors(force_refresh=refresh_fac)
+
+    if factor_rows_data:
+        ff1, ff2, ff3, ff4, ff5 = st.columns(5)
+        chk_vol = ff1.checkbox("📈 Volume Up", value=False)
+        chk_prom = ff2.checkbox("🤝 Promoter Buying", value=False)
+        chk_pat = ff3.checkbox("🚀 QoQ & YoY PAT Surge", value=False)
+        chk_eff = ff4.checkbox("⚡ ROCE & ROE Up", value=False)
+        chk_val = ff5.checkbox("💎 Low Valuation", value=False)
+
+        filtered_fac = []
+        for row in factor_rows_data:
+            if chk_vol and not row.get("flag_vol"):
+                continue
+            if chk_prom and not row.get("flag_promoter"):
+                continue
+            if chk_pat and not row.get("flag_profit_high"):
+                continue
+            if chk_eff and not row.get("flag_eff_up"):
+                continue
+            if chk_val and not row.get("flag_low_value"):
+                continue
+            filtered_fac.append(row)
+
+        st.success(f"Found **{len(filtered_fac)}** matching candidates (out of {len(factor_rows_data)} multi-signal stocks).")
+        df_fac = []
+        for r in filtered_fac:
+            df_fac.append({
+                "Symbol": r["symbol"],
+                "Sector": r["sector"],
+                "Matches": f"{r['matches_count']}/5",
+                "Score": f"{r['factor_score']}/10",
+                "CMP (₹)": r["cmp"],
+                "4W Vol": f"{r['vol_trend_4w']}x",
+                "Prom % (4Q Δ)": f"{r['promoter_pct']}% ({r['promoter_4q_delta']:+.2f}%)",
+                "FII+DII 4Q Δ": f"{r['inst_4q_delta']:+.1f}%",
+                "Qtr PAT QoQ": f"{r['qtr_pat_qoq_pct']:+.1f}%" if r.get("qtr_pat_qoq_pct") is not None else "—",
+                "Qtr PAT YoY": f"{r['qtr_pat_yoy_pct']:+.1f}%" if r.get("qtr_pat_yoy_pct") is not None else "—",
+                "ROCE (Δ)": f"{r['roce_latest']}% ({r['roce_delta']:+.1f}%)" if r.get("roce_delta") is not None else f"{r['roce_latest']}%",
+                "ROE (Δ vs 3Y)": f"{r['roe_latest']}% ({r['roe_delta']:+.1f}%)" if r.get("roe_delta") is not None else f"{r['roe_latest']}%",
+                "P/E | PEG": f"{r['pe']}x | {r['peg'] if r.get('peg') is not None else '—'}",
+                "Valuation Tag": r["valuation_tag"],
+            })
+        if df_fac:
+            st.dataframe(pd.DataFrame(df_fac), use_container_width=True)
+    else:
+        st.info("Click 'Rescan 5-Factor Screener' to run a fresh scan across NSE 509.")
 
 # ==============================================================================
 # TAB: 52-WEEK HIGH LEADERS (DYNAMIC LIVE RADAR & DEEP ANALYSIS)
@@ -616,9 +682,10 @@ with tab_deep_dive:
         # Buy Entry Rationale & Strategy Guidance
         st.markdown("##### 🏛️ Buy Entry Rationale & Strategy Guidance")
         if report.get("action_tag") == "BUY":
-            st.success(f"**Momentum Breakout Entry:** High relative strength confirmed. Accumulate in tranches across **{plan['suggested_entry']}** with stop loss strictly at **₹{plan['stop_loss']}** and upside targets at **₹{plan['target_1']}** and **₹{plan['target_2']}**.")
+            st.success(f"**Momentum & Compounder Entry:** High institutional conviction confirmed. Accumulate in tranches across **{plan['suggested_entry']}** with stop loss at **₹{plan['stop_loss']}** targeting **₹{plan['target_1']}** and **₹{plan['target_2']}**.")
         else:
-            st.info(f"**Value Accumulation / Base-Building Entry:** {report['symbol']} is currently consolidating (-{abs(tf.get('ret_1y', 0))}% 1Y). For medium-to-long term investors, accumulating on dips near the 200 EMA support (**{plan['suggested_entry']}**) provides a high margin of safety with stop loss at **₹{plan['stop_loss']}**. For momentum breakout traders, wait for a confirmed weekly close above **₹{plan['target_1']}** on expanding volume before taking fresh aggressive positions.")
+            ret1y_val = tf.get('ret_1y', 0.0)
+            st.info(f"**Value Accumulation / Base-Building Entry:** {report['symbol']} is currently consolidating ({ret1y_val:+.1f}% 1Y). For long-term investors, accumulating on dips near the 200 EMA support (**{plan['suggested_entry']}**) provides a margin of safety with stop loss at **₹{plan['stop_loss']}**. For momentum breakout traders, wait for a confirmed weekly close above **₹{plan['target_1']}** on expanding volume.")
 
         # Interactive Candlestick Chart
         candles = tech.get("df_indicators")
@@ -807,24 +874,30 @@ with tab_scanner:
         trigger_scan = st.button("🔄 Run Live Bullish Scan", type="primary")
 
     if trigger_scan or "latest_scan_results" not in st.session_state:
-        with st.spinner("Agentic Scanner analyzing top Indian stocks across all 360° indicators..."):
-            st.session_state["latest_scan_results"] = scanner.scan_market(max_stocks=35, max_workers=8)
+        with st.spinner("Two-Pass Multibagger Scanner analyzing all 509+ NSE stocks for Laurus-Type Inflections & Compounders..."):
+            st.session_state["latest_scan_results"] = scanner.scan_market(max_stocks=509, max_workers=6)
 
     picks = st.session_state.get("latest_scan_results", [])
 
     if picks:
-        st.success(f"Discovered **{len(picks)}** stocks with high-conviction bullish setups.")
+        st.success(f"Discovered **{len(picks)}** multibagger / Stage-2 bullish setups across the full 509-stock NSE universe.")
         
         table_data = []
         for p in picks:
+            opm_exp = p.get("opm_expansion_bps")
+            pat_yoy = p.get("qtr_pat_yoy_pct")
             table_data.append({
                 "Symbol": p["symbol"],
-                "Company": p["name"],
+                "Archetype": p.get("archetype_short", "Stage-2 Breakout"),
+                "MCap Tier": p.get("mcap_tier", "Mid/Large Cap"),
                 "Sector": p["sector"],
                 "CMP (₹)": p["cmp"],
-                "1Y Return": f"{p.get('ret_1y', 0.0)}%",
                 "Conviction": f"{p['conviction_score']}/10",
-                "RSI": p["rsi"],
+                "ROCE (%)": p.get("roce_pct", 0.0),
+                "D/E": p.get("debt_to_equity", "N/A"),
+                "OPM Exp": f"{opm_exp:+.0f} bps" if opm_exp is not None else "—",
+                "Qtr PAT YoY": f"{pat_yoy:+.1f}%" if pat_yoy is not None else "—",
+                "1Y Return": f"{p.get('ret_1y', 0.0):+.1f}%",
                 "Target 1 (₹)": p["target_1"],
                 "Stop Loss (₹)": p["stop_loss"],
                 "R:R": p["risk_reward"]

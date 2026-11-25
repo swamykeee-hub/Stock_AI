@@ -15,7 +15,7 @@ import requests
 import pandas as pd
 from core.market_data import MarketDataManager
 from core.technical_analyst import TechnicalAnalyst
-from core.fundamental_analyst import FundamentalAnalyst
+from core.fundamental_analyst import FundamentalAnalyst, parse_float_safe
 
 class FiftyTwoWeekHighTracker:
     """
@@ -69,9 +69,11 @@ class FiftyTwoWeekHighTracker:
             else:
                 curated_list.append({"symbol": sym, "name": sym, "sector": "Equities"})
 
-        # Add remaining stocks up to 150 liquid candidates
+        # Add all remaining NSE catalog stocks so no midcap/smallcap breakout is skipped
+        seen = set(priority_symbols)
         for s in all_stocks:
-            if s["symbol"] not in priority_symbols and len(curated_list) < 140:
+            if s["symbol"] not in seen:
+                seen.add(s["symbol"])
                 curated_list.append(s)
 
         return curated_list
@@ -128,10 +130,9 @@ class FiftyTwoWeekHighTracker:
 
         print(f"  -> Found {len(raw_hits)} stocks at/near 52W High. Performing Deep 360° Audits...")
 
-        # Deep audit for qualifying 52W high stocks
-        for item in raw_hits:
-            deep_profile = self._deep_analyze_stock(item)
-            qualifying_stocks.append(deep_profile)
+        # Deep audit for qualifying 52W high stocks (concurrent to prevent slow sequential bottleneck)
+        with ThreadPoolExecutor(max_workers=6) as deep_exec:
+            qualifying_stocks = [res for res in deep_exec.map(self._deep_analyze_stock, raw_hits) if res]
 
         # Sort by proximity to 52W high (closest to high first)
         qualifying_stocks.sort(key=lambda x: x["dist_52w"])
@@ -185,12 +186,22 @@ class FiftyTwoWeekHighTracker:
             if len(closes) >= 200:
                 ret_1y = round(((cmp - closes[0]) / closes[0]) * 100, 1)
 
-        # 2. Fundamentals
+        # 2. Fundamentals (reads normalized Screener metrics cleanly)
         fund = self.fund_analyst.analyze(sym)
-        pe = fund.get("pe_ratio", 28.5)
-        roce = fund.get("roce", 24.2)
-        roe = fund.get("roe", 20.1)
-        mcap_cr = fund.get("market_cap_cr", 15000.0)
+        metrics = fund.get("metrics", {})
+        inflection = fund.get("inflection", {})
+        balance_inst = fund.get("balance_inst", {})
+
+        pe = parse_float_safe(metrics.get("stock_pe")) or 0.0
+        roce = parse_float_safe(metrics.get("roce_pct")) or 0.0
+        roe = parse_float_safe(metrics.get("roe_pct")) or 0.0
+        mcap_cr = parse_float_safe(metrics.get("market_cap_cr")) or 0.0
+        de_ratio = parse_float_safe(metrics.get("debt_to_equity"))
+        opm_exp_bps = inflection.get("opm_expansion_bps")
+        qtr_pat_yoy = inflection.get("qtr_pat_yoy_pct")
+        fii_dii_delta = balance_inst.get("inst_4q_delta_pct", 0.0)
+        fund_score = fund.get("score", 5.0)
+        inflection_score = fund.get("inflection_score", 5.0)
 
         # 3. Breakout Quality Classification
         if dist <= 0.5:
@@ -261,6 +272,12 @@ class FiftyTwoWeekHighTracker:
             "roce": roce,
             "roe": roe,
             "mcap_cr": mcap_cr,
+            "debt_to_equity": de_ratio,
+            "opm_expansion_bps": opm_exp_bps,
+            "qtr_pat_yoy_pct": qtr_pat_yoy,
+            "fii_dii_delta_pct": fii_dii_delta,
+            "fund_score": fund_score,
+            "inflection_score": inflection_score,
             "quality": quality,
             "quality_badge": quality_badge,
             "conviction": conviction,
