@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-25 08:46:05",
+  "timestamp": "2026-11-25 09:16:18",
   "dividends": [
     {
       "stock_name": "Vraj Iron",
@@ -36,24 +36,24 @@
       "stock_name": "RBM Infracon",
       "symbol": "RI45",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9202.60",
-      "market_cap": "\u20b9215.42 Cr"
+      "ltp": "\u20b9202.50",
+      "market_cap": "\u20b9215.32 Cr"
     },
     {
       "date": "25 Nov",
       "stock_name": "Ajwa Projects",
       "symbol": "APL13",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b984.35",
-      "market_cap": "\u20b946.4 Cr"
+      "ltp": "\u20b980.15",
+      "market_cap": "\u20b944.09 Cr"
     },
     {
       "date": "25 Nov",
       "stock_name": "Simbhaoli Sugars",
       "symbol": "SSM04",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b96.20",
-      "market_cap": "\u20b925.59 Cr"
+      "ltp": "\u20b96.24",
+      "market_cap": "\u20b925.76 Cr"
     }
   ],
   "splits_and_actions": [
