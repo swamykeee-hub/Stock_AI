@@ -3179,7 +3179,7 @@ class HTMLReportGenerator:
             setTimeout(() => {{ toast.style.display = 'none'; }}, duration);
         }}
 
-        async function triggerLiveRefresh() {{
+        async function triggerLiveRefresh(isAuto = false) {{
             const btn = document.getElementById('refreshBtn');
             const icon = btn.querySelector('.refresh-icon');
             const btnText = document.getElementById('refreshBtnText');
@@ -3189,15 +3189,16 @@ class HTMLReportGenerator:
             btn.disabled = true;
 
             const isOnlineHosted = window.location.hostname.includes('github.io') || (window.location.protocol.startsWith('http') && !window.location.hostname.includes('127.0.0.1') && !window.location.hostname.includes('localhost'));
+            const pushFlag = isAuto ? 'false' : 'true';
 
             try {{
                 showSyncToast('⏳ <b>Syncing Live Feeds:</b> Querying real-time market quotes...');
                 const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 12000);
+                const timeoutId = setTimeout(() => controller.abort(), 95000);
 
                 let localSuccess = false;
                 try {{
-                    const response = await fetch('http://127.0.0.1:5005/api/refresh?mode=quick&push=true', {{
+                    const response = await fetch(`http://127.0.0.1:5005/api/refresh?mode=quick&push=${{pushFlag}}`, {{
                         method: 'GET',
                         headers: {{ 'Accept': 'application/json' }},
                         signal: controller.signal
@@ -3207,13 +3208,14 @@ class HTMLReportGenerator:
                     if (response.ok) {{
                         localSuccess = true;
                         const data = await response.json();
-                        showSyncToast('✅ <b>Market Data & CMP Synced!</b> Updated local dashboard & pushed live to GitHub Pages. Reloading...');
+                        showSyncToast(isAuto ? '✅ <b>Live Feeds Updated!</b> Reloading fresh market prices...' : '✅ <b>Market Data & CMP Synced!</b> Updated local dashboard & pushed live to GitHub Pages. Reloading...');
                         setTimeout(() => {{
                             window.location.reload();
                         }}, 700);
                         return;
                     }}
                 }} catch (fetchErr) {{
+                    clearTimeout(timeoutId);
                     // Daemon not reachable on 127.0.0.1:5005
                 }}
 
@@ -3247,11 +3249,11 @@ class HTMLReportGenerator:
 
         function startAutoReadTimer() {{
             if (autoReadTimer) clearInterval(autoReadTimer);
-            // 3 minutes = 180,000 ms
+            // 3 minutes = 180,000 ms (background daemon owns git push with cooldown; UI stays local)
             autoReadTimer = setInterval(() => {{
                 if (autoReadEnabled && isDaemonOnline) {{
                     console.log('[IndianStockAI] Auto-read timer triggered live refresh.');
-                    triggerLiveRefresh();
+                    triggerLiveRefresh(true);
                 }}
             }}, 180000);
         }}

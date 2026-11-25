@@ -5,7 +5,7 @@
     "sector": "Healthcare",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
     "monitoring_status": "Auto-Discovered Entry (\u20b93794.02 \u2014 \u20b93913.87)",
-    "entry_trigger": 3891.2,
+    "entry_trigger": 3888.5,
     "target_3m": 4361.73,
     "target_1y": 5140.61,
     "stop_loss": 3543.25,
@@ -19,7 +19,7 @@
       "Superior ROE: 24.0%",
       "Fortress Balance Sheet (D/E: 0.01x)"
     ],
-    "cmp": 3891.2,
+    "cmp": 3888.5,
     "day_change_pct": 0.27
   },
   {
@@ -28,7 +28,7 @@
     "sector": "Healthcare",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
     "monitoring_status": "Auto-Discovered Entry (\u20b91632.19 \u2014 \u20b91673.83)",
-    "entry_trigger": 1678.8,
+    "entry_trigger": 1679.4,
     "target_3m": 1865.36,
     "target_1y": 2198.46,
     "stop_loss": 1535.7,
@@ -42,7 +42,7 @@
       "Superior ROE: 27.0%",
       "Cash Generative Profits (CFO/EBITDA: 78%)"
     ],
-    "cmp": 1678.8,
+    "cmp": 1679.4,
     "day_change_pct": -0.53
   },
   {
@@ -51,7 +51,7 @@
     "sector": "Oil Gas & Consumable Fuels",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
     "monitoring_status": "Auto-Discovered Entry (\u20b91388.66 \u2014 \u20b91424.08)",
-    "entry_trigger": 1407.3,
+    "entry_trigger": 1403.6,
     "target_3m": 1587.04,
     "target_1y": 1870.44,
     "stop_loss": 1316.27,
@@ -65,7 +65,7 @@
       "Superior ROE: 32.5%",
       "Fortress Balance Sheet (D/E: 0.17x)"
     ],
-    "cmp": 1407.3,
+    "cmp": 1403.6,
     "day_change_pct": -1.9
   },
   {
@@ -74,7 +74,7 @@
     "sector": "Fast Moving Consumer Goods",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
     "monitoring_status": "Auto-Discovered Entry (\u20b94515.76 \u2014 \u20b94686.62)",
-    "entry_trigger": 4735.7,
+    "entry_trigger": 4731.2,
     "target_3m": 5222.9,
     "target_1y": 6155.56,
     "stop_loss": 4387.83,
@@ -88,7 +88,7 @@
       "Superior ROE: 20.3%",
       "Fortress Balance Sheet (D/E: 0.11x)"
     ],
-    "cmp": 4735.7,
+    "cmp": 4731.2,
     "day_change_pct": 0.59
   },
   {
@@ -110,7 +110,7 @@
       "US FDA non-critical inspection clearance",
       "Non-ARV API diversification"
     ],
-    "cmp": 2405.1,
+    "cmp": 2410.3,
     "day_change_pct": 1.55,
     "fifty_two_week_high": 2488.0,
     "fifty_two_week_low": 917.95,
@@ -136,7 +136,7 @@
       "Monetization of StAR MF platform transaction fees",
       "New commodity and interest rate derivative product rollouts"
     ],
-    "cmp": 3782.4,
+    "cmp": 3783.3,
     "day_change_pct": 0.88,
     "fifty_two_week_high": 4446.8,
     "fifty_two_week_low": 2377.4,
@@ -162,7 +162,7 @@
       "Star Bazaar grocery retail turning EBITDA positive",
       "Rapid store addition pace accelerating market share"
     ],
-    "cmp": 3303.8,
+    "cmp": 3306.4,
     "day_change_pct": 1.98,
     "fifty_two_week_high": 4417.8,
     "fifty_two_week_low": 2183.667,
@@ -214,7 +214,7 @@
       "Kakinada mega-facility commercial batch commencement",
       "EBITDA margins reverting to historical 38-40% band"
     ],
-    "cmp": 11361.0,
+    "cmp": 11383.5,
     "day_change_pct": 1.12,
     "fifty_two_week_high": 11824.0,
     "fifty_two_week_low": 5647.5,
@@ -240,7 +240,7 @@
       "Institutional and FPI commodity participation growth",
       "New electricity and base metal index derivative launches"
     ],
-    "cmp": 3545.4,
+    "cmp": 3537.0,
     "day_change_pct": -1.61,
     "baseline_conviction": 8.4,
     "conviction_source": "Live Auto-Synced"
@@ -312,7 +312,7 @@
       "IT Hardware PLI 2.0 contract executions",
       "Operating leverage in high-volume smartphone segment"
     ],
-    "cmp": 13230.0,
+    "cmp": 13206.0,
     "day_change_pct": -0.48,
     "fifty_two_week_high": 15775.0,
     "fifty_two_week_low": 9600.0,
@@ -338,7 +338,7 @@
       "Export agreements with friendly foreign nations (SE Asia / Africa)",
       "Fifth-generation AMCA fighter jet development milestone"
     ],
-    "cmp": 4818.5,
+    "cmp": 4822.3,
     "day_change_pct": 0.7,
     "fifty_two_week_high": 5149.9,
     "fifty_two_week_low": 3479.1,
@@ -364,7 +364,7 @@
       "Airline and airport digital modernization deals",
       "BFSI generative AI testing contracts scale"
     ],
-    "cmp": 2106.6,
+    "cmp": 2101.8,
     "day_change_pct": -1.42,
     "baseline_conviction": 7.4,
     "conviction_source": "Live Auto-Synced"
@@ -387,7 +387,7 @@
       "Railway Kavach collision avoidance electronics rollout",
       "Defense export orders expansion to Southeast Asia and Middle East"
     ],
-    "cmp": 397.2,
+    "cmp": 398.25,
     "day_change_pct": 0.48,
     "baseline_conviction": 9.0,
     "conviction_source": "Live Auto-Synced"
@@ -410,7 +410,7 @@
       "BFSI tech modernization spending rebound",
       "High margin software IP solutions ramp-up"
     ],
-    "cmp": 6191.0,
+    "cmp": 6199.0,
     "day_change_pct": -0.68,
     "baseline_conviction": 8.0,
     "conviction_source": "Live Auto-Synced"
@@ -433,7 +433,7 @@
       "Record new mutual fund folio and SIP inflows",
       "Alternative Investment Fund (AIF) administration fees growth"
     ],
-    "cmp": 936.0,
+    "cmp": 937.8,
     "day_change_pct": -0.42,
     "baseline_conviction": 7.2,
     "conviction_source": "Live Auto-Synced"
@@ -456,7 +456,7 @@
       "Surge in IPO listings driving corporate fee revenues",
       "Insurance electronic depository (e-IA) policy adoption"
     ],
-    "cmp": 1411.3,
+    "cmp": 1413.3,
     "day_change_pct": 0.64,
     "baseline_conviction": 6.6,
     "conviction_source": "Live Auto-Synced"
@@ -479,7 +479,7 @@
       "Execution of new electric two-wheeler and three-wheeler motor orders",
       "North America and Europe supply agreement expansions"
     ],
-    "cmp": 886.25,
+    "cmp": 884.25,
     "day_change_pct": 0.28,
     "baseline_conviction": 6.8,
     "conviction_source": "Live Auto-Synced"

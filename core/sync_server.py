@@ -45,26 +45,66 @@ def is_market_hours() -> bool:
     market_close = now.replace(hour=15, minute=45, second=0, microsecond=0)
     return market_open <= now <= market_close
 
-def push_to_github_pages(commit_msg: str = None) -> bool:
-    """Non-blocking background git commit and push to GitHub Pages."""
-    try:
-        import subprocess
-        now_str = get_ist_now().strftime("%Y-%m-%d %H:%M:%S")
-        msg = commit_msg or f"chore(auto-update): live market sync {now_str}"
-        subprocess.run(["git", "add", "index.html", "dashboard.html", "data/"], cwd=str(config.BASE_DIR), capture_output=True, timeout=15)
-        res_commit = subprocess.run(["git", "commit", "-m", msg], cwd=str(config.BASE_DIR), capture_output=True, timeout=15)
-        res_push = subprocess.run(["git", "push", "origin", "main"], cwd=str(config.BASE_DIR), capture_output=True, text=True, timeout=30)
-        if res_push.returncode == 0:
-            print(f"[{now_str}] 🚀 Automatically published live update to GitHub Pages!")
-            return True
-        else:
-            print(f"[{now_str}] Git push output: {res_push.stderr.strip() or res_push.stdout.strip()}")
+_refresh_lock = threading.Lock()
+_git_push_lock = threading.Lock()
+_last_git_push_ts = 0.0
+MIN_PUSH_COOLDOWN_SECONDS = 180
+
+
+def push_to_github_pages(commit_msg: str = None, force: bool = False) -> bool:
+    """Serialized git commit and push to GitHub Pages with cooldown & rebase safety."""
+    global _last_git_push_ts
+    with _git_push_lock:
+        try:
+            import subprocess
+            now_epoch = time.time()
+            elapsed = now_epoch - _last_git_push_ts
+            if not force and elapsed < MIN_PUSH_COOLDOWN_SECONDS:
+                wait_rem = int(MIN_PUSH_COOLDOWN_SECONDS - elapsed)
+                print(f"[AutoPush Cooldown] Skipping push ({wait_rem}s remaining) to prevent Pages deployment collision.")
+                return True
+
+            now_str = get_ist_now().strftime("%Y-%m-%d %H:%M:%S")
+            msg = commit_msg or f"chore(auto-update): live market sync {now_str}"
+            files_to_stage = ["index.html", "dashboard.html", "data/"]
+            if (config.BASE_DIR / ".nojekyll").exists():
+                files_to_stage.append(".nojekyll")
+
+            subprocess.run(["git", "add"] + files_to_stage, cwd=str(config.BASE_DIR), capture_output=True, timeout=15)
+            diff_check = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=str(config.BASE_DIR), capture_output=True, timeout=10)
+            if diff_check.returncode == 0:
+                return True
+
+            subprocess.run(["git", "commit", "-m", msg], cwd=str(config.BASE_DIR), capture_output=True, timeout=15)
+
+            # Rebase safely onto origin/main before pushing so parallel updates never reject or collide
+            rebase_res = subprocess.run(
+                ["git", "pull", "--rebase", "--autostash", "origin", "main"],
+                cwd=str(config.BASE_DIR), capture_output=True, text=True, timeout=30
+            )
+            if rebase_res.returncode != 0:
+                subprocess.run(["git", "rebase", "--abort"], cwd=str(config.BASE_DIR), capture_output=True, timeout=10)
+
+            res_push = subprocess.run(["git", "push", "origin", "main"], cwd=str(config.BASE_DIR), capture_output=True, text=True, timeout=35)
+            if res_push.returncode == 0:
+                _last_git_push_ts = time.time()
+                print(f"[{now_str}] 🚀 Automatically published live update to GitHub Pages!")
+                return True
+            else:
+                print(f"[{now_str}] Git push output: {res_push.stderr.strip() or res_push.stdout.strip()}")
+                return False
+        except Exception as e:
+            print(f"[AutoPush Notice] Could not publish to GitHub: {e}")
             return False
-    except Exception as e:
-        print(f"[AutoPush Notice] Could not publish to GitHub: {e}")
-        return False
+
 
 def refresh_all_live_data(mode: str = "quick", auto_push: bool = False) -> dict:
+    """Serialized entry point for refreshing market data so parallel requests cannot race."""
+    with _refresh_lock:
+        return _refresh_all_live_data_locked(mode=mode, auto_push=auto_push)
+
+
+def _refresh_all_live_data_locked(mode: str = "quick", auto_push: bool = False) -> dict:
     """
     Refreshes all domestic benchmark indices, global macro, and updates
     real-time CMP for all stocks across momentum, 52W breakouts, radar, and bullish picks.
@@ -323,10 +363,16 @@ class SyncRequestHandler(BaseHTTPRequestHandler):
         self._set_cors_headers(200)
 
     def do_GET(self):
-        self._handle_request()
+        try:
+            self._handle_request()
+        except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
+            pass
 
     def do_POST(self):
-        self._handle_request()
+        try:
+            self._handle_request()
+        except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
+            pass
 
     def _handle_request(self):
         parsed = urlparse(self.path)
@@ -343,9 +389,14 @@ class SyncRequestHandler(BaseHTTPRequestHandler):
                     self._set_cors_headers(200, content_type="text/html; charset=utf-8")
                     self.wfile.write(content)
                     return
+                except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
+                    return
                 except Exception as e:
-                    self._set_cors_headers(500)
-                    self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
+                    try:
+                        self._set_cors_headers(500)
+                        self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
+                    except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
+                        pass
                     return
 
         if path == "/api/status":
@@ -447,14 +498,23 @@ class SyncRequestHandler(BaseHTTPRequestHandler):
                         "message": "Full daily market scan completed successfully!"
                     }
                 else:
-                    auto_push = params.get("push", ["true"])[0] == "true" or is_market_hours()
+                    push_param = params.get("push", [None])[0]
+                    auto_push = (push_param.lower() == "true") if push_param is not None else is_market_hours()
                     resp = refresh_all_live_data(mode=mode, auto_push=auto_push)
 
-                self._set_cors_headers(200)
-                self.wfile.write(json.dumps(resp).encode("utf-8"))
+                try:
+                    self._set_cors_headers(200)
+                    self.wfile.write(json.dumps(resp).encode("utf-8"))
+                except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
+                    pass
+            except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
+                pass
             except Exception as e:
-                self._set_cors_headers(500)
-                self.wfile.write(json.dumps({"status": "error", "error": str(e)}).encode("utf-8"))
+                try:
+                    self._set_cors_headers(500)
+                    self.wfile.write(json.dumps({"status": "error", "error": str(e)}).encode("utf-8"))
+                except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
+                    pass
             return
 
         if path == "/api/institutional_flow":
