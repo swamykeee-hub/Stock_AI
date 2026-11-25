@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-25 15:37:11",
+  "timestamp": "2026-11-25 15:41:29",
   "indices": {
     "NIFTY 50": {
       "value": 25819.25,
@@ -7,9 +7,9 @@
       "percent": 1.85
     },
     "SENSEX": {
-      "value": 83895.2,
-      "change": 1459.21,
-      "percent": 1.77
+      "value": 83968.73,
+      "change": 1532.73,
+      "percent": 1.86
     },
     "BANK NIFTY": {
       "value": 63703.25,
@@ -95,14 +95,14 @@
         "change_pct": -2.79
       },
       "FTSE 100": {
-        "price": 10500.52,
-        "change": 33.45,
-        "change_pct": 0.32
+        "price": 10505.17,
+        "change": 38.1,
+        "change_pct": 0.36
       },
       "DAX": {
-        "price": 24977.5,
-        "change": -40.31,
-        "change_pct": -0.16
+        "price": 25017.18,
+        "change": -0.63,
+        "change_pct": -0.0
       },
       "Hang Seng": {
         "price": 21966.01,
@@ -112,9 +112,9 @@
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 88.47,
-        "change": -0.31,
-        "change_pct": -0.35
+        "price": 88.2,
+        "change": -0.58,
+        "change_pct": -0.65
       },
       "US 10-Yr Yield (%)": {
         "price": 4.9,
@@ -122,14 +122,14 @@
         "change_pct": -0.28
       },
       "US Dollar Index (DXY)": {
-        "price": 104.07,
+        "price": 104.06,
         "change": 0.25,
         "change_pct": 0.24
       },
       "Gold ($/oz)": {
-        "price": 3556.9,
-        "change": -34.2,
-        "change_pct": -0.95
+        "price": 3556.5,
+        "change": -34.6,
+        "change_pct": -0.96
       },
       "USD / INR": {
         "price": 92.22,
@@ -141,7 +141,7 @@
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.9%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-25 15:37:35"
+    "timestamp": "2026-11-25 15:41:57"
   },
   "market_regime": {
     "nifty_cmp": 25769.95,
@@ -19603,7 +19603,7 @@
     }
   ],
   "institutional_flow": {
-    "timestamp": "2026-11-25 15:38:27",
+    "timestamp": "2026-11-25 15:42:49",
     "fii_dii_latest": {
       "date": "2026-11-23",
       "formatted_date": "Mon 23 Nov, 2026",
@@ -19783,15 +19783,15 @@
       }
     ],
     "derivatives": {
-      "pcr": 0.91,
-      "total_call_oi": 1983248,
-      "total_put_oi": 1808317,
+      "pcr": 0.92,
+      "total_call_oi": 1966570,
+      "total_put_oi": 1801608,
       "max_pain_strike": 25700.0,
       "status": "LIVE"
     },
     "smart_money_sentiment": "BALANCED",
     "sentiment_badge": "\ud83d\udd35 BALANCED / RANGE-BOUND",
-    "sentiment_rationale": "Nifty PCR is balanced at 0.91 around Max Pain strike (25700.0). Institutions active with FII 5,672.99 Cr and DII -2,760.12 Cr."
+    "sentiment_rationale": "Nifty PCR is balanced at 0.92 around Max Pain strike (25700.0). Institutions active with FII 5,672.99 Cr and DII -2,760.12 Cr."
   },
   "corporate_actions": {
     "timestamp": "2026-11-25 10:03:18",
@@ -19886,7 +19886,7 @@
     "total_events": 10
   },
   "performance_scorecard": {
-    "timestamp": "2026-11-25 15:38:28",
+    "timestamp": "2026-11-25 15:42:49",
     "total_picks_tracked": 42,
     "win_rate_pct": 75.0,
     "resolved_trades_count": 8,
@@ -20289,7 +20289,7 @@
     ]
   },
   "market_movers": {
-    "timestamp": "2026-11-25 15:38:28",
+    "timestamp": "2026-11-25 15:42:49",
     "top_gainers": [
       {
         "symbol": "JWL",
@@ -20628,7 +20628,7 @@
   "total_screened": 509,
   "disclaimer": "Application Designed and Developed by Swamy Chouhan - 9000632912. DISCLAIMER: This system is an AI-driven educational and research analytics tool. It does not provide SEBI-registered investment advice or guaranteed return recommendations. Stock markets involve risk. Always consult a certified financial advisor before trading.",
   "feed_health": {
-    "checked_at": "2026-11-25 15:38:28 IST",
+    "checked_at": "2026-11-25 15:42:49 IST",
     "healthy_count": 5,
     "total_feeds": 5,
     "feeds": [
@@ -20637,14 +20637,14 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "5s ago",
-        "updated_at": "25-Nov 15:38 IST",
+        "updated_at": "25-Nov 15:42 IST",
         "detail": "14 indices, 122 picks"
       },
       {
         "feed": "AMFI Live NAVs",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "4.8h ago",
+        "age": "4.9h ago",
         "updated_at": "25-Nov 10:47 IST",
         "detail": "8/8 Live NAVs"
       },
@@ -20652,23 +20652,23 @@
         "feed": "FII/DII & Nifty PCR",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "1s ago",
-        "updated_at": "25-Nov 15:38 IST",
-        "detail": "PCR 0.91 (LIVE)"
+        "age": "0s ago",
+        "updated_at": "25-Nov 15:42 IST",
+        "detail": "PCR 0.92 (LIVE)"
       },
       {
         "feed": "NSE Movers Feed",
         "status": "FRESH",
         "color": "#10b981",
         "age": "0s ago",
-        "updated_at": "25-Nov 15:38 IST",
+        "updated_at": "25-Nov 15:42 IST",
         "detail": "15 gainers / 15 losers"
       },
       {
         "feed": "Corporate Actions",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "5.6h ago",
+        "age": "5.7h ago",
         "updated_at": "25-Nov 10:03 IST",
         "detail": "10 events tracked"
       }
