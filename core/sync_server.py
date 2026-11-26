@@ -547,12 +547,30 @@ class SyncRequestHandler(BaseHTTPRequestHandler):
 
         if path == "/api/candles":
             sym = params.get("symbol", ["TCS"])[0].strip().upper()
-            period = params.get("period", ["6m"])[0]
+            raw_period = params.get("period", ["6mo"])[0].strip().lower()
+            period_slice_map = {
+                "1m": 22, "1mo": 22,
+                "3m": 63, "3mo": 63,
+                "6m": 126, "6mo": 126,
+                "1y": 252,
+            }
+            fetch_period = "2y" if raw_period in ("2y", "5y") else "1y"
+            if raw_period in ("5y",):
+                fetch_period = "5y"
             try:
                 m = MarketDataManager()
-                df = m.get_historical_candles(sym, period=period, interval="1d")
+                df = m.get_historical_candles(sym, period=fetch_period, interval="1d")
                 candles = []
                 if not df.empty:
+                    close_s = df["Close"].astype(float)
+                    ema20_s = close_s.ewm(span=20, adjust=False).mean()
+                    ema50_s = close_s.ewm(span=50, adjust=False).mean()
+                    df = df.copy()
+                    df["EMA_20"] = ema20_s
+                    df["EMA_50"] = ema50_s
+                    tail_n = period_slice_map.get(raw_period)
+                    if tail_n and len(df) > tail_n:
+                        df = df.tail(tail_n)
                     for _, row in df.iterrows():
                         candles.append({
                             "time": row["Date"].strftime("%Y-%m-%d"),
@@ -560,10 +578,12 @@ class SyncRequestHandler(BaseHTTPRequestHandler):
                             "high": round(float(row["High"]), 2),
                             "low": round(float(row["Low"]), 2),
                             "close": round(float(row["Close"]), 2),
-                            "volume": int(row.get("Volume", 0))
+                            "volume": int(row.get("Volume", 0) or 0),
+                            "ema20": round(float(row["EMA_20"]), 2),
+                            "ema50": round(float(row["EMA_50"]), 2),
                         })
                 self._set_cors_headers(200)
-                self.wfile.write(json.dumps({"symbol": sym, "candles": candles}).encode("utf-8"))
+                self.wfile.write(json.dumps({"symbol": sym, "period": raw_period, "candles": candles}).encode("utf-8"))
             except Exception as e:
                 self._set_cors_headers(500)
                 self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))

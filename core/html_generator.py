@@ -127,15 +127,16 @@ class HTMLReportGenerator:
         if market_regime:
             score = market_regime.get("market_score", 75)
             regime_label = market_regime.get("regime_label", "Bull Market")
-            lead = ", ".join(market_regime.get("leading_sectors", [])[:2])
+            short_regime = regime_label.replace("High-Confidence ", "").replace("Moderate ", "")
+            lead = ", ".join(s.replace("Nifty ", "") for s in market_regime.get("leading_sectors", [])[:2])
             bg_art, theme_cls = get_index_visual_backdrop("SENIOR CIO MARKET STANCE")
             indices_html += f"""
-            <div class="index-card {theme_cls}" style="border: 1px solid #10b981; background: rgba(16, 185, 129, 0.08);">
+            <div class="index-card {theme_cls}" style="border: 1px solid #10b981; background: rgba(16, 185, 129, 0.08);" title="{regime_label} | Health: {score}/100 | Leading: {lead}">
                 {bg_art}
                 <div class="index-card-content">
-                    <div class="index-name" style="color: #38bdf8;">🎯 Senior CIO Market Stance</div>
-                    <div class="index-val" style="font-size: 15px; color: #10b981;">{regime_label}</div>
-                    <div class="index-chg" style="color: var(--text-heading); font-size: 11px;">Health: <b>{score}/100</b> &bull; Leading: {lead}</div>
+                    <div class="index-name" style="color: #38bdf8;">🎯 CIO Market Stance</div>
+                    <div class="index-val" style="font-size: 14px; color: #10b981;">{short_regime}</div>
+                    <div class="index-chg" style="color: var(--text-heading); font-size: 11px;">Health: <b>{score}/100</b> &bull; {lead}</div>
                 </div>
             </div>
             """
@@ -156,14 +157,15 @@ class HTMLReportGenerator:
             pcr_color = "#10b981" if pcr_val > 1.0 else ("#f59e0b" if pcr_val > 0.75 else "#ef4444")
             fii_val = lat.get("fii_cash_net", "0")
             dii_val = lat.get("dii_cash_net", "0")
+            max_pain = deriv.get("max_pain_strike", "—")
             bg_art, theme_cls = get_index_visual_backdrop("INSTITUTIONAL FLOW & PCR")
             indices_html += f"""
-            <div class="index-card {theme_cls}" style="border: 1px solid #38bdf8; background: rgba(56, 189, 248, 0.08);">
+            <div class="index-card {theme_cls}" style="border: 1px solid #38bdf8; background: rgba(56, 189, 248, 0.08);" title="Nifty PCR: {pcr_val} | Max Pain: {max_pain} | FII: ₹{fii_val} Cr | DII: ₹{dii_val} Cr">
                 {bg_art}
                 <div class="index-card-content">
-                    <div class="index-name" style="color: #a78bfa;">🏛 Institutional Flow &amp; PCR</div>
-                    <div class="index-val" style="font-size: 15px; color: {pcr_color};">Nifty PCR: {pcr_val} &bull; Max Pain: {deriv.get('max_pain_strike', '—')}</div>
-                    <div class="index-chg" style="color: var(--text-heading); font-size: 11px;">FII: <b>₹{fii_val} Cr</b> &bull; DII: <b>₹{dii_val} Cr</b></div>
+                    <div class="index-name" style="color: #a78bfa;">🏛 Inst. Flow &amp; PCR</div>
+                    <div class="index-val" style="font-size: 14px; color: {pcr_color};">PCR: {pcr_val} &bull; MP: {max_pain}</div>
+                    <div class="index-chg" style="color: var(--text-heading); font-size: 11px;">FII: <b>{fii_val}</b> &bull; DII: <b>{dii_val}</b></div>
                 </div>
             </div>
             """

@@ -84,7 +84,9 @@ class MarketDataManager:
     def get_historical_candles(self, symbol: str, period: str = "1y", interval: str = "1d") -> pd.DataFrame:
         """Fetches historical OHLCV data using direct v8 API."""
         formatted_sym = self.format_symbol(symbol)
-        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{formatted_sym}?range={period}&interval={interval}"
+        period_map = {"1m": "1mo", "3m": "3mo", "6m": "6mo", "1w": "5d"}
+        yf_period = period_map.get(str(period).strip().lower(), period)
+        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{formatted_sym}?range={yf_period}&interval={interval}"
 
         try:
             r = requests.get(url, headers=self.HEADERS, timeout=10)

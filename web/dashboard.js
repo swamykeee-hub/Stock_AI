@@ -670,9 +670,9 @@
                             <div class="chart-title">
                                 <span>📈 ${symbol} &bull; Daily Candlestick Technical Chart</span>
                                 <div style="display:flex; gap:6px; margin-left:14px;">
-                                    <button class="chart-tf-btn" onclick="reloadCandleChart('${symbol}', '${canvasId}', '1m', this)">1M</button>
-                                    <button class="chart-tf-btn" onclick="reloadCandleChart('${symbol}', '${canvasId}', '3m', this)">3M</button>
-                                    <button class="chart-tf-btn active" onclick="reloadCandleChart('${symbol}', '${canvasId}', '6m', this)">6M</button>
+                                    <button class="chart-tf-btn" onclick="reloadCandleChart('${symbol}', '${canvasId}', '1mo', this)">1M</button>
+                                    <button class="chart-tf-btn" onclick="reloadCandleChart('${symbol}', '${canvasId}', '3mo', this)">3M</button>
+                                    <button class="chart-tf-btn active" onclick="reloadCandleChart('${symbol}', '${canvasId}', '6mo', this)">6M</button>
                                     <button class="chart-tf-btn" onclick="reloadCandleChart('${symbol}', '${canvasId}', '1y', this)">1Y</button>
                                 </div>
                             </div>
@@ -700,7 +700,7 @@
             tr.parentNode.insertBefore(drawerTr, tr.nextSibling);
             btn.innerText = '📉 Hide';
 
-            await fetchAndRenderCandles(symbol, canvasId, '6m');
+            await fetchAndRenderCandles(symbol, canvasId, '6mo');
         }
 
         async function reloadCandleChart(symbol, canvasId, period, tfBtn) {
@@ -712,46 +712,57 @@
         }
 
         async function fetchAndRenderCandles(symbol, canvasId, period) {
+            const safeSym = symbol.replace(/[^a-zA-Z0-9]/g, '_');
+            const tooltipEl = document.getElementById('chartTooltip_' + safeSym);
+            if (tooltipEl) {
+                tooltipEl.innerHTML = `⏳ Loading <b>${period.toUpperCase()}</b> candlestick data for <b>${symbol}</b>...`;
+            }
             let candles = [];
             try {
                 const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 4000);
-                const res = await fetch(`http://127.0.0.1:5005/api/candles?symbol=${encodeURIComponent(symbol)}&period=${period}`, {
+                const timeoutId = setTimeout(() => controller.abort(), 8000);
+                const res = await fetch(`http://127.0.0.1:5005/api/candles?symbol=${encodeURIComponent(symbol)}&period=${encodeURIComponent(period)}&_t=${Date.now()}`, {
+                    cache: 'no-store',
                     signal: controller.signal
                 });
                 clearTimeout(timeoutId);
                 if (res.ok) {
                     const data = await res.json();
-                    if (data.candles && data.candles.length > 0) {
+                    if (data.candles && data.candles.length > 1) {
                         candles = data.candles;
                     }
                 }
             } catch (e) {}
 
-            if (!candles || candles.length === 0) {
+            if (!candles || candles.length <= 1) {
                 candles = generateFallbackCandles(symbol, period);
             }
 
+            if (tooltipEl) {
+                tooltipEl.innerHTML = 'Hover over any candle to inspect Date, Open, High, Low, Close, and Volume';
+            }
             renderCanvasCandlesticks(canvasId, candles, symbol);
         }
 
         function generateFallbackCandles(symbol, period) {
+            const live = getLiveCMPForSymbol(symbol);
             const prof = (typeof ENRICHED_PROFILES !== 'undefined') ? ENRICHED_PROFILES[symbol] : null;
-            let basePrice = prof ? prof.cmp : 1500;
-            const numDays = period === '1m' ? 22 : period === '3m' ? 64 : period === '1y' ? 250 : 126;
+            let basePrice = (live && live.cmp > 0) ? live.cmp : (prof ? prof.cmp : 1500);
+            const pNorm = String(period || '6mo').toLowerCase();
+            const numDays = (pNorm === '1m' || pNorm === '1mo') ? 22 : (pNorm === '3m' || pNorm === '3mo') ? 63 : (pNorm === '1y') ? 250 : 126;
             const list = [];
             const now = new Date();
-            let current = basePrice * 0.85;
+            let current = basePrice * 0.90;
 
             for (let i = numDays; i >= 0; i--) {
                 const d = new Date(now.getTime() - i * 86400000);
                 if (d.getDay() === 0 || d.getDay() === 6) continue;
-                const changePct = (Math.random() - 0.48) * 0.035;
+                const changePct = (Math.random() - 0.48) * 0.03;
                 const open = current;
-                current = current * (1 + changePct);
+                current = i === 0 ? basePrice : current * (1 + changePct);
                 const close = current;
-                const high = Math.max(open, close) * (1 + Math.random() * 0.015);
-                const low = Math.min(open, close) * (1 - Math.random() * 0.015);
+                const high = Math.max(open, close) * (1 + Math.random() * 0.012);
+                const low = Math.min(open, close) * (1 - Math.random() * 0.012);
                 const vol = Math.floor(250000 + Math.random() * 1500000);
                 list.push({
                     time: d.toISOString().slice(0, 10),
@@ -779,7 +790,7 @@
             const height = 320;
             canvas.width = width * dpr;
             canvas.height = height * dpr;
-            ctx.scale(dpr, dpr);
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
             function calcEMA(data, period) {
                 const k = 2 / (period + 1);
@@ -802,8 +813,10 @@
                 return emaArr;
             }
 
-            const ema20 = calcEMA(candles, 20);
-            const ema50 = calcEMA(candles, 50);
+            const hasBackendEma20 = candles.every(c => typeof c.ema20 === 'number');
+            const hasBackendEma50 = candles.every(c => typeof c.ema50 === 'number');
+            const ema20 = hasBackendEma20 ? candles.map(c => c.ema20) : calcEMA(candles, 20);
+            const ema50 = hasBackendEma50 ? candles.map(c => c.ema50) : calcEMA(candles, 50);
 
             let minPrice = Infinity;
             let maxPrice = -Infinity;
