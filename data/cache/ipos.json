@@ -23,11 +23,11 @@
     "price_band": "\u20b9129.00 - \u20b9136.00",
     "lot_size": "110",
     "issue_size_cr": "9000.97",
-    "gmp_inr": "\u20b91.25",
-    "gmp_pct": 0.9,
+    "gmp_inr": "\u20b90.75",
+    "gmp_pct": 0.6,
     "subscription_total": "1.52x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9137 (+0.9%)"
+    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9137 (+0.6%)"
   },
   {
     "name": "Shree Siddhivinayak Greentech Industries",
@@ -38,11 +38,11 @@
     "price_band": "\u20b9130.00 - \u20b9142.00",
     "lot_size": "1,000",
     "issue_size_cr": "93.66",
-    "gmp_inr": "\u20b925.00",
-    "gmp_pct": 17.6,
-    "subscription_total": "1.29x",
-    "verdict": "\u2705 APPLY (Moderate Listing Gain)",
-    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9167 (+17.6%)"
+    "gmp_inr": "\u20b98.00",
+    "gmp_pct": 5.6,
+    "subscription_total": "1.31x",
+    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
+    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9150 (+5.6%)"
   },
   {
     "name": "Foodlink F&B Holdings",
@@ -53,26 +53,11 @@
     "price_band": "\u20b9181.00 - \u20b9191.00",
     "lot_size": "78",
     "issue_size_cr": "360.76",
-    "gmp_inr": "\u20b914.00",
-    "gmp_pct": 7.3,
-    "subscription_total": "1.08x",
+    "gmp_inr": "\u20b912.00",
+    "gmp_pct": 6.3,
+    "subscription_total": "1.09x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9205 (+7.3%)"
-  },
-  {
-    "name": "Integris Medtech",
-    "category": "Mainboard",
-    "sector": "Pharmaceuticals",
-    "status": "Upcoming",
-    "issue_period": "27 Nov 2026 \u2013 1 Dec 2026",
-    "price_band": "TBA",
-    "lot_size": "0",
-    "issue_size_cr": "0.00",
-    "gmp_inr": "\u20b90.00",
-    "gmp_pct": 0.0,
-    "subscription_total": "Yet to Open",
-    "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
-    "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b90 (+0.0%)"
+    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9203 (+6.3%)"
   },
   {
     "name": "Airpro Technology",
@@ -83,11 +68,11 @@
     "price_band": "\u20b999.00",
     "lot_size": "1,200",
     "issue_size_cr": "35.64",
-    "gmp_inr": "\u20b94.00",
-    "gmp_pct": 4.0,
+    "gmp_inr": "\u20b92.00",
+    "gmp_pct": 2.0,
     "subscription_total": "Yet to Open",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b9103 (+4.0%)"
+    "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b9101 (+2.0%)"
   },
   {
     "name": "A J Packaging",
@@ -128,11 +113,11 @@
     "price_band": "\u20b960.00 - \u20b965.00",
     "lot_size": "225",
     "issue_size_cr": "175.50",
-    "gmp_inr": "\u20b921.00",
-    "gmp_pct": 32.3,
+    "gmp_inr": "\u20b924.00",
+    "gmp_pct": 36.9,
     "subscription_total": "Yet to Open",
     "verdict": "\ud83d\udd25 STRONG APPLY (High Listing Gain)",
-    "analysis": "Dates: 2 Dec 2026 \u2013 4 Dec 2026 \u2022 Est. Listing: \u20b986 (+32.3%)"
+    "analysis": "Dates: 2 Dec 2026 \u2013 4 Dec 2026 \u2022 Est. Listing: \u20b989 (+36.9%)"
   },
   {
     "name": "Swara Baby Products",
@@ -143,7 +128,7 @@
     "price_band": "TBA",
     "lot_size": "0",
     "issue_size_cr": "0.00",
-    "gmp_inr": "\u2014",
+    "gmp_inr": "\u20b90.00",
     "gmp_pct": 0.0,
     "subscription_total": "Yet to Open",
     "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
@@ -178,6 +163,21 @@
     "subscription_total": "Yet to Open",
     "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
     "analysis": "Dates: 3 Dec 2026 \u2013 7 Dec 2026 \u2022 Est. Listing: \u20b90 (+0.0%)"
+  },
+  {
+    "name": "Integris Medtech",
+    "category": "Mainboard",
+    "sector": "Pharmaceuticals",
+    "status": "Upcoming",
+    "issue_period": "TBA",
+    "price_band": "TBA",
+    "lot_size": "0",
+    "issue_size_cr": "0.00",
+    "gmp_inr": "\u20b90.00",
+    "gmp_pct": 0.0,
+    "subscription_total": "Yet to Open",
+    "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
+    "analysis": "Dates: TBA \u2022 Est. Listing: \u20b90 (+0.0%)"
   },
   {
     "name": "Milestone Gears",

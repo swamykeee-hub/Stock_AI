@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-26 17:06:27",
+  "timestamp": "2026-11-26 17:20:52",
   "indices": {
     "NIFTY 50": {
       "value": 25884.5,
@@ -95,14 +95,14 @@
         "change_pct": 0.85
       },
       "FTSE 100": {
-        "price": 10595.55,
-        "change": 168.61,
-        "change_pct": 1.62
+        "price": 10590.94,
+        "change": 164.0,
+        "change_pct": 1.57
       },
       "DAX": {
-        "price": 25180.25,
-        "change": 478.12,
-        "change_pct": 1.94
+        "price": 25165.61,
+        "change": 463.48,
+        "change_pct": 1.88
       },
       "Hang Seng": {
         "price": 22226.88,
@@ -112,9 +112,9 @@
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 91.12,
-        "change": 0.48,
-        "change_pct": 0.53
+        "price": 91.31,
+        "change": 0.67,
+        "change_pct": 0.74
       },
       "US 10-Yr Yield (%)": {
         "price": 4.85,
@@ -122,14 +122,37 @@
         "change_pct": -1.14
       },
       "US Dollar Index (DXY)": {
-        "price": 103.79,
-        "change": 0.12,
-        "change_pct": 0.12
+        "price": 103.77,
+        "change": 0.11,
+        "change_pct": 0.1
+      },
+      "Gold 24K (\u20b9/10g)": {
+        "price": 124800.0,
+        "change": 1520.0,
+        "change_pct": 1.23,
+        "source": "GoodReturns"
+      },
+      "Gold 22K (\u20b9/10g)": {
+        "price": 114400.0,
+        "change": 1400.0,
+        "change_pct": 1.24,
+        "source": "GoodReturns"
+      },
+      "Silver (\u20b9/kg)": {
+        "price": 165000.0,
+        "change": 0.0,
+        "change_pct": 0.0,
+        "source": "GoodReturns"
       },
       "Gold ($/oz)": {
-        "price": 3592.0,
-        "change": 27.4,
-        "change_pct": 0.77
+        "price": 3592.5,
+        "change": 27.9,
+        "change_pct": 0.78
+      },
+      "Silver ($/oz)": {
+        "price": 41.76,
+        "change": 1.22,
+        "change_pct": 3.01
       },
       "USD / INR": {
         "price": 92.54,
@@ -141,7 +164,7 @@
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.85%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-26 17:06:35"
+    "timestamp": "2026-11-26 17:21:07"
   },
   "market_regime": {
     "nifty_cmp": 25802.35,
@@ -20009,7 +20032,7 @@
     }
   ],
   "institutional_flow": {
-    "timestamp": "2026-11-26 17:06:56",
+    "timestamp": "2026-11-26 17:21:39",
     "fii_dii_latest": {
       "date": "2026-11-25",
       "formatted_date": "Wed 25 Nov, 2026",
@@ -20294,7 +20317,7 @@
     "total_events": 10
   },
   "performance_scorecard": {
-    "timestamp": "2026-11-26 17:06:56",
+    "timestamp": "2026-11-26 17:21:40",
     "total_picks_tracked": 43,
     "win_rate_pct": 75.0,
     "resolved_trades_count": 8,
@@ -20697,7 +20720,7 @@
     ]
   },
   "market_movers": {
-    "timestamp": "2026-11-26 17:06:56",
+    "timestamp": "2026-11-26 17:21:40",
     "top_gainers": [
       {
         "symbol": "ACE",
@@ -21036,7 +21059,7 @@
   "total_screened": 509,
   "disclaimer": "Application Designed and Developed by Swamy Chouhan - 9000632912. DISCLAIMER: This system is an AI-driven educational and research analytics tool. It does not provide SEBI-registered investment advice or guaranteed return recommendations. Stock markets involve risk. Always consult a certified financial advisor before trading.",
   "feed_health": {
-    "checked_at": "2026-11-26 17:06:56 IST",
+    "checked_at": "2026-11-26 17:21:40 IST",
     "healthy_count": 5,
     "total_feeds": 5,
     "feeds": [
@@ -21044,15 +21067,15 @@
         "feed": "Yahoo NSE Quotes",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "1s ago",
-        "updated_at": "26-Nov 17:06 IST",
+        "age": "6s ago",
+        "updated_at": "26-Nov 17:21 IST",
         "detail": "14 indices, 124 picks"
       },
       {
         "feed": "AMFI Live NAVs",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "7.8h ago",
+        "age": "8.1h ago",
         "updated_at": "26-Nov 09:16 IST",
         "detail": "8/8 Live NAVs"
       },
@@ -21061,7 +21084,7 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "0s ago",
-        "updated_at": "26-Nov 17:06 IST",
+        "updated_at": "26-Nov 17:21 IST",
         "detail": "PCR 1.03 (LIVE)"
       },
       {
@@ -21069,14 +21092,14 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "0s ago",
-        "updated_at": "26-Nov 17:06 IST",
+        "updated_at": "26-Nov 17:21 IST",
         "detail": "15 gainers / 15 losers"
       },
       {
         "feed": "Corporate Actions",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "7.8h ago",
+        "age": "8.1h ago",
         "updated_at": "26-Nov 09:17 IST",
         "detail": "10 events tracked"
       }
