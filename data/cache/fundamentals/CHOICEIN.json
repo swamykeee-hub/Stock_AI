@@ -6,25 +6,25 @@
   "inflection_score": 10.0,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "16824",
-    "current_price": "755",
-    "stock_pe": "1055",
+    "market_cap_cr": "16945",
+    "current_price": "761",
+    "stock_pe": "1063",
     "book_value": "47.2",
     "dividend_yield_pct": "0",
     "roce_pct": "1.22",
     "roe_pct": "0.66",
     "debt_to_equity": "0.01",
     "face_value": "10",
-    "pb_ratio": "16.00",
-    "market_cap_num": 16824.0,
-    "current_price_num": 755.0,
-    "pe_num": 1055.0,
+    "pb_ratio": "16.12",
+    "market_cap_num": 16945.0,
+    "current_price_num": 761.0,
+    "pe_num": 1063.0,
     "book_value_num": 47.2,
     "roce_num": 1.22,
     "roe_num": 0.66,
-    "pb_num": 16.0,
-    "peg_ratio": "3.47",
-    "peg_num": 3.47
+    "pb_num": 16.12,
+    "peg_ratio": "3.50",
+    "peg_num": 3.5
   },
   "ranges": {
     "sales_cagr_3y": 30.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 304.0,
     "roe_3y": 1.0,
     "roe_5y": 1.0,
-    "price_cagr_3y": 51.0,
+    "price_cagr_3y": 52.0,
     "price_cagr_5y": 89.0
   },
   "inflection": {
@@ -84,6 +84,6 @@
     "Sub-par ROCE (1.2%)",
     "Weak Operating Cash Conversion (3Y CFO/PAT: -21.43x)",
     "Institutional Distribution (FII+DII -3.0% over 4Q)",
-    "Stock is trading at 15.8 times its book value"
+    "Stock is trading at 16.1 times its book value"
   ]
 }

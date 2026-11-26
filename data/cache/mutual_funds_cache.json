@@ -11,10 +11,10 @@
     "expense_ratio_pct": 0.63,
     "fund_manager": "Rajeev Thakkar & Raunak Onkar",
     "benchmark": "NIFTY 500 TRI",
-    "return_1y": 0.5,
-    "return_3y_cagr": 12.7,
-    "return_5y_cagr": 12.0,
-    "sharpe_ratio": 0.62,
+    "return_1y": 1.5,
+    "return_3y_cagr": 13.0,
+    "return_5y_cagr": 12.4,
+    "sharpe_ratio": 0.65,
     "alpha": 4.85,
     "beta": 0.76,
     "top_holdings": [
@@ -27,8 +27,8 @@
     ],
     "cio_rationale": "The undisputed gold standard for core equity wealth compounding in India. Manager Rajeev Thakkar exercises legendary discipline with a value-oriented 'Growth at Reasonable Price' (GARP) philosophy. The fund uniquely holds a ~15-20% allocation in global mega-cap tech cash machines (Alphabet, Microsoft) acting as a natural currency hedge against INR depreciation.",
     "suitable_for": "Core long-term SIP portfolio for all conservative and aggressive equity investors.",
-    "nav": 94.93,
-    "nav_date": "23-Nov-2026",
+    "nav": 95.76,
+    "nav_date": "25-Nov-2026",
     "is_live_nav": true
   },
   {

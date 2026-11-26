@@ -6,8 +6,8 @@
   "inflection_score": 9.3,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "30341",
-    "current_price": "228",
+    "market_cap_cr": "31325",
+    "current_price": "236",
     "stock_pe": "",
     "book_value": "61.2",
     "dividend_yield_pct": "0",
@@ -15,14 +15,14 @@
     "roe_pct": "-3.83",
     "debt_to_equity": "0.72",
     "face_value": "10",
-    "pb_ratio": "3.73",
-    "market_cap_num": 30341.0,
-    "current_price_num": 228.0,
+    "pb_ratio": "3.86",
+    "market_cap_num": 31325.0,
+    "current_price_num": 236.0,
     "pe_num": null,
     "book_value_num": 61.2,
     "roce_num": 2.52,
     "roe_num": -3.83,
-    "pb_num": 3.73,
+    "pb_num": 3.86,
     "peg_ratio": "N/A"
   },
   "ranges": {
@@ -80,7 +80,7 @@
   "red_flags": [
     "Sub-par ROCE (2.5%)",
     "Institutional Distribution (FII+DII -17.1% over 4Q)",
-    "Stock is trading at 3.87 times its book value",
+    "Stock is trading at 3.85 times its book value",
     "Company has low interest coverage ratio."
   ]
 }

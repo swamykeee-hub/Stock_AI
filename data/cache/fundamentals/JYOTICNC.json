@@ -6,25 +6,25 @@
   "inflection_score": 4.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "23152",
-    "current_price": "1018",
-    "stock_pe": "75",
+    "market_cap_cr": "23885",
+    "current_price": "1050",
+    "stock_pe": "77.4",
     "book_value": "94",
     "dividend_yield_pct": "0",
     "roce_pct": "21.3",
     "roe_pct": "18.2",
     "debt_to_equity": "0.44",
     "face_value": "2",
-    "pb_ratio": "10.83",
-    "market_cap_num": 23152.0,
-    "current_price_num": 1018.0,
-    "pe_num": 75.0,
+    "pb_ratio": "11.17",
+    "market_cap_num": 23885.0,
+    "current_price_num": 1050.0,
+    "pe_num": 77.4,
     "book_value_num": 94.0,
     "roce_num": 21.3,
     "roe_num": 18.2,
-    "pb_num": 10.83,
-    "peg_ratio": "0.48",
-    "peg_num": 0.48
+    "pb_num": 11.17,
+    "peg_ratio": "0.49",
+    "peg_num": 0.49
   },
   "ranges": {
     "sales_cagr_3y": 31.0,
@@ -76,7 +76,7 @@
   "strengths": [
     "Strong Capital Return (ROCE: 21.3%)",
     "Multi-Year Profit Compounding (3Y CAGR: +157%)",
-    "Deep GARP Value (PEG: 0.48x)",
+    "Deep GARP Value (PEG: 0.49x)",
     "Company has delivered good profit growth of 44.7% CAGR over last 5 years"
   ],
   "red_flags": [

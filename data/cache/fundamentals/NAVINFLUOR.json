@@ -6,25 +6,25 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "50756",
-    "current_price": "9887",
-    "stock_pe": "55.4",
+    "market_cap_cr": "52783",
+    "current_price": "10270",
+    "stock_pe": "57.6",
     "book_value": "870",
     "dividend_yield_pct": "0.15",
     "roce_pct": "21",
     "roe_pct": "19.8",
     "debt_to_equity": "0.28",
     "face_value": "2",
-    "pb_ratio": "11.36",
-    "market_cap_num": 50756.0,
-    "current_price_num": 9887.0,
-    "pe_num": 55.4,
+    "pb_ratio": "11.80",
+    "market_cap_num": 52783.0,
+    "current_price_num": 10270.0,
+    "pe_num": 57.6,
     "book_value_num": 870.0,
     "roce_num": 21.0,
     "roe_num": 19.8,
-    "pb_num": 11.36,
-    "peg_ratio": "0.52",
-    "peg_num": 0.52
+    "pb_num": 11.8,
+    "peg_ratio": "0.54",
+    "peg_num": 0.54
   },
   "ranges": {
     "sales_cagr_3y": 17.0,
@@ -81,6 +81,6 @@
     "Multi-Year Profit Compounding (3Y CAGR: +21%)"
   ],
   "red_flags": [
-    "Stock is trading at 11.7 times its book value"
+    "Stock is trading at 11.8 times its book value"
   ]
 }

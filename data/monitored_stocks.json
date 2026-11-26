@@ -4,92 +4,92 @@
     "name": "Rubicon Research Ltd.",
     "sector": "Healthcare",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
-    "monitoring_status": "Auto-Discovered Entry (\u20b91660.94 \u2014 \u20b91720.16)",
-    "entry_trigger": 1711.6,
-    "target_3m": 1916.99,
-    "target_1y": 2259.31,
-    "stop_loss": 1583.69,
-    "risk_reward": "1:1.61",
+    "monitoring_status": "Auto-Discovered Entry (\u20b91678.41 \u2014 \u20b91858.04)",
+    "entry_trigger": 1848.8,
+    "target_3m": 2070.66,
+    "target_1y": 2440.42,
+    "stop_loss": 1622.06,
+    "risk_reward": "1:0.98",
     "cio_conviction": 9.7,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
-    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Mid/Small-Cap Alpha). Trading with 1Y return +169.0%, ROCE 28.4%, OPM +200 bps, Qtr PAT +66.7% YoY, and FII+DII 4Q accumulation +7.3%.",
+    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Mid/Small-Cap Alpha). Trading with 1Y return +190.5%, ROCE 28.4%, OPM +200 bps, Qtr PAT +66.7% YoY, and FII+DII 4Q accumulation +7.3%.",
     "catalysts": [
       "Elite Capital Efficiency (ROCE: 28.4%)",
       "Superior ROE: 27.0%",
       "Cash Generative Profits (CFO/EBITDA: 78%)"
     ],
-    "cmp": 1711.6,
-    "day_change_pct": 2.02
+    "cmp": 1848.8,
+    "day_change_pct": 8.19
   },
   {
     "symbol": "ACUTAAS",
     "name": "Acutaas Chemicals Ltd.",
     "sector": "Healthcare",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
-    "monitoring_status": "Auto-Discovered Entry (\u20b93823.46 \u2014 \u20b94012.96)",
-    "entry_trigger": 3993.0,
-    "target_3m": 4472.16,
-    "target_1y": 5270.76,
-    "stop_loss": 3563.82,
-    "risk_reward": "1:1.12",
+    "monitoring_status": "Auto-Discovered Entry (\u20b93828.54 \u2014 \u20b94082.31)",
+    "entry_trigger": 4062.0,
+    "target_3m": 4549.44,
+    "target_1y": 5361.84,
+    "stop_loss": 3565.9,
+    "risk_reward": "1:0.98",
     "cio_conviction": 9.6,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
-    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Mid/Small-Cap Alpha). Trading with 1Y return +140.0%, ROCE 31.6%, OPM +900 bps, Qtr PAT +70.8% YoY, and FII+DII 4Q accumulation +2.6%.",
+    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Mid/Small-Cap Alpha). Trading with 1Y return +144.1%, ROCE 31.6%, OPM +900 bps, Qtr PAT +70.8% YoY, and FII+DII 4Q accumulation +2.6%.",
     "catalysts": [
       "Elite Capital Efficiency (ROCE: 31.6%)",
       "Superior ROE: 24.0%",
       "Fortress Balance Sheet (D/E: 0.01x)"
     ],
-    "cmp": 3993.0,
-    "day_change_pct": 0.83
+    "cmp": 4062.0,
+    "day_change_pct": 2.18
   },
   {
     "symbol": "RADICO",
     "name": "Radico Khaitan Ltd",
     "sector": "Fast Moving Consumer Goods",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
-    "monitoring_status": "Auto-Discovered Entry (\u20b94520.74 \u2014 \u20b94722.49)",
-    "entry_trigger": 4699.0,
-    "target_3m": 5262.88,
-    "target_1y": 6202.68,
-    "stop_loss": 4389.86,
-    "risk_reward": "1:1.82",
+    "monitoring_status": "Auto-Discovered Entry (\u20b94531.33 \u2014 \u20b94679.58)",
+    "entry_trigger": 4656.3,
+    "target_3m": 5215.06,
+    "target_1y": 6146.32,
+    "stop_loss": 4397.49,
+    "risk_reward": "1:2.16",
     "cio_conviction": 9.4,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
-    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Large-Cap Core). Trading with 1Y return +45.7%, ROCE 24.2%, OPM +400 bps, Qtr PAT +65.7% YoY, and FII+DII 4Q accumulation +3.1%.",
+    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Large-Cap Core). Trading with 1Y return +44.4%, ROCE 24.2%, OPM +400 bps, Qtr PAT +65.7% YoY, and FII+DII 4Q accumulation +3.1%.",
     "catalysts": [
       "Strong Capital Return (ROCE: 24.2%)",
       "Superior ROE: 20.3%",
       "Fortress Balance Sheet (D/E: 0.11x)"
     ],
-    "cmp": 4699.0,
-    "day_change_pct": 1.73
+    "cmp": 4656.3,
+    "day_change_pct": -0.6
   },
   {
     "symbol": "CHENNPETRO",
     "name": "Chennai Petroleum Corporation Ltd.",
     "sector": "Oil Gas & Consumable Fuels",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
-    "monitoring_status": "Auto-Discovered Entry (\u20b91339.27 \u2014 \u20b91373.43)",
-    "entry_trigger": 1366.6,
-    "target_3m": 1530.59,
-    "target_1y": 1803.91,
-    "stop_loss": 1262.87,
-    "risk_reward": "1:1.58",
+    "monitoring_status": "Auto-Discovered Entry (\u20b91346.23 \u2014 \u20b91380.57)",
+    "entry_trigger": 1373.7,
+    "target_3m": 1538.54,
+    "target_1y": 1813.28,
+    "stop_loss": 1267.43,
+    "risk_reward": "1:1.55",
     "cio_conviction": 9.4,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
-    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Mid/Small-Cap Alpha). Trading with 1Y return +47.4%, ROCE 35.4%, OPM +900 bps, Qtr PAT +210.2% YoY, and FII+DII 4Q accumulation +5.6%.",
+    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Mid/Small-Cap Alpha). Trading with 1Y return +48.1%, ROCE 34.9%, OPM +900 bps, Qtr PAT +212.5% YoY, and FII+DII 4Q accumulation +5.6%.",
     "catalysts": [
-      "Elite Capital Efficiency (ROCE: 35.4%)",
-      "Superior ROE: 32.5%",
-      "Fortress Balance Sheet (D/E: 0.17x)"
+      "Elite Capital Efficiency (ROCE: 34.9%)",
+      "Superior ROE: 32.0%",
+      "Fortress Balance Sheet (D/E: 0.16x)"
     ],
-    "cmp": 1366.6,
-    "day_change_pct": 0.23
+    "cmp": 1373.7,
+    "day_change_pct": 0.59
   },
   {
     "symbol": "LAURUSLABS",
@@ -110,8 +110,8 @@
       "US FDA non-critical inspection clearance",
       "Non-ARV API diversification"
     ],
-    "cmp": 2460.0,
-    "day_change_pct": -0.24,
+    "cmp": 2506.0,
+    "day_change_pct": 1.83,
     "fifty_two_week_high": 2488.0,
     "fifty_two_week_low": 917.95,
     "dist_from_52w_high": 6.0,
@@ -136,8 +136,8 @@
       "Monetization of StAR MF platform transaction fees",
       "New commodity and interest rate derivative product rollouts"
     ],
-    "cmp": 3775.2,
-    "day_change_pct": 1.57,
+    "cmp": 3996.3,
+    "day_change_pct": 5.7,
     "fifty_two_week_high": 4446.8,
     "fifty_two_week_low": 2377.4,
     "dist_from_52w_high": 13.1,
@@ -162,8 +162,8 @@
       "Star Bazaar grocery retail turning EBITDA positive",
       "Rapid store addition pace accelerating market share"
     ],
-    "cmp": 3319.6,
-    "day_change_pct": -0.33,
+    "cmp": 3279.0,
+    "day_change_pct": -1.72,
     "fifty_two_week_high": 4417.8,
     "fifty_two_week_low": 2183.667,
     "dist_from_52w_high": 28.1,
@@ -214,8 +214,8 @@
       "Kakinada mega-facility commercial batch commencement",
       "EBITDA margins reverting to historical 38-40% band"
     ],
-    "cmp": 11716.5,
-    "day_change_pct": -1.03,
+    "cmp": 11688.0,
+    "day_change_pct": -0.73,
     "fifty_two_week_high": 11824.0,
     "fifty_two_week_low": 5647.5,
     "dist_from_52w_high": 5.7,
@@ -240,8 +240,8 @@
       "Institutional and FPI commodity participation growth",
       "New electricity and base metal index derivative launches"
     ],
-    "cmp": 3565.0,
-    "day_change_pct": 1.67,
+    "cmp": 3845.0,
+    "day_change_pct": 7.57,
     "baseline_conviction": 8.4,
     "conviction_source": "Live Auto-Synced"
   },
@@ -295,32 +295,6 @@
     "conviction_source": "Core Curated"
   },
   {
-    "symbol": "DIXON",
-    "name": "Dixon Technologies Ltd.",
-    "sector": "Electronics Manufacturing Services (EMS)",
-    "setup_type": "PLI-Led High Growth Momentum",
-    "monitoring_status": "Approaching New 52W High Breakout",
-    "entry_trigger": 14200.0,
-    "target_3m": 15043.1,
-    "target_1y": 18051.8,
-    "stop_loss": 12165.3,
-    "risk_reward": "1:2.8",
-    "cio_conviction": 8.4,
-    "institutional_thesis": "Primary beneficiary of Government of India's Electronics PLI schemes. Mobile phone assembly contracts with global smartphone giants creating massive scale. Backward integration into display modules and precision components expanding margins.",
-    "catalysts": [
-      "Export ramp-up to US/Europe",
-      "IT Hardware PLI 2.0 contract executions",
-      "Operating leverage in high-volume smartphone segment"
-    ],
-    "cmp": 12978.0,
-    "day_change_pct": 0.28,
-    "fifty_two_week_high": 15775.0,
-    "fifty_two_week_low": 9600.0,
-    "dist_from_52w_high": 17.1,
-    "baseline_conviction": 9.1,
-    "conviction_source": "Live Auto-Synced"
-  },
-  {
     "symbol": "BEL",
     "name": "Bharat Electronics Ltd.",
     "sector": "Defense Electronics & Radar Systems",
@@ -338,8 +312,8 @@
       "Railway Kavach collision avoidance electronics rollout",
       "Defense export orders expansion to Southeast Asia and Middle East"
     ],
-    "cmp": 404.3,
-    "day_change_pct": 0.22,
+    "cmp": 405.5,
+    "day_change_pct": 0.05,
     "baseline_conviction": 9.0,
     "conviction_source": "Live Auto-Synced"
   },
@@ -367,6 +341,32 @@
     "fifty_two_week_low": 3479.1,
     "dist_from_52w_high": 8.2,
     "baseline_conviction": 9.2,
+    "conviction_source": "Core Curated"
+  },
+  {
+    "symbol": "DIXON",
+    "name": "Dixon Technologies Ltd.",
+    "sector": "Electronics Manufacturing Services (EMS)",
+    "setup_type": "PLI-Led High Growth Momentum",
+    "monitoring_status": "Approaching New 52W High Breakout",
+    "entry_trigger": 14200.0,
+    "target_3m": 15043.1,
+    "target_1y": 18051.8,
+    "stop_loss": 12165.3,
+    "risk_reward": "1:2.8",
+    "cio_conviction": 8.2,
+    "institutional_thesis": "Primary beneficiary of Government of India's Electronics PLI schemes. Mobile phone assembly contracts with global smartphone giants creating massive scale. Backward integration into display modules and precision components expanding margins.",
+    "catalysts": [
+      "Export ramp-up to US/Europe",
+      "IT Hardware PLI 2.0 contract executions",
+      "Operating leverage in high-volume smartphone segment"
+    ],
+    "cmp": 12742.0,
+    "day_change_pct": -2.0,
+    "fifty_two_week_high": 15775.0,
+    "fifty_two_week_low": 9600.0,
+    "dist_from_52w_high": 17.1,
+    "baseline_conviction": 9.1,
     "conviction_source": "Live Auto-Synced"
   },
   {
@@ -390,7 +390,7 @@
     "cmp": 2060.0,
     "day_change_pct": 2.72,
     "baseline_conviction": 7.4,
-    "conviction_source": "Live Auto-Synced"
+    "conviction_source": "Core Curated"
   },
   {
     "symbol": "PERSISTENT",
@@ -410,32 +410,9 @@
       "BFSI tech modernization spending rebound",
       "High margin software IP solutions ramp-up"
     ],
-    "cmp": 6120.0,
-    "day_change_pct": -0.28,
+    "cmp": 6187.0,
+    "day_change_pct": 1.31,
     "baseline_conviction": 8.0,
-    "conviction_source": "Live Auto-Synced"
-  },
-  {
-    "symbol": "KFINTECH",
-    "name": "Kfin Technologies Ltd.",
-    "sector": "Financial Services / Mutual Fund Registrar (RTA)",
-    "setup_type": "Digital Mutual Fund & Global Asset Servicing Tollgate",
-    "monitoring_status": "Accumulate at 20/50 EMA Confluence (\u20b9910 - \u20b9930)",
-    "entry_trigger": 930.0,
-    "target_3m": 995.0,
-    "target_1y": 1150.0,
-    "stop_loss": 880.0,
-    "risk_reward": "1:2.9",
-    "cio_conviction": 8.0,
-    "institutional_thesis": "Duopoly registrar and transfer agent (RTA) for Indian mutual funds, pensions, and alternatives. Direct beneficiary of structural growth in Indian household SIPs and corporate IPO registries. Asset-light balance sheet with zero debt, 30.6% ROCE, and rapid expansion into Southeast Asia / Middle East asset servicing.",
-    "catalysts": [
-      "International asset management outsourcing expansion",
-      "Record new mutual fund folio and SIP inflows",
-      "Alternative Investment Fund (AIF) administration fees growth"
-    ],
-    "cmp": 934.0,
-    "day_change_pct": 2.06,
-    "baseline_conviction": 7.2,
     "conviction_source": "Live Auto-Synced"
   },
   {
@@ -456,9 +433,32 @@
       "Surge in IPO listings driving corporate fee revenues",
       "Insurance electronic depository (e-IA) policy adoption"
     ],
-    "cmp": 1413.0,
-    "day_change_pct": 0.95,
+    "cmp": 1441.5,
+    "day_change_pct": 1.98,
     "baseline_conviction": 6.6,
+    "conviction_source": "Live Auto-Synced"
+  },
+  {
+    "symbol": "KFINTECH",
+    "name": "Kfin Technologies Ltd.",
+    "sector": "Financial Services / Mutual Fund Registrar (RTA)",
+    "setup_type": "Digital Mutual Fund & Global Asset Servicing Tollgate",
+    "monitoring_status": "Accumulate at 20/50 EMA Confluence (\u20b9910 - \u20b9930)",
+    "entry_trigger": 930.0,
+    "target_3m": 995.0,
+    "target_1y": 1150.0,
+    "stop_loss": 880.0,
+    "risk_reward": "1:2.9",
+    "cio_conviction": 7.4,
+    "institutional_thesis": "Duopoly registrar and transfer agent (RTA) for Indian mutual funds, pensions, and alternatives. Direct beneficiary of structural growth in Indian household SIPs and corporate IPO registries. Asset-light balance sheet with zero debt, 30.6% ROCE, and rapid expansion into Southeast Asia / Middle East asset servicing.",
+    "catalysts": [
+      "International asset management outsourcing expansion",
+      "Record new mutual fund folio and SIP inflows",
+      "Alternative Investment Fund (AIF) administration fees growth"
+    ],
+    "cmp": 998.0,
+    "day_change_pct": 6.53,
+    "baseline_conviction": 7.2,
     "conviction_source": "Live Auto-Synced"
   },
   {
@@ -479,8 +479,8 @@
       "Execution of new electric two-wheeler and three-wheeler motor orders",
       "North America and Europe supply agreement expansions"
     ],
-    "cmp": 883.15,
-    "day_change_pct": 0.27,
+    "cmp": 885.0,
+    "day_change_pct": -0.19,
     "baseline_conviction": 6.8,
     "conviction_source": "Live Auto-Synced"
   }

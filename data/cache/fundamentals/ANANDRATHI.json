@@ -6,25 +6,25 @@
   "inflection_score": 6.4,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "39514",
-    "current_price": "2380",
-    "stock_pe": "86.9",
+    "market_cap_cr": "40269",
+    "current_price": "2410",
+    "stock_pe": "88.6",
     "book_value": "77.3",
-    "dividend_yield_pct": "0.28",
+    "dividend_yield_pct": "0.27",
     "roce_pct": "59.2",
     "roe_pct": "47.3",
     "debt_to_equity": "0.05",
     "face_value": "5",
-    "pb_ratio": "30.79",
-    "market_cap_num": 39514.0,
-    "current_price_num": 2380.0,
-    "pe_num": 86.9,
+    "pb_ratio": "31.18",
+    "market_cap_num": 40269.0,
+    "current_price_num": 2410.0,
+    "pe_num": 88.6,
     "book_value_num": 77.3,
     "roce_num": 59.2,
     "roe_num": 47.3,
-    "pb_num": 30.79,
-    "peg_ratio": "2.63",
-    "peg_num": 2.63
+    "pb_num": 31.18,
+    "peg_ratio": "2.68",
+    "peg_num": 2.68
   },
   "ranges": {
     "sales_cagr_3y": 31.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 32.0,
     "roe_3y": 45.0,
     "roe_5y": 44.0,
-    "price_cagr_3y": 55.0,
+    "price_cagr_3y": 57.0,
     "price_cagr_5y": null
   },
   "inflection": {
@@ -82,7 +82,7 @@
   ],
   "red_flags": [
     "Operating Margin Compression (-1200 bps YoY)",
-    "Stock is trading at 30.5 times its book value",
+    "Stock is trading at 31.2 times its book value",
     "Promoter holding has decreased over last quarter: -0.42%",
     "Earnings include an other income of Rs.207 Cr."
   ]

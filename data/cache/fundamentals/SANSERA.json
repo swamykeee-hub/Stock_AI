@@ -6,23 +6,23 @@
   "inflection_score": 10.0,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "29211",
-    "current_price": "4680",
-    "stock_pe": "71.5",
+    "market_cap_cr": "29276",
+    "current_price": "4686",
+    "stock_pe": "71.6",
     "book_value": "524",
     "dividend_yield_pct": "0.09",
     "roce_pct": "14.5",
     "roe_pct": "11.8",
     "debt_to_equity": "0.24",
     "face_value": "2",
-    "pb_ratio": "8.93",
-    "market_cap_num": 29211.0,
-    "current_price_num": 4680.0,
-    "pe_num": 71.5,
+    "pb_ratio": "8.94",
+    "market_cap_num": 29276.0,
+    "current_price_num": 4686.0,
+    "pe_num": 71.6,
     "book_value_num": 524.0,
     "roce_num": 14.5,
     "roe_num": 11.8,
-    "pb_num": 8.93,
+    "pb_num": 8.94,
     "peg_ratio": "1.12",
     "peg_num": 1.12
   },
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 64.0,
     "roe_3y": 12.0,
     "roe_5y": 12.0,
-    "price_cagr_3y": 76.0,
+    "price_cagr_3y": 77.0,
     "price_cagr_5y": 43.0
   },
   "inflection": {
@@ -82,7 +82,7 @@
   ],
   "red_flags": [
     "Institutional Distribution (FII+DII -4.0% over 4Q)",
-    "Stock is trading at 8.81 times its book value",
+    "Stock is trading at 8.87 times its book value",
     "Company has a low return on equity of 12.1% over last 3 years.",
     "Promoter holding has decreased over last 3 years: -6.19%"
   ]

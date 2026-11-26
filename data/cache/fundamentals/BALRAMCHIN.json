@@ -6,25 +6,25 @@
   "inflection_score": 9.1,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "13173",
-    "current_price": "622",
-    "stock_pe": "31.4",
+    "market_cap_cr": "13761",
+    "current_price": "650",
+    "stock_pe": "32.8",
     "book_value": "224",
-    "dividend_yield_pct": "0.64",
+    "dividend_yield_pct": "0.62",
     "roce_pct": "9.27",
     "roe_pct": "9.52",
     "debt_to_equity": "0.33",
     "face_value": "1",
-    "pb_ratio": "2.78",
-    "market_cap_num": 13173.0,
-    "current_price_num": 622.0,
-    "pe_num": 31.4,
+    "pb_ratio": "2.90",
+    "market_cap_num": 13761.0,
+    "current_price_num": 650.0,
+    "pe_num": 32.8,
     "book_value_num": 224.0,
     "roce_num": 9.27,
     "roe_num": 9.52,
-    "pb_num": 2.78,
-    "peg_ratio": "0.35",
-    "peg_num": 0.35
+    "pb_num": 2.9,
+    "peg_ratio": "0.37",
+    "peg_num": 0.37
   },
   "ranges": {
     "sales_cagr_3y": 10.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 4.0,
     "roe_3y": 11.0,
     "roe_5y": 12.0,
-    "price_cagr_3y": 10.0,
-    "price_cagr_5y": 14.0
+    "price_cagr_3y": 12.0,
+    "price_cagr_5y": 15.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 12.0,
@@ -78,10 +78,10 @@
     "Expanding Operating Margins (+200 bps)",
     "Explosive Quarterly PAT Surge (+88.9% YoY)",
     "Capex Capacity Runway Active (CWIP: \u20b92,537 Cr)",
-    "Deep GARP Value (PEG: 0.35x)"
+    "Deep GARP Value (PEG: 0.37x)"
   ],
   "red_flags": [
-    "Stock is trading at 2.76 times its book value",
+    "Stock is trading at 2.90 times its book value",
     "The company has delivered a poor sales growth of 5.44% over past five years.",
     "Company has a low return on equity of 11.3% over last 3 years.",
     "Company might be capitalizing the interest cost"

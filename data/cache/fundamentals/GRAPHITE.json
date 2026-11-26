@@ -6,25 +6,25 @@
   "inflection_score": 9.6,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "15274",
-    "current_price": "782",
-    "stock_pe": "60.4",
+    "market_cap_cr": "15483",
+    "current_price": "792",
+    "stock_pe": "61.2",
     "book_value": "307",
-    "dividend_yield_pct": "0.9",
+    "dividend_yield_pct": "0.88",
     "roce_pct": "4.58",
     "roe_pct": "3.11",
     "debt_to_equity": "0.05",
     "face_value": "2",
-    "pb_ratio": "2.55",
-    "market_cap_num": 15274.0,
-    "current_price_num": 782.0,
-    "pe_num": 60.4,
+    "pb_ratio": "2.58",
+    "market_cap_num": 15483.0,
+    "current_price_num": 792.0,
+    "pe_num": 61.2,
     "book_value_num": 307.0,
     "roce_num": 4.58,
     "roe_num": 3.11,
-    "pb_num": 2.55,
-    "peg_ratio": "2.55",
-    "peg_num": 2.55
+    "pb_num": 2.58,
+    "peg_ratio": "2.58",
+    "peg_num": 2.58
   },
   "ranges": {
     "sales_cagr_3y": -4.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 5.0,
     "roe_3y": 4.0,
     "roe_5y": 5.0,
-    "price_cagr_3y": 18.0,
+    "price_cagr_3y": 19.0,
     "price_cagr_5y": 13.0
   },
   "inflection": {
@@ -82,7 +82,7 @@
   ],
   "red_flags": [
     "Sub-par ROCE (4.6%)",
-    "Stock is trading at 2.57 times its book value",
+    "Stock is trading at 2.58 times its book value",
     "The company has delivered a poor sales growth of 7.81% over past five years.",
     "Company has a low return on equity of 4.14% over last 3 years."
   ]

@@ -6,25 +6,25 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "54951",
-    "current_price": "3330",
-    "stock_pe": "43.9",
+    "market_cap_cr": "55581",
+    "current_price": "3371",
+    "stock_pe": "44.4",
     "book_value": "648",
-    "dividend_yield_pct": "0.6",
+    "dividend_yield_pct": "0.59",
     "roce_pct": "15.1",
     "roe_pct": "10.7",
     "debt_to_equity": "0.02",
     "face_value": "1",
-    "pb_ratio": "5.14",
-    "market_cap_num": 54951.0,
-    "current_price_num": 3330.0,
-    "pe_num": 43.9,
+    "pb_ratio": "5.20",
+    "market_cap_num": 55581.0,
+    "current_price_num": 3371.0,
+    "pe_num": 44.4,
     "book_value_num": 648.0,
     "roce_num": 15.1,
     "roe_num": 10.7,
-    "pb_num": 5.14,
-    "peg_ratio": "0.74",
-    "peg_num": 0.74
+    "pb_num": 5.2,
+    "peg_ratio": "0.75",
+    "peg_num": 0.75
   },
   "ranges": {
     "sales_cagr_3y": 21.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 59.0,
     "roe_3y": 9.0,
     "roe_5y": 11.0,
-    "price_cagr_3y": 23.0,
+    "price_cagr_3y": 24.0,
     "price_cagr_5y": -1.0
   },
   "inflection": {
@@ -81,7 +81,7 @@
     "Explosive Quarterly PAT Surge (+58.2% YoY)"
   ],
   "red_flags": [
-    "Stock is trading at 5.09 times its book value",
+    "Stock is trading at 5.19 times its book value",
     "Promoter holding has decreased over last quarter: -6.02%",
     "Company has a low return on equity of 9.29% over last 3 years."
   ]

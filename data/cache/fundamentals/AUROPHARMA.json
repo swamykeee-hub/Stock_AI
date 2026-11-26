@@ -6,23 +6,23 @@
   "inflection_score": 9.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "104966",
-    "current_price": "1824",
-    "stock_pe": "25.8",
+    "market_cap_cr": "104291",
+    "current_price": "1811",
+    "stock_pe": "25.7",
     "book_value": "685",
-    "dividend_yield_pct": "0.38",
+    "dividend_yield_pct": "0.39",
     "roce_pct": "12.9",
     "roe_pct": "10.1",
     "debt_to_equity": "0.22",
     "face_value": "1",
-    "pb_ratio": "2.66",
-    "market_cap_num": 104966.0,
-    "current_price_num": 1824.0,
-    "pe_num": 25.8,
+    "pb_ratio": "2.64",
+    "market_cap_num": 104291.0,
+    "current_price_num": 1811.0,
+    "pe_num": 25.7,
     "book_value_num": 685.0,
     "roce_num": 12.9,
     "roe_num": 10.1,
-    "pb_num": 2.66,
+    "pb_num": 2.64,
     "peg_ratio": "0.79",
     "peg_num": 0.79
   },
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 19.0,
     "roe_3y": 11.0,
     "roe_5y": 10.0,
-    "price_cagr_3y": 20.0,
+    "price_cagr_3y": 21.0,
     "price_cagr_5y": 22.0
   },
   "inflection": {
@@ -81,7 +81,7 @@
     "Deep GARP Value (PEG: 0.79x)"
   ],
   "red_flags": [
-    "Stock is trading at 2.62 times its book value",
+    "Stock is trading at 2.64 times its book value",
     "The company has delivered a poor sales growth of 6.32% over past five years.",
     "Company has a low return on equity of 10.8% over last 3 years.",
     "Company might be capitalizing the interest cost"
