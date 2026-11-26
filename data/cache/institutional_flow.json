@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-26 09:17:22",
+  "timestamp": "2026-11-26 09:19:53",
   "fii_dii_latest": {
     "date": "2026-11-25",
     "formatted_date": "Wed 25 Nov, 2026",
@@ -179,13 +179,13 @@
     }
   ],
   "derivatives": {
-    "pcr": 0.92,
-    "total_call_oi": 2015639,
-    "total_put_oi": 1852384,
-    "max_pain_strike": 25750.0,
+    "pcr": 0.0,
+    "total_call_oi": 0,
+    "total_put_oi": 0,
+    "max_pain_strike": 17350.0,
     "status": "LIVE"
   },
-  "smart_money_sentiment": "BALANCED",
-  "sentiment_badge": "\ud83d\udd35 BALANCED / RANGE-BOUND",
-  "sentiment_rationale": "Nifty PCR is balanced at 0.92 around Max Pain strike (25750.0). Institutions active with FII 4,479.08 Cr and DII 4,018.72 Cr."
+  "smart_money_sentiment": "OVERSOLD_BOUNCE",
+  "sentiment_badge": "\ud83d\udfe1 OVERSOLD / REVERSAL WATCH",
+  "sentiment_rationale": "Nifty PCR is deeply oversold at 0.0. Call heavy positioning historically leads to sharp short-covering rallies once support holds."
 }
