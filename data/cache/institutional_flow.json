@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-26 12:49:44",
+  "timestamp": "2026-11-26 12:53:33",
   "fii_dii_latest": {
     "date": "2026-11-25",
     "formatted_date": "Wed 25 Nov, 2026",
@@ -180,8 +180,8 @@
   ],
   "derivatives": {
     "pcr": 1.07,
-    "total_call_oi": 2267234,
-    "total_put_oi": 2414821,
+    "total_call_oi": 2256778,
+    "total_put_oi": 2414461,
     "max_pain_strike": 25800.0,
     "status": "LIVE"
   },
