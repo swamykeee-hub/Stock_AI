@@ -426,6 +426,34 @@ def get_index_visual_backdrop(card_title: str) -> Tuple[str, str]:
         """
         return _svg_wrapper(svg, "#8b5cf6"), "idx-theme-purple"
 
+    # 18A. GOLD (24K / 22K / COMEX BULLION): Gleaming Tapered Gold Bullion Bars
+    if "GOLD" in key:
+        svg = """
+        <g class="idx-anim-float">
+            <polygon points="48,72 60,52 96,52 104,72" fill="#f59e0b" fill-opacity="0.34" stroke="#fbbf24" stroke-width="1.6" stroke-linejoin="round"/>
+            <line x1="62" y1="57" x2="92" y2="57" stroke="#fef3c7" stroke-width="1.2" opacity="0.8"/>
+            <polygon points="84,72 95,52 130,52 138,72" fill="#d97706" fill-opacity="0.36" stroke="#fbbf24" stroke-width="1.6" stroke-linejoin="round"/>
+            <polygon points="66,52 76,34 110,34 118,52" fill="#fbbf24" fill-opacity="0.42" stroke="#fde68a" stroke-width="1.8" stroke-linejoin="round"/>
+            <line x1="79" y1="39" x2="106" y2="39" stroke="#fffbeb" stroke-width="1.4" opacity="0.9"/>
+        </g>
+        <path d="M52 28 L55 21 L58 28 L65 31 L58 34 L55 41 L52 34 L45 31 Z" fill="#fde68a" opacity="0.85" class="idx-anim-pulse"/>
+        """
+        return _svg_wrapper(svg, "#f59e0b"), "idx-theme-amber"
+
+    # 18B. SILVER (INR / KG OR SPOT): Gleaming Metallic Silver Ingots & Coin
+    if "SILVER" in key:
+        svg = """
+        <g class="idx-anim-float">
+            <polygon points="46,72 58,53 94,53 102,72" fill="#94a3b8" fill-opacity="0.34" stroke="#cbd5e1" stroke-width="1.6" stroke-linejoin="round"/>
+            <line x1="60" y1="58" x2="90" y2="58" stroke="#f8fafc" stroke-width="1.2" opacity="0.8"/>
+            <polygon points="82,72 93,53 128,53 136,72" fill="#64748b" fill-opacity="0.36" stroke="#cbd5e1" stroke-width="1.6" stroke-linejoin="round"/>
+            <polygon points="65,53 75,35 109,35 117,53" fill="#cbd5e1" fill-opacity="0.4" stroke="#f1f5f9" stroke-width="1.8" stroke-linejoin="round"/>
+            <line x1="78" y1="40" x2="105" y2="40" stroke="#ffffff" stroke-width="1.4" opacity="0.9"/>
+        </g>
+        <circle cx="122" cy="30" r="10" fill="#94a3b8" fill-opacity="0.28" stroke="#e2e8f0" stroke-width="1.4" class="idx-anim-pulse"/>
+        """
+        return _svg_wrapper(svg, "#38bdf8"), "idx-theme-cyan"
+
     # Default clean Market Pulse Wave
     svg = """
     <path d="M28 66 L56 48 L76 56 L104 28 L130 22" stroke="#38bdf8" stroke-width="2.2"

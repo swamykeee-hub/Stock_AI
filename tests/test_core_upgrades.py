@@ -398,5 +398,109 @@ class TestHiddenGemsScreener(unittest.TestCase):
             self.assertTrue(scr.CACHE_FILE.exists())
 
 
+class TestBullionRatesAndMetals(unittest.TestCase):
+    def test_bullion_parsing_fallback_and_macro_order(self):
+        from core.global_macro_news import GlobalMacroNewsAnalyst, format_inr_number
+        from core.index_visuals import get_index_visual_backdrop
+
+        self.assertEqual(format_inr_number(124800), "1,24,800")
+        self.assertEqual(format_inr_number(165000), "1,65,000")
+        self.assertEqual(format_inr_number(1520), "1,520")
+
+        sample_gold_html = """
+        <table>
+            <tr><th>Gram</th><th>24K</th><th>22K</th><th>18K</th></tr>
+            <tr><td>10</td><td>₹1,24,800 (+1,520)</td><td>₹1,14,400 (+1,400)</td><td>₹93,600 (+1,140)</td></tr>
+        </table>
+        """
+        sample_silver_html = """
+        <table>
+            <tr><th>Gram</th><th>Today</th><th>Yesterday</th><th>Change</th></tr>
+            <tr><td>1000</td><td>₹1,65,000</td><td>₹1,63,000</td><td>+2,000</td></tr>
+        </table>
+        """
+        gold_parsed = GlobalMacroNewsAnalyst._parse_goodreturns_gold_html(sample_gold_html)
+        silver_parsed = GlobalMacroNewsAnalyst._parse_goodreturns_silver_html(sample_silver_html)
+
+        self.assertEqual(gold_parsed["Gold 24K (₹/10g)"]["price"], 124800.0)
+        self.assertEqual(gold_parsed["Gold 24K (₹/10g)"]["change"], 1520.0)
+        self.assertEqual(gold_parsed["Gold 22K (₹/10g)"]["price"], 114400.0)
+        self.assertEqual(silver_parsed["Silver (₹/kg)"]["price"], 165000.0)
+        self.assertEqual(silver_parsed["Silver (₹/kg)"]["change"], 2000.0)
+
+        # Fallback computation from COMEX+FX when HTML requests fail
+        analyst = GlobalMacroNewsAnalyst()
+        with patch("requests.get", side_effect=RuntimeError("network offline")):
+            fb = analyst.fetch_indian_bullion_rates(
+                gold_usd={"price": 3594.0, "change_pct": 1.5},
+                silver_usd={"price": 41.76, "change_pct": 2.0},
+                usd_inr={"price": 92.54, "change_pct": -0.5},
+            )
+        self.assertIn("Gold 24K (₹/10g)", fb)
+        self.assertIn("Gold 22K (₹/10g)", fb)
+        self.assertIn("Silver (₹/kg)", fb)
+        self.assertGreater(fb["Gold 24K (₹/10g)"]["price"], fb["Gold 22K (₹/10g)"]["price"])
+        self.assertGreater(fb["Silver (₹/kg)"]["price"], 50000.0)
+
+        # Verify card visual themes for Gold & Silver
+        _, gold_theme = get_index_visual_backdrop("Gold 24K (₹/10g)")
+        _, silver_theme = get_index_visual_backdrop("Silver (₹/kg)")
+        self.assertEqual(gold_theme, "idx-theme-amber")
+        self.assertEqual(silver_theme, "idx-theme-cyan")
+
+    def test_html_renders_gold_and_silver_after_dxy(self):
+        from core.html_generator import HTMLReportGenerator
+        from bs4 import BeautifulSoup
+
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            out_file = tmp_path / "test_dashboard.html"
+            scan_data = {
+                "timestamp": "2026-11-26 17:15:00",
+                "indices": {
+                    "NIFTY 50": {"value": 25884.50, "change": 65.25, "percent": 0.25},
+                },
+                "macro_snapshot": {
+                    "macro": {
+                        "Brent Crude ($/bbl)": {"price": 90.24, "change": -0.40, "change_pct": -0.44},
+                        "US 10-Yr Yield (%)": {"price": 4.85, "change": -0.05, "change_pct": -1.14},
+                        "US Dollar Index (DXY)": {"price": 103.74, "change": 0.07, "change_pct": 0.07},
+                        "Gold 24K (₹/10g)": {"price": 124800.0, "change": 1520.0, "change_pct": 1.23},
+                        "Gold 22K (₹/10g)": {"price": 114400.0, "change": 1400.0, "change_pct": 1.24},
+                        "Silver (₹/kg)": {"price": 165000.0, "change": 0.0, "change_pct": 0.0},
+                    }
+                },
+                "market_regime": {"regime": "Bull", "regime_color": "green", "health_score": 75, "leading_sector": "IT"},
+                "institutional_flow": {"fii_net_cr": 100.0, "dii_net_cr": 200.0, "nifty_pcr": 1.03, "max_pain": 25800},
+                "momentum_leaders": [],
+                "hidden_gems": [],
+                "factor_stocks": [],
+                "fifty_two_week_stocks": [],
+                "bullish_picks": [],
+                "monitored_radar": [],
+                "mutual_funds": [],
+                "ipos": [],
+                "earnings_dividends": {},
+                "win_rate_scorecard": {},
+                "feed_health": {},
+            }
+            HTMLReportGenerator.generate(scan_data, [], [out_file])
+            soup = BeautifulSoup(out_file.read_text(encoding="utf-8"), "html.parser")
+            names = [el.get_text(strip=True) for el in soup.select(".indices-grid .index-name")]
+            dxy_idx = names.index("US Dollar Index (DXY)")
+            self.assertEqual(
+                names[dxy_idx + 1:dxy_idx + 4],
+                ["Gold 24K (₹/10g)", "Gold 22K (₹/10g)", "Silver (₹/kg)"],
+            )
+            vals = {
+                card.select_one(".index-name").get_text(strip=True): card.select_one(".index-val").get_text(strip=True)
+                for card in soup.select(".indices-grid .index-card")
+                if card.select_one(".index-name") and card.select_one(".index-val")
+            }
+            self.assertEqual(vals["Gold 24K (₹/10g)"], "₹1,24,800")
+            self.assertEqual(vals["Gold 22K (₹/10g)"], "₹1,14,400")
+            self.assertEqual(vals["Silver (₹/kg)"], "₹1,65,000")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
