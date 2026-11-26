@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-26 17:35:13",
+  "timestamp": "2026-11-26 17:39:17",
   "indices": {
     "NIFTY 50": {
       "value": 25884.5,
@@ -95,14 +95,14 @@
         "change_pct": 0.85
       },
       "FTSE 100": {
-        "price": 10587.72,
-        "change": 160.78,
-        "change_pct": 1.54
+        "price": 10586.16,
+        "change": 159.22,
+        "change_pct": 1.53
       },
       "DAX": {
-        "price": 25171.95,
-        "change": 469.82,
-        "change_pct": 1.9
+        "price": 25167.86,
+        "change": 465.73,
+        "change_pct": 1.89
       },
       "Hang Seng": {
         "price": 22226.88,
@@ -112,9 +112,9 @@
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 90.93,
-        "change": 0.29,
-        "change_pct": 0.32
+        "price": 90.85,
+        "change": 0.21,
+        "change_pct": 0.23
       },
       "US 10-Yr Yield (%)": {
         "price": 4.85,
@@ -123,7 +123,7 @@
       },
       "US Dollar Index (DXY)": {
         "price": 103.79,
-        "change": 0.13,
+        "change": 0.12,
         "change_pct": 0.12
       },
       "Gold 24K (\u20b9/10g)": {
@@ -145,14 +145,14 @@
         "source": "GoodReturns"
       },
       "Gold ($/oz)": {
-        "price": 3594.9,
-        "change": 30.3,
-        "change_pct": 0.85
+        "price": 3593.7,
+        "change": 29.1,
+        "change_pct": 0.82
       },
       "Silver ($/oz)": {
-        "price": 41.76,
-        "change": 1.22,
-        "change_pct": 3.01
+        "price": 41.74,
+        "change": 1.21,
+        "change_pct": 2.98
       },
       "USD / INR": {
         "price": 92.54,
@@ -164,7 +164,7 @@
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.85%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-26 17:35:32"
+    "timestamp": "2026-11-26 17:39:26"
   },
   "market_regime": {
     "nifty_cmp": 25802.35,
@@ -17498,7 +17498,7 @@
       "symbol": "CANBK",
       "name": "Canara Bank",
       "sector": "Financial Services",
-      "cmp": 132.54,
+      "cmp": 132.4,
       "h52": 162.89,
       "dist_52w": 18.6,
       "ret_3m": 6.9,
@@ -20032,7 +20032,7 @@
     }
   ],
   "institutional_flow": {
-    "timestamp": "2026-11-26 17:36:17",
+    "timestamp": "2026-11-26 17:39:54",
     "fii_dii_latest": {
       "date": "2026-11-25",
       "formatted_date": "Wed 25 Nov, 2026",
@@ -20317,7 +20317,7 @@
     "total_events": 10
   },
   "performance_scorecard": {
-    "timestamp": "2026-11-26 17:36:17",
+    "timestamp": "2026-11-26 17:39:55",
     "total_picks_tracked": 43,
     "win_rate_pct": 75.0,
     "resolved_trades_count": 8,
@@ -20720,7 +20720,7 @@
     ]
   },
   "market_movers": {
-    "timestamp": "2026-11-26 17:36:17",
+    "timestamp": "2026-11-26 17:39:55",
     "top_gainers": [
       {
         "symbol": "ACE",
@@ -21059,7 +21059,7 @@
   "total_screened": 509,
   "disclaimer": "Application Designed and Developed by Swamy Chouhan - 9000632912. DISCLAIMER: This system is an AI-driven educational and research analytics tool. It does not provide SEBI-registered investment advice or guaranteed return recommendations. Stock markets involve risk. Always consult a certified financial advisor before trading.",
   "feed_health": {
-    "checked_at": "2026-11-26 17:36:17 IST",
+    "checked_at": "2026-11-26 17:39:55 IST",
     "healthy_count": 5,
     "total_feeds": 5,
     "feeds": [
@@ -21068,14 +21068,14 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "3s ago",
-        "updated_at": "26-Nov 17:36 IST",
+        "updated_at": "26-Nov 17:39 IST",
         "detail": "14 indices, 124 picks"
       },
       {
         "feed": "AMFI Live NAVs",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "8.3h ago",
+        "age": "8.4h ago",
         "updated_at": "26-Nov 09:16 IST",
         "detail": "8/8 Live NAVs"
       },
@@ -21084,7 +21084,7 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "0s ago",
-        "updated_at": "26-Nov 17:36 IST",
+        "updated_at": "26-Nov 17:39 IST",
         "detail": "PCR 1.03 (LIVE)"
       },
       {
@@ -21092,14 +21092,14 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "0s ago",
-        "updated_at": "26-Nov 17:36 IST",
+        "updated_at": "26-Nov 17:39 IST",
         "detail": "15 gainers / 15 losers"
       },
       {
         "feed": "Corporate Actions",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "8.3h ago",
+        "age": "8.4h ago",
         "updated_at": "26-Nov 09:17 IST",
         "detail": "10 events tracked"
       }
