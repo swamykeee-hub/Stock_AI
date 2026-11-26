@@ -135,6 +135,47 @@
             if (badge) badge.innerText = 'Showing ' + shown + ' Stocks';
         }
 
+        let activeHiddenGemFilter = 'all';
+
+        function applyHiddenGemFilter(preset) {
+            activeHiddenGemFilter = preset || 'all';
+            filterHiddenGems();
+        }
+
+        function filterHiddenGems() {
+            const query = (document.getElementById('searchInput')?.value || '').toLowerCase().trim();
+            const sectorVal = (document.getElementById('sectorFilter')?.value || '').toLowerCase().trim();
+
+            let shown = 0;
+            document.querySelectorAll('.gem-row').forEach(row => {
+                const sym = (row.getAttribute('data-symbol') || '').toLowerCase();
+                const name = (row.getAttribute('data-name') || '').toLowerCase();
+                const sector = (row.getAttribute('data-sector') || '').toLowerCase();
+                const cap = (row.getAttribute('data-cap') || '').toLowerCase();
+                const status = (row.getAttribute('data-status') || '').toLowerCase();
+
+                const matchQuery = !query || sym.includes(query) || name.includes(query) || sector.includes(query);
+                const matchSector = !sectorVal || sector === sectorVal || sector.includes(sectorVal);
+
+                let matchPreset = true;
+                if (activeHiddenGemFilter === 'small' || activeHiddenGemFilter === 'mid') {
+                    matchPreset = cap === activeHiddenGemFilter;
+                } else if (activeHiddenGemFilter !== 'all') {
+                    matchPreset = status === activeHiddenGemFilter;
+                }
+
+                if (matchQuery && matchSector && matchPreset) {
+                    row.style.display = '';
+                    shown++;
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+            const badge = document.getElementById('hiddenGemsCountBadge');
+            if (badge) badge.innerText = 'Showing ' + shown + ' Gems';
+            return shown;
+        }
+
         function filterStocks() {
             const query = (document.getElementById('searchInput')?.value || '').toLowerCase().trim();
             const sectorVal = (document.getElementById('sectorFilter')?.value || '').toLowerCase().trim();
@@ -142,8 +183,8 @@
             
             let matchedRowCount = 0;
 
-            // Filter table rows (skip factor-row here and handle via filterFactorScreener to preserve checkboxes)
-            document.querySelectorAll('.stock-row:not(.factor-row)').forEach(row => {
+            // Filter table rows (skip factor-row and gem-row here and handle via dedicated filters)
+            document.querySelectorAll('.stock-row:not(.factor-row):not(.gem-row)').forEach(row => {
                 const sym = (row.getAttribute('data-symbol') || '').toLowerCase();
                 const name = (row.getAttribute('data-name') || '').toLowerCase();
                 const sector = (row.getAttribute('data-sector') || '').toLowerCase();
@@ -159,6 +200,7 @@
                 }
             });
             filterFactorScreener();
+            matchedRowCount += filterHiddenGems();
 
             // Filter cards
             document.querySelectorAll('.stock-card').forEach(card => {
@@ -1345,6 +1387,7 @@
             // 4. Table-aware CMP lookup (accounting for dedicated CIO Rating / Archetype columns)
             const tableColLookups = [
                 ['#view-momentum tr[data-symbol="' + sym + '"]', 3],
+                ['#view-hidden_gems tr[data-symbol="' + sym + '"]', 3],
                 ['#view-radar tr[data-symbol="' + sym + '"]', 3],
                 ['#view-leaderboard tr[data-symbol="' + sym + '"]', 3],
                 ['#view-fifty_two_week tr[data-symbol="' + sym + '"]', 2],

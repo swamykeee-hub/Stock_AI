@@ -19,6 +19,7 @@ import config
 from core.ai_performance_scorecard import AIPerformanceScorecard
 from core.feed_health import collect_feed_health
 from core.fund_manager_radar import FundManagerRadar
+from core.hidden_gems_screener import HiddenGemsScreener
 from core.html_generator import HTMLReportGenerator
 from core.mutual_fund_analyst import MutualFundAnalyst
 from core.portfolio_health_auditor import PortfolioHealthAuditor
@@ -289,9 +290,79 @@ class TestHTMLReportGeneratorModular(unittest.TestCase):
                 self.assertIn("iv-met-rod", ext_html)
                 self.assertIn("Swamy Chouhan - 9000632912", ext_html)
                 self.assertIn("Alpha vs NIFTY 50", ext_html)
+                self.assertIn("switchView('hidden_gems', this)", ext_html)
+                self.assertIsNotNone(soup.select_one("#view-hidden_gems"))
+                self.assertIsNotNone(soup.select_one("#hiddenGemsTable"))
             finally:
                 if ext_repo_test.exists():
                     ext_repo_test.unlink()
+
+
+class TestHiddenGemsScreener(unittest.TestCase):
+    def test_gate_filtering_and_live_market_movement_updates(self):
+        # Anti-bubble gate rejects extreme valuation & weak cash-conversion stocks (like 297x P/E)
+        bubble_fund = {
+            "score": 8.7,
+            "metrics": {"market_cap_cr": "49342", "stock_pe": "291", "roce_pct": "33.9", "roe_pct": "27.6"},
+            "inflection": {"qtr_pat_yoy_pct": 133.3, "qtr_sales_yoy_pct": 122.0},
+            "balance_inst": {"debt_to_equity": 0.2, "cfo_to_pat_3y": 0.23, "promoter_pledge_pct": 0.0},
+        }
+        self.assertFalse(HiddenGemsScreener.passes_fundamental_gate(bubble_fund, is_seed=False))
+
+        # Quality small-cap gate accepts high-ROCE, low-debt, cash-rich, reasonably valued stocks
+        gem_fund = {
+            "score": 9.6,
+            "metrics": {"market_cap_cr": "5311", "stock_pe": "18.7", "peg_ratio": "0.60", "roce_pct": "29.3", "roe_pct": "22.6"},
+            "inflection": {"qtr_pat_yoy_pct": 31.2, "qtr_sales_yoy_pct": 31.0},
+            "balance_inst": {"debt_to_equity": 0.05, "cfo_to_pat_3y": 0.84, "promoter_pledge_pct": 0.0},
+        }
+        self.assertTrue(HiddenGemsScreener.passes_fundamental_gate(gem_fund, is_seed=True))
+        self.assertEqual(HiddenGemsScreener.classify_cap_tier(5311), "Small Cap")
+        self.assertEqual(HiddenGemsScreener.classify_cap_tier(18922), "Mid Cap")
+
+        with tempfile.TemporaryDirectory() as tmp:
+            scr = HiddenGemsScreener()
+            scr.CACHE_FILE = Path(tmp) / "hidden_gems.json"
+
+            sample_gems = [
+                {
+                    "symbol": "FIEMIND",
+                    "name": "Fiem Industries Ltd.",
+                    "sector": "Automobile and Auto Components",
+                    "cap_tier": "Small Cap",
+                    "mcap_cr": 5311.0,
+                    "base_screener_cmp": 2000.0,
+                    "base_mcap_cr": 5300.0,
+                    "base_pe": 18.7,
+                    "base_peg": 0.60,
+                    "cmp": 2000.0,
+                    "h52": 2200.0,
+                    "l52": 1500.0,
+                    "ema_20": 2010.0,
+                    "ema_50": 1980.0,
+                    "ema_200": 1950.0,
+                    "atr": 45.0,
+                    "rsi": 52.0,
+                    "fund_score": 9.6,
+                    "roce": 29.3,
+                    "pe": 18.7,
+                    "peg": 0.60,
+                    "volume_ratio": 1.4,
+                }
+            ]
+            # Simulate market rally moving CMP from 2000 -> 2150 (+7.5% toward 52W high)
+            quotes_map = {
+                "FIEMIND": {"currentPrice": 2150.0, "change": 150.0, "changePercent": 7.5, "fiftyTwoWeekHigh": 2200.0, "fiftyTwoWeekLow": 1500.0}
+            }
+            updated = scr.refresh_live_market_movements(sample_gems, quotes_map=quotes_map)
+            self.assertEqual(len(updated), 1)
+            g = updated[0]
+            self.assertEqual(g["cmp"], 2150.0)
+            self.assertEqual(g["day_change_pct"], 7.5)
+            self.assertEqual(g["status_key"], "breakout")
+            self.assertGreater(g["target_1"], 2150.0)
+            self.assertLess(g["stop_loss"], 2150.0)
+            self.assertTrue(scr.CACHE_FILE.exists())
 
 
 if __name__ == "__main__":

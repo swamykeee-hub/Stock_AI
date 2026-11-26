@@ -81,6 +81,16 @@ class DailyAutomator:
         except Exception as e:
             print(f"  -> Factor Screener notice: {e}")
 
+        # 4c. Small & Mid-Cap Hidden Gems Screener (Auto-updated on market movements & quality inflection)
+        print("  -> Screening Small & Mid-Cap Hidden Gems...")
+        hidden_gems = []
+        try:
+            from core.hidden_gems_screener import HiddenGemsScreener
+            hidden_gems = HiddenGemsScreener().scan_hidden_gems(force_refresh=True)
+            print(f"  -> Hidden Gems Screener identified {len(hidden_gems)} small/mid-cap gems.")
+        except Exception as e:
+            print(f"  -> Hidden Gems notice: {e}")
+
         # 5. AI Fund Manager Radar (Recalibrate CIO Conviction & Auto-Promote Top Discoveries)
         print("  -> Auto-Syncing AI Fund Manager Monitored Radar with Live Scanner Results...")
         try:
@@ -166,6 +176,7 @@ class DailyAutomator:
             "fifty_two_week_high_stocks": fifty_two_week_stocks,
             "top_bullish_stocks": bullish_picks,
             "factor_screener_stocks": factor_stocks,
+            "hidden_gems": hidden_gems,
             "monitored_radar": monitored_radar,
             "mutual_funds": mutual_funds,
             "institutional_flow": inst_flow,

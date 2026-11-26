@@ -285,6 +285,11 @@
     "sector": "Automobile and Auto Components"
   },
   {
+    "symbol": "BAJAJCON",
+    "name": "Bajaj Consumer Care Ltd.",
+    "sector": "Fast Moving Consumer Goods"
+  },
+  {
     "symbol": "BAJAJFINSV",
     "name": "Bajaj Finserv Ltd.",
     "sector": "Financial Services"
@@ -655,6 +660,11 @@
     "sector": "Information Technology"
   },
   {
+    "symbol": "CYIENTDLM",
+    "name": "Cyient DLM Ltd.",
+    "sector": "Capital Goods"
+  },
+  {
     "symbol": "DABUR",
     "name": "Dabur India Ltd.",
     "sector": "Fast Moving Consumer Goods"
@@ -813,6 +823,11 @@
     "symbol": "FEDERALBNK",
     "name": "Federal Bank Ltd.",
     "sector": "Financial Services"
+  },
+  {
+    "symbol": "FIEMIND",
+    "name": "Fiem Industries Ltd.",
+    "sector": "Automobile and Auto Components"
   },
   {
     "symbol": "FINCABLES",
@@ -1410,6 +1425,11 @@
     "sector": "Financial Services"
   },
   {
+    "symbol": "KPIGREEN",
+    "name": "KPI Green Energy Ltd.",
+    "sector": "Power"
+  },
+  {
     "symbol": "KPIL",
     "name": "Kalpataru Projects International Ltd.",
     "sector": "Construction"
@@ -1540,6 +1560,11 @@
     "sector": "Fast Moving Consumer Goods"
   },
   {
+    "symbol": "MARKSANS",
+    "name": "Marksans Pharma Ltd.",
+    "sector": "Healthcare"
+  },
+  {
     "symbol": "MARUTI",
     "name": "Maruti Suzuki India Ltd.",
     "sector": "Automobile and Auto Components"
@@ -1568,6 +1593,11 @@
     "symbol": "MEESHO",
     "name": "Meesho Ltd.",
     "sector": "Consumer Services"
+  },
+  {
+    "symbol": "METROBRAND",
+    "name": "Metro Brands Ltd.",
+    "sector": "Consumer Discretionary"
   },
   {
     "symbol": "MFSL",
@@ -1783,6 +1813,11 @@
     "symbol": "PARADEEP",
     "name": "Paradeep Phosphates Ltd.",
     "sector": "Chemicals"
+  },
+  {
+    "symbol": "PARAS",
+    "name": "Paras Defence and Space Technologies Ltd.",
+    "sector": "Capital Goods"
   },
   {
     "symbol": "PATANJALI",
@@ -2070,6 +2105,11 @@
     "sector": "Services"
   },
   {
+    "symbol": "SHAILY",
+    "name": "Shaily Engineering Plastics Ltd.",
+    "sector": "Capital Goods"
+  },
+  {
     "symbol": "SHREECEM",
     "name": "Shree Cement Ltd.",
     "sector": "Construction Materials"
@@ -2098,6 +2138,11 @@
     "symbol": "SIGNATURE",
     "name": "Signatureglobal (India) Ltd.",
     "sector": "Realty"
+  },
+  {
+    "symbol": "SJS",
+    "name": "SJS Enterprises Ltd.",
+    "sector": "Automobile and Auto Components"
   },
   {
     "symbol": "SJVN",
@@ -2133,6 +2178,11 @@
     "symbol": "STLTECH",
     "name": "Sterlite Technologies Ltd.",
     "sector": "Telecommunication"
+  },
+  {
+    "symbol": "STYLAMIND",
+    "name": "Stylam Industries Ltd.",
+    "sector": "Consumer Durables"
   },
   {
     "symbol": "SUMICHEM",
@@ -2218,6 +2268,11 @@
     "symbol": "TATAINVEST",
     "name": "Tata Investment Corporation Ltd.",
     "sector": "Financial Services"
+  },
+  {
+    "symbol": "TATAMOTORS",
+    "name": "Tata Motors Ltd.",
+    "sector": "Automobile and Auto Components"
   },
   {
     "symbol": "TATAPOWER",
@@ -2505,6 +2560,11 @@
     "sector": "Automobile and Auto Components"
   },
   {
+    "symbol": "ZOMATO",
+    "name": "Zomato Ltd.",
+    "sector": "Consumer Services"
+  },
+  {
     "symbol": "ZYDUSLIFE",
     "name": "Zydus Lifesciences Ltd.",
     "sector": "Healthcare"
@@ -2513,35 +2573,5 @@
     "symbol": "ZYDUSWELL",
     "name": "Zydus Wellness Ltd.",
     "sector": "Fast Moving Consumer Goods"
-  },
-  {
-    "symbol": "ZOMATO",
-    "name": "Zomato Ltd.",
-    "sector": "Consumer Services"
-  },
-  {
-    "symbol": "TATAMOTORS",
-    "name": "Tata Motors Ltd.",
-    "sector": "Automobile and Auto Components"
-  },
-  {
-    "symbol": "METROBRAND",
-    "name": "Metro Brands Ltd.",
-    "sector": "Consumer Discretionary"
-  },
-  {
-    "symbol": "PARAS",
-    "name": "Paras Defence and Space Technologies Ltd.",
-    "sector": "Capital Goods"
-  },
-  {
-    "symbol": "CYIENTDLM",
-    "name": "Cyient DLM Ltd.",
-    "sector": "Capital Goods"
-  },
-  {
-    "symbol": "KPIGREEN",
-    "name": "KPI Green Energy Ltd.",
-    "sector": "Power"
   }
 ]

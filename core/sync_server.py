@@ -215,9 +215,20 @@ def _refresh_all_live_data_locked(mode: str = "quick", auto_push: bool = False) 
     except Exception:
         pass
 
+    # Ensure hidden_gems is loaded (full rescan on mode=='full', else cached list for live market-movement refresh)
+    hidden_gems_mgr = None
+    try:
+        from core.hidden_gems_screener import HiddenGemsScreener
+        hidden_gems_mgr = HiddenGemsScreener()
+        gems_list = hidden_gems_mgr.scan_hidden_gems(force_refresh=(mode == "full"), sync_live_prices=False)
+        if gems_list:
+            scan_payload["hidden_gems"] = gems_list
+    except Exception:
+        pass
+
     # Collect all unique stock symbols across tables to refresh their live quotes
     symbols_to_update = set()
-    for cat in ["top_momentum_stocks", "fifty_two_week_high_stocks", "monitored_radar", "top_bullish_stocks", "factor_screener_stocks"]:
+    for cat in ["top_momentum_stocks", "fifty_two_week_high_stocks", "monitored_radar", "top_bullish_stocks", "factor_screener_stocks", "hidden_gems"]:
         for item in scan_payload.get(cat, []):
             if isinstance(item, dict) and "symbol" in item:
                 symbols_to_update.add(item["symbol"])
@@ -274,6 +285,15 @@ def _refresh_all_live_data_locked(mode: str = "quick", auto_push: bool = False) 
                 sym = p.get("symbol")
                 if sym in fresh_quotes and fresh_quotes[sym].get("currentPrice", 0) > 0:
                     p["cmp"] = fresh_quotes[sym]["currentPrice"]
+
+        # 5. Auto-update Small & Mid-Cap Hidden Gems dynamically according to live market movements
+        if hidden_gems_mgr is not None and scan_payload.get("hidden_gems"):
+            try:
+                scan_payload["hidden_gems"] = hidden_gems_mgr.refresh_live_market_movements(
+                    scan_payload["hidden_gems"], quotes_map=fresh_quotes
+                )
+            except Exception:
+                pass
 
     # Full mode rescan for 52-week highs
     if mode == "full":
@@ -659,6 +679,24 @@ class SyncRequestHandler(BaseHTTPRequestHandler):
                 data = analyst.get_market_movers(force_refresh=params.get("refresh", ["false"])[0] == "true")
                 self._set_cors_headers(200)
                 self.wfile.write(json.dumps(data).encode("utf-8"))
+            except Exception as e:
+                self._set_cors_headers(500)
+                self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
+            return
+
+        if path == "/api/hidden_gems":
+            try:
+                from core.hidden_gems_screener import HiddenGemsScreener
+                do_refresh = params.get("refresh", ["false"])[0] == "true"
+                cap_flt = params.get("cap", ["all"])[0].lower()
+                screener = HiddenGemsScreener()
+                gems = screener.scan_hidden_gems(force_refresh=do_refresh, sync_live_prices=True)
+                if cap_flt == "small":
+                    gems = [g for g in gems if g.get("cap_tier") == "Small Cap"]
+                elif cap_flt == "mid":
+                    gems = [g for g in gems if g.get("cap_tier") == "Mid Cap"]
+                self._set_cors_headers(200)
+                self.wfile.write(json.dumps({"count": len(gems), "stocks": gems}).encode("utf-8"))
             except Exception as e:
                 self._set_cors_headers(500)
                 self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))

@@ -38,6 +38,15 @@ class HTMLReportGenerator:
             except Exception:
                 factor_stocks = []
 
+        # Small & Mid-Cap Hidden Gems (Auto-updated on market movements)
+        hidden_gems = scan_data.get("hidden_gems", [])
+        if not hidden_gems:
+            try:
+                from core.hidden_gems_screener import HiddenGemsScreener
+                hidden_gems = HiddenGemsScreener().scan_hidden_gems(force_refresh=False, sync_live_prices=False)
+            except Exception:
+                hidden_gems = []
+
         # Load backend NSE 500 catalog for universal lookup fallback
         nse_catalog = []
         try:
@@ -567,6 +576,88 @@ class HTMLReportGenerator:
             </tr>
             """
 
+        # Generate Small & Mid-Cap Hidden Gems Rows
+        hg_total = len(hidden_gems)
+        hg_small = sum(1 for g in hidden_gems if g.get("cap_tier") == "Small Cap")
+        hg_mid = sum(1 for g in hidden_gems if g.get("cap_tier") == "Mid Cap")
+        hg_ready = sum(1 for g in hidden_gems if g.get("status_key") in ("breakout", "pullback"))
+        hg_avg_roce = round(sum(float(g.get("roce") or 0.0) for g in hidden_gems) / hg_total, 1) if hg_total else 0.0
+
+        hidden_gems_rows = ""
+        for g in hidden_gems:
+            sym = g.get("symbol", "")
+            cap_tier = g.get("cap_tier", "Mid Cap")
+            cap_key = "small" if cap_tier == "Small Cap" else "mid"
+            cap_col = "#34d399" if cap_key == "small" else "#38bdf8"
+            mcap_cr = float(g.get("mcap_cr") or 0.0)
+            g_score = float(g.get("gem_score") or 7.0)
+            g_col = "#10b981" if g_score >= 8.5 else ("#38bdf8" if g_score >= 7.5 else "#a78bfa")
+            day_pct = float(g.get("day_change_pct") or 0.0)
+            day_col = "#10b981" if day_pct >= 0 else "#ef4444"
+            day_sign = "+" if day_pct >= 0 else ""
+            s_key = g.get("status_key", "pullback")
+            s_col = g.get("status_color", "#38bdf8")
+            pe_v = float(g.get("pe") or 0.0)
+            peg_v = g.get("peg")
+            peg_lbl = f"PEG {peg_v:.2f}" if isinstance(peg_v, (int, float)) else "GARP"
+            cfo_v = g.get("cfo_to_pat_3y")
+            cfo_lbl = f"{cfo_v:.2f}x" if isinstance(cfo_v, (int, float)) else "—"
+            sales_yoy = g.get("qtr_sales_yoy_pct")
+            pat_yoy = g.get("qtr_pat_yoy_pct")
+            sales_str = f"{sales_yoy:+.1f}%" if isinstance(sales_yoy, (int, float)) else "—"
+            pat_str = f"{pat_yoy:+.1f}%" if isinstance(pat_yoy, (int, float)) else "—"
+            de_v = g.get("debt_to_equity")
+            de_str = f"{de_v:.2f}x" if isinstance(de_v, (int, float)) else "—"
+            opm_bps = g.get("opm_expansion_bps")
+            opm_str = f" • OPM {int(opm_bps):+d} bps" if isinstance(opm_bps, (int, float)) and opm_bps != 0 else ""
+            ret1y = float(g.get("ret_1y") or 0.0)
+            ret1y_col = "#34d399" if ret1y >= 0 else "#f87171"
+
+            hidden_gems_rows += f"""
+            <tr class="stock-row gem-row"
+                data-symbol="{sym}" data-name="{g.get('name', sym)}" data-sector="{g.get('sector', 'Equities')}"
+                data-cap="{cap_key}" data-status="{s_key}">
+                <td>
+                    <div class="sym-name">{sym} <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:{cap_col}22; color:{cap_col}; border:1px solid {cap_col}66; font-weight:700;">{cap_tier}</span></div>
+                    <div class="sub-text">{g.get('name', sym)}</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹{mcap_cr:,.0f} Cr • D/E: {de_str}</div>
+                </td>
+                <td><span class="sector-pill">{g.get('sector', 'Equities')}</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:{g_col}22; color:{g_col}; border:1px solid {g_col}; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 {g_score:.1f}/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:{s_col};">{g.get('setup_status', '')}</span></div>
+                </td>
+                <td>
+                    <b>₹{float(g.get('cmp') or 0):,.2f}</b>
+                    <div class="sub-text" style="color:{day_col}; font-weight:700;">{day_sign}{day_pct:.2f}% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-{g.get('dist_52w', 0)}% off 52W</div>
+                </td>
+                <td>
+                    <b>{pe_v:.1f}x</b>
+                    <div class="sub-text" style="color:#38bdf8;">{peg_lbl}</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">{g.get('roce', 0)}%</span></div>
+                    <div class="sub-text"><b>ROE:</b> {g.get('roe', 0)}% • <b>CFO/PAT:</b> {cfo_lbl}</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">{sales_str}</b></div>
+                    <div>PAT: <b style="color:#10b981;">{pat_str}</b><span class="sub-text">{opm_str}</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>{g.get('rsi', 50)}</b> • <span style="color:{ret1y_col}; font-weight:700;">1Y: {ret1y:+.1f}%</span></div>
+                    <div class="sub-text">20E: ₹{g.get('ema_20', 0):,.0f} • 50E: ₹{g.get('ema_50', 0):,.0f}</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: {g.get('suggested_entry', '')}</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹{g.get('target_1', 0):,.1f}</span> • <span style="color:#ef4444;">SL: ₹{g.get('stop_loss', 0):,.1f}</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('{sym}', this)">📈 Chart</button></td>
+            </tr>
+            """
+
         # Generate IPO Table
         ipo_rows = ""
         for ipo in ipo_list:
@@ -888,6 +979,7 @@ class HTMLReportGenerator:
     <div class="controls-bar">
         <div class="tabs">
             <button class="tab-btn active" onclick="switchView('momentum', this)">🏆 Super-Trend Leaders (3M/1Y/3Y)</button>
+            <button id="tabBtnHiddenGems" class="tab-btn" onclick="switchView('hidden_gems', this)" style="border-color: #a855f7; color: #c084fc; font-weight: 700;">💎 Hidden Gems (Small &amp; Mid Cap)</button>
             <button class="tab-btn" onclick="switchView('factor_screener', this)" style="border-color: #10b981; color: #34d399; font-weight: 700;">💎 Factor &amp; Value Finder</button>
             <button id="tabBtnMovers" class="tab-btn" onclick="switchView('movers', this)" style="border-color: #f59e0b; color: #f59e0b; font-weight: 700;">⚡ Top Movers (Gainers &amp; Losers)</button>
             <button class="tab-btn" onclick="switchView('fifty_two_week', this)">🚀 52-Week High Leaders</button>
@@ -1032,6 +1124,76 @@ class HTMLReportGenerator:
                 </thead>
                 <tbody id="factorScreenerTbody">
                     {factor_rows}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Tab 1C: Small & Mid-Cap Hidden Gems (Auto-Updated with Market Movements) -->
+    <div id="view-hidden_gems" class="view-panel" style="display: none;">
+        <div style="background: linear-gradient(135deg, #3b0764, #0f172a); border: 1px solid #a855f7; border-radius: 12px; padding: 18px 22px; margin-bottom: 18px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                <div>
+                    <h3 style="color: #fff; font-size: 18px; margin: 0 0 6px 0; display: flex; align-items: center; gap: 8px;">
+                        <span>💎 Small &amp; Mid-Cap Hidden Gems Radar</span>
+                        <span style="background: #581c87; color: #e9d5ff; font-size: 11px; padding: 2px 8px; border-radius: 12px;">Auto-Syncs With Live Market Moves</span>
+                    </h3>
+                    <p style="color: #cbd5e1; font-size: 13px; margin: 0;">
+                        High-ROCE, low-debt, cash-generative Small &amp; Mid-Cap compounders (MCap ₹500–₹35,000 Cr, P/E &le; 88x, 3Y CFO/PAT &ge; 0.65x). Live prices, breakout status, entry zones &amp; stops update automatically with market movements.
+                    </p>
+                </div>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <div style="background: #111827; border: 1px solid #a855f755; padding: 8px 12px; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 10px; color: #94a3b8; display: block;">Small-Cap Gems</span>
+                        <b style="font-size: 15px; color: #34d399;">{hg_small} Stocks</b>
+                    </div>
+                    <div style="background: #111827; border: 1px solid #38bdf855; padding: 8px 12px; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 10px; color: #94a3b8; display: block;">Mid-Cap Gems</span>
+                        <b style="font-size: 15px; color: #38bdf8;">{hg_mid} Stocks</b>
+                    </div>
+                    <div style="background: #111827; border: 1px solid #10b98155; padding: 8px 12px; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 10px; color: #94a3b8; display: block;">Breakout / Buy Ready</span>
+                        <b style="font-size: 15px; color: #10b981;">{hg_ready}</b>
+                    </div>
+                    <div style="background: #111827; border: 1px solid #374151; padding: 8px 12px; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 10px; color: #94a3b8; display: block;">Avg ROCE</span>
+                        <b style="font-size: 15px; color: #c084fc;">{hg_avg_roce}%</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 18px; margin-bottom: 18px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+                <span style="font-size: 12px; font-weight: 800; color: var(--text-heading);">🎯 Quick Filters:</span>
+                <button class="sip-preset-btn" onclick="applyHiddenGemFilter('all')" style="font-weight:700; color:#c084fc;">All Hidden Gems ({hg_total})</button>
+                <button class="sip-preset-btn" onclick="applyHiddenGemFilter('small')" style="font-weight:700; color:#34d399;">🌱 Small Cap (&lt;₹15k Cr)</button>
+                <button class="sip-preset-btn" onclick="applyHiddenGemFilter('mid')" style="font-weight:700; color:#38bdf8;">🏛️ Mid Cap (₹15k–35k Cr)</button>
+                <button class="sip-preset-btn" onclick="applyHiddenGemFilter('breakout')" style="font-weight:700; color:#10b981;">🔥 Stage-2 Breakouts</button>
+                <button class="sip-preset-btn" onclick="applyHiddenGemFilter('pullback')" style="font-weight:700; color:#38bdf8;">🎯 Pullback Buy</button>
+                <button class="sip-preset-btn" onclick="applyHiddenGemFilter('turnaround')" style="font-weight:700; color:#a78bfa;">⚡ Base Reclaim / Watch</button>
+            </div>
+            <span id="hiddenGemsCountBadge" class="badge" style="background: #7e22ce;">Showing {hg_total} Gems</span>
+        </div>
+
+        <div class="table-container">
+            <table id="hiddenGemsTable">
+                <thead>
+                    <tr>
+                        <th class="sortable" onclick="sortTable(this, 0)">Stock / Cap Tier</th>
+                        <th class="sortable" onclick="sortTable(this, 1)">Sector</th>
+                        <th class="sortable" onclick="sortTable(this, 2)">Gem Score &amp; Live Setup</th>
+                        <th class="sortable" onclick="sortTable(this, 3)">Live CMP &amp; Move</th>
+                        <th class="sortable" onclick="sortTable(this, 4)">P/E &amp; PEG</th>
+                        <th class="sortable" onclick="sortTable(this, 5)">ROCE / CFO Quality</th>
+                        <th>Qtr Growth (YoY)</th>
+                        <th>RSI &amp; EMAs</th>
+                        <th>Buy Zone / Target / SL</th>
+                        <th>Chart</th>
+                    </tr>
+                </thead>
+                <tbody id="hiddenGemsTbody">
+                    {hidden_gems_rows}
                 </tbody>
             </table>
         </div>
