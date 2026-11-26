@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-26 15:38:05",
+  "timestamp": "2026-11-26 15:41:51",
   "top_gainers": [
     {
       "symbol": "ACE",
@@ -101,6 +101,17 @@
       "volume": "4,995,495"
     },
     {
+      "symbol": "BALRAMCHIN",
+      "name": "Balrampur Chini",
+      "price": "\u20b9649.90",
+      "price_raw": "649.90",
+      "change_pct": "+6.23%",
+      "change_val": "38.10",
+      "high": "654.50",
+      "low": "619.30",
+      "volume": "3,802,326"
+    },
+    {
       "symbol": "BSE",
       "name": "BSE Limited",
       "price": "\u20b93,990.40",
@@ -154,17 +165,6 @@
       "high": "817.90",
       "low": "746.20",
       "volume": "3,164,991"
-    },
-    {
-      "symbol": "LODHA",
-      "name": "Lodha Developer",
-      "price": "\u20b91,261.20",
-      "price_raw": "1261.20",
-      "change_pct": "+4.93%",
-      "change_val": "59.20",
-      "high": "1,268.90",
-      "low": "1,198.90",
-      "volume": "2,795,865"
     }
   ],
   "top_losers": [
