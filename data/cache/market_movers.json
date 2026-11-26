@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-26 15:45:41",
+  "timestamp": "2026-11-26 16:07:29",
   "top_gainers": [
     {
       "symbol": "ACE",
@@ -10,7 +10,7 @@
       "change_val": "104.65",
       "high": "1,299.00",
       "low": "1,180.00",
-      "volume": "3,274,916"
+      "volume": "3,274,944"
     },
     {
       "symbol": "PRESTIGE",
@@ -21,7 +21,7 @@
       "change_val": "147.00",
       "high": "1,840.70",
       "low": "1,675.00",
-      "volume": "5,491,930"
+      "volume": "5,492,726"
     },
     {
       "symbol": "HEGAM",
@@ -32,7 +32,7 @@
       "change_val": "22.33",
       "high": "291.87",
       "low": "260.01",
-      "volume": "27,678,061"
+      "volume": "27,678,350"
     },
     {
       "symbol": "MCX",
@@ -43,7 +43,7 @@
       "change_val": "270.00",
       "high": "3,865.00",
       "low": "3,591.00",
-      "volume": "4,853,371"
+      "volume": "4,854,647"
     },
     {
       "symbol": "WOCKPHARMA",
@@ -54,7 +54,7 @@
       "change_val": "155.70",
       "high": "2,246.10",
       "low": "2,051.00",
-      "volume": "1,765,706"
+      "volume": "1,766,207"
     },
     {
       "symbol": "JWL",
@@ -65,7 +65,7 @@
       "change_val": "16.23",
       "high": "242.99",
       "low": "227.88",
-      "volume": "98,466,955"
+      "volume": "98,482,268"
     },
     {
       "symbol": "BRIGADE",
@@ -76,7 +76,7 @@
       "change_val": "38.80",
       "high": "644.50",
       "low": "577.30",
-      "volume": "2,657,978"
+      "volume": "2,658,649"
     },
     {
       "symbol": "KFINTECH",
@@ -87,7 +87,7 @@
       "change_val": "61.00",
       "high": "1,001.90",
       "low": "934.00",
-      "volume": "4,571,965"
+      "volume": "4,572,767"
     },
     {
       "symbol": "HCLTECH",
@@ -98,7 +98,7 @@
       "change_val": "88.60",
       "high": "1,468.60",
       "low": "1,386.00",
-      "volume": "4,995,495"
+      "volume": "4,996,290"
     },
     {
       "symbol": "BALRAMCHIN",
@@ -109,7 +109,7 @@
       "change_val": "38.10",
       "high": "654.50",
       "low": "619.30",
-      "volume": "3,802,326"
+      "volume": "3,802,657"
     },
     {
       "symbol": "BSE",
@@ -120,7 +120,7 @@
       "change_val": "215.20",
       "high": "3,998.00",
       "low": "3,808.90",
-      "volume": "6,443,307"
+      "volume": "6,445,633"
     },
     {
       "symbol": "SUNTV",
@@ -131,7 +131,7 @@
       "change_val": "34.85",
       "high": "655.95",
       "low": "599.00",
-      "volume": "1,361,939"
+      "volume": "1,361,959"
     },
     {
       "symbol": "RKFORGE",
@@ -142,7 +142,7 @@
       "change_val": "42.10",
       "high": "790.00",
       "low": "741.05",
-      "volume": "1,472,864"
+      "volume": "1,472,963"
     },
     {
       "symbol": "WELCORP",
@@ -153,7 +153,7 @@
       "change_val": "115.30",
       "high": "2,253.00",
       "low": "2,114.40",
-      "volume": "1,210,676"
+      "volume": "1,210,978"
     },
     {
       "symbol": "FACT",
@@ -164,7 +164,7 @@
       "change_val": "39.90",
       "high": "817.90",
       "low": "746.20",
-      "volume": "3,164,991"
+      "volume": "3,164,993"
     }
   ],
   "top_losers": [
@@ -177,7 +177,7 @@
       "change_val": "-4.51",
       "high": "99.75",
       "low": "93.90",
-      "volume": "16,462,490"
+      "volume": "16,495,189"
     },
     {
       "symbol": "INDIACEM",
@@ -188,7 +188,7 @@
       "change_val": "-14.20",
       "high": "323.25",
       "low": "308.00",
-      "volume": "650,622"
+      "volume": "653,357"
     },
     {
       "symbol": "IKS",
@@ -199,7 +199,7 @@
       "change_val": "-69.50",
       "high": "1,649.30",
       "low": "1,560.10",
-      "volume": "366,513"
+      "volume": "366,518"
     },
     {
       "symbol": "PVRINOX",
@@ -210,7 +210,7 @@
       "change_val": "-71.10",
       "high": "1,720.00",
       "low": "1,626.00",
-      "volume": "383,183"
+      "volume": "383,257"
     },
     {
       "symbol": "TBOTEK",
@@ -232,7 +232,7 @@
       "change_val": "-23.80",
       "high": "604.95",
       "low": "575.90",
-      "volume": "372,142"
+      "volume": "372,395"
     },
     {
       "symbol": "TTML",
@@ -243,7 +243,7 @@
       "change_val": "-1.31",
       "high": "33.50",
       "low": "32.00",
-      "volume": "12,661,170"
+      "volume": "12,669,626"
     },
     {
       "symbol": "ONESOURCE",
@@ -254,7 +254,7 @@
       "change_val": "-56.80",
       "high": "1,617.30",
       "low": "1,532.20",
-      "volume": "273,227"
+      "volume": "273,229"
     },
     {
       "symbol": "ZYDUSLIFE",
@@ -265,7 +265,7 @@
       "change_val": "-41.80",
       "high": "1,244.50",
       "low": "1,189.00",
-      "volume": "2,435,201"
+      "volume": "2,435,694"
     },
     {
       "symbol": "HFCL",
@@ -276,7 +276,7 @@
       "change_val": "-5.68",
       "high": "176.30",
       "low": "161.46",
-      "volume": "14,349,865"
+      "volume": "14,351,874"
     },
     {
       "symbol": "LGEINDIA",
@@ -287,7 +287,7 @@
       "change_val": "-60.30",
       "high": "1,788.80",
       "low": "1,745.00",
-      "volume": "16,823,949"
+      "volume": "16,824,222"
     },
     {
       "symbol": "DALBHARAT",
@@ -298,7 +298,7 @@
       "change_val": "-52.10",
       "high": "1,600.00",
       "low": "1,530.00",
-      "volume": "108,689"
+      "volume": "108,972"
     },
     {
       "symbol": "CONCORDBIO",
@@ -312,6 +312,17 @@
       "volume": "363,441"
     },
     {
+      "symbol": "CUB",
+      "name": "City Union Bank",
+      "price": "\u20b9239.00",
+      "price_raw": "239.00",
+      "change_pct": "-3.24%",
+      "change_val": "-8.00",
+      "high": "249.58",
+      "low": "237.10",
+      "volume": "2,812,216"
+    },
+    {
       "symbol": "ASIANPAINT",
       "name": "Asian Paints",
       "price": "\u20b92,543.00",
@@ -320,18 +331,7 @@
       "change_val": "-78.20",
       "high": "2,623.80",
       "low": "2,540.10",
-      "volume": "938,729"
-    },
-    {
-      "symbol": "BAJFINANCE",
-      "name": "Bajaj Finance",
-      "price": "\u20b91,097.85",
-      "price_raw": "1097.85",
-      "change_pct": "-2.96%",
-      "change_val": "-33.50",
-      "high": "1,125.35",
-      "low": "1,097.85",
-      "volume": "7,789,302"
+      "volume": "938,757"
     }
   ]
 }
