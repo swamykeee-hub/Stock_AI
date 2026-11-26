@@ -6,25 +6,25 @@
   "inflection_score": 7.2,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "17784",
-    "current_price": "716",
-    "stock_pe": "34.7",
+    "market_cap_cr": "18406",
+    "current_price": "741",
+    "stock_pe": "36",
     "book_value": "58",
-    "dividend_yield_pct": "1.73",
+    "dividend_yield_pct": "1.67",
     "roce_pct": "47",
     "roe_pct": "37.4",
     "debt_to_equity": "0.04",
     "face_value": "2",
-    "pb_ratio": "12.34",
-    "market_cap_num": 17784.0,
-    "current_price_num": 716.0,
-    "pe_num": 34.7,
+    "pb_ratio": "12.78",
+    "market_cap_num": 18406.0,
+    "current_price_num": 741.0,
+    "pe_num": 36.0,
     "book_value_num": 58.0,
     "roce_num": 47.0,
     "roe_num": 37.4,
-    "pb_num": 12.34,
-    "peg_ratio": "1.83",
-    "peg_num": 1.83
+    "pb_num": 12.78,
+    "peg_ratio": "1.89",
+    "peg_num": 1.89
   },
   "ranges": {
     "sales_cagr_3y": 16.0,
@@ -81,6 +81,6 @@
     "Expanding Operating Margins (+200 bps)"
   ],
   "red_flags": [
-    "Stock is trading at 12.4 times its book value"
+    "Stock is trading at 12.8 times its book value"
   ]
 }

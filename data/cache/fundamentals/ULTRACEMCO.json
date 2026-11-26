@@ -6,23 +6,23 @@
   "inflection_score": 7.3,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "376305",
-    "current_price": "12770",
-    "stock_pe": "42.4",
+    "market_cap_cr": "376392",
+    "current_price": "12773",
+    "stock_pe": "42.3",
     "book_value": "2497",
-    "dividend_yield_pct": "1.89",
+    "dividend_yield_pct": "1.92",
     "roce_pct": "12.7",
     "roe_pct": "11.1",
     "debt_to_equity": "0.40",
     "face_value": "10",
-    "pb_ratio": "5.11",
-    "market_cap_num": 376305.0,
-    "current_price_num": 12770.0,
-    "pe_num": 42.4,
+    "pb_ratio": "5.12",
+    "market_cap_num": 376392.0,
+    "current_price_num": 12773.0,
+    "pe_num": 42.3,
     "book_value_num": 2497.0,
     "roce_num": 12.7,
     "roe_num": 11.1,
-    "pb_num": 5.11,
+    "pb_num": 5.12,
     "peg_ratio": "2.00",
     "peg_num": 2.0
   },
@@ -36,7 +36,7 @@
     "roe_3y": 11.0,
     "roe_5y": 11.0,
     "price_cagr_3y": 14.0,
-    "price_cagr_5y": 11.0
+    "price_cagr_5y": 12.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 19.0,
@@ -79,7 +79,7 @@
     "Company has been maintaining a healthy dividend payout of 51.1%"
   ],
   "red_flags": [
-    "Stock is trading at 5.07 times its book value",
+    "Stock is trading at 5.18 times its book value",
     "Promoter holding has decreased over last quarter: -0.85%",
     "Company has a low return on equity of 10.7% over last 3 years."
   ]

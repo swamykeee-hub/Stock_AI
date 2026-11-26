@@ -6,25 +6,25 @@
   "inflection_score": 4.5,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "903672",
-    "current_price": "2498",
-    "stock_pe": "16.5",
+    "market_cap_cr": "926755",
+    "current_price": "2561",
+    "stock_pe": "17",
     "book_value": "329",
-    "dividend_yield_pct": "2.54",
+    "dividend_yield_pct": "2.48",
     "roce_pct": "63",
     "roe_pct": "51.8",
     "debt_to_equity": "0.10",
     "face_value": "1",
-    "pb_ratio": "7.59",
-    "market_cap_num": 903672.0,
-    "current_price_num": 2498.0,
-    "pe_num": 16.5,
+    "pb_ratio": "7.78",
+    "market_cap_num": 926755.0,
+    "current_price_num": 2561.0,
+    "pe_num": 17.0,
     "book_value_num": 329.0,
     "roce_num": 63.0,
     "roe_num": 51.8,
-    "pb_num": 7.59,
-    "peg_ratio": "1.11",
-    "peg_num": 1.11
+    "pb_num": 7.78,
+    "peg_ratio": "1.14",
+    "peg_num": 1.14
   },
   "ranges": {
     "sales_cagr_3y": 6.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 9.0,
     "roe_3y": 52.0,
     "roe_5y": 49.0,
-    "price_cagr_3y": -11.0,
-    "price_cagr_5y": -7.0
+    "price_cagr_3y": -10.0,
+    "price_cagr_5y": -6.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 11.0,
@@ -78,10 +78,10 @@
     "Superior ROE: 51.8%",
     "Fortress Balance Sheet (D/E: 0.10x)",
     "Cash Generative Profits (CFO/EBITDA: 92%)",
-    "Reasonable GARP Multiple (PEG: 1.11x)"
+    "Reasonable GARP Multiple (PEG: 1.14x)"
   ],
   "red_flags": [
-    "Stock is trading at 7.48 times its book value",
+    "Stock is trading at 7.83 times its book value",
     "The company has delivered a poor sales growth of 10.2% over past five years."
   ]
 }

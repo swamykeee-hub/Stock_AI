@@ -6,25 +6,25 @@
   "inflection_score": 5.8,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "14548",
-    "current_price": "419",
-    "stock_pe": "22.2",
+    "market_cap_cr": "14732",
+    "current_price": "424",
+    "stock_pe": "22.4",
     "book_value": "141",
-    "dividend_yield_pct": "0.72",
+    "dividend_yield_pct": "0.71",
     "roce_pct": "17.6",
     "roe_pct": "14.8",
     "debt_to_equity": "0.37",
     "face_value": "1",
-    "pb_ratio": "2.97",
-    "market_cap_num": 14548.0,
-    "current_price_num": 419.0,
-    "pe_num": 22.2,
+    "pb_ratio": "3.01",
+    "market_cap_num": 14732.0,
+    "current_price_num": 424.0,
+    "pe_num": 22.4,
     "book_value_num": 141.0,
     "roce_num": 17.6,
     "roe_num": 14.8,
-    "pb_num": 2.97,
-    "peg_ratio": "1.39",
-    "peg_num": 1.39
+    "pb_num": 3.01,
+    "peg_ratio": "1.40",
+    "peg_num": 1.4
   },
   "ranges": {
     "sales_cagr_3y": 16.0,
@@ -77,7 +77,7 @@
     "Strong Capital Return (ROCE: 17.6%)",
     "Cash Generative Profits (CFO/EBITDA: 99%)",
     "Capex Capacity Runway Active (CWIP: \u20b9137 Cr)",
-    "Reasonable GARP Multiple (PEG: 1.39x)"
+    "Reasonable GARP Multiple (PEG: 1.40x)"
   ],
   "red_flags": [
     "Standard market & execution risks apply"

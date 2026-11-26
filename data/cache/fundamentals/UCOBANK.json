@@ -6,19 +6,19 @@
   "inflection_score": 8.1,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "30998",
-    "current_price": "24.7",
-    "stock_pe": "12.5",
+    "market_cap_cr": "30847",
+    "current_price": "24.6",
+    "stock_pe": "12.4",
     "book_value": "24.6",
-    "dividend_yield_pct": "1.76",
+    "dividend_yield_pct": "1.77",
     "roce_pct": "5.76",
     "roe_pct": "8.5",
     "debt_to_equity": "N/A",
     "face_value": "10",
     "pb_ratio": "1.00",
-    "market_cap_num": 30998.0,
-    "current_price_num": 24.7,
-    "pe_num": 12.5,
+    "market_cap_num": 30847.0,
+    "current_price_num": 24.6,
+    "pe_num": 12.4,
     "book_value_num": 24.6,
     "roce_num": 5.76,
     "roe_num": 8.5,
@@ -36,7 +36,7 @@
     "roe_3y": 7.0,
     "roe_5y": 6.0,
     "price_cagr_3y": -13.0,
-    "price_cagr_5y": 14.0
+    "price_cagr_5y": 13.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 15.1,
@@ -76,7 +76,7 @@
   "strengths": [
     "Multi-Year Profit Compounding (3Y CAGR: +37%)",
     "Deep GARP Value (PEG: 0.26x)",
-    "Stock is trading at 1.00 times its book value"
+    "Stock is trading at 0.99 times its book value"
   ],
   "red_flags": [
     "Sub-par ROCE (5.8%)",

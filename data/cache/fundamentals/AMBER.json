@@ -6,25 +6,25 @@
   "inflection_score": 4.7,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "24098",
-    "current_price": "6833",
-    "stock_pe": "143",
+    "market_cap_cr": "24412",
+    "current_price": "6922",
+    "stock_pe": "145",
     "book_value": "1238",
     "dividend_yield_pct": "0",
     "roce_pct": "10.3",
     "roe_pct": "5.99",
     "debt_to_equity": "1.08",
     "face_value": "10",
-    "pb_ratio": "5.52",
-    "market_cap_num": 24098.0,
-    "current_price_num": 6833.0,
-    "pe_num": 143.0,
+    "pb_ratio": "5.59",
+    "market_cap_num": 24412.0,
+    "current_price_num": 6922.0,
+    "pe_num": 145.0,
     "book_value_num": 1238.0,
     "roce_num": 10.3,
     "roe_num": 5.99,
-    "pb_num": 5.52,
-    "peg_ratio": "17.88",
-    "peg_num": 17.88
+    "pb_num": 5.59,
+    "peg_ratio": "18.12",
+    "peg_num": 18.12
   },
   "ranges": {
     "sales_cagr_3y": 21.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": -24.0,
     "roe_3y": 8.0,
     "roe_5y": 8.0,
-    "price_cagr_3y": 28.0,
+    "price_cagr_3y": 29.0,
     "price_cagr_5y": 16.0
   },
   "inflection": {
@@ -80,7 +80,7 @@
   "red_flags": [
     "Elevated Leverage (D/E: 1.08x)",
     "Quarterly Earnings Contraction (-106.2% YoY)",
-    "Expensive Valuation vs Growth (PEG: 17.88x)",
-    "Stock is trading at 5.53 times its book value"
+    "Expensive Valuation vs Growth (PEG: 18.12x)",
+    "Stock is trading at 5.62 times its book value"
   ]
 }

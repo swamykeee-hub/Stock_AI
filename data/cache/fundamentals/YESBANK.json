@@ -6,7 +6,7 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "55938",
+    "market_cap_cr": "55940",
     "current_price": "17.8",
     "stock_pe": "13.3",
     "book_value": "17",
@@ -16,7 +16,7 @@
     "debt_to_equity": "N/A",
     "face_value": "2",
     "pb_ratio": "1.05",
-    "market_cap_num": 55938.0,
+    "market_cap_num": 55940.0,
     "current_price_num": 17.8,
     "pe_num": 13.3,
     "book_value_num": 17.0,

@@ -6,23 +6,23 @@
   "inflection_score": 8.8,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "31580",
-    "current_price": "158",
-    "stock_pe": "7.07",
+    "market_cap_cr": "30959",
+    "current_price": "155",
+    "stock_pe": "6.98",
     "book_value": "115",
-    "dividend_yield_pct": "3.84",
+    "dividend_yield_pct": "3.86",
     "roce_pct": "8.41",
     "roe_pct": "20",
     "debt_to_equity": "N/A",
     "face_value": "10",
-    "pb_ratio": "1.37",
-    "market_cap_num": 31580.0,
-    "current_price_num": 158.0,
-    "pe_num": 7.07,
+    "pb_ratio": "1.35",
+    "market_cap_num": 30959.0,
+    "current_price_num": 155.0,
+    "pe_num": 6.98,
     "book_value_num": 115.0,
     "roce_num": 8.41,
     "roe_num": 20.0,
-    "pb_num": 1.37,
+    "pb_num": 1.35,
     "peg_ratio": "0.12",
     "peg_num": 0.12
   },
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 59.0,
     "roe_3y": 17.0,
     "roe_5y": 15.0,
-    "price_cagr_3y": 25.0,
-    "price_cagr_5y": 32.0
+    "price_cagr_3y": 24.0,
+    "price_cagr_5y": 31.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 25.5,
@@ -78,7 +78,7 @@
     "Multi-Year Profit Compounding (3Y CAGR: +33%)",
     "Capex Capacity Runway Active (CWIP: \u20b928 Cr)",
     "Deep GARP Value (PEG: 0.12x)",
-    "Stock is providing a good dividend yield of 3.83%."
+    "Stock is providing a good dividend yield of 3.89%."
   ],
   "red_flags": [
     "Sub-par ROCE (8.4%)",

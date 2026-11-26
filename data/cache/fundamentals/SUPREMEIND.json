@@ -6,25 +6,25 @@
   "inflection_score": 7.3,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "40056",
-    "current_price": "3153",
-    "stock_pe": "35.4",
+    "market_cap_cr": "40279",
+    "current_price": "3171",
+    "stock_pe": "35.6",
     "book_value": "503",
-    "dividend_yield_pct": "1.13",
+    "dividend_yield_pct": "1.14",
     "roce_pct": "20.7",
     "roe_pct": "15.8",
     "debt_to_equity": "0.01",
     "face_value": "2",
-    "pb_ratio": "6.27",
-    "market_cap_num": 40056.0,
-    "current_price_num": 3153.0,
-    "pe_num": 35.4,
+    "pb_ratio": "6.30",
+    "market_cap_num": 40279.0,
+    "current_price_num": 3171.0,
+    "pe_num": 35.6,
     "book_value_num": 503.0,
     "roce_num": 20.7,
     "roe_num": 15.8,
-    "pb_num": 6.27,
-    "peg_ratio": "0.60",
-    "peg_num": 0.6
+    "pb_num": 6.3,
+    "peg_ratio": "0.61",
+    "peg_num": 0.61
   },
   "ranges": {
     "sales_cagr_3y": 7.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 33.0,
     "roe_3y": 18.0,
     "roe_5y": 20.0,
-    "price_cagr_3y": -9.0,
+    "price_cagr_3y": -8.0,
     "price_cagr_5y": 8.0
   },
   "inflection": {
@@ -78,7 +78,7 @@
     "Fortress Balance Sheet (D/E: 0.01x)",
     "Cash Generative Profits (CFO/EBITDA: 95%)",
     "Explosive Quarterly PAT Surge (+58.8% YoY)",
-    "Deep GARP Value (PEG: 0.60x)"
+    "Deep GARP Value (PEG: 0.61x)"
   ],
   "red_flags": [
     "Standard market & execution risks apply"

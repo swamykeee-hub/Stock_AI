@@ -6,8 +6,8 @@
   "inflection_score": 9.2,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "25490",
-    "current_price": "265",
+    "market_cap_cr": "24604",
+    "current_price": "255",
     "stock_pe": "",
     "book_value": "19.1",
     "dividend_yield_pct": "0",
@@ -15,14 +15,14 @@
     "roe_pct": "-8.86",
     "debt_to_equity": "0.59",
     "face_value": "10",
-    "pb_ratio": "13.87",
-    "market_cap_num": 25490.0,
-    "current_price_num": 265.0,
+    "pb_ratio": "13.35",
+    "market_cap_num": 24604.0,
+    "current_price_num": 255.0,
     "pe_num": null,
     "book_value_num": 19.1,
     "roce_num": 2.1,
     "roe_num": -8.86,
-    "pb_num": 13.87,
+    "pb_num": 13.35,
     "peg_ratio": "N/A"
   },
   "ranges": {
@@ -34,8 +34,8 @@
     "profit_growth_ttm": 53.0,
     "roe_3y": -18.0,
     "roe_5y": -11.0,
-    "price_cagr_3y": -1.0,
-    "price_cagr_5y": 20.0
+    "price_cagr_3y": -3.0,
+    "price_cagr_5y": 18.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": -11.0,
@@ -80,7 +80,7 @@
   ],
   "red_flags": [
     "Sub-par ROCE (2.1%)",
-    "Stock is trading at 14.4 times its book value",
+    "Stock is trading at 13.4 times its book value",
     "Company has low interest coverage ratio.",
     "Company has a low return on equity of -17.6% over last 3 years."
   ]

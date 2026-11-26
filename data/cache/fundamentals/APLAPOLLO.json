@@ -6,25 +6,25 @@
   "inflection_score": 9.9,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "40558",
-    "current_price": "1461",
-    "stock_pe": "31",
+    "market_cap_cr": "40960",
+    "current_price": "1475",
+    "stock_pe": "31.3",
     "book_value": "207",
     "dividend_yield_pct": "0.59",
     "roce_pct": "31.8",
     "roe_pct": "25.4",
     "debt_to_equity": "0.17",
     "face_value": "2",
-    "pb_ratio": "7.06",
-    "market_cap_num": 40558.0,
-    "current_price_num": 1461.0,
-    "pe_num": 31.0,
+    "pb_ratio": "7.13",
+    "market_cap_num": 40960.0,
+    "current_price_num": 1475.0,
+    "pe_num": 31.3,
     "book_value_num": 207.0,
     "roce_num": 31.8,
     "roe_num": 25.4,
-    "pb_num": 7.06,
-    "peg_ratio": "1.17",
-    "peg_num": 1.17
+    "pb_num": 7.13,
+    "peg_ratio": "1.18",
+    "peg_num": 1.18
   },
   "ranges": {
     "sales_cagr_3y": 13.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 25.0,
     "roe_3y": 22.0,
     "roe_5y": 23.0,
-    "price_cagr_3y": -1.0,
-    "price_cagr_5y": 13.0
+    "price_cagr_3y": -5.0,
+    "price_cagr_5y": 11.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 27.0,
@@ -81,6 +81,6 @@
     "Multi-Year Profit Compounding (3Y CAGR: +23%)"
   ],
   "red_flags": [
-    "Stock is trading at 8.08 times its book value"
+    "Stock is trading at 7.13 times its book value"
   ]
 }

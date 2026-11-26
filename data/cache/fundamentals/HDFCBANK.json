@@ -6,25 +6,25 @@
   "inflection_score": 5.1,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "1301997",
-    "current_price": "844",
-    "stock_pe": "16.3",
+    "market_cap_cr": "1342743",
+    "current_price": "870",
+    "stock_pe": "16.8",
     "book_value": "391",
     "dividend_yield_pct": "1.53",
     "roce_pct": "7.02",
     "roe_pct": "13.6",
     "debt_to_equity": "N/A",
     "face_value": "1",
-    "pb_ratio": "2.16",
-    "market_cap_num": 1301997.0,
-    "current_price_num": 844.0,
-    "pe_num": 16.3,
+    "pb_ratio": "2.23",
+    "market_cap_num": 1342743.0,
+    "current_price_num": 870.0,
+    "pe_num": 16.8,
     "book_value_num": 391.0,
     "roce_num": 7.02,
     "roe_num": 13.6,
-    "pb_num": 2.16,
-    "peg_ratio": "0.91",
-    "peg_num": 0.91
+    "pb_num": 2.23,
+    "peg_ratio": "0.93",
+    "peg_num": 0.93
   },
   "ranges": {
     "sales_cagr_3y": 27.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 11.0,
     "roe_3y": 15.0,
     "roe_5y": 15.0,
-    "price_cagr_3y": 2.0,
-    "price_cagr_5y": 2.0
+    "price_cagr_3y": 3.0,
+    "price_cagr_5y": 3.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 9.4,
@@ -74,7 +74,7 @@
     "public_4q_delta_pct": 1.63
   },
   "strengths": [
-    "Deep GARP Value (PEG: 0.91x)",
+    "Deep GARP Value (PEG: 0.93x)",
     "Company has delivered good profit growth of 18.9% CAGR over last 5 years",
     "Company has been maintaining a healthy dividend payout of 26.1%",
     "Company's median sales growth is 16.3% of last 10 years"

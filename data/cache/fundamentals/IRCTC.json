@@ -6,25 +6,25 @@
   "inflection_score": 1.0,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "35644",
-    "current_price": "446",
-    "stock_pe": "25.9",
+    "market_cap_cr": "35916",
+    "current_price": "449",
+    "stock_pe": "26",
     "book_value": "60.8",
-    "dividend_yield_pct": "2.01",
+    "dividend_yield_pct": "2.02",
     "roce_pct": "46.1",
     "roe_pct": "34.7",
     "debt_to_equity": "0.02",
     "face_value": "2",
-    "pb_ratio": "7.34",
-    "market_cap_num": 35644.0,
-    "current_price_num": 446.0,
-    "pe_num": 25.9,
+    "pb_ratio": "7.38",
+    "market_cap_num": 35916.0,
+    "current_price_num": 449.0,
+    "pe_num": 26.0,
     "book_value_num": 60.8,
     "roce_num": 46.1,
     "roe_num": 34.7,
-    "pb_num": 7.34,
-    "peg_ratio": "2.16",
-    "peg_num": 2.16
+    "pb_num": 7.38,
+    "peg_ratio": "2.17",
+    "peg_num": 2.17
   },
   "ranges": {
     "sales_cagr_3y": 14.0,
@@ -36,7 +36,7 @@
     "roe_3y": 37.0,
     "roe_5y": 39.0,
     "price_cagr_3y": -14.0,
-    "price_cagr_5y": -11.0
+    "price_cagr_5y": -12.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 16.0,
@@ -84,6 +84,6 @@
     "Operating Margin Compression (-400 bps YoY)",
     "Quarterly Earnings Contraction (-23.1% YoY)",
     "Institutional Distribution (FII+DII -3.4% over 4Q)",
-    "Stock is trading at 7.36 times its book value"
+    "Stock is trading at 7.38 times its book value"
   ]
 }

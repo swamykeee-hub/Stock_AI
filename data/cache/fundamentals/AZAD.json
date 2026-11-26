@@ -6,25 +6,25 @@
   "inflection_score": 9.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "14886",
-    "current_price": "2305",
-    "stock_pe": "109",
+    "market_cap_cr": "15102",
+    "current_price": "2338",
+    "stock_pe": "111",
     "book_value": "251",
     "dividend_yield_pct": "0",
     "roce_pct": "11.7",
     "roe_pct": "8.9",
     "debt_to_equity": "0.35",
     "face_value": "2",
-    "pb_ratio": "9.18",
-    "market_cap_num": 14886.0,
-    "current_price_num": 2305.0,
-    "pe_num": 109.0,
+    "pb_ratio": "9.31",
+    "market_cap_num": 15102.0,
+    "current_price_num": 2338.0,
+    "pe_num": 111.0,
     "book_value_num": 251.0,
     "roce_num": 11.7,
     "roe_num": 8.9,
-    "pb_num": 9.18,
-    "peg_ratio": "0.73",
-    "peg_num": 0.73
+    "pb_num": 9.31,
+    "peg_ratio": "0.74",
+    "peg_num": 0.74
   },
   "ranges": {
     "sales_cagr_3y": 33.0,
@@ -78,12 +78,12 @@
     "Multi-Year Profit Compounding (3Y CAGR: +149%)",
     "Promoter Stake Increased (+0.42%)",
     "Capex Capacity Runway Active (CWIP: \u20b9212 Cr)",
-    "Deep GARP Value (PEG: 0.73x)"
+    "Deep GARP Value (PEG: 0.74x)"
   ],
   "red_flags": [
     "Weak Operating Cash Conversion (3Y CFO/PAT: -0.24x)",
     "Institutional Distribution (FII+DII -2.5% over 4Q)",
-    "Stock is trading at 9.13 times its book value",
+    "Stock is trading at 9.41 times its book value",
     "Though the company is reporting repeated profits, it is not paying out dividend"
   ]
 }

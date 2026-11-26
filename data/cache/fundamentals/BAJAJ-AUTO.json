@@ -6,23 +6,23 @@
   "inflection_score": 9.8,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "293463",
-    "current_price": "10679",
-    "stock_pe": "22.4",
+    "market_cap_cr": "298179",
+    "current_price": "10851",
+    "stock_pe": "22.8",
     "book_value": "1332",
-    "dividend_yield_pct": "1.42",
+    "dividend_yield_pct": "1.39",
     "roce_pct": "28.2",
     "roe_pct": "29.2",
     "debt_to_equity": "0.72",
     "face_value": "10",
-    "pb_ratio": "8.02",
-    "market_cap_num": 293463.0,
-    "current_price_num": 10679.0,
-    "pe_num": 22.4,
+    "pb_ratio": "8.15",
+    "market_cap_num": 298179.0,
+    "current_price_num": 10851.0,
+    "pe_num": 22.8,
     "book_value_num": 1332.0,
     "roce_num": 28.2,
     "roe_num": 29.2,
-    "pb_num": 8.02,
+    "pb_num": 8.15,
     "peg_ratio": "0.38",
     "peg_num": 0.38
   },
@@ -36,7 +36,7 @@
     "roe_3y": 26.0,
     "roe_5y": 24.0,
     "price_cagr_3y": 22.0,
-    "price_cagr_5y": 26.0
+    "price_cagr_5y": 27.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 60.0,
@@ -82,6 +82,6 @@
   ],
   "red_flags": [
     "Weak Operating Cash Conversion (3Y CFO/PAT: 0.30x)",
-    "Stock is trading at 7.99 times its book value"
+    "Stock is trading at 8.17 times its book value"
   ]
 }

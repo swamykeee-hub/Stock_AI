@@ -6,25 +6,25 @@
   "inflection_score": 9.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "306463",
-    "current_price": "316",
-    "stock_pe": "10.3",
+    "market_cap_cr": "311117",
+    "current_price": "321",
+    "stock_pe": "10.4",
     "book_value": "220",
-    "dividend_yield_pct": "2.84",
+    "dividend_yield_pct": "2.82",
     "roce_pct": "8.92",
     "roe_pct": "15.1",
     "debt_to_equity": "1.31",
     "face_value": "10",
-    "pb_ratio": "1.44",
-    "market_cap_num": 306463.0,
-    "current_price_num": 316.0,
-    "pe_num": 10.3,
+    "pb_ratio": "1.46",
+    "market_cap_num": 311117.0,
+    "current_price_num": 321.0,
+    "pe_num": 10.4,
     "book_value_num": 220.0,
     "roce_num": 8.92,
     "roe_num": 15.1,
-    "pb_num": 1.44,
-    "peg_ratio": "0.25",
-    "peg_num": 0.25
+    "pb_num": 1.46,
+    "peg_ratio": "0.26",
+    "peg_num": 0.26
   },
   "ranges": {
     "sales_cagr_3y": 2.0,
@@ -78,7 +78,7 @@
     "Explosive Quarterly PAT Surge (+40.7% YoY)",
     "Multi-Year Profit Compounding (3Y CAGR: +20%)",
     "Capex Capacity Runway Active (CWIP: \u20b991,394 Cr)",
-    "Deep GARP Value (PEG: 0.25x)"
+    "Deep GARP Value (PEG: 0.26x)"
   ],
   "red_flags": [
     "Sub-par ROCE (8.9%)",

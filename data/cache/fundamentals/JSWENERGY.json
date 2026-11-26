@@ -1,30 +1,30 @@
 {
   "schema_version": 3,
   "is_consolidated": true,
-  "score": 5.8,
+  "score": 6.0,
   "quality_score": 2.0,
   "inflection_score": 10.0,
-  "valuation_score": 6.8,
+  "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "91252",
-    "current_price": "498",
-    "stock_pe": "38.7",
+    "market_cap_cr": "88722",
+    "current_price": "484",
+    "stock_pe": "37.6",
     "book_value": "200",
-    "dividend_yield_pct": "0.4",
+    "dividend_yield_pct": "0.41",
     "roce_pct": "8.16",
     "roe_pct": "7.57",
     "debt_to_equity": "2.25",
     "face_value": "10",
-    "pb_ratio": "2.49",
-    "market_cap_num": 91252.0,
-    "current_price_num": 498.0,
-    "pe_num": 38.7,
+    "pb_ratio": "2.42",
+    "market_cap_num": 88722.0,
+    "current_price_num": 484.0,
+    "pe_num": 37.6,
     "book_value_num": 200.0,
     "roce_num": 8.16,
     "roe_num": 7.57,
-    "pb_num": 2.49,
-    "peg_ratio": "1.01",
-    "peg_num": 1.01
+    "pb_num": 2.42,
+    "peg_ratio": "0.98",
+    "peg_num": 0.98
   },
   "ranges": {
     "sales_cagr_3y": 22.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 17.0,
     "roe_3y": 8.0,
     "roe_5y": 8.0,
-    "price_cagr_3y": 6.0,
-    "price_cagr_5y": 11.0
+    "price_cagr_3y": 5.0,
+    "price_cagr_5y": 10.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 23.0,
@@ -78,12 +78,12 @@
     "Smart Money Accumulation (FII+DII +3.9% over 4Q)",
     "Expanding ROCE Efficiency (+2.0% YoY)",
     "Capex Capacity Runway Active (CWIP: \u20b915,283 Cr)",
-    "Reasonable GARP Multiple (PEG: 1.01x)"
+    "Deep GARP Value (PEG: 0.98x)"
   ],
   "red_flags": [
     "Sub-par ROCE (8.2%)",
     "Elevated Leverage (D/E: 2.25x)",
-    "Stock is trading at 2.51 times its book value",
-    "Company has low interest coverage ratio."
+    "Company has low interest coverage ratio.",
+    "Tax rate seems low"
   ]
 }

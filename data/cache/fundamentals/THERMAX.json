@@ -6,25 +6,25 @@
   "inflection_score": 5.8,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "31814",
-    "current_price": "2670",
-    "stock_pe": "58.4",
+    "market_cap_cr": "31993",
+    "current_price": "2685",
+    "stock_pe": "58.7",
     "book_value": "460",
-    "dividend_yield_pct": "0.52",
+    "dividend_yield_pct": "0.53",
     "roce_pct": "13.9",
     "roe_pct": "12",
     "debt_to_equity": "0.53",
     "face_value": "2",
-    "pb_ratio": "5.80",
-    "market_cap_num": 31814.0,
-    "current_price_num": 2670.0,
-    "pe_num": 58.4,
+    "pb_ratio": "5.84",
+    "market_cap_num": 31993.0,
+    "current_price_num": 2685.0,
+    "pe_num": 58.7,
     "book_value_num": 460.0,
     "roce_num": 13.9,
     "roe_num": 12.0,
-    "pb_num": 5.8,
-    "peg_ratio": "5.31",
-    "peg_num": 5.31
+    "pb_num": 5.84,
+    "peg_ratio": "5.34",
+    "peg_num": 5.34
   },
   "ranges": {
     "sales_cagr_3y": 10.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": -8.0,
     "roe_3y": 13.0,
     "roe_5y": 12.0,
-    "price_cagr_3y": 1.0,
+    "price_cagr_3y": 0.0,
     "price_cagr_5y": 10.0
   },
   "inflection": {
@@ -78,7 +78,7 @@
     "Capex Capacity Runway Active (CWIP: \u20b91,798 Cr)"
   ],
   "red_flags": [
-    "Expensive Valuation vs Growth (PEG: 5.31x)",
+    "Expensive Valuation vs Growth (PEG: 5.34x)",
     "Company has a low return on equity of 12.6% over last 3 years.",
     "Earnings include an other income of Rs.328 Cr."
   ]

@@ -6,25 +6,25 @@
   "inflection_score": 8.9,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "79515",
-    "current_price": "1590",
-    "stock_pe": "39.9",
+    "market_cap_cr": "77045",
+    "current_price": "1541",
+    "stock_pe": "38.6",
     "book_value": "146",
     "dividend_yield_pct": "1.16",
     "roce_pct": "21.4",
     "roe_pct": "26.2",
     "debt_to_equity": "0.82",
     "face_value": "5",
-    "pb_ratio": "10.89",
-    "market_cap_num": 79515.0,
-    "current_price_num": 1590.0,
-    "pe_num": 39.9,
+    "pb_ratio": "10.55",
+    "market_cap_num": 77045.0,
+    "current_price_num": 1541.0,
+    "pe_num": 38.6,
     "book_value_num": 146.0,
     "roce_num": 21.4,
     "roe_num": 26.2,
-    "pb_num": 10.89,
-    "peg_ratio": "0.87",
-    "peg_num": 0.87
+    "pb_num": 10.55,
+    "peg_ratio": "0.84",
+    "peg_num": 0.84
   },
   "ranges": {
     "sales_cagr_3y": 12.0,
@@ -82,6 +82,6 @@
   ],
   "red_flags": [
     "Elevated Leverage (D/E: 0.82x)",
-    "Stock is trading at 10.9 times its book value"
+    "Stock is trading at 10.6 times its book value"
   ]
 }

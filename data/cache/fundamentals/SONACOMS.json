@@ -6,25 +6,25 @@
   "inflection_score": 7.7,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "55753",
-    "current_price": "891",
-    "stock_pe": "71.8",
+    "market_cap_cr": "55322",
+    "current_price": "884",
+    "stock_pe": "71.2",
     "book_value": "103",
     "dividend_yield_pct": "0.38",
     "roce_pct": "14.2",
     "roe_pct": "11.3",
     "debt_to_equity": "0.10",
     "face_value": "10",
-    "pb_ratio": "8.65",
-    "market_cap_num": 55753.0,
-    "current_price_num": 891.0,
-    "pe_num": 71.8,
+    "pb_ratio": "8.58",
+    "market_cap_num": 55322.0,
+    "current_price_num": 884.0,
+    "pe_num": 71.2,
     "book_value_num": 103.0,
     "roce_num": 14.2,
     "roe_num": 11.3,
-    "pb_num": 8.65,
-    "peg_ratio": "2.30",
-    "peg_num": 2.3
+    "pb_num": 8.58,
+    "peg_ratio": "2.28",
+    "peg_num": 2.28
   },
   "ranges": {
     "sales_cagr_3y": 19.0,
@@ -81,6 +81,6 @@
     "Company has been maintaining a healthy dividend payout of 33.6%"
   ],
   "red_flags": [
-    "Stock is trading at 8.61 times its book value"
+    "Stock is trading at 8.62 times its book value"
   ]
 }

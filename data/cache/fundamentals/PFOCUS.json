@@ -6,23 +6,23 @@
   "inflection_score": 8.7,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "18001",
-    "current_price": "231",
-    "stock_pe": "80.2",
+    "market_cap_cr": "18336",
+    "current_price": "235",
+    "stock_pe": "81.6",
     "book_value": "27.1",
     "dividend_yield_pct": "0",
     "roce_pct": "11.3",
     "roe_pct": "15.7",
     "debt_to_equity": "2.81",
     "face_value": "1",
-    "pb_ratio": "8.52",
-    "market_cap_num": 18001.0,
-    "current_price_num": 231.0,
-    "pe_num": 80.2,
+    "pb_ratio": "8.67",
+    "market_cap_num": 18336.0,
+    "current_price_num": 235.0,
+    "pe_num": 81.6,
     "book_value_num": 27.1,
     "roce_num": 11.3,
     "roe_num": 15.7,
-    "pb_num": 8.52,
+    "pb_num": 8.67,
     "peg_ratio": "0.06",
     "peg_num": 0.06
   },
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 87.0,
     "roe_3y": -14.0,
     "roe_5y": -3.0,
-    "price_cagr_3y": 28.0,
-    "price_cagr_5y": 27.0
+    "price_cagr_3y": 29.0,
+    "price_cagr_5y": 28.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 35.0,
@@ -81,7 +81,7 @@
   ],
   "red_flags": [
     "Elevated Leverage (D/E: 2.81x)",
-    "Stock is trading at 8.72 times its book value",
+    "Stock is trading at 8.83 times its book value",
     "Company has low interest coverage ratio.",
     "Company has a low return on equity of -14.5% over last 3 years."
   ]
