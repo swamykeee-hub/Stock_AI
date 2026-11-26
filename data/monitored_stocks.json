@@ -4,12 +4,12 @@
     "name": "Rubicon Research Ltd.",
     "sector": "Healthcare",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
-    "monitoring_status": "Auto-Discovered Entry (\u20b91656.73 \u2014 \u20b91720.16)",
+    "monitoring_status": "Auto-Discovered Entry (\u20b91660.94 \u2014 \u20b91720.16)",
     "entry_trigger": 1711.6,
     "target_3m": 1916.99,
     "target_1y": 2259.31,
-    "stop_loss": 1580.13,
-    "risk_reward": "1:1.56",
+    "stop_loss": 1583.69,
+    "risk_reward": "1:1.61",
     "cio_conviction": 9.7,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
@@ -20,19 +20,19 @@
       "Cash Generative Profits (CFO/EBITDA: 78%)"
     ],
     "cmp": 1711.6,
-    "day_change_pct": -2.5
+    "day_change_pct": 2.02
   },
   {
     "symbol": "ACUTAAS",
     "name": "Acutaas Chemicals Ltd.",
     "sector": "Healthcare",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
-    "monitoring_status": "Auto-Discovered Entry (\u20b93804.23 \u2014 \u20b94012.96)",
+    "monitoring_status": "Auto-Discovered Entry (\u20b93823.46 \u2014 \u20b94012.96)",
     "entry_trigger": 3993.0,
     "target_3m": 4472.16,
     "target_1y": 5270.76,
-    "stop_loss": 3547.42,
-    "risk_reward": "1:1.08",
+    "stop_loss": 3563.82,
+    "risk_reward": "1:1.12",
     "cio_conviction": 9.6,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
@@ -43,19 +43,19 @@
       "Fortress Balance Sheet (D/E: 0.01x)"
     ],
     "cmp": 3993.0,
-    "day_change_pct": 3.05
+    "day_change_pct": 0.83
   },
   {
     "symbol": "RADICO",
     "name": "Radico Khaitan Ltd",
     "sector": "Fast Moving Consumer Goods",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
-    "monitoring_status": "Auto-Discovered Entry (\u20b94502.61 \u2014 \u20b94722.49)",
+    "monitoring_status": "Auto-Discovered Entry (\u20b94520.74 \u2014 \u20b94722.49)",
     "entry_trigger": 4699.0,
     "target_3m": 5262.88,
     "target_1y": 6202.68,
-    "stop_loss": 4379.42,
-    "risk_reward": "1:1.76",
+    "stop_loss": 4389.86,
+    "risk_reward": "1:1.82",
     "cio_conviction": 9.4,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
@@ -66,7 +66,7 @@
       "Fortress Balance Sheet (D/E: 0.11x)"
     ],
     "cmp": 4699.0,
-    "day_change_pct": -0.61
+    "day_change_pct": 1.73
   },
   {
     "symbol": "CHENNPETRO",
@@ -77,8 +77,8 @@
     "entry_trigger": 1366.6,
     "target_3m": 1530.59,
     "target_1y": 1803.91,
-    "stop_loss": 1255.79,
-    "risk_reward": "1:1.48",
+    "stop_loss": 1262.87,
+    "risk_reward": "1:1.58",
     "cio_conviction": 9.4,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
@@ -89,7 +89,7 @@
       "Fortress Balance Sheet (D/E: 0.17x)"
     ],
     "cmp": 1366.6,
-    "day_change_pct": -5.35
+    "day_change_pct": 0.23
   },
   {
     "symbol": "LAURUSLABS",
@@ -111,7 +111,7 @@
       "Non-ARV API diversification"
     ],
     "cmp": 2460.0,
-    "day_change_pct": 3.77,
+    "day_change_pct": -0.24,
     "fifty_two_week_high": 2488.0,
     "fifty_two_week_low": 917.95,
     "dist_from_52w_high": 6.0,
@@ -137,7 +137,7 @@
       "New commodity and interest rate derivative product rollouts"
     ],
     "cmp": 3775.2,
-    "day_change_pct": 0.48,
+    "day_change_pct": 1.57,
     "fifty_two_week_high": 4446.8,
     "fifty_two_week_low": 2377.4,
     "dist_from_52w_high": 13.1,
@@ -163,7 +163,7 @@
       "Rapid store addition pace accelerating market share"
     ],
     "cmp": 3319.6,
-    "day_change_pct": 3.48,
+    "day_change_pct": -0.33,
     "fifty_two_week_high": 4417.8,
     "fifty_two_week_low": 2183.667,
     "dist_from_52w_high": 28.1,
@@ -215,7 +215,7 @@
       "EBITDA margins reverting to historical 38-40% band"
     ],
     "cmp": 11716.5,
-    "day_change_pct": 4.58,
+    "day_change_pct": -1.03,
     "fifty_two_week_high": 11824.0,
     "fifty_two_week_low": 5647.5,
     "dist_from_52w_high": 5.7,
@@ -241,7 +241,7 @@
       "New electricity and base metal index derivative launches"
     ],
     "cmp": 3565.0,
-    "day_change_pct": -0.46,
+    "day_change_pct": 1.67,
     "baseline_conviction": 8.4,
     "conviction_source": "Live Auto-Synced"
   },
@@ -313,7 +313,7 @@
       "Operating leverage in high-volume smartphone segment"
     ],
     "cmp": 12978.0,
-    "day_change_pct": -3.08,
+    "day_change_pct": 0.28,
     "fifty_two_week_high": 15775.0,
     "fifty_two_week_low": 9600.0,
     "dist_from_52w_high": 17.1,
@@ -339,7 +339,7 @@
       "Defense export orders expansion to Southeast Asia and Middle East"
     ],
     "cmp": 404.3,
-    "day_change_pct": 2.15,
+    "day_change_pct": 0.22,
     "baseline_conviction": 9.0,
     "conviction_source": "Live Auto-Synced"
   },
@@ -362,7 +362,7 @@
       "Fifth-generation AMCA fighter jet development milestone"
     ],
     "cmp": 4936.0,
-    "day_change_pct": 3.26,
+    "day_change_pct": -0.02,
     "fifty_two_week_high": 5149.9,
     "fifty_two_week_low": 3479.1,
     "dist_from_52w_high": 8.2,
@@ -388,7 +388,7 @@
       "BFSI generative AI testing contracts scale"
     ],
     "cmp": 2060.0,
-    "day_change_pct": -3.84,
+    "day_change_pct": 2.72,
     "baseline_conviction": 7.4,
     "conviction_source": "Live Auto-Synced"
   },
@@ -411,7 +411,7 @@
       "High margin software IP solutions ramp-up"
     ],
     "cmp": 6120.0,
-    "day_change_pct": 2.59,
+    "day_change_pct": -0.28,
     "baseline_conviction": 8.0,
     "conviction_source": "Live Auto-Synced"
   },
@@ -434,7 +434,7 @@
       "Alternative Investment Fund (AIF) administration fees growth"
     ],
     "cmp": 934.0,
-    "day_change_pct": -0.55,
+    "day_change_pct": 2.06,
     "baseline_conviction": 7.2,
     "conviction_source": "Live Auto-Synced"
   },
@@ -457,7 +457,7 @@
       "Insurance electronic depository (e-IA) policy adoption"
     ],
     "cmp": 1413.0,
-    "day_change_pct": 1.29,
+    "day_change_pct": 0.95,
     "baseline_conviction": 6.6,
     "conviction_source": "Live Auto-Synced"
   },
@@ -480,7 +480,7 @@
       "North America and Europe supply agreement expansions"
     ],
     "cmp": 883.15,
-    "day_change_pct": -0.32,
+    "day_change_pct": 0.27,
     "baseline_conviction": 6.8,
     "conviction_source": "Live Auto-Synced"
   }

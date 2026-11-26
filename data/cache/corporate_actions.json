@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-26 08:48:15",
+  "timestamp": "2026-11-26 09:17:25",
   "dividends": [
     {
       "stock_name": "Fusion CX",
@@ -28,8 +28,8 @@
       "stock_name": "Maxwell Engineering Solutions",
       "symbol": "MESL",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9257.10",
-      "market_cap": "\u20b9352.18 Cr"
+      "ltp": "\u20b9255.50",
+      "market_cap": "\u20b9349.99 Cr"
     },
     {
       "date": "26 Nov",
@@ -44,8 +44,8 @@
       "stock_name": "HGS India",
       "symbol": "HIL01",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9195.75",
-      "market_cap": "\u20b9212.56 Cr"
+      "ltp": "\u20b9197.50",
+      "market_cap": "\u20b9214.46 Cr"
     },
     {
       "date": "26 Nov",
@@ -60,8 +60,8 @@
       "stock_name": "Annvrridhhi Ventures",
       "symbol": "JTP",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b98.00",
-      "market_cap": "\u20b924.68 Cr"
+      "ltp": "\u20b98.10",
+      "market_cap": "\u20b924.99 Cr"
     }
   ],
   "splits_and_actions": [
