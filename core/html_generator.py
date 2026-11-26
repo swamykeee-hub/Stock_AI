@@ -1910,15 +1910,17 @@ STOCK_AI_TELEGRAM_CHAT_ID=your_chat_id_here</pre>
         except Exception as e:
             print(f"Error saving stock_data.js: {e}")
 
+        import re
         css_content = styles_file.read_text(encoding="utf-8") if styles_file.exists() else ""
         js_content = js_file.read_text(encoding="utf-8") if js_file.exists() else ""
+        asset_ver = re.sub(r"\D", "", str(timestamp)) or "1"
 
         external_html = (
             html_template
-            .replace("__STYLES_PLACEHOLDER__", '<link rel="stylesheet" href="web/styles.css">')
+            .replace("__STYLES_PLACEHOLDER__", f'<link rel="stylesheet" href="web/styles.css?v={asset_ver}">')
             .replace(
                 "__SCRIPTS_PLACEHOLDER__",
-                '<script src="web/stock_data.js"></script>\n    <script src="web/dashboard.js"></script>',
+                f'<script src="web/stock_data.js?v={asset_ver}"></script>\n    <script src="web/dashboard.js?v={asset_ver}"></script>',
             )
         )
         standalone_html = (

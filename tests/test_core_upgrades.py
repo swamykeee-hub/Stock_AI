@@ -271,10 +271,10 @@ class TestHTMLReportGeneratorModular(unittest.TestCase):
                 ext_html = ext_repo_test.read_text(encoding="utf-8")
                 std_html = standalone_test.read_text(encoding="utf-8")
 
-                # Repo HTML references external assets and is substantially smaller
-                self.assertIn('href="web/styles.css"', ext_html)
-                self.assertIn('src="web/stock_data.js"', ext_html)
-                self.assertIn('src="web/dashboard.js"', ext_html)
+                # Repo HTML references external cache-busted assets and is substantially smaller
+                self.assertIn('href="web/styles.css?v=', ext_html)
+                self.assertIn('src="web/stock_data.js?v=', ext_html)
+                self.assertIn('src="web/dashboard.js?v=', ext_html)
                 self.assertLess(len(ext_html), len(std_html) - 250000)
 
                 # Standalone HTML embeds inline style & script
@@ -300,6 +300,8 @@ class TestHTMLReportGeneratorModular(unittest.TestCase):
                 self.assertIn("minmax(225px, 1fr)", css_txt)
                 self.assertIn("font-size: 14px;", css_txt)
                 self.assertIn("font-weight: 800;", css_txt)
+                self.assertIn("color: #7dd3fc;", css_txt)
+                self.assertIn("color: #1e40af;", css_txt)
             finally:
                 if ext_repo_test.exists():
                     ext_repo_test.unlink()

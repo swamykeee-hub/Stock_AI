@@ -67,6 +67,17 @@ st.markdown("""
         border-radius: 6px;
         margin-bottom: 18px;
     }
+    [data-testid="stMetricLabel"] p {
+        color: #0284c7;
+        font-size: 0.95rem !important;
+        font-weight: 800 !important;
+        letter-spacing: 0.2px;
+    }
+    @media (prefers-color-scheme: dark) {
+        [data-testid="stMetricLabel"] p {
+            color: #7dd3fc;
+        }
+    }
 </style>
 """, unsafe_allow_html=True)
 
