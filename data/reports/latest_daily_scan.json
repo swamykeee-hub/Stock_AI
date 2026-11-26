@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-11-26 09:05:17",
+  "timestamp": "2026-11-26 09:09:37",
   "indices": {
     "NIFTY 50": {
-      "value": 25819.25,
-      "change": 469.6,
-      "percent": 1.85
+      "value": 25873.2,
+      "change": 523.55,
+      "percent": 2.06
     },
     "SENSEX": {
       "value": 83938.28,
@@ -12,9 +12,9 @@
       "percent": 1.82
     },
     "BANK NIFTY": {
-      "value": 63703.25,
-      "change": 1117.9,
-      "percent": 1.79
+      "value": 63883.1,
+      "change": 1297.75,
+      "percent": 2.07
     },
     "INDIA VIX": {
       "value": 17.7,
@@ -22,49 +22,49 @@
       "percent": 0.0
     },
     "NIFTY 100": {
-      "value": 26651.7,
-      "change": 434.4,
-      "percent": 1.66
+      "value": 26710.4,
+      "change": 493.1,
+      "percent": 1.88
     },
     "NIFTY 200": {
-      "value": 14562.8,
-      "change": 200.5,
-      "percent": 1.4
+      "value": 14594.9,
+      "change": 232.6,
+      "percent": 1.62
     },
     "NIFTY IT": {
-      "value": 32207.55,
-      "change": 356.75,
-      "percent": 1.12
+      "value": 32514.25,
+      "change": 663.45,
+      "percent": 2.08
     },
     "NIFTY PHARMA": {
-      "value": 28961.9,
-      "change": 673.05,
-      "percent": 2.38
+      "value": 28974.65,
+      "change": 685.8,
+      "percent": 2.42
     },
     "NIFTY FMCG": {
-      "value": 50143.5,
-      "change": 1830.95,
-      "percent": 3.79
+      "value": 50180.6,
+      "change": 1868.05,
+      "percent": 3.87
     },
     "NIFTY AUTO": {
-      "value": 28821.5,
-      "change": 330.8,
-      "percent": 1.16
+      "value": 28734.3,
+      "change": 243.6,
+      "percent": 0.85
     },
     "NIFTY METAL": {
-      "value": 11578.5,
-      "change": -240.75,
-      "percent": -2.04
+      "value": 11666.15,
+      "change": -153.1,
+      "percent": -1.29
     },
     "NIFTY PRIVATE BANK": {
-      "value": 31337.95,
-      "change": 678.1,
-      "percent": 2.21
+      "value": 31490.8,
+      "change": 830.95,
+      "percent": 2.71
     },
     "NIFTY FIN-SERVICES": {
-      "value": 30681.5,
-      "change": 664.2,
-      "percent": 2.21
+      "value": 30767.65,
+      "change": 750.35,
+      "percent": 2.5
     },
     "NIFTY AI CATALYSTS": {
       "value": 1006.68,
@@ -105,16 +105,16 @@
         "change_pct": -1.26
       },
       "Hang Seng": {
-        "price": 22450.34,
-        "change": 484.33,
-        "change_pct": 2.21
+        "price": 22421.49,
+        "change": 455.48,
+        "change_pct": 2.07
       }
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 90.99,
-        "change": 0.35,
-        "change_pct": 0.39
+        "price": 91.08,
+        "change": 0.44,
+        "change_pct": 0.48
       },
       "US 10-Yr Yield (%)": {
         "price": 4.85,
@@ -132,16 +132,16 @@
         "change_pct": 1.07
       },
       "USD / INR": {
-        "price": 92.5,
-        "change": 0.28,
-        "change_pct": 0.3
+        "price": 92.48,
+        "change": 0.26,
+        "change_pct": 0.28
       }
     },
     "fund_manager_takeaways": [
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.85%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-26 09:05:43"
+    "timestamp": "2026-11-26 09:10:10"
   },
   "market_regime": {
     "nifty_cmp": 25819.25,
@@ -20066,7 +20066,7 @@
     }
   ],
   "institutional_flow": {
-    "timestamp": "2026-11-26 09:06:35",
+    "timestamp": "2026-11-26 09:11:01",
     "fii_dii_latest": {
       "date": "2026-11-25",
       "formatted_date": "Wed 25 Nov, 2026",
@@ -20351,7 +20351,7 @@
     "total_events": 10
   },
   "performance_scorecard": {
-    "timestamp": "2026-11-26 09:06:37",
+    "timestamp": "2026-11-26 09:11:03",
     "total_picks_tracked": 43,
     "win_rate_pct": 75.0,
     "resolved_trades_count": 8,
@@ -20360,7 +20360,7 @@
     "avg_loss_on_stops": "-23.2%",
     "profit_factor": "13.77x",
     "max_single_gain": "+485.71% (LAURUSLABS)",
-    "avg_alpha_vs_nifty": "+0.4%",
+    "avg_alpha_vs_nifty": "+0.2%",
     "archetype_breakdown": {
       "Laurus-Type Inflection": {
         "count": 25,
@@ -20452,8 +20452,8 @@
         "status": "ACTIVE",
         "sector": "Consumer Durables",
         "benchmark_entry": 25819.25,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": 0.0,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": -0.21,
         "outcome": "\ud83d\udcc8 ACTIVE (+0.0%)",
         "outcome_class": "outcome-profit"
       },
@@ -20473,8 +20473,8 @@
         "status": "ACTIVE",
         "sector": "Services",
         "benchmark_entry": 25915.75,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": 0.55,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": 0.34,
         "outcome": "\ud83d\udcc8 ACTIVE (+0.2%)",
         "outcome_class": "outcome-profit"
       },
@@ -20494,8 +20494,8 @@
         "status": "ACTIVE",
         "sector": "Textiles",
         "benchmark_entry": 25915.75,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": -0.46,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": -0.67,
         "outcome": "\u23f3 CONSOLIDATING (-0.8%)",
         "outcome_class": "outcome-neutral"
       },
@@ -20515,8 +20515,8 @@
         "status": "ACTIVE",
         "sector": "Capital Goods",
         "benchmark_entry": 25915.75,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": 1.63,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": 1.42,
         "outcome": "\ud83d\udcc8 ACTIVE (+1.3%)",
         "outcome_class": "outcome-profit"
       },
@@ -20536,8 +20536,8 @@
         "status": "ACTIVE",
         "sector": "Consumer Services",
         "benchmark_entry": 25915.75,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": 0.33,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": 0.13,
         "outcome": "\u23f3 CONSOLIDATING (-0.0%)",
         "outcome_class": "outcome-neutral"
       },
@@ -20557,8 +20557,8 @@
         "status": "ACTIVE",
         "sector": "Aerospace, Defense & OSAT Semiconductor",
         "benchmark_entry": 25910.65,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": -0.77,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": -0.98,
         "outcome": "\u23f3 CONSOLIDATING (-1.1%)",
         "outcome_class": "outcome-neutral"
       },
@@ -20578,8 +20578,8 @@
         "status": "ACTIVE",
         "sector": "Healthcare",
         "benchmark_entry": 25910.65,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": 2.67,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": 2.46,
         "outcome": "\ud83d\udcc8 ACTIVE (+2.3%)",
         "outcome_class": "outcome-profit"
       },
@@ -20599,8 +20599,8 @@
         "status": "ACTIVE",
         "sector": "Automobile and Auto Components",
         "benchmark_entry": 25910.65,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": 0.75,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": 0.55,
         "outcome": "\ud83d\udcc8 ACTIVE (+0.4%)",
         "outcome_class": "outcome-profit"
       },
@@ -20620,8 +20620,8 @@
         "status": "ACTIVE",
         "sector": "Information Technology",
         "benchmark_entry": 25910.65,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": -1.48,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": -1.69,
         "outcome": "\u23f3 CONSOLIDATING (-1.8%)",
         "outcome_class": "outcome-neutral"
       },
@@ -20641,8 +20641,8 @@
         "status": "ACTIVE",
         "sector": "Fast Moving Consumer Goods",
         "benchmark_entry": 25910.65,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": 0.31,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": 0.1,
         "outcome": "\u23f3 CONSOLIDATING (-0.0%)",
         "outcome_class": "outcome-neutral"
       },
@@ -20662,8 +20662,8 @@
         "status": "ACTIVE",
         "sector": "Capital Goods",
         "benchmark_entry": 25913.5,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": 2.28,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": 2.08,
         "outcome": "\ud83d\udcc8 ACTIVE (+1.9%)",
         "outcome_class": "outcome-profit"
       },
@@ -20683,8 +20683,8 @@
         "status": "ACTIVE",
         "sector": "Financial Services",
         "benchmark_entry": 25913.5,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": 0.24,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": 0.03,
         "outcome": "\u23f3 CONSOLIDATING (-0.1%)",
         "outcome_class": "outcome-neutral"
       },
@@ -20696,7 +20696,7 @@
         "entry_price": 5639.5,
         "target_1": 6269.76,
         "stop_loss": 5235.67,
-        "peak_price": 5751.5,
+        "peak_price": 5780.0,
         "trough_price": 5560.0,
         "cmp": 5751.5,
         "conviction_score": 9.0,
@@ -20704,8 +20704,8 @@
         "status": "ACTIVE",
         "sector": "Automobile and Auto Components",
         "benchmark_entry": 25913.5,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": 2.35,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": 2.14,
         "outcome": "\ud83d\udcc8 ACTIVE (+2.0%)",
         "outcome_class": "outcome-profit"
       },
@@ -20725,8 +20725,8 @@
         "status": "ACTIVE",
         "sector": "Healthcare",
         "benchmark_entry": 25913.5,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": 0.31,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": 0.1,
         "outcome": "\u23f3 CONSOLIDATING (-0.1%)",
         "outcome_class": "outcome-neutral"
       },
@@ -20746,15 +20746,15 @@
         "status": "ACTIVE",
         "sector": "Information Technology",
         "benchmark_entry": 25913.5,
-        "benchmark_cmp": 25819.25,
-        "alpha_vs_nifty_pct": 0.15,
+        "benchmark_cmp": 25873.2,
+        "alpha_vs_nifty_pct": -0.06,
         "outcome": "\u23f3 CONSOLIDATING (-0.2%)",
         "outcome_class": "outcome-neutral"
       }
     ]
   },
   "market_movers": {
-    "timestamp": "2026-11-26 09:06:37",
+    "timestamp": "2026-11-26 09:11:03",
     "top_gainers": [
       {
         "symbol": "FIRSTCRY",
@@ -20833,7 +20833,7 @@
   "total_screened": 509,
   "disclaimer": "Application Designed and Developed by Swamy Chouhan - 9000632912. DISCLAIMER: This system is an AI-driven educational and research analytics tool. It does not provide SEBI-registered investment advice or guaranteed return recommendations. Stock markets involve risk. Always consult a certified financial advisor before trading.",
   "feed_health": {
-    "checked_at": "2026-11-26 09:06:37 IST",
+    "checked_at": "2026-11-26 09:11:03 IST",
     "healthy_count": 5,
     "total_feeds": 5,
     "feeds": [
@@ -20842,14 +20842,14 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "6s ago",
-        "updated_at": "26-Nov 09:06 IST",
+        "updated_at": "26-Nov 09:10 IST",
         "detail": "14 indices, 124 picks"
       },
       {
         "feed": "AMFI Live NAVs",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "19m ago",
+        "age": "23m ago",
         "updated_at": "26-Nov 08:47 IST",
         "detail": "8/8 Live NAVs"
       },
@@ -20858,7 +20858,7 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "1s ago",
-        "updated_at": "26-Nov 09:06 IST",
+        "updated_at": "26-Nov 09:11 IST",
         "detail": "PCR 0.91 (LIVE)"
       },
       {
@@ -20866,14 +20866,14 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "0s ago",
-        "updated_at": "26-Nov 09:06 IST",
+        "updated_at": "26-Nov 09:11 IST",
         "detail": "5 gainers / 5 losers"
       },
       {
         "feed": "Corporate Actions",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "18m ago",
+        "age": "22m ago",
         "updated_at": "26-Nov 08:48 IST",
         "detail": "10 events tracked"
       }
