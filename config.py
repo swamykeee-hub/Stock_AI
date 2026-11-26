@@ -60,6 +60,7 @@ SCHEDULE_CONFIG = {
     "MORNING_TIME": "08:45",        # Daily morning scan before market open
     "EVENING_TIME": "18:00",        # Daily evening scan at 6:00 PM post-market
     "DAILY_SCAN_FILE": REPORTS_DIR / "latest_daily_scan.json",
+    "DAILY_HIDDEN_GEMS_FILE": CACHE_DIR / "hidden_gems_cache.json",
     "DAILY_IPO_FILE": REPORTS_DIR / "latest_ipos.json",
     "DAILY_INST_FLOW_FILE": CACHE_DIR / "institutional_flow.json",
     "DAILY_CORP_ACTIONS_FILE": CACHE_DIR / "corporate_actions.json",

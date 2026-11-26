@@ -81,6 +81,7 @@ from core.mutual_fund_analyst import MutualFundAnalyst
 from core.ipo_analyst import IPOAnalyst
 from core.fifty_two_week_high_tracker import FiftyTwoWeekHighTracker
 from core.factor_screener import SmartFactorScreener
+from core.hidden_gems_screener import HiddenGemsScreener
 from scheduler import DailyAutomator
 
 # Initialize core agents
@@ -97,9 +98,10 @@ def get_agents():
     automator = DailyAutomator()
     tracker_52w = FiftyTwoWeekHighTracker()
     factor_screener = SmartFactorScreener()
-    return market_data, synthesizer, scanner, momentum_screener, fund_radar, macro_news, mf_analyst, ipo_analyst, automator, tracker_52w, factor_screener
+    hidden_gems_screener = HiddenGemsScreener()
+    return market_data, synthesizer, scanner, momentum_screener, fund_radar, macro_news, mf_analyst, ipo_analyst, automator, tracker_52w, factor_screener, hidden_gems_screener
 
-market_data, synthesizer, scanner, momentum_screener, fund_radar, macro_news, mf_analyst, ipo_analyst, automator, tracker_52w, factor_screener = get_agents()
+market_data, synthesizer, scanner, momentum_screener, fund_radar, macro_news, mf_analyst, ipo_analyst, automator, tracker_52w, factor_screener, hidden_gems_screener = get_agents()
 
 # Load 501+ NSE Universe from Backend Server Data for Autocomplete & Tracking
 @st.cache_data
@@ -125,6 +127,7 @@ st.sidebar.caption("Autonomous Senior Fund Manager & 360° Market Intelligence")
 st.sidebar.markdown("""
 ### 🧠 System Capabilities:
 - 🏆 **Multi-Timeframe Momentum**: 3M, 6M, 1Y, 2Y, 3Y, 5Y Trend Ranking
+- 💎 **Hidden Gems (Small & Mid Cap)**: Auto-Updating High-ROCE, Low-Debt Compounders
 - 🎯 **AI Fund Manager Radar**: Future Breakout & Pullback Setups
 - 🔍 **360° Stock Deep Dive**: Technical + Fundamental + News
 - 🌍 **Global Macro & News**: S&P 500, Crude, Yields & Stock Impact News
@@ -188,8 +191,9 @@ except Exception as e:
 st.markdown("---")
 
 # Navigation Tabs
-tab_momentum, tab_factors, tab_52w, tab_radar, tab_deep_dive, tab_macro_news, tab_mutual_funds, tab_scanner, tab_ipo, tab_automation = st.tabs([
+tab_momentum, tab_hidden_gems, tab_factors, tab_52w, tab_radar, tab_deep_dive, tab_macro_news, tab_mutual_funds, tab_scanner, tab_ipo, tab_automation = st.tabs([
     "🏆 Super-Trend & Momentum Scanner (3M/6M/1Y/2Y/3Y)",
+    "💎 Hidden Gems (Small & Mid Cap)",
     "💎 Factor & Value Finder (Vol/Promoter/PAT/ROCE/Val)",
     "🚀 52-Week High Leaders (Dynamic Live Radar)",
     "🎯 AI Fund Manager Radar (Monitored Stocks)",
@@ -327,6 +331,109 @@ with tab_momentum:
                 st.info(f"ℹ️ **Status for {sym_clean}:** 1-Year return is {res_tf.get('ret_1y')}% (trading {res_tf.get('dist_52w')}% below 52W high). It is currently in sideways consolidation/base-building and is omitted from top momentum breakout lists until Stage-2 momentum resumes.")
             else:
                 st.success(f"✅ **Status for {sym_clean}:** In positive multi-horizon momentum (+{res_tf.get('ret_1y')}% 1Y). Trading {res_tf.get('dist_52w')}% from 52-week high.")
+
+# ==============================================================================
+# TAB 1A: SMALL & MID-CAP HIDDEN GEMS (AUTO-UPDATED WITH MARKET MOVEMENTS)
+# ==============================================================================
+with tab_hidden_gems:
+    st.subheader("💎 Small & Mid-Cap Hidden Gems (Live Auto-Updating)")
+    st.caption(
+        "Screens Small Caps (<₹15,000 Cr) & Mid Caps (₹15,000–₹35,000 Cr) for ROCE >= 16%, low debt, "
+        "strong 3Y cash conversion (>=0.65x), quarterly earnings acceleration, and reasonable GARP valuations. "
+        "Prices, breakout status, entry zones, and rankings update dynamically with market movements."
+    )
+
+    hg_col1, hg_col2 = st.columns([3, 1.2])
+    with hg_col2:
+        refresh_gems = st.button("🔄 Rescan Hidden Gems (Live)", type="primary", use_container_width=True)
+
+    with st.spinner("Syncing live market quotes & Small/Mid-Cap Hidden Gems..."):
+        gems_data = hidden_gems_screener.scan_hidden_gems(force_refresh=refresh_gems, sync_live_prices=True)
+
+    if gems_data:
+        sm_cnt = sum(1 for g in gems_data if g.get("cap_tier") == "Small Cap")
+        md_cnt = sum(1 for g in gems_data if g.get("cap_tier") == "Mid Cap")
+        ready_cnt = sum(1 for g in gems_data if g.get("status_key") in ("breakout", "pullback"))
+        avg_roce = round(sum(float(g.get("roce") or 0.0) for g in gems_data) / len(gems_data), 1)
+
+        k1, k2, k3, k4, k5 = st.columns(5)
+        k1.metric("Total Gems Tracked", len(gems_data))
+        k2.metric("Small Cap (<₹15k Cr)", sm_cnt)
+        k3.metric("Mid Cap (₹15k–35k Cr)", md_cnt)
+        k4.metric("Breakout / Pullback Ready", ready_cnt)
+        k5.metric("Avg ROCE", f"{avg_roce}%")
+
+        st.markdown("---")
+        f1, f2, f3, f4 = st.columns([1.2, 1.4, 1.4, 1.2])
+        with f1:
+            cap_flt = st.selectbox("Cap Tier:", ["All Tiers", "Small Cap", "Mid Cap"], key="hg_cap_flt")
+        with f2:
+            status_opts = ["All Setups"] + sorted(list({g.get("setup_status", "") for g in gems_data if g.get("setup_status")}))
+            status_flt = st.selectbox("Live Setup Status:", status_opts, key="hg_status_flt")
+        with f3:
+            sec_opts = ["All Sectors"] + sorted(list({g.get("sector", "") for g in gems_data if g.get("sector")}))
+            sec_flt = st.selectbox("Sector:", sec_opts, key="hg_sec_flt")
+        with f4:
+            max_pe_flt = st.slider("Max P/E (x):", min_value=15, max_value=90, value=85, step=5, key="hg_pe_flt")
+
+        filtered_gems = [
+            g for g in gems_data
+            if (cap_flt == "All Tiers" or g.get("cap_tier") == cap_flt)
+            and (status_flt == "All Setups" or g.get("setup_status") == status_flt)
+            and (sec_flt == "All Sectors" or g.get("sector") == sec_flt)
+            and (float(g.get("pe") or 0.0) <= max_pe_flt)
+        ]
+
+        st.success(f"Showing **{len(filtered_gems)}** Small & Mid-Cap Hidden Gems (auto-ranked by Gem Score & live market movement).")
+        if filtered_gems:
+            gem_rows = []
+            for g in filtered_gems:
+                gem_rows.append({
+                    "Symbol": g["symbol"],
+                    "Company": g["name"],
+                    "Cap Tier": g["cap_tier"],
+                    "MCap (₹ Cr)": f"₹{g.get('mcap_cr', 0):,.0f}",
+                    "Gem Score": f"{g['gem_score']}/10",
+                    "Live CMP (₹)": f"₹{g['cmp']:,.2f}",
+                    "Today %": f"{g.get('day_change_pct', 0):+.2f}%",
+                    "Off 52W High": f"-{g.get('dist_52w', 0)}%",
+                    "P/E | PEG": f"{g['pe']}x | {g['peg'] if g.get('peg') is not None else '—'}",
+                    "ROCE / ROE": f"{g['roce']}% / {g['roe']}%",
+                    "3Y CFO/PAT": f"{g['cfo_to_pat_3y']}x" if g.get("cfo_to_pat_3y") is not None else "—",
+                    "Qtr PAT YoY": f"{g['qtr_pat_yoy_pct']:+.1f}%" if g.get("qtr_pat_yoy_pct") is not None else "—",
+                    "RSI (14)": g.get("rsi", 50),
+                    "Live Setup": g["setup_status"],
+                    "Buy Zone": g["suggested_entry"],
+                    "Target 1": f"₹{g['target_1']:,.2f}",
+                    "Stop Loss": f"₹{g['stop_loss']:,.2f}",
+                })
+            st.dataframe(pd.DataFrame(gem_rows), use_container_width=True)
+
+            st.markdown("#### 🔬 Deep-Dive Gem Cards & Live Levels")
+            for g in filtered_gems:
+                day_p = g.get("day_change_pct", 0.0)
+                with st.expander(
+                    f"💎 {g['symbol']} — {g['name']} ({g['cap_tier']} • ₹{g['cmp']:,.2f} [{day_p:+.2f}%]) | {g['setup_status']} | Score: {g['gem_score']}/10",
+                    expanded=(g.get("status_key") == "breakout"),
+                ):
+                    gc1, gc2, gc3, gc4 = st.columns(4)
+                    gc1.metric("Live CMP", f"₹{g['cmp']:,.2f}", f"{day_p:+.2f}% Today")
+                    gc2.metric("MCap / Tier", f"₹{g.get('mcap_cr', 0):,.0f} Cr", g["cap_tier"])
+                    gc3.metric("P/E & PEG", f"{g['pe']}x", f"PEG: {g.get('peg') if g.get('peg') is not None else 'N/A'}")
+                    gc4.metric("ROCE / CFO-PAT", f"{g['roce']}%", f"3Y CFO/PAT: {g.get('cfo_to_pat_3y', 'N/A')}x")
+
+                    st.write(
+                        f"**EMAs:** 20 EMA ₹{g['ema_20']:,.2f} • 50 EMA ₹{g['ema_50']:,.2f} • 200 EMA ₹{g['ema_200']:,.2f} • "
+                        f"**RSI:** `{g['rsi']}` • **1Y Return:** `{g['ret_1y']:+.1f}%` • **D/E:** `{g.get('debt_to_equity', 'N/A')}x`"
+                    )
+                    st.info(
+                        f"**Actionable Levels (Auto-Updated):** Buy Zone `{g['suggested_entry']}` | "
+                        f"Target 1: `₹{g['target_1']:,.2f}` | Target 2: `₹{g['target_2']:,.2f}` | "
+                        f"Stop Loss: `₹{g['stop_loss']:,.2f}` (R:R `{g['risk_reward']}`)"
+                    )
+                    st.caption(f"**Key Strengths:** {g.get('thesis', '')}")
+    else:
+        st.info("Click 'Rescan Hidden Gems (Live)' to scan Small & Mid-Cap opportunities.")
 
 # ==============================================================================
 # TAB 1B: DEDICATED 5-FACTOR VALUE & PROMOTER INFLECTION FINDER
