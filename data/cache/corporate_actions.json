@@ -1,16 +1,6 @@
 {
-  "timestamp": "2026-11-25 18:10:58",
+  "timestamp": "2026-11-26 08:48:15",
   "dividends": [
-    {
-      "stock_name": "Vraj Iron",
-      "symbol": "VISL",
-      "event_type": "Dividend - Interim",
-      "ex_date": "25/11/2026",
-      "dividend_amount": "\u20b90.60",
-      "cmp": "\u20b9121.13",
-      "estimated_yield": "0.5%",
-      "announcement_date": "16/11/2026"
-    },
     {
       "stock_name": "Fusion CX",
       "symbol": "FCL01",
@@ -34,44 +24,44 @@
   ],
   "earnings": [
     {
-      "date": "25 Nov",
-      "stock_name": "Siemens Energy India",
-      "symbol": "SEI11",
+      "date": "26 Nov",
+      "stock_name": "Maxwell Engineering Solutions",
+      "symbol": "MESL",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b92970.00",
-      "market_cap": "\u20b9105767.79 Cr"
+      "ltp": "\u20b9257.10",
+      "market_cap": "\u20b9352.18 Cr"
     },
     {
-      "date": "25 Nov",
-      "stock_name": "RBM Infracon",
-      "symbol": "RI45",
+      "date": "26 Nov",
+      "stock_name": "Johnsoncab Electricals",
+      "symbol": "JEL",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9201.65",
-      "market_cap": "\u20b9214.41 Cr"
+      "ltp": "\u20b9251.80",
+      "market_cap": "\u20b9266.17 Cr"
     },
     {
-      "date": "25 Nov",
-      "stock_name": "Anya Polytech Fertilizers",
-      "symbol": "APF02",
+      "date": "26 Nov",
+      "stock_name": "HGS India",
+      "symbol": "HIL01",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b915.00",
-      "market_cap": "\u20b9180 Cr"
+      "ltp": "\u20b9195.75",
+      "market_cap": "\u20b9212.56 Cr"
     },
     {
-      "date": "25 Nov",
-      "stock_name": "Ajwa Projects",
-      "symbol": "APL13",
+      "date": "26 Nov",
+      "stock_name": "GB Logistics Commerce",
+      "symbol": "GLC",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b980.15",
-      "market_cap": "\u20b944.09 Cr"
+      "ltp": "\u20b935.24",
+      "market_cap": "\u20b928.88 Cr"
     },
     {
-      "date": "25 Nov",
-      "stock_name": "Simbhaoli Sugars",
-      "symbol": "SSM04",
+      "date": "26 Nov",
+      "stock_name": "Annvrridhhi Ventures",
+      "symbol": "JTP",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b96.27",
-      "market_cap": "\u20b925.88 Cr"
+      "ltp": "\u20b98.00",
+      "market_cap": "\u20b924.68 Cr"
     }
   ],
   "splits_and_actions": [
@@ -92,30 +82,6 @@
       "announcement_date": "06/08/2026"
     },
     {
-      "stock_name": "Bonlon Industri",
-      "symbol": "BIL04",
-      "action_type": "Rights Issue",
-      "ex_date": "25/11/2026",
-      "ratio": "1:1",
-      "announcement_date": "14/08/2026"
-    },
-    {
-      "stock_name": "Indergiri Fin",
-      "symbol": "IF06",
-      "action_type": "Rights Issue",
-      "ex_date": "25/11/2026",
-      "ratio": "7:4",
-      "announcement_date": "10/02/2026"
-    },
-    {
-      "stock_name": "VELLORA IMPACT",
-      "symbol": "PC10",
-      "action_type": "Rights Issue",
-      "ex_date": "25/11/2026",
-      "ratio": "25:2",
-      "announcement_date": "30/07/2026"
-    },
-    {
       "stock_name": "JTL DEFENCE",
       "symbol": "RIT",
       "action_type": "Rights Issue",
@@ -124,5 +90,5 @@
       "announcement_date": "14/10/2026"
     }
   ],
-  "total_events": 14
+  "total_events": 10
 }

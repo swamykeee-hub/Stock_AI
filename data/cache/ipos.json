@@ -1,20 +1,5 @@
 [
   {
-    "name": "Crystal Crop Protection",
-    "category": "Mainboard",
-    "sector": "Agro",
-    "status": "Closed",
-    "issue_period": "18 Nov 2026 \u2013 20 Nov 2026",
-    "price_band": "\u20b9259.00 - \u20b9272.00",
-    "lot_size": "55",
-    "issue_size_cr": "455.97",
-    "gmp_inr": "\u20b918.00",
-    "gmp_pct": 6.6,
-    "subscription_total": "17.19x",
-    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 18 Nov 2026 \u2013 20 Nov 2026 \u2022 Est. Listing: \u20b9290 (+6.6%)"
-  },
-  {
     "name": "Watrana Rentals",
     "category": "NSE Emerge",
     "sector": "Logistics Solution Provider",
@@ -23,11 +8,11 @@
     "price_band": "\u20b9232.00 - \u20b9245.00",
     "lot_size": "600",
     "issue_size_cr": "120.10",
-    "gmp_inr": "\u20b941.00",
-    "gmp_pct": 16.7,
+    "gmp_inr": "\u20b922.00",
+    "gmp_pct": 9.0,
     "subscription_total": "150.55x",
-    "verdict": "\u2705 APPLY (Moderate Listing Gain)",
-    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9286 (+16.7%)"
+    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
+    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9267 (+9.0%)"
   },
   {
     "name": "Mahanadi Coalfields",
@@ -53,41 +38,26 @@
     "price_band": "\u20b9130.00 - \u20b9142.00",
     "lot_size": "1,000",
     "issue_size_cr": "93.66",
-    "gmp_inr": "\u20b920.00",
-    "gmp_pct": 14.1,
+    "gmp_inr": "\u20b925.00",
+    "gmp_pct": 17.6,
     "subscription_total": "0.40x",
-    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9162 (+14.1%)"
+    "verdict": "\u2705 APPLY (Moderate Listing Gain)",
+    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9167 (+17.6%)"
   },
   {
     "name": "Foodlink F&B Holdings",
     "category": "Mainboard",
     "sector": "Hotels & Resorts",
-    "status": "Upcoming",
+    "status": "Open",
     "issue_period": "26 Nov 2026 \u2013 30 Nov 2026",
     "price_band": "\u20b9181.00 - \u20b9191.00",
     "lot_size": "78",
     "issue_size_cr": "360.76",
-    "gmp_inr": "\u20b927.00",
-    "gmp_pct": 14.1,
-    "subscription_total": "Yet to Open",
+    "gmp_inr": "\u20b918.00",
+    "gmp_pct": 9.4,
+    "subscription_total": "Active",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9218 (+14.1%)"
-  },
-  {
-    "name": "Airpro Technology",
-    "category": "NSE Emerge",
-    "sector": "Information Technology",
-    "status": "Upcoming",
-    "issue_period": "27 Nov 2026 \u2013 1 Dec 2026",
-    "price_band": "\u20b999.00",
-    "lot_size": "1,200",
-    "issue_size_cr": "35.64",
-    "gmp_inr": "\u20b94.00",
-    "gmp_pct": 4.0,
-    "subscription_total": "Yet to Open",
-    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b9103 (+4.0%)"
+    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9209 (+9.4%)"
   },
   {
     "name": "Integris Medtech",
@@ -103,6 +73,21 @@
     "subscription_total": "Yet to Open",
     "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
     "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b90 (+0.0%)"
+  },
+  {
+    "name": "Airpro Technology",
+    "category": "NSE Emerge",
+    "sector": "Information Technology",
+    "status": "Upcoming",
+    "issue_period": "27 Nov 2026 \u2013 1 Dec 2026",
+    "price_band": "\u20b999.00",
+    "lot_size": "1,200",
+    "issue_size_cr": "35.64",
+    "gmp_inr": "\u20b94.00",
+    "gmp_pct": 4.0,
+    "subscription_total": "Yet to Open",
+    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
+    "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b9103 (+4.0%)"
   },
   {
     "name": "A J Packaging",
@@ -128,11 +113,11 @@
     "price_band": "\u20b9163.00 - \u20b9172.00",
     "lot_size": "87",
     "issue_size_cr": "125.16",
-    "gmp_inr": "\u20b921.50",
-    "gmp_pct": 12.5,
+    "gmp_inr": "\u20b927.00",
+    "gmp_pct": 15.7,
     "subscription_total": "Yet to Open",
-    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 1 Dec 2026 \u2013 3 Dec 2026 \u2022 Est. Listing: \u20b9194 (+12.5%)"
+    "verdict": "\u2705 APPLY (Moderate Listing Gain)",
+    "analysis": "Dates: 1 Dec 2026 \u2013 3 Dec 2026 \u2022 Est. Listing: \u20b9199 (+15.7%)"
   },
   {
     "name": "Monomark Engineering",
@@ -193,6 +178,21 @@
     "subscription_total": "Yet to Open",
     "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
     "analysis": "Dates: TBA \u2022 Est. Listing: \u20b90 (+0.0%)"
+  },
+  {
+    "name": "Crystal Crop Protection",
+    "category": "Mainboard",
+    "sector": "Recently Listed",
+    "status": "Recently Listed",
+    "issue_period": "Recently Listed",
+    "price_band": "\u20b9272.00",
+    "lot_size": "Standard",
+    "issue_size_cr": "Completed",
+    "gmp_inr": "\u20b917",
+    "gmp_pct": -100.0,
+    "subscription_total": "Listed",
+    "verdict": "\ud83d\udd34 DISCOUNT LISTING",
+    "analysis": "Issued at \u20b9272.0, debuted at \u20b90.0 (-100.0% listing return)."
   },
   {
     "name": "Antala Industries",
@@ -298,20 +298,5 @@
     "subscription_total": "Listed @ \u20b991.00 (+11.0%)",
     "verdict": "\u2705 POSITIVE LISTING",
     "analysis": "Issued at \u20b982.0, debuted at \u20b991.0 (+11.0% listing return)."
-  },
-  {
-    "name": "M.K.Sons Fine Jewels",
-    "category": "Mainboard",
-    "sector": "Recently Listed",
-    "status": "Recently Listed",
-    "issue_period": "Recently Listed",
-    "price_band": "\u20b9162.00",
-    "lot_size": "Standard",
-    "issue_size_cr": "Completed",
-    "gmp_inr": "\u20b910",
-    "gmp_pct": 5.6,
-    "subscription_total": "Listed @ \u20b9171.00 (+5.6%)",
-    "verdict": "\u2705 POSITIVE LISTING",
-    "analysis": "Issued at \u20b9162.0, debuted at \u20b9171.0 (+5.6% listing return)."
   }
 ]

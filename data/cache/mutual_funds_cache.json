@@ -43,10 +43,10 @@
     "expense_ratio_pct": 0.81,
     "fund_manager": "Roshi Jain",
     "benchmark": "NIFTY 500 TRI",
-    "return_1y": 5.2,
-    "return_3y_cagr": 17.3,
-    "return_5y_cagr": 17.8,
-    "sharpe_ratio": 0.88,
+    "return_1y": 7.1,
+    "return_3y_cagr": 17.9,
+    "return_5y_cagr": 18.8,
+    "sharpe_ratio": 0.93,
     "alpha": 6.12,
     "beta": 0.94,
     "top_holdings": [
@@ -59,8 +59,8 @@
     ],
     "cio_rationale": "Roshi Jain's contrarian and cash-flow-driven stock-picking has established this fund as an alpha juggernaut. Capitalizes on market mispricings in domestic private banks, manufacturing capex, and healthcare turnaround plays.",
     "suitable_for": "Investors seeking aggressive alpha from cyclical turnaround and value-unlocking themes.",
-    "nav": 2392.86,
-    "nav_date": "23-Nov-2026",
+    "nav": 2425.74,
+    "nav_date": "25-Nov-2026",
     "is_live_nav": true
   },
   {
@@ -76,8 +76,8 @@
     "fund_manager": "Niket Shah",
     "benchmark": "NIFTY Midcap 150 TRI",
     "return_1y": 2.4,
-    "return_3y_cagr": 17.2,
-    "return_5y_cagr": 19.5,
+    "return_3y_cagr": 17.1,
+    "return_5y_cagr": 20.1,
     "sharpe_ratio": 0.59,
     "alpha": 9.4,
     "beta": 0.98,
@@ -91,8 +91,8 @@
     ],
     "cio_rationale": "High active-share, concentrated mid-cap strategy targeting businesses at the inflection point of exponential earnings growth. Heavily participated in multibaggers like Trent, Dixon, Persistent Systems, and healthcare leaders.",
     "suitable_for": "Aggressive growth investors wanting direct institutional exposure to explosive midcap market leaders.",
-    "nav": 120.24,
-    "nav_date": "23-Nov-2026",
+    "nav": 119.82,
+    "nav_date": "25-Nov-2026",
     "is_live_nav": true
   },
   {
@@ -107,10 +107,10 @@
     "expense_ratio_pct": 0.72,
     "fund_manager": "Harsha Upadhyaya & Atul Bhole",
     "benchmark": "NIFTY Midcap 150 TRI",
-    "return_1y": 4.4,
-    "return_3y_cagr": 15.5,
-    "return_5y_cagr": 15.6,
-    "sharpe_ratio": 0.55,
+    "return_1y": 4.9,
+    "return_3y_cagr": 15.6,
+    "return_5y_cagr": 16.2,
+    "sharpe_ratio": 0.56,
     "alpha": 4.6,
     "beta": 0.82,
     "top_holdings": [
@@ -122,8 +122,8 @@
     ],
     "cio_rationale": "Resilient mid-cap compounder focusing rigorously on dominant economic moats, clean governance, and high ROCE (>18%) across domestic capital goods and precision industrial manufacturing.",
     "suitable_for": "Long-term wealth builders seeking midcap compounding with controlled drawdown risk.",
-    "nav": 165.49,
-    "nav_date": "23-Nov-2026",
+    "nav": 165.87,
+    "nav_date": "25-Nov-2026",
     "is_live_nav": true
   },
   {
@@ -138,10 +138,10 @@
     "expense_ratio_pct": 0.7,
     "fund_manager": "Samir Rachh & Kinjal Desai",
     "benchmark": "NIFTY Smallcap 250 TRI",
-    "return_1y": 6.9,
-    "return_3y_cagr": 12.2,
-    "return_5y_cagr": 17.2,
-    "sharpe_ratio": 0.34,
+    "return_1y": 7.2,
+    "return_3y_cagr": 12.3,
+    "return_5y_cagr": 17.7,
+    "sharpe_ratio": 0.35,
     "alpha": 7.8,
     "beta": 0.88,
     "top_holdings": [
@@ -153,8 +153,8 @@
     ],
     "cio_rationale": "India's largest battle-hardened small-cap wealth multiplier maintaining hyper-diversification across emerging businesses, capturing bottom-up leaders 18-24 months before institutional coverage initiates.",
     "suitable_for": "Disciplined monthly SIP investors looking to build generational wealth over 7 to 10 year horizons.",
-    "nav": 202.01,
-    "nav_date": "23-Nov-2026",
+    "nav": 202.09,
+    "nav_date": "25-Nov-2026",
     "is_live_nav": true
   },
   {
@@ -169,10 +169,10 @@
     "expense_ratio_pct": 0.64,
     "fund_manager": "Sandeep Tandon & Sanjeev Sharma",
     "benchmark": "NIFTY Smallcap 250 TRI",
-    "return_1y": 9.7,
-    "return_3y_cagr": 14.4,
-    "return_5y_cagr": 17.4,
-    "sharpe_ratio": 0.44,
+    "return_1y": 9.6,
+    "return_3y_cagr": 14.2,
+    "return_5y_cagr": 17.9,
+    "sharpe_ratio": 0.43,
     "alpha": 10.85,
     "beta": 1.12,
     "top_holdings": [
@@ -184,8 +184,8 @@
     ],
     "cio_rationale": "Operates on Quant AMC's proprietary VLRT framework (Valuation, Liquidity, Risk appetite, Timing), dynamically rotating capital into high-velocity momentum sectors during bull expansions.",
     "suitable_for": "High-risk tolerance investors comfortable with quantitative factor rotation.",
-    "nav": 307.18,
-    "nav_date": "23-Nov-2026",
+    "nav": 305.64,
+    "nav_date": "25-Nov-2026",
     "is_live_nav": true
   },
   {
@@ -200,10 +200,10 @@
     "expense_ratio_pct": 0.95,
     "fund_manager": "Sailesh Raj Bhan",
     "benchmark": "BSE Healthcare TRI",
-    "return_1y": 15.0,
-    "return_3y_cagr": 17.5,
-    "return_5y_cagr": 15.5,
-    "sharpe_ratio": 0.84,
+    "return_1y": 16.7,
+    "return_3y_cagr": 18.0,
+    "return_5y_cagr": 15.3,
+    "sharpe_ratio": 0.87,
     "alpha": 5.4,
     "beta": 0.79,
     "top_holdings": [
@@ -216,8 +216,8 @@
     ],
     "cio_rationale": "Direct sectoral vehicle capturing the multi-year secular bull run in Indian CDMO, API manufacturing, and formulations benefiting from China+1 outsourcing and specialty launches.",
     "suitable_for": "Tactical thematic investors wanting focused participation in the pharmaceutical and CDMO supercycle.",
-    "nav": 662.43,
-    "nav_date": "23-Nov-2026",
+    "nav": 671.44,
+    "nav_date": "25-Nov-2026",
     "is_live_nav": true
   },
   {
@@ -232,10 +232,10 @@
     "expense_ratio_pct": 0.92,
     "fund_manager": "Ihab Dalwai",
     "benchmark": "NIFTY Infrastructure TRI",
-    "return_1y": -1.5,
-    "return_3y_cagr": 14.8,
-    "return_5y_cagr": 19.5,
-    "sharpe_ratio": 0.51,
+    "return_1y": -0.5,
+    "return_3y_cagr": 15.1,
+    "return_5y_cagr": 20.6,
+    "sharpe_ratio": 0.53,
     "alpha": 11.2,
     "beta": 0.96,
     "top_holdings": [
@@ -248,8 +248,8 @@
     ],
     "cio_rationale": "Riding India's massive National Infrastructure Pipeline, power transmission, railways, and defense fabrication backed by record multi-year capex order books.",
     "suitable_for": "Investors seeking high-octane growth driven by domestic industrial capex revitalization.",
-    "nav": 210.9,
-    "nav_date": "23-Nov-2026",
+    "nav": 212.57,
+    "nav_date": "25-Nov-2026",
     "is_live_nav": true
   }
 ]
