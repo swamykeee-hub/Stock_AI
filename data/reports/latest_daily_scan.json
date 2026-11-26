@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-26 09:00:51",
+  "timestamp": "2026-11-26 09:05:17",
   "indices": {
     "NIFTY 50": {
       "value": 25819.25,
@@ -105,16 +105,16 @@
         "change_pct": -1.26
       },
       "Hang Seng": {
-        "price": 22429.87,
-        "change": 463.86,
-        "change_pct": 2.11
+        "price": 22450.34,
+        "change": 484.33,
+        "change_pct": 2.21
       }
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 90.85,
-        "change": 0.21,
-        "change_pct": 0.23
+        "price": 90.99,
+        "change": 0.35,
+        "change_pct": 0.39
       },
       "US 10-Yr Yield (%)": {
         "price": 4.85,
@@ -122,26 +122,26 @@
         "change_pct": -1.14
       },
       "US Dollar Index (DXY)": {
-        "price": 103.8,
+        "price": 103.81,
         "change": 0.14,
-        "change_pct": 0.13
+        "change_pct": 0.14
       },
       "Gold ($/oz)": {
-        "price": 3604.0,
-        "change": 39.4,
-        "change_pct": 1.1
+        "price": 3602.9,
+        "change": 38.3,
+        "change_pct": 1.07
       },
       "USD / INR": {
-        "price": 92.54,
-        "change": 0.32,
-        "change_pct": 0.35
+        "price": 92.5,
+        "change": 0.28,
+        "change_pct": 0.3
       }
     },
     "fund_manager_takeaways": [
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.85%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-26 09:01:21"
+    "timestamp": "2026-11-26 09:05:43"
   },
   "market_regime": {
     "nifty_cmp": 25819.25,
@@ -20066,7 +20066,7 @@
     }
   ],
   "institutional_flow": {
-    "timestamp": "2026-11-26 09:02:16",
+    "timestamp": "2026-11-26 09:06:35",
     "fii_dii_latest": {
       "date": "2026-11-25",
       "formatted_date": "Wed 25 Nov, 2026",
@@ -20351,7 +20351,7 @@
     "total_events": 10
   },
   "performance_scorecard": {
-    "timestamp": "2026-11-26 09:02:16",
+    "timestamp": "2026-11-26 09:06:37",
     "total_picks_tracked": 43,
     "win_rate_pct": 75.0,
     "resolved_trades_count": 8,
@@ -20754,7 +20754,7 @@
     ]
   },
   "market_movers": {
-    "timestamp": "2026-11-26 09:02:16",
+    "timestamp": "2026-11-26 09:06:37",
     "top_gainers": [
       {
         "symbol": "FIRSTCRY",
@@ -20833,7 +20833,7 @@
   "total_screened": 509,
   "disclaimer": "Application Designed and Developed by Swamy Chouhan - 9000632912. DISCLAIMER: This system is an AI-driven educational and research analytics tool. It does not provide SEBI-registered investment advice or guaranteed return recommendations. Stock markets involve risk. Always consult a certified financial advisor before trading.",
   "feed_health": {
-    "checked_at": "2026-11-26 09:02:16 IST",
+    "checked_at": "2026-11-26 09:06:37 IST",
     "healthy_count": 5,
     "total_feeds": 5,
     "feeds": [
@@ -20841,15 +20841,15 @@
         "feed": "Yahoo NSE Quotes",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "7s ago",
-        "updated_at": "26-Nov 09:02 IST",
+        "age": "6s ago",
+        "updated_at": "26-Nov 09:06 IST",
         "detail": "14 indices, 124 picks"
       },
       {
         "feed": "AMFI Live NAVs",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "15m ago",
+        "age": "19m ago",
         "updated_at": "26-Nov 08:47 IST",
         "detail": "8/8 Live NAVs"
       },
@@ -20857,8 +20857,8 @@
         "feed": "FII/DII & Nifty PCR",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "0s ago",
-        "updated_at": "26-Nov 09:02 IST",
+        "age": "1s ago",
+        "updated_at": "26-Nov 09:06 IST",
         "detail": "PCR 0.91 (LIVE)"
       },
       {
@@ -20866,14 +20866,14 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "0s ago",
-        "updated_at": "26-Nov 09:02 IST",
+        "updated_at": "26-Nov 09:06 IST",
         "detail": "5 gainers / 5 losers"
       },
       {
         "feed": "Corporate Actions",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "14m ago",
+        "age": "18m ago",
         "updated_at": "26-Nov 08:48 IST",
         "detail": "10 events tracked"
       }
