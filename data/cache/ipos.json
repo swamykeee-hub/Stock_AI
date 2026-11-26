@@ -60,21 +60,6 @@
     "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9205 (+7.3%)"
   },
   {
-    "name": "Integris Medtech",
-    "category": "Mainboard",
-    "sector": "Pharmaceuticals",
-    "status": "Upcoming",
-    "issue_period": "27 Nov 2026 \u2013 1 Dec 2026",
-    "price_band": "TBA",
-    "lot_size": "0",
-    "issue_size_cr": "0.00",
-    "gmp_inr": "\u20b90.00",
-    "gmp_pct": 0.0,
-    "subscription_total": "Yet to Open",
-    "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
-    "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b90 (+0.0%)"
-  },
-  {
     "name": "Airpro Technology",
     "category": "NSE Emerge",
     "sector": "Information Technology",
@@ -88,6 +73,21 @@
     "subscription_total": "Yet to Open",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
     "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b9103 (+4.0%)"
+  },
+  {
+    "name": "Integris Medtech",
+    "category": "Mainboard",
+    "sector": "Pharmaceuticals",
+    "status": "Upcoming",
+    "issue_period": "27 Nov 2026 \u2013 1 Dec 2026",
+    "price_band": "TBA",
+    "lot_size": "0",
+    "issue_size_cr": "0.00",
+    "gmp_inr": "\u20b90.00",
+    "gmp_pct": 0.0,
+    "subscription_total": "Yet to Open",
+    "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
+    "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b90 (+0.0%)"
   },
   {
     "name": "A J Packaging",
@@ -133,21 +133,6 @@
     "subscription_total": "Yet to Open",
     "verdict": "\ud83d\udd25 STRONG APPLY (High Listing Gain)",
     "analysis": "Dates: 2 Dec 2026 \u2013 4 Dec 2026 \u2022 Est. Listing: \u20b986 (+32.3%)"
-  },
-  {
-    "name": "Vishwas Refoils & Consumer",
-    "category": "BSE SME",
-    "sector": "FMCG",
-    "status": "Upcoming",
-    "issue_period": "3 Dec 2026 \u2013 7 Dec 2026",
-    "price_band": "TBA",
-    "lot_size": "0",
-    "issue_size_cr": "0.00",
-    "gmp_inr": "\u2014",
-    "gmp_pct": 0.0,
-    "subscription_total": "Yet to Open",
-    "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
-    "analysis": "Dates: 3 Dec 2026 \u2013 7 Dec 2026 \u2022 Est. Listing: \u20b90 (+0.0%)"
   },
   {
     "name": "Encube Ethicals",
