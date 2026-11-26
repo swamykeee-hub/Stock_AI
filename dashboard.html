@@ -41,7 +41,7 @@
             </div>
             <div class="sync-badge">
                 <span style="width: 8px; height: 8px; background: #10b981; border-radius: 50%; display: inline-block;"></span>
-                <span>Auto-Updated: <b id="timestampBadge">2026-11-26 16:06:48</b></span>
+                <span>Auto-Updated: <b id="timestampBadge">2026-11-26 16:12:31</b></span>
             </div>
             <button class="action-btn" onclick="openTelegramModal()" style="background: rgba(14, 165, 233, 0.15); border-color: #0ea5e9; color: #38bdf8;" title="Set up free Telegram Bot alerts on your phone">
                 📱 Free Phone Alerts
@@ -55,7 +55,7 @@
 
     <!-- Upstream Feed Health & Freshness Telemetry -->
     <div id="feedHealthRibbon" class="feed-health-ribbon">
-        <span class='feed-health-title'>📡 Feeds (5/5 Healthy):</span><span class='feed-pill' title="14 indices, 124 picks • Updated: 26-Nov 16:07 IST"><span class='feed-dot' style='background:#10b981;'></span><b>Yahoo NSE Quotes:</b> FRESH (3s ago)</span><span class='feed-pill' title="8/8 Live NAVs • Updated: 26-Nov 09:16 IST"><span class='feed-dot' style='background:#10b981;'></span><b>AMFI Live NAVs:</b> FRESH (6.9h ago)</span><span class='feed-pill' title="PCR 1.03 (LIVE) • Updated: 26-Nov 16:07 IST"><span class='feed-dot' style='background:#10b981;'></span><b>FII/DII & Nifty PCR:</b> FRESH (0s ago)</span><span class='feed-pill' title="15 gainers / 15 losers • Updated: 26-Nov 16:07 IST"><span class='feed-dot' style='background:#10b981;'></span><b>NSE Movers Feed:</b> FRESH (0s ago)</span><span class='feed-pill' title="10 events tracked • Updated: 26-Nov 09:17 IST"><span class='feed-dot' style='background:#10b981;'></span><b>Corporate Actions:</b> FRESH (6.8h ago)</span>
+        <span class='feed-health-title'>📡 Feeds (5/5 Healthy):</span><span class='feed-pill' title="14 indices, 124 picks • Updated: 26-Nov 16:13 IST"><span class='feed-dot' style='background:#10b981;'></span><b>Yahoo NSE Quotes:</b> FRESH (4s ago)</span><span class='feed-pill' title="8/8 Live NAVs • Updated: 26-Nov 09:16 IST"><span class='feed-dot' style='background:#10b981;'></span><b>AMFI Live NAVs:</b> FRESH (6.9h ago)</span><span class='feed-pill' title="PCR 1.03 (LIVE) • Updated: 26-Nov 16:13 IST"><span class='feed-dot' style='background:#10b981;'></span><b>FII/DII & Nifty PCR:</b> FRESH (0s ago)</span><span class='feed-pill' title="15 gainers / 15 losers • Updated: 26-Nov 16:13 IST"><span class='feed-dot' style='background:#10b981;'></span><b>NSE Movers Feed:</b> FRESH (1s ago)</span><span class='feed-pill' title="10 events tracked • Updated: 26-Nov 09:17 IST"><span class='feed-dot' style='background:#10b981;'></span><b>Corporate Actions:</b> FRESH (6.9h ago)</span>
     </div>
 
     <!-- Benchmark Indices & Global Commodities -->
@@ -477,8 +477,8 @@
         </svg></div>
                 <div class="index-card-content">
                     <div class="index-name">Brent Crude ($/bbl)</div>
-                    <div class="index-val">90.22</div>
-                    <div class="index-chg" style="color: #ef4444;">-0.46%</div>
+                    <div class="index-val">90.24</div>
+                    <div class="index-chg" style="color: #ef4444;">-0.44%</div>
                 </div>
             </div>
             
@@ -560,6 +560,7 @@
     <div class="controls-bar">
         <div class="tabs">
             <button class="tab-btn active" onclick="switchView('momentum', this)">🏆 Super-Trend Leaders (3M/1Y/3Y)</button>
+            <button id="tabBtnHiddenGems" class="tab-btn" onclick="switchView('hidden_gems', this)" style="border-color: #a855f7; color: #c084fc; font-weight: 700;">💎 Hidden Gems (Small &amp; Mid Cap)</button>
             <button class="tab-btn" onclick="switchView('factor_screener', this)" style="border-color: #10b981; color: #34d399; font-weight: 700;">💎 Factor &amp; Value Finder</button>
             <button id="tabBtnMovers" class="tab-btn" onclick="switchView('movers', this)" style="border-color: #f59e0b; color: #f59e0b; font-weight: 700;">⚡ Top Movers (Gainers &amp; Losers)</button>
             <button class="tab-btn" onclick="switchView('fifty_two_week', this)">🚀 52-Week High Leaders</button>
@@ -8998,6 +8999,807 @@
                     <div style="font-size:11px; color:#94a3b8; font-weight:700; margin-top:2px;">🎯 Discounted Turnaround</div>
                 </td>
                 <td><button class="chart-btn" onclick="toggleCandleChart('NESTLEIND', this)">📈 Chart</button></td>
+            </tr>
+            
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Tab 1C: Small & Mid-Cap Hidden Gems (Auto-Updated with Market Movements) -->
+    <div id="view-hidden_gems" class="view-panel" style="display: none;">
+        <div style="background: linear-gradient(135deg, #3b0764, #0f172a); border: 1px solid #a855f7; border-radius: 12px; padding: 18px 22px; margin-bottom: 18px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                <div>
+                    <h3 style="color: #fff; font-size: 18px; margin: 0 0 6px 0; display: flex; align-items: center; gap: 8px;">
+                        <span>💎 Small &amp; Mid-Cap Hidden Gems Radar</span>
+                        <span style="background: #581c87; color: #e9d5ff; font-size: 11px; padding: 2px 8px; border-radius: 12px;">Auto-Syncs With Live Market Moves</span>
+                    </h3>
+                    <p style="color: #cbd5e1; font-size: 13px; margin: 0;">
+                        High-ROCE, low-debt, cash-generative Small &amp; Mid-Cap compounders (MCap ₹500–₹35,000 Cr, P/E &le; 88x, 3Y CFO/PAT &ge; 0.65x). Live prices, breakout status, entry zones &amp; stops update automatically with market movements.
+                    </p>
+                </div>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <div style="background: #111827; border: 1px solid #a855f755; padding: 8px 12px; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 10px; color: #94a3b8; display: block;">Small-Cap Gems</span>
+                        <b style="font-size: 15px; color: #34d399;">6 Stocks</b>
+                    </div>
+                    <div style="background: #111827; border: 1px solid #38bdf855; padding: 8px 12px; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 10px; color: #94a3b8; display: block;">Mid-Cap Gems</span>
+                        <b style="font-size: 15px; color: #38bdf8;">11 Stocks</b>
+                    </div>
+                    <div style="background: #111827; border: 1px solid #10b98155; padding: 8px 12px; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 10px; color: #94a3b8; display: block;">Breakout / Buy Ready</span>
+                        <b style="font-size: 15px; color: #10b981;">12</b>
+                    </div>
+                    <div style="background: #111827; border: 1px solid #374151; padding: 8px 12px; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 10px; color: #94a3b8; display: block;">Avg ROCE</span>
+                        <b style="font-size: 15px; color: #c084fc;">29.4%</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 18px; margin-bottom: 18px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+                <span style="font-size: 12px; font-weight: 800; color: var(--text-heading);">🎯 Quick Filters:</span>
+                <button class="sip-preset-btn" onclick="applyHiddenGemFilter('all')" style="font-weight:700; color:#c084fc;">All Hidden Gems (17)</button>
+                <button class="sip-preset-btn" onclick="applyHiddenGemFilter('small')" style="font-weight:700; color:#34d399;">🌱 Small Cap (&lt;₹15k Cr)</button>
+                <button class="sip-preset-btn" onclick="applyHiddenGemFilter('mid')" style="font-weight:700; color:#38bdf8;">🏛️ Mid Cap (₹15k–35k Cr)</button>
+                <button class="sip-preset-btn" onclick="applyHiddenGemFilter('breakout')" style="font-weight:700; color:#10b981;">🔥 Stage-2 Breakouts</button>
+                <button class="sip-preset-btn" onclick="applyHiddenGemFilter('pullback')" style="font-weight:700; color:#38bdf8;">🎯 Pullback Buy</button>
+                <button class="sip-preset-btn" onclick="applyHiddenGemFilter('turnaround')" style="font-weight:700; color:#a78bfa;">⚡ Base Reclaim / Watch</button>
+            </div>
+            <span id="hiddenGemsCountBadge" class="badge" style="background: #7e22ce;">Showing 17 Gems</span>
+        </div>
+
+        <div class="table-container">
+            <table id="hiddenGemsTable">
+                <thead>
+                    <tr>
+                        <th class="sortable" onclick="sortTable(this, 0)">Stock / Cap Tier</th>
+                        <th class="sortable" onclick="sortTable(this, 1)">Sector</th>
+                        <th class="sortable" onclick="sortTable(this, 2)">Gem Score &amp; Live Setup</th>
+                        <th class="sortable" onclick="sortTable(this, 3)">Live CMP &amp; Move</th>
+                        <th class="sortable" onclick="sortTable(this, 4)">P/E &amp; PEG</th>
+                        <th class="sortable" onclick="sortTable(this, 5)">ROCE / CFO Quality</th>
+                        <th>Qtr Growth (YoY)</th>
+                        <th>RSI &amp; EMAs</th>
+                        <th>Buy Zone / Target / SL</th>
+                        <th>Chart</th>
+                    </tr>
+                </thead>
+                <tbody id="hiddenGemsTbody">
+                    
+            <tr class="stock-row gem-row"
+                data-symbol="RUBICON" data-name="Rubicon Research Ltd." data-sector="Healthcare"
+                data-cap="mid" data-status="breakout">
+                <td>
+                    <div class="sym-name">RUBICON <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf866; font-weight:700;">Mid Cap</span></div>
+                    <div class="sub-text">Rubicon Research Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹30,646 Cr • D/E: 0.35x</div>
+                </td>
+                <td><span class="sector-pill">Healthcare</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#10b98122; color:#10b981; border:1px solid #10b981; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 9.3/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#10b981;">🔥 Stage-2 Breakout</span></div>
+                </td>
+                <td>
+                    <b>₹1,851.70</b>
+                    <div class="sub-text" style="color:#10b981; font-weight:700;">+8.19% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-2.49% off 52W</div>
+                </td>
+                <td>
+                    <b>94.3x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 0.61</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">28.4%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 27.0% • <b>CFO/PAT:</b> 0.82x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+40.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+66.7%</b><span class="sub-text"> • OPM +200 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>66.7</b> • <span style="color:#34d399; font-weight:700;">1Y: +181.1%</span></div>
+                    <div class="sub-text">20E: ₹1,687 • 50E: ₹1,647</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹1,796.15 — ₹1,860.96</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹2,073.9</span> • <span style="color:#ef4444;">SL: ₹1,597.4</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('RUBICON', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="IGIL" data-name="International Gemological Institute Ltd." data-sector="Services"
+                data-cap="mid" data-status="breakout">
+                <td>
+                    <div class="sym-name">IGIL <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf866; font-weight:700;">Mid Cap</span></div>
+                    <div class="sub-text">International Gemological Institute Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹18,308 Cr • D/E: 0.09x</div>
+                </td>
+                <td><span class="sector-pill">Services</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#10b98122; color:#10b981; border:1px solid #10b981; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 9.3/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#10b981;">🔥 Stage-2 Breakout</span></div>
+                </td>
+                <td>
+                    <b>₹423.20</b>
+                    <div class="sub-text" style="color:#ef4444; font-weight:700;">-2.15% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-6.71% off 52W</div>
+                </td>
+                <td>
+                    <b>27.5x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 0.63</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">69.2%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 55.8% • <b>CFO/PAT:</b> 0.90x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+31.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+43.1%</b><span class="sub-text"> • OPM +300 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>58.9</b> • <span style="color:#34d399; font-weight:700;">1Y: +29.4%</span></div>
+                    <div class="sub-text">20E: ₹415 • 50E: ₹384</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹411.10 — ₹425.32</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹474.0</span> • <span style="color:#ef4444;">SL: ₹372.2</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('IGIL', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="ACUTAAS" data-name="Acutaas Chemicals Ltd." data-sector="Healthcare"
+                data-cap="mid" data-status="breakout">
+                <td>
+                    <div class="sym-name">ACUTAAS <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf866; font-weight:700;">Mid Cap</span></div>
+                    <div class="sub-text">Acutaas Chemicals Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹33,403 Cr • D/E: 0.01x</div>
+                </td>
+                <td><span class="sector-pill">Healthcare</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#10b98122; color:#10b981; border:1px solid #10b981; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 9.2/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#10b981;">🔥 Stage-2 Breakout</span></div>
+                </td>
+                <td>
+                    <b>₹4,079.90</b>
+                    <div class="sub-text" style="color:#10b981; font-weight:700;">+2.18% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-1.21% off 52W</div>
+                </td>
+                <td>
+                    <b>75.9x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 0.79</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">31.6%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 24.0% • <b>CFO/PAT:</b> 0.95x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+43.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+70.8%</b><span class="sub-text"> • OPM +900 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>65.0</b> • <span style="color:#34d399; font-weight:700;">1Y: +127.3%</span></div>
+                    <div class="sub-text">20E: ₹3,848 • 50E: ₹3,620</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹3,957.50 — ₹4,100.30</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹4,569.5</span> • <span style="color:#ef4444;">SL: ₹3,511.6</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('ACUTAAS', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="CHENNPETRO" data-name="Chennai Petroleum Corporation Ltd." data-sector="Oil Gas & Consumable Fuels"
+                data-cap="mid" data-status="pullback">
+                <td>
+                    <div class="sym-name">CHENNPETRO <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf866; font-weight:700;">Mid Cap</span></div>
+                    <div class="sub-text">Chennai Petroleum Corporation Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹20,467 Cr • D/E: 0.17x</div>
+                </td>
+                <td><span class="sector-pill">Oil Gas & Consumable Fuels</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#10b98122; color:#10b981; border:1px solid #10b981; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 9.2/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#38bdf8;">🎯 Pullback Buy (EMA Support)</span></div>
+                </td>
+                <td>
+                    <b>₹1,374.60</b>
+                    <div class="sub-text" style="color:#10b981; font-weight:700;">+0.58% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-18.06% off 52W</div>
+                </td>
+                <td>
+                    <b>3.6x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 0.01</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">35.4%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 32.5% • <b>CFO/PAT:</b> 1.18x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+26.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+210.2%</b><span class="sub-text"> • OPM +900 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>40.5</b> • <span style="color:#34d399; font-weight:700;">1Y: +53.3%</span></div>
+                    <div class="sub-text">20E: ₹1,437 • 50E: ₹1,434</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹1,353.98 — ₹1,381.47</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹1,539.5</span> • <span style="color:#ef4444;">SL: ₹1,250.9</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('CHENNPETRO', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="SHAILY" data-name="Shaily Engineering Plastics Ltd." data-sector="Capital Goods"
+                data-cap="mid" data-status="breakout">
+                <td>
+                    <div class="sym-name">SHAILY <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf866; font-weight:700;">Mid Cap</span></div>
+                    <div class="sub-text">Shaily Engineering Plastics Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹15,544 Cr • D/E: 0.22x</div>
+                </td>
+                <td><span class="sector-pill">Capital Goods</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#10b98122; color:#10b981; border:1px solid #10b981; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 9.2/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#10b981;">🔥 Stage-2 Breakout</span></div>
+                </td>
+                <td>
+                    <b>₹3,379.60</b>
+                    <div class="sub-text" style="color:#10b981; font-weight:700;">+16.33% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-6.52% off 52W</div>
+                </td>
+                <td>
+                    <b>83.2x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 1.20</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">29.3%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 26.9% • <b>CFO/PAT:</b> 1.34x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+24.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+19.6%</b><span class="sub-text"> • OPM -100 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>63.6</b> • <span style="color:#34d399; font-weight:700;">1Y: +28.8%</span></div>
+                    <div class="sub-text">20E: ₹3,097 • 50E: ₹3,096</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹3,278.21 — ₹3,396.50</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹3,785.2</span> • <span style="color:#ef4444;">SL: ₹3,003.5</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('SHAILY', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="SJS" data-name="SJS Enterprises Ltd." data-sector="Automobile and Auto Components"
+                data-cap="small" data-status="pullback">
+                <td>
+                    <div class="sym-name">SJS <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#34d39922; color:#34d399; border:1px solid #34d39966; font-weight:700;">Small Cap</span></div>
+                    <div class="sub-text">SJS Enterprises Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹6,740 Cr • D/E: 0.02x</div>
+                </td>
+                <td><span class="sector-pill">Automobile and Auto Components</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#10b98122; color:#10b981; border:1px solid #10b981; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 9.0/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#38bdf8;">🎯 Pullback Buy (EMA Support)</span></div>
+                </td>
+                <td>
+                    <b>₹2,089.60</b>
+                    <div class="sub-text" style="color:#ef4444; font-weight:700;">-0.40% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-19.32% off 52W</div>
+                </td>
+                <td>
+                    <b>32.7x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 0.68</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">28.6%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 22.0% • <b>CFO/PAT:</b> 1.32x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+17.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+34.9%</b><span class="sub-text"> • OPM +100 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>48.7</b> • <span style="color:#34d399; font-weight:700;">1Y: +23.5%</span></div>
+                    <div class="sub-text">20E: ₹2,103 • 50E: ₹2,131</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹2,058.26 — ₹2,100.05</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹2,340.3</span> • <span style="color:#ef4444;">SL: ₹1,901.5</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('SJS', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="KAJARIACER" data-name="Kajaria Ceramics Ltd." data-sector="Consumer Durables"
+                data-cap="mid" data-status="breakout">
+                <td>
+                    <div class="sym-name">KAJARIACER <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf866; font-weight:700;">Mid Cap</span></div>
+                    <div class="sub-text">Kajaria Ceramics Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹19,193 Cr • D/E: 0.14x</div>
+                </td>
+                <td><span class="sector-pill">Consumer Durables</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#10b98122; color:#10b981; border:1px solid #10b981; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 9.0/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#10b981;">🔥 Stage-2 Breakout</span></div>
+                </td>
+                <td>
+                    <b>₹1,223.40</b>
+                    <div class="sub-text" style="color:#10b981; font-weight:700;">+1.44% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-4.05% off 52W</div>
+                </td>
+                <td>
+                    <b>30.2x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 0.52</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">23.4%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 17.9% • <b>CFO/PAT:</b> 1.45x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+24.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+42.5%</b><span class="sub-text"> • OPM +200 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>59.8</b> • <span style="color:#34d399; font-weight:700;">1Y: +11.6%</span></div>
+                    <div class="sub-text">20E: ₹1,189 • 50E: ₹1,190</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹1,186.70 — ₹1,229.52</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹1,370.2</span> • <span style="color:#ef4444;">SL: ₹1,154.6</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('KAJARIACER', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="HONASA" data-name="Honasa Consumer Ltd." data-sector="Fast Moving Consumer Goods"
+                data-cap="mid" data-status="breakout">
+                <td>
+                    <div class="sym-name">HONASA <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf866; font-weight:700;">Mid Cap</span></div>
+                    <div class="sub-text">Honasa Consumer Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹17,394 Cr • D/E: 0.09x</div>
+                </td>
+                <td><span class="sector-pill">Fast Moving Consumer Goods</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#10b98122; color:#10b981; border:1px solid #10b981; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 8.9/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#10b981;">🔥 Stage-2 Breakout</span></div>
+                </td>
+                <td>
+                    <b>₹533.25</b>
+                    <div class="sub-text" style="color:#ef4444; font-weight:700;">-0.60% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-1.8% off 52W</div>
+                </td>
+                <td>
+                    <b>60.7x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 0.52</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">19.2%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 15.7% • <b>CFO/PAT:</b> 1.24x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+36.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+87.2%</b><span class="sub-text"> • OPM +400 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>69.8</b> • <span style="color:#34d399; font-weight:700;">1Y: +81.6%</span></div>
+                    <div class="sub-text">20E: ₹501 • 50E: ₹480</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹517.25 — ₹535.92</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹597.2</span> • <span style="color:#ef4444;">SL: ₹465.9</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('HONASA', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="ACE" data-name="Action Construction Equipment Ltd." data-sector="Capital Goods"
+                data-cap="mid" data-status="extended">
+                <td>
+                    <div class="sym-name">ACE <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf866; font-weight:700;">Mid Cap</span></div>
+                    <div class="sub-text">Action Construction Equipment Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹15,417 Cr • D/E: 0.07x</div>
+                </td>
+                <td><span class="sector-pill">Capital Goods</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#10b98122; color:#10b981; border:1px solid #10b981; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 8.8/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#f59e0b;">⚠️ Extended — Wait for Dip</span></div>
+                </td>
+                <td>
+                    <b>₹1,295.00</b>
+                    <div class="sub-text" style="color:#10b981; font-weight:700;">+8.79% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-0.31% off 52W</div>
+                </td>
+                <td>
+                    <b>32.5x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 0.40</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">31.6%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 22.8% • <b>CFO/PAT:</b> 1.10x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+19.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+82.2%</b><span class="sub-text"></span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>74.0</b> • <span style="color:#34d399; font-weight:700;">1Y: +32.9%</span></div>
+                    <div class="sub-text">20E: ₹1,166 • 50E: ₹1,144</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹1,217.30 — ₹1,256.15</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹1,450.4</span> • <span style="color:#ef4444;">SL: ₹1,109.6</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('ACE', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="CEMPRO" data-name="Cemindia Projects Ltd." data-sector="Construction"
+                data-cap="mid" data-status="pullback">
+                <td>
+                    <div class="sym-name">CEMPRO <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf866; font-weight:700;">Mid Cap</span></div>
+                    <div class="sub-text">Cemindia Projects Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹26,280 Cr • D/E: 0.35x</div>
+                </td>
+                <td><span class="sector-pill">Construction</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#10b98122; color:#10b981; border:1px solid #10b981; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 8.7/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#38bdf8;">🎯 Pullback Buy (EMA Support)</span></div>
+                </td>
+                <td>
+                    <b>₹1,425.00</b>
+                    <div class="sub-text" style="color:#10b981; font-weight:700;">+0.73% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-13.59% off 52W</div>
+                </td>
+                <td>
+                    <b>42.1x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 0.62</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">32.8%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 27.8% • <b>CFO/PAT:</b> 1.11x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+25.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+21.3%</b><span class="sub-text"> • OPM +100 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>67.8</b> • <span style="color:#34d399; font-weight:700;">1Y: +79.9%</span></div>
+                    <div class="sub-text">20E: ₹1,336 • 50E: ₹1,286</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹1,335.78 — ₹1,432.12</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹1,596.0</span> • <span style="color:#ef4444;">SL: ₹1,247.1</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('CEMPRO', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="RRKABEL" data-name="R R Kabel Ltd." data-sector="Capital Goods"
+                data-cap="mid" data-status="turnaround">
+                <td>
+                    <div class="sym-name">RRKABEL <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf866; font-weight:700;">Mid Cap</span></div>
+                    <div class="sub-text">R R Kabel Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹20,497 Cr • D/E: 0.19x</div>
+                </td>
+                <td><span class="sector-pill">Capital Goods</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#10b98122; color:#10b981; border:1px solid #10b981; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 8.6/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#a78bfa;">🌱 Base Reclaim / Turnaround Watch</span></div>
+                </td>
+                <td>
+                    <b>₹1,812.60</b>
+                    <div class="sub-text" style="color:#10b981; font-weight:700;">+0.64% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-39.25% off 52W</div>
+                </td>
+                <td>
+                    <b>30.4x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 0.45</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">28.1%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 21.3% • <b>CFO/PAT:</b> 1.02x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+52.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+56.0%</b><span class="sub-text"> • OPM +100 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>28.1</b> • <span style="color:#34d399; font-weight:700;">1Y: +30.4%</span></div>
+                    <div class="sub-text">20E: ₹1,959 • 50E: ₹2,176</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹1,776.35 — ₹1,959.36</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹2,030.1</span> • <span style="color:#ef4444;">SL: ₹1,649.5</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('RRKABEL', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="BAJAJCON" data-name="Bajaj Consumer Care Ltd." data-sector="Fast Moving Consumer Goods"
+                data-cap="small" data-status="turnaround">
+                <td>
+                    <div class="sym-name">BAJAJCON <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#34d39922; color:#34d399; border:1px solid #34d39966; font-weight:700;">Small Cap</span></div>
+                    <div class="sub-text">Bajaj Consumer Care Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹5,091 Cr • D/E: 0.01x</div>
+                </td>
+                <td><span class="sector-pill">Fast Moving Consumer Goods</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#10b98122; color:#10b981; border:1px solid #10b981; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 8.6/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#a78bfa;">🌱 Base Reclaim / Turnaround Watch</span></div>
+                </td>
+                <td>
+                    <b>₹389.55</b>
+                    <div class="sub-text" style="color:#ef4444; font-weight:700;">-0.05% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-43.71% off 52W</div>
+                </td>
+                <td>
+                    <b>20.3x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 0.24</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">30.0%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 24.7% • <b>CFO/PAT:</b> 0.80x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+25.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+66.7%</b><span class="sub-text"> • OPM +700 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>38.9</b> • <span style="color:#34d399; font-weight:700;">1Y: +46.0%</span></div>
+                    <div class="sub-text">20E: ₹412 • 50E: ₹441</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹381.76 — ₹411.84</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹437.5</span> • <span style="color:#ef4444;">SL: ₹353.6</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('BAJAJCON', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="FIEMIND" data-name="Fiem Industries Ltd." data-sector="Automobile and Auto Components"
+                data-cap="small" data-status="turnaround">
+                <td>
+                    <div class="sym-name">FIEMIND <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#34d39922; color:#34d399; border:1px solid #34d39966; font-weight:700;">Small Cap</span></div>
+                    <div class="sub-text">Fiem Industries Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹5,298 Cr • D/E: 0.05x</div>
+                </td>
+                <td><span class="sector-pill">Automobile and Auto Components</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#10b98122; color:#10b981; border:1px solid #10b981; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 8.6/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#a78bfa;">🌱 Base Reclaim / Turnaround Watch</span></div>
+                </td>
+                <td>
+                    <b>₹2,013.00</b>
+                    <div class="sub-text" style="color:#ef4444; font-weight:700;">-2.98% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-24.74% off 52W</div>
+                </td>
+                <td>
+                    <b>18.7x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 0.60</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">29.3%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 22.6% • <b>CFO/PAT:</b> 0.84x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+31.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+31.2%</b><span class="sub-text"></span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>52.9</b> • <span style="color:#f87171; font-weight:700;">1Y: -11.8%</span></div>
+                    <div class="sub-text">20E: ₹2,000 • 50E: ₹1,968</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹1,972.74 — ₹2,033.13</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹2,254.6</span> • <span style="color:#ef4444;">SL: ₹1,856.2</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('FIEMIND', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="MARKSANS" data-name="Marksans Pharma Ltd." data-sector="Healthcare"
+                data-cap="small" data-status="turnaround">
+                <td>
+                    <div class="sym-name">MARKSANS <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#34d39922; color:#34d399; border:1px solid #34d39966; font-weight:700;">Small Cap</span></div>
+                    <div class="sub-text">Marksans Pharma Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹12,667 Cr • D/E: 0.14x</div>
+                </td>
+                <td><span class="sector-pill">Healthcare</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf8; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 8.0/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#a78bfa;">🌱 Base Reclaim / Turnaround Watch</span></div>
+                </td>
+                <td>
+                    <b>₹279.40</b>
+                    <div class="sub-text" style="color:#ef4444; font-weight:700;">-0.16% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-20.39% off 52W</div>
+                </td>
+                <td>
+                    <b>22.6x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 0.38</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">18.8%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 15.2% • <b>CFO/PAT:</b> 0.80x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+30.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+45.5%</b><span class="sub-text"> • OPM +300 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>37.0</b> • <span style="color:#34d399; font-weight:700;">1Y: +46.0%</span></div>
+                    <div class="sub-text">20E: ₹299 • 50E: ₹305</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹273.81 — ₹299.13</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹312.9</span> • <span style="color:#ef4444;">SL: ₹254.2</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('MARKSANS', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="EIHOTEL" data-name="EIH Ltd." data-sector="Consumer Services"
+                data-cap="mid" data-status="pullback">
+                <td>
+                    <div class="sym-name">EIHOTEL <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf866; font-weight:700;">Mid Cap</span></div>
+                    <div class="sub-text">EIH Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹20,819 Cr • D/E: 0.05x</div>
+                </td>
+                <td><span class="sector-pill">Consumer Services</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf8; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 7.9/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#38bdf8;">🎯 Pullback Buy (EMA Support)</span></div>
+                </td>
+                <td>
+                    <b>₹332.70</b>
+                    <div class="sub-text" style="color:#ef4444; font-weight:700;">-2.22% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-15.11% off 52W</div>
+                </td>
+                <td>
+                    <b>27.6x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 1.11</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">20.7%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 14.5% • <b>CFO/PAT:</b> 1.20x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+16.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+20.5%</b><span class="sub-text"> • OPM +100 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>65.2</b> • <span style="color:#f87171; font-weight:700;">1Y: -11.3%</span></div>
+                    <div class="sub-text">20E: ₹315 • 50E: ₹307</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹315.29 — ₹334.36</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹372.6</span> • <span style="color:#ef4444;">SL: ₹298.1</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('EIHOTEL', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="STYLAMIND" data-name="Stylam Industries Ltd." data-sector="Consumer Durables"
+                data-cap="small" data-status="pullback">
+                <td>
+                    <div class="sym-name">STYLAMIND <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#34d39922; color:#34d399; border:1px solid #34d39966; font-weight:700;">Small Cap</span></div>
+                    <div class="sub-text">Stylam Industries Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹5,589 Cr • D/E: 0.05x</div>
+                </td>
+                <td><span class="sector-pill">Consumer Durables</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf8; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 7.7/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#38bdf8;">🎯 Pullback Buy (EMA Support)</span></div>
+                </td>
+                <td>
+                    <b>₹3,298.40</b>
+                    <div class="sub-text" style="color:#10b981; font-weight:700;">+1.62% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-20.52% off 52W</div>
+                </td>
+                <td>
+                    <b>31.9x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 0.80</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">26.6%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 19.9% • <b>CFO/PAT:</b> 0.98x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+16.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+13.5%</b><span class="sub-text"> • OPM -200 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>56.7</b> • <span style="color:#34d399; font-weight:700;">1Y: +59.8%</span></div>
+                    <div class="sub-text">20E: ₹3,208 • 50E: ₹3,218</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹3,207.51 — ₹3,314.89</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹3,694.2</span> • <span style="color:#ef4444;">SL: ₹3,108.0</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('STYLAMIND', this)">📈 Chart</button></td>
+            </tr>
+            
+            <tr class="stock-row gem-row"
+                data-symbol="LTFOODS" data-name="LT Foods Ltd." data-sector="Fast Moving Consumer Goods"
+                data-cap="small" data-status="pullback">
+                <td>
+                    <div class="sym-name">LTFOODS <span style="font-size:10px; padding:1px 6px; border-radius:10px; background:#34d39922; color:#34d399; border:1px solid #34d39966; font-weight:700;">Small Cap</span></div>
+                    <div class="sub-text">LT Foods Ltd.</div>
+                    <div class="sub-text" style="color:#94a3b8;">MCap: ₹14,718 Cr • D/E: 0.37x</div>
+                </td>
+                <td><span class="sector-pill">Fast Moving Consumer Goods</span></td>
+                <td>
+                    <span style="display:inline-flex; align-items:center; gap:4px; background:#38bdf822; color:#38bdf8; border:1px solid #38bdf8; padding:3px 8px; border-radius:6px; font-weight:800; font-size:12px;">
+                        💎 7.7/10
+                    </span>
+                    <div style="margin-top:4px;"><span style="font-size:11px; font-weight:700; color:#38bdf8;">🎯 Pullback Buy (EMA Support)</span></div>
+                </td>
+                <td>
+                    <b>₹423.60</b>
+                    <div class="sub-text" style="color:#10b981; font-weight:700;">+0.12% Today</div>
+                    <div class="sub-text" style="color:#94a3b8;">-13.67% off 52W</div>
+                </td>
+                <td>
+                    <b>22.4x</b>
+                    <div class="sub-text" style="color:#38bdf8;">PEG 1.40</div>
+                </td>
+                <td>
+                    <div><b>ROCE:</b> <span style="color:#34d399;">17.6%</span></div>
+                    <div class="sub-text"><b>ROE:</b> 14.8% • <b>CFO/PAT:</b> 1.16x</div>
+                </td>
+                <td>
+                    <div>Sales: <b style="color:#38bdf8;">+17.0%</b></div>
+                    <div>PAT: <b style="color:#10b981;">+9.8%</b><span class="sub-text"> • OPM -100 bps</span></div>
+                </td>
+                <td style="font-size:12px;">
+                    <div>RSI: <b>54.2</b> • <span style="color:#34d399; font-weight:700;">1Y: +4.6%</span></div>
+                    <div class="sub-text">20E: ₹419 • 50E: ₹415</div>
+                </td>
+                <td style="font-size:12px;">
+                    <div style="color:#38bdf8; font-weight:700;">Entry: ₹417.25 — ₹425.72</div>
+                    <div class="sub-text"><span style="color:#10b981;">T1: ₹474.4</span> • <span style="color:#ef4444;">SL: ₹400.3</span></div>
+                </td>
+                <td><button class="chart-btn" onclick="toggleCandleChart('LTFOODS', this)">📈 Chart</button></td>
             </tr>
             
                 </tbody>

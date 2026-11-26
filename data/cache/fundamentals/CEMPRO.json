@@ -6,8 +6,8 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "26258",
-    "current_price": "1424",
+    "market_cap_cr": "26243",
+    "current_price": "1423",
     "stock_pe": "42",
     "book_value": "152",
     "dividend_yield_pct": "0.21",
@@ -15,14 +15,14 @@
     "roe_pct": "27.8",
     "debt_to_equity": "0.35",
     "face_value": "1",
-    "pb_ratio": "9.37",
-    "market_cap_num": 26258.0,
-    "current_price_num": 1424.0,
+    "pb_ratio": "9.36",
+    "market_cap_num": 26243.0,
+    "current_price_num": 1423.0,
     "pe_num": 42.0,
     "book_value_num": 152.0,
     "roce_num": 32.8,
     "roe_num": 27.8,
-    "pb_num": 9.37,
+    "pb_num": 9.36,
     "peg_ratio": "0.62",
     "peg_num": 0.62
   },
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 40.0,
     "roe_3y": 24.0,
     "roe_5y": 19.0,
-    "price_cagr_3y": 75.0,
+    "price_cagr_3y": 74.0,
     "price_cagr_5y": 81.0
   },
   "inflection": {
@@ -81,7 +81,7 @@
     "Smart Money Accumulation (FII+DII +7.6% over 4Q)"
   ],
   "red_flags": [
-    "Stock is trading at 9.44 times its book value",
+    "Stock is trading at 9.35 times its book value",
     "Promoter holding has decreased over last quarter: -4.62%",
     "Company's cost of borrowing seems high"
   ]
