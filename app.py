@@ -885,16 +885,29 @@ with tab_macro_news:
                 delta=f"{c_sign}{g_data['change_pct']}%"
             )
 
-    st.markdown("#### 🛢️ Macro Commodities, Yields & Currencies")
-    mc_cols = st.columns(len(macro_snap["macro"]))
-    for i, (m_name, m_data) in enumerate(macro_snap["macro"].items()):
-        with mc_cols[i]:
-            c_sign = "+" if m_data["change"] >= 0 else ""
-            st.metric(
-                label=m_name,
-                value=f"{m_data['price']:,.2f}",
-                delta=f"{c_sign}{m_data['change_pct']}%"
-            )
+    from core.global_macro_news import format_inr_number
+    st.markdown("#### 🛢️ Macro Commodities, Yields, Bullion (24K/22K/Silver) & Currencies")
+    macro_items = list(macro_snap["macro"].items())
+    for row_start in range(0, len(macro_items), 5):
+        row_chunk = macro_items[row_start:row_start + 5]
+        mc_cols = st.columns(len(row_chunk))
+        for col, (m_name, m_data) in zip(mc_cols, row_chunk):
+            with col:
+                chg_pct = m_data.get("change_pct", 0.0)
+                chg_val = m_data.get("change", 0.0)
+                pct_sign = "+" if chg_pct >= 0 else ""
+                if "₹" in m_name:
+                    val_str = f"₹{format_inr_number(m_data['price'], decimals=0)}"
+                    chg_sign = "+" if chg_val >= 0 else "-"
+                    delta_str = f"{chg_sign}{format_inr_number(abs(chg_val), decimals=0)} ({pct_sign}{chg_pct:.2f}%)" if chg_val != 0 else f"{pct_sign}{chg_pct:.2f}%"
+                else:
+                    val_str = f"{m_data['price']:,.2f}"
+                    delta_str = f"{pct_sign}{chg_pct}%"
+                st.metric(
+                    label=m_name,
+                    value=val_str,
+                    delta=delta_str
+                )
 
     # Fund Manager Macro Takeaways
     st.markdown("#### 🏛️ Senior Fund Manager Macro Interpretations")

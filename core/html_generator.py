@@ -104,20 +104,45 @@ class HTMLReportGenerator:
             </div>
             """
 
-        # Macro indicators
-        for m_name, m_data in list(macro.items())[:3]:
+        # Macro indicators (Brent, US 10Y Yield, DXY, followed immediately by Gold 24K, Gold 22K, Silver)
+        from core.global_macro_news import format_inr_number
+        top_macro_keys = [
+            "Brent Crude ($/bbl)",
+            "US 10-Yr Yield (%)",
+            "US Dollar Index (DXY)",
+            "Gold 24K (₹/10g)",
+            "Gold 22K (₹/10g)",
+            "Silver (₹/kg)",
+        ]
+        ordered_macro = [(k, macro[k]) for k in top_macro_keys if k in macro]
+        if not ordered_macro:
+            ordered_macro = list(macro.items())[:6]
+
+        for m_name, m_data in ordered_macro:
             chg_pct = m_data.get("change_pct", 0.0)
+            chg_val = m_data.get("change", 0.0)
             price = m_data.get("price", 0.0)
-            color = "#10b981" if chg_pct >= 0 else "#ef4444"
-            sign = "+" if chg_pct >= 0 else ""
+            is_pos = chg_pct >= 0
+            color = "#10b981" if is_pos else "#ef4444"
+            sign = "+" if is_pos else ""
+            if "₹" in m_name:
+                val_display = f"₹{format_inr_number(price, decimals=0)}"
+                if chg_val != 0:
+                    chg_sign = "+" if chg_val > 0 else "-"
+                    chg_display = f"{chg_sign}{format_inr_number(abs(chg_val), decimals=0)} ({sign}{chg_pct:.2f}%)"
+                else:
+                    chg_display = f"{sign}{chg_pct:.2f}%"
+            else:
+                val_display = f"{price:,.2f}"
+                chg_display = f"{sign}{chg_pct:.2f}%"
             bg_art, theme_cls = get_index_visual_backdrop(m_name)
             indices_html += f"""
             <div class="index-card {theme_cls}">
                 {bg_art}
                 <div class="index-card-content">
                     <div class="index-name">{m_name}</div>
-                    <div class="index-val">{price:,.2f}</div>
-                    <div class="index-chg" style="color: {color};">{sign}{chg_pct:.2f}%</div>
+                    <div class="index-val">{val_display}</div>
+                    <div class="index-chg" style="color: {color};">{chg_display}</div>
                 </div>
             </div>
             """
