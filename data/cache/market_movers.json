@@ -1,282 +1,304 @@
 {
-  "timestamp": "2026-11-26 10:54:54",
+  "timestamp": "2026-11-26 10:58:40",
   "top_gainers": [
     {
       "symbol": "ACE",
       "name": "Action Const",
-      "price": "\u20b91,263.85",
-      "price_raw": "1263.85",
-      "change_pct": "+6.17%",
-      "change_val": "73.50",
-      "high": "1,265.00",
+      "price": "\u20b91,265.00",
+      "price_raw": "1265.00",
+      "change_pct": "+6.27%",
+      "change_val": "74.65",
+      "high": "1,267.00",
       "low": "1,180.00",
-      "volume": "1,077,318"
+      "volume": "1,129,303"
     },
     {
       "symbol": "HEGAM",
       "name": "HEGAM",
-      "price": "\u20b9274.42",
-      "price_raw": "274.42",
-      "change_pct": "+6.09%",
-      "change_val": "15.76",
+      "price": "\u20b9274.70",
+      "price_raw": "274.70",
+      "change_pct": "+6.20%",
+      "change_val": "16.04",
       "high": "277.89",
       "low": "260.01",
-      "volume": "3,743,134"
+      "volume": "3,871,077"
     },
     {
       "symbol": "KFINTECH",
       "name": "KFin Tech",
-      "price": "\u20b9986.00",
-      "price_raw": "986.00",
-      "change_pct": "+5.57%",
-      "change_val": "52.00",
-      "high": "988.60",
+      "price": "\u20b9988.10",
+      "price_raw": "988.10",
+      "change_pct": "+5.79%",
+      "change_val": "54.10",
+      "high": "988.95",
       "low": "934.00",
-      "volume": "1,278,739"
+      "volume": "1,331,364"
     },
     {
       "symbol": "ENRIN",
       "name": "Siemens Energy",
-      "price": "\u20b93,134.00",
-      "price_raw": "3134.00",
-      "change_pct": "+5.52%",
-      "change_val": "164.00",
+      "price": "\u20b93,135.60",
+      "price_raw": "3135.60",
+      "change_pct": "+5.58%",
+      "change_val": "165.60",
       "high": "3,241.00",
       "low": "3,100.00",
-      "volume": "1,957,469"
+      "volume": "2,010,597"
     },
     {
       "symbol": "MCX",
       "name": "MCX India",
-      "price": "\u20b93,744.30",
-      "price_raw": "3744.30",
-      "change_pct": "+5.03%",
-      "change_val": "179.30",
-      "high": "3,747.50",
+      "price": "\u20b93,749.00",
+      "price_raw": "3749.00",
+      "change_pct": "+5.16%",
+      "change_val": "184.00",
+      "high": "3,749.50",
       "low": "3,591.00",
-      "volume": "1,510,344"
+      "volume": "1,558,147"
     },
     {
       "symbol": "J&KBANK",
       "name": "JK Bank",
-      "price": "\u20b9162.34",
-      "price_raw": "162.34",
-      "change_pct": "+4.52%",
-      "change_val": "7.02",
+      "price": "\u20b9162.45",
+      "price_raw": "162.45",
+      "change_pct": "+4.59%",
+      "change_val": "7.13",
       "high": "164.39",
       "low": "155.30",
-      "volume": "6,351,819"
+      "volume": "6,373,716"
     },
     {
       "symbol": "FACT",
       "name": "Fert and Chem",
-      "price": "\u20b9777.00",
-      "price_raw": "777.00",
-      "change_pct": "+4.46%",
-      "change_val": "33.15",
+      "price": "\u20b9776.15",
+      "price_raw": "776.15",
+      "change_pct": "+4.34%",
+      "change_val": "32.30",
       "high": "817.90",
       "low": "746.20",
-      "volume": "2,170,565"
+      "volume": "2,183,142"
     },
     {
       "symbol": "BSE",
       "name": "BSE Limited",
-      "price": "\u20b93,941.00",
-      "price_raw": "3941.00",
-      "change_pct": "+4.39%",
-      "change_val": "165.80",
+      "price": "\u20b93,938.40",
+      "price_raw": "3938.40",
+      "change_pct": "+4.32%",
+      "change_val": "163.20",
       "high": "3,944.00",
       "low": "3,808.90",
-      "volume": "2,549,956"
+      "volume": "2,592,600"
     },
     {
-      "symbol": "BBTC",
-      "name": "Bombay Burmah",
-      "price": "\u20b91,316.50",
-      "price_raw": "1316.50",
-      "change_pct": "+4.15%",
-      "change_val": "52.40",
-      "high": "1,350.60",
-      "low": "1,264.10",
-      "volume": "126,683"
+      "symbol": "JWL",
+      "name": "Jupiter Wagons",
+      "price": "\u20b9231.85",
+      "price_raw": "231.85",
+      "change_pct": "+4.22%",
+      "change_val": "9.39",
+      "high": "242.99",
+      "low": "227.88",
+      "volume": "58,195,679"
     },
     {
       "symbol": "GVT&D",
       "name": "GE Vernova TD",
-      "price": "\u20b94,236.70",
-      "price_raw": "4236.70",
-      "change_pct": "+4.10%",
-      "change_val": "166.70",
+      "price": "\u20b94,241.10",
+      "price_raw": "4241.10",
+      "change_pct": "+4.20%",
+      "change_val": "171.10",
       "high": "4,243.90",
       "low": "4,071.20",
-      "volume": "316,772"
-    },
-    {
-      "symbol": "ZENSARTECH",
-      "name": "Zensar Tech",
-      "price": "\u20b9554.50",
-      "price_raw": "554.50",
-      "change_pct": "+4.03%",
-      "change_val": "21.50",
-      "high": "557.00",
-      "low": "531.00",
-      "volume": "411,415"
+      "volume": "326,166"
     },
     {
       "symbol": "POLICYBZR",
       "name": "PB Fintech",
-      "price": "\u20b91,168.70",
-      "price_raw": "1168.70",
-      "change_pct": "+4.00%",
-      "change_val": "44.90",
+      "price": "\u20b91,169.70",
+      "price_raw": "1169.70",
+      "change_pct": "+4.08%",
+      "change_val": "45.90",
       "high": "1,179.80",
       "low": "1,118.80",
-      "volume": "2,800,043"
+      "volume": "2,812,394"
     },
     {
-      "symbol": "WIPRO",
-      "name": "Wipro",
-      "price": "\u20b9196.61",
-      "price_raw": "196.61",
-      "change_pct": "+4.00%",
-      "change_val": "7.56",
-      "high": "197.40",
-      "low": "190.60",
-      "volume": "11,913,144"
+      "symbol": "BBTC",
+      "name": "Bombay Burmah",
+      "price": "\u20b91,315.50",
+      "price_raw": "1315.50",
+      "change_pct": "+4.07%",
+      "change_val": "51.40",
+      "high": "1,350.60",
+      "low": "1,264.10",
+      "volume": "127,960"
     },
     {
       "symbol": "RKFORGE",
       "name": "RamkrishnaForge",
-      "price": "\u20b9774.75",
-      "price_raw": "774.75",
-      "change_pct": "+3.89%",
-      "change_val": "29.00",
+      "price": "\u20b9776.00",
+      "price_raw": "776.00",
+      "change_pct": "+4.06%",
+      "change_val": "30.25",
       "high": "779.65",
       "low": "741.05",
-      "volume": "424,639"
+      "volume": "427,169"
     },
     {
-      "symbol": "REDINGTON",
-      "name": "Redington",
-      "price": "\u20b9336.85",
-      "price_raw": "336.85",
-      "change_pct": "+3.73%",
-      "change_val": "12.10",
-      "high": "341.80",
-      "low": "326.00",
-      "volume": "1,766,709"
+      "symbol": "WIPRO",
+      "name": "Wipro",
+      "price": "\u20b9196.63",
+      "price_raw": "196.63",
+      "change_pct": "+4.01%",
+      "change_val": "7.58",
+      "high": "197.40",
+      "low": "190.60",
+      "volume": "12,015,766"
+    },
+    {
+      "symbol": "ZENSARTECH",
+      "name": "Zensar Tech",
+      "price": "\u20b9553.80",
+      "price_raw": "553.80",
+      "change_pct": "+3.90%",
+      "change_val": "20.80",
+      "high": "557.00",
+      "low": "531.00",
+      "volume": "416,172"
     }
   ],
   "top_losers": [
     {
-      "symbol": "SIGNATURE",
-      "name": "SignatureGlobal",
-      "price": "\u20b9803.85",
-      "price_raw": "803.85",
-      "change_pct": "-5.11%",
-      "change_val": "-43.25",
-      "high": "854.05",
-      "low": "793.00",
-      "volume": "378,900"
-    },
-    {
       "symbol": "IKS",
       "name": "Inventurus Know",
-      "price": "\u20b91,583.60",
-      "price_raw": "1583.60",
-      "change_pct": "-3.73%",
-      "change_val": "-61.30",
+      "price": "\u20b91,582.90",
+      "price_raw": "1582.90",
+      "change_pct": "-3.77%",
+      "change_val": "-62.00",
       "high": "1,649.30",
       "low": "1,581.10",
-      "volume": "81,392"
+      "volume": "82,012"
     },
     {
       "symbol": "TTML",
       "name": "TataTeleservice",
-      "price": "\u20b932.44",
-      "price_raw": "32.44",
-      "change_pct": "-3.22%",
-      "change_val": "-1.08",
+      "price": "\u20b932.43",
+      "price_raw": "32.43",
+      "change_pct": "-3.25%",
+      "change_val": "-1.09",
       "high": "33.50",
       "low": "32.26",
-      "volume": "3,349,532"
+      "volume": "3,378,595"
     },
     {
       "symbol": "TMCV",
       "name": "Tata Motors Com",
-      "price": "\u20b9427.75",
-      "price_raw": "427.75",
-      "change_pct": "-3.22%",
-      "change_val": "-14.25",
+      "price": "\u20b9427.85",
+      "price_raw": "427.85",
+      "change_pct": "-3.20%",
+      "change_val": "-14.15",
       "high": "442.50",
       "low": "425.60",
-      "volume": "3,812,365"
+      "volume": "3,879,811"
+    },
+    {
+      "symbol": "SIGNATURE",
+      "name": "SignatureGlobal",
+      "price": "\u20b9820.35",
+      "price_raw": "820.35",
+      "change_pct": "-3.16%",
+      "change_val": "-26.75",
+      "high": "854.05",
+      "low": "793.00",
+      "volume": "409,879"
     },
     {
       "symbol": "VIJAYA",
       "name": "Vijaya Diagnost",
-      "price": "\u20b91,575.90",
-      "price_raw": "1575.90",
-      "change_pct": "-3.18%",
-      "change_val": "-51.80",
+      "price": "\u20b91,576.80",
+      "price_raw": "1576.80",
+      "change_pct": "-3.13%",
+      "change_val": "-50.90",
       "high": "1,629.00",
       "low": "1,575.00",
-      "volume": "58,360"
+      "volume": "59,163"
     },
     {
       "symbol": "INDIACEM",
       "name": "India Cements",
-      "price": "\u20b9314.00",
-      "price_raw": "314.00",
-      "change_pct": "-3.07%",
-      "change_val": "-9.95",
+      "price": "\u20b9313.85",
+      "price_raw": "313.85",
+      "change_pct": "-3.12%",
+      "change_val": "-10.10",
       "high": "323.25",
       "low": "313.50",
-      "volume": "209,886"
+      "volume": "214,169"
     },
     {
       "symbol": "PVRINOX",
       "name": "PVR INOX",
-      "price": "\u20b91,661.30",
-      "price_raw": "1661.30",
-      "change_pct": "-2.81%",
-      "change_val": "-48.00",
+      "price": "\u20b91,662.30",
+      "price_raw": "1662.30",
+      "change_pct": "-2.75%",
+      "change_val": "-47.00",
       "high": "1,720.00",
       "low": "1,655.10",
-      "volume": "158,436"
+      "volume": "158,932"
+    },
+    {
+      "symbol": "ZYDUSLIFE",
+      "name": "Zydus Life",
+      "price": "\u20b91,203.80",
+      "price_raw": "1203.80",
+      "change_pct": "-2.61%",
+      "change_val": "-32.20",
+      "high": "1,244.50",
+      "low": "1,195.60",
+      "volume": "1,034,089"
     },
     {
       "symbol": "LGEINDIA",
       "name": "LG Electronics",
-      "price": "\u20b91,772.10",
-      "price_raw": "1772.10",
-      "change_pct": "-2.55%",
-      "change_val": "-46.30",
+      "price": "\u20b91,773.90",
+      "price_raw": "1773.90",
+      "change_pct": "-2.45%",
+      "change_val": "-44.50",
       "high": "1,788.80",
       "low": "1,745.00",
-      "volume": "15,821,249"
-    },
-    {
-      "symbol": "ASTERDM",
-      "name": "Aster DM Qua",
-      "price": "\u20b9755.55",
-      "price_raw": "755.55",
-      "change_pct": "-2.47%",
-      "change_val": "-19.15",
-      "high": "779.65",
-      "low": "754.40",
-      "volume": "227,704"
+      "volume": "15,826,498"
     },
     {
       "symbol": "MEDANTA",
       "name": "Global Health",
-      "price": "\u20b91,491.50",
-      "price_raw": "1491.50",
-      "change_pct": "-2.42%",
-      "change_val": "-37.00",
+      "price": "\u20b91,492.70",
+      "price_raw": "1492.70",
+      "change_pct": "-2.34%",
+      "change_val": "-35.80",
       "high": "1,543.40",
       "low": "1,487.00",
-      "volume": "59,757"
+      "volume": "60,329"
+    },
+    {
+      "symbol": "ASTERDM",
+      "name": "Aster DM Qua",
+      "price": "\u20b9756.85",
+      "price_raw": "756.85",
+      "change_pct": "-2.30%",
+      "change_val": "-17.85",
+      "high": "779.65",
+      "low": "754.40",
+      "volume": "230,349"
+    },
+    {
+      "symbol": "CRAFTSMAN",
+      "name": "Craftsman",
+      "price": "\u20b911,501.00",
+      "price_raw": "11501.00",
+      "change_pct": "-2.28%",
+      "change_val": "-268.00",
+      "high": "11,800.00",
+      "low": "11,500.00",
+      "volume": "26,457"
     },
     {
       "symbol": "DALBHARAT",
@@ -287,29 +309,18 @@
       "change_val": "-35.80",
       "high": "1,600.00",
       "low": "1,550.00",
-      "volume": "43,489"
+      "volume": "43,671"
     },
     {
-      "symbol": "ZYDUSLIFE",
-      "name": "Zydus Life",
-      "price": "\u20b91,208.20",
-      "price_raw": "1208.20",
-      "change_pct": "-2.25%",
-      "change_val": "-27.80",
-      "high": "1,244.50",
-      "low": "1,195.60",
-      "volume": "1,003,814"
-    },
-    {
-      "symbol": "CRAFTSMAN",
-      "name": "Craftsman",
-      "price": "\u20b911,517.00",
-      "price_raw": "11517.00",
-      "change_pct": "-2.14%",
-      "change_val": "-252.00",
-      "high": "11,800.00",
-      "low": "11,501.00",
-      "volume": "25,872"
+      "symbol": "GODREJCP",
+      "name": "Godrej Consumer",
+      "price": "\u20b9943.25",
+      "price_raw": "943.25",
+      "change_pct": "-2.05%",
+      "change_val": "-19.75",
+      "high": "956.40",
+      "low": "934.30",
+      "volume": "587,900"
     },
     {
       "symbol": "ZEEL",
@@ -320,18 +331,7 @@
       "change_val": "-1.38",
       "high": "67.20",
       "low": "64.84",
-      "volume": "5,382,917"
-    },
-    {
-      "symbol": "JKCEMENT",
-      "name": "J. K. Cement",
-      "price": "\u20b95,448.00",
-      "price_raw": "5448.00",
-      "change_pct": "-2.01%",
-      "change_val": "-111.70",
-      "high": "5,563.70",
-      "low": "5,434.00",
-      "volume": "7,774"
+      "volume": "5,447,878"
     }
   ]
 }
