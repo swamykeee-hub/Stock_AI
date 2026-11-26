@@ -159,7 +159,7 @@ class HTMLReportGenerator:
             <div class="index-card {theme_cls}" style="border: 1px solid #10b981; background: rgba(16, 185, 129, 0.08);" title="{regime_label} | Health: {score}/100 | Leading: {lead}">
                 {bg_art}
                 <div class="index-card-content">
-                    <div class="index-name" style="color: #38bdf8;">🎯 CIO Market Stance</div>
+                    <div class="index-name index-name-cio">🎯 CIO Market Stance</div>
                     <div class="index-val" style="font-size: 14px; color: #10b981;">{short_regime}</div>
                     <div class="index-chg" style="color: var(--text-heading); font-size: 11px;">Health: <b>{score}/100</b> &bull; {lead}</div>
                 </div>
@@ -188,7 +188,7 @@ class HTMLReportGenerator:
             <div class="index-card {theme_cls}" style="border: 1px solid #38bdf8; background: rgba(56, 189, 248, 0.08);" title="Nifty PCR: {pcr_val} | Max Pain: {max_pain} | FII: ₹{fii_val} Cr | DII: ₹{dii_val} Cr">
                 {bg_art}
                 <div class="index-card-content">
-                    <div class="index-name" style="color: #a78bfa;">🏛 Inst. Flow &amp; PCR</div>
+                    <div class="index-name index-name-flow">🏛 Inst. Flow &amp; PCR</div>
                     <div class="index-val" style="font-size: 14px; color: {pcr_color};">PCR: {pcr_val} &bull; MP: {max_pain}</div>
                     <div class="index-chg" style="color: var(--text-heading); font-size: 11px;">FII: <b>{fii_val}</b> &bull; DII: <b>{dii_val}</b></div>
                 </div>

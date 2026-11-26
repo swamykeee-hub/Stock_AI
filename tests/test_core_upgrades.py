@@ -295,8 +295,11 @@ class TestHTMLReportGeneratorModular(unittest.TestCase):
                 self.assertIsNotNone(soup.select_one("#view-hidden_gems"))
                 self.assertIsNotNone(soup.select_one("#hiddenGemsTable"))
                 css_txt = (config.BASE_DIR / "web" / "styles.css").read_text(encoding="utf-8")
-                self.assertIn("grid-auto-rows: 108px;", css_txt)
-                self.assertIn("height: 108px;", css_txt)
+                self.assertIn("grid-auto-rows: 112px;", css_txt)
+                self.assertIn("height: 112px;", css_txt)
+                self.assertIn("minmax(225px, 1fr)", css_txt)
+                self.assertIn("font-size: 14px;", css_txt)
+                self.assertIn("font-weight: 800;", css_txt)
             finally:
                 if ext_repo_test.exists():
                     ext_repo_test.unlink()
