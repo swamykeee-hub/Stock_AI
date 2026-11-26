@@ -141,12 +141,12 @@
         }
 
         [data-theme="light"] .index-name {
-            color: #0f172a;
+            color: #1e40af;
             text-shadow: none;
         }
 
         [data-theme="light"] .index-name-cio {
-            color: #0369a1;
+            color: #047857;
         }
 
         [data-theme="light"] .index-name-flow {
@@ -456,25 +456,25 @@
         }
 
         .index-name {
-            color: var(--text-heading);
+            color: #7dd3fc;
             font-size: 14px;
             font-weight: 800;
             line-height: 1.25;
             margin-bottom: 2px;
             text-transform: uppercase;
             letter-spacing: 0.2px;
-            text-shadow: 0 1px 6px rgba(9, 13, 22, 0.9);
+            text-shadow: 0 1px 6px rgba(9, 13, 22, 0.95);
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
 
         .index-name-cio {
-            color: #38bdf8;
+            color: #34d399;
         }
 
         .index-name-flow {
-            color: #a78bfa;
+            color: #c4b5fd;
         }
 
         .index-val {
