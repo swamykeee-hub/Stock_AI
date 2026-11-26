@@ -21,6 +21,7 @@ from core.feed_health import collect_feed_health
 from core.fund_manager_radar import FundManagerRadar
 from core.hidden_gems_screener import HiddenGemsScreener
 from core.html_generator import HTMLReportGenerator
+from core.market_data import MarketDataManager
 from core.mutual_fund_analyst import MutualFundAnalyst
 from core.portfolio_health_auditor import PortfolioHealthAuditor
 from core.sync_server import (
@@ -293,9 +294,41 @@ class TestHTMLReportGeneratorModular(unittest.TestCase):
                 self.assertIn("switchView('hidden_gems', this)", ext_html)
                 self.assertIsNotNone(soup.select_one("#view-hidden_gems"))
                 self.assertIsNotNone(soup.select_one("#hiddenGemsTable"))
+                css_txt = (config.BASE_DIR / "web" / "styles.css").read_text(encoding="utf-8")
+                self.assertIn("grid-auto-rows: 108px;", css_txt)
+                self.assertIn("height: 108px;", css_txt)
             finally:
                 if ext_repo_test.exists():
                     ext_repo_test.unlink()
+
+
+class TestCandleRangeNormalization(unittest.TestCase):
+    def test_period_aliases_map_to_yahoo_months(self):
+        md = MarketDataManager()
+        called_urls = []
+
+        def _fake_get(url, headers=None, timeout=10):
+            called_urls.append(url)
+            resp = MagicMock(status_code=200)
+            resp.json.return_value = {
+                "chart": {
+                    "result": [{
+                        "timestamp": [1760000000, 1760086400],
+                        "indicators": {"quote": [{"open": [100, 101], "high": [102, 103], "low": [99, 100], "close": [101, 102], "volume": [1000, 1200]}]},
+                    }]
+                }
+            }
+            return resp
+
+        with patch("core.market_data.requests.get", side_effect=_fake_get):
+            for p in ["1m", "3m", "6m", "1y"]:
+                df = md.get_historical_candles("RUBICON", period=p, interval="1d")
+                self.assertEqual(len(df), 2)
+
+        self.assertIn("range=1mo&", called_urls[0])
+        self.assertIn("range=3mo&", called_urls[1])
+        self.assertIn("range=6mo&", called_urls[2])
+        self.assertIn("range=1y&", called_urls[3])
 
 
 class TestHiddenGemsScreener(unittest.TestCase):
