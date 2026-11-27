@@ -6,25 +6,25 @@
   "inflection_score": 10.0,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "49873",
-    "current_price": "371",
-    "stock_pe": "294",
+    "market_cap_cr": "52389",
+    "current_price": "390",
+    "stock_pe": "309",
     "book_value": "4.19",
     "dividend_yield_pct": "0",
     "roce_pct": "33.9",
     "roe_pct": "27.6",
     "debt_to_equity": "0.20",
     "face_value": "1",
-    "pb_ratio": "88.54",
-    "market_cap_num": 49873.0,
-    "current_price_num": 371.0,
-    "pe_num": 294.0,
+    "pb_ratio": "93.08",
+    "market_cap_num": 52389.0,
+    "current_price_num": 390.0,
+    "pe_num": 309.0,
     "book_value_num": 4.19,
     "roce_num": 33.9,
     "roe_num": 27.6,
-    "pb_num": 88.54,
-    "peg_ratio": "1.68",
-    "peg_num": 1.68
+    "pb_num": 93.08,
+    "peg_ratio": "1.77",
+    "peg_num": 1.77
   },
   "ranges": {
     "sales_cagr_3y": null,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 175.0,
     "roe_3y": 19.0,
     "roe_5y": null,
-    "price_cagr_3y": 247.0,
-    "price_cagr_5y": 181.0
+    "price_cagr_3y": 259.0,
+    "price_cagr_5y": 183.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 122.0,
@@ -83,7 +83,7 @@
   "red_flags": [
     "Weak Operating Cash Conversion (3Y CFO/PAT: 0.23x)",
     "Operating Margin Compression (-500 bps YoY)",
-    "Stock is trading at 88.6 times its book value",
+    "Stock is trading at 93.0 times its book value",
     "Though the company is reporting repeated profits, it is not paying out dividend"
   ]
 }

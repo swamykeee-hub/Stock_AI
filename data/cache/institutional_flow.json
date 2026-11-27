@@ -1,191 +1,24 @@
 {
-  "timestamp": "2026-11-27 15:43:41",
+  "timestamp": "2026-11-27 18:04:37",
   "fii_dii_latest": {
-    "date": "2026-11-26",
-    "formatted_date": "Thu 26 Nov, 2026",
-    "fii_cash_net": "5,843.33",
-    "dii_cash_net": "5,630.72",
-    "fii_index_futures": "-599.72",
-    "fii_index_options": "-7,001.60",
-    "fii_stock_futures": "1,901.65",
-    "nifty_close": "25,884.50",
-    "nifty_change_pct": "0.25"
+    "formatted_date": "27 Nov 2026",
+    "fii_cash_net": "+4,864.68",
+    "dii_cash_net": "-3,519.05",
+    "fii_index_futures": "-128.13",
+    "fii_index_options": "-8,134.26",
+    "fii_stock_futures": "-1,071.89",
+    "nifty_close": "25,387.40",
+    "nifty_change_pct": "+0.38"
   },
-  "fii_dii_history": [
-    {
-      "date": "2026-11-26",
-      "formatted_date": "Thu 26 Nov, 2026",
-      "fii_cash_net": "5,843.33",
-      "dii_cash_net": "5,630.72",
-      "fii_index_futures": "-599.72",
-      "fii_index_options": "-7,001.60",
-      "fii_stock_futures": "1,901.65",
-      "nifty_close": "25,884.50",
-      "nifty_change_pct": "0.25"
-    },
-    {
-      "date": "2026-11-25",
-      "formatted_date": "Wed 25 Nov, 2026",
-      "fii_cash_net": "4,479.08",
-      "dii_cash_net": "4,018.72",
-      "fii_index_futures": "1,034.95",
-      "fii_index_options": "-11,939.94",
-      "fii_stock_futures": "3,706.76",
-      "nifty_close": "25,819.25",
-      "nifty_change_pct": "1.85"
-    },
-    {
-      "date": "2026-11-23",
-      "formatted_date": "Mon 23 Nov, 2026",
-      "fii_cash_net": "5,672.99",
-      "dii_cash_net": "-2,760.12",
-      "fii_index_futures": "-3,629.83",
-      "fii_index_options": "40,855.08",
-      "fii_stock_futures": "-5,444.91",
-      "nifty_close": "25,349.65",
-      "nifty_change_pct": "-1.75"
-    },
-    {
-      "date": "2026-11-20",
-      "formatted_date": "Fri 20 Nov, 2026",
-      "fii_cash_net": "10,308.42",
-      "dii_cash_net": "-4,859.80",
-      "fii_index_futures": "-369.75",
-      "fii_index_options": "6,765.91",
-      "fii_stock_futures": "770.37",
-      "nifty_close": "25,800.60",
-      "nifty_change_pct": "1.12"
-    },
-    {
-      "date": "2026-11-19",
-      "formatted_date": "Thu 19 Nov, 2026",
-      "fii_cash_net": "7,411.41",
-      "dii_cash_net": "-1,356.57",
-      "fii_index_futures": "507.20",
-      "fii_index_options": "7,983.14",
-      "fii_stock_futures": "2,346.80",
-      "nifty_close": "25,514.30",
-      "nifty_change_pct": "1.14"
-    },
-    {
-      "date": "2026-11-18",
-      "formatted_date": "Wed 18 Nov, 2026",
-      "fii_cash_net": "5,866.78",
-      "dii_cash_net": "-3,159.90",
-      "fii_index_futures": "-987.26",
-      "fii_index_options": "-12,026.99",
-      "fii_stock_futures": "-1,454.41",
-      "nifty_close": "25,227.95",
-      "nifty_change_pct": "-0.63"
-    },
-    {
-      "date": "2026-11-17",
-      "formatted_date": "Tue 17 Nov, 2026",
-      "fii_cash_net": "4,195.38",
-      "dii_cash_net": "196.93",
-      "fii_index_futures": "-1,392.37",
-      "fii_index_options": "35,139.21",
-      "fii_stock_futures": "860.11",
-      "nifty_close": "25,387.40",
-      "nifty_change_pct": "0.38"
-    },
-    {
-      "date": "2026-11-16",
-      "formatted_date": "Mon 16 Nov, 2026",
-      "fii_cash_net": "4,864.68",
-      "dii_cash_net": "-3,519.05",
-      "fii_index_futures": "-128.13",
-      "fii_index_options": "-8,134.26",
-      "fii_stock_futures": "-1,071.89",
-      "nifty_close": "25,291.10",
-      "nifty_change_pct": "0.58"
-    },
-    {
-      "date": "2026-11-13",
-      "formatted_date": "Fri 13 Nov, 2026",
-      "fii_cash_net": "5,736.55",
-      "dii_cash_net": "-2,253.58",
-      "fii_index_futures": "-1,074.15",
-      "fii_index_options": "-573.37",
-      "fii_stock_futures": "-1,513.07",
-      "nifty_close": "25,144.30",
-      "nifty_change_pct": "-0.61"
-    },
-    {
-      "date": "2026-11-12",
-      "formatted_date": "Thu 12 Nov, 2026",
-      "fii_cash_net": "7,830.60",
-      "dii_cash_net": "-6,331.17",
-      "fii_index_futures": "3,556.56",
-      "fii_index_options": "-6,710.52",
-      "fii_stock_futures": "-278.07",
-      "nifty_close": "25,299.35",
-      "nifty_change_pct": "0.18"
-    },
-    {
-      "date": "2026-11-11",
-      "formatted_date": "Wed 11 Nov, 2026",
-      "fii_cash_net": "12,563.33",
-      "dii_cash_net": "-8,434.53",
-      "fii_index_futures": "3,336.51",
-      "fii_index_options": "-10,063.98",
-      "fii_stock_futures": "-275.63",
-      "nifty_close": "25,255.05",
-      "nifty_change_pct": "0.84"
-    },
-    {
-      "date": "2026-11-09",
-      "formatted_date": "Mon 09 Nov, 2026",
-      "fii_cash_net": "7,212.22",
-      "dii_cash_net": "-7,172.53",
-      "fii_index_futures": "1,814.56",
-      "fii_index_options": "10,499.89",
-      "fii_stock_futures": "-2,855.49",
-      "nifty_close": "25,044.65",
-      "nifty_change_pct": "0.23"
-    },
-    {
-      "date": "2026-11-08",
-      "formatted_date": "Sun 08 Nov, 2026",
-      "fii_cash_net": "-0.25",
-      "dii_cash_net": "-700.31",
-      "fii_index_futures": "-169.99",
-      "fii_index_options": "-2,928.23",
-      "fii_stock_futures": "-215.53",
-      "nifty_close": "24,986.40",
-      "nifty_change_pct": "-0.18"
-    },
-    {
-      "date": "2026-11-06",
-      "formatted_date": "Fri 06 Nov, 2026",
-      "fii_cash_net": "13,749.82",
-      "dii_cash_net": "-5,968.70",
-      "fii_index_futures": "6,134.44",
-      "fii_index_options": "6,742.71",
-      "fii_stock_futures": "-1,166.19",
-      "nifty_close": "25,030.35",
-      "nifty_change_pct": "2.01"
-    },
-    {
-      "date": "2026-11-05",
-      "formatted_date": "Thu 05 Nov, 2026",
-      "fii_cash_net": "14,974.68",
-      "dii_cash_net": "-10,444.54",
-      "fii_index_futures": "7,883.77",
-      "fii_index_options": "11,461.36",
-      "fii_stock_futures": "2,936.18",
-      "nifty_close": "24,536.60",
-      "nifty_change_pct": "2.40"
-    }
-  ],
+  "fii_dii_history": [],
   "derivatives": {
-    "pcr": 0.59,
-    "total_call_oi": 4011080,
-    "total_put_oi": 2356282,
-    "max_pain_strike": 25700.0,
-    "status": "LIVE"
+    "pcr": 1.01,
+    "total_call_oi": 2832492,
+    "total_put_oi": 2861535,
+    "max_pain_strike": 25400.0,
+    "status": "ESTIMATED"
   },
-  "smart_money_sentiment": "OVERSOLD_BOUNCE",
-  "sentiment_badge": "\ud83d\udfe1 OVERSOLD / REVERSAL WATCH",
-  "sentiment_rationale": "Nifty PCR is deeply oversold at 0.59. Call heavy positioning historically leads to sharp short-covering rallies once support holds."
+  "smart_money_sentiment": "BALANCED",
+  "sentiment_badge": "\ud83d\udd35 BALANCED / RANGE-BOUND",
+  "sentiment_rationale": "Nifty PCR is balanced at 1.01 around Max Pain strike (25400.0). Institutions active with FII +4,864.68 Cr and DII -3,519.05 Cr."
 }

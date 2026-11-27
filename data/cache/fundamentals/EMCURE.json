@@ -6,25 +6,25 @@
   "inflection_score": 10.0,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "44165",
-    "current_price": "2329",
-    "stock_pe": "39.7",
+    "market_cap_cr": "43828",
+    "current_price": "2309",
+    "stock_pe": "39.4",
     "book_value": "282",
-    "dividend_yield_pct": "0.15",
+    "dividend_yield_pct": "0.16",
     "roce_pct": "24",
     "roe_pct": "20.1",
     "debt_to_equity": "0.34",
     "face_value": "10",
-    "pb_ratio": "8.26",
-    "market_cap_num": 44165.0,
-    "current_price_num": 2329.0,
-    "pe_num": 39.7,
+    "pb_ratio": "8.19",
+    "market_cap_num": 43828.0,
+    "current_price_num": 2309.0,
+    "pe_num": 39.4,
     "book_value_num": 282.0,
     "roce_num": 24.0,
     "roe_num": 20.1,
-    "pb_num": 8.26,
-    "peg_ratio": "1.02",
-    "peg_num": 1.02
+    "pb_num": 8.19,
+    "peg_ratio": "1.01",
+    "peg_num": 1.01
   },
   "ranges": {
     "sales_cagr_3y": 15.0,
@@ -81,6 +81,6 @@
     "Smart Money Accumulation (FII+DII +5.8% over 4Q)"
   ],
   "red_flags": [
-    "Stock is trading at 8.22 times its book value"
+    "Stock is trading at 8.18 times its book value"
   ]
 }

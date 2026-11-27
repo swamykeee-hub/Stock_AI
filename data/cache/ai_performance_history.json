@@ -1,5 +1,23 @@
 [
   {
+    "symbol": "KFINTECH",
+    "setup_name": "High-ROCE Compounder",
+    "source": "BullishScanner",
+    "entry_date": "2026-11-27",
+    "entry_price": 992.0,
+    "target_1": 1111.04,
+    "stop_loss": 896.02,
+    "peak_price": 992.0,
+    "trough_price": 992.0,
+    "cmp": 992.0,
+    "conviction_score": 8.8,
+    "gain_pct": "+0.0%",
+    "status": "ACTIVE",
+    "sector": "Financial Services",
+    "benchmark_entry": 25607.2,
+    "benchmark_cmp": 25607.2
+  },
+  {
     "symbol": "TVSMOTOR",
     "setup_name": "VCP Breakout",
     "source": "BullishScanner",

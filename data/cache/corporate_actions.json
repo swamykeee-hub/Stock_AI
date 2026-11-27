@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-27 09:18:05",
+  "timestamp": "2026-11-27 18:04:37",
   "dividends": [
     {
       "stock_name": "Power Finance Corp",
@@ -31,63 +31,39 @@
   ],
   "earnings": [
     {
-      "date": "27 Nov",
-      "stock_name": "Setco Automotive",
-      "symbol": "GSC01",
+      "date": "17 Nov",
+      "stock_name": "Core4 Engineers",
+      "symbol": "CORE4",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b916.85",
-      "market_cap": "\u20b9225.4 Cr"
+      "ltp": "\u20b982.90",
+      "market_cap": "\u20b9171 Cr"
     },
     {
-      "date": "27 Nov",
-      "stock_name": "C2C Advanced Systems",
-      "symbol": "CASL",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9129.95",
-      "market_cap": "\u20b9216.25 Cr"
-    },
-    {
-      "date": "27 Nov",
-      "stock_name": "HAMPTON SKY REALTY",
-      "symbol": "RI12",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b96.74",
-      "market_cap": "\u20b9184.82 Cr"
-    },
-    {
-      "date": "27 Nov",
-      "stock_name": "Mitshi India",
-      "symbol": "DPC",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b910.99",
-      "market_cap": "\u20b99.67 Cr"
+      "date": "18 Nov",
+      "stock_name": "Tata Consumer Products",
+      "symbol": "TATACONSUM",
+      "result_type": "Board Meeting / Results",
+      "ltp": "\u20b9942.50",
+      "market_cap": "\u20b987,500 Cr"
     }
   ],
   "splits_and_actions": [
     {
-      "stock_name": "Varvee Global",
-      "symbol": "ADE",
-      "action_type": "Stock Split",
-      "ex_date": "27/11/2026",
-      "ratio": "5:2",
-      "announcement_date": "25/09/2026"
-    },
-    {
-      "stock_name": "Interarch Build",
-      "symbol": "IBP01",
+      "stock_name": "Interarch Building Products",
+      "symbol": "INTERARCH",
       "action_type": "Stock Split",
       "ex_date": "30/11/2026",
-      "ratio": "10:2",
-      "announcement_date": "06/08/2026"
+      "ratio": "1:2",
+      "announcement_date": "10/11/2026"
     },
     {
-      "stock_name": "JTL DEFENCE",
-      "symbol": "RIT",
+      "stock_name": "Praxis Home Retail",
+      "symbol": "PRAXIS",
       "action_type": "Rights Issue",
-      "ex_date": "27/11/2026",
-      "ratio": "3:2",
-      "announcement_date": "14/10/2026"
+      "ex_date": "18/11/2026",
+      "ratio": "1:1",
+      "announcement_date": "05/11/2026"
     }
   ],
-  "total_events": 10
+  "total_events": 7
 }

@@ -6,25 +6,25 @@
   "inflection_score": 7.6,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "302762",
-    "current_price": "1886",
-    "stock_pe": "28.1",
+    "market_cap_cr": "295743",
+    "current_price": "1849",
+    "stock_pe": "27.4",
     "book_value": "524",
     "dividend_yield_pct": "0.08",
     "roce_pct": "10.6",
     "roe_pct": "13.2",
     "debt_to_equity": "5.91",
     "face_value": "1",
-    "pb_ratio": "3.60",
-    "market_cap_num": 302762.0,
-    "current_price_num": 1886.0,
-    "pe_num": 28.1,
+    "pb_ratio": "3.53",
+    "market_cap_num": 295743.0,
+    "current_price_num": 1849.0,
+    "pe_num": 27.4,
     "book_value_num": 524.0,
     "roce_num": 10.6,
     "roe_num": 13.2,
-    "pb_num": 3.6,
-    "peg_ratio": "1.11",
-    "peg_num": 1.11
+    "pb_num": 3.53,
+    "peg_ratio": "1.08",
+    "peg_num": 1.08
   },
   "ranges": {
     "sales_cagr_3y": 22.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 11.0,
     "roe_3y": 14.0,
     "roe_5y": 14.0,
-    "price_cagr_3y": 5.0,
+    "price_cagr_3y": 4.0,
     "price_cagr_5y": 2.0
   },
   "inflection": {
@@ -75,13 +75,13 @@
   },
   "strengths": [
     "Expanding Operating Margins (+200 bps)",
-    "Reasonable GARP Multiple (PEG: 1.11x)",
+    "Reasonable GARP Multiple (PEG: 1.08x)",
     "Company's median sales growth is 20.2% of last 10 years"
   ],
   "red_flags": [
     "Elevated Leverage (D/E: 5.91x)",
     "Weak Operating Cash Conversion (3Y CFO/PAT: -3.46x)",
-    "Stock is trading at 3.61 times its book value",
+    "Stock is trading at 3.53 times its book value",
     "Company has low interest coverage ratio."
   ]
 }

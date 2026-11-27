@@ -6,25 +6,25 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "30358",
-    "current_price": "1190",
-    "stock_pe": "54.5",
+    "market_cap_cr": "29565",
+    "current_price": "1158",
+    "stock_pe": "53.1",
     "book_value": "165",
     "dividend_yield_pct": "0.17",
     "roce_pct": "11.5",
     "roe_pct": "10.4",
     "debt_to_equity": "0.54",
     "face_value": "1",
-    "pb_ratio": "7.21",
-    "market_cap_num": 30358.0,
-    "current_price_num": 1190.0,
-    "pe_num": 54.5,
+    "pb_ratio": "7.02",
+    "market_cap_num": 29565.0,
+    "current_price_num": 1158.0,
+    "pe_num": 53.1,
     "book_value_num": 165.0,
     "roce_num": 11.5,
     "roe_num": 10.4,
-    "pb_num": 7.21,
-    "peg_ratio": "0.29",
-    "peg_num": 0.29
+    "pb_num": 7.02,
+    "peg_ratio": "0.28",
+    "peg_num": 0.28
   },
   "ranges": {
     "sales_cagr_3y": 7.0,
@@ -36,7 +36,7 @@
     "roe_3y": 13.0,
     "roe_5y": 15.0,
     "price_cagr_3y": 28.0,
-    "price_cagr_5y": 20.0
+    "price_cagr_5y": 19.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 38.0,
@@ -77,10 +77,10 @@
     "Cash Generative Profits (CFO/EBITDA: 68%)",
     "Sharp Margin Inflection (OPM +600 bps YoY)",
     "Explosive Quarterly PAT Surge (+187.9% YoY)",
-    "Deep GARP Value (PEG: 0.29x)"
+    "Deep GARP Value (PEG: 0.28x)"
   ],
   "red_flags": [
-    "Stock is trading at 7.26 times its book value",
+    "Stock is trading at 7.06 times its book value",
     "Company has a low return on equity of 12.6% over last 3 years.",
     "Company might be capitalizing the interest cost",
     "Dividend payout has been low at 14.2% of profits over last 3 years"

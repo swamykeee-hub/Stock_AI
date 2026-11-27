@@ -6,23 +6,23 @@
   "inflection_score": 5.9,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "27099",
-    "current_price": "21119",
-    "stock_pe": "59.9",
+    "market_cap_cr": "27486",
+    "current_price": "21435",
+    "stock_pe": "60.7",
     "book_value": "1582",
     "dividend_yield_pct": "0.16",
     "roce_pct": "26.5",
     "roe_pct": "21.2",
     "debt_to_equity": "0.17",
     "face_value": "10",
-    "pb_ratio": "13.35",
-    "market_cap_num": 27099.0,
-    "current_price_num": 21119.0,
-    "pe_num": 59.9,
+    "pb_ratio": "13.55",
+    "market_cap_num": 27486.0,
+    "current_price_num": 21435.0,
+    "pe_num": 60.7,
     "book_value_num": 1582.0,
     "roce_num": 26.5,
     "roe_num": 21.2,
-    "pb_num": 13.35,
+    "pb_num": 13.55,
     "peg_ratio": "0.46",
     "peg_num": 0.46
   },
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 131.0,
     "roe_3y": 20.0,
     "roe_5y": 18.0,
-    "price_cagr_3y": 61.0,
+    "price_cagr_3y": 60.0,
     "price_cagr_5y": 66.0
   },
   "inflection": {
@@ -83,7 +83,7 @@
   "red_flags": [
     "Operating Margin Compression (-800 bps YoY)",
     "Quarterly Earnings Contraction (-46.4% YoY)",
-    "Stock is trading at 13.4 times its book value",
+    "Stock is trading at 13.5 times its book value",
     "Promoter holding has decreased over last quarter: -0.36%"
   ]
 }

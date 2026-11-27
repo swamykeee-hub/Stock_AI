@@ -6,25 +6,25 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "14620",
-    "current_price": "788",
-    "stock_pe": "75",
+    "market_cap_cr": "14499",
+    "current_price": "781",
+    "stock_pe": "74.3",
     "book_value": "194",
-    "dividend_yield_pct": "0.25",
+    "dividend_yield_pct": "0.26",
     "roce_pct": "5.6",
     "roe_pct": "2.51",
     "debt_to_equity": "0.64",
     "face_value": "2",
-    "pb_ratio": "4.06",
-    "market_cap_num": 14620.0,
-    "current_price_num": 788.0,
-    "pe_num": 75.0,
+    "pb_ratio": "4.03",
+    "market_cap_num": 14499.0,
+    "current_price_num": 781.0,
+    "pe_num": 74.3,
     "book_value_num": 194.0,
     "roce_num": 5.6,
     "roe_num": 2.51,
-    "pb_num": 4.06,
-    "peg_ratio": "0.75",
-    "peg_num": 0.75
+    "pb_num": 4.03,
+    "peg_ratio": "0.74",
+    "peg_num": 0.74
   },
   "ranges": {
     "sales_cagr_3y": 10.0,
@@ -78,12 +78,12 @@
     "Sharp Margin Inflection (OPM +500 bps YoY)",
     "Explosive Quarterly PAT Surge (+100.0% YoY)",
     "Capex Capacity Runway Active (CWIP: \u20b9484 Cr)",
-    "Deep GARP Value (PEG: 0.75x)"
+    "Deep GARP Value (PEG: 0.74x)"
   ],
   "red_flags": [
     "Sub-par ROCE (5.6%)",
     "Institutional Distribution (FII+DII -3.4% over 4Q)",
-    "Stock is trading at 4.07 times its book value",
+    "Stock is trading at 4.02 times its book value",
     "Promoter holding has decreased over last quarter: -2.47%"
   ]
 }

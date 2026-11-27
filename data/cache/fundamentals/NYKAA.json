@@ -6,8 +6,8 @@
   "inflection_score": 10.0,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "100585",
-    "current_price": "353",
+    "market_cap_cr": "100616",
+    "current_price": "351",
     "stock_pe": "303",
     "book_value": "5.78",
     "dividend_yield_pct": "0",
@@ -15,14 +15,14 @@
     "roe_pct": "15.3",
     "debt_to_equity": "0.92",
     "face_value": "1",
-    "pb_ratio": "61.07",
-    "market_cap_num": 100585.0,
-    "current_price_num": 353.0,
+    "pb_ratio": "60.73",
+    "market_cap_num": 100616.0,
+    "current_price_num": 351.0,
     "pe_num": 303.0,
     "book_value_num": 5.78,
     "roce_num": 17.2,
     "roe_num": 15.3,
-    "pb_num": 61.07,
+    "pb_num": 60.73,
     "peg_ratio": "1.40",
     "peg_num": 1.4
   },
@@ -82,7 +82,7 @@
   ],
   "red_flags": [
     "Elevated Leverage (D/E: 0.92x)",
-    "Stock is trading at 61.0 times its book value",
+    "Stock is trading at 60.9 times its book value",
     "Though the company is reporting repeated profits, it is not paying out dividend",
     "Company has a low return on equity of 7.75% over last 3 years."
   ]

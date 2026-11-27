@@ -6,25 +6,25 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "33207",
-    "current_price": "4056",
-    "stock_pe": "75.5",
+    "market_cap_cr": "33559",
+    "current_price": "4075",
+    "stock_pe": "76.4",
     "book_value": "227",
     "dividend_yield_pct": "0.06",
     "roce_pct": "31.6",
     "roe_pct": "24",
     "debt_to_equity": "0.01",
     "face_value": "5",
-    "pb_ratio": "17.87",
-    "market_cap_num": 33207.0,
-    "current_price_num": 4056.0,
-    "pe_num": 75.5,
+    "pb_ratio": "17.95",
+    "market_cap_num": 33559.0,
+    "current_price_num": 4075.0,
+    "pe_num": 76.4,
     "book_value_num": 227.0,
     "roce_num": 31.6,
     "roe_num": 24.0,
-    "pb_num": 17.87,
-    "peg_ratio": "0.79",
-    "peg_num": 0.79
+    "pb_num": 17.95,
+    "peg_ratio": "0.80",
+    "peg_num": 0.8
   },
   "ranges": {
     "sales_cagr_3y": 30.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 96.0,
     "roe_3y": 18.0,
     "roe_5y": 18.0,
-    "price_cagr_3y": 93.0,
-    "price_cagr_5y": 53.0
+    "price_cagr_3y": 94.0,
+    "price_cagr_5y": 54.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 43.0,
@@ -81,7 +81,7 @@
     "Sharp Margin Inflection (OPM +900 bps YoY)"
   ],
   "red_flags": [
-    "Stock is trading at 17.9 times its book value",
+    "Stock is trading at 18.0 times its book value",
     "Promoter holding has decreased over last 3 years: -6.27%"
   ]
 }

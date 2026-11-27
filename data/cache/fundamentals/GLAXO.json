@@ -6,25 +6,25 @@
   "inflection_score": 7.1,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "47085",
-    "current_price": "2780",
-    "stock_pe": "41.6",
+    "market_cap_cr": "46914",
+    "current_price": "2770",
+    "stock_pe": "41.4",
     "book_value": "111",
-    "dividend_yield_pct": "2.05",
+    "dividend_yield_pct": "2.06",
     "roce_pct": "61.4",
     "roe_pct": "45.6",
     "debt_to_equity": "0.02",
     "face_value": "10",
-    "pb_ratio": "25.05",
-    "market_cap_num": 47085.0,
-    "current_price_num": 2780.0,
-    "pe_num": 41.6,
+    "pb_ratio": "24.95",
+    "market_cap_num": 46914.0,
+    "current_price_num": 2770.0,
+    "pe_num": 41.4,
     "book_value_num": 111.0,
     "roce_num": 61.4,
     "roe_num": 45.6,
-    "pb_num": 25.05,
-    "peg_ratio": "1.36",
-    "peg_num": 1.36
+    "pb_num": 24.95,
+    "peg_ratio": "1.35",
+    "peg_num": 1.35
   },
   "ranges": {
     "sales_cagr_3y": 6.0,
@@ -78,10 +78,10 @@
     "Superior ROE: 45.6%",
     "Fortress Balance Sheet (D/E: 0.02x)",
     "Cash Generative Profits (CFO/EBITDA: 93%)",
-    "Reasonable GARP Multiple (PEG: 1.36x)"
+    "Reasonable GARP Multiple (PEG: 1.35x)"
   ],
   "red_flags": [
-    "Stock is trading at 25.1 times its book value",
+    "Stock is trading at 24.9 times its book value",
     "The company has delivered a poor sales growth of 5.49% over past five years."
   ]
 }

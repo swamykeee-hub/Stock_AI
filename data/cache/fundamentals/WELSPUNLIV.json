@@ -6,23 +6,23 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "26498",
-    "current_price": "280",
-    "stock_pe": "60.3",
+    "market_cap_cr": "26989",
+    "current_price": "286",
+    "stock_pe": "61.4",
     "book_value": "53.6",
     "dividend_yield_pct": "0.04",
     "roce_pct": "6.26",
     "roe_pct": "4.48",
     "debt_to_equity": "0.47",
     "face_value": "1",
-    "pb_ratio": "5.22",
-    "market_cap_num": 26498.0,
-    "current_price_num": 280.0,
-    "pe_num": 60.3,
+    "pb_ratio": "5.34",
+    "market_cap_num": 26989.0,
+    "current_price_num": 286.0,
+    "pe_num": 61.4,
     "book_value_num": 53.6,
     "roce_num": 6.26,
     "roe_num": 4.48,
-    "pb_num": 5.22,
+    "pb_num": 5.34,
     "peg_ratio": "0.06",
     "peg_num": 0.06
   },
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 24.0,
     "roe_3y": 11.0,
     "roe_5y": 11.0,
-    "price_cagr_3y": 20.0,
+    "price_cagr_3y": 22.0,
     "price_cagr_5y": 15.0
   },
   "inflection": {
@@ -82,7 +82,7 @@
   ],
   "red_flags": [
     "Sub-par ROCE (6.3%)",
-    "Stock is trading at 5.20 times its book value",
+    "Stock is trading at 5.33 times its book value",
     "Promoter holding has decreased over last quarter: -2.59%",
     "The company has delivered a poor sales growth of 5.07% over past five years."
   ]

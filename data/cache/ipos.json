@@ -8,11 +8,11 @@
     "price_band": "\u20b9130.00 - \u20b9142.00",
     "lot_size": "1,000",
     "issue_size_cr": "93.66",
-    "gmp_inr": "\u20b92.00",
-    "gmp_pct": 1.4,
-    "subscription_total": "1.72x",
+    "gmp_inr": "\u20b91.00",
+    "gmp_pct": 0.7,
+    "subscription_total": "1.74x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9144 (+1.4%)"
+    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9143 (+0.7%)"
   },
   {
     "name": "Foodlink F&B Holdings",
@@ -25,7 +25,7 @@
     "issue_size_cr": "360.76",
     "gmp_inr": "\u20b94.00",
     "gmp_pct": 2.1,
-    "subscription_total": "1.44x",
+    "subscription_total": "1.49x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
     "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9195 (+2.1%)"
   },
@@ -40,7 +40,7 @@
     "issue_size_cr": "35.64",
     "gmp_inr": "\u20b93.00",
     "gmp_pct": 3.0,
-    "subscription_total": "0.60x",
+    "subscription_total": "0.79x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
     "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b9102 (+3.0%)"
   },
@@ -53,11 +53,11 @@
     "price_band": "\u20b9163.00 - \u20b9172.00",
     "lot_size": "87",
     "issue_size_cr": "125.16",
-    "gmp_inr": "\u20b922.00",
-    "gmp_pct": 12.8,
+    "gmp_inr": "\u20b931.00",
+    "gmp_pct": 18.0,
     "subscription_total": "Yet to Open",
-    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 1 Dec 2026 \u2013 3 Dec 2026 \u2022 Est. Listing: \u20b9194 (+12.8%)"
+    "verdict": "\u2705 APPLY (Moderate Listing Gain)",
+    "analysis": "Dates: 1 Dec 2026 \u2013 3 Dec 2026 \u2022 Est. Listing: \u20b9203 (+18.0%)"
   },
   {
     "name": "A J Packaging",
@@ -98,11 +98,11 @@
     "price_band": "\u20b9105.00 - \u20b9111.00",
     "lot_size": "135",
     "issue_size_cr": "800.00",
-    "gmp_inr": "\u20b97.00",
-    "gmp_pct": 6.3,
+    "gmp_inr": "\u20b93.00",
+    "gmp_pct": 2.7,
     "subscription_total": "Yet to Open",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 2 Dec 2026 \u2013 4 Dec 2026 \u2022 Est. Listing: \u20b9118 (+6.3%)"
+    "analysis": "Dates: 2 Dec 2026 \u2013 4 Dec 2026 \u2022 Est. Listing: \u20b9114 (+2.7%)"
   },
   {
     "name": "Vishwas Refoils & Consumer",

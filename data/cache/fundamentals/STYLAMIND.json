@@ -6,25 +6,25 @@
   "inflection_score": 4.6,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "5582",
-    "current_price": "3294",
-    "stock_pe": "31.9",
+    "market_cap_cr": "5505",
+    "current_price": "3249",
+    "stock_pe": "31.5",
     "book_value": "529",
     "dividend_yield_pct": "0",
     "roce_pct": "26.6",
     "roe_pct": "19.9",
     "debt_to_equity": "0.05",
     "face_value": "5",
-    "pb_ratio": "6.23",
-    "market_cap_num": 5582.0,
-    "current_price_num": 3294.0,
-    "pe_num": 31.9,
+    "pb_ratio": "6.14",
+    "market_cap_num": 5505.0,
+    "current_price_num": 3249.0,
+    "pe_num": 31.5,
     "book_value_num": 529.0,
     "roce_num": 26.6,
     "roe_num": 19.9,
-    "pb_num": 6.23,
-    "peg_ratio": "0.80",
-    "peg_num": 0.8
+    "pb_num": 6.14,
+    "peg_ratio": "0.79",
+    "peg_num": 0.79
   },
   "ranges": {
     "sales_cagr_3y": 6.0,
@@ -78,7 +78,7 @@
     "Fortress Balance Sheet (D/E: 0.05x)",
     "Cash Generative Profits (CFO/EBITDA: 104%)",
     "Promoter Stake Increased (+4.67%)",
-    "Deep GARP Value (PEG: 0.80x)"
+    "Deep GARP Value (PEG: 0.79x)"
   ],
   "red_flags": [
     "Institutional Distribution (FII+DII -3.0% over 4Q)",
