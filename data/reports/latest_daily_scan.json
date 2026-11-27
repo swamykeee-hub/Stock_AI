@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-27 15:39:14",
+  "timestamp": "2026-11-27 15:42:51",
   "indices": {
     "NIFTY 50": {
       "value": 25607.2,
@@ -7,9 +7,9 @@
       "percent": -1.07
     },
     "SENSEX": {
-      "value": 83349.81,
-      "change": -978.78,
-      "percent": -1.16
+      "value": 83322.73,
+      "change": -1005.87,
+      "percent": -1.19
     },
     "BANK NIFTY": {
       "value": 63040.9,
@@ -17,9 +17,9 @@
       "percent": -0.78
     },
     "INDIA VIX": {
-      "value": 16.65,
-      "change": -0.19,
-      "percent": -1.11
+      "value": 16.68,
+      "change": -0.16,
+      "percent": -0.95
     },
     "NIFTY 100": {
       "value": 26462.9,
@@ -95,14 +95,14 @@
         "change_pct": 2.11
       },
       "FTSE 100": {
-        "price": 10679.86,
-        "change": 70.56,
+        "price": 10680.22,
+        "change": 70.92,
         "change_pct": 0.67
       },
       "DAX": {
-        "price": 25420.13,
-        "change": 204.61,
-        "change_pct": 0.81
+        "price": 25411.36,
+        "change": 195.84,
+        "change_pct": 0.78
       },
       "Hang Seng": {
         "price": 22694.77,
@@ -112,9 +112,9 @@
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 92.32,
-        "change": 1.68,
-        "change_pct": 1.85
+        "price": 92.22,
+        "change": 1.58,
+        "change_pct": 1.74
       },
       "US 10-Yr Yield (%)": {
         "price": 4.85,
@@ -122,9 +122,9 @@
         "change_pct": -1.14
       },
       "US Dollar Index (DXY)": {
-        "price": 103.83,
-        "change": 0.16,
-        "change_pct": 0.15
+        "price": 103.85,
+        "change": 0.19,
+        "change_pct": 0.18
       },
       "Gold 24K (\u20b9/10g)": {
         "price": 126550.0,
@@ -145,14 +145,14 @@
         "source": "GoodReturns"
       },
       "Gold ($/oz)": {
-        "price": 3700.9,
-        "change": 136.3,
-        "change_pct": 3.82
+        "price": 3700.4,
+        "change": 135.8,
+        "change_pct": 3.81
       },
       "Silver ($/oz)": {
-        "price": 44.48,
-        "change": 3.94,
-        "change_pct": 9.71
+        "price": 44.45,
+        "change": 3.91,
+        "change_pct": 9.64
       },
       "USD / INR": {
         "price": 92.98,
@@ -164,7 +164,7 @@
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.85%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-27 15:39:24"
+    "timestamp": "2026-11-27 15:43:07"
   },
   "market_regime": {
     "nifty_cmp": 25884.5,
@@ -21425,7 +21425,7 @@
     }
   ],
   "institutional_flow": {
-    "timestamp": "2026-11-27 15:39:50",
+    "timestamp": "2026-11-27 15:43:41",
     "fii_dii_latest": {
       "date": "2026-11-26",
       "formatted_date": "Thu 26 Nov, 2026",
@@ -21606,8 +21606,8 @@
     ],
     "derivatives": {
       "pcr": 0.59,
-      "total_call_oi": 4044130,
-      "total_put_oi": 2382323,
+      "total_call_oi": 4011080,
+      "total_put_oi": 2356282,
       "max_pain_strike": 25700.0,
       "status": "LIVE"
     },
@@ -21709,7 +21709,7 @@
     "total_events": 10
   },
   "performance_scorecard": {
-    "timestamp": "2026-11-27 15:39:50",
+    "timestamp": "2026-11-27 15:43:42",
     "total_picks_tracked": 45,
     "win_rate_pct": 72.7,
     "resolved_trades_count": 11,
@@ -22112,7 +22112,7 @@
     ]
   },
   "market_movers": {
-    "timestamp": "2026-11-27 15:39:50",
+    "timestamp": "2026-11-27 15:43:42",
     "top_gainers": [
       {
         "symbol": "BEML",
@@ -22451,7 +22451,7 @@
   "total_screened": 515,
   "disclaimer": "Application Designed and Developed by Swamy Chouhan - 9000632912. DISCLAIMER: This system is an AI-driven educational and research analytics tool. It does not provide SEBI-registered investment advice or guaranteed return recommendations. Stock markets involve risk. Always consult a certified financial advisor before trading.",
   "feed_health": {
-    "checked_at": "2026-11-27 15:39:51 IST",
+    "checked_at": "2026-11-27 15:43:42 IST",
     "healthy_count": 5,
     "total_feeds": 5,
     "feeds": [
@@ -22459,8 +22459,8 @@
         "feed": "Yahoo NSE Quotes",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "2s ago",
-        "updated_at": "27-Nov 15:39 IST",
+        "age": "4s ago",
+        "updated_at": "27-Nov 15:43 IST",
         "detail": "14 indices, 126 picks"
       },
       {
@@ -22476,7 +22476,7 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "0s ago",
-        "updated_at": "27-Nov 15:39 IST",
+        "updated_at": "27-Nov 15:43 IST",
         "detail": "PCR 0.59 (LIVE)"
       },
       {
@@ -22484,7 +22484,7 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "0s ago",
-        "updated_at": "27-Nov 15:39 IST",
+        "updated_at": "27-Nov 15:43 IST",
         "detail": "15 gainers / 15 losers"
       },
       {
