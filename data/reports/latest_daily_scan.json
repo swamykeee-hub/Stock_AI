@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-27 08:45:02",
+  "timestamp": "2026-11-27 09:01:05",
   "indices": {
     "NIFTY 50": {
       "value": 25884.5,
@@ -105,16 +105,16 @@
         "change_pct": 2.08
       },
       "Hang Seng": {
-        "price": 22342.25,
-        "change": 115.37,
-        "change_pct": 0.52
+        "price": 22363.36,
+        "change": 136.48,
+        "change_pct": 0.61
       }
     },
     "macro": {
       "Brent Crude ($/bbl)": {
-        "price": 92.29,
-        "change": 1.65,
-        "change_pct": 1.82
+        "price": 92.35,
+        "change": 1.71,
+        "change_pct": 1.89
       },
       "US 10-Yr Yield (%)": {
         "price": 4.85,
@@ -122,9 +122,9 @@
         "change_pct": -1.14
       },
       "US Dollar Index (DXY)": {
-        "price": 103.65,
-        "change": -0.01,
-        "change_pct": -0.01
+        "price": 103.68,
+        "change": 0.02,
+        "change_pct": 0.02
       },
       "Gold 24K (\u20b9/10g)": {
         "price": 124810.0,
@@ -145,26 +145,26 @@
         "source": "GoodReturns"
       },
       "Gold ($/oz)": {
-        "price": 3659.9,
-        "change": 95.3,
-        "change_pct": 2.67
+        "price": 3657.2,
+        "change": 92.6,
+        "change_pct": 2.6
       },
       "Silver ($/oz)": {
-        "price": 43.87,
-        "change": 3.33,
-        "change_pct": 8.22
+        "price": 43.9,
+        "change": 3.36,
+        "change_pct": 8.29
       },
       "USD / INR": {
-        "price": 92.44,
-        "change": 0.2,
-        "change_pct": 0.21
+        "price": 92.51,
+        "change": 0.07,
+        "change_pct": 0.08
       }
     },
     "fund_manager_takeaways": [
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.85%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-27 08:45:14"
+    "timestamp": "2026-11-27 09:01:25"
   },
   "market_regime": {
     "nifty_cmp": 25884.5,
@@ -262,7 +262,9 @@
       "rs_vs_nifty_1y": 148.1,
       "rs_vs_nifty_3y": 528.9,
       "trend_status": "\ud83d\udd25 52W High Super-Breakout",
-      "conviction": "High (Stage-2 Mark-up)"
+      "conviction": "High (Stage-2 Mark-up)",
+      "day_change": 45.0,
+      "day_change_pct": 1.83
     },
     {
       "symbol": "SYRMA",
@@ -296,7 +298,9 @@
       "rs_vs_nifty_1y": 100.8,
       "rs_vs_nifty_3y": 100.2,
       "trend_status": "\ud83d\ude80 Multibagger Compounder",
-      "conviction": "Very High (Institutional Momentum)"
+      "conviction": "Very High (Institutional Momentum)",
+      "day_change": 45.0,
+      "day_change_pct": 3.14
     },
     {
       "symbol": "MCX",
@@ -330,7 +334,9 @@
       "rs_vs_nifty_1y": 89.3,
       "rs_vs_nifty_3y": 465.2,
       "trend_status": "\ud83d\udd25 52W High Super-Breakout",
-      "conviction": "High (Stage-2 Mark-up)"
+      "conviction": "High (Stage-2 Mark-up)",
+      "day_change": 270.0,
+      "day_change_pct": 7.57
     },
     {
       "symbol": "PARAS",
@@ -364,7 +370,9 @@
       "rs_vs_nifty_1y": 86.4,
       "rs_vs_nifty_3y": 45.7,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -1.9,
+      "day_change_pct": -0.15
     },
     {
       "symbol": "DIVISLAB",
@@ -398,7 +406,9 @@
       "rs_vs_nifty_1y": 81.6,
       "rs_vs_nifty_3y": 194.0,
       "trend_status": "\ud83d\udd25 52W High Super-Breakout",
-      "conviction": "High (Stage-2 Mark-up)"
+      "conviction": "High (Stage-2 Mark-up)",
+      "day_change": -85.5,
+      "day_change_pct": -0.73
     },
     {
       "symbol": "CYIENTDLM",
@@ -432,7 +442,9 @@
       "rs_vs_nifty_1y": 80.1,
       "rs_vs_nifty_3y": -2.7,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 21.05,
+      "day_change_pct": 2.81
     },
     {
       "symbol": "SONACOMS",
@@ -466,7 +478,9 @@
       "rs_vs_nifty_1y": 79.6,
       "rs_vs_nifty_3y": 38.9,
       "trend_status": "\u26a1 Weekly VCP Stage-2 Base",
-      "conviction": "High (Tight Volatility Contraction)"
+      "conviction": "High (Tight Volatility Contraction)",
+      "day_change": -1.65,
+      "day_change_pct": -0.19
     },
     {
       "symbol": "DATAPATTNS",
@@ -500,7 +514,9 @@
       "rs_vs_nifty_1y": 60.8,
       "rs_vs_nifty_3y": 86.9,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 19.7,
+      "day_change_pct": 0.48
     },
     {
       "symbol": "APARINDS",
@@ -534,7 +550,9 @@
       "rs_vs_nifty_1y": 58.0,
       "rs_vs_nifty_3y": 142.2,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -50.0,
+      "day_change_pct": -0.35
     },
     {
       "symbol": "SOLARINDS",
@@ -568,7 +586,9 @@
       "rs_vs_nifty_1y": 48.9,
       "rs_vs_nifty_3y": 144.5,
       "trend_status": "\ud83c\udfdb\ufe0f Multi-Year Structural Bull",
-      "conviction": "Core Portfolio Compounder"
+      "conviction": "Core Portfolio Compounder",
+      "day_change": 162.0,
+      "day_change_pct": 0.9
     },
     {
       "symbol": "BHEL",
@@ -602,7 +622,9 @@
       "rs_vs_nifty_1y": 47.5,
       "rs_vs_nifty_3y": 110.2,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 5.45,
+      "day_change_pct": 1.32
     },
     {
       "symbol": "BSE",
@@ -636,7 +658,9 @@
       "rs_vs_nifty_1y": 46.5,
       "rs_vs_nifty_3y": 396.8,
       "trend_status": "\ud83c\udfdb\ufe0f Multi-Year Structural Bull",
-      "conviction": "Core Portfolio Compounder"
+      "conviction": "Core Portfolio Compounder",
+      "day_change": 215.2,
+      "day_change_pct": 5.7
     },
     {
       "symbol": "ANGELONE",
@@ -670,7 +694,9 @@
       "rs_vs_nifty_1y": 38.5,
       "rs_vs_nifty_3y": -10.8,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": 8.85,
+      "day_change_pct": 2.54
     },
     {
       "symbol": "MOTHERSON",
@@ -704,7 +730,9 @@
       "rs_vs_nifty_1y": 36.3,
       "rs_vs_nifty_3y": 130.7,
       "trend_status": "\ud83c\udfdb\ufe0f Multi-Year Structural Bull",
-      "conviction": "Core Portfolio Compounder"
+      "conviction": "Core Portfolio Compounder",
+      "day_change": -1.65,
+      "day_change_pct": -0.99
     },
     {
       "symbol": "TORNTPHARM",
@@ -738,7 +766,9 @@
       "rs_vs_nifty_1y": 33.0,
       "rs_vs_nifty_3y": 119.2,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": 123.6,
+      "day_change_pct": 2.52
     },
     {
       "symbol": "ABB",
@@ -772,7 +802,9 @@
       "rs_vs_nifty_1y": 32.5,
       "rs_vs_nifty_3y": 23.4,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -68.0,
+      "day_change_pct": -0.97
     },
     {
       "symbol": "APOLLOHOSP",
@@ -806,7 +838,9 @@
       "rs_vs_nifty_1y": 30.5,
       "rs_vs_nifty_3y": 45.5,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": -77.5,
+      "day_change_pct": -0.83
     },
     {
       "symbol": "NETWEB",
@@ -840,7 +874,9 @@
       "rs_vs_nifty_1y": 27.3,
       "rs_vs_nifty_3y": 193.8,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 46.2,
+      "day_change_pct": 1.15
     },
     {
       "symbol": "TVSMOTOR",
@@ -874,7 +910,9 @@
       "rs_vs_nifty_1y": 25.1,
       "rs_vs_nifty_3y": 104.8,
       "trend_status": "\u26a1 Weekly VCP Stage-2 Base",
-      "conviction": "High (Tight Volatility Contraction)"
+      "conviction": "High (Tight Volatility Contraction)",
+      "day_change": -59.9,
+      "day_change_pct": -1.3
     },
     {
       "symbol": "MANKIND",
@@ -908,7 +946,9 @@
       "rs_vs_nifty_1y": 23.8,
       "rs_vs_nifty_3y": 21.2,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": 0.0,
+      "day_change_pct": 0.0
     },
     {
       "symbol": "BAJAJ-AUTO",
@@ -942,7 +982,9 @@
       "rs_vs_nifty_1y": 21.0,
       "rs_vs_nifty_3y": 52.3,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -18.0,
+      "day_change_pct": -0.17
     },
     {
       "symbol": "TITAN",
@@ -976,7 +1018,9 @@
       "rs_vs_nifty_1y": 20.0,
       "rs_vs_nifty_3y": 8.0,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -55.5,
+      "day_change_pct": -1.18
     },
     {
       "symbol": "SBIN",
@@ -1010,7 +1054,9 @@
       "rs_vs_nifty_1y": 18.6,
       "rs_vs_nifty_3y": 54.7,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": -1.5,
+      "day_change_pct": -0.13
     },
     {
       "symbol": "ICICIBANK",
@@ -1044,7 +1090,9 @@
       "rs_vs_nifty_1y": 18.5,
       "rs_vs_nifty_3y": 34.7,
       "trend_status": "\u26a1 Weekly VCP Stage-2 Base",
-      "conviction": "High (Tight Volatility Contraction)"
+      "conviction": "High (Tight Volatility Contraction)",
+      "day_change": -29.0,
+      "day_change_pct": -1.77
     },
     {
       "symbol": "KOTAKBANK",
@@ -1078,7 +1126,9 @@
       "rs_vs_nifty_1y": 17.7,
       "rs_vs_nifty_3y": 17.2,
       "trend_status": "\u26a1 Weekly VCP Stage-2 Base",
-      "conviction": "High (Tight Volatility Contraction)"
+      "conviction": "High (Tight Volatility Contraction)",
+      "day_change": 0.95,
+      "day_change_pct": 0.19
     },
     {
       "symbol": "DLF",
@@ -1112,7 +1162,9 @@
       "rs_vs_nifty_1y": 16.1,
       "rs_vs_nifty_3y": -6.1,
       "trend_status": "\u26a1 Weekly VCP Stage-2 Base",
-      "conviction": "High (Tight Volatility Contraction)"
+      "conviction": "High (Tight Volatility Contraction)",
+      "day_change": 12.8,
+      "day_change_pct": 1.61
     },
     {
       "symbol": "HAL",
@@ -1146,7 +1198,9 @@
       "rs_vs_nifty_1y": 14.7,
       "rs_vs_nifty_3y": 57.2,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": -26.4,
+      "day_change_pct": -0.54
     },
     {
       "symbol": "SIEMENS",
@@ -1180,7 +1234,9 @@
       "rs_vs_nifty_1y": 14.3,
       "rs_vs_nifty_3y": 35.3,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -4.5,
+      "day_change_pct": -0.13
     },
     {
       "symbol": "EICHERMOT",
@@ -1214,7 +1270,9 @@
       "rs_vs_nifty_1y": 13.8,
       "rs_vs_nifty_3y": 80.9,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": -156.0,
+      "day_change_pct": -1.87
     },
     {
       "symbol": "UNOMINDA",
@@ -1248,7 +1306,9 @@
       "rs_vs_nifty_1y": 12.0,
       "rs_vs_nifty_3y": 92.9,
       "trend_status": "\u26a1 Weekly VCP Stage-2 Base",
-      "conviction": "High (Tight Volatility Contraction)"
+      "conviction": "High (Tight Volatility Contraction)",
+      "day_change": 15.0,
+      "day_change_pct": 1.09
     },
     {
       "symbol": "PRESTIGE",
@@ -1282,7 +1342,9 @@
       "rs_vs_nifty_1y": 10.9,
       "rs_vs_nifty_3y": 43.9,
       "trend_status": "\u26a1 Accelerating Momentum",
-      "conviction": "High (Medium/Long Term)"
+      "conviction": "High (Medium/Long Term)",
+      "day_change": 147.0,
+      "day_change_pct": 8.72
     },
     {
       "symbol": "DRREDDY",
@@ -1316,7 +1378,9 @@
       "rs_vs_nifty_1y": 9.4,
       "rs_vs_nifty_3y": 3.9,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": -6.0,
+      "day_change_pct": -0.43
     },
     {
       "symbol": "ULTRACEMCO",
@@ -1350,7 +1414,9 @@
       "rs_vs_nifty_1y": 9.2,
       "rs_vs_nifty_3y": 6.4,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": -63.0,
+      "day_change_pct": -0.49
     },
     {
       "symbol": "COFORGE",
@@ -1384,7 +1450,9 @@
       "rs_vs_nifty_1y": 8.6,
       "rs_vs_nifty_3y": 34.7,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -60.0,
+      "day_change_pct": -2.91
     },
     {
       "symbol": "BAJFINANCE",
@@ -1418,7 +1486,9 @@
       "rs_vs_nifty_1y": 8.5,
       "rs_vs_nifty_3y": 25.5,
       "trend_status": "\u26a1 Weekly VCP Stage-2 Base",
-      "conviction": "High (Tight Volatility Contraction)"
+      "conviction": "High (Tight Volatility Contraction)",
+      "day_change": -33.5,
+      "day_change_pct": -2.96
     },
     {
       "symbol": "SUNPHARMA",
@@ -1452,7 +1522,9 @@
       "rs_vs_nifty_1y": 7.4,
       "rs_vs_nifty_3y": 34.4,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": 14.7,
+      "day_change_pct": 0.77
     },
     {
       "symbol": "NESTLEIND",
@@ -1486,7 +1558,9 @@
       "rs_vs_nifty_1y": 7.2,
       "rs_vs_nifty_3y": -12.2,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -38.2,
+      "day_change_pct": -2.81
     },
     {
       "symbol": "TATATECH",
@@ -1520,7 +1594,9 @@
       "rs_vs_nifty_1y": 6.7,
       "rs_vs_nifty_3y": -64.2,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 8.0,
+      "day_change_pct": 1.16
     },
     {
       "symbol": "360ONE",
@@ -1554,7 +1630,9 @@
       "rs_vs_nifty_1y": 6.5,
       "rs_vs_nifty_3y": 60.0,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": 44.8,
+      "day_change_pct": 3.85
     },
     {
       "symbol": "BEL",
@@ -1588,7 +1666,9 @@
       "rs_vs_nifty_1y": 4.5,
       "rs_vs_nifty_3y": 118.7,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 0.2,
+      "day_change_pct": 0.05
     },
     {
       "symbol": "AMBER",
@@ -1622,7 +1702,9 @@
       "rs_vs_nifty_1y": 3.6,
       "rs_vs_nifty_3y": 84.9,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -114.0,
+      "day_change_pct": -1.64
     },
     {
       "symbol": "LT",
@@ -1656,7 +1738,9 @@
       "rs_vs_nifty_1y": 2.0,
       "rs_vs_nifty_3y": -2.1,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": -23.9,
+      "day_change_pct": -0.57
     },
     {
       "symbol": "TATACONSUM",
@@ -1690,7 +1774,9 @@
       "rs_vs_nifty_1y": 1.9,
       "rs_vs_nifty_3y": 1.3,
       "trend_status": "\ud83c\udf31 Early Stage-1\u21922 Reversal",
-      "conviction": "Turnaround Breakout Watch"
+      "conviction": "Turnaround Breakout Watch",
+      "day_change": -21.8,
+      "day_change_pct": -1.84
     },
     {
       "symbol": "POWERGRID",
@@ -1724,7 +1810,9 @@
       "rs_vs_nifty_1y": 1.9,
       "rs_vs_nifty_3y": -8.1,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 0.2,
+      "day_change_pct": 0.07
     },
     {
       "symbol": "POLYCAB",
@@ -1758,7 +1846,9 @@
       "rs_vs_nifty_1y": 1.6,
       "rs_vs_nifty_3y": 9.0,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -29.0,
+      "day_change_pct": -0.39
     },
     {
       "symbol": "BHARTIARTL",
@@ -1792,7 +1882,9 @@
       "rs_vs_nifty_1y": 1.5,
       "rs_vs_nifty_3y": 91.2,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": -15.0,
+      "day_change_pct": -0.71
     },
     {
       "symbol": "JSWENERGY",
@@ -1826,7 +1918,9 @@
       "rs_vs_nifty_1y": 1.2,
       "rs_vs_nifty_3y": -9.0,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -0.65,
+      "day_change_pct": -0.13
     },
     {
       "symbol": "MAXHEALTH",
@@ -1860,7 +1954,9 @@
       "rs_vs_nifty_1y": 0.6,
       "rs_vs_nifty_3y": 36.5,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": 4.95,
+      "day_change_pct": 0.46
     },
     {
       "symbol": "PGEL",
@@ -1894,7 +1990,9 @@
       "rs_vs_nifty_1y": 0.6,
       "rs_vs_nifty_3y": 112.7,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -16.75,
+      "day_change_pct": -2.87
     },
     {
       "symbol": "DEEPAKNTR",
@@ -1928,7 +2026,9 @@
       "rs_vs_nifty_1y": 0.2,
       "rs_vs_nifty_3y": -54.6,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 27.4,
+      "day_change_pct": 1.83
     },
     {
       "symbol": "CAMS",
@@ -1962,7 +2062,9 @@
       "rs_vs_nifty_1y": -0.6,
       "rs_vs_nifty_3y": 16.4,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 28.4,
+      "day_change_pct": 3.96
     },
     {
       "symbol": "NTPC",
@@ -1996,7 +2098,9 @@
       "rs_vs_nifty_1y": -0.9,
       "rs_vs_nifty_3y": -15.6,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 2.25,
+      "day_change_pct": 0.71
     },
     {
       "symbol": "CYIENT",
@@ -2030,7 +2134,9 @@
       "rs_vs_nifty_1y": -1.0,
       "rs_vs_nifty_3y": -68.3,
       "trend_status": "\u26a1 Weekly VCP Stage-2 Base",
-      "conviction": "High (Tight Volatility Contraction)"
+      "conviction": "High (Tight Volatility Contraction)",
+      "day_change": -2.1,
+      "day_change_pct": -0.18
     },
     {
       "symbol": "NHPC",
@@ -2064,7 +2170,9 @@
       "rs_vs_nifty_1y": -1.0,
       "rs_vs_nifty_3y": -3.9,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 0.25,
+      "day_change_pct": 0.33
     },
     {
       "symbol": "SUPREMEIND",
@@ -2098,7 +2206,9 @@
       "rs_vs_nifty_1y": -1.3,
       "rs_vs_nifty_3y": -49.5,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -16.0,
+      "day_change_pct": -0.5
     },
     {
       "symbol": "PERSISTENT",
@@ -2132,7 +2242,9 @@
       "rs_vs_nifty_1y": -1.6,
       "rs_vs_nifty_3y": 51.0,
       "trend_status": "\u26a1 Weekly VCP Stage-2 Base",
-      "conviction": "High (Tight Volatility Contraction)"
+      "conviction": "High (Tight Volatility Contraction)",
+      "day_change": 80.0,
+      "day_change_pct": 1.31
     },
     {
       "symbol": "CIPLA",
@@ -2166,7 +2278,9 @@
       "rs_vs_nifty_1y": -3.8,
       "rs_vs_nifty_3y": -0.5,
       "trend_status": "\ud83c\udfaf Near Breakout Zone",
-      "conviction": "Watchlist / Accumulate"
+      "conviction": "Watchlist / Accumulate",
+      "day_change": 16.8,
+      "day_change_pct": 1.17
     },
     {
       "symbol": "DIXON",
@@ -2200,7 +2314,9 @@
       "rs_vs_nifty_1y": -4.3,
       "rs_vs_nifty_3y": 80.7,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -260.0,
+      "day_change_pct": -2.0
     },
     {
       "symbol": "LUPIN",
@@ -2234,7 +2350,9 @@
       "rs_vs_nifty_1y": -4.6,
       "rs_vs_nifty_3y": 40.3,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 1.2,
+      "day_change_pct": 0.06
     },
     {
       "symbol": "KFINTECH",
@@ -2268,7 +2386,9 @@
       "rs_vs_nifty_1y": -4.8,
       "rs_vs_nifty_3y": 72.7,
       "trend_status": "\ud83c\udf31 Early Stage-1\u21922 Reversal",
-      "conviction": "Turnaround Breakout Watch"
+      "conviction": "Turnaround Breakout Watch",
+      "day_change": 61.0,
+      "day_change_pct": 6.53
     },
     {
       "symbol": "CDSL",
@@ -2302,7 +2422,9 @@
       "rs_vs_nifty_1y": -5.0,
       "rs_vs_nifty_3y": 31.8,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 28.0,
+      "day_change_pct": 1.98
     },
     {
       "symbol": "TATACOMM",
@@ -2336,7 +2458,9 @@
       "rs_vs_nifty_1y": -5.1,
       "rs_vs_nifty_3y": -27.0,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -15.2,
+      "day_change_pct": -0.89
     },
     {
       "symbol": "IREDA",
@@ -2370,7 +2494,9 @@
       "rs_vs_nifty_1y": -6.1,
       "rs_vs_nifty_3y": -3.3,
       "trend_status": "\ud83c\udf31 Early Stage-1\u21922 Reversal",
-      "conviction": "Turnaround Breakout Watch"
+      "conviction": "Turnaround Breakout Watch",
+      "day_change": 2.25,
+      "day_change_pct": 1.8
     },
     {
       "symbol": "THERMAX",
@@ -2404,7 +2530,9 @@
       "rs_vs_nifty_1y": -6.2,
       "rs_vs_nifty_3y": -25.8,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 12.4,
+      "day_change_pct": 0.47
     },
     {
       "symbol": "DMART",
@@ -2438,7 +2566,9 @@
       "rs_vs_nifty_1y": -7.5,
       "rs_vs_nifty_3y": -33.3,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -59.0,
+      "day_change_pct": -1.64
     },
     {
       "symbol": "LTTS",
@@ -2472,7 +2602,9 @@
       "rs_vs_nifty_1y": -8.6,
       "rs_vs_nifty_3y": -39.9,
       "trend_status": "\u26a1 Weekly VCP Stage-2 Base",
-      "conviction": "High (Tight Volatility Contraction)"
+      "conviction": "High (Tight Volatility Contraction)",
+      "day_change": 67.2,
+      "day_change_pct": 1.61
     },
     {
       "symbol": "RELIANCE",
@@ -2506,7 +2638,9 @@
       "rs_vs_nifty_1y": -9.7,
       "rs_vs_nifty_3y": -8.7,
       "trend_status": "\ud83c\udf31 Early Stage-1\u21922 Reversal",
-      "conviction": "Turnaround Breakout Watch"
+      "conviction": "Turnaround Breakout Watch",
+      "day_change": 22.3,
+      "day_change_pct": 1.62
     },
     {
       "symbol": "KEI",
@@ -2540,7 +2674,9 @@
       "rs_vs_nifty_1y": -9.8,
       "rs_vs_nifty_3y": -2.1,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -6.0,
+      "day_change_pct": -0.16
     },
     {
       "symbol": "VBL",
@@ -2574,7 +2710,9 @@
       "rs_vs_nifty_1y": -10.1,
       "rs_vs_nifty_3y": -23.1,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -8.7,
+      "day_change_pct": -1.99
     },
     {
       "symbol": "CUMMINSIND",
@@ -2608,7 +2746,9 @@
       "rs_vs_nifty_1y": -10.3,
       "rs_vs_nifty_3y": 92.3,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 33.9,
+      "day_change_pct": 0.83
     },
     {
       "symbol": "ASTRAL",
@@ -2642,7 +2782,9 @@
       "rs_vs_nifty_1y": -10.6,
       "rs_vs_nifty_3y": -56.4,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 12.1,
+      "day_change_pct": 0.97
     },
     {
       "symbol": "VOLTAS",
@@ -2676,7 +2818,9 @@
       "rs_vs_nifty_1y": -11.1,
       "rs_vs_nifty_3y": 20.8,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -16.9,
+      "day_change_pct": -1.37
     },
     {
       "symbol": "HCLTECH",
@@ -2710,7 +2854,9 @@
       "rs_vs_nifty_1y": -11.6,
       "rs_vs_nifty_3y": -22.1,
       "trend_status": "\u26a1 Weekly VCP Stage-2 Base",
-      "conviction": "High (Tight Volatility Contraction)"
+      "conviction": "High (Tight Volatility Contraction)",
+      "day_change": 88.6,
+      "day_change_pct": 6.42
     },
     {
       "symbol": "BRITANNIA",
@@ -2744,7 +2890,9 @@
       "rs_vs_nifty_1y": -11.7,
       "rs_vs_nifty_3y": -15.1,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 108.8,
+      "day_change_pct": 2.14
     },
     {
       "symbol": "MPHASIS",
@@ -2778,7 +2926,9 @@
       "rs_vs_nifty_1y": -13.2,
       "rs_vs_nifty_3y": -26.2,
       "trend_status": "\ud83d\udcc8 Positive Trend",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -22.9,
+      "day_change_pct": -0.9
     },
     {
       "symbol": "HDFCBANK",
@@ -2812,7 +2962,9 @@
       "rs_vs_nifty_1y": -13.3,
       "rs_vs_nifty_3y": -16.5,
       "trend_status": "\ud83c\udf31 Early Stage-1\u21922 Reversal",
-      "conviction": "Turnaround Breakout Watch"
+      "conviction": "Turnaround Breakout Watch",
+      "day_change": 15.8,
+      "day_change_pct": 1.87
     },
     {
       "symbol": "FSL",
@@ -2846,7 +2998,9 @@
       "rs_vs_nifty_1y": -14.5,
       "rs_vs_nifty_3y": 33.3,
       "trend_status": "\ud83c\udf31 Early Stage-1\u21922 Reversal",
-      "conviction": "Turnaround Breakout Watch"
+      "conviction": "Turnaround Breakout Watch",
+      "day_change": 0.25,
+      "day_change_pct": 0.09
     },
     {
       "symbol": "TATAPOWER",
@@ -2880,7 +3034,9 @@
       "rs_vs_nifty_1y": -14.7,
       "rs_vs_nifty_3y": -23.5,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 0.5,
+      "day_change_pct": 0.15
     },
     {
       "symbol": "HAVELLS",
@@ -2914,7 +3070,9 @@
       "rs_vs_nifty_1y": -15.6,
       "rs_vs_nifty_3y": -32.0,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -15.4,
+      "day_change_pct": -1.29
     },
     {
       "symbol": "SRF",
@@ -2948,7 +3106,9 @@
       "rs_vs_nifty_1y": -16.2,
       "rs_vs_nifty_3y": -17.5,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 0.4,
+      "day_change_pct": 0.02
     },
     {
       "symbol": "TCS",
@@ -2982,7 +3142,9 @@
       "rs_vs_nifty_1y": -17.4,
       "rs_vs_nifty_3y": -52.2,
       "trend_status": "\ud83c\udf31 Early Stage-1\u21922 Reversal",
-      "conviction": "Turnaround Breakout Watch"
+      "conviction": "Turnaround Breakout Watch",
+      "day_change": 123.0,
+      "day_change_pct": 4.89
     },
     {
       "symbol": "TRENT",
@@ -3016,7 +3178,9 @@
       "rs_vs_nifty_1y": -19.3,
       "rs_vs_nifty_3y": -11.5,
       "trend_status": "\u26a1 Weekly VCP Stage-2 Base",
-      "conviction": "High (Tight Volatility Contraction)"
+      "conviction": "High (Tight Volatility Contraction)",
+      "day_change": -57.0,
+      "day_change_pct": -1.72
     },
     {
       "symbol": "ITC",
@@ -3050,7 +3214,9 @@
       "rs_vs_nifty_1y": -22.7,
       "rs_vs_nifty_3y": -51.0,
       "trend_status": "\ud83c\udf31 Early Stage-1\u21922 Reversal",
-      "conviction": "Turnaround Breakout Watch"
+      "conviction": "Turnaround Breakout Watch",
+      "day_change": -2.25,
+      "day_change_pct": -0.73
     },
     {
       "symbol": "TATAELXSI",
@@ -3084,7 +3250,9 @@
       "rs_vs_nifty_1y": -22.7,
       "rs_vs_nifty_3y": -78.0,
       "trend_status": "\ud83c\udf31 Early Stage-1\u21922 Reversal",
-      "conviction": "Turnaround Breakout Watch"
+      "conviction": "Turnaround Breakout Watch",
+      "day_change": 41.3,
+      "day_change_pct": 1.08
     },
     {
       "symbol": "WIPRO",
@@ -3118,7 +3286,9 @@
       "rs_vs_nifty_1y": -24.0,
       "rs_vs_nifty_3y": -32.6,
       "trend_status": "\ud83c\udf31 Early Stage-1\u21922 Reversal",
-      "conviction": "Turnaround Breakout Watch"
+      "conviction": "Turnaround Breakout Watch",
+      "day_change": 7.49,
+      "day_change_pct": 3.96
     },
     {
       "symbol": "INFY",
@@ -3152,7 +3322,9 @@
       "rs_vs_nifty_1y": -25.4,
       "rs_vs_nifty_3y": -45.7,
       "trend_status": "\ud83c\udf31 Early Stage-1\u21922 Reversal",
-      "conviction": "Turnaround Breakout Watch"
+      "conviction": "Turnaround Breakout Watch",
+      "day_change": 53.0,
+      "day_change_pct": 4.69
     },
     {
       "symbol": "MAZDOCK",
@@ -3186,7 +3358,9 @@
       "rs_vs_nifty_1y": -25.5,
       "rs_vs_nifty_3y": 53.9,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 18.0,
+      "day_change_pct": 1.0
     },
     {
       "symbol": "BDL",
@@ -3220,7 +3394,9 @@
       "rs_vs_nifty_1y": -26.0,
       "rs_vs_nifty_3y": 28.1,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 7.15,
+      "day_change_pct": 0.7
     },
     {
       "symbol": "HUDCO",
@@ -3254,7 +3430,9 @@
       "rs_vs_nifty_1y": -27.0,
       "rs_vs_nifty_3y": 19.2,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -0.55,
+      "day_change_pct": -0.35
     },
     {
       "symbol": "KPIGREEN",
@@ -3288,7 +3466,9 @@
       "rs_vs_nifty_1y": -27.0,
       "rs_vs_nifty_3y": -16.0,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -0.6,
+      "day_change_pct": -0.2
     },
     {
       "symbol": "IRFC",
@@ -3322,7 +3502,9 @@
       "rs_vs_nifty_1y": -27.1,
       "rs_vs_nifty_3y": -33.7,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 1.25,
+      "day_change_pct": 1.54
     },
     {
       "symbol": "METROBRAND",
@@ -3356,7 +3538,9 @@
       "rs_vs_nifty_1y": -29.3,
       "rs_vs_nifty_3y": -58.2,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": -10.95,
+      "day_change_pct": -1.32
     },
     {
       "symbol": "COCHINSHIP",
@@ -3390,7 +3574,9 @@
       "rs_vs_nifty_1y": -30.4,
       "rs_vs_nifty_3y": 54.8,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 21.0,
+      "day_change_pct": 1.94
     },
     {
       "symbol": "SUZLON",
@@ -3424,7 +3610,9 @@
       "rs_vs_nifty_1y": -31.0,
       "rs_vs_nifty_3y": -26.5,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 0.16,
+      "day_change_pct": 0.44
     },
     {
       "symbol": "MUTHOOTFIN",
@@ -3458,7 +3646,9 @@
       "rs_vs_nifty_1y": -32.7,
       "rs_vs_nifty_3y": 51.3,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 8.4,
+      "day_change_pct": 0.33
     },
     {
       "symbol": "KAYNES",
@@ -3492,7 +3682,9 @@
       "rs_vs_nifty_1y": -36.0,
       "rs_vs_nifty_3y": -15.8,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 5.3,
+      "day_change_pct": 0.2
     },
     {
       "symbol": "PIIND",
@@ -3526,7 +3718,9 @@
       "rs_vs_nifty_1y": -51.3,
       "rs_vs_nifty_3y": -73.8,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 15.2,
+      "day_change_pct": 0.96
     },
     {
       "symbol": "KPITTECH",
@@ -3560,7 +3754,9 @@
       "rs_vs_nifty_1y": -57.2,
       "rs_vs_nifty_3y": -86.2,
       "trend_status": "\u23f8\ufe0f Base Building",
-      "conviction": "Moderate"
+      "conviction": "Moderate",
+      "day_change": 6.2,
+      "day_change_pct": 1.2
     }
   ],
   "fifty_two_week_high_stocks": [
@@ -19164,57 +19360,6 @@
       "is_seed": true
     },
     {
-      "symbol": "CHENNPETRO",
-      "name": "Chennai Petroleum Corporation Ltd.",
-      "sector": "Oil Gas & Consumable Fuels",
-      "cap_tier": "Mid Cap",
-      "mcap_cr": 20454.0,
-      "base_screener_cmp": 1375.0,
-      "base_mcap_cr": 20460.0,
-      "base_pe": 3.59,
-      "base_peg": 0.01,
-      "cmp": 1374.6,
-      "day_change": 8.0,
-      "day_change_pct": 0.58,
-      "h52": 1677.5,
-      "l52": 765.5,
-      "dist_52w": 18.06,
-      "pe": 3.6,
-      "peg": 0.01,
-      "roce": 34.9,
-      "roe": 32.0,
-      "debt_to_equity": 0.16,
-      "cfo_to_pat_3y": 1.15,
-      "qtr_sales_yoy_pct": 26.0,
-      "qtr_pat_yoy_pct": 212.5,
-      "opm_latest_pct": 16.0,
-      "opm_expansion_bps": 900.0,
-      "promoter_pct": 67.29,
-      "inst_4q_delta_pct": 5.57,
-      "fund_score": 9.6,
-      "tech_score": 7.6,
-      "gem_score": 9.2,
-      "rsi": 40.5,
-      "ema_20": 1436.86,
-      "ema_50": 1434.19,
-      "ema_200": 1250.19,
-      "atr": 59.04,
-      "volume_ratio": 0.51,
-      "ret_1m": -9.6,
-      "ret_3m": -2.7,
-      "ret_1y": 53.3,
-      "setup_status": "\ud83c\udfaf Pullback Buy (EMA Support)",
-      "status_key": "pullback",
-      "status_color": "#38bdf8",
-      "suggested_entry": "\u20b91,353.98 \u2014 \u20b91,381.47",
-      "target_1": 1539.55,
-      "target_2": 1759.49,
-      "stop_loss": 1250.89,
-      "risk_reward": "1:1.33",
-      "thesis": "Elite Capital Efficiency (ROCE: 34.9%); Superior ROE: 32.0%; Fortress Balance Sheet (D/E: 0.16x)",
-      "is_seed": false
-    },
-    {
       "symbol": "ACUTAAS",
       "name": "Acutaas Chemicals Ltd.",
       "sector": "Healthcare",
@@ -19264,6 +19409,57 @@
       "risk_reward": "1:0.86",
       "thesis": "Elite Capital Efficiency (ROCE: 31.6%); Superior ROE: 24.0%; Fortress Balance Sheet (D/E: 0.01x)",
       "is_seed": true
+    },
+    {
+      "symbol": "CHENNPETRO",
+      "name": "Chennai Petroleum Corporation Ltd.",
+      "sector": "Oil Gas & Consumable Fuels",
+      "cap_tier": "Mid Cap",
+      "mcap_cr": 20454.0,
+      "base_screener_cmp": 1375.0,
+      "base_mcap_cr": 20460.0,
+      "base_pe": 3.59,
+      "base_peg": 0.01,
+      "cmp": 1374.6,
+      "day_change": 8.0,
+      "day_change_pct": 0.58,
+      "h52": 1677.5,
+      "l52": 765.5,
+      "dist_52w": 18.06,
+      "pe": 3.6,
+      "peg": 0.01,
+      "roce": 34.9,
+      "roe": 32.0,
+      "debt_to_equity": 0.16,
+      "cfo_to_pat_3y": 1.15,
+      "qtr_sales_yoy_pct": 26.0,
+      "qtr_pat_yoy_pct": 212.5,
+      "opm_latest_pct": 16.0,
+      "opm_expansion_bps": 900.0,
+      "promoter_pct": 67.29,
+      "inst_4q_delta_pct": 5.57,
+      "fund_score": 9.6,
+      "tech_score": 7.6,
+      "gem_score": 9.2,
+      "rsi": 40.5,
+      "ema_20": 1436.86,
+      "ema_50": 1434.19,
+      "ema_200": 1250.19,
+      "atr": 59.04,
+      "volume_ratio": 0.51,
+      "ret_1m": -9.6,
+      "ret_3m": -2.7,
+      "ret_1y": 53.3,
+      "setup_status": "\ud83c\udfaf Pullback Buy (EMA Support)",
+      "status_key": "pullback",
+      "status_color": "#38bdf8",
+      "suggested_entry": "\u20b91,353.98 \u2014 \u20b91,381.47",
+      "target_1": 1539.55,
+      "target_2": 1759.49,
+      "stop_loss": 1250.89,
+      "risk_reward": "1:1.33",
+      "thesis": "Elite Capital Efficiency (ROCE: 34.9%); Superior ROE: 32.0%; Fortress Balance Sheet (D/E: 0.16x)",
+      "is_seed": false
     },
     {
       "symbol": "KAJARIACER",
@@ -19572,6 +19768,57 @@
       "is_seed": true
     },
     {
+      "symbol": "RRKABEL",
+      "name": "R R Kabel Ltd.",
+      "sector": "Capital Goods",
+      "cap_tier": "Mid Cap",
+      "mcap_cr": 20497.0,
+      "base_screener_cmp": 1815.0,
+      "base_mcap_cr": 20524.0,
+      "base_pe": 30.4,
+      "base_peg": 0.45,
+      "cmp": 1812.6,
+      "day_change": 11.5,
+      "day_change_pct": 0.64,
+      "h52": 2983.8,
+      "l52": 1281.3,
+      "dist_52w": 39.25,
+      "pe": 30.4,
+      "peg": 0.45,
+      "roce": 28.1,
+      "roe": 21.3,
+      "debt_to_equity": 0.19,
+      "cfo_to_pat_3y": 1.02,
+      "qtr_sales_yoy_pct": 52.0,
+      "qtr_pat_yoy_pct": 56.0,
+      "opm_latest_pct": 9.0,
+      "opm_expansion_bps": 100.0,
+      "promoter_pct": 59.33,
+      "inst_4q_delta_pct": 0.71,
+      "fund_score": 9.6,
+      "tech_score": 5.4,
+      "gem_score": 8.6,
+      "rsi": 26.5,
+      "ema_20": 1974.81,
+      "ema_50": 2191.19,
+      "ema_200": 2113.7,
+      "atr": 84.33,
+      "volume_ratio": 0.55,
+      "ret_1m": -15.3,
+      "ret_3m": -37.9,
+      "ret_1y": 30.4,
+      "setup_status": "\ud83c\udf31 Base Reclaim / Turnaround Watch",
+      "status_key": "turnaround",
+      "status_color": "#a78bfa",
+      "suggested_entry": "\u20b91,776.35 \u2014 \u20b91,974.81",
+      "target_1": 2030.11,
+      "target_2": 2320.13,
+      "stop_loss": 1649.47,
+      "risk_reward": "1:1.33",
+      "thesis": "Elite Capital Efficiency (ROCE: 28.1%); Superior ROE: 21.3%; Fortress Balance Sheet (D/E: 0.19x)",
+      "is_seed": true
+    },
+    {
       "symbol": "BAJAJCON",
       "name": "Bajaj Consumer Care Ltd.",
       "sector": "Fast Moving Consumer Goods",
@@ -19671,57 +19918,6 @@
       "stop_loss": 1848.43,
       "risk_reward": "1:1.47",
       "thesis": "Elite Capital Efficiency (ROCE: 29.3%); Superior ROE: 22.6%; Fortress Balance Sheet (D/E: 0.05x)",
-      "is_seed": true
-    },
-    {
-      "symbol": "RRKABEL",
-      "name": "R R Kabel Ltd.",
-      "sector": "Capital Goods",
-      "cap_tier": "Mid Cap",
-      "mcap_cr": 20497.0,
-      "base_screener_cmp": 1815.0,
-      "base_mcap_cr": 20524.0,
-      "base_pe": 30.4,
-      "base_peg": 0.45,
-      "cmp": 1812.6,
-      "day_change": 11.5,
-      "day_change_pct": 0.64,
-      "h52": 2983.8,
-      "l52": 1281.3,
-      "dist_52w": 39.25,
-      "pe": 30.4,
-      "peg": 0.45,
-      "roce": 28.1,
-      "roe": 21.3,
-      "debt_to_equity": 0.19,
-      "cfo_to_pat_3y": 1.02,
-      "qtr_sales_yoy_pct": 52.0,
-      "qtr_pat_yoy_pct": 56.0,
-      "opm_latest_pct": 9.0,
-      "opm_expansion_bps": 100.0,
-      "promoter_pct": 59.33,
-      "inst_4q_delta_pct": 0.71,
-      "fund_score": 9.6,
-      "tech_score": 5.4,
-      "gem_score": 8.6,
-      "rsi": 26.5,
-      "ema_20": 1974.81,
-      "ema_50": 2191.19,
-      "ema_200": 2113.7,
-      "atr": 84.33,
-      "volume_ratio": 0.55,
-      "ret_1m": -15.3,
-      "ret_3m": -37.9,
-      "ret_1y": 30.4,
-      "setup_status": "\ud83c\udf31 Base Reclaim / Turnaround Watch",
-      "status_key": "turnaround",
-      "status_color": "#a78bfa",
-      "suggested_entry": "\u20b91,776.35 \u2014 \u20b91,974.81",
-      "target_1": 2030.11,
-      "target_2": 2320.13,
-      "stop_loss": 1649.47,
-      "risk_reward": "1:1.33",
-      "thesis": "Elite Capital Efficiency (ROCE: 28.1%); Superior ROE: 21.3%; Fortress Balance Sheet (D/E: 0.19x)",
       "is_seed": true
     },
     {
@@ -20002,10 +20198,7 @@
         "Cash Generative Profits (CFO/EBITDA: 78%)"
       ],
       "cmp": 1851.7,
-      "day_change_pct": 8.19,
-      "fifty_two_week_high": 1899.0,
-      "fifty_two_week_low": 609.25,
-      "dist_from_52w_high": 2.5
+      "day_change_pct": 2.14
     },
     {
       "symbol": "ACUTAAS",
@@ -20028,10 +20221,7 @@
         "Fortress Balance Sheet (D/E: 0.01x)"
       ],
       "cmp": 4079.9,
-      "day_change_pct": 2.18,
-      "fifty_two_week_high": 4130.0,
-      "fifty_two_week_low": 1570.0,
-      "dist_from_52w_high": 1.2
+      "day_change_pct": 2.18
     },
     {
       "symbol": "RADICO",
@@ -20054,10 +20244,7 @@
         "Fortress Balance Sheet (D/E: 0.11x)"
       ],
       "cmp": 4671.0,
-      "day_change_pct": -0.6,
-      "fifty_two_week_high": 4747.0,
-      "fifty_two_week_low": 2500.0,
-      "dist_from_52w_high": 1.6
+      "day_change_pct": -0.6
     },
     {
       "symbol": "CHENNPETRO",
@@ -20080,10 +20267,7 @@
         "Fortress Balance Sheet (D/E: 0.16x)"
       ],
       "cmp": 1374.6,
-      "day_change_pct": 0.58,
-      "fifty_two_week_high": 1677.5,
-      "fifty_two_week_low": 765.5,
-      "dist_from_52w_high": 18.1
+      "day_change_pct": 0.59
     },
     {
       "symbol": "LAURUSLABS",
@@ -20105,10 +20289,10 @@
         "Non-ARV API diversification"
       ],
       "cmp": 2505.0,
-      "day_change_pct": 1.83,
-      "fifty_two_week_high": 2517.0,
+      "day_change_pct": 3.77,
+      "fifty_two_week_high": 2488.0,
       "fifty_two_week_low": 917.95,
-      "dist_from_52w_high": 0.5,
+      "dist_from_52w_high": 6.0,
       "baseline_conviction": 9.4,
       "conviction_source": "Live Auto-Synced"
     },
@@ -20134,7 +20318,7 @@
       "day_change_pct": 5.7,
       "fifty_two_week_high": 4446.8,
       "fifty_two_week_low": 2377.4,
-      "dist_from_52w_high": 10.3,
+      "dist_from_52w_high": 13.1,
       "baseline_conviction": 8.9,
       "conviction_source": "Live Auto-Synced"
     },
@@ -20158,9 +20342,9 @@
       ],
       "cmp": 3262.6,
       "day_change_pct": -1.72,
-      "fifty_two_week_high": 4338.4,
+      "fifty_two_week_high": 4417.8,
       "fifty_two_week_low": 2183.667,
-      "dist_from_52w_high": 24.8,
+      "dist_from_52w_high": 28.1,
       "baseline_conviction": 9.3,
       "conviction_source": "Live Auto-Synced"
     },
@@ -20183,10 +20367,10 @@
         "Global aerospace export certifications"
       ],
       "cmp": 2703.3,
-      "day_change_pct": 0.2,
-      "fifty_two_week_high": 5838.0,
-      "fifty_two_week_low": 2675.1,
-      "dist_from_52w_high": 53.7,
+      "day_change_pct": -3.47,
+      "fifty_two_week_high": 6202.0,
+      "fifty_two_week_low": 2744.0,
+      "dist_from_52w_high": 53.9,
       "baseline_conviction": 9.0,
       "conviction_source": "Core Curated"
     },
@@ -20209,10 +20393,10 @@
         "EBITDA margins reverting to historical 38-40% band"
       ],
       "cmp": 11631.0,
-      "day_change_pct": -0.73,
+      "day_change_pct": 4.58,
       "fifty_two_week_high": 11824.0,
       "fifty_two_week_low": 5647.5,
-      "dist_from_52w_high": 1.6,
+      "dist_from_52w_high": 5.7,
       "baseline_conviction": 9.0,
       "conviction_source": "Live Auto-Synced"
     },
@@ -20237,10 +20421,7 @@
       "cmp": 3835.0,
       "day_change_pct": 7.57,
       "baseline_conviction": 8.4,
-      "conviction_source": "Live Auto-Synced",
-      "fifty_two_week_high": 3865.0,
-      "fifty_two_week_low": 1950.0,
-      "dist_from_52w_high": 0.8
+      "conviction_source": "Live Auto-Synced"
     },
     {
       "symbol": "SUZLON",
@@ -20261,10 +20442,10 @@
         "Clean balance sheet driving institutional re-rating"
       ],
       "cmp": 36.29,
-      "day_change_pct": 0.44,
+      "day_change_pct": -2.98,
       "fifty_two_week_high": 60.45,
       "fifty_two_week_low": 33.15,
-      "dist_from_52w_high": 40.0,
+      "dist_from_52w_high": 38.5,
       "baseline_conviction": 8.8,
       "conviction_source": "Core Curated"
     },
@@ -20287,12 +20468,9 @@
         "International Tanishq store additions in North America"
       ],
       "cmp": 4631.1,
-      "day_change_pct": -1.18,
+      "day_change_pct": 1.3,
       "baseline_conviction": 8.8,
-      "conviction_source": "Core Curated",
-      "fifty_two_week_high": 5186.7,
-      "fifty_two_week_low": 3751.0,
-      "dist_from_52w_high": 10.7
+      "conviction_source": "Core Curated"
     },
     {
       "symbol": "BEL",
@@ -20315,10 +20493,7 @@
       "cmp": 404.5,
       "day_change_pct": 0.05,
       "baseline_conviction": 9.0,
-      "conviction_source": "Live Auto-Synced",
-      "fifty_two_week_high": 473.45,
-      "fifty_two_week_low": 354.55,
-      "dist_from_52w_high": 14.6
+      "conviction_source": "Live Auto-Synced"
     },
     {
       "symbol": "HAL",
@@ -20339,10 +20514,10 @@
         "Fifth-generation AMCA fighter jet development milestone"
       ],
       "cmp": 4909.6,
-      "day_change_pct": -0.54,
+      "day_change_pct": -0.02,
       "fifty_two_week_high": 5149.9,
       "fifty_two_week_low": 3479.1,
-      "dist_from_52w_high": 4.7,
+      "dist_from_52w_high": 8.2,
       "baseline_conviction": 9.2,
       "conviction_source": "Core Curated"
     },
@@ -20365,10 +20540,10 @@
         "Operating leverage in high-volume smartphone segment"
       ],
       "cmp": 12718.0,
-      "day_change_pct": -2.0,
-      "fifty_two_week_high": 15000.0,
+      "day_change_pct": -3.08,
+      "fifty_two_week_high": 15775.0,
       "fifty_two_week_low": 9600.0,
-      "dist_from_52w_high": 15.2,
+      "dist_from_52w_high": 17.1,
       "baseline_conviction": 9.1,
       "conviction_source": "Live Auto-Synced"
     },
@@ -20391,12 +20566,9 @@
         "BFSI generative AI testing contracts scale"
       ],
       "cmp": 2000.0,
-      "day_change_pct": -2.91,
+      "day_change_pct": 2.72,
       "baseline_conviction": 7.4,
-      "conviction_source": "Core Curated",
-      "fifty_two_week_high": 2185.6,
-      "fifty_two_week_low": 1008.1,
-      "dist_from_52w_high": 8.5
+      "conviction_source": "Core Curated"
     },
     {
       "symbol": "PERSISTENT",
@@ -20419,10 +20591,7 @@
       "cmp": 6200.0,
       "day_change_pct": 1.31,
       "baseline_conviction": 8.0,
-      "conviction_source": "Live Auto-Synced",
-      "fifty_two_week_high": 6599.0,
-      "fifty_two_week_low": 4244.5,
-      "dist_from_52w_high": 6.0
+      "conviction_source": "Live Auto-Synced"
     },
     {
       "symbol": "CDSL",
@@ -20445,10 +20614,7 @@
       "cmp": 1441.0,
       "day_change_pct": 1.98,
       "baseline_conviction": 6.6,
-      "conviction_source": "Live Auto-Synced",
-      "fifty_two_week_high": 1638.9,
-      "fifty_two_week_low": 1116.3,
-      "dist_from_52w_high": 12.1
+      "conviction_source": "Live Auto-Synced"
     },
     {
       "symbol": "KFINTECH",
@@ -20469,12 +20635,9 @@
         "Alternative Investment Fund (AIF) administration fees growth"
       ],
       "cmp": 995.0,
-      "day_change_pct": 6.53,
+      "day_change_pct": 0.46,
       "baseline_conviction": 7.2,
-      "conviction_source": "Live Auto-Synced",
-      "fifty_two_week_high": 1115.8,
-      "fifty_two_week_low": 784.0,
-      "dist_from_52w_high": 10.8
+      "conviction_source": "Live Auto-Synced"
     },
     {
       "symbol": "SONACOMS",
@@ -20495,12 +20658,9 @@
         "North America and Europe supply agreement expansions"
       ],
       "cmp": 881.5,
-      "day_change_pct": -0.19,
+      "day_change_pct": -0.32,
       "baseline_conviction": 6.8,
-      "conviction_source": "Live Auto-Synced",
-      "fifty_two_week_high": 934.9,
-      "fifty_two_week_low": 437.7,
-      "dist_from_52w_high": 5.7
+      "conviction_source": "Live Auto-Synced"
     }
   ],
   "mutual_funds": [
@@ -20759,7 +20919,7 @@
     }
   ],
   "institutional_flow": {
-    "timestamp": "2026-11-27 08:48:10",
+    "timestamp": "2026-11-27 09:02:10",
     "fii_dii_latest": {
       "date": "2026-11-26",
       "formatted_date": "Thu 26 Nov, 2026",
@@ -21036,7 +21196,7 @@
     "total_events": 9
   },
   "performance_scorecard": {
-    "timestamp": "2026-11-27 08:48:16",
+    "timestamp": "2026-11-27 09:02:11",
     "total_picks_tracked": 45,
     "win_rate_pct": 75.0,
     "resolved_trades_count": 8,
@@ -21439,7 +21599,7 @@
     ]
   },
   "market_movers": {
-    "timestamp": "2026-11-27 08:48:18",
+    "timestamp": "2026-11-27 09:02:11",
     "top_gainers": [
       {
         "symbol": "FIRSTCRY",
@@ -21518,23 +21678,23 @@
   "total_screened": 515,
   "disclaimer": "Application Designed and Developed by Swamy Chouhan - 9000632912. DISCLAIMER: This system is an AI-driven educational and research analytics tool. It does not provide SEBI-registered investment advice or guaranteed return recommendations. Stock markets involve risk. Always consult a certified financial advisor before trading.",
   "feed_health": {
-    "checked_at": "2026-11-27 08:48:18 IST",
-    "healthy_count": 4,
+    "checked_at": "2026-11-27 09:02:11 IST",
+    "healthy_count": 5,
     "total_feeds": 5,
     "feeds": [
       {
         "feed": "Yahoo NSE Quotes",
-        "status": "STALE",
-        "color": "#f59e0b",
-        "age": "14.7h ago",
-        "updated_at": "26-Nov 18:03 IST",
-        "detail": "14 indices, 127 picks"
+        "status": "FRESH",
+        "color": "#10b981",
+        "age": "3s ago",
+        "updated_at": "27-Nov 09:02 IST",
+        "detail": "14 indices, 126 picks"
       },
       {
         "feed": "AMFI Live NAVs",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "1m ago",
+        "age": "14m ago",
         "updated_at": "27-Nov 08:47 IST",
         "detail": "8/8 Live NAVs"
       },
@@ -21542,8 +21702,8 @@
         "feed": "FII/DII & Nifty PCR",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "8s ago",
-        "updated_at": "27-Nov 08:48 IST",
+        "age": "0s ago",
+        "updated_at": "27-Nov 09:02 IST",
         "detail": "PCR 1.03 (LIVE)"
       },
       {
@@ -21551,14 +21711,14 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "0s ago",
-        "updated_at": "27-Nov 08:48 IST",
+        "updated_at": "27-Nov 09:02 IST",
         "detail": "5 gainers / 5 losers"
       },
       {
         "feed": "Corporate Actions",
         "status": "FRESH",
         "color": "#10b981",
-        "age": "5s ago",
+        "age": "13m ago",
         "updated_at": "27-Nov 08:48 IST",
         "detail": "9 events tracked"
       }
