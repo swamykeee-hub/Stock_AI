@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-27 13:41:45",
+  "timestamp": "2026-11-27 13:45:59",
   "fii_dii_latest": {
     "date": "2026-11-26",
     "formatted_date": "Thu 26 Nov, 2026",
@@ -179,13 +179,13 @@
     }
   ],
   "derivatives": {
-    "pcr": 0.68,
-    "total_call_oi": 4352773,
-    "total_put_oi": 2979477,
+    "pcr": 0.69,
+    "total_call_oi": 4366758,
+    "total_put_oi": 2996072,
     "max_pain_strike": 25700.0,
     "status": "LIVE"
   },
   "smart_money_sentiment": "OVERSOLD_BOUNCE",
   "sentiment_badge": "\ud83d\udfe1 OVERSOLD / REVERSAL WATCH",
-  "sentiment_rationale": "Nifty PCR is deeply oversold at 0.68. Call heavy positioning historically leads to sharp short-covering rallies once support holds."
+  "sentiment_rationale": "Nifty PCR is deeply oversold at 0.69. Call heavy positioning historically leads to sharp short-covering rallies once support holds."
 }
