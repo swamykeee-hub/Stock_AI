@@ -6,25 +6,25 @@
   "inflection_score": 6.6,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "11456",
-    "current_price": "548",
-    "stock_pe": "40.2",
+    "market_cap_cr": "11502",
+    "current_price": "550",
+    "stock_pe": "40.4",
     "book_value": "99.2",
-    "dividend_yield_pct": "0.69",
+    "dividend_yield_pct": "0.7",
     "roce_pct": "17.1",
     "roe_pct": "12.9",
     "debt_to_equity": "0.00",
     "face_value": "1",
-    "pb_ratio": "5.52",
-    "market_cap_num": 11456.0,
-    "current_price_num": 548.0,
-    "pe_num": 40.2,
+    "pb_ratio": "5.54",
+    "market_cap_num": 11502.0,
+    "current_price_num": 550.0,
+    "pe_num": 40.4,
     "book_value_num": 99.2,
     "roce_num": 17.1,
     "roe_num": 12.9,
-    "pb_num": 5.52,
-    "peg_ratio": "3.62",
-    "peg_num": 3.62
+    "pb_num": 5.54,
+    "peg_ratio": "3.64",
+    "peg_num": 3.64
   },
   "ranges": {
     "sales_cagr_3y": 7.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": -12.0,
     "roe_3y": 18.0,
     "roe_5y": 18.0,
-    "price_cagr_3y": -4.0,
+    "price_cagr_3y": -5.0,
     "price_cagr_5y": null
   },
   "inflection": {
@@ -81,7 +81,7 @@
     "Company has reduced debt."
   ],
   "red_flags": [
-    "Expensive Valuation vs Growth (PEG: 3.62x)",
+    "Expensive Valuation vs Growth (PEG: 3.64x)",
     "The company has delivered a poor sales growth of 11.3% over past five years.",
     "Company has high debtors of 159 days."
   ]

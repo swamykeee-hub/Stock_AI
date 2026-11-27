@@ -6,9 +6,9 @@
   "inflection_score": 7.7,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "62643",
+    "market_cap_cr": "62654",
     "current_price": "830",
-    "stock_pe": "58.3",
+    "stock_pe": "58.4",
     "book_value": "139",
     "dividend_yield_pct": "0.12",
     "roce_pct": "13.4",
@@ -16,9 +16,9 @@
     "debt_to_equity": "0.30",
     "face_value": "10",
     "pb_ratio": "5.97",
-    "market_cap_num": 62643.0,
+    "market_cap_num": 62654.0,
     "current_price_num": 830.0,
-    "pe_num": 58.3,
+    "pe_num": 58.4,
     "book_value_num": 139.0,
     "roce_num": 13.4,
     "roe_num": 11.2,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 7.0,
     "roe_3y": 10.0,
     "roe_5y": 9.0,
-    "price_cagr_3y": 31.0,
+    "price_cagr_3y": 30.0,
     "price_cagr_5y": 24.0
   },
   "inflection": {
@@ -80,7 +80,7 @@
     "Company has delivered good profit growth of 64.3% CAGR over last 5 years"
   ],
   "red_flags": [
-    "Stock is trading at 5.93 times its book value",
+    "Stock is trading at 6.01 times its book value",
     "Company has a low return on equity of 9.87% over last 3 years."
   ]
 }

@@ -1,0 +1,83 @@
+{
+  "schema_version": 3,
+  "is_consolidated": true,
+  "score": 4.1,
+  "quality_score": 3.3,
+  "inflection_score": 4.7,
+  "valuation_score": 5.0,
+  "metrics": {
+    "market_cap_cr": "6588",
+    "current_price": "33.7",
+    "stock_pe": "",
+    "book_value": "-2.87",
+    "dividend_yield_pct": "0",
+    "roce_pct": "-12.7",
+    "roe_pct": "%",
+    "debt_to_equity": "N/A",
+    "face_value": "10",
+    "pb_ratio": "N/A",
+    "market_cap_num": 6588.0,
+    "current_price_num": 33.7,
+    "pe_num": null,
+    "book_value_num": -2.87,
+    "roce_num": -12.7,
+    "roe_num": null,
+    "peg_ratio": "N/A"
+  },
+  "ranges": {
+    "sales_cagr_3y": null,
+    "sales_cagr_5y": null,
+    "sales_growth_ttm": 8.0,
+    "profit_cagr_3y": null,
+    "profit_cagr_5y": null,
+    "profit_growth_ttm": -132.0,
+    "roe_3y": null,
+    "roe_5y": null,
+    "price_cagr_3y": -29.0,
+    "price_cagr_5y": -21.0
+  },
+  "inflection": {
+    "qtr_sales_yoy_pct": 21.0,
+    "qtr_pat_qoq_pct": 37.9,
+    "qtr_pat_yoy_pct": -64.1,
+    "qtr_pat_prev_yoy_pct": -110.2,
+    "qtr_eps_yoy_pct": -66.7,
+    "opm_latest_pct": 26.0,
+    "opm_year_ago_pct": 25.0,
+    "opm_expansion_bps": 100.0,
+    "is_sequential_pat_accel": false,
+    "is_financial_sector": false
+  },
+  "balance_inst": {
+    "is_financial_sector": false,
+    "debt_to_equity": null,
+    "roce_latest_tbl_pct": -13.0,
+    "roce_prev_pct": -0.0,
+    "roce_delta_pct": -13.0,
+    "cwip_cr": 153.0,
+    "cwip_growth_pct": -25.4,
+    "cwip_to_fixed_assets_pct": 3.2,
+    "cfo_latest_cr": 246.0,
+    "fcf_latest_cr": -1164.0,
+    "cfo_ebitda_pct": -39.0,
+    "cfo_to_pat_3y": null,
+    "promoter_pct": 74.36,
+    "promoter_qoq_delta_pct": 0.0,
+    "promoter_4q_delta_pct": 0.0,
+    "promoter_pledge_pct": 0.0,
+    "fii_pct": 2.43,
+    "dii_pct": 0.18,
+    "inst_total_pct": 2.61,
+    "inst_4q_delta_pct": -0.16,
+    "public_4q_delta_pct": 0.16
+  },
+  "strengths": [
+    "Established market presence"
+  ],
+  "red_flags": [
+    "Sub-par ROCE (-12.7%)",
+    "Quarterly Earnings Contraction (-64.1% YoY)",
+    "Company has low interest coverage ratio.",
+    "Earnings include an other income of Rs.1,834 Cr."
+  ]
+}

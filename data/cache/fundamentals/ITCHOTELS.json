@@ -6,25 +6,25 @@
   "inflection_score": 9.5,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "39083",
-    "current_price": "188",
-    "stock_pe": "39.5",
+    "market_cap_cr": "38416",
+    "current_price": "184",
+    "stock_pe": "38.8",
     "book_value": "56.4",
     "dividend_yield_pct": "0.54",
     "roce_pct": "11.2",
     "roe_pct": "7.89",
     "debt_to_equity": "0.01",
     "face_value": "1",
-    "pb_ratio": "3.33",
-    "market_cap_num": 39083.0,
-    "current_price_num": 188.0,
-    "pe_num": 39.5,
+    "pb_ratio": "3.26",
+    "market_cap_num": 38416.0,
+    "current_price_num": 184.0,
+    "pe_num": 38.8,
     "book_value_num": 56.4,
     "roce_num": 11.2,
     "roe_num": 7.89,
-    "pb_num": 3.33,
-    "peg_ratio": "0.75",
-    "peg_num": 0.75
+    "pb_num": 3.26,
+    "peg_ratio": "0.74",
+    "peg_num": 0.74
   },
   "ranges": {
     "sales_cagr_3y": null,
@@ -82,7 +82,7 @@
   ],
   "red_flags": [
     "Institutional Distribution (FII+DII -10.5% over 4Q)",
-    "Stock is trading at 3.32 times its book value",
+    "Stock is trading at 3.28 times its book value",
     "Company has a low return on equity of 6.65% over last 3 years."
   ]
 }

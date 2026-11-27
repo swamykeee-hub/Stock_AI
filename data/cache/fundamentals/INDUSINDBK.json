@@ -6,23 +6,23 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "75694",
-    "current_price": "972",
-    "stock_pe": "25.2",
+    "market_cap_cr": "74486",
+    "current_price": "956",
+    "stock_pe": "24.9",
     "book_value": "870",
-    "dividend_yield_pct": "0.15",
+    "dividend_yield_pct": "0.16",
     "roce_pct": "5.68",
     "roe_pct": "1.36",
     "debt_to_equity": "N/A",
     "face_value": "10",
-    "pb_ratio": "1.12",
-    "market_cap_num": 75694.0,
-    "current_price_num": 972.0,
-    "pe_num": 25.2,
+    "pb_ratio": "1.10",
+    "market_cap_num": 74486.0,
+    "current_price_num": 956.0,
+    "pe_num": 24.9,
     "book_value_num": 870.0,
     "roce_num": 5.68,
     "roe_num": 1.36,
-    "pb_num": 1.12,
+    "pb_num": 1.1,
     "peg_ratio": "0.05",
     "peg_num": 0.05
   },
@@ -36,7 +36,7 @@
     "roe_3y": 7.0,
     "roe_5y": 9.0,
     "price_cagr_3y": -13.0,
-    "price_cagr_5y": 2.0
+    "price_cagr_5y": 1.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 1.6,
@@ -78,7 +78,7 @@
     "Explosive Quarterly PAT Surge (+100.0% YoY)",
     "Smart Money Accumulation (FII+DII +5.9% over 4Q)",
     "Deep GARP Value (PEG: 0.05x)",
-    "Stock is trading at 1.11 times its book value"
+    "Stock is trading at 1.13 times its book value"
   ],
   "red_flags": [
     "Sub-par ROCE (5.7%)",
