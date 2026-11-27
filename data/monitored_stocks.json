@@ -4,45 +4,45 @@
     "name": "Rubicon Research Ltd.",
     "sector": "Healthcare",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
-    "monitoring_status": "Auto-Discovered Entry (\u20b91678.41 \u2014 \u20b91858.04)",
-    "entry_trigger": 1848.8,
-    "target_3m": 2070.66,
-    "target_1y": 2440.42,
-    "stop_loss": 1622.06,
-    "risk_reward": "1:0.98",
+    "monitoring_status": "Auto-Discovered Entry (\u20b91661.14 \u2014 \u20b91860.96)",
+    "entry_trigger": 1851.7,
+    "target_3m": 2073.9,
+    "target_1y": 2444.24,
+    "stop_loss": 1613.82,
+    "risk_reward": "1:0.93",
     "cio_conviction": 9.7,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
-    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Mid/Small-Cap Alpha). Trading with 1Y return +190.5%, ROCE 28.4%, OPM +200 bps, Qtr PAT +66.7% YoY, and FII+DII 4Q accumulation +7.3%.",
+    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Mid/Small-Cap Alpha). Trading with 1Y return +191.0%, ROCE 28.4%, OPM +200 bps, Qtr PAT +66.7% YoY, and FII+DII 4Q accumulation +7.3%.",
     "catalysts": [
       "Elite Capital Efficiency (ROCE: 28.4%)",
       "Superior ROE: 27.0%",
       "Cash Generative Profits (CFO/EBITDA: 78%)"
     ],
-    "cmp": 1848.8,
-    "day_change_pct": 8.19
+    "cmp": 1851.7,
+    "day_change_pct": 2.14
   },
   {
     "symbol": "ACUTAAS",
     "name": "Acutaas Chemicals Ltd.",
     "sector": "Healthcare",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
-    "monitoring_status": "Auto-Discovered Entry (\u20b93828.54 \u2014 \u20b94082.31)",
-    "entry_trigger": 4062.0,
-    "target_3m": 4549.44,
-    "target_1y": 5361.84,
+    "monitoring_status": "Auto-Discovered Entry (\u20b93828.54 \u2014 \u20b94100.3)",
+    "entry_trigger": 4079.9,
+    "target_3m": 4569.49,
+    "target_1y": 5385.47,
     "stop_loss": 3565.9,
-    "risk_reward": "1:0.98",
+    "risk_reward": "1:0.95",
     "cio_conviction": 9.6,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
-    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Mid/Small-Cap Alpha). Trading with 1Y return +144.1%, ROCE 31.6%, OPM +900 bps, Qtr PAT +70.8% YoY, and FII+DII 4Q accumulation +2.6%.",
+    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Mid/Small-Cap Alpha). Trading with 1Y return +145.2%, ROCE 31.6%, OPM +900 bps, Qtr PAT +70.8% YoY, and FII+DII 4Q accumulation +2.6%.",
     "catalysts": [
       "Elite Capital Efficiency (ROCE: 31.6%)",
       "Superior ROE: 24.0%",
       "Fortress Balance Sheet (D/E: 0.01x)"
     ],
-    "cmp": 4062.0,
+    "cmp": 4079.9,
     "day_change_pct": 2.18
   },
   {
@@ -50,22 +50,22 @@
     "name": "Radico Khaitan Ltd",
     "sector": "Fast Moving Consumer Goods",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
-    "monitoring_status": "Auto-Discovered Entry (\u20b94531.33 \u2014 \u20b94679.58)",
-    "entry_trigger": 4656.3,
-    "target_3m": 5215.06,
-    "target_1y": 6146.32,
+    "monitoring_status": "Auto-Discovered Entry (\u20b94531.33 \u2014 \u20b94694.35)",
+    "entry_trigger": 4671.0,
+    "target_3m": 5231.52,
+    "target_1y": 6165.72,
     "stop_loss": 4397.49,
-    "risk_reward": "1:2.16",
+    "risk_reward": "1:2.05",
     "cio_conviction": 9.4,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
-    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Large-Cap Core). Trading with 1Y return +44.4%, ROCE 24.2%, OPM +400 bps, Qtr PAT +65.7% YoY, and FII+DII 4Q accumulation +3.1%.",
+    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Large-Cap Core). Trading with 1Y return +44.9%, ROCE 24.2%, OPM +400 bps, Qtr PAT +65.7% YoY, and FII+DII 4Q accumulation +3.1%.",
     "catalysts": [
       "Strong Capital Return (ROCE: 24.2%)",
       "Superior ROE: 20.3%",
       "Fortress Balance Sheet (D/E: 0.11x)"
     ],
-    "cmp": 4656.3,
+    "cmp": 4671.0,
     "day_change_pct": -0.6
   },
   {
@@ -73,22 +73,22 @@
     "name": "Chennai Petroleum Corporation Ltd.",
     "sector": "Oil Gas & Consumable Fuels",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
-    "monitoring_status": "Auto-Discovered Entry (\u20b91346.23 \u2014 \u20b91380.57)",
-    "entry_trigger": 1373.7,
-    "target_3m": 1538.54,
-    "target_1y": 1813.28,
-    "stop_loss": 1267.43,
+    "monitoring_status": "Auto-Discovered Entry (\u20b91347.11 \u2014 \u20b91381.47)",
+    "entry_trigger": 1374.6,
+    "target_3m": 1539.55,
+    "target_1y": 1814.47,
+    "stop_loss": 1268.33,
     "risk_reward": "1:1.55",
     "cio_conviction": 9.4,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
-    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Mid/Small-Cap Alpha). Trading with 1Y return +48.1%, ROCE 34.9%, OPM +900 bps, Qtr PAT +212.5% YoY, and FII+DII 4Q accumulation +5.6%.",
+    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Mid/Small-Cap Alpha). Trading with 1Y return +48.2%, ROCE 34.9%, OPM +900 bps, Qtr PAT +212.5% YoY, and FII+DII 4Q accumulation +5.6%.",
     "catalysts": [
       "Elite Capital Efficiency (ROCE: 34.9%)",
       "Superior ROE: 32.0%",
       "Fortress Balance Sheet (D/E: 0.16x)"
     ],
-    "cmp": 1373.7,
+    "cmp": 1374.6,
     "day_change_pct": 0.59
   },
   {
@@ -110,8 +110,8 @@
       "US FDA non-critical inspection clearance",
       "Non-ARV API diversification"
     ],
-    "cmp": 2506.0,
-    "day_change_pct": 1.83,
+    "cmp": 2505.0,
+    "day_change_pct": 3.77,
     "fifty_two_week_high": 2488.0,
     "fifty_two_week_low": 917.95,
     "dist_from_52w_high": 6.0,
@@ -136,7 +136,7 @@
       "Monetization of StAR MF platform transaction fees",
       "New commodity and interest rate derivative product rollouts"
     ],
-    "cmp": 3996.3,
+    "cmp": 3990.4,
     "day_change_pct": 5.7,
     "fifty_two_week_high": 4446.8,
     "fifty_two_week_low": 2377.4,
@@ -162,7 +162,7 @@
       "Star Bazaar grocery retail turning EBITDA positive",
       "Rapid store addition pace accelerating market share"
     ],
-    "cmp": 3279.0,
+    "cmp": 3262.6,
     "day_change_pct": -1.72,
     "fifty_two_week_high": 4417.8,
     "fifty_two_week_low": 2183.667,
@@ -214,8 +214,8 @@
       "Kakinada mega-facility commercial batch commencement",
       "EBITDA margins reverting to historical 38-40% band"
     ],
-    "cmp": 11688.0,
-    "day_change_pct": -0.73,
+    "cmp": 11631.0,
+    "day_change_pct": 4.58,
     "fifty_two_week_high": 11824.0,
     "fifty_two_week_low": 5647.5,
     "dist_from_52w_high": 5.7,
@@ -240,7 +240,7 @@
       "Institutional and FPI commodity participation growth",
       "New electricity and base metal index derivative launches"
     ],
-    "cmp": 3845.0,
+    "cmp": 3835.0,
     "day_change_pct": 7.57,
     "baseline_conviction": 8.4,
     "conviction_source": "Live Auto-Synced"
@@ -312,7 +312,7 @@
       "Railway Kavach collision avoidance electronics rollout",
       "Defense export orders expansion to Southeast Asia and Middle East"
     ],
-    "cmp": 405.5,
+    "cmp": 404.5,
     "day_change_pct": 0.05,
     "baseline_conviction": 9.0,
     "conviction_source": "Live Auto-Synced"
@@ -361,8 +361,8 @@
       "IT Hardware PLI 2.0 contract executions",
       "Operating leverage in high-volume smartphone segment"
     ],
-    "cmp": 12742.0,
-    "day_change_pct": -2.0,
+    "cmp": 12718.0,
+    "day_change_pct": -3.08,
     "fifty_two_week_high": 15775.0,
     "fifty_two_week_low": 9600.0,
     "dist_from_52w_high": 17.1,
@@ -410,7 +410,7 @@
       "BFSI tech modernization spending rebound",
       "High margin software IP solutions ramp-up"
     ],
-    "cmp": 6187.0,
+    "cmp": 6200.0,
     "day_change_pct": 1.31,
     "baseline_conviction": 8.0,
     "conviction_source": "Live Auto-Synced"
@@ -433,7 +433,7 @@
       "Surge in IPO listings driving corporate fee revenues",
       "Insurance electronic depository (e-IA) policy adoption"
     ],
-    "cmp": 1441.5,
+    "cmp": 1441.0,
     "day_change_pct": 1.98,
     "baseline_conviction": 6.6,
     "conviction_source": "Live Auto-Synced"
@@ -456,8 +456,8 @@
       "Record new mutual fund folio and SIP inflows",
       "Alternative Investment Fund (AIF) administration fees growth"
     ],
-    "cmp": 998.0,
-    "day_change_pct": 6.53,
+    "cmp": 995.0,
+    "day_change_pct": 0.46,
     "baseline_conviction": 7.2,
     "conviction_source": "Live Auto-Synced"
   },
@@ -479,8 +479,8 @@
       "Execution of new electric two-wheeler and three-wheeler motor orders",
       "North America and Europe supply agreement expansions"
     ],
-    "cmp": 885.0,
-    "day_change_pct": -0.19,
+    "cmp": 881.5,
+    "day_change_pct": -0.32,
     "baseline_conviction": 6.8,
     "conviction_source": "Live Auto-Synced"
   }

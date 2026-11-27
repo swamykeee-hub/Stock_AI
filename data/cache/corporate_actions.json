@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-26 18:03:37",
+  "timestamp": "2026-11-27 08:48:13",
   "dividends": [
     {
       "stock_name": "Fusion CX",
@@ -7,8 +7,8 @@
       "event_type": "Dividend - Final",
       "ex_date": "27/11/2026",
       "dividend_amount": "\u20b90.75",
-      "cmp": "\u20b9270.25",
-      "estimated_yield": "0.28%",
+      "cmp": "\u20b9272.80",
+      "estimated_yield": "0.27%",
       "announcement_date": "16/11/2026"
     },
     {
@@ -24,44 +24,36 @@
   ],
   "earnings": [
     {
-      "date": "26 Nov",
-      "stock_name": "Maxwell Engineering Solutions",
-      "symbol": "MESL",
+      "date": "27 Nov",
+      "stock_name": "Setco Automotive",
+      "symbol": "GSC01",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9255.50",
-      "market_cap": "\u20b9349.99 Cr"
+      "ltp": "\u20b916.93",
+      "market_cap": "\u20b9226.47 Cr"
     },
     {
-      "date": "26 Nov",
-      "stock_name": "Johnsoncab Electricals",
-      "symbol": "JEL",
+      "date": "27 Nov",
+      "stock_name": "C2C Advanced Systems",
+      "symbol": "CASL",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9252.50",
-      "market_cap": "\u20b9266.91 Cr"
+      "ltp": "\u20b9129.75",
+      "market_cap": "\u20b9215.92 Cr"
     },
     {
-      "date": "26 Nov",
-      "stock_name": "HGS India",
-      "symbol": "HIL01",
+      "date": "27 Nov",
+      "stock_name": "HAMPTON SKY REALTY",
+      "symbol": "RI12",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b9176.40",
-      "market_cap": "\u20b9191.55 Cr"
+      "ltp": "\u20b96.74",
+      "market_cap": "\u20b9184.82 Cr"
     },
     {
-      "date": "26 Nov",
-      "stock_name": "GB Logistics Commerce",
-      "symbol": "GLC",
+      "date": "27 Nov",
+      "stock_name": "Mitshi India",
+      "symbol": "DPC",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b934.05",
-      "market_cap": "\u20b927.9 Cr"
-    },
-    {
-      "date": "26 Nov",
-      "stock_name": "Annvrridhhi Ventures",
-      "symbol": "JTP",
-      "result_type": "Q2 FY26-27",
-      "ltp": "\u20b97.70",
-      "market_cap": "\u20b923.76 Cr"
+      "ltp": "\u20b910.61",
+      "market_cap": "\u20b99.34 Cr"
     }
   ],
   "splits_and_actions": [
@@ -90,5 +82,5 @@
       "announcement_date": "14/10/2026"
     }
   ],
-  "total_events": 10
+  "total_events": 9
 }

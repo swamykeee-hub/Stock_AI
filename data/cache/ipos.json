@@ -1,35 +1,5 @@
 [
   {
-    "name": "Watrana Rentals",
-    "category": "NSE Emerge",
-    "sector": "Logistics Solution Provider",
-    "status": "Closed",
-    "issue_period": "19 Nov 2026 \u2013 23 Nov 2026",
-    "price_band": "\u20b9232.00 - \u20b9245.00",
-    "lot_size": "600",
-    "issue_size_cr": "120.10",
-    "gmp_inr": "\u20b922.00",
-    "gmp_pct": 9.0,
-    "subscription_total": "150.55x",
-    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9267 (+9.0%)"
-  },
-  {
-    "name": "Mahanadi Coalfields",
-    "category": "Mainboard",
-    "sector": "Minerals",
-    "status": "Closed",
-    "issue_period": "19 Nov 2026 \u2013 23 Nov 2026",
-    "price_band": "\u20b9129.00 - \u20b9136.00",
-    "lot_size": "110",
-    "issue_size_cr": "9000.97",
-    "gmp_inr": "\u20b90.75",
-    "gmp_pct": 0.6,
-    "subscription_total": "1.52x",
-    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 19 Nov 2026 \u2013 23 Nov 2026 \u2022 Est. Listing: \u20b9137 (+0.6%)"
-  },
-  {
     "name": "Shree Siddhivinayak Greentech Industries",
     "category": "NSE Emerge",
     "sector": "Agro",
@@ -38,11 +8,11 @@
     "price_band": "\u20b9130.00 - \u20b9142.00",
     "lot_size": "1,000",
     "issue_size_cr": "93.66",
-    "gmp_inr": "\u20b98.00",
-    "gmp_pct": 5.6,
+    "gmp_inr": "\u20b94.00",
+    "gmp_pct": 2.8,
     "subscription_total": "1.31x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9150 (+5.6%)"
+    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9146 (+2.8%)"
   },
   {
     "name": "Foodlink F&B Holdings",
@@ -53,41 +23,26 @@
     "price_band": "\u20b9181.00 - \u20b9191.00",
     "lot_size": "78",
     "issue_size_cr": "360.76",
-    "gmp_inr": "\u20b912.00",
-    "gmp_pct": 6.3,
+    "gmp_inr": "\u20b97.00",
+    "gmp_pct": 3.7,
     "subscription_total": "1.09x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9203 (+6.3%)"
+    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9198 (+3.7%)"
   },
   {
     "name": "Airpro Technology",
     "category": "NSE Emerge",
     "sector": "Information Technology",
-    "status": "Upcoming",
+    "status": "Open",
     "issue_period": "27 Nov 2026 \u2013 1 Dec 2026",
     "price_band": "\u20b999.00",
     "lot_size": "1,200",
     "issue_size_cr": "35.64",
-    "gmp_inr": "\u20b92.00",
-    "gmp_pct": 2.0,
-    "subscription_total": "Yet to Open",
+    "gmp_inr": "\u20b93.00",
+    "gmp_pct": 3.0,
+    "subscription_total": "Active",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b9101 (+2.0%)"
-  },
-  {
-    "name": "A J Packaging",
-    "category": "NSE Emerge",
-    "sector": "Aluminium, Copper & Zinc Products",
-    "status": "Upcoming",
-    "issue_period": "1 Dec 2026 \u2013 3 Dec 2026",
-    "price_band": "\u20b9175.00 - \u20b9180.00",
-    "lot_size": "800",
-    "issue_size_cr": "54.00",
-    "gmp_inr": "\u20b924.00",
-    "gmp_pct": 13.3,
-    "subscription_total": "Yet to Open",
-    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 1 Dec 2026 \u2013 3 Dec 2026 \u2022 Est. Listing: \u20b9204 (+13.3%)"
+    "analysis": "Dates: 27 Nov 2026 \u2013 1 Dec 2026 \u2022 Est. Listing: \u20b9102 (+3.0%)"
   },
   {
     "name": "Matangi Rubber",
@@ -103,6 +58,21 @@
     "subscription_total": "Yet to Open",
     "verdict": "\u2705 APPLY (Moderate Listing Gain)",
     "analysis": "Dates: 1 Dec 2026 \u2013 3 Dec 2026 \u2022 Est. Listing: \u20b9199 (+15.7%)"
+  },
+  {
+    "name": "A J Packaging",
+    "category": "NSE Emerge",
+    "sector": "Aluminium, Copper & Zinc Products",
+    "status": "Upcoming",
+    "issue_period": "1 Dec 2026 \u2013 3 Dec 2026",
+    "price_band": "\u20b9175.00 - \u20b9180.00",
+    "lot_size": "800",
+    "issue_size_cr": "54.00",
+    "gmp_inr": "\u20b924.00",
+    "gmp_pct": 13.3,
+    "subscription_total": "Yet to Open",
+    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
+    "analysis": "Dates: 1 Dec 2026 \u2013 3 Dec 2026 \u2022 Est. Listing: \u20b9204 (+13.3%)"
   },
   {
     "name": "Monomark Engineering",
@@ -210,6 +180,36 @@
     "analysis": "Dates: TBA \u2022 Est. Listing: \u20b90 (+0.0%)"
   },
   {
+    "name": "Watrana Rentals",
+    "category": "NSE Emerge",
+    "sector": "Recently Listed",
+    "status": "Recently Listed",
+    "issue_period": "Recently Listed",
+    "price_band": "\u20b9245.00",
+    "lot_size": "Standard",
+    "issue_size_cr": "Completed",
+    "gmp_inr": "\u20b923",
+    "gmp_pct": -100.0,
+    "subscription_total": "Listed",
+    "verdict": "\ud83d\udd34 DISCOUNT LISTING",
+    "analysis": "Issued at \u20b9245.0, debuted at \u20b90.0 (-100.0% listing return)."
+  },
+  {
+    "name": "Mahanadi Coalfields",
+    "category": "Mainboard",
+    "sector": "Recently Listed",
+    "status": "Recently Listed",
+    "issue_period": "Recently Listed",
+    "price_band": "\u20b9136.00",
+    "lot_size": "Standard",
+    "issue_size_cr": "Completed",
+    "gmp_inr": "\u20b90",
+    "gmp_pct": -100.0,
+    "subscription_total": "Listed",
+    "verdict": "\ud83d\udd34 DISCOUNT LISTING",
+    "analysis": "Issued at \u20b9136.0, debuted at \u20b90.0 (-100.0% listing return)."
+  },
+  {
     "name": "Crystal Crop Protection",
     "category": "Mainboard",
     "sector": "Recently Listed",
@@ -298,35 +298,5 @@
     "subscription_total": "Listed @ \u20b9106.00 (+1.0%)",
     "verdict": "\u2705 POSITIVE LISTING",
     "analysis": "Issued at \u20b9105.0, debuted at \u20b9106.0 (+1.0% listing return)."
-  },
-  {
-    "name": "HGS (India)",
-    "category": "NSE Emerge",
-    "sector": "Recently Listed",
-    "status": "Recently Listed",
-    "issue_period": "Recently Listed",
-    "price_band": "\u20b9120.00",
-    "lot_size": "Standard",
-    "issue_size_cr": "Completed",
-    "gmp_inr": "\u20b928",
-    "gmp_pct": 33.3,
-    "subscription_total": "Listed @ \u20b9160.00 (+33.3%)",
-    "verdict": "\u2705 POSITIVE LISTING",
-    "analysis": "Issued at \u20b9120.0, debuted at \u20b9160.0 (+33.3% listing return)."
-  },
-  {
-    "name": "Bombay Coated and Special Steels",
-    "category": "Mainboard",
-    "sector": "Recently Listed",
-    "status": "Recently Listed",
-    "issue_period": "Recently Listed",
-    "price_band": "\u20b982.00",
-    "lot_size": "Standard",
-    "issue_size_cr": "Completed",
-    "gmp_inr": "\u20b99",
-    "gmp_pct": 11.0,
-    "subscription_total": "Listed @ \u20b991.00 (+11.0%)",
-    "verdict": "\u2705 POSITIVE LISTING",
-    "analysis": "Issued at \u20b982.0, debuted at \u20b991.0 (+11.0% listing return)."
   }
 ]
