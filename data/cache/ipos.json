@@ -189,10 +189,10 @@
     "lot_size": "Standard",
     "issue_size_cr": "Completed",
     "gmp_inr": "\u20b923",
-    "gmp_pct": -100.0,
-    "subscription_total": "Listed",
+    "gmp_pct": -0.8,
+    "subscription_total": "Listed @ \u20b9243.00 (-0.8%)",
     "verdict": "\ud83d\udd34 DISCOUNT LISTING",
-    "analysis": "Issued at \u20b9245.0, debuted at \u20b90.0 (-100.0% listing return)."
+    "analysis": "Issued at \u20b9245.0, debuted at \u20b9243.0 (-0.8% listing return)."
   },
   {
     "name": "Mahanadi Coalfields",
