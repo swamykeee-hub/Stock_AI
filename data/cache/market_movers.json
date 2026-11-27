@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-27 09:18:12",
+  "timestamp": "2026-11-27 09:18:55",
   "top_gainers": [
     {
       "symbol": "HINDZINC",
@@ -171,167 +171,167 @@
     {
       "symbol": "VOLTAS",
       "name": "Voltas",
-      "price": "\u20b91,182.90",
-      "price_raw": "1182.90",
-      "change_pct": "-2.68%",
-      "change_val": "-32.60",
+      "price": "\u20b91,184.00",
+      "price_raw": "1184.00",
+      "change_pct": "-2.59%",
+      "change_val": "-31.50",
       "high": "1,211.80",
       "low": "1,176.90",
-      "volume": "68,635"
-    },
-    {
-      "symbol": "HFCL",
-      "name": "HFCL",
-      "price": "\u20b9160.80",
-      "price_raw": "160.80",
-      "change_pct": "-2.11%",
-      "change_val": "-3.47",
-      "high": "162.00",
-      "low": "158.57",
-      "volume": "708,374"
+      "volume": "82,181"
     },
     {
       "symbol": "ZYDUSWELL",
       "name": "Zydus Wellness",
-      "price": "\u20b9448.25",
-      "price_raw": "448.25",
-      "change_pct": "-1.68%",
-      "change_val": "-7.65",
+      "price": "\u20b9447.35",
+      "price_raw": "447.35",
+      "change_pct": "-1.88%",
+      "change_val": "-8.55",
       "high": "465.00",
-      "low": "446.15",
-      "volume": "14,695"
+      "low": "446.00",
+      "volume": "18,921"
     },
     {
       "symbol": "HYUNDAI",
       "name": "Hyundai Motor",
-      "price": "\u20b92,075.40",
-      "price_raw": "2075.40",
-      "change_pct": "-1.37%",
-      "change_val": "-28.80",
+      "price": "\u20b92,068.90",
+      "price_raw": "2068.90",
+      "change_pct": "-1.68%",
+      "change_val": "-35.30",
       "high": "2,103.90",
       "low": "2,057.30",
-      "volume": "32,382"
+      "volume": "39,856"
     },
     {
       "symbol": "HONASA",
       "name": "Honasa Consumer",
-      "price": "\u20b9526.20",
-      "price_raw": "526.20",
-      "change_pct": "-1.32%",
-      "change_val": "-7.05",
+      "price": "\u20b9525.15",
+      "price_raw": "525.15",
+      "change_pct": "-1.52%",
+      "change_val": "-8.10",
       "high": "534.90",
-      "low": "525.05",
-      "volume": "10,703"
-    },
-    {
-      "symbol": "SHRIRAMFIN",
-      "name": "Shriram Finance",
-      "price": "\u20b9949.80",
-      "price_raw": "949.80",
-      "change_pct": "-1.25%",
-      "change_val": "-12.05",
-      "high": "963.00",
-      "low": "944.50",
-      "volume": "354,618"
+      "low": "525.00",
+      "volume": "16,840"
     },
     {
       "symbol": "MPHASIS",
       "name": "MphasiS",
-      "price": "\u20b92,479.60",
-      "price_raw": "2479.60",
-      "change_pct": "-1.21%",
-      "change_val": "-30.40",
+      "price": "\u20b92,473.10",
+      "price_raw": "2473.10",
+      "change_pct": "-1.47%",
+      "change_val": "-36.90",
       "high": "2,532.60",
       "low": "2,465.60",
-      "volume": "19,388"
+      "volume": "22,742"
+    },
+    {
+      "symbol": "SHRIRAMFIN",
+      "name": "Shriram Finance",
+      "price": "\u20b9948.10",
+      "price_raw": "948.10",
+      "change_pct": "-1.43%",
+      "change_val": "-13.75",
+      "high": "963.00",
+      "low": "944.50",
+      "volume": "414,426"
     },
     {
       "symbol": "ZYDUSLIFE",
       "name": "Zydus Life",
-      "price": "\u20b91,182.70",
-      "price_raw": "1182.70",
-      "change_pct": "-0.96%",
-      "change_val": "-11.50",
-      "high": "1,185.00",
+      "price": "\u20b91,178.00",
+      "price_raw": "1178.00",
+      "change_pct": "-1.36%",
+      "change_val": "-16.20",
+      "high": "1,189.90",
       "low": "1,156.50",
-      "volume": "248,829"
-    },
-    {
-      "symbol": "CROMPTON",
-      "name": "CG Consumer",
-      "price": "\u20b9213.72",
-      "price_raw": "213.72",
-      "change_pct": "-0.87%",
-      "change_val": "-1.88",
-      "high": "214.00",
-      "low": "211.45",
-      "volume": "73,709"
+      "volume": "312,493"
     },
     {
       "symbol": "CUB",
       "name": "City Union Bank",
-      "price": "\u20b9237.03",
-      "price_raw": "237.03",
-      "change_pct": "-0.82%",
-      "change_val": "-1.97",
+      "price": "\u20b9236.38",
+      "price_raw": "236.38",
+      "change_pct": "-1.10%",
+      "change_val": "-2.62",
       "high": "239.58",
       "low": "233.50",
-      "volume": "344,791"
+      "volume": "410,641"
     },
     {
-      "symbol": "BLUESTARCO",
-      "name": "Blue Star",
-      "price": "\u20b91,766.00",
-      "price_raw": "1766.00",
-      "change_pct": "-0.80%",
-      "change_val": "-14.20",
-      "high": "1,774.50",
-      "low": "1,758.10",
-      "volume": "6,321"
+      "symbol": "CROMPTON",
+      "name": "CG Consumer",
+      "price": "\u20b9213.25",
+      "price_raw": "213.25",
+      "change_pct": "-1.09%",
+      "change_val": "-2.35",
+      "high": "214.00",
+      "low": "211.45",
+      "volume": "92,242"
+    },
+    {
+      "symbol": "HFCL",
+      "name": "HFCL",
+      "price": "\u20b9162.70",
+      "price_raw": "162.70",
+      "change_pct": "-0.96%",
+      "change_val": "-1.57",
+      "high": "162.75",
+      "low": "158.57",
+      "volume": "818,850"
     },
     {
       "symbol": "VIJAYA",
       "name": "Vijaya Diagnost",
-      "price": "\u20b91,574.70",
-      "price_raw": "1574.70",
-      "change_pct": "-0.78%",
-      "change_val": "-12.40",
+      "price": "\u20b91,572.20",
+      "price_raw": "1572.20",
+      "change_pct": "-0.94%",
+      "change_val": "-14.90",
       "high": "1,587.20",
       "low": "1,569.10",
-      "volume": "1,782"
+      "volume": "3,004"
     },
     {
-      "symbol": "ASIANPAINT",
-      "name": "Asian Paints",
-      "price": "\u20b92,528.00",
-      "price_raw": "2528.00",
-      "change_pct": "-0.59%",
-      "change_val": "-15.00",
-      "high": "2,537.80",
-      "low": "2,508.30",
-      "volume": "21,286"
-    },
-    {
-      "symbol": "HINDPETRO",
-      "name": "HINDPETRO",
-      "price": "\u20b9383.40",
-      "price_raw": "383.40",
-      "change_pct": "-0.58%",
-      "change_val": "-2.25",
-      "high": "384.00",
-      "low": "380.05",
-      "volume": "109,322"
+      "symbol": "BLUESTARCO",
+      "name": "Blue Star",
+      "price": "\u20b91,764.00",
+      "price_raw": "1764.00",
+      "change_pct": "-0.91%",
+      "change_val": "-16.20",
+      "high": "1,774.50",
+      "low": "1,758.10",
+      "volume": "7,591"
     },
     {
       "symbol": "DMART",
       "name": "Avenue Supermar",
-      "price": "\u20b93,513.60",
-      "price_raw": "3513.60",
-      "change_pct": "-0.55%",
-      "change_val": "-19.40",
+      "price": "\u20b93,504.50",
+      "price_raw": "3504.50",
+      "change_pct": "-0.81%",
+      "change_val": "-28.50",
       "high": "3,540.00",
-      "low": "3,505.10",
-      "volume": "6,694"
+      "low": "3,504.50",
+      "volume": "9,048"
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "name": "Asian Paints",
+      "price": "\u20b92,525.10",
+      "price_raw": "2525.10",
+      "change_pct": "-0.70%",
+      "change_val": "-17.90",
+      "high": "2,537.80",
+      "low": "2,508.30",
+      "volume": "25,160"
+    },
+    {
+      "symbol": "GODREJCP",
+      "name": "Godrej Consumer",
+      "price": "\u20b9941.70",
+      "price_raw": "941.70",
+      "change_pct": "-0.61%",
+      "change_val": "-5.80",
+      "high": "949.50",
+      "low": "930.65",
+      "volume": "64,304"
     }
   ]
 }
