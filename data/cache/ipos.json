@@ -8,11 +8,11 @@
     "price_band": "\u20b9130.00 - \u20b9142.00",
     "lot_size": "1,000",
     "issue_size_cr": "93.66",
-    "gmp_inr": "\u20b94.00",
-    "gmp_pct": 2.8,
+    "gmp_inr": "\u20b92.00",
+    "gmp_pct": 1.4,
     "subscription_total": "1.57x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9146 (+2.8%)"
+    "analysis": "Dates: 25 Nov 2026 \u2013 27 Nov 2026 \u2022 Est. Listing: \u20b9144 (+1.4%)"
   },
   {
     "name": "Foodlink F&B Holdings",
@@ -23,11 +23,11 @@
     "price_band": "\u20b9181.00 - \u20b9191.00",
     "lot_size": "78",
     "issue_size_cr": "360.76",
-    "gmp_inr": "\u20b97.00",
-    "gmp_pct": 3.7,
-    "subscription_total": "1.34x",
+    "gmp_inr": "\u20b94.00",
+    "gmp_pct": 2.1,
+    "subscription_total": "1.35x",
     "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
-    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9198 (+3.7%)"
+    "analysis": "Dates: 26 Nov 2026 \u2013 30 Nov 2026 \u2022 Est. Listing: \u20b9195 (+2.1%)"
   },
   {
     "name": "Airpro Technology",
@@ -53,11 +53,11 @@
     "price_band": "\u20b9163.00 - \u20b9172.00",
     "lot_size": "87",
     "issue_size_cr": "125.16",
-    "gmp_inr": "\u20b927.00",
-    "gmp_pct": 15.7,
+    "gmp_inr": "\u20b922.00",
+    "gmp_pct": 12.8,
     "subscription_total": "Yet to Open",
-    "verdict": "\u2705 APPLY (Moderate Listing Gain)",
-    "analysis": "Dates: 1 Dec 2026 \u2013 3 Dec 2026 \u2022 Est. Listing: \u20b9199 (+15.7%)"
+    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
+    "analysis": "Dates: 1 Dec 2026 \u2013 3 Dec 2026 \u2022 Est. Listing: \u20b9194 (+12.8%)"
   },
   {
     "name": "A J Packaging",
@@ -83,11 +83,11 @@
     "price_band": "\u20b960.00 - \u20b965.00",
     "lot_size": "225",
     "issue_size_cr": "175.50",
-    "gmp_inr": "\u20b924.00",
-    "gmp_pct": 36.9,
+    "gmp_inr": "\u20b920.00",
+    "gmp_pct": 30.8,
     "subscription_total": "Yet to Open",
     "verdict": "\ud83d\udd25 STRONG APPLY (High Listing Gain)",
-    "analysis": "Dates: 2 Dec 2026 \u2013 4 Dec 2026 \u2022 Est. Listing: \u20b989 (+36.9%)"
+    "analysis": "Dates: 2 Dec 2026 \u2013 4 Dec 2026 \u2022 Est. Listing: \u20b985 (+30.8%)"
   },
   {
     "name": "Swara Baby Products",
@@ -98,11 +98,11 @@
     "price_band": "\u20b9105.00 - \u20b9111.00",
     "lot_size": "135",
     "issue_size_cr": "800.00",
-    "gmp_inr": "\u20b90.00",
-    "gmp_pct": 0.0,
+    "gmp_inr": "\u20b97.00",
+    "gmp_pct": 6.3,
     "subscription_total": "Yet to Open",
-    "verdict": "\u23f8\ufe0f AVOID / WATCH SUBSCRIPTION",
-    "analysis": "Dates: 2 Dec 2026 \u2013 4 Dec 2026 \u2022 Est. Listing: \u20b9111 (+0.0%)"
+    "verdict": "\u2139\ufe0f CAUTIOUS / LONG TERM ONLY",
+    "analysis": "Dates: 2 Dec 2026 \u2013 4 Dec 2026 \u2022 Est. Listing: \u20b9118 (+6.3%)"
   },
   {
     "name": "Vishwas Refoils & Consumer",
