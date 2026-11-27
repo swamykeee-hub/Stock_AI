@@ -6,25 +6,25 @@
   "inflection_score": 7.5,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "296594",
-    "current_price": "406",
-    "stock_pe": "46.4",
+    "market_cap_cr": "299993",
+    "current_price": "410",
+    "stock_pe": "46.9",
     "book_value": "35.9",
     "dividend_yield_pct": "0.62",
     "roce_pct": "36.4",
     "roe_pct": "27.5",
     "debt_to_equity": "0.00",
     "face_value": "1",
-    "pb_ratio": "11.31",
-    "market_cap_num": 296594.0,
-    "current_price_num": 406.0,
-    "pe_num": 46.4,
+    "pb_ratio": "11.42",
+    "market_cap_num": 299993.0,
+    "current_price_num": 410.0,
+    "pe_num": 46.9,
     "book_value_num": 35.9,
     "roce_num": 36.4,
     "roe_num": 27.5,
-    "pb_num": 11.31,
-    "peg_ratio": "1.72",
-    "peg_num": 1.72
+    "pb_num": 11.42,
+    "peg_ratio": "1.74",
+    "peg_num": 1.74
   },
   "ranges": {
     "sales_cagr_3y": 16.0,
@@ -78,7 +78,7 @@
     "Superior ROE: 27.5%",
     "Fortress Balance Sheet (D/E: 0.00x)",
     "Multi-Year Profit Compounding (3Y CAGR: +27%)",
-    "Reasonable GARP Multiple (PEG: 1.72x)"
+    "Reasonable GARP Multiple (PEG: 1.74x)"
   ],
   "red_flags": [
     "Stock is trading at 11.4 times its book value",

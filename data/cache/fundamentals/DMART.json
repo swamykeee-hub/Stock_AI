@@ -6,25 +6,25 @@
   "inflection_score": 5.9,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "231410",
-    "current_price": "3548",
-    "stock_pe": "74.2",
+    "market_cap_cr": "229535",
+    "current_price": "3519",
+    "stock_pe": "73.6",
     "book_value": "400",
     "dividend_yield_pct": "0",
     "roce_pct": "17.2",
     "roe_pct": "12.9",
     "debt_to_equity": "0.16",
     "face_value": "10",
-    "pb_ratio": "8.87",
-    "market_cap_num": 231410.0,
-    "current_price_num": 3548.0,
-    "pe_num": 74.2,
+    "pb_ratio": "8.80",
+    "market_cap_num": 229535.0,
+    "current_price_num": 3519.0,
+    "pe_num": 73.6,
     "book_value_num": 400.0,
     "roce_num": 17.2,
     "roe_num": 12.9,
-    "pb_num": 8.87,
-    "peg_ratio": "5.30",
-    "peg_num": 5.3
+    "pb_num": 8.8,
+    "peg_ratio": "5.26",
+    "peg_num": 5.26
   },
   "ranges": {
     "sales_cagr_3y": 17.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 14.0,
     "roe_3y": 14.0,
     "roe_5y": 14.0,
-    "price_cagr_3y": -2.0,
-    "price_cagr_5y": -5.0
+    "price_cagr_3y": -3.0,
+    "price_cagr_5y": -6.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 18.0,
@@ -79,8 +79,8 @@
     "Cash Generative Profits (CFO/EBITDA: 87%)"
   ],
   "red_flags": [
-    "Expensive Valuation vs Growth (PEG: 5.30x)",
-    "Stock is trading at 8.91 times its book value",
+    "Expensive Valuation vs Growth (PEG: 5.26x)",
+    "Stock is trading at 8.76 times its book value",
     "Though the company is reporting repeated profits, it is not paying out dividend",
     "Company has a low return on equity of 13.6% over last 3 years."
   ]

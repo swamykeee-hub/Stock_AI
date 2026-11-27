@@ -6,25 +6,25 @@
   "inflection_score": 6.6,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "28821",
-    "current_price": "1096",
-    "stock_pe": "46",
+    "market_cap_cr": "29649",
+    "current_price": "1127",
+    "stock_pe": "47.4",
     "book_value": "231",
-    "dividend_yield_pct": "0.83",
+    "dividend_yield_pct": "0.81",
     "roce_pct": "16.2",
     "roe_pct": "12.5",
     "debt_to_equity": "0.39",
     "face_value": "5",
-    "pb_ratio": "4.74",
-    "market_cap_num": 28821.0,
-    "current_price_num": 1096.0,
-    "pe_num": 46.0,
+    "pb_ratio": "4.88",
+    "market_cap_num": 29649.0,
+    "current_price_num": 1127.0,
+    "pe_num": 47.4,
     "book_value_num": 231.0,
     "roce_num": 16.2,
     "roe_num": 12.5,
-    "pb_num": 4.74,
-    "peg_ratio": "1.15",
-    "peg_num": 1.15
+    "pb_num": 4.88,
+    "peg_ratio": "1.19",
+    "peg_num": 1.19
   },
   "ranges": {
     "sales_cagr_3y": 29.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": -18.0,
     "roe_3y": 15.0,
     "roe_5y": 13.0,
-    "price_cagr_3y": 24.0,
-    "price_cagr_5y": 44.0
+    "price_cagr_3y": 25.0,
+    "price_cagr_5y": 45.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 12.0,
@@ -78,7 +78,7 @@
     "Multi-Year Profit Compounding (3Y CAGR: +40%)",
     "Smart Money Accumulation (FII+DII +4.6% over 4Q)",
     "Capex Capacity Runway Active (CWIP: \u20b9621 Cr)",
-    "Reasonable GARP Multiple (PEG: 1.15x)"
+    "Reasonable GARP Multiple (PEG: 1.19x)"
   ],
   "red_flags": [
     "Weak Operating Cash Conversion (3Y CFO/PAT: -0.73x)",

@@ -6,25 +6,25 @@
   "inflection_score": 3.5,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "97119",
-    "current_price": "391",
-    "stock_pe": "32.2",
+    "market_cap_cr": "96162",
+    "current_price": "387",
+    "stock_pe": "31.8",
     "book_value": "240",
-    "dividend_yield_pct": "0.52",
+    "dividend_yield_pct": "0.51",
     "roce_pct": "5.61",
     "roe_pct": "8.85",
     "debt_to_equity": "0.02",
     "face_value": "2",
-    "pb_ratio": "1.63",
-    "market_cap_num": 97119.0,
-    "current_price_num": 391.0,
-    "pe_num": 32.2,
+    "pb_ratio": "1.61",
+    "market_cap_num": 96162.0,
+    "current_price_num": 387.0,
+    "pe_num": 31.8,
     "book_value_num": 240.0,
     "roce_num": 5.61,
     "roe_num": 8.85,
-    "pb_num": 1.63,
-    "peg_ratio": "1.53",
-    "peg_num": 1.53
+    "pb_num": 1.61,
+    "peg_ratio": "1.51",
+    "peg_num": 1.51
   },
   "ranges": {
     "sales_cagr_3y": 1.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": -49.0,
     "roe_3y": 9.0,
     "roe_5y": 9.0,
-    "price_cagr_3y": -2.0,
+    "price_cagr_3y": -3.0,
     "price_cagr_5y": 1.0
   },
   "inflection": {
@@ -78,7 +78,7 @@
     "Cash Generative Profits (CFO/EBITDA: 77%)",
     "Multi-Year Profit Compounding (3Y CAGR: +21%)",
     "Capex Capacity Runway Active (CWIP: \u20b99,727 Cr)",
-    "Reasonable GARP Multiple (PEG: 1.53x)"
+    "Reasonable GARP Multiple (PEG: 1.51x)"
   ],
   "red_flags": [
     "Sub-par ROCE (5.6%)",

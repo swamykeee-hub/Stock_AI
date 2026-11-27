@@ -6,25 +6,25 @@
   "inflection_score": 7.5,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "1059600",
-    "current_price": "1148",
-    "stock_pe": "12.4",
+    "market_cap_cr": "1041230",
+    "current_price": "1128",
+    "stock_pe": "12.2",
     "book_value": "728",
-    "dividend_yield_pct": "1.53",
+    "dividend_yield_pct": "1.52",
     "roce_pct": "6.13",
     "roe_pct": "15.4",
     "debt_to_equity": "N/A",
     "face_value": "1",
-    "pb_ratio": "1.58",
-    "market_cap_num": 1059600.0,
-    "current_price_num": 1148.0,
-    "pe_num": 12.4,
+    "pb_ratio": "1.55",
+    "market_cap_num": 1041230.0,
+    "current_price_num": 1128.0,
+    "pe_num": 12.2,
     "book_value_num": 728.0,
     "roce_num": 6.13,
     "roe_num": 15.4,
-    "pb_num": 1.58,
-    "peg_ratio": "0.62",
-    "peg_num": 0.62
+    "pb_num": 1.55,
+    "peg_ratio": "0.61",
+    "peg_num": 0.61
   },
   "ranges": {
     "sales_cagr_3y": 14.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 9.0,
     "roe_3y": 17.0,
     "roe_5y": 16.0,
-    "price_cagr_3y": 27.0,
+    "price_cagr_3y": 26.0,
     "price_cagr_5y": 19.0
   },
   "inflection": {
@@ -75,7 +75,7 @@
   },
   "strengths": [
     "Sharp Margin Inflection (OPM +300 bps YoY)",
-    "Deep GARP Value (PEG: 0.62x)",
+    "Deep GARP Value (PEG: 0.61x)",
     "Company has been maintaining a healthy dividend payout of 18.6%"
   ],
   "red_flags": [

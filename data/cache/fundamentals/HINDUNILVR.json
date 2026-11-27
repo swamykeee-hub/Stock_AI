@@ -6,25 +6,25 @@
   "inflection_score": 4.5,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "508275",
-    "current_price": "2163",
-    "stock_pe": "46.1",
+    "market_cap_cr": "503517",
+    "current_price": "2143",
+    "stock_pe": "45.7",
     "book_value": "210",
-    "dividend_yield_pct": "1.93",
+    "dividend_yield_pct": "1.92",
     "roce_pct": "28.1",
     "roe_pct": "31",
     "debt_to_equity": "0.03",
     "face_value": "1",
-    "pb_ratio": "10.30",
-    "market_cap_num": 508275.0,
-    "current_price_num": 2163.0,
-    "pe_num": 46.1,
+    "pb_ratio": "10.20",
+    "market_cap_num": 503517.0,
+    "current_price_num": 2143.0,
+    "pe_num": 45.7,
     "book_value_num": 210.0,
     "roce_num": 28.1,
     "roe_num": 31.0,
-    "pb_num": 10.3,
-    "peg_ratio": "3.07",
-    "peg_num": 3.07
+    "pb_num": 10.2,
+    "peg_ratio": "3.05",
+    "peg_num": 3.05
   },
   "ranges": {
     "sales_cagr_3y": 2.0,
@@ -81,8 +81,8 @@
     "Company is almost debt free."
   ],
   "red_flags": [
-    "Expensive Valuation vs Growth (PEG: 3.07x)",
-    "Stock is trading at 10.3 times its book value",
+    "Expensive Valuation vs Growth (PEG: 3.05x)",
+    "Stock is trading at 10.1 times its book value",
     "The company has delivered a poor sales growth of 6.14% over past five years.",
     "Earnings include an other income of Rs.5,492 Cr."
   ]

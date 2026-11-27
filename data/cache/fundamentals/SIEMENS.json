@@ -6,25 +6,25 @@
   "inflection_score": 7.6,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "128560",
-    "current_price": "3610",
-    "stock_pe": "84.2",
+    "market_cap_cr": "128068",
+    "current_price": "3596",
+    "stock_pe": "83.9",
     "book_value": "444",
-    "dividend_yield_pct": "0.5",
+    "dividend_yield_pct": "0.49",
     "roce_pct": "21.4",
     "roe_pct": "19.2",
     "debt_to_equity": "0.02",
     "face_value": "2",
-    "pb_ratio": "8.13",
-    "market_cap_num": 128560.0,
-    "current_price_num": 3610.0,
-    "pe_num": 84.2,
+    "pb_ratio": "8.10",
+    "market_cap_num": 128068.0,
+    "current_price_num": 3596.0,
+    "pe_num": 83.9,
     "book_value_num": 444.0,
     "roce_num": 21.4,
     "roe_num": 19.2,
-    "pb_num": 8.13,
-    "peg_ratio": "3.66",
-    "peg_num": 3.66
+    "pb_num": 8.1,
+    "peg_ratio": "3.65",
+    "peg_num": 3.65
   },
   "ranges": {
     "sales_cagr_3y": 15.0,
@@ -82,8 +82,8 @@
   ],
   "red_flags": [
     "Weak Operating Cash Conversion (3Y CFO/PAT: 0.33x)",
-    "Expensive Valuation vs Growth (PEG: 3.66x)",
-    "Stock is trading at 8.18 times its book value",
+    "Expensive Valuation vs Growth (PEG: 3.65x)",
+    "Stock is trading at 8.11 times its book value",
     "Earnings include an other income of Rs.2,203 Cr."
   ]
 }

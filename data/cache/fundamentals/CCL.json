@@ -6,25 +6,25 @@
   "inflection_score": 8.6,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "12522",
-    "current_price": "938",
-    "stock_pe": "27.1",
+    "market_cap_cr": "12289",
+    "current_price": "920",
+    "stock_pe": "26.6",
     "book_value": "199",
-    "dividend_yield_pct": "0.61",
+    "dividend_yield_pct": "0.62",
     "roce_pct": "15.8",
     "roe_pct": "18",
     "debt_to_equity": "0.46",
     "face_value": "2",
-    "pb_ratio": "4.71",
-    "market_cap_num": 12522.0,
-    "current_price_num": 938.0,
-    "pe_num": 27.1,
+    "pb_ratio": "4.62",
+    "market_cap_num": 12289.0,
+    "current_price_num": 920.0,
+    "pe_num": 26.6,
     "book_value_num": 199.0,
     "roce_num": 15.8,
     "roe_num": 18.0,
-    "pb_num": 4.71,
-    "peg_ratio": "0.73",
-    "peg_num": 0.73
+    "pb_num": 4.62,
+    "peg_ratio": "0.72",
+    "peg_num": 0.72
   },
   "ranges": {
     "sales_cagr_3y": 29.0,
@@ -78,10 +78,10 @@
     "Cash Generative Profits (CFO/EBITDA: 123%)",
     "Expanding ROCE Efficiency (+3.0% YoY)",
     "Capex Capacity Runway Active (CWIP: \u20b95 Cr)",
-    "Deep GARP Value (PEG: 0.73x)"
+    "Deep GARP Value (PEG: 0.72x)"
   ],
   "red_flags": [
-    "Stock is trading at 4.72 times its book value",
+    "Stock is trading at 4.62 times its book value",
     "Company might be capitalizing the interest cost"
   ]
 }

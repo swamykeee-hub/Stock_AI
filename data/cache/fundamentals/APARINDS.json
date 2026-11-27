@@ -6,23 +6,23 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "59881",
-    "current_price": "14300",
-    "stock_pe": "42.8",
+    "market_cap_cr": "60040",
+    "current_price": "14338",
+    "stock_pe": "42.9",
     "book_value": "2035",
-    "dividend_yield_pct": "0.42",
+    "dividend_yield_pct": "0.41",
     "roce_pct": "31.8",
     "roe_pct": "20.3",
     "debt_to_equity": "0.12",
     "face_value": "10",
-    "pb_ratio": "7.03",
-    "market_cap_num": 59881.0,
-    "current_price_num": 14300.0,
-    "pe_num": 42.8,
+    "pb_ratio": "7.05",
+    "market_cap_num": 60040.0,
+    "current_price_num": 14338.0,
+    "pe_num": 42.9,
     "book_value_num": 2035.0,
     "roce_num": 31.8,
     "roe_num": 20.3,
-    "pb_num": 7.03,
+    "pb_num": 7.05,
     "peg_ratio": "0.55",
     "peg_num": 0.55
   },
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 49.0,
     "roe_3y": 22.0,
     "roe_5y": 22.0,
-    "price_cagr_3y": 36.0,
-    "price_cagr_5y": 85.0
+    "price_cagr_3y": 38.0,
+    "price_cagr_5y": 84.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 21.0,
@@ -81,7 +81,7 @@
     "Expanding Operating Margins (+200 bps)"
   ],
   "red_flags": [
-    "Stock is trading at 7.00 times its book value",
+    "Stock is trading at 7.10 times its book value",
     "Promoter holding has decreased over last quarter: -2.34%",
     "Company's cost of borrowing seems high"
   ]

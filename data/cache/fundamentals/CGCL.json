@@ -6,23 +6,23 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "22423",
-    "current_price": "233",
+    "market_cap_cr": "22322",
+    "current_price": "232",
     "stock_pe": "17.1",
     "book_value": "82.7",
-    "dividend_yield_pct": "0.08",
+    "dividend_yield_pct": "0.09",
     "roce_pct": "11.7",
     "roe_pct": "16.5",
     "debt_to_equity": "N/A",
     "face_value": "1",
-    "pb_ratio": "2.82",
-    "market_cap_num": 22423.0,
-    "current_price_num": 233.0,
+    "pb_ratio": "2.81",
+    "market_cap_num": 22322.0,
+    "current_price_num": 232.0,
     "pe_num": 17.1,
     "book_value_num": 82.7,
     "roce_num": 11.7,
     "roe_num": 16.5,
-    "pb_num": 2.82,
+    "pb_num": 2.81,
     "peg_ratio": "0.21",
     "peg_num": 0.21
   },
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 83.0,
     "roe_3y": 13.0,
     "roe_5y": 12.0,
-    "price_cagr_3y": 8.0,
+    "price_cagr_3y": 7.0,
     "price_cagr_5y": 14.0
   },
   "inflection": {
@@ -82,7 +82,7 @@
   ],
   "red_flags": [
     "Weak Operating Cash Conversion (3Y CFO/PAT: -9.81x)",
-    "Stock is trading at 2.84 times its book value",
+    "Stock is trading at 2.81 times its book value",
     "Company has low interest coverage ratio.",
     "Company has a low return on equity of 12.6% over last 3 years."
   ]

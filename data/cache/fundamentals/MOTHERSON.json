@@ -6,25 +6,25 @@
   "inflection_score": 9.6,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "177823",
-    "current_price": "167",
-    "stock_pe": "36.4",
+    "market_cap_cr": "173347",
+    "current_price": "163",
+    "stock_pe": "35.4",
     "book_value": "43",
     "dividend_yield_pct": "0.36",
     "roce_pct": "13.4",
     "roe_pct": "11.2",
     "debt_to_equity": "0.51",
     "face_value": "1",
-    "pb_ratio": "3.88",
-    "market_cap_num": 177823.0,
-    "current_price_num": 167.0,
-    "pe_num": 36.4,
+    "pb_ratio": "3.79",
+    "market_cap_num": 173347.0,
+    "current_price_num": 163.0,
+    "pe_num": 35.4,
     "book_value_num": 43.0,
     "roce_num": 13.4,
     "roe_num": 11.2,
-    "pb_num": 3.88,
-    "peg_ratio": "0.79",
-    "peg_num": 0.79
+    "pb_num": 3.79,
+    "peg_ratio": "0.77",
+    "peg_num": 0.77
   },
   "ranges": {
     "sales_cagr_3y": 17.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 46.0,
     "roe_3y": 12.0,
     "roe_5y": 10.0,
-    "price_cagr_3y": 42.0,
+    "price_cagr_3y": 40.0,
     "price_cagr_5y": 16.0
   },
   "inflection": {
@@ -78,10 +78,10 @@
     "Explosive Quarterly PAT Surge (+44.0% YoY)",
     "Multi-Year Profit Compounding (3Y CAGR: +40%)",
     "Capex Capacity Runway Active (CWIP: \u20b95,535 Cr)",
-    "Deep GARP Value (PEG: 0.79x)"
+    "Deep GARP Value (PEG: 0.77x)"
   ],
   "red_flags": [
-    "Stock is trading at 3.87 times its book value",
+    "Stock is trading at 3.83 times its book value",
     "Company has a low return on equity of 11.7% over last 3 years.",
     "Promoter holding has decreased over last 3 years: -16.2%"
   ]

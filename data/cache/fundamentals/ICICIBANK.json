@@ -6,25 +6,25 @@
   "inflection_score": 7.6,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "1170645",
-    "current_price": "1629",
-    "stock_pe": "19.8",
+    "market_cap_cr": "1147833",
+    "current_price": "1598",
+    "stock_pe": "19.4",
     "book_value": "540",
     "dividend_yield_pct": "0.74",
     "roce_pct": "7.18",
     "roe_pct": "15.9",
     "debt_to_equity": "N/A",
     "face_value": "2",
-    "pb_ratio": "3.02",
-    "market_cap_num": 1170645.0,
-    "current_price_num": 1629.0,
-    "pe_num": 19.8,
+    "pb_ratio": "2.96",
+    "market_cap_num": 1147833.0,
+    "current_price_num": 1598.0,
+    "pe_num": 19.4,
     "book_value_num": 540.0,
     "roce_num": 7.18,
     "roe_num": 15.9,
-    "pb_num": 3.02,
-    "peg_ratio": "0.93",
-    "peg_num": 0.93
+    "pb_num": 2.96,
+    "peg_ratio": "0.91",
+    "peg_num": 0.91
   },
   "ranges": {
     "sales_cagr_3y": 17.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 11.0,
     "roe_3y": 17.0,
     "roe_5y": 17.0,
-    "price_cagr_3y": 21.0,
-    "price_cagr_5y": 18.0
+    "price_cagr_3y": 20.0,
+    "price_cagr_5y": 17.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 16.2,
@@ -56,9 +56,9 @@
     "roce_latest_tbl_pct": null,
     "roce_prev_pct": null,
     "roce_delta_pct": null,
-    "cwip_cr": -0.0,
+    "cwip_cr": 0.0,
     "cwip_growth_pct": 0.0,
-    "cwip_to_fixed_assets_pct": -0.0,
+    "cwip_to_fixed_assets_pct": 0.0,
     "cfo_latest_cr": 67325.0,
     "fcf_latest_cr": 63778.0,
     "cfo_ebitda_pct": null,
@@ -75,12 +75,12 @@
   },
   "strengths": [
     "Expanding Operating Margins (+200 bps)",
-    "Deep GARP Value (PEG: 0.93x)"
+    "Deep GARP Value (PEG: 0.91x)"
   ],
   "red_flags": [
     "Sub-par ROCE (7.2%)",
     "Institutional Distribution (FII+DII -14.2% over 4Q)",
-    "Stock is trading at 3.05 times its book value",
+    "Stock is trading at 2.98 times its book value",
     "Company has low interest coverage ratio."
   ]
 }

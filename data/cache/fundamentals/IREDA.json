@@ -6,25 +6,25 @@
   "inflection_score": 3.6,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "35388",
+    "market_cap_cr": "35430",
     "current_price": "126",
-    "stock_pe": "18",
+    "stock_pe": "17.9",
     "book_value": "51",
-    "dividend_yield_pct": "1.06",
+    "dividend_yield_pct": "1.05",
     "roce_pct": "8.69",
     "roe_pct": "15.6",
     "debt_to_equity": "N/A",
     "face_value": "10",
     "pb_ratio": "2.47",
-    "market_cap_num": 35388.0,
+    "market_cap_num": 35430.0,
     "current_price_num": 126.0,
-    "pe_num": 18.0,
+    "pe_num": 17.9,
     "book_value_num": 51.0,
     "roce_num": 8.69,
     "roe_num": 15.6,
     "pb_num": 2.47,
-    "peg_ratio": "1.29",
-    "peg_num": 1.29
+    "peg_ratio": "1.28",
+    "peg_num": 1.28
   },
   "ranges": {
     "sales_cagr_3y": null,
@@ -74,7 +74,7 @@
     "public_4q_delta_pct": -0.61
   },
   "strengths": [
-    "Reasonable GARP Multiple (PEG: 1.29x)"
+    "Reasonable GARP Multiple (PEG: 1.28x)"
   ],
   "red_flags": [
     "Sub-par ROCE (8.7%)",

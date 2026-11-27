@@ -6,8 +6,8 @@
   "inflection_score": 10.0,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "14675",
-    "current_price": "1314",
+    "market_cap_cr": "14425",
+    "current_price": "1291",
     "stock_pe": "",
     "book_value": "409",
     "dividend_yield_pct": "0.19",
@@ -15,14 +15,14 @@
     "roe_pct": "-2.64",
     "debt_to_equity": "0.80",
     "face_value": "10",
-    "pb_ratio": "3.21",
-    "market_cap_num": 14675.0,
-    "current_price_num": 1314.0,
+    "pb_ratio": "3.16",
+    "market_cap_num": 14425.0,
+    "current_price_num": 1291.0,
     "pe_num": null,
     "book_value_num": 409.0,
     "roce_num": -4.48,
     "roe_num": -2.64,
-    "pb_num": 3.21,
+    "pb_num": 3.16,
     "peg_ratio": "N/A"
   },
   "ranges": {
@@ -34,7 +34,7 @@
     "profit_growth_ttm": 22.0,
     "roe_3y": -1.0,
     "roe_5y": 1.0,
-    "price_cagr_3y": 3.0,
+    "price_cagr_3y": 1.0,
     "price_cagr_5y": 10.0
   },
   "inflection": {
@@ -82,7 +82,7 @@
   "red_flags": [
     "Sub-par ROCE (-4.5%)",
     "Elevated Leverage (D/E: 0.80x)",
-    "Stock is trading at 3.18 times its book value",
+    "Stock is trading at 3.14 times its book value",
     "Company has low interest coverage ratio."
   ]
 }

@@ -1,42 +1,40 @@
 {
   "schema_version": 3,
-  "is_consolidated": false,
-  "score": 7.3,
-  "quality_score": 10.0,
+  "is_consolidated": true,
+  "score": 5.8,
+  "quality_score": 6.0,
   "inflection_score": 6.1,
-  "valuation_score": 3.2,
+  "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "34310",
-    "current_price": "30760",
-    "stock_pe": "43.5",
-    "book_value": "1352",
-    "dividend_yield_pct": "1.8",
-    "roce_pct": "64.4",
-    "roe_pct": "54.3",
+    "market_cap_cr": "\u20b9 Cr.",
+    "current_price": "\u20b9",
+    "stock_pe": "",
+    "book_value": "\u20b9",
+    "dividend_yield_pct": "%",
+    "roce_pct": "%",
+    "roe_pct": "%",
     "debt_to_equity": "0.26",
-    "face_value": "10",
-    "pb_ratio": "22.75",
-    "market_cap_num": 34310.0,
-    "current_price_num": 30760.0,
-    "pe_num": 43.5,
-    "book_value_num": 1352.0,
-    "roce_num": 64.4,
-    "roe_num": 54.3,
-    "pb_num": 22.75,
-    "peg_ratio": "3.95",
-    "peg_num": 3.95
+    "face_value": "\u20b9",
+    "pb_ratio": "N/A",
+    "market_cap_num": null,
+    "current_price_num": null,
+    "pe_num": null,
+    "book_value_num": null,
+    "roce_num": null,
+    "roe_num": null,
+    "peg_ratio": "N/A"
   },
   "ranges": {
-    "sales_cagr_3y": 4.0,
-    "sales_cagr_5y": 13.0,
-    "sales_growth_ttm": 10.0,
-    "profit_cagr_3y": 11.0,
-    "profit_cagr_5y": 18.0,
-    "profit_growth_ttm": 3.0,
-    "roe_3y": 47.0,
-    "roe_5y": 48.0,
-    "price_cagr_3y": -6.0,
-    "price_cagr_5y": -5.0
+    "sales_cagr_3y": null,
+    "sales_cagr_5y": null,
+    "sales_growth_ttm": null,
+    "profit_cagr_3y": null,
+    "profit_cagr_5y": null,
+    "profit_growth_ttm": null,
+    "roe_3y": null,
+    "roe_5y": null,
+    "price_cagr_3y": null,
+    "price_cagr_5y": null
   },
   "inflection": {
     "qtr_sales_yoy_pct": 12.0,
@@ -74,14 +72,10 @@
     "public_4q_delta_pct": 0.73
   },
   "strengths": [
-    "Elite Capital Efficiency (ROCE: 64.4%)",
-    "Superior ROE: 54.3%",
     "Cash Generative Profits (CFO/EBITDA: 92%)",
-    "Expanding ROCE Efficiency (+5.0% YoY)",
-    "Company has a good return on equity (ROE) track record: 3 Years ROE 47.0%"
+    "Expanding ROCE Efficiency (+5.0% YoY)"
   ],
   "red_flags": [
-    "Expensive Valuation vs Growth (PEG: 3.95x)",
-    "Stock is trading at 22.8 times its book value"
+    "Standard market & execution risks apply"
   ]
 }

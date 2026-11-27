@@ -6,23 +6,23 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "147883",
-    "current_price": "425",
-    "stock_pe": "51.4",
+    "market_cap_cr": "146160",
+    "current_price": "420",
+    "stock_pe": "50.8",
     "book_value": "76.8",
-    "dividend_yield_pct": "0.34",
+    "dividend_yield_pct": "0.33",
     "roce_pct": "9.14",
     "roe_pct": "6.25",
     "debt_to_equity": "0.22",
     "face_value": "2",
-    "pb_ratio": "5.53",
-    "market_cap_num": 147883.0,
-    "current_price_num": 425.0,
-    "pe_num": 51.4,
+    "pb_ratio": "5.47",
+    "market_cap_num": 146160.0,
+    "current_price_num": 420.0,
+    "pe_num": 50.8,
     "book_value_num": 76.8,
     "roce_num": 9.14,
     "roe_num": 6.25,
-    "pb_num": 5.53,
+    "pb_num": 5.47,
     "peg_ratio": "0.12",
     "peg_num": 0.12
   },
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 415.0,
     "roe_3y": 3.0,
     "roe_5y": 3.0,
-    "price_cagr_3y": 40.0,
-    "price_cagr_5y": 47.0
+    "price_cagr_3y": 39.0,
+    "price_cagr_5y": 48.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 24.0,
@@ -81,7 +81,7 @@
     "Multi-Year Profit Compounding (3Y CAGR: +36%)"
   ],
   "red_flags": [
-    "Stock is trading at 5.52 times its book value",
+    "Stock is trading at 5.47 times its book value",
     "Company has a low return on equity of 3.21% over last 3 years.",
     "Promoter holding has decreased over last 3 years: -5.00%"
   ]

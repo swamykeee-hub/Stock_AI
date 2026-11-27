@@ -6,25 +6,25 @@
   "inflection_score": 3.3,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "18121",
-    "current_price": "2696",
-    "stock_pe": "68.2",
+    "market_cap_cr": "18470",
+    "current_price": "2748",
+    "stock_pe": "69.5",
     "book_value": "734",
     "dividend_yield_pct": "0",
     "roce_pct": "12.7",
     "roe_pct": "9.07",
     "debt_to_equity": "0.40",
     "face_value": "10",
-    "pb_ratio": "3.67",
-    "market_cap_num": 18121.0,
-    "current_price_num": 2696.0,
-    "pe_num": 68.2,
+    "pb_ratio": "3.74",
+    "market_cap_num": 18470.0,
+    "current_price_num": 2748.0,
+    "pe_num": 69.5,
     "book_value_num": 734.0,
     "roce_num": 12.7,
     "roe_num": 9.07,
-    "pb_num": 3.67,
-    "peg_ratio": "1.26",
-    "peg_num": 1.26
+    "pb_num": 3.74,
+    "peg_ratio": "1.29",
+    "peg_num": 1.29
   },
   "ranges": {
     "sales_cagr_3y": 48.0,
@@ -76,7 +76,7 @@
   "strengths": [
     "Multi-Year Profit Compounding (3Y CAGR: +54%)",
     "Capex Capacity Runway Active (CWIP: \u20b9706 Cr)",
-    "Reasonable GARP Multiple (PEG: 1.26x)",
+    "Reasonable GARP Multiple (PEG: 1.29x)",
     "Company has delivered good profit growth of 106% CAGR over last 5 years"
   ],
   "red_flags": [

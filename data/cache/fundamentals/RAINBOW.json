@@ -6,8 +6,8 @@
   "inflection_score": 6.6,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "12912",
-    "current_price": "1271",
+    "market_cap_cr": "12918",
+    "current_price": "1272",
     "stock_pe": "44",
     "book_value": "169",
     "dividend_yield_pct": "0.28",
@@ -15,14 +15,14 @@
     "roe_pct": "16.7",
     "debt_to_equity": "0.56",
     "face_value": "10",
-    "pb_ratio": "7.52",
-    "market_cap_num": 12912.0,
-    "current_price_num": 1271.0,
+    "pb_ratio": "7.53",
+    "market_cap_num": 12918.0,
+    "current_price_num": 1272.0,
     "pe_num": 44.0,
     "book_value_num": 169.0,
     "roce_num": 17.4,
     "roe_num": 16.7,
-    "pb_num": 7.52,
+    "pb_num": 7.53,
     "peg_ratio": "2.75",
     "peg_num": 2.75
   },
@@ -80,6 +80,6 @@
     "Company's median sales growth is 22.8% of last 10 years"
   ],
   "red_flags": [
-    "Stock is trading at 7.50 times its book value"
+    "Stock is trading at 7.55 times its book value"
   ]
 }

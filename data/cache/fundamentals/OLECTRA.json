@@ -6,25 +6,25 @@
   "inflection_score": 6.7,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "8089",
-    "current_price": "986",
-    "stock_pe": "44.8",
+    "market_cap_cr": "8171",
+    "current_price": "995",
+    "stock_pe": "45.2",
     "book_value": "159",
     "dividend_yield_pct": "0.06",
     "roce_pct": "21",
     "roe_pct": "15.6",
     "debt_to_equity": "0.21",
     "face_value": "4",
-    "pb_ratio": "6.20",
-    "market_cap_num": 8089.0,
-    "current_price_num": 986.0,
-    "pe_num": 44.8,
+    "pb_ratio": "6.26",
+    "market_cap_num": 8171.0,
+    "current_price_num": 995.0,
+    "pe_num": 45.2,
     "book_value_num": 159.0,
     "roce_num": 21.0,
     "roe_num": 15.6,
-    "pb_num": 6.2,
-    "peg_ratio": "1.15",
-    "peg_num": 1.15
+    "pb_num": 6.26,
+    "peg_ratio": "1.16",
+    "peg_num": 1.16
   },
   "ranges": {
     "sales_cagr_3y": 28.0,
@@ -78,7 +78,7 @@
     "Fortress Balance Sheet (D/E: 0.21x)",
     "Cash Generative Profits (CFO/EBITDA: 46%)",
     "Multi-Year Profit Compounding (3Y CAGR: +39%)",
-    "Reasonable GARP Multiple (PEG: 1.15x)"
+    "Reasonable GARP Multiple (PEG: 1.16x)"
   ],
   "red_flags": [
     "Company has a low return on equity of 13.2% over last 3 years.",

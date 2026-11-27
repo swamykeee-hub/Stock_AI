@@ -6,25 +6,25 @@
   "inflection_score": 3.9,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "170621",
-    "current_price": "2100",
-    "stock_pe": "38.1",
+    "market_cap_cr": "163800",
+    "current_price": "2016",
+    "stock_pe": "36.5",
     "book_value": "243",
-    "dividend_yield_pct": "1",
+    "dividend_yield_pct": "1.02",
     "roce_pct": "38.8",
     "roe_pct": "30.3",
     "debt_to_equity": "0.03",
     "face_value": "10",
-    "pb_ratio": "8.64",
-    "market_cap_num": 170621.0,
-    "current_price_num": 2100.0,
-    "pe_num": 38.1,
+    "pb_ratio": "8.30",
+    "market_cap_num": 163800.0,
+    "current_price_num": 2016.0,
+    "pe_num": 36.5,
     "book_value_num": 243.0,
     "roce_num": 38.8,
     "roe_num": 30.3,
-    "pb_num": 8.64,
-    "peg_ratio": "7.62",
-    "peg_num": 7.62
+    "pb_num": 8.3,
+    "peg_ratio": "7.30",
+    "peg_num": 7.3
   },
   "ranges": {
     "sales_cagr_3y": 5.0,
@@ -83,7 +83,7 @@
   "red_flags": [
     "Operating Margin Compression (-500 bps YoY)",
     "Quarterly Earnings Contraction (-24.3% YoY)",
-    "Expensive Valuation vs Growth (PEG: 7.62x)",
-    "Stock is trading at 8.66 times its book value"
+    "Expensive Valuation vs Growth (PEG: 7.30x)",
+    "Stock is trading at 8.33 times its book value"
   ]
 }

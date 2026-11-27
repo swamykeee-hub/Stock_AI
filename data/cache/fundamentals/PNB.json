@@ -6,23 +6,23 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "170843",
-    "current_price": "149",
-    "stock_pe": "8.13",
+    "market_cap_cr": "169578",
+    "current_price": "148",
+    "stock_pe": "8.03",
     "book_value": "133",
-    "dividend_yield_pct": "2.02",
+    "dividend_yield_pct": "2.03",
     "roce_pct": "6.09",
     "roe_pct": "12.5",
     "debt_to_equity": "N/A",
     "face_value": "2",
-    "pb_ratio": "1.12",
-    "market_cap_num": 170843.0,
-    "current_price_num": 149.0,
-    "pe_num": 8.13,
+    "pb_ratio": "1.11",
+    "market_cap_num": 169578.0,
+    "current_price_num": 148.0,
+    "pe_num": 8.03,
     "book_value_num": 133.0,
     "roce_num": 6.09,
     "roe_num": 12.5,
-    "pb_num": 1.12,
+    "pb_num": 1.11,
     "peg_ratio": "0.09",
     "peg_num": 0.09
   },
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 35.0,
     "roe_3y": 12.0,
     "roe_5y": 9.0,
-    "price_cagr_3y": 25.0,
+    "price_cagr_3y": 23.0,
     "price_cagr_5y": 31.0
   },
   "inflection": {
@@ -78,7 +78,7 @@
     "Multi-Year Profit Compounding (3Y CAGR: +89%)",
     "Smart Money Accumulation (FII+DII +1.6% over 4Q)",
     "Deep GARP Value (PEG: 0.09x)",
-    "Stock is trading at 1.11 times its book value"
+    "Stock is trading at 1.08 times its book value"
   ],
   "red_flags": [
     "Sub-par ROCE (6.1%)",

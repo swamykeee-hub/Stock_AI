@@ -6,23 +6,23 @@
   "inflection_score": 4.8,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "143350",
-    "current_price": "277",
+    "market_cap_cr": "144359",
+    "current_price": "279",
     "stock_pe": "6.05",
     "book_value": "338",
-    "dividend_yield_pct": "3.06",
+    "dividend_yield_pct": "3.03",
     "roce_pct": "5.63",
     "roe_pct": "12.7",
     "debt_to_equity": "N/A",
     "face_value": "2",
-    "pb_ratio": "0.82",
-    "market_cap_num": 143350.0,
-    "current_price_num": 277.0,
+    "pb_ratio": "0.83",
+    "market_cap_num": 144359.0,
+    "current_price_num": 279.0,
     "pe_num": 6.05,
     "book_value_num": 338.0,
     "roce_num": 5.63,
     "roe_num": 12.7,
-    "pb_num": 0.82,
+    "pb_num": 0.83,
     "peg_ratio": "0.19",
     "peg_num": 0.19
   },
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 23.0,
     "roe_3y": 15.0,
     "roe_5y": 14.0,
-    "price_cagr_3y": 13.0,
+    "price_cagr_3y": 12.0,
     "price_cagr_5y": 25.0
   },
   "inflection": {
@@ -75,8 +75,8 @@
   },
   "strengths": [
     "Deep GARP Value (PEG: 0.19x)",
-    "Stock is trading at 0.82 times its book value",
-    "Stock is providing a good dividend yield of 3.05%.",
+    "Stock is trading at 0.81 times its book value",
+    "Stock is providing a good dividend yield of 3.02%.",
     "Company has been maintaining a healthy dividend payout of 21.3%"
   ],
   "red_flags": [

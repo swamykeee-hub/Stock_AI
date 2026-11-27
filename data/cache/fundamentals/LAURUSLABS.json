@@ -6,25 +6,25 @@
   "inflection_score": 10.0,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "134576",
-    "current_price": "2491",
-    "stock_pe": "129",
+    "market_cap_cr": "136178",
+    "current_price": "2520",
+    "stock_pe": "130",
     "book_value": "109",
     "dividend_yield_pct": "0.08",
     "roce_pct": "16",
     "roe_pct": "15.2",
     "debt_to_equity": "0.37",
     "face_value": "2",
-    "pb_ratio": "22.85",
-    "market_cap_num": 134576.0,
-    "current_price_num": 2491.0,
-    "pe_num": 129.0,
+    "pb_ratio": "23.12",
+    "market_cap_num": 136178.0,
+    "current_price_num": 2520.0,
+    "pe_num": 130.0,
     "book_value_num": 109.0,
     "roce_num": 16.0,
     "roe_num": 15.2,
-    "pb_num": 22.85,
-    "peg_ratio": "1.62",
-    "peg_num": 1.62
+    "pb_num": 23.12,
+    "peg_ratio": "1.63",
+    "peg_num": 1.63
   },
   "ranges": {
     "sales_cagr_3y": 2.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 53.0,
     "roe_3y": 10.0,
     "roe_5y": 14.0,
-    "price_cagr_3y": 88.0,
-    "price_cagr_5y": 36.0
+    "price_cagr_3y": 89.0,
+    "price_cagr_5y": 37.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 29.0,
@@ -81,7 +81,7 @@
     "Smart Money Accumulation (FII+DII +4.8% over 4Q)"
   ],
   "red_flags": [
-    "Stock is trading at 22.9 times its book value",
+    "Stock is trading at 23.1 times its book value",
     "The company has delivered a poor sales growth of 5.01% over past five years.",
     "Company has a low return on equity of 9.74% over last 3 years."
   ]

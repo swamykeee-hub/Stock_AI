@@ -6,9 +6,9 @@
   "inflection_score": 8.8,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "103066",
-    "current_price": "323",
-    "stock_pe": "24.1",
+    "market_cap_cr": "102906",
+    "current_price": "322",
+    "stock_pe": "24",
     "book_value": "130",
     "dividend_yield_pct": "0.77",
     "roce_pct": "10.5",
@@ -16,15 +16,15 @@
     "debt_to_equity": "1.91",
     "face_value": "1",
     "pb_ratio": "2.48",
-    "market_cap_num": 103066.0,
-    "current_price_num": 323.0,
-    "pe_num": 24.1,
+    "market_cap_num": 102906.0,
+    "current_price_num": 322.0,
+    "pe_num": 24.0,
     "book_value_num": 130.0,
     "roce_num": 10.5,
     "roe_num": 10.2,
     "pb_num": 2.48,
-    "peg_ratio": "0.74",
-    "peg_num": 0.74
+    "peg_ratio": "0.73",
+    "peg_num": 0.73
   },
   "ranges": {
     "sales_cagr_3y": 4.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 6.0,
     "roe_3y": 11.0,
     "roe_5y": 11.0,
-    "price_cagr_3y": 8.0,
+    "price_cagr_3y": 6.0,
     "price_cagr_5y": 7.0
   },
   "inflection": {
@@ -77,12 +77,11 @@
     "Cash Generative Profits (CFO/EBITDA: 54%)",
     "Smart Money Accumulation (FII+DII +2.1% over 4Q)",
     "Capex Capacity Runway Active (CWIP: \u20b917,963 Cr)",
-    "Deep GARP Value (PEG: 0.74x)",
+    "Deep GARP Value (PEG: 0.73x)",
     "Company has been maintaining a healthy dividend payout of 18.9%"
   ],
   "red_flags": [
     "Elevated Leverage (D/E: 1.91x)",
-    "Stock is trading at 2.52 times its book value",
     "Company has a low return on equity of 11.0% over last 3 years.",
     "Earnings include an other income of Rs.4,644 Cr."
   ]
