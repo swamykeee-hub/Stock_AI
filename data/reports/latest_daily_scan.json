@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-28 08:45:03",
+  "timestamp": "2026-11-28 09:15:02",
   "indices": {
     "NIFTY 50": {
       "value": 25607.2,
@@ -155,16 +155,16 @@
         "change_pct": 7.8
       },
       "USD / INR": {
-        "price": 92.98,
-        "change": 0.55,
-        "change_pct": 0.59
+        "price": 92.99,
+        "change": 0.56,
+        "change_pct": 0.6
       }
     },
     "fund_manager_takeaways": [
       "\u26a0\ufe0f Elevated Crude Oil (> $85): Margin headwinds for Paints, Aviation, and OMCs; adds pressure on CAD.",
       "\u2139\ufe0f US 10-Yr Yield at 4.94%: Kept tight global liquidity; favors domestic earnings compounders over speculative valuation multiples."
     ],
-    "timestamp": "2026-11-28 08:45:13"
+    "timestamp": "2026-11-28 09:15:12"
   },
   "market_regime": {
     "nifty_cmp": 25607.2,
@@ -227,7 +227,7 @@
         "month_pct": 0.25
       }
     ],
-    "timestamp": "2026-11-28 08:45:17"
+    "timestamp": "2026-11-28 09:15:15"
   },
   "top_momentum_stocks": [
     {
@@ -10141,6 +10141,67 @@
       ]
     },
     {
+      "symbol": "ZENSARTECH",
+      "name": "Zensar Technolgies Ltd.",
+      "sector": "Information Technology",
+      "mcap_tier": "Mid/Small-Cap Alpha",
+      "mcap_cr": 12270.0,
+      "archetype": "\ud83c\udfdb\ufe0f High-ROCE Compounder",
+      "archetype_short": "High-ROCE Compounder",
+      "cmp": 537.8,
+      "change_pct": -3.01,
+      "ret_3m": 26.5,
+      "ret_6m": 18.8,
+      "ret_1y": -26.9,
+      "ret_3y": -9.4,
+      "rs_vs_nifty_6m": 10.4,
+      "tech_score": 6.0,
+      "fund_score": 7.6,
+      "quality_score": 9.1,
+      "inflection_score": 5.5,
+      "conviction_score": 7.4,
+      "roce_pct": 22.8,
+      "roe_pct": 17.4,
+      "pe": 15.3,
+      "peg_ratio": 0.45,
+      "debt_to_equity": 0.01,
+      "opm_latest_pct": 16.0,
+      "opm_expansion_bps": 100.0,
+      "qtr_sales_yoy_pct": 12.0,
+      "qtr_pat_yoy_pct": 4.4,
+      "cfo_ebitda_pct": 105.0,
+      "inst_4q_delta_pct": -3.62,
+      "sales_cagr_3y": 5.0,
+      "profit_cagr_3y": 34.0,
+      "rsi": 38.77,
+      "weekly_rsi": 62.2,
+      "ema_20": 531.83,
+      "ema_50": 510.44,
+      "ema_200": 531.79,
+      "ema_40w": 531.48,
+      "volume_surge": 0.35,
+      "weekly_vol_surge": 0.06,
+      "is_vcp_tight": true,
+      "distance_from_52w_high_pct": 29.1,
+      "suggested_entry": "\u20b9527.04 \u2014 \u20b9540.49",
+      "stop_loss": 502.78,
+      "target_1": 602.34,
+      "target_2": 709.9,
+      "risk_reward": "1:1.84",
+      "bullish_signals": [
+        "Price trading above 20-Day EMA (Short-term Bullish)",
+        "20 EMA above 50 EMA (Medium-term Bullish Trend)",
+        "Price above 200-Day EMA (Long-term Bull Market structure)",
+        "\u26a1 Weekly VCP Stage-2 Base"
+      ],
+      "fundamental_strengths": [
+        "Strong Capital Return (ROCE: 22.8%)",
+        "Fortress Balance Sheet (D/E: 0.01x)",
+        "Cash Generative Profits (CFO/EBITDA: 105%)",
+        "Multi-Year Profit Compounding (3Y CAGR: +34%)"
+      ]
+    },
+    {
       "symbol": "HAL",
       "name": "Hindustan Aeronautics Ltd.",
       "sector": "Capital Goods",
@@ -18993,7 +19054,7 @@
       "pe": 217.0,
       "pb": 0.0,
       "peg": 4.1,
-      "mcap_cr": 73842.0,
+      "mcap_cr": 74057.0,
       "debt_to_equity": null,
       "vol_surge": 0.19,
       "vol_trend_4w": 0.92,
@@ -20916,7 +20977,7 @@
     }
   ],
   "institutional_flow": {
-    "timestamp": "2026-11-28 08:47:53",
+    "timestamp": "2026-11-28 09:17:17",
     "fii_dii_latest": {
       "date": "2026-11-27",
       "formatted_date": "Fri 27 Nov, 2026",
@@ -21107,7 +21168,7 @@
     "sentiment_rationale": "Nifty PCR is deeply oversold at 0.59. Call heavy positioning historically leads to sharp short-covering rallies once support holds."
   },
   "corporate_actions": {
-    "timestamp": "2026-11-28 08:47:57",
+    "timestamp": "2026-11-28 09:17:20",
     "dividends": [
       {
         "stock_name": "Altius Telecom",
@@ -21169,7 +21230,7 @@
     "total_events": 6
   },
   "performance_scorecard": {
-    "timestamp": "2026-11-28 08:47:59",
+    "timestamp": "2026-11-28 09:17:24",
     "total_picks_tracked": 46,
     "win_rate_pct": 72.7,
     "resolved_trades_count": 11,
@@ -21572,7 +21633,7 @@
     ]
   },
   "market_movers": {
-    "timestamp": "2026-11-28 08:48:02",
+    "timestamp": "2026-11-28 09:17:26",
     "top_gainers": [
       {
         "symbol": "BEML",
@@ -21911,16 +21972,16 @@
   "total_screened": 515,
   "disclaimer": "Application Designed and Developed by Swamy Chouhan - 9000632912. DISCLAIMER: This system is an AI-driven educational and research analytics tool. It does not provide SEBI-registered investment advice or guaranteed return recommendations. Stock markets involve risk. Always consult a certified financial advisor before trading.",
   "feed_health": {
-    "checked_at": "2026-11-28 08:48:02 IST",
-    "healthy_count": 4,
+    "checked_at": "2026-11-28 09:17:26 IST",
+    "healthy_count": 5,
     "total_feeds": 5,
     "feeds": [
       {
         "feed": "Yahoo NSE Quotes",
-        "status": "STALE",
-        "color": "#f59e0b",
-        "age": "14.7h ago",
-        "updated_at": "27-Nov 18:05 IST",
+        "status": "CACHED",
+        "color": "#38bdf8",
+        "age": "29m ago",
+        "updated_at": "28-Nov 08:48 IST",
         "detail": "14 indices, 123 picks"
       },
       {
@@ -21928,7 +21989,7 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "59s ago",
-        "updated_at": "28-Nov 08:47 IST",
+        "updated_at": "28-Nov 09:16 IST",
         "detail": "8/8 Live NAVs"
       },
       {
@@ -21936,7 +21997,7 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "8s ago",
-        "updated_at": "28-Nov 08:47 IST",
+        "updated_at": "28-Nov 09:17 IST",
         "detail": "PCR 0.59 (LIVE)"
       },
       {
@@ -21944,7 +22005,7 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "0s ago",
-        "updated_at": "28-Nov 08:48 IST",
+        "updated_at": "28-Nov 09:17 IST",
         "detail": "15 gainers / 15 losers"
       },
       {
@@ -21952,7 +22013,7 @@
         "status": "FRESH",
         "color": "#10b981",
         "age": "5s ago",
-        "updated_at": "28-Nov 08:47 IST",
+        "updated_at": "28-Nov 09:17 IST",
         "detail": "6 events tracked"
       }
     ]

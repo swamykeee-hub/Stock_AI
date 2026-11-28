@@ -6,23 +6,23 @@
   "inflection_score": 3.2,
   "valuation_score": 3.8,
   "metrics": {
-    "market_cap_cr": "18575",
-    "current_price": "975",
-    "stock_pe": "83.3",
+    "market_cap_cr": "19074",
+    "current_price": "1001",
+    "stock_pe": "85.5",
     "book_value": "207",
-    "dividend_yield_pct": "0.41",
+    "dividend_yield_pct": "0.4",
     "roce_pct": "10.5",
     "roe_pct": "6.92",
     "debt_to_equity": "0.12",
     "face_value": "1",
-    "pb_ratio": "4.71",
-    "market_cap_num": 18575.0,
-    "current_price_num": 975.0,
-    "pe_num": 83.3,
+    "pb_ratio": "4.84",
+    "market_cap_num": 19074.0,
+    "current_price_num": 1001.0,
+    "pe_num": 85.5,
     "book_value_num": 207.0,
     "roce_num": 10.5,
     "roe_num": 6.92,
-    "pb_num": 4.71,
+    "pb_num": 4.84,
     "peg_ratio": "N/A"
   },
   "ranges": {
@@ -35,7 +35,7 @@
     "roe_3y": 11.0,
     "roe_5y": 12.0,
     "price_cagr_3y": -5.0,
-    "price_cagr_5y": 1.0
+    "price_cagr_5y": 2.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 13.0,
@@ -80,7 +80,7 @@
   ],
   "red_flags": [
     "Quarterly Earnings Contraction (-83.8% YoY)",
-    "High Multiple Without Acceleration (P/E: 83.3x)",
+    "High Multiple Without Acceleration (P/E: 85.5x)",
     "Company has a low return on equity of 10.8% over last 3 years."
   ]
 }

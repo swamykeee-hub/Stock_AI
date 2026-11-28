@@ -1,5 +1,5 @@
 # Daily Indian Market AI Intelligence Briefing
-**Generated:** 2026-11-28 08:45:03 | **Powered by Stock AI Agent (CIO Intelligence)**
+**Generated:** 2026-11-28 09:15:02 | **Powered by Stock AI Agent (CIO Intelligence)**
 
 ---
 ## 1. Domestic & Global Market Overview
@@ -32,7 +32,7 @@
 | **Silver (₹/kg)** | 170100.0 | +0.06% |
 | **Gold ($/oz)** | 3668.5 | +2.92% |
 | **Silver ($/oz)** | 43.7 | +7.80% |
-| **USD / INR** | 92.98 | +0.59% |
+| **USD / INR** | 92.99 | +0.60% |
 
 ## 2. Multi-Timeframe Super-Trend & Momentum Leaders (3M / 1Y / 3Y)
 | Symbol | CMP (₹) | 3M Return | 6M Return | 1Y Return | 3Y Return | Trend Status |

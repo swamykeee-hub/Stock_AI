@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "timestamp": "2026-11-28 08:46:50",
+  "timestamp": "2026-11-28 09:16:14",
   "total_found": 146,
   "stocks": [
     {
@@ -6547,7 +6547,7 @@
       "pe": 217.0,
       "pb": 0.0,
       "peg": 4.1,
-      "mcap_cr": 73842.0,
+      "mcap_cr": 74057.0,
       "debt_to_equity": null,
       "vol_surge": 0.19,
       "vol_trend_4w": 0.92,
