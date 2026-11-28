@@ -1,69 +1,62 @@
 {
-  "timestamp": "2026-11-27 18:04:37",
+  "timestamp": "2026-11-28 08:47:57",
   "dividends": [
     {
-      "stock_name": "Power Finance Corp",
-      "symbol": "PFC",
-      "event_type": "Dividend - Interim",
-      "ex_date": "17/11/2026",
-      "dividend_amount": "\u20b94.10",
-      "cmp": "\u20b9328.70",
-      "estimated_yield": "1.25%"
+      "stock_name": "Altius Telecom",
+      "symbol": "DIT03",
+      "event_type": "Dividend - Return of ",
+      "ex_date": "30/11/2026",
+      "dividend_amount": "\u20b9-",
+      "cmp": "\u20b9176.25",
+      "estimated_yield": "\u2014",
+      "announcement_date": "19/11/2026"
     },
     {
-      "stock_name": "MRF Ltd",
-      "symbol": "MRF",
+      "stock_name": "Patanjali Foods",
+      "symbol": "RSI",
       "event_type": "Dividend - Interim",
-      "ex_date": "17/11/2026",
-      "dividend_amount": "\u20b93.00",
-      "cmp": "\u20b9128,830.00",
-      "estimated_yield": "0.01%"
-    },
-    {
-      "stock_name": "Coal India Ltd",
-      "symbol": "COALINDIA",
-      "event_type": "Dividend - Interim",
-      "ex_date": "24/11/2026",
-      "dividend_amount": "\u20b915.75",
-      "cmp": "\u20b9418.50",
-      "estimated_yield": "3.76%"
+      "ex_date": "11/12/2026",
+      "dividend_amount": "\u20b91.25",
+      "cmp": "\u20b9400.35",
+      "estimated_yield": "0.31%",
+      "announcement_date": "26/11/2026"
     }
   ],
   "earnings": [
     {
-      "date": "17 Nov",
-      "stock_name": "Core4 Engineers",
-      "symbol": "CORE4",
+      "date": "28 Nov",
+      "stock_name": "EBIX",
+      "symbol": "TE03",
       "result_type": "Q2 FY26-27",
-      "ltp": "\u20b982.90",
-      "market_cap": "\u20b9171 Cr"
+      "ltp": "\u20b914.29",
+      "market_cap": "\u20b9306.23 Cr"
     },
     {
-      "date": "18 Nov",
-      "stock_name": "Tata Consumer Products",
-      "symbol": "TATACONSUM",
-      "result_type": "Board Meeting / Results",
-      "ltp": "\u20b9942.50",
-      "market_cap": "\u20b987,500 Cr"
+      "date": "28 Nov",
+      "stock_name": "A F Enterprises",
+      "symbol": "AFE01",
+      "result_type": "Q2 FY26-27",
+      "ltp": "\u20b91.78",
+      "market_cap": "\u20b93.45 Cr"
     }
   ],
   "splits_and_actions": [
     {
-      "stock_name": "Interarch Building Products",
-      "symbol": "INTERARCH",
+      "stock_name": "Interarch Build",
+      "symbol": "IBP01",
       "action_type": "Stock Split",
       "ex_date": "30/11/2026",
-      "ratio": "1:2",
-      "announcement_date": "10/11/2026"
+      "ratio": "10:2",
+      "announcement_date": "06/08/2026"
     },
     {
-      "stock_name": "Praxis Home Retail",
-      "symbol": "PRAXIS",
-      "action_type": "Rights Issue",
-      "ex_date": "18/11/2026",
-      "ratio": "1:1",
-      "announcement_date": "05/11/2026"
+      "stock_name": "Bosch",
+      "symbol": "MIC",
+      "action_type": "Stock Split",
+      "ex_date": "23/12/2026",
+      "ratio": "10:2",
+      "announcement_date": "06/11/2026"
     }
   ],
-  "total_events": 7
+  "total_events": 6
 }

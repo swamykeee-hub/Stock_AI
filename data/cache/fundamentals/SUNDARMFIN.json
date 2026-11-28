@@ -6,25 +6,25 @@
   "inflection_score": 5.1,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "47969",
-    "current_price": "4318",
-    "stock_pe": "20.8",
+    "market_cap_cr": "46368",
+    "current_price": "4173",
+    "stock_pe": "20.1",
     "book_value": "1445",
-    "dividend_yield_pct": "0.93",
+    "dividend_yield_pct": "0.96",
     "roce_pct": "9.44",
     "roe_pct": "15",
     "debt_to_equity": "N/A",
     "face_value": "10",
-    "pb_ratio": "2.99",
-    "market_cap_num": 47969.0,
-    "current_price_num": 4318.0,
-    "pe_num": 20.8,
+    "pb_ratio": "2.89",
+    "market_cap_num": 46368.0,
+    "current_price_num": 4173.0,
+    "pe_num": 20.1,
     "book_value_num": 1445.0,
     "roce_num": 9.44,
     "roe_num": 15.0,
-    "pb_num": 2.99,
-    "peg_ratio": "1.22",
-    "peg_num": 1.22
+    "pb_num": 2.89,
+    "peg_ratio": "1.18",
+    "peg_num": 1.18
   },
   "ranges": {
     "sales_cagr_3y": 21.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 17.0,
     "roe_3y": 15.0,
     "roe_5y": 15.0,
-    "price_cagr_3y": 11.0,
-    "price_cagr_5y": 13.0
+    "price_cagr_3y": 7.0,
+    "price_cagr_5y": 12.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 14.8,
@@ -74,12 +74,12 @@
     "public_4q_delta_pct": -0.4
   },
   "strengths": [
-    "Reasonable GARP Multiple (PEG: 1.22x)",
+    "Reasonable GARP Multiple (PEG: 1.18x)",
     "Company has been maintaining a healthy dividend payout of 21.6%"
   ],
   "red_flags": [
     "Weak Operating Cash Conversion (3Y CFO/PAT: -4.04x)",
-    "Stock is trading at 2.99 times its book value",
+    "Stock is trading at 2.89 times its book value",
     "Company has low interest coverage ratio."
   ]
 }
