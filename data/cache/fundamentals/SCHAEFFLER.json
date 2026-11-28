@@ -6,25 +6,25 @@
   "inflection_score": 8.8,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "57092",
-    "current_price": "3653",
-    "stock_pe": "43.5",
+    "market_cap_cr": "57190",
+    "current_price": "3659",
+    "stock_pe": "43.6",
     "book_value": "393",
-    "dividend_yield_pct": "0.98",
+    "dividend_yield_pct": "0.96",
     "roce_pct": "27.3",
     "roe_pct": "20.2",
     "debt_to_equity": "0.01",
     "face_value": "2",
-    "pb_ratio": "9.30",
-    "market_cap_num": 57092.0,
-    "current_price_num": 3653.0,
-    "pe_num": 43.5,
+    "pb_ratio": "9.31",
+    "market_cap_num": 57190.0,
+    "current_price_num": 3659.0,
+    "pe_num": 43.6,
     "book_value_num": 393.0,
     "roce_num": 27.3,
     "roe_num": 20.2,
-    "pb_num": 9.3,
-    "peg_ratio": "1.89",
-    "peg_num": 1.89
+    "pb_num": 9.31,
+    "peg_ratio": "1.90",
+    "peg_num": 1.9
   },
   "ranges": {
     "sales_cagr_3y": 12.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 23.0,
     "roe_3y": 20.0,
     "roe_5y": null,
-    "price_cagr_3y": 10.0,
-    "price_cagr_5y": 20.0
+    "price_cagr_3y": 9.0,
+    "price_cagr_5y": 19.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 27.0,
@@ -81,6 +81,6 @@
     "Expanding ROCE Efficiency (+2.0% YoY)"
   ],
   "red_flags": [
-    "Stock is trading at 9.28 times its book value"
+    "Stock is trading at 9.30 times its book value"
   ]
 }

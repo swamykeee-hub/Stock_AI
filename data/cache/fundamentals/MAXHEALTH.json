@@ -6,25 +6,25 @@
   "inflection_score": 6.0,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "104010",
-    "current_price": "1069",
-    "stock_pe": "73.2",
+    "market_cap_cr": "104273",
+    "current_price": "1071",
+    "stock_pe": "73.4",
     "book_value": "116",
-    "dividend_yield_pct": "0.18",
+    "dividend_yield_pct": "0.19",
     "roce_pct": "14.7",
     "roe_pct": "14.7",
     "debt_to_equity": "0.33",
     "face_value": "10",
-    "pb_ratio": "9.22",
-    "market_cap_num": 104010.0,
-    "current_price_num": 1069.0,
-    "pe_num": 73.2,
+    "pb_ratio": "9.23",
+    "market_cap_num": 104273.0,
+    "current_price_num": 1071.0,
+    "pe_num": 73.4,
     "book_value_num": 116.0,
     "roce_num": 14.7,
     "roe_num": 14.7,
-    "pb_num": 9.22,
-    "peg_ratio": "7.32",
-    "peg_num": 7.32
+    "pb_num": 9.23,
+    "peg_ratio": "7.34",
+    "peg_num": 7.34
   },
   "ranges": {
     "sales_cagr_3y": 22.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 1.0,
     "roe_3y": 14.0,
     "roe_5y": 14.0,
-    "price_cagr_3y": 22.0,
-    "price_cagr_5y": 24.0
+    "price_cagr_3y": 20.0,
+    "price_cagr_5y": 23.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 20.0,
@@ -79,8 +79,8 @@
   ],
   "red_flags": [
     "Quarterly Earnings Contraction (-15.7% YoY)",
-    "Expensive Valuation vs Growth (PEG: 7.32x)",
-    "Stock is trading at 9.27 times its book value",
+    "Expensive Valuation vs Growth (PEG: 7.34x)",
+    "Stock is trading at 9.20 times its book value",
     "Company has a low return on equity of 13.7% over last 3 years."
   ]
 }

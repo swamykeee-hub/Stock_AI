@@ -6,25 +6,25 @@
   "inflection_score": 5.4,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "29218",
-    "current_price": "1525",
-    "stock_pe": "70.5",
+    "market_cap_cr": "29642",
+    "current_price": "1547",
+    "stock_pe": "71.5",
     "book_value": "118",
-    "dividend_yield_pct": "0.33",
+    "dividend_yield_pct": "0.32",
     "roce_pct": "25.6",
     "roe_pct": "20.2",
     "debt_to_equity": "0.60",
     "face_value": "1",
-    "pb_ratio": "12.92",
-    "market_cap_num": 29218.0,
-    "current_price_num": 1525.0,
-    "pe_num": 70.5,
+    "pb_ratio": "13.11",
+    "market_cap_num": 29642.0,
+    "current_price_num": 1547.0,
+    "pe_num": 71.5,
     "book_value_num": 118.0,
     "roce_num": 25.6,
     "roe_num": 20.2,
-    "pb_num": 12.92,
-    "peg_ratio": "3.07",
-    "peg_num": 3.07
+    "pb_num": 13.11,
+    "peg_ratio": "3.11",
+    "peg_num": 3.11
   },
   "ranges": {
     "sales_cagr_3y": null,
@@ -36,7 +36,7 @@
     "roe_3y": 20.0,
     "roe_5y": null,
     "price_cagr_3y": 55.0,
-    "price_cagr_5y": 62.0
+    "price_cagr_5y": 63.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 23.0,
@@ -82,7 +82,7 @@
   ],
   "red_flags": [
     "Institutional Distribution (FII+DII -4.3% over 4Q)",
-    "Expensive Valuation vs Growth (PEG: 3.07x)",
-    "Stock is trading at 12.9 times its book value"
+    "Expensive Valuation vs Growth (PEG: 3.11x)",
+    "Stock is trading at 13.1 times its book value"
   ]
 }

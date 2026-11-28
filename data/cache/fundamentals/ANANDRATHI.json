@@ -6,9 +6,9 @@
   "inflection_score": 6.4,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "39970",
+    "market_cap_cr": "40052",
     "current_price": "2412",
-    "stock_pe": "87.9",
+    "stock_pe": "88.1",
     "book_value": "77.3",
     "dividend_yield_pct": "0.27",
     "roce_pct": "59.2",
@@ -16,15 +16,15 @@
     "debt_to_equity": "0.05",
     "face_value": "5",
     "pb_ratio": "31.20",
-    "market_cap_num": 39970.0,
+    "market_cap_num": 40052.0,
     "current_price_num": 2412.0,
-    "pe_num": 87.9,
+    "pe_num": 88.1,
     "book_value_num": 77.3,
     "roce_num": 59.2,
     "roe_num": 47.3,
     "pb_num": 31.2,
-    "peg_ratio": "2.66",
-    "peg_num": 2.66
+    "peg_ratio": "2.67",
+    "peg_num": 2.67
   },
   "ranges": {
     "sales_cagr_3y": 31.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 32.0,
     "roe_3y": 45.0,
     "roe_5y": 44.0,
-    "price_cagr_3y": 56.0,
+    "price_cagr_3y": 57.0,
     "price_cagr_5y": null
   },
   "inflection": {
@@ -82,7 +82,7 @@
   ],
   "red_flags": [
     "Operating Margin Compression (-1200 bps YoY)",
-    "Stock is trading at 31.4 times its book value",
+    "Stock is trading at 31.2 times its book value",
     "Promoter holding has decreased over last quarter: -0.42%",
     "Earnings include an other income of Rs.207 Cr."
   ]

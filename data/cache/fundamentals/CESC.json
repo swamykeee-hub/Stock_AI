@@ -6,25 +6,25 @@
   "inflection_score": 4.5,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "16815",
+    "market_cap_cr": "16886",
     "current_price": "127",
-    "stock_pe": "10.8",
+    "stock_pe": "10.9",
     "book_value": "94.1",
-    "dividend_yield_pct": "4.74",
+    "dividend_yield_pct": "4.71",
     "roce_pct": "10.9",
     "roe_pct": "12",
     "debt_to_equity": "1.80",
     "face_value": "1",
     "pb_ratio": "1.35",
-    "market_cap_num": 16815.0,
+    "market_cap_num": 16886.0,
     "current_price_num": 127.0,
-    "pe_num": 10.8,
+    "pe_num": 10.9,
     "book_value_num": 94.1,
     "roce_num": 10.9,
     "roe_num": 12.0,
     "pb_num": 1.35,
-    "peg_ratio": "1.54",
-    "peg_num": 1.54
+    "peg_ratio": "1.56",
+    "peg_num": 1.56
   },
   "ranges": {
     "sales_cagr_3y": 9.0,
@@ -36,7 +36,7 @@
     "roe_3y": 12.0,
     "roe_5y": 12.0,
     "price_cagr_3y": 9.0,
-    "price_cagr_5y": 7.0
+    "price_cagr_5y": 8.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 6.0,
@@ -75,8 +75,8 @@
   },
   "strengths": [
     "Cash Generative Profits (CFO/EBITDA: 124%)",
-    "Reasonable GARP Multiple (PEG: 1.54x)",
-    "Stock is providing a good dividend yield of 4.74%.",
+    "Reasonable GARP Multiple (PEG: 1.56x)",
+    "Stock is providing a good dividend yield of 4.71%.",
     "Company has been maintaining a healthy dividend payout of 46.4%"
   ],
   "red_flags": [

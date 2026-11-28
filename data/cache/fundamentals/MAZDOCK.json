@@ -6,23 +6,23 @@
   "inflection_score": 4.1,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "76612",
-    "current_price": "1899",
-    "stock_pe": "31.2",
+    "market_cap_cr": "76239",
+    "current_price": "1890",
+    "stock_pe": "31.1",
     "book_value": "259",
-    "dividend_yield_pct": "0.95",
+    "dividend_yield_pct": "0.96",
     "roce_pct": "36",
     "roe_pct": "29.2",
     "debt_to_equity": "0.08",
     "face_value": "5",
-    "pb_ratio": "7.33",
-    "market_cap_num": 76612.0,
-    "current_price_num": 1899.0,
-    "pe_num": 31.2,
+    "pb_ratio": "7.30",
+    "market_cap_num": 76239.0,
+    "current_price_num": 1890.0,
+    "pe_num": 31.1,
     "book_value_num": 259.0,
     "roce_num": 36.0,
     "roe_num": 29.2,
-    "pb_num": 7.33,
+    "pb_num": 7.3,
     "peg_ratio": "0.97",
     "peg_num": 0.97
   },
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 5.0,
     "roe_3y": 32.0,
     "roe_5y": 29.0,
-    "price_cagr_3y": 22.0,
-    "price_cagr_5y": 68.0
+    "price_cagr_3y": 23.0,
+    "price_cagr_5y": 71.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": -16.0,
@@ -84,6 +84,6 @@
     "Weak Operating Cash Conversion (3Y CFO/PAT: 0.02x)",
     "Operating Margin Compression (-1600 bps YoY)",
     "Quarterly Earnings Contraction (-53.8% YoY)",
-    "Stock is trading at 7.39 times its book value"
+    "Stock is trading at 7.29 times its book value"
   ]
 }

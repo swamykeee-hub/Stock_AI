@@ -6,25 +6,25 @@
   "inflection_score": 4.5,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "53595",
-    "current_price": "460",
-    "stock_pe": "43.3",
+    "market_cap_cr": "54435",
+    "current_price": "467",
+    "stock_pe": "43.9",
     "book_value": "60.7",
-    "dividend_yield_pct": "0.87",
+    "dividend_yield_pct": "0.86",
     "roce_pct": "21.6",
     "roe_pct": "17.3",
     "debt_to_equity": "0.15",
     "face_value": "1",
-    "pb_ratio": "7.58",
-    "market_cap_num": 53595.0,
-    "current_price_num": 460.0,
-    "pe_num": 43.3,
+    "pb_ratio": "7.69",
+    "market_cap_num": 54435.0,
+    "current_price_num": 467.0,
+    "pe_num": 43.9,
     "book_value_num": 60.7,
     "roce_num": 21.6,
     "roe_num": 17.3,
-    "pb_num": 7.58,
-    "peg_ratio": "3.61",
-    "peg_num": 3.61
+    "pb_num": 7.69,
+    "peg_ratio": "3.66",
+    "peg_num": 3.66
   },
   "ranges": {
     "sales_cagr_3y": 4.0,
@@ -36,7 +36,7 @@
     "roe_3y": 20.0,
     "roe_5y": 21.0,
     "price_cagr_3y": -7.0,
-    "price_cagr_5y": -6.0
+    "price_cagr_5y": -5.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 13.0,
@@ -80,8 +80,8 @@
     "Company has been maintaining a healthy dividend payout of 38.0%"
   ],
   "red_flags": [
-    "Expensive Valuation vs Growth (PEG: 3.61x)",
-    "Stock is trading at 7.57 times its book value",
+    "Expensive Valuation vs Growth (PEG: 3.66x)",
+    "Stock is trading at 7.69 times its book value",
     "The company has delivered a poor sales growth of 11.8% over past five years."
   ]
 }

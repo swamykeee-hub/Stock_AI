@@ -6,9 +6,9 @@
   "inflection_score": 8.5,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "120063",
+    "market_cap_cr": "119922",
     "current_price": "922",
-    "stock_pe": "59.5",
+    "stock_pe": "59.4",
     "book_value": "36.4",
     "dividend_yield_pct": "0.43",
     "roce_pct": "47",
@@ -16,15 +16,15 @@
     "debt_to_equity": "0.26",
     "face_value": "1",
     "pb_ratio": "25.33",
-    "market_cap_num": 120063.0,
+    "market_cap_num": 119922.0,
     "current_price_num": 922.0,
-    "pe_num": 59.5,
+    "pe_num": 59.4,
     "book_value_num": 36.4,
     "roce_num": 47.0,
     "roe_num": 42.9,
     "pb_num": 25.33,
-    "peg_ratio": "2.04",
-    "peg_num": 2.04
+    "peg_ratio": "2.03",
+    "peg_num": 2.03
   },
   "ranges": {
     "sales_cagr_3y": 12.0,
@@ -36,7 +36,7 @@
     "roe_3y": 41.0,
     "roe_5y": 39.0,
     "price_cagr_3y": 21.0,
-    "price_cagr_5y": 11.0
+    "price_cagr_5y": 12.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 13.0,
@@ -81,7 +81,7 @@
     "Expanding ROCE Efficiency (+2.0% YoY)"
   ],
   "red_flags": [
-    "Stock is trading at 25.2 times its book value",
+    "Stock is trading at 25.3 times its book value",
     "The company has delivered a poor sales growth of 11.1% over past five years."
   ]
 }

@@ -6,7 +6,7 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "25934",
+    "market_cap_cr": "25922",
     "current_price": "1406",
     "stock_pe": "41.5",
     "book_value": "152",
@@ -16,7 +16,7 @@
     "debt_to_equity": "0.35",
     "face_value": "1",
     "pb_ratio": "9.25",
-    "market_cap_num": 25934.0,
+    "market_cap_num": 25922.0,
     "current_price_num": 1406.0,
     "pe_num": 41.5,
     "book_value_num": 152.0,
@@ -81,7 +81,7 @@
     "Smart Money Accumulation (FII+DII +7.6% over 4Q)"
   ],
   "red_flags": [
-    "Stock is trading at 9.18 times its book value",
+    "Stock is trading at 9.22 times its book value",
     "Promoter holding has decreased over last quarter: -4.62%",
     "Company's cost of borrowing seems high"
   ]

@@ -6,25 +6,25 @@
   "inflection_score": 7.8,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "39635",
-    "current_price": "1198",
-    "stock_pe": "81.7",
+    "market_cap_cr": "39269",
+    "current_price": "1187",
+    "stock_pe": "80.9",
     "book_value": "204",
     "dividend_yield_pct": "0.34",
     "roce_pct": "9.04",
     "roe_pct": "6.1",
     "debt_to_equity": "0.23",
     "face_value": "1",
-    "pb_ratio": "5.87",
-    "market_cap_num": 39635.0,
-    "current_price_num": 1198.0,
-    "pe_num": 81.7,
+    "pb_ratio": "5.82",
+    "market_cap_num": 39269.0,
+    "current_price_num": 1187.0,
+    "pe_num": 80.9,
     "book_value_num": 204.0,
     "roce_num": 9.04,
     "roe_num": 6.1,
-    "pb_num": 5.87,
-    "peg_ratio": "1.63",
-    "peg_num": 1.63
+    "pb_num": 5.82,
+    "peg_ratio": "1.62",
+    "peg_num": 1.62
   },
   "ranges": {
     "sales_cagr_3y": 14.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": -11.0,
     "roe_3y": 8.0,
     "roe_5y": 8.0,
-    "price_cagr_3y": 14.0,
-    "price_cagr_5y": 1.0
+    "price_cagr_3y": 13.0,
+    "price_cagr_5y": 0.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 15.0,
@@ -77,11 +77,11 @@
     "Fortress Balance Sheet (D/E: 0.23x)",
     "Expanding Operating Margins (+180 bps)",
     "Explosive Quarterly PAT Surge (+50.0% YoY)",
-    "Reasonable GARP Multiple (PEG: 1.63x)",
+    "Reasonable GARP Multiple (PEG: 1.62x)",
     "Company has been maintaining a healthy dividend payout of 45.0%"
   ],
   "red_flags": [
-    "Stock is trading at 5.86 times its book value",
+    "Stock is trading at 5.82 times its book value",
     "Company has a low return on equity of 8.09% over last 3 years."
   ]
 }

@@ -6,25 +6,25 @@
   "inflection_score": 10.0,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "310265",
-    "current_price": "11687",
-    "stock_pe": "90.8",
+    "market_cap_cr": "306882",
+    "current_price": "11560",
+    "stock_pe": "89.8",
     "book_value": "678",
     "dividend_yield_pct": "0.26",
     "roce_pct": "22",
     "roe_pct": "16.5",
     "debt_to_equity": "0.00",
     "face_value": "2",
-    "pb_ratio": "17.24",
-    "market_cap_num": 310265.0,
-    "current_price_num": 11687.0,
-    "pe_num": 90.8,
+    "pb_ratio": "17.05",
+    "market_cap_num": 306882.0,
+    "current_price_num": 11560.0,
+    "pe_num": 89.8,
     "book_value_num": 678.0,
     "roce_num": 22.0,
     "roe_num": 16.5,
-    "pb_num": 17.24,
-    "peg_ratio": "1.43",
-    "peg_num": 1.43
+    "pb_num": 17.05,
+    "peg_ratio": "1.41",
+    "peg_num": 1.41
   },
   "ranges": {
     "sales_cagr_3y": 11.0,
@@ -81,7 +81,7 @@
     "Explosive Quarterly PAT Surge (+63.6% YoY)"
   ],
   "red_flags": [
-    "Stock is trading at 17.2 times its book value",
+    "Stock is trading at 17.0 times its book value",
     "The company has delivered a poor sales growth of 8.67% over past five years."
   ]
 }

@@ -6,25 +6,25 @@
   "inflection_score": 7.7,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "223276",
-    "current_price": "8132",
-    "stock_pe": "37.1",
+    "market_cap_cr": "219734",
+    "current_price": "8004",
+    "stock_pe": "36.5",
     "book_value": "945",
-    "dividend_yield_pct": "1.01",
+    "dividend_yield_pct": "1.02",
     "roce_pct": "30.5",
     "roe_pct": "24",
     "debt_to_equity": "0.02",
     "face_value": "1",
-    "pb_ratio": "8.61",
-    "market_cap_num": 223276.0,
-    "current_price_num": 8132.0,
-    "pe_num": 37.1,
+    "pb_ratio": "8.47",
+    "market_cap_num": 219734.0,
+    "current_price_num": 8004.0,
+    "pe_num": 36.5,
     "book_value_num": 945.0,
     "roce_num": 30.5,
     "roe_num": 24.0,
-    "pb_num": 8.61,
-    "peg_ratio": "1.55",
-    "peg_num": 1.55
+    "pb_num": 8.47,
+    "peg_ratio": "1.52",
+    "peg_num": 1.52
   },
   "ranges": {
     "sales_cagr_3y": 17.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 18.0,
     "roe_3y": 24.0,
     "roe_5y": 22.0,
-    "price_cagr_3y": 29.0,
+    "price_cagr_3y": 28.0,
     "price_cagr_5y": 27.0
   },
   "inflection": {
@@ -81,7 +81,7 @@
     "Multi-Year Profit Compounding (3Y CAGR: +24%)"
   ],
   "red_flags": [
-    "Stock is trading at 8.53 times its book value",
+    "Stock is trading at 8.47 times its book value",
     "Earnings include an other income of Rs.2,292 Cr."
   ]
 }

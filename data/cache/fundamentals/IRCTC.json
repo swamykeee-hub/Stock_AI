@@ -6,17 +6,17 @@
   "inflection_score": 1.0,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "36720",
+    "market_cap_cr": "36692",
     "current_price": "459",
     "stock_pe": "26.6",
     "book_value": "60.8",
-    "dividend_yield_pct": "1.93",
+    "dividend_yield_pct": "1.96",
     "roce_pct": "46.1",
     "roe_pct": "34.7",
     "debt_to_equity": "0.02",
     "face_value": "2",
     "pb_ratio": "7.55",
-    "market_cap_num": 36720.0,
+    "market_cap_num": 36692.0,
     "current_price_num": 459.0,
     "pe_num": 26.6,
     "book_value_num": 60.8,
@@ -36,7 +36,7 @@
     "roe_3y": 37.0,
     "roe_5y": 39.0,
     "price_cagr_3y": -13.0,
-    "price_cagr_5y": -11.0
+    "price_cagr_5y": -10.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 16.0,
@@ -84,6 +84,6 @@
     "Operating Margin Compression (-400 bps YoY)",
     "Quarterly Earnings Contraction (-23.1% YoY)",
     "Institutional Distribution (FII+DII -3.4% over 4Q)",
-    "Stock is trading at 7.53 times its book value"
+    "Stock is trading at 7.55 times its book value"
   ]
 }

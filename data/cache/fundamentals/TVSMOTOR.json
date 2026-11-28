@@ -6,25 +6,25 @@
   "inflection_score": 10.0,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "216074",
-    "current_price": "4548",
-    "stock_pe": "56",
+    "market_cap_cr": "215048",
+    "current_price": "4526",
+    "stock_pe": "55.7",
     "book_value": "239",
-    "dividend_yield_pct": "0.26",
+    "dividend_yield_pct": "0.27",
     "roce_pct": "17.4",
     "roe_pct": "33.6",
     "debt_to_equity": "3.48",
     "face_value": "1",
-    "pb_ratio": "19.03",
-    "market_cap_num": 216074.0,
-    "current_price_num": 4548.0,
-    "pe_num": 56.0,
+    "pb_ratio": "18.94",
+    "market_cap_num": 215048.0,
+    "current_price_num": 4526.0,
+    "pe_num": 55.7,
     "book_value_num": 239.0,
     "roce_num": 17.4,
     "roe_num": 33.6,
-    "pb_num": 19.03,
-    "peg_ratio": "1.17",
-    "peg_num": 1.17
+    "pb_num": 18.94,
+    "peg_ratio": "1.16",
+    "peg_num": 1.16
   },
   "ranges": {
     "sales_cagr_3y": 21.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 48.0,
     "roe_3y": 30.0,
     "roe_5y": 28.0,
-    "price_cagr_3y": 36.0,
+    "price_cagr_3y": 34.0,
     "price_cagr_5y": 46.0
   },
   "inflection": {
@@ -82,7 +82,7 @@
   ],
   "red_flags": [
     "Elevated Leverage (D/E: 3.48x)",
-    "Stock is trading at 19.2 times its book value",
+    "Stock is trading at 19.0 times its book value",
     "Company might be capitalizing the interest cost"
   ]
 }

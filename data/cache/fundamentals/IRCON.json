@@ -6,17 +6,17 @@
   "inflection_score": 5.4,
   "valuation_score": 6.5,
   "metrics": {
-    "market_cap_cr": "10412",
+    "market_cap_cr": "10414",
     "current_price": "111",
     "stock_pe": "21.4",
     "book_value": "72",
-    "dividend_yield_pct": "1.65",
+    "dividend_yield_pct": "1.72",
     "roce_pct": "9.27",
     "roe_pct": "8.19",
     "debt_to_equity": "0.87",
     "face_value": "2",
     "pb_ratio": "1.54",
-    "market_cap_num": 10412.0,
+    "market_cap_num": 10414.0,
     "current_price_num": 111.0,
     "pe_num": 21.4,
     "book_value_num": 72.0,
@@ -35,7 +35,7 @@
     "roe_3y": 12.0,
     "roe_5y": 13.0,
     "price_cagr_3y": -13.0,
-    "price_cagr_5y": 19.0
+    "price_cagr_5y": 20.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 15.0,

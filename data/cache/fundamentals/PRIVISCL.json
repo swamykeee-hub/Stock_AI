@@ -6,23 +6,23 @@
   "inflection_score": 10.0,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "14275",
-    "current_price": "3654",
-    "stock_pe": "38.3",
+    "market_cap_cr": "14320",
+    "current_price": "3666",
+    "stock_pe": "38.4",
     "book_value": "403",
     "dividend_yield_pct": "0.27",
     "roce_pct": "22.3",
     "roe_pct": "26",
     "debt_to_equity": "0.63",
     "face_value": "10",
-    "pb_ratio": "9.07",
-    "market_cap_num": 14275.0,
-    "current_price_num": 3654.0,
-    "pe_num": 38.3,
+    "pb_ratio": "9.10",
+    "market_cap_num": 14320.0,
+    "current_price_num": 3666.0,
+    "pe_num": 38.4,
     "book_value_num": 403.0,
     "roce_num": 22.3,
     "roe_num": 26.0,
-    "pb_num": 9.07,
+    "pb_num": 9.1,
     "peg_ratio": "0.27",
     "peg_num": 0.27
   },
@@ -36,7 +36,7 @@
     "roe_3y": 19.0,
     "roe_5y": 15.0,
     "price_cagr_3y": 42.0,
-    "price_cagr_5y": 17.0
+    "price_cagr_5y": 18.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 12.0,
@@ -81,7 +81,7 @@
     "Smart Money Accumulation (FII+DII +5.9% over 4Q)"
   ],
   "red_flags": [
-    "Stock is trading at 9.05 times its book value",
+    "Stock is trading at 9.10 times its book value",
     "Company might be capitalizing the interest cost",
     "Promoter holding has decreased over last 3 years: -13.4%"
   ]

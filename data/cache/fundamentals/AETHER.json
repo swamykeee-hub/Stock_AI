@@ -6,7 +6,7 @@
   "inflection_score": 10.0,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "23400",
+    "market_cap_cr": "23385",
     "current_price": "1761",
     "stock_pe": "92.8",
     "book_value": "195",
@@ -16,7 +16,7 @@
     "debt_to_equity": "0.26",
     "face_value": "10",
     "pb_ratio": "9.03",
-    "market_cap_num": 23400.0,
+    "market_cap_num": 23385.0,
     "current_price_num": 1761.0,
     "pe_num": 92.8,
     "book_value_num": 195.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 24.0,
     "roe_3y": 8.0,
     "roe_5y": 10.0,
-    "price_cagr_3y": 25.0,
+    "price_cagr_3y": 29.0,
     "price_cagr_5y": null
   },
   "inflection": {
@@ -79,7 +79,7 @@
     "Capex Capacity Runway Active (CWIP: \u20b9705 Cr)"
   ],
   "red_flags": [
-    "Stock is trading at 9.05 times its book value",
+    "Stock is trading at 9.01 times its book value",
     "Though the company is reporting repeated profits, it is not paying out dividend",
     "Company has a low return on equity of 7.91% over last 3 years.",
     "Company might be capitalizing the interest cost"

@@ -6,23 +6,23 @@
   "inflection_score": 4.1,
   "valuation_score": 3.8,
   "metrics": {
-    "market_cap_cr": "59816",
-    "current_price": "7014",
-    "stock_pe": "121",
+    "market_cap_cr": "59551",
+    "current_price": "6983",
+    "stock_pe": "120",
     "book_value": "515",
     "dividend_yield_pct": "0.06",
     "roce_pct": "18.2",
     "roe_pct": "13.6",
     "debt_to_equity": "0.23",
     "face_value": "10",
-    "pb_ratio": "13.62",
-    "market_cap_num": 59816.0,
-    "current_price_num": 7014.0,
-    "pe_num": 121.0,
+    "pb_ratio": "13.56",
+    "market_cap_num": 59551.0,
+    "current_price_num": 6983.0,
+    "pe_num": 120.0,
     "book_value_num": 515.0,
     "roce_num": 18.2,
     "roe_num": 13.6,
-    "pb_num": 13.62,
+    "pb_num": 13.56,
     "peg_ratio": "N/A"
   },
   "ranges": {
@@ -34,7 +34,7 @@
     "profit_growth_ttm": -4.0,
     "roe_3y": 13.0,
     "roe_5y": 14.0,
-    "price_cagr_3y": 6.0,
+    "price_cagr_3y": 7.0,
     "price_cagr_5y": 23.0
   },
   "inflection": {
@@ -82,7 +82,7 @@
   "red_flags": [
     "Operating Margin Compression (-1200 bps YoY)",
     "Quarterly Earnings Contraction (-30.4% YoY)",
-    "High Multiple Without Acceleration (P/E: 121.0x)",
+    "High Multiple Without Acceleration (P/E: 120.0x)",
     "Stock is trading at 13.6 times its book value"
   ]
 }

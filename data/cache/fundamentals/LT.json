@@ -6,23 +6,23 @@
   "inflection_score": 7.3,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "568391",
-    "current_price": "4131",
-    "stock_pe": "36.5",
+    "market_cap_cr": "565295",
+    "current_price": "4108",
+    "stock_pe": "36.2",
     "book_value": "559",
     "dividend_yield_pct": "0.92",
     "roce_pct": "19.3",
     "roe_pct": "14.8",
     "debt_to_equity": "0.21",
     "face_value": "2",
-    "pb_ratio": "7.39",
-    "market_cap_num": 568391.0,
-    "current_price_num": 4131.0,
-    "pe_num": 36.5,
+    "pb_ratio": "7.35",
+    "market_cap_num": 565295.0,
+    "current_price_num": 4108.0,
+    "pe_num": 36.2,
     "book_value_num": 559.0,
     "roce_num": 19.3,
     "roe_num": 14.8,
-    "pb_num": 7.39,
+    "pb_num": 7.35,
     "peg_ratio": "0.36",
     "peg_num": 0.36
   },
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 52.0,
     "roe_3y": 15.0,
     "roe_5y": 14.0,
-    "price_cagr_3y": 11.0,
+    "price_cagr_3y": 10.0,
     "price_cagr_5y": 18.0
   },
   "inflection": {
@@ -81,7 +81,7 @@
     "Deep GARP Value (PEG: 0.36x)"
   ],
   "red_flags": [
-    "Stock is trading at 7.43 times its book value",
+    "Stock is trading at 7.35 times its book value",
     "The company has delivered a poor sales growth of 12.0% over past five years.",
     "Earnings include an other income of Rs.8,543 Cr."
   ]

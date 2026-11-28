@@ -6,25 +6,25 @@
   "inflection_score": 5.9,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "72613",
-    "current_price": "1157",
-    "stock_pe": "42.8",
+    "market_cap_cr": "71700",
+    "current_price": "1142",
+    "stock_pe": "42.2",
     "book_value": "156",
-    "dividend_yield_pct": "0.85",
+    "dividend_yield_pct": "0.88",
     "roce_pct": "24.9",
     "roe_pct": "19",
     "debt_to_equity": "0.02",
     "face_value": "1",
-    "pb_ratio": "7.42",
-    "market_cap_num": 72613.0,
-    "current_price_num": 1157.0,
-    "pe_num": 42.8,
+    "pb_ratio": "7.32",
+    "market_cap_num": 71700.0,
+    "current_price_num": 1142.0,
+    "pe_num": 42.2,
     "book_value_num": 156.0,
     "roce_num": 24.9,
     "roe_num": 19.0,
-    "pb_num": 7.42,
-    "peg_ratio": "2.67",
-    "peg_num": 2.67
+    "pb_num": 7.32,
+    "peg_ratio": "2.64",
+    "peg_num": 2.64
   },
   "ranges": {
     "sales_cagr_3y": 10.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 16.0,
     "roe_3y": 19.0,
     "roe_5y": 19.0,
-    "price_cagr_3y": -3.0,
-    "price_cagr_5y": -2.0
+    "price_cagr_3y": -4.0,
+    "price_cagr_5y": -3.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 35.0,
@@ -81,6 +81,6 @@
     "Company is almost debt free."
   ],
   "red_flags": [
-    "Stock is trading at 7.40 times its book value"
+    "Stock is trading at 7.34 times its book value"
   ]
 }

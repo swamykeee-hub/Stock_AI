@@ -6,25 +6,25 @@
   "inflection_score": 5.5,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "46916",
-    "current_price": "2454",
-    "stock_pe": "23.2",
+    "market_cap_cr": "46668",
+    "current_price": "2441",
+    "stock_pe": "23",
     "book_value": "565",
-    "dividend_yield_pct": "2.48",
+    "dividend_yield_pct": "2.54",
     "roce_pct": "22.1",
     "roe_pct": "18.5",
     "debt_to_equity": "0.30",
     "face_value": "10",
-    "pb_ratio": "4.34",
-    "market_cap_num": 46916.0,
-    "current_price_num": 2454.0,
-    "pe_num": 23.2,
+    "pb_ratio": "4.32",
+    "market_cap_num": 46668.0,
+    "current_price_num": 2441.0,
+    "pe_num": 23.0,
     "book_value_num": 565.0,
     "roce_num": 22.1,
     "roe_num": 18.5,
-    "pb_num": 4.34,
-    "peg_ratio": "1.18",
-    "peg_num": 1.18
+    "pb_num": 4.32,
+    "peg_ratio": "1.17",
+    "peg_num": 1.17
   },
   "ranges": {
     "sales_cagr_3y": 5.0,
@@ -35,7 +35,7 @@
     "profit_growth_ttm": 14.0,
     "roe_3y": 18.0,
     "roe_5y": 20.0,
-    "price_cagr_3y": 3.0,
+    "price_cagr_3y": 1.0,
     "price_cagr_5y": -4.0
   },
   "inflection": {
@@ -77,7 +77,7 @@
     "Strong Capital Return (ROCE: 22.1%)",
     "Cash Generative Profits (CFO/EBITDA: 66%)",
     "Smart Money Accumulation (FII+DII +9.7% over 4Q)",
-    "Reasonable GARP Multiple (PEG: 1.18x)",
+    "Reasonable GARP Multiple (PEG: 1.17x)",
     "Company has been maintaining a healthy dividend payout of 64.7%"
   ],
   "red_flags": [

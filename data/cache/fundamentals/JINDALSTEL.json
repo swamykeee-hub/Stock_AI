@@ -6,25 +6,25 @@
   "inflection_score": 5.9,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "115377",
-    "current_price": "1131",
-    "stock_pe": "35.8",
+    "market_cap_cr": "116157",
+    "current_price": "1139",
+    "stock_pe": "36",
     "book_value": "513",
     "dividend_yield_pct": "0.18",
     "roce_pct": "9.7",
     "roe_pct": "8.22",
     "debt_to_equity": "0.43",
     "face_value": "1",
-    "pb_ratio": "2.20",
-    "market_cap_num": 115377.0,
-    "current_price_num": 1131.0,
-    "pe_num": 35.8,
+    "pb_ratio": "2.22",
+    "market_cap_num": 116157.0,
+    "current_price_num": 1139.0,
+    "pe_num": 36.0,
     "book_value_num": 513.0,
     "roce_num": 9.7,
     "roe_num": 8.22,
-    "pb_num": 2.2,
-    "peg_ratio": "1.67",
-    "peg_num": 1.67
+    "pb_num": 2.22,
+    "peg_ratio": "1.68",
+    "peg_num": 1.68
   },
   "ranges": {
     "sales_cagr_3y": 0.0,
@@ -76,7 +76,7 @@
   "strengths": [
     "Cash Generative Profits (CFO/EBITDA: 88%)",
     "Promoter Stake Increased (+0.33%)",
-    "Reasonable GARP Multiple (PEG: 1.67x)",
+    "Reasonable GARP Multiple (PEG: 1.68x)",
     "Company is expected to give good quarter"
   ],
   "red_flags": [

@@ -6,25 +6,25 @@
   "inflection_score": 7.3,
   "valuation_score": 3.2,
   "metrics": {
-    "market_cap_cr": "190891",
-    "current_price": "5019",
-    "stock_pe": "88",
+    "market_cap_cr": "191477",
+    "current_price": "5034",
+    "stock_pe": "88.2",
     "book_value": "483",
-    "dividend_yield_pct": "0.76",
+    "dividend_yield_pct": "0.75",
     "roce_pct": "15.2",
     "roe_pct": "27.4",
     "debt_to_equity": "0.77",
     "face_value": "5",
-    "pb_ratio": "10.39",
-    "market_cap_num": 190891.0,
-    "current_price_num": 5019.0,
-    "pe_num": 88.0,
+    "pb_ratio": "10.42",
+    "market_cap_num": 191477.0,
+    "current_price_num": 5034.0,
+    "pe_num": 88.2,
     "book_value_num": 483.0,
     "roce_num": 15.2,
     "roe_num": 27.4,
-    "pb_num": 10.39,
-    "peg_ratio": "4.00",
-    "peg_num": 4.0
+    "pb_num": 10.42,
+    "peg_ratio": "4.01",
+    "peg_num": 4.01
   },
   "ranges": {
     "sales_cagr_3y": 13.0,
@@ -82,7 +82,7 @@
   ],
   "red_flags": [
     "Elevated Leverage (D/E: 0.77x)",
-    "Expensive Valuation vs Growth (PEG: 4.00x)",
+    "Expensive Valuation vs Growth (PEG: 4.01x)",
     "Stock is trading at 10.4 times its book value",
     "Promoter holding has decreased over last quarter: -7.53%"
   ]

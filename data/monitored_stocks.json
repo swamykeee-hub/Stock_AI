@@ -27,12 +27,12 @@
     "name": "Rubicon Research Ltd.",
     "sector": "Healthcare",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
-    "monitoring_status": "Auto-Discovered Entry (\u20b91678.41 \u2014 \u20b91878.65)",
+    "monitoring_status": "Auto-Discovered Entry (\u20b91695.7 \u2014 \u20b91878.65)",
     "entry_trigger": 1869.3,
     "target_3m": 2093.62,
     "target_1y": 2467.48,
-    "stop_loss": 1622.06,
-    "risk_reward": "1:0.91",
+    "stop_loss": 1630.66,
+    "risk_reward": "1:0.94",
     "cio_conviction": 9.5,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
@@ -43,53 +43,53 @@
       "Cash Generative Profits (CFO/EBITDA: 78%)"
     ],
     "cmp": 1869.3,
-    "day_change_pct": 8.19
+    "day_change_pct": 0.95
   },
   {
     "symbol": "RADICO",
     "name": "Radico Khaitan Ltd",
     "sector": "Fast Moving Consumer Goods",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
-    "monitoring_status": "Auto-Discovered Entry (\u20b94531.33 \u2014 \u20b94669.83)",
+    "monitoring_status": "Auto-Discovered Entry (\u20b94540.1 \u2014 \u20b94669.83)",
     "entry_trigger": 4646.6,
     "target_3m": 5204.19,
     "target_1y": 6133.51,
-    "stop_loss": 4397.48,
-    "risk_reward": "1:2.24",
+    "stop_loss": 4404.52,
+    "risk_reward": "1:2.3",
     "cio_conviction": 9.4,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
-    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Large-Cap Core). Trading with 1Y return +44.1%, ROCE 24.2%, OPM +400 bps, Qtr PAT +65.7% YoY, and FII+DII 4Q accumulation +3.1%.",
+    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Large-Cap Core). Trading with 1Y return +44.1%, ROCE 24.5%, OPM +400 bps, Qtr PAT +66.2% YoY, and FII+DII 4Q accumulation +3.1%.",
     "catalysts": [
-      "Strong Capital Return (ROCE: 24.2%)",
-      "Superior ROE: 20.3%",
+      "Strong Capital Return (ROCE: 24.5%)",
+      "Superior ROE: 20.6%",
       "Fortress Balance Sheet (D/E: 0.11x)"
     ],
     "cmp": 4646.6,
-    "day_change_pct": -0.6
+    "day_change_pct": -0.52
   },
   {
-    "symbol": "CHENNPETRO",
-    "name": "Chennai Petroleum Corporation Ltd.",
-    "sector": "Oil Gas & Consumable Fuels",
+    "symbol": "GROWW",
+    "name": "Billionbrains Garage Ventures Ltd.",
+    "sector": "Financial Services",
     "setup_type": "Auto-Promoted Laurus-Type Inflection",
-    "monitoring_status": "Auto-Discovered Entry (\u20b91325.45 \u2014 \u20b91359.26)",
-    "entry_trigger": 1352.5,
-    "target_3m": 1514.8,
-    "target_1y": 1785.3,
-    "stop_loss": 1264.3,
-    "risk_reward": "1:1.84",
-    "cio_conviction": 9.4,
+    "monitoring_status": "Auto-Discovered Entry (\u20b9214.27 \u2014 \u20b9223.52)",
+    "entry_trigger": 222.41,
+    "target_3m": 249.1,
+    "target_1y": 293.58,
+    "stop_loss": 202.89,
+    "risk_reward": "1:1.37",
+    "cio_conviction": 9.3,
     "conviction_source": "Auto-Promoted Discovery",
     "auto_promoted": true,
-    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Mid/Small-Cap Alpha). Trading with 1Y return +45.8%, ROCE 34.9%, OPM +900 bps, Qtr PAT +212.5% YoY, and FII+DII 4Q accumulation +5.6%.",
+    "institutional_thesis": "Auto-promoted from 509-stock whole-market scan (Large-Cap Core). Trading with 1Y return +53.2%, ROCE 35.1%, OPM +400 bps, Qtr PAT +67.2% YoY, and FII+DII 4Q accumulation +15.6%.",
     "catalysts": [
-      "Elite Capital Efficiency (ROCE: 34.9%)",
-      "Superior ROE: 32.0%",
-      "Fortress Balance Sheet (D/E: 0.16x)"
+      "Elite Capital Efficiency (ROCE: 35.1%)",
+      "Superior ROE: 26.4%",
+      "Fortress Balance Sheet (D/E: 0.00x)"
     ],
-    "cmp": 1352.5,
-    "day_change_pct": -1.61
+    "cmp": 222.41,
+    "day_change_pct": 1.09
   },
   {
     "symbol": "LAURUSLABS",
@@ -393,29 +393,6 @@
     "conviction_source": "Live Auto-Synced"
   },
   {
-    "symbol": "KFINTECH",
-    "name": "Kfin Technologies Ltd.",
-    "sector": "Financial Services / Mutual Fund Registrar (RTA)",
-    "setup_type": "Digital Mutual Fund & Global Asset Servicing Tollgate",
-    "monitoring_status": "Accumulate at 20/50 EMA Confluence (\u20b9910 - \u20b9930)",
-    "entry_trigger": 930.0,
-    "target_3m": 995.0,
-    "target_1y": 1150.0,
-    "stop_loss": 880.0,
-    "risk_reward": "1:2.9",
-    "cio_conviction": 8.1,
-    "institutional_thesis": "Duopoly registrar and transfer agent (RTA) for Indian mutual funds, pensions, and alternatives. Direct beneficiary of structural growth in Indian household SIPs and corporate IPO registries. Asset-light balance sheet with zero debt, 30.6% ROCE, and rapid expansion into Southeast Asia / Middle East asset servicing.",
-    "catalysts": [
-      "International asset management outsourcing expansion",
-      "Record new mutual fund folio and SIP inflows",
-      "Alternative Investment Fund (AIF) administration fees growth"
-    ],
-    "cmp": 989.0,
-    "day_change_pct": -0.6,
-    "baseline_conviction": 7.2,
-    "conviction_source": "Live Auto-Synced"
-  },
-  {
     "symbol": "PERSISTENT",
     "name": "Persistent Systems Ltd.",
     "sector": "Information Technology / AI & Cloud Services",
@@ -433,10 +410,10 @@
       "BFSI tech modernization spending rebound",
       "High margin software IP solutions ramp-up"
     ],
-    "cmp": 6200.0,
-    "day_change_pct": -0.01,
+    "cmp": 6320.0,
+    "day_change_pct": 1.94,
     "baseline_conviction": 8.0,
-    "conviction_source": "Core Curated"
+    "conviction_source": "Live Auto-Synced"
   },
   {
     "symbol": "CDSL",
@@ -462,6 +439,29 @@
     "conviction_source": "Live Auto-Synced"
   },
   {
+    "symbol": "KFINTECH",
+    "name": "Kfin Technologies Ltd.",
+    "sector": "Financial Services / Mutual Fund Registrar (RTA)",
+    "setup_type": "Digital Mutual Fund & Global Asset Servicing Tollgate",
+    "monitoring_status": "Accumulate at 20/50 EMA Confluence (\u20b9910 - \u20b9930)",
+    "entry_trigger": 930.0,
+    "target_3m": 995.0,
+    "target_1y": 1150.0,
+    "stop_loss": 880.0,
+    "risk_reward": "1:2.9",
+    "cio_conviction": 7.4,
+    "institutional_thesis": "Duopoly registrar and transfer agent (RTA) for Indian mutual funds, pensions, and alternatives. Direct beneficiary of structural growth in Indian household SIPs and corporate IPO registries. Asset-light balance sheet with zero debt, 30.6% ROCE, and rapid expansion into Southeast Asia / Middle East asset servicing.",
+    "catalysts": [
+      "International asset management outsourcing expansion",
+      "Record new mutual fund folio and SIP inflows",
+      "Alternative Investment Fund (AIF) administration fees growth"
+    ],
+    "cmp": 989.0,
+    "day_change_pct": -0.6,
+    "baseline_conviction": 7.2,
+    "conviction_source": "Live Auto-Synced"
+  },
+  {
     "symbol": "SONACOMS",
     "name": "Sona BLW Precision Forgings Ltd.",
     "sector": "Automobile Components / EV Drivetrain Technology",
@@ -472,7 +472,7 @@
     "target_1y": 1080.0,
     "stop_loss": 840.0,
     "risk_reward": "1:2.8",
-    "cio_conviction": 7.0,
+    "cio_conviction": 7.2,
     "institutional_thesis": "India's premier Tier-1 electric vehicle drivetrain and traction motor supplier to global automotive OEMs. EV order book contribution exceeding 30% with strong expansion into commercial EV and hybrid platforms. High export revenue share with industry-leading EBITDA margins (>26%).",
     "catalysts": [
       "Global OEM electric passenger vehicle production ramp-up",

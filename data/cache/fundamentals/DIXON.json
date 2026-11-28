@@ -6,23 +6,23 @@
   "inflection_score": 6.4,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "80618",
-    "current_price": "13171",
-    "stock_pe": "52",
+    "market_cap_cr": "80416",
+    "current_price": "13138",
+    "stock_pe": "51.9",
     "book_value": "961",
     "dividend_yield_pct": "0.08",
     "roce_pct": "29.2",
     "roe_pct": "25.2",
     "debt_to_equity": "0.21",
     "face_value": "2",
-    "pb_ratio": "13.71",
-    "market_cap_num": 80618.0,
-    "current_price_num": 13171.0,
-    "pe_num": 52.0,
+    "pb_ratio": "13.67",
+    "market_cap_num": 80416.0,
+    "current_price_num": 13138.0,
+    "pe_num": 51.9,
     "book_value_num": 961.0,
     "roce_num": 29.2,
     "roe_num": 25.2,
-    "pb_num": 13.71,
+    "pb_num": 13.67,
     "peg_ratio": "0.93",
     "peg_num": 0.93
   },
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 20.0,
     "roe_3y": 27.0,
     "roe_5y": 26.0,
-    "price_cagr_3y": 34.0,
-    "price_cagr_5y": 20.0
+    "price_cagr_3y": 35.0,
+    "price_cagr_5y": 21.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 47.0,
@@ -82,7 +82,7 @@
   ],
   "red_flags": [
     "Quarterly Earnings Contraction (-44.9% YoY)",
-    "Stock is trading at 13.8 times its book value",
+    "Stock is trading at 13.7 times its book value",
     "Earnings include an other income of Rs.838 Cr.",
     "Promoter holding has decreased over last 3 years: -5.30%"
   ]

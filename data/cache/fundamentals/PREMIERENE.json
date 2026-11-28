@@ -6,8 +6,8 @@
   "inflection_score": 8.3,
   "valuation_score": 8.0,
   "metrics": {
-    "market_cap_cr": "36804",
-    "current_price": "811",
+    "market_cap_cr": "36838",
+    "current_price": "812",
     "stock_pe": "20.8",
     "book_value": "114",
     "dividend_yield_pct": "0.12",
@@ -15,14 +15,14 @@
     "roe_pct": "41.5",
     "debt_to_equity": "0.72",
     "face_value": "1",
-    "pb_ratio": "7.11",
-    "market_cap_num": 36804.0,
-    "current_price_num": 811.0,
+    "pb_ratio": "7.12",
+    "market_cap_num": 36838.0,
+    "current_price_num": 812.0,
     "pe_num": 20.8,
     "book_value_num": 114.0,
     "roce_num": 32.7,
     "roe_num": 41.5,
-    "pb_num": 7.11,
+    "pb_num": 7.12,
     "peg_ratio": "0.06",
     "peg_num": 0.06
   },
@@ -82,6 +82,7 @@
   ],
   "red_flags": [
     "Operating Margin Compression (-300 bps YoY)",
+    "Stock is trading at 7.13 times its book value",
     "Company might be capitalizing the interest cost"
   ]
 }

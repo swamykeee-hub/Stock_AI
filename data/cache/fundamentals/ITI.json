@@ -1,28 +1,28 @@
 {
   "schema_version": 3,
-  "is_consolidated": false,
+  "is_consolidated": true,
   "score": 5.6,
   "quality_score": 3.0,
   "inflection_score": 9.2,
   "valuation_score": 5.0,
   "metrics": {
-    "market_cap_cr": "24676",
-    "current_price": "256",
+    "market_cap_cr": "24745",
+    "current_price": "257",
     "stock_pe": "",
-    "book_value": "18.6",
+    "book_value": "19.1",
     "dividend_yield_pct": "0",
-    "roce_pct": "2.14",
-    "roe_pct": "-9.13",
-    "debt_to_equity": "0.61",
+    "roce_pct": "2.1",
+    "roe_pct": "-8.86",
+    "debt_to_equity": "0.59",
     "face_value": "10",
-    "pb_ratio": "13.76",
-    "market_cap_num": 24676.0,
-    "current_price_num": 256.0,
+    "pb_ratio": "13.46",
+    "market_cap_num": 24745.0,
+    "current_price_num": 257.0,
     "pe_num": null,
-    "book_value_num": 18.6,
-    "roce_num": 2.14,
-    "roe_num": -9.13,
-    "pb_num": 13.76,
+    "book_value_num": 19.1,
+    "roce_num": 2.1,
+    "roe_num": -8.86,
+    "pb_num": 13.46,
     "peg_ratio": "N/A"
   },
   "ranges": {
@@ -31,17 +31,17 @@
     "sales_growth_ttm": -34.0,
     "profit_cagr_3y": 16.0,
     "profit_cagr_5y": null,
-    "profit_growth_ttm": 56.0,
+    "profit_growth_ttm": 53.0,
     "roe_3y": -18.0,
-    "roe_5y": -12.0,
-    "price_cagr_3y": -3.0,
-    "price_cagr_5y": 18.0
+    "roe_5y": -11.0,
+    "price_cagr_3y": -2.0,
+    "price_cagr_5y": 19.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": -11.0,
-    "qtr_pat_qoq_pct": 0.0,
-    "qtr_pat_yoy_pct": 40.7,
-    "qtr_pat_prev_yoy_pct": 49.2,
+    "qtr_pat_qoq_pct": 3.1,
+    "qtr_pat_yoy_pct": 42.6,
+    "qtr_pat_prev_yoy_pct": 50.0,
     "qtr_eps_yoy_pct": 41.1,
     "opm_latest_pct": 1.4,
     "opm_year_ago_pct": -0.2,
@@ -51,7 +51,7 @@
   },
   "balance_inst": {
     "is_financial_sector": false,
-    "debt_to_equity": 0.61,
+    "debt_to_equity": 0.59,
     "roce_latest_tbl_pct": 2.0,
     "roce_prev_pct": -1.0,
     "roce_delta_pct": 3.0,
@@ -74,14 +74,14 @@
   },
   "strengths": [
     "Expanding Operating Margins (+160 bps)",
-    "Explosive Quarterly PAT Surge (+40.7% YoY)",
+    "Explosive Quarterly PAT Surge (+42.6% YoY)",
     "Expanding ROCE Efficiency (+3.0% YoY)",
     "Company has reduced debt."
   ],
   "red_flags": [
     "Sub-par ROCE (2.1%)",
-    "Stock is trading at 13.8 times its book value",
+    "Stock is trading at 13.4 times its book value",
     "Company has low interest coverage ratio.",
-    "Company has a low return on equity of -18.3% over last 3 years."
+    "Company has a low return on equity of -17.6% over last 3 years."
   ]
 }

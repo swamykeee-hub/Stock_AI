@@ -13,7 +13,7 @@
     "dividend_yield_pct": "%",
     "roce_pct": "%",
     "roe_pct": "%",
-    "debt_to_equity": "0.00",
+    "debt_to_equity": "-0.00",
     "face_value": "\u20b9",
     "pb_ratio": "N/A",
     "market_cap_num": null,
@@ -50,13 +50,13 @@
   },
   "balance_inst": {
     "is_financial_sector": false,
-    "debt_to_equity": 0.0,
+    "debt_to_equity": -0.0,
     "roce_latest_tbl_pct": 22.0,
     "roce_prev_pct": 24.0,
     "roce_delta_pct": -2.0,
-    "cwip_cr": 0.0,
+    "cwip_cr": -0.0,
     "cwip_growth_pct": -100.0,
-    "cwip_to_fixed_assets_pct": 0.0,
+    "cwip_to_fixed_assets_pct": -0.0,
     "cfo_latest_cr": 2622.0,
     "fcf_latest_cr": 2380.0,
     "cfo_ebitda_pct": 105.0,
@@ -72,7 +72,7 @@
     "public_4q_delta_pct": -0.64
   },
   "strengths": [
-    "Fortress Balance Sheet (D/E: 0.00x)",
+    "Fortress Balance Sheet (D/E: -0.00x)",
     "Cash Generative Profits (CFO/EBITDA: 105%)",
     "Promoter Stake Increased (+0.06%)"
   ],

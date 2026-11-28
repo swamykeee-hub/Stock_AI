@@ -6,25 +6,25 @@
   "inflection_score": 10.0,
   "valuation_score": 6.8,
   "metrics": {
-    "market_cap_cr": "79361",
-    "current_price": "1374",
-    "stock_pe": "59.3",
+    "market_cap_cr": "78189",
+    "current_price": "1354",
+    "stock_pe": "58.4",
     "book_value": "129",
-    "dividend_yield_pct": "0.19",
+    "dividend_yield_pct": "0.2",
     "roce_pct": "19.6",
     "roe_pct": "19.3",
     "debt_to_equity": "0.40",
     "face_value": "2",
-    "pb_ratio": "10.65",
-    "market_cap_num": 79361.0,
-    "current_price_num": 1374.0,
-    "pe_num": 59.3,
+    "pb_ratio": "10.50",
+    "market_cap_num": 78189.0,
+    "current_price_num": 1354.0,
+    "pe_num": 58.4,
     "book_value_num": 129.0,
     "roce_num": 19.6,
     "roe_num": 19.3,
-    "pb_num": 10.65,
-    "peg_ratio": "1.62",
-    "peg_num": 1.62
+    "pb_num": 10.5,
+    "peg_ratio": "1.60",
+    "peg_num": 1.6
   },
   "ranges": {
     "sales_cagr_3y": 20.0,
@@ -35,8 +35,8 @@
     "profit_growth_ttm": 22.0,
     "roe_3y": 19.0,
     "roe_5y": 18.0,
-    "price_cagr_3y": 27.0,
-    "price_cagr_5y": 27.0
+    "price_cagr_3y": 26.0,
+    "price_cagr_5y": 26.0
   },
   "inflection": {
     "qtr_sales_yoy_pct": 38.0,
@@ -81,6 +81,6 @@
     "Capex Capacity Runway Active (CWIP: \u20b9947 Cr)"
   ],
   "red_flags": [
-    "Stock is trading at 10.7 times its book value"
+    "Stock is trading at 10.5 times its book value"
   ]
 }
